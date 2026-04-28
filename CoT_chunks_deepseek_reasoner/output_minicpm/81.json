@@ -1,0 +1,82 @@
+{
+  "id": 81,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "B_0 = 0"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "B_t 在任意时刻 t 都是独立同分布的随机变量"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "B_t 和 B_s 相互独立，当 s ≠ t"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "B_t 服从正态分布，即 B_t ∼ N(0, t)"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "三角函数的性质：E[sin(x)] = 0"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "数值计算",
+          "content": "计算 E[B_t] = 0",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "从 B_t ∼ N(0, t) 计算期望值"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "将 B_t 转化为 √t Z，其中 Z ∼ N(0,1)",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "基于正态分布性质，将 B_t 表达为标准正态变量"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "计算 E[sin(√t Z)] = 0",
+          "parents": [
+            "I_2",
+            "C_5"
+          ],
+          "reasoning_logic": "代入三角函数性质 E[sin(x)] = 0"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "因此，E[sin(B_t)] = 0",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "从 E[sin(√t Z)] = 0 推导出 E[sin(B_t)] = 0"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "E[X_t] = 0",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "综合以上步骤，得出最终结论 E[X_t] = 0"
+      }
+    }
+  }
+}

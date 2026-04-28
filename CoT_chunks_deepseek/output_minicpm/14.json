@@ -1,0 +1,78 @@
+{
+  "id": 14,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "科研人员将蚯蚓培养在浓度为 1 mg/kg 的 TBBPA 污染土壤中进行 30 天富集实验"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "科研人员将蚯蚓转至干净土壤进行 30 天排出实验"
+        },
+        {
+          "id": "C_3",
+          "type": "图像信息",
+          "content": "图中显示了蚯蚓体内 TBBPA 浓度随时间的变化趋势"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "污染物（如 TBBPA）在食物链中会逐级放大，即高营养级生物体内的污染物浓度会高于低营养级生物体内的污染物浓度"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "在富集实验期间，蚯蚓体内的 TBBPA 浓度逐渐增加",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "根据图中显示的蚯蚓体内 TBBPA 浓度随时间的变化趋势推导得出"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "在排出实验期间，蚯蚓体内的 TBBPA 浓度逐渐减少",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "根据图中显示的蚯蚓体内 TBBPA 浓度随时间的变化趋势推导得出"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "蚯蚓体内的 TBBPA 是可以被排出的",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "由富集实验期间浓度增加和排出实验期间浓度减少对比分析得出"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "如果蚯蚓被捕食者取食，TBBPA 可能会沿食物链传递到捕食者的体内",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "根据污染物在食物链中会逐级放大的原理推导得出"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "若实验结束时蚯蚓被捕食者取食，TBBPA 可能会沿食物链发生传递",
+        "parents": [
+          "I_3",
+          "I_4"
+        ],
+        "reasoning_logic": "综合蚯蚓体内 TBBPA 可被排出和污染物在食物链中会逐级放大的原理归纳得出"
+      }
+    }
+  }
+}

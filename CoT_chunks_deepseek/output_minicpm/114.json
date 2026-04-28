@@ -1,0 +1,101 @@
+{
+  "id": 114,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目中提到粒子在x=0和x=L处有无限高的势垒"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "波函数描述了粒子在空间中的概率分布"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "概率密度是波函数的绝对值的平方，表示粒子在某一位置出现的概率"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "对于一维箱中的粒子，波函数可以表示为ψ(x) = A sin(nπx/L)，其中A是归一化常数，n是离散的正整数，表示能级"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "波函数在整个箱内归一化需要满足∫_0^L |ψ(x)|^2 dx = 1"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "粒子在x=0和x=L处不能出现",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "由无限高势垒推导出粒子不能出现"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "波函数在x=0和x=L处必须为零",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "由粒子不能出现推导出波函数为零"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "将波函数代入归一化条件得到A^2 ∫_0^L sin^2(nπx/L) dx = 1",
+          "parents": [
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "引用波函数形式和归一化条件进行转化"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "计算∫_0^L sin^2(nπx/L) dx = L/2 [1 - cos(2πn)]",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "执行积分计算"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "cos(2πn) = (-1)^n",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "计算余弦值"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "A^2 [L/2 (2 - (-1)^n)] = 1",
+          "parents": [
+            "I_4",
+            "I_5"
+          ],
+          "reasoning_logic": "代入化简"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "数值计算",
+        "content": "A^2 [L/2 (2 - (-1)^n)] = 1",
+        "parents": [
+          "I_6"
+        ],
+        "reasoning_logic": "得出归一化常数A的方程"
+      }
+    }
+  }
+}

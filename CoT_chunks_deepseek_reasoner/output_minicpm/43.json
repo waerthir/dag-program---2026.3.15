@@ -1,0 +1,82 @@
+{
+  "id": 43,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "青蒿素主要在黄花蒿的叶片腺毛中合成与积累。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "青蒿素受到水杨酸（SA）和茉莉酸甲酯（MeJA）等植物激素的调节。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "SA和MeJA调控miR160的表达量。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "SA和MeJA影响黄花蒿腺毛密度和青蒿素含量。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "miR160是一种微小RNA。"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "miR160能与靶mRNA结合。"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "miR160引起靶mRNA降解。"
+        },
+        {
+          "id": "C_8",
+          "type": "学科常识",
+          "content": "miR160的一种靶mRNA编码ARF1蛋白。"
+        },
+        {
+          "id": "C_9",
+          "type": "学科常识",
+          "content": "ARF1蛋白影响青蒿素合成关键基因DBR2的表达。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "综合归纳",
+          "content": "miR160通过调控ARF1蛋白的表达来影响DBR2基因的表达，从而调控青蒿素的合成。",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3",
+            "C_4",
+            "C_5",
+            "C_6",
+            "C_7",
+            "C_8",
+            "C_9"
+          ],
+          "reasoning_logic": "综合前面关于青蒿素合成、激素调节、miR160性质和ARF1蛋白影响的事实，推导出miR160的调控路径。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "miR160通过直接影响ARF1蛋白的表达来调控青蒿素的合成。",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "基于推理过程得出最终陈述。"
+      }
+    }
+  }
+}

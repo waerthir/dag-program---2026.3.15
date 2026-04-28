@@ -1,0 +1,115 @@
+{
+  "id": 105,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "电子被限制在一个长度为 L 的一维箱子里。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "一维箱中粒子的薛定谔方程形式为：-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi(x)}{dx^2} + V(x)\\psi(x) = E\\psi(x)。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "在一维箱中，势函数 V(x) 在 0 \\leq x \\leq L 范围内为 0。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "二阶微分方程 -\\frac{\\hbar^2}{2m}\\frac{d^2\\psi}{dx^2} = E\\psi 的通解形式为 \\psi(x) = A\\sin(kx) + B\\cos(kx)，其中 k = \\sqrt{\\frac{2mE}{\\hbar^2}}。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字条件",
+          "content": "边界条件要求：在 x=0 和 x=L 处，波函数 \\psi(x) = 0。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将 V(x)=0 代入薛定谔方程，得到简化方程：-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi(x)}{dx^2} = E\\psi(x)。",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据已知势函数条件简化原始方程。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "应用边界条件 x=0 到通解，得出 B=0，波函数简化为 \\psi(x) = A\\sin(kx)。",
+          "parents": [
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "利用 x=0 处的边界条件确定积分常数 B。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "应用边界条件 x=L 到简化波函数，得出 \\sin(kL)=0，进而推导出 k = \\frac{n\\pi}{L} (n=1,2,3...)。",
+          "parents": [
+            "I_2",
+            "C_5"
+          ],
+          "reasoning_logic": "利用 x=L 处的边界条件确定波数 k 的量子化条件。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "将 k = \\frac{n\\pi}{L} 代入能量公式 E = \\frac{\\hbar^2k^2}{2m}，推导出能级公式 E_n = \\frac{n^2\\pi^2\\hbar^2}{2mL^2}。",
+          "parents": [
+            "I_3",
+            "C_4"
+          ],
+          "reasoning_logic": "执行代数 substitution 计算能量本征值表达式。"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "计算前三个能级的具体数值：E_1 = \\frac{\\pi^2\\hbar^2}{2mL^2}, E_2 = \\frac{4\\pi^2\\hbar^2}{2mL^2}, E_3 = \\frac{9\\pi^2\\hbar^2}{2mL^2}。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "分别代入 n=1, 2, 3 进行具体数值计算。"
+        },
+        {
+          "id": "I_6",
+          "type": "综合归纳",
+          "content": "确定前三个状态的波函数形式：\\psi_1=A_1\\sin(\\frac{\\pi x}{L}), \\psi_2=A_2\\sin(\\frac{2\\pi x}{L}), \\psi_3=A_3\\sin(\\frac{3\\pi x}{L})。",
+          "parents": [
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "将量子化的 k 值代回波函数表达式。"
+        },
+        {
+          "id": "I_7",
+          "type": "条件转化",
+          "content": "根据概率定义 P(x) = |\\psi(x)|^2，写出前三个状态的概率分布表达式。",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "应用量子力学概率密度定义进行转化。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "前三个能量状态的结果为：能量级 E_1=\\frac{\\pi^2\\hbar^2}{2mL^2}, E_2=\\frac{2\\pi^2\\hbar^2}{mL^2}, E_3=\\frac{9\\pi^2\\hbar^2}{2mL^2}；波函数为 \\psi_n(x)=A_n\\sin(\\frac{n\\pi x}{L})；概率分布为 P_n(x)=A_n^2\\sin^2(\\frac{n\\pi x}{L})。",
+        "parents": [
+          "I_5",
+          "I_6",
+          "I_7"
+        ],
+        "reasoning_logic": "综合计算出的能量值、波函数形式及概率分布公式得出最终结论。"
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": 130,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目要求计算极限表达式：lim_{x->0} (1/tan^2(x) - 1/x^2)"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "三角恒等式：1/tan^2(x) = cos^2(x)/sin^2(x)"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "当 x 趋近于 0 时，cos(x) 近似等于 1"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "当 x 趋近于 0 时，sin(x) 近似等于 x"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将原表达式转化为 lim_{x->0} (cos^2(x)/sin^2(x) - 1/x^2)",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "利用三角恒等式替换 1/tan^2(x)"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "推导出当 x 趋近于 0 时，cos^2(x)/sin^2(x) 近似等于 1/x^2",
+          "parents": [
+            "C_3",
+            "C_4"
+          ],
+          "reasoning_logic": "结合 cos(x)≈1 和 sin(x)≈x 进行近似代换"
+        },
+        {
+          "id": "I_3",
+          "type": "对比分析",
+          "content": "得出 cos^2(x)/sin^2(x) - 1/x^2 近似等于 0",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "比较两项的近似值发现它们相等，差值为 0"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "确定极限值为 0",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "根据近似差值为 0 推断极限结果"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是 0",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "综合上述推导步骤得出最终结论"
+      }
+    }
+  }
+}

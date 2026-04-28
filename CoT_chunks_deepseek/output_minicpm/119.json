@@ -1,0 +1,137 @@
+{
+  "id": 119,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "粒子质量 'm'"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "无限深势阱宽度 'L'"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "Schrödinger方程"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "对于无限深势阱，粒子的波函数在势阱边界处为零，即ψ(x) = 0 在 x = 0 和 x = L"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "在势阱内部，波函数满足薛定谔方程：iħ∂ψ/∂t = Hψ，其中H是哈密顿算符"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "对于一维无限深势阱，哈密顿算符H = -ħ²/(2m) ∂²/∂x²"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "薛定谔方程变为：iħ∂ψ/∂t = -ħ²/(2m) ∂²ψ/∂x²"
+        },
+        {
+          "id": "C_8",
+          "type": "学科常识",
+          "content": "对于一维无限深势阱，解薛定谔方程得到：ψ(x) = A sin(kx) + B cos(kx)，其中k = √(2mE/ħ)"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "由于ψ(0) = 0，得到B = 0",
+          "parents": [
+            "C_4",
+            "C_8"
+          ],
+          "reasoning_logic": "引用波函数边界条件"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "由于ψ(L) = 0，得到A sin(kL) = 0",
+          "parents": [
+            "C_4",
+            "C_8"
+          ],
+          "reasoning_logic": "引用波函数边界条件"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "因为A ≠ 0，所以sin(kL) = 0",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "基于A不为零的假设"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "sin(kL) = 0，即kL = nπ，其中n为整数，n = 1, 2, 3, ...",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "解三角方程"
+        },
+        {
+          "id": "I_5",
+          "type": "条件转化",
+          "content": "能量本征值E = ħ²k²/(2m)",
+          "parents": [
+            "C_8"
+          ],
+          "reasoning_logic": "从波函数解中提取能量表达式"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "E = ħ²(nπ/L)²/(2m)",
+          "parents": [
+            "I_4",
+            "I_5"
+          ],
+          "reasoning_logic": "代入k = nπ/L"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "最低能量本征值对应于n = 1，即E_1 = ħ²π²/(2mL²)",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "取n=1计算"
+        },
+        {
+          "id": "I_8",
+          "type": "逻辑推导",
+          "content": "波函数：ψ(x) = A sin(kx)，其中k = √(2mE/ħ)",
+          "parents": [
+            "C_8",
+            "I_1"
+          ],
+          "reasoning_logic": "结合波函数解和B=0"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "波函数：ψ(x) = A sin(kx)，其中k = √(2mE/ħ)。最低能量本征值：E_1 = ħ²π²/(2mL²)",
+        "parents": [
+          "I_7",
+          "I_8"
+        ],
+        "reasoning_logic": "综合波函数和能量本征值得出最终陈述"
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "id": 77,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目给出的极坐标方程 r = √(1 + cos(2θ))。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "极坐标方程 r 表示从极点出发到点 (r, θ) 的距离。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "题目要求求解极坐标方程在 0 ≤ θ ≤ π√2/4 范围内的长度。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "弧长公式 L = ∫_{α}^{β} √(r² + (dr/dθ)²) dθ。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "设置弧长公式参数：α=0, β=π√2/4, r=√(1+cos(2θ)), dr/dθ = d/dθ √(1+cos(2θ))。",
+          "parents": [
+            "C_1",
+            "C_3",
+            "C_4"
+          ],
+          "reasoning_logic": "应用弧长公式到给定范围和方程。"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "计算 dr/dθ = d/dθ √(1+cos(2θ)) = -sin(2θ)/√(1+cos(2θ))。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "对 r 表达式求导。"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "弧长公式变为 L = ∫_{0}^{π√2/4} √( (√(1+cos(2θ)))² + (-sin(2θ)/√(1+cos(2θ)))² ) dθ。",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "将 r 和 dr/dθ 代入弧长公式。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "化简被积函数为 √(1+cos(2θ) + sin²(2θ)/(1+cos(2θ)))。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "简化表达式。"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "进一步化简为 √(2(1+cos(2θ))/(1+cos(2θ)))。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "合并项。"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "化简为 2。",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "简化平方根。"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "积分 ∫_{0}^{π√2/4} 2 dθ。",
+          "parents": [
+            "I_6",
+            "C_3"
+          ],
+          "reasoning_logic": "执行积分。"
+        },
+        {
+          "id": "I_8",
+          "type": "数值计算",
+          "content": "计算积分结果：2θ |_{0}^{π√2/4} = π√2/2。",
+          "parents": [
+            "I_7"
+          ],
+          "reasoning_logic": "计算定积分。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "数值计算",
+        "content": "极坐标方程 r = √(1+cos(2θ)) 在 0 ≤ θ ≤ π√2/4 范围内的长度为 π√2/2。",
+        "parents": [
+          "I_8"
+        ],
+        "reasoning_logic": "综合计算得出最终长度。"
+      }
+    }
+  }
+}

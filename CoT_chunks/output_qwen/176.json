@@ -1,0 +1,135 @@
+{
+  "id": 176,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目给定一维谐振子势能函数为 V(x) = 1/2 * k * x^2，其中 k 是弹簧常数。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "一维薛定谔方程的一般形式包含动能项 -hbar^2/(2m) * d^2/dx^2 和势能项 V(x)。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "一维谐振子的波函数通解形式为 Hermite 多项式与高斯指数函数的乘积。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "一维谐振子的能量本征值公式为 E_n = (n + 1/2) * hbar * omega。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "谐振子角频率定义为 omega = sqrt(k/m)。"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "0 阶 Hermite 多项式 H_0(x) 对应常数项，归一化后基态波函数系数为 1/sqrt(pi)。"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "1 阶 Hermite 多项式 H_1(x) 正比于 x，归一化后第一激发态波函数系数为 1/sqrt(2)。"
+        },
+        {
+          "id": "C_8",
+          "type": "学科常识",
+          "content": "2 阶 Hermite 多项式 H_2(x) 正比于 (3x^2 - 1)，归一化后第二激发态波函数系数为 1/(2*sqrt(2))。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "写出一维谐振子的具体薛定谔方程：-hbar^2/(2m) * d^2(psi)/dx^2 + 1/2 * k * x^2 * psi = E * psi。",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "将给定的势能函数 V(x) 代入薛定谔方程一般形式。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "确定波函数通解表达式为 psi_n(x) = N_n * H_n(x) * e^(-x^2/2)。",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "引用谐振子波函数的标准解结构。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "确定能量谱表达式为 E_n = (n + 1/2) * hbar * omega，其中 omega = sqrt(k/m)。",
+          "parents": [
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "引用谐振子能量本征值公式及角频率定义。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "得出 n=0 时的具体波函数：psi_0(x) = 1/sqrt(pi) * e^(-x^2/2)。",
+          "parents": [
+            "I_2",
+            "C_6"
+          ],
+          "reasoning_logic": "将 n=0 代入通解并应用对应的归一化常数和多项式。"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "得出 n=1 时的具体波函数：psi_1(x) = 1/sqrt(2) * x * e^(-x^2/2)。",
+          "parents": [
+            "I_2",
+            "C_7"
+          ],
+          "reasoning_logic": "将 n=1 代入通解并应用对应的归一化常数和多项式。"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "得出 n=2 时的具体波函数：psi_2(x) = 1/(2*sqrt(2)) * (3x^2 - 1) * e^(-x^2/2)。",
+          "parents": [
+            "I_2",
+            "C_8"
+          ],
+          "reasoning_logic": "将 n=2 代入通解并应用对应的归一化常数和多项式。"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "判定 psi_0 描述基态（能量最低），psi_1 描述第一激发态，psi_2 描述第二激发态。",
+          "parents": [
+            "I_4",
+            "I_5",
+            "I_6",
+            "I_3"
+          ],
+          "reasoning_logic": "根据量子数 n 的大小关系对应能级高低进行物理意义阐释。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "一维谐振子波函数通解为 psi_n(x) = N_n * H_n(x) * e^(-x^2/2)，能量谱为 E_n = (n + 1/2) * hbar * omega；前三个具体波函数分别为 psi_0(x) = 1/sqrt(pi) * e^(-x^2/2)，psi_1(x) = 1/sqrt(2) * x * e^(-x^2/2)，psi_2(x) = 1/(2*sqrt(2)) * (3x^2 - 1) * e^(-x^2/2)。",
+        "parents": [
+          "I_2",
+          "I_3",
+          "I_4",
+          "I_5",
+          "I_6"
+        ],
+        "reasoning_logic": "综合通解公式、能量公式及前三个量子数的具体计算结果得出最终陈述。"
+      }
+    }
+  }
+}

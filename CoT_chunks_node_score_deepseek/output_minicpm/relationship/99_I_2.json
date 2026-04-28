@@ -1,0 +1,9 @@
+{
+  "id": "99_I_2",
+  "evaluation": {
+    "Dependency_Completeness": 8,
+    "Dependency_Accuracy": 10,
+    "Reasoning_Logic_Accuracy": 9,
+    "Reasoning_Type_Accuracy": 10
+  }
+}

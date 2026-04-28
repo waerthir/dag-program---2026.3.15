@@ -1,0 +1,67 @@
+{
+  "id": 23,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "科研人员使用 SA-β-Gal 作为细胞衰老的分子标志"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "科研人员使用 EdU 作为细胞 DNA 复制的标记"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "实验结果显示了 AP2A1 蛋白通过调节 p53 蛋白表达量来影响细胞衰老的机制"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "题目要求根据图示信息回答含 EdU 标记细胞比例越大的情况，通常表示细胞处于什么状态"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "EdU 是细胞 DNA 复制的标记",
+          "parents": [
+            "C_2"
+          ],
+          "reasoning_logic": "引用题目描述"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "含 EdU 标记细胞比例越大，通常表示细胞处于 DNA 复制的状态",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "基于 EdU 标记的定义推导"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "AP2A1 蛋白通过调节 p53 蛋白表达量来影响细胞衰老的机制可能与细胞处于 DNA 复制状态有关",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "结合实验结果进行关联分析"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "含 EdU 标记细胞比例越大，通常表示细胞处于 DNA 复制的状态",
+        "parents": [
+          "I_2"
+        ],
+        "reasoning_logic": "综合推导结果得出最终陈述"
+      }
+    }
+  }
+}

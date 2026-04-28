@@ -1,0 +1,64 @@
+{
+  "id": 11,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "图像信息",
+          "content": "图表显示了不同浓度的阿维菌素对褐飞虱产卵量的影响。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "科研人员研究了阿维菌素对褐飞虱的影响。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "题目问的是“若干扰AstA蛋白与AstA受体的结合，褐飞虱产卵量将发生什么变化？”"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "随着阿维菌素浓度的增加，褐飞虱的产卵量逐渐减少。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "从图表数据中分析趋势。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "AstA蛋白与AstA受体的结合可能会影响阿维菌素的效果。",
+          "parents": [
+            "C_2",
+            "I_1"
+          ],
+          "reasoning_logic": "结合题目信息和图表趋势进行推理。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "若若干扰AstA蛋白与AstA受体的结合，褐飞虱产卵量可能会增加。",
+          "parents": [
+            "I_2",
+            "C_3"
+          ],
+          "reasoning_logic": "基于AstA蛋白可能影响阿维菌素效果和题目问题进行综合。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "若若干扰AstA蛋白与AstA受体的结合，褐飞虱产卵量将增加。",
+        "parents": [
+          "I_3"
+        ],
+        "reasoning_logic": "从推理过程中得出最终结论。"
+      }
+    }
+  }
+}

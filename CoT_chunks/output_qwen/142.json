@@ -1,0 +1,94 @@
+{
+  "id": 142,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "序列 (u_n) 弱收敛于 u，即 (u_n) ⇀ u。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "序列 T(u_n) 弱收敛于 T(u)，即 T(u_n) ⇀ T(u)。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "存在一个子序列 (u_{n_k}) 使得 T(u_{n_k}) 强收敛于 T(u)，即 T(u_{n_k}) → T(u)。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "弱收敛的定义：序列 x_n 弱收敛于 x 意味着对于所有连续线性泛函 f，有 f(x_n) → f(x)。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "强收敛蕴含弱收敛：若序列 y_n 强收敛于 y，则对于所有连续线性泛函 f，有 f(y_n) → f(y)。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "由 C_1 和 C_4 可知，对于所有连续线性泛函 f，f(u_n) 趋于 f(u)。",
+          "parents": [
+            "C_1",
+            "C_4"
+          ],
+          "reasoning_logic": "应用弱收敛定义到序列 (u_n)。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "由 C_2 和 C_4 可知，对于所有连续线性泛函 f，f(T(u_n)) 趋于 f(T(u))。",
+          "parents": [
+            "C_2",
+            "C_4"
+          ],
+          "reasoning_logic": "应用弱收敛定义到序列 T(u_n)。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "由 C_3 和 C_5 可知，对于任意连续线性泛函 f，f(T(u_{n_k})) 趋于 f(T(u))。",
+          "parents": [
+            "C_3",
+            "C_5"
+          ],
+          "reasoning_logic": "应用强收敛蕴含弱收敛的性质到子序列 T(u_{n_k})。"
+        },
+        {
+          "id": "I_4",
+          "type": "对比分析",
+          "content": "综合 I_2 和 I_3，确认 T(u_n) 整体及其子序列 T(u_{n_k}) 在所有连续线性泛函作用下均趋于 f(T(u))。",
+          "parents": [
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "对比全序列和子序列在泛函作用下的极限行为。"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "基于上述分析，推断出 T(u_n) 强收敛于 T(u)。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "根据思维链逻辑，由泛函作用下的收敛性推导得出强收敛结论。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "T(u_n) → T(u)。",
+        "parents": [
+          "I_5"
+        ],
+        "reasoning_logic": "综合所有推理步骤得出最终结论。"
+      }
+    }
+  }
+}

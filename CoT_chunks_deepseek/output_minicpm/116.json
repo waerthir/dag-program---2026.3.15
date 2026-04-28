@@ -1,0 +1,177 @@
+{
+  "id": 116,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "一维薛定谔方程描述了粒子在势能为零的势阱中的运动。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "对于无限深势阱，势能函数为零。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "薛定谔方程可以简化为：-ħ²/(2m) * d²ψ(x)/dx² = Eψ(x)。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "ħ是约化普朗克常数，m是粒子的质量，ψ(x)是波函数，E是能量。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "无限深势阱的边界条件：ψ(0) = ψ(a) = 0。"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "对于无限深势阱，波函数的形式为：ψ(x) = A sin(kx)。"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "A是归一化常数，k是波数。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将波函数ψ(x) = A sin(kx)代入薛定谔方程。",
+          "parents": [
+            "C_3",
+            "C_6"
+          ],
+          "reasoning_logic": "引用波函数形式代入方程。"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "得到方程：-ħ²/(2m) * (k² A sin(kx)) = E A sin(kx)。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "执行二阶导数计算。"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "解方程得到：k² = 2mE/ħ²。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "化简方程求解k²。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "波数k可以表示为：k = √(2mE/ħ²)。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "对k²开方得到k。"
+        },
+        {
+          "id": "I_5",
+          "type": "条件转化",
+          "content": "将波函数代入边界条件ψ(a) = 0。",
+          "parents": [
+            "C_5",
+            "C_6"
+          ],
+          "reasoning_logic": "引用边界条件应用波函数。"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "得到：A sin(√(2mE/ħ²) * a) = 0。",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "代入k的表达式。"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "由于A ≠ 0，有sin(√(2mE/ħ²) * a) = 0。",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "基于A非零推导正弦为零。"
+        },
+        {
+          "id": "I_8",
+          "type": "数值计算",
+          "content": "这意味着：√(2mE/ħ²) * a = nπ，其中n是整数。",
+          "parents": [
+            "I_7"
+          ],
+          "reasoning_logic": "解正弦方程得到条件。"
+        },
+        {
+          "id": "I_9",
+          "type": "数值计算",
+          "content": "波数k可以表示为：k = nπ/a。",
+          "parents": [
+            "I_8"
+          ],
+          "reasoning_logic": "从条件推导k表达式。"
+        },
+        {
+          "id": "I_10",
+          "type": "数值计算",
+          "content": "将k代入能量方程：E = ħ²k²/(2m)。",
+          "parents": [
+            "I_3",
+            "I_9"
+          ],
+          "reasoning_logic": "引用能量方程代入k。"
+        },
+        {
+          "id": "I_11",
+          "type": "数值计算",
+          "content": "得到：E = ħ² * (nπ/a)² / (2m)。",
+          "parents": [
+            "I_10"
+          ],
+          "reasoning_logic": "代入k的具体形式。"
+        },
+        {
+          "id": "I_12",
+          "type": "数值计算",
+          "content": "化简得到能量谱：E_n = ħ²n²π²/(2ma²)。",
+          "parents": [
+            "I_11"
+          ],
+          "reasoning_logic": "执行代数化简。"
+        },
+        {
+          "id": "I_13",
+          "type": "数值计算",
+          "content": "波函数为：ψ(x) = A sin(√(2mE/ħ²) * x)。",
+          "parents": [
+            "C_6",
+            "I_4"
+          ],
+          "reasoning_logic": "将k表达式代入波函数。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "无限深势阱中粒子的波函数为：ψ(x) = A sin(√(2mE/ħ²) * x)，能量谱为：E_n = ħ²n²π²/(2ma²)。",
+        "parents": [
+          "I_12",
+          "I_13"
+        ],
+        "reasoning_logic": "综合波函数和能量谱得出最终陈述。"
+      }
+    }
+  }
+}

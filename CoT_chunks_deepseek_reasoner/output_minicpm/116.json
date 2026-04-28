@@ -1,0 +1,169 @@
+{
+  "id": 116,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "一维薛定谔方程描述了粒子在势能为零的势阱中的运动。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "对于无限深势阱，势能函数为零。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "薛定谔方程可以简化为：\\[ -\\frac{\\hbar^2}{2m} \\frac{d^2\\psi(x)}{dx^2} = E\\psi(x) \\]"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "由于势阱是无限深的，粒子在势阱内的运动是周期性的。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "波函数在x=0处必须为零。"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "波函数在x=a处必须为零。"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "对于无限深势阱，波函数的形式为：\\[ \\psi(x) = A \\sin(kx) \\]"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将波函数\\[ \\psi(x) = A \\sin(kx) \\]代入薛定谔方程，得到：\\[ -\\frac{\\hbar^2}{2m} \\left( k^2 A \\sin(kx) \\right) = E A \\sin(kx) \\]",
+          "parents": [
+            "C_3",
+            "C_7"
+          ],
+          "reasoning_logic": "引用薛定谔方程和波函数形式进行代入。"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "解方程得到：\\[ k^2 = \\frac{2mE}{\\hbar^2} \\]",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "通过代数变换解方程。"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "波数k表示为：\\[ k = \\sqrt{\\frac{2mE}{\\hbar^2}} \\]",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "从k^2表达式开方得到k。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "波函数在x=0处：\\[ \\psi(0) = A \\sin(0) = 0 \\]，满足边界条件。",
+          "parents": [
+            "C_7",
+            "C_5"
+          ],
+          "reasoning_logic": "将x=0代入波函数形式，并利用sin(0)=0验证。"
+        },
+        {
+          "id": "I_5",
+          "type": "条件转化",
+          "content": "波函数在x=a处：\\[ \\psi(a) = A \\sin(\\sqrt{\\frac{2mE}{\\hbar^2}} a) = 0 \\]，需要满足边界条件。",
+          "parents": [
+            "C_7",
+            "C_6",
+            "I_3"
+          ],
+          "reasoning_logic": "将x=a代入波函数形式，并使用k的表达式。"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "由于A ≠ 0，得出：\\[ \\sin(\\sqrt{\\frac{2mE}{\\hbar^2}} a) = 0 \\]",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "从ψ(a)=0且A≠0推导出正弦函数为零。"
+        },
+        {
+          "id": "I_7",
+          "type": "条件转化",
+          "content": "正弦函数为零的条件是：\\[ \\sqrt{\\frac{2mE}{\\hbar^2}} a = n\\pi \\]，其中n是整数。",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "利用sin(θ)=0时θ=nπ的性质。"
+        },
+        {
+          "id": "I_8",
+          "type": "数值计算",
+          "content": "波数k表示为：\\[ k = \\sqrt{\\frac{2mE}{\\hbar^2}} \\frac{n\\pi}{a} \\]",
+          "parents": [
+            "I_7"
+          ],
+          "reasoning_logic": "从条件√(2mE/ħ²) a = nπ推导出k的表达式。"
+        },
+        {
+          "id": "I_9",
+          "type": "条件转化",
+          "content": "能量E可以表示为：\\[ E = \\frac{\\hbar^2 k^2}{2m} \\]",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "从k² = 2mE/ħ²重新排列得到。"
+        },
+        {
+          "id": "I_10",
+          "type": "数值计算",
+          "content": "将k的表达式代入\\[ E = \\frac{\\hbar^2 k^2}{2m} \\]，得到：\\[ E = \\frac{\\hbar^2 \\left( \\sqrt{\\frac{2mE}{\\hbar^2}} \\frac{n\\pi}{a} \\right)^2}{2m} \\]",
+          "parents": [
+            "I_8",
+            "I_9"
+          ],
+          "reasoning_logic": "代入k进行代数运算。"
+        },
+        {
+          "id": "I_11",
+          "type": "数值计算",
+          "content": "简化表达式得到：\\[ E = \\frac{\\hbar^2 n^2 \\pi^2}{2ma^2} \\]",
+          "parents": [
+            "I_10"
+          ],
+          "reasoning_logic": "执行平方和化简。"
+        },
+        {
+          "id": "I_12",
+          "type": "综合归纳",
+          "content": "能量谱表示为：\\[ E_n = \\frac{\\hbar^2 n^2 \\pi^2}{2ma^2} \\]",
+          "parents": [
+            "I_11"
+          ],
+          "reasoning_logic": "定义能量谱En。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "无限深势阱中粒子的波函数为：\\[ \\psi(x) = A \\sin(\\sqrt{\\frac{2mE}{\\hbar^2}} x) \\]，能量谱为：\\[ E_n = \\frac{\\hbar^2 n^2 \\pi^2}{2ma^2} \\]",
+        "parents": [
+          "I_3",
+          "I_12"
+        ],
+        "reasoning_logic": "综合波函数和能量谱推导，得出最终陈述。"
+      }
+    }
+  }
+}

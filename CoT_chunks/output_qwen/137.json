@@ -1,0 +1,80 @@
+{
+  "id": 137,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目定义变量 $X_t = \\sin(B_t)$。",
+          "reasoning_logic": "从题目文本中提取变量定义。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "$B_t$ 是标准布朗运动，其初始值为 0，且对于任意 $s < t$，增量 $B_t - B_s$ 服从均值为 0、方差为 $t-s$ 的正态分布。",
+          "reasoning_logic": "引用标准布朗运动的定义和性质。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "根据布朗运动的性质，对于所有 $t \\geq 0$，$B_t$ 的期望值 $\\mathbb{E}[B_t] = 0$。",
+          "reasoning_logic": "引用布朗运动期望值的性质。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "正弦函数 $\\sin(x)$ 是奇函数，满足 $\\sin(-x) = -\\sin(x)$。",
+          "reasoning_logic": "引用正弦函数的奇偶性定义。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "标准布朗运动 $B_t$ 在 $t \\geq 0$ 上的取值分布关于原点对称（因为其均值为 0 且服从正态分布）。",
+          "reasoning_logic": "基于正态分布均值为 0 推导出的对称性隐含前提。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "由于 $B_t$ 的分布关于原点对称，且 $\\sin(x)$ 是奇函数，因此随机变量 $\\sin(B_t)$ 的分布也关于原点对称。",
+          "parents": [
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "结合奇函数性质与变量分布的对称性进行定性推理。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "对于关于原点对称分布的随机变量，其期望值为 0，即 $\\mathbb{E}[\\sin(B_t)] = 0$。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "利用对称分布的期望值性质得出结论。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "验证逻辑：$\\mathbb{E}[\\sin(B_t)] = -\\mathbb{E}[-\\sin(B_t)]$ 成立，进一步确认期望值为 0。",
+          "parents": [
+            "C_4",
+            "I_2"
+          ],
+          "reasoning_logic": "利用奇函数定义 $\\sin(-x) = -\\sin(x)$ 对期望值关系进行辅助验证。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "对于标准布朗运动 $B_t$，函数 $X_t = \\sin(B_t)$ 的期望值为 0，即 $\\mathbb{E}[X_t] = 0$。",
+        "parents": [
+          "I_2",
+          "I_3"
+        ],
+        "reasoning_logic": "综合上述对称性分析和奇函数性质推导，得出最终数学结论。"
+      }
+    }
+  }
+}

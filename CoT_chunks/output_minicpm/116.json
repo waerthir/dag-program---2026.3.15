@@ -1,0 +1,113 @@
+{
+  "id": 116,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "一维无限深势阱中，势能函数在势阱内为零。",
+          "reasoning_logic": "题目背景描述及物理模型定义"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "一维薛定谔方程在势能为零时简化为：-\\frac{\\hbar^2}{2m} \\frac{d^2\\psi(x)}{dx^2} = E\\psi(x)。",
+          "reasoning_logic": "基于 C_1 和薛定谔方程通用形式推导出的特定方程"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "无限深势阱的边界条件要求波函数在 x=0 和 x=a 处为零，即 \\psi(0) = 0 且 \\psi(a) = 0。",
+          "reasoning_logic": "题目给定的物理边界约束"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "满足上述边界条件的波函数形式假设为 \\psi(x) = A \\sin(kx)，其中 A 为归一化常数，k 为波数。",
+          "reasoning_logic": "基于边界条件提出的试探解形式"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将波函数 \\psi(x) = A \\sin(kx) 代入简化后的薛定谔方程，得到关系式 k^2 = \\frac{2mE}{\\hbar^2}。",
+          "parents": [
+            "C_2",
+            "C_4"
+          ],
+          "reasoning_logic": "执行代入操作并对比方程两边系数，建立 k 与 E 的关系"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "由 k^2 = \\frac{2mE}{\\hbar^2} 推导出波数表达式 k = \\sqrt{\\frac{2mE}{\\hbar^2}}。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "对代数式进行开方运算"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "应用边界条件 \\psi(a) = 0，代入波函数形式得到 A \\sin(ka) = 0。",
+          "parents": [
+            "C_3",
+            "C_4",
+            "I_2"
+          ],
+          "reasoning_logic": "将 x=a 代入波函数表达式并结合边界条件"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "由于 A \\neq 0，得出 \\sin(ka) = 0，进而推导出 ka = n\\pi（n 为整数）。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "根据正弦函数性质及非零振幅条件进行逻辑判断"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "结合 I_2 和 I_4 的结果，解得能量量子化条件：\\sqrt{\\frac{2mE}{\\hbar^2}} a = n\\pi。",
+          "parents": [
+            "I_2",
+            "I_4"
+          ],
+          "reasoning_logic": "联立波数定义式与边界条件导出的量化关系"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "求解能量 E，得到能量谱公式 E_n = \\frac{\\hbar^2 n^2 \\pi^2}{2ma^2}。",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "对 I_5 中的等式进行代数变形，孤立 E 并平方处理"
+        },
+        {
+          "id": "I_7",
+          "type": "综合归纳",
+          "content": "确定最终波函数表达式为 \\psi(x) = A \\sin(\\sqrt{\\frac{2mE}{\\hbar^2}} x)（或写为 \\psi_n(x) = A \\sin(\\frac{n\\pi x}{a})）。",
+          "parents": [
+            "C_4",
+            "I_6"
+          ],
+          "reasoning_logic": "将求得的 k 值或 E 值回代至初始波函数假设中，形成完整解"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "无限深势阱中粒子的波函数为 \\psi(x) = A \\sin(\\sqrt{\\frac{2mE}{\\hbar^2}} x)，能量谱为 E_n = \\frac{\\hbar^2 n^2 \\pi^2}{2ma^2}。",
+        "parents": [
+          "I_6",
+          "I_7"
+        ],
+        "reasoning_logic": "汇总计算得出的能量谱公式和确定的波函数形式，作为最终答案"
+      }
+    }
+  }
+}

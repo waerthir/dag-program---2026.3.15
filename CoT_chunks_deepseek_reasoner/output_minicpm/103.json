@@ -1,0 +1,229 @@
+{
+  "id": 103,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "时间无关的薛定谔方程是指薛定谔方程中不包含时间项的方程。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "对于一个粒子在势能为零的无限深方形势阱中的运动，其时间无关的薛定谔方程可以表示为：Hψ = Eψ。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "H是哈密顿算符。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "ψ是波函数。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "E是能量。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "对于一个在无限深方形势阱中的粒子，其波函数可以表示为：ψ(x) = A * sin(kx)。"
+        },
+        {
+          "id": "C_7",
+          "type": "文字信息",
+          "content": "A是归一化常数。"
+        },
+        {
+          "id": "C_8",
+          "type": "文字信息",
+          "content": "k是波数。"
+        },
+        {
+          "id": "C_9",
+          "type": "文字信息",
+          "content": "在无限深方形势阱中，V(x) = 0。"
+        },
+        {
+          "id": "C_10",
+          "type": "学科常识",
+          "content": "波函数必须归一化，即∫ |ψ(x)|² dx = 1。"
+        },
+        {
+          "id": "C_11",
+          "type": "学科常识",
+          "content": "sin²(kx) = (1 - cos(2kx))/2。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将波函数ψ(x) = A * sin(kx)代入时间无关的薛定谔方程Hψ = Eψ。",
+          "parents": [
+            "C_6",
+            "C_2"
+          ],
+          "reasoning_logic": "代入波函数形式到基本方程"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "哈密顿算符H = -ħ² / (2m) * (d²/dx²) + V(x)。",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "引用哈密顿算符的定义形式"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "由于V(x)=0，方程简化为-ħ² / (2m) * (d²ψ/dx²) = E * ψ(x)。",
+          "parents": [
+            "I_2",
+            "C_9"
+          ],
+          "reasoning_logic": "将V(x)=0代入哈密顿算符进行简化"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "将ψ(x) = A * sin(kx)代入简化方程：-ħ² / (2m) * (d²(sin(kx))/dx²) = E * A * sin(kx)。",
+          "parents": [
+            "I_1",
+            "I_3"
+          ],
+          "reasoning_logic": "将具体波函数代入简化后的方程"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "对sin(kx)求二阶导数得d²(sin(kx))/dx² = -k² * sin(kx)。",
+          "parents": [
+            "C_6"
+          ],
+          "reasoning_logic": "计算波函数中sin(kx)的二阶导数"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "将二阶导数结果代入方程：-ħ² / (2m) * (-k² * sin(kx)) = E * A * sin(kx)。",
+          "parents": [
+            "I_4",
+            "I_5"
+          ],
+          "reasoning_logic": "将导数结果代入方程"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "简化方程得E * A * sin(kx) = ħ² / (2m) * k² * sin(kx)。",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "整理方程项"
+        },
+        {
+          "id": "I_8",
+          "type": "逻辑推导",
+          "content": "由于sin(kx)不为零，两边除以sin(kx)得E * A = ħ² / (2m) * k²。",
+          "parents": [
+            "I_7"
+          ],
+          "reasoning_logic": "消去公共因子sin(kx)"
+        },
+        {
+          "id": "I_9",
+          "type": "条件转化",
+          "content": "归一化条件应用于波函数：∫ (A * sin(kx))^2 dx = 1。",
+          "parents": [
+            "C_10",
+            "C_6"
+          ],
+          "reasoning_logic": "将归一化条件代入波函数形式"
+        },
+        {
+          "id": "I_10",
+          "type": "数值计算",
+          "content": "展开归一化积分：A² * ∫ sin²(kx) dx = 1。",
+          "parents": [
+            "I_9"
+          ],
+          "reasoning_logic": "计算积分表达式"
+        },
+        {
+          "id": "I_11",
+          "type": "数值计算",
+          "content": "使用恒等式sin²(kx) = (1 - cos(2kx))/2，代入积分：A² * ∫ (1 - cos(2kx))/2 dx = 1。",
+          "parents": [
+            "I_10",
+            "C_11"
+          ],
+          "reasoning_logic": "应用三角恒等式简化积分"
+        },
+        {
+          "id": "I_12",
+          "type": "数值计算",
+          "content": "计算积分得A² * [x/2 - sin(2kx)/(2k)] evaluated from -∞ to ∞。",
+          "parents": [
+            "I_11"
+          ],
+          "reasoning_logic": "执行积分运算"
+        },
+        {
+          "id": "I_13",
+          "type": "逻辑推导",
+          "content": "由于sin(2kx)/(2k)在x→∞时趋近于0，得到A² * [∞ - 0] = 1。",
+          "parents": [
+            "I_12"
+          ],
+          "reasoning_logic": "处理积分极限"
+        },
+        {
+          "id": "I_14",
+          "type": "数值计算",
+          "content": "由A² * [∞ - 0] = 1得出A² = 1，因此A = 1。",
+          "parents": [
+            "I_13"
+          ],
+          "reasoning_logic": "解出归一化常数A"
+        },
+        {
+          "id": "I_15",
+          "type": "逻辑推导",
+          "content": "代入A=1到波函数得ψ(x) = sin(kx)。",
+          "parents": [
+            "I_14",
+            "C_6"
+          ],
+          "reasoning_logic": "将归一化常数代入波函数表达式"
+        },
+        {
+          "id": "I_16",
+          "type": "逻辑推导",
+          "content": "由E * A = ħ² / (2m) * k²和A=1得能量本征值E = ħ² * k² / (2m)。",
+          "parents": [
+            "I_8",
+            "I_14"
+          ],
+          "reasoning_logic": "结合能量方程和归一化结果"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "时间无关的薛定谔方程为Hψ = Eψ，波函数为ψ(x) = sin(kx)，能量本征值为E = ħ² * k² / (2m)。",
+        "parents": [
+          "C_2",
+          "I_15",
+          "I_16"
+        ],
+        "reasoning_logic": "总结所有推导结果得出最终陈述"
+      }
+    }
+  }
+}

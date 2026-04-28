@@ -1,0 +1,116 @@
+{
+  "id": 133,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目给出的极坐标方程为 r = \\sqrt{1 + \\cos(2\\theta)}"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "积分区间为 0 \\leq \\theta \\leq \\frac{\\pi\\sqrt{2}}{4}"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "极坐标曲线长度公式为 L = \\int \\sqrt{r^2 + (\\frac{dr}{d\\theta})^2} d\\theta"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "三角恒等式 \\sin^2(x) + \\cos^2(x) = 1"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "数值计算",
+          "content": "对 r = \\sqrt{1 + \\cos(2\\theta)} 求导得到 \\frac{dr}{d\\theta} = -\\sin(2\\theta) \\cdot \\frac{1}{\\sqrt{1 + \\cos(2\\theta)}}",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "应用链式法则对复合函数求导"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "计算导数的平方 (\\frac{dr}{d\\theta})^2 = \\frac{\\sin^2(2\\theta)}{1 + \\cos(2\\theta)}",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "对求导结果进行平方运算"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "将 r^2 和 (\\frac{dr}{d\\theta})^2 代入弧长公式构建被积表达式",
+          "parents": [
+            "C_1",
+            "I_2",
+            "C_3"
+          ],
+          "reasoning_logic": "代入已知量到通用公式中"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "通分合并被积函数根号内的项：\\frac{(1 + \\cos(2\\theta))^2 + \\sin^2(2\\theta)}{1 + \\cos(2\\theta)}",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "代数通分运算"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "展开分子并利用 \\cos^2(2\\theta) + \\sin^2(2\\theta) = 1 化简为 2 + 2\\cos(2\\theta)",
+          "parents": [
+            "I_4",
+            "C_4"
+          ],
+          "reasoning_logic": "展开多项式并应用三角恒等式消元"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "约分化简被积函数为 \\sqrt{\\frac{2(1 + \\cos(2\\theta))}{1 + \\cos(2\\theta)}} = \\sqrt{2}",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "提取公因式并约分"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "计算定积分 L = \\int_{0}^{\\frac{\\pi\\sqrt{2}}{4}} \\sqrt{2} d\\theta = \\sqrt{2} \\cdot \\frac{\\pi\\sqrt{2}}{4}",
+          "parents": [
+            "I_6",
+            "C_2"
+          ],
+          "reasoning_logic": "执行常数函数的定积分运算"
+        },
+        {
+          "id": "I_8",
+          "type": "数值计算",
+          "content": "计算最终乘积 \\sqrt{2} \\cdot \\frac{\\pi\\sqrt{2}}{4} = \\frac{2\\pi}{4} = \\frac{\\pi}{2}",
+          "parents": [
+            "I_7"
+          ],
+          "reasoning_logic": "执行算术乘法与约分"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "该极坐标曲线在给定区间的长度为 \\frac{\\pi}{2}",
+        "parents": [
+          "I_8"
+        ],
+        "reasoning_logic": "综合所有计算步骤得出最终答案"
+      }
+    }
+  }
+}

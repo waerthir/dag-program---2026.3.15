@@ -1,0 +1,145 @@
+{
+  "id": 108,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "题目要求解薛定谔方程。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "粒子质量为m。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "粒子被限制在一个边长为L的正方形势阱中。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "正方形势阱的边界条件是粒子在势阱边缘的势能为零。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "薛定谔方程的一般形式为：-ħ² / 2m ∂²ψ/∂x² = Eψ，其中ψ是波函数，E是能量。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "在x = 0和x = L处，ψ = 0。"
+        },
+        {
+          "id": "C_7",
+          "type": "文字信息",
+          "content": "在x = L/2和x = -L/2处，ψ = ψ₀（常数）。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "由于边界条件，波函数可以表示为：ψ(x) = A sin(kx) 或 ψ(x) = B cos(kx)。",
+          "parents": [
+            "C_4",
+            "C_5",
+            "C_6",
+            "C_7"
+          ],
+          "reasoning_logic": "根据边界条件和薛定谔方程形式，转化波函数表达式。"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "代入薛定谔方程：-ħ² / 2m (k²x²) = Eħ² / 2m (k²x²) = Eħ² / 2m k² = Eħ² / 2m k² = E。",
+          "parents": [
+            "C_5",
+            "I_1"
+          ],
+          "reasoning_logic": "将波函数表达式代入薛定谔方程。"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "解得k² = E / ħ²。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "从代入后的方程求解k²。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "因此，k = ±√(E/ħ²)。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "对k²开方得到k。"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "能量E = ħ² k² / (2m) = ħ² (±√(E/ħ²))² / (2m) = ħ² E / (2m)。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "将k代入能量表达式计算。"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "当k = √(E/ħ²)时，波函数为：ψ(x) = A sin(√(E/ħ²)x)。",
+          "parents": [
+            "I_4",
+            "I_1"
+          ],
+          "reasoning_logic": "根据k的正值推导波函数形式。"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "当k = -√(E/ħ²)时，波函数为：ψ(x) = B cos(√(E/ħ²)x)。",
+          "parents": [
+            "I_4",
+            "I_1"
+          ],
+          "reasoning_logic": "根据k的负值推导波函数形式。"
+        },
+        {
+          "id": "I_8",
+          "type": "综合归纳",
+          "content": "允许的能量状态为：E_n = ħ² n² / (2m)，其中n = 1, 2, 3, ...",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "从能量表达式归纳出能量状态公式。"
+        },
+        {
+          "id": "I_9",
+          "type": "综合归纳",
+          "content": "对应的波函数为：ψ_n(x) = A_n sin(√(E_n/ħ²)x) 或 ψ_n(x) = B_n cos(√(E_n/ħ²)x)，其中A_n和B_n为常数。",
+          "parents": [
+            "I_6",
+            "I_7",
+            "I_8"
+          ],
+          "reasoning_logic": "从波函数形式归纳出波函数公式。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "允许的能量状态为：E_n = ħ² n² / (2m)，其中n = 1, 2, 3, ...；对应的波函数为：ψ_n(x) = A_n sin(√(E_n/ħ²)x) 或 ψ_n(x) = B_n cos(√(E_n/ħ²)x)，其中A_n和B_n为常数。",
+        "parents": [
+          "I_8",
+          "I_9"
+        ],
+        "reasoning_logic": "综合能量状态和波函数得出最终陈述。"
+      }
+    }
+  }
+}

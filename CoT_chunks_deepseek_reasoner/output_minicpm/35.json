@@ -1,0 +1,107 @@
+{
+  "id": 35,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "人类女性体细胞中仅有一条X染色体保持活性。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "基因G编码G蛋白。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "等位基因g编码活性低的g蛋白。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "缺失G基因的个体会患某遗传病。"
+        },
+        {
+          "id": "C_5",
+          "type": "图像信息",
+          "content": "图示为该家族系谱图。"
+        },
+        {
+          "id": "C_6",
+          "type": "图像信息",
+          "content": "II-1不含g基因。"
+        },
+        {
+          "id": "C_7",
+          "type": "图像信息",
+          "content": "III-6的基因型为X^GX^G。"
+        },
+        {
+          "id": "C_8",
+          "type": "文字信息",
+          "content": "男性基因型为X^G Y。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "由III-6基因型X^GX^G，推导出其卵子均为X^G。",
+          "parents": [
+            "C_7"
+          ],
+          "reasoning_logic": "根据基因型确定配子类型。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "由男性基因型X^G Y，推导出其精子为X^G或Y，各概率1/2。",
+          "parents": [
+            "C_8"
+          ],
+          "reasoning_logic": "根据基因型确定配子类型和概率。"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "计算生出男孩的概率为1/2。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "男孩需要精子为Y，概率1/2。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "确定男孩基因型为X^G Y，不患病。",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "男孩从母亲得X^G，从父亲得Y，基因型X^G Y有G基因，不患病。"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "计算总概率为1/2。",
+          "parents": [
+            "I_3",
+            "I_4"
+          ],
+          "reasoning_logic": "总概率 = 生出男孩概率 * 男孩不患病概率 = 1/2 * 1 = 1/2。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "数值计算",
+        "content": "生出“不患该遗传病男孩”的概率是50%。",
+        "parents": [
+          "I_5"
+        ],
+        "reasoning_logic": "综合计算得出最终概率。"
+      }
+    }
+  }
+}

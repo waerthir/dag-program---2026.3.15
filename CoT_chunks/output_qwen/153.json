@@ -1,0 +1,85 @@
+{
+  "id": 153,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "题目给出 Vandermonde 矩阵 A 的形式为 m 行 n+1 列，元素为 x_i^j。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "题目条件指出 n < m - 1。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "题目指出 x_i 都是两两不同的数。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "若 x_i 两两不同，则 Vandermonde 矩阵的列向量线性无关，矩阵满秩（秩等于列数）。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "矩阵核（零空间）的维度公式为：行数 - 秩。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "由 x_i 两两不同，推导出矩阵 A 的列向量线性无关。",
+          "parents": [
+            "C_3",
+            "C_4"
+          ],
+          "reasoning_logic": "根据 Vandermonde 矩阵性质，底数互异则列线性无关。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "确定矩阵 A 的秩等于其列数 n + 1。",
+          "parents": [
+            "C_1",
+            "I_1"
+          ],
+          "reasoning_logic": "矩阵满秩意味着秩等于列数，列数为 n+1。"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "计算矩阵 A 的核的维度为 m - (n + 1)。",
+          "parents": [
+            "C_1",
+            "I_2",
+            "C_5"
+          ],
+          "reasoning_logic": "代入核维度公式：行数 m 减去秩 (n+1)。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "化简得出核的维度为 m - n - 1。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "执行代数减法运算 m - n - 1。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "矩阵 A 的核的维度为 m - n - 1。",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "综合上述推导步骤得出最终结论。"
+      }
+    }
+  }
+}

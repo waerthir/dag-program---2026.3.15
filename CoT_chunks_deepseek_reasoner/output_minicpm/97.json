@@ -1,0 +1,95 @@
+{
+  "id": 97,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "Vandermonde 矩阵 A 是一个 m × n 的矩阵。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "n < m - 1。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "矩阵的元素是 x_i 的幂次方，即 A_{ij} = x_i^j。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "题目给出的条件是 n < m - 1。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "题目给出的条件是 x_i 是相互独立的。"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "核的定义是矩阵 A 的零空间，即满足 A v = 0 的所有非零向量 v 的集合。"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "行列式的性质：如果 x_1, x_2, …, x_m, 1 是行列式的行列式，那么这个行列式为零。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "考虑 A v = 0 这个方程组，设 v = (v_0, v_1, …, v_n)^T，则有方程组：x_1^{0} v_0 + x_1^{1} v_1 + ... + x_1^{n} v_n = 0, ..., x_m^{0} v_0 + x_m^{1} v_1 + ... + x_m^{n} v_n = 0。",
+          "parents": [
+            "C_1",
+            "C_3",
+            "C_6"
+          ],
+          "reasoning_logic": "引用核定义和矩阵定义，建立线性方程组。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "假设 x_1, x_2, …, x_m 是 m 个不同的数。",
+          "parents": [
+            "C_5"
+          ],
+          "reasoning_logic": "由 x_i 相互独立，假设它们为不同的数。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "那么 x_1, x_2, …, x_m, 1 是 m+1 个不同的数。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "基于假设，添加1后仍为不同数。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "根据行列式的性质，如果 x_1, x_2, …, x_m, 1 是行列式的行列式，那么这个行列式为零。",
+          "parents": [
+            "C_7",
+            "I_3"
+          ],
+          "reasoning_logic": "引用行列式性质，应用到假设的数上。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "Vandermonde 矩阵 A 的核是所有满足上述条件的非零向量 v 的集合。",
+        "parents": [
+          "I_1",
+          "I_4"
+        ],
+        "reasoning_logic": "综合方程组和行列式性质，得出核的最终陈述。"
+      }
+    }
+  }
+}

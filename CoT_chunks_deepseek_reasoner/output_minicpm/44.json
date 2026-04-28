@@ -1,0 +1,94 @@
+{
+  "id": 44,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "青蒿素主要在叶片的腺毛中合成与积累"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "SA调控miR160的表达量"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "MeJA调控miR160的表达量"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "调控miR160的表达量影响黄花蒿腺毛密度"
+        },
+        {
+          "id": "C_5",
+          "type": "文字条件",
+          "content": "调控miR160的表达量影响青蒿素含量"
+        },
+        {
+          "id": "C_6",
+          "type": "文字条件",
+          "content": "miR160的一种靶mRNA编码ARF1蛋白"
+        },
+        {
+          "id": "C_7",
+          "type": "文字条件",
+          "content": "ARF1蛋白影响青蒿素合成关键基因DBR2的表达"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "由SA和MeJA调控miR160的表达量，推导出SA→miR160的关系",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "基于SA和MeJA调控miR160表达量的事实，建立SA到miR160的调控链"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "由miR160的靶mRNA编码ARF1蛋白，推导出miR160→ARF1的关系",
+          "parents": [
+            "C_6"
+          ],
+          "reasoning_logic": "基于miR160靶mRNA编码ARF1蛋白的事实，建立miR160到ARF1的调控链"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "由ARF1蛋白影响DBR2的表达，推导出ARF1→DBR2的关系",
+          "parents": [
+            "C_7"
+          ],
+          "reasoning_logic": "基于ARF1蛋白影响DBR2表达的事实，建立ARF1到DBR2的调控链"
+        },
+        {
+          "id": "I_4",
+          "type": "综合归纳",
+          "content": "综合SA→miR160、miR160→ARF1、ARF1→DBR2，得出通路SA→miR160→ARF1→DBR2",
+          "parents": [
+            "I_1",
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "整合所有推导关系，形成完整的调控通路"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "SA→miR160→ARF1→DBR2",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "基于综合归纳的通路，得出最终答案"
+      }
+    }
+  }
+}

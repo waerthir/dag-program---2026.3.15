@@ -1,0 +1,136 @@
+{
+  "id": 174,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目给出波函数形式为 ψ(x) = Ax(L-x)。",
+          "reasoning_logic": "从题目文本直接提取已知条件。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "波函数定义在区间 0 ≤ x ≤ L 内。",
+          "reasoning_logic": "从题目文本直接提取已知条件。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "量子力学中波函数的归一化条件要求 ∫|ψ(x)|²dx = 1。",
+          "reasoning_logic": "引用量子力学基本公理。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "代数展开公式 (L-x)² = L² - 2Lx + x²。",
+          "reasoning_logic": "引用基础代数恒等式。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "幂函数积分公式 ∫xⁿdx = xⁿ⁺¹/(n+1)。",
+          "reasoning_logic": "引用微积分基本定理。"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "一维无限深势阱中粒子能量公式 E_n = (ħ²k_n²)/(2m)，其中 k_n = nπ/L。",
+          "reasoning_logic": "引用量子力学势阱模型结论。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "建立归一化积分方程：∫₀ᴸ [Ax(L-x)]² dx = 1。",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "将具体波函数形式代入归一化条件定义。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "被积函数展开为 A²(L²x² - 2Lx³ + x⁴)。",
+          "parents": [
+            "C_1",
+            "C_4"
+          ],
+          "reasoning_logic": "利用代数展开公式处理被积函数中的平方项。"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "计算积分结果为 A²(L⁵/3 - L⁵/2 + L⁵/5)。",
+          "parents": [
+            "I_2",
+            "C_5"
+          ],
+          "reasoning_logic": "对展开后的多项式逐项执行积分运算并代入上下限。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "合并同类项得到积分值为 A²L⁵/30。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "执行分数加减运算 (1/3 - 1/2 + 1/5 = 1/30)。"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "解得归一化常数 A = √30 / L^(5/2)。",
+          "parents": [
+            "I_4",
+            "C_3"
+          ],
+          "reasoning_logic": "令积分结果等于 1，求解关于 A 的方程。"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "判定该波函数对应第一能级，即 n=1。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "根据波函数形式特征（无节点，线性组合）推断量子数 n。"
+        },
+        {
+          "id": "I_7",
+          "type": "条件转化",
+          "content": "确定基态波数 k₁ = π/L。",
+          "parents": [
+            "I_6",
+            "C_6"
+          ],
+          "reasoning_logic": "将 n=1 代入波数通式。"
+        },
+        {
+          "id": "I_8",
+          "type": "数值计算",
+          "content": "计算得到能量 E₁ = (ħ²π²)/(2mL²)。",
+          "parents": [
+            "I_7",
+            "C_6"
+          ],
+          "reasoning_logic": "将 k₁ 代入能量公式进行计算。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "归一化常数 A 为 √30/L^(5/2)，粒子的能量为 ħ²π²/(2mL²)。",
+        "parents": [
+          "I_5",
+          "I_8"
+        ],
+        "reasoning_logic": "汇总归一化常数和能量的计算结果得出最终答案。"
+      }
+    }
+  }
+}

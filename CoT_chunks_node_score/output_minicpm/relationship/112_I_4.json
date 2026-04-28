@@ -1,0 +1,9 @@
+{
+  "id": "112_I_4",
+  "evaluation": {
+    "Dependency_Completeness": 7,
+    "Dependency_Accuracy": 6,
+    "Reasoning_Logic_Accuracy": 5,
+    "Reasoning_Type_Accuracy": 10
+  }
+}

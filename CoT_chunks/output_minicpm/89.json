@@ -1,0 +1,104 @@
+{
+  "id": 89,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目要求计算极限表达式：lim_{t->0}(1/ln(1+t) + 1/ln(1-t))"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "当 t 趋近于 0 时，1+t 趋近于 1"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "ln(1) 的值为 0"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "当 t 趋近于 0 时，1-t 趋近于 1"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "1 除以趋近于 0 的正数结果为正无穷"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "将原极限表达式拆分为两个部分之和：lim(1/ln(1+t)) + lim(1/ln(1-t))",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "根据极限的线性性质尝试拆分（注：此处遵循思维链逻辑，尽管数学上需验证收敛性）"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "推导得出当 t->0 时，ln(1+t) 趋近于 0",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "结合 t->0 时 1+t->1 以及 ln(1)=0 进行推导"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "计算得出 lim_{t->0}(1/ln(1+t)) = ∞",
+          "parents": [
+            "I_2",
+            "C_5"
+          ],
+          "reasoning_logic": "基于分母趋近于 0 的性质，判定该分项极限为正无穷"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "推导得出当 t->0 时，ln(1-t) 趋近于 0",
+          "parents": [
+            "C_4",
+            "C_3"
+          ],
+          "reasoning_logic": "结合 t->0 时 1-t->1 以及 ln(1)=0 进行推导"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "计算得出 lim_{t->0}(1/ln(1-t)) = ∞",
+          "parents": [
+            "I_4",
+            "C_5"
+          ],
+          "reasoning_logic": "基于分母趋近于 0 的性质，判定该分项极限为正无穷（遵循思维链逻辑）"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "计算两个极限结果之和：∞ + ∞ = ∞",
+          "parents": [
+            "I_3",
+            "I_5"
+          ],
+          "reasoning_logic": "将两个分项的极限结果相加"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "给定极限的值为 ∞",
+        "parents": [
+          "I_6"
+        ],
+        "reasoning_logic": "综合上述计算步骤得出最终结论"
+      }
+    }
+  }
+}

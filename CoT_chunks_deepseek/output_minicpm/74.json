@@ -1,0 +1,99 @@
+{
+  "id": 74,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "tan x = sin x / cos x"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "当 x 趋近于 0 时，sin x ≈ x"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "当 x 趋近于 0 时，cos x ≈ 1"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "tan x ≈ x / 1",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "将 sin x 和 cos x 的近似值代入 tan x 的表达式"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "tan x ≈ x",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "计算 x / 1 的值"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "tan^2 x ≈ x^2",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "计算 tan x 的平方"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "1 / tan^2 x ≈ 1 / x^2",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "将 tan^2 x 的近似值代入 1 / tan^2 x 的表达式"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "1 / x^2 → ∞ 当 x → 0",
+          "parents": [],
+          "reasoning_logic": "计算 1 / x^2 在 x 趋近于 0 时的极限"
+        },
+        {
+          "id": "I_6",
+          "type": "对比分析",
+          "content": "1 / x^2 → ∞ 和 1 / tan^2 x ≈ 1 / x^2",
+          "parents": [
+            "I_4",
+            "I_5"
+          ],
+          "reasoning_logic": "比较 1 / x^2 和 1 / tan^2 x 在 x 趋近于 0 时的值"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "1 / x^2 - 1 / tan^2 x → 0 当 x → 0",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "计算 1 / x^2 - 1 / tan^2 x 在 x 趋近于 0 时的极限"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "lim_{x → 0} (1 / tan^2 x - 1 / x^2) = 0",
+        "parents": [
+          "I_7"
+        ],
+        "reasoning_logic": "综合得出最终极限值"
+      }
+    }
+  }
+}

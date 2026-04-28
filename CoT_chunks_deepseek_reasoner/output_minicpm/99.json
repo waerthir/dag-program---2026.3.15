@@ -1,0 +1,58 @@
+{
+  "id": 99,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "方程 \\(2x^2 + 5xy + 3y^2 - 2 = 0\\)"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "方程 \\(6x^2 + 8xy + 4y^2 - 3 = 0\\)"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "数值计算",
+          "content": "将两个方程相加得到 \\(8x^2 + 13xy + 7y^2 - 5 = 0\\)",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "执行加法运算"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "将 \\(8x^2 + 13xy + 7y^2 - 5\\) 写为 \\(8(x^2 + \\frac{13}{16}xy) + 7(y^2 - \\frac{5}{7}y^2) - 5\\)",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "代数变换"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "添加平方项得到 \\(8\\left(x^2 + \\frac{13}{16}xy + \\left(\\frac{13}{32}\\right)^2\\right) + 7\\left(y^2 - \\frac{5}{7}y^2 + \\left(\\frac{5}{14}\\right)^2\\right) - 5\\)",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "配方步骤"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "数值计算",
+        "content": "\\(8\\left(x^2 + \\frac{13}{32}xy + \\left(\\frac{13}{32}\\right)^2\\right) + 7\\left(y^2 - \\frac{5}{7}y^2 + \\left(\\frac{5}{14}\\right)^2\\right) - 5\\)",
+        "parents": [
+          "I_3"
+        ],
+        "reasoning_logic": "配方变换后表达式"
+      }
+    }
+  }
+}

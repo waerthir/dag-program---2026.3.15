@@ -1,0 +1,129 @@
+{
+  "id": 117,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "波函数 ψ(x)=3x(x-1)"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "区间 x=0 到 x=1"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "概率密度函数是波函数的绝对值的平方"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "|ψ(x)|² = (3x(x-1))² = 9x²(x-1)²",
+          "parents": [
+            "C_1",
+            "C_3"
+          ],
+          "reasoning_logic": "将波函数代入概率密度公式"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "P = ∫₀¹ 9x²(x-1)² dx",
+          "parents": [
+            "I_1",
+            "C_2"
+          ],
+          "reasoning_logic": "建立积分表达式"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "P = 9 ∫₀¹ x²(x² - 2x + 1) dx",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "展开平方项"
+        },
+        {
+          "id": "I_4",
+          "type": "条件转化",
+          "content": "P = 9 ∫₀¹ (x⁴ - 2x³ + x²) dx",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "分配乘法"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "∫₀¹ x⁴ dx = 1/5",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "计算第一个积分部分"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "∫₀¹ -2x³ dx = -1/2",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "计算第二个积分部分"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "∫₀¹ x² dx = 1/3",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "计算第三个积分部分"
+        },
+        {
+          "id": "I_8",
+          "type": "数值计算",
+          "content": "P = 9 (1/5 - 1/2 + 1/3)",
+          "parents": [
+            "I_5",
+            "I_6",
+            "I_7"
+          ],
+          "reasoning_logic": "代入积分结果"
+        },
+        {
+          "id": "I_9",
+          "type": "数值计算",
+          "content": "P = 9 (1/15)",
+          "parents": [
+            "I_8"
+          ],
+          "reasoning_logic": "计算括号内和"
+        },
+        {
+          "id": "I_10",
+          "type": "数值计算",
+          "content": "P = 9/15 = 3/5",
+          "parents": [
+            "I_9"
+          ],
+          "reasoning_logic": "简化分数"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "粒子在区间 x=0 到 x=1 内被找到的概率为 3/5",
+        "parents": [
+          "I_10"
+        ],
+        "reasoning_logic": "总结最终概率值"
+      }
+    }
+  }
+}

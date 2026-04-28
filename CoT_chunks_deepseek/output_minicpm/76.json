@@ -1,0 +1,106 @@
+{
+  "id": 76,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "题目中的极限表达式是 lim_{x→∞} (x!)^{1/x}"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "阶乘 x! 是从 1 到 x 的所有正整数的乘积"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "当 x=5 时，5!=120"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "当 x=10 时，10!=3,628,800"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "随着 x 的增大，x! 的增长速度非常快",
+          "parents": [
+            "C_2"
+          ],
+          "reasoning_logic": "根据阶乘的定义分析增长速度"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "x! 的增长速度比 x 快得多",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "比较阶乘与线性增长的速度"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "当 x→∞ 时，(x!)^{1/x} 的值会受到 x! 增长速度的影响",
+          "parents": [
+            "C_1",
+            "I_2"
+          ],
+          "reasoning_logic": "分析极限表达式的行为"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "当 x=5 时，120^{1/5}≈4.8",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "计算具体数值示例"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "当 x=10 时，3,628,800^{1/10}≈17.2",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "计算具体数值示例"
+        },
+        {
+          "id": "I_6",
+          "type": "对比分析",
+          "content": "随着 x 的增大，(x!)^{1/x} 的值也在增大",
+          "parents": [
+            "I_4",
+            "I_5"
+          ],
+          "reasoning_logic": "比较不同 x 值下的计算结果"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "当 x→∞ 时，(x!)^{1/x} 的值会趋向于无穷大",
+          "parents": [
+            "I_3",
+            "I_6"
+          ],
+          "reasoning_logic": "综合增长速度分析和数值趋势得出极限行为"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "lim_{x→∞} (x!)^{1/x}=∞",
+        "parents": [
+          "I_7"
+        ],
+        "reasoning_logic": "总结推理过程得出最终极限值"
+      }
+    }
+  }
+}

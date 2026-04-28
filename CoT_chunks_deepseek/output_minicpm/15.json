@@ -1,0 +1,69 @@
+{
+  "id": 15,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "科研人员将蚯蚓培养在浓度为 1 mg/kg 的 TBBPA 污染土壤中进行 30 天富集实验"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "科研人员将蚯蚓转至干净土壤进行 30 天排出实验"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "题目要求我们根据图示与题干信息回答第 15 天蚯蚓体内富集的 TBBPA 浓度约为初始土壤浓度的多少倍"
+        },
+        {
+          "id": "C_4",
+          "type": "图像信息",
+          "content": "图中第 15 天蚯蚓体内的 TBBPA 浓度约为初始土壤浓度的 10 倍"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "需要找到图中第 15 天蚯蚓体内的 TBBPA 浓度",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "根据题目要求"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "需要将第 15 天蚯蚓体内的 TBBPA 浓度与初始土壤浓度进行对比",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "根据题目要求"
+        },
+        {
+          "id": "I_3",
+          "type": "对比分析",
+          "content": "第 15 天蚯蚓体内的 TBBPA 浓度约为初始土壤浓度的 10 倍",
+          "parents": [
+            "C_4",
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "根据图示信息进行对比"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "第 15 天蚯蚓体内的 TBBPA 浓度约为初始土壤浓度的 10 倍",
+        "parents": [
+          "I_3"
+        ],
+        "reasoning_logic": "综合对比分析得出最终陈述"
+      }
+    }
+  }
+}

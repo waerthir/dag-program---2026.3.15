@@ -1,0 +1,82 @@
+{
+  "id": 95,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "表达式为 \\( \\log \\left| 1 + \\alpha + \\alpha^2 + \\alpha^3 - \\frac{1}{\\alpha} \\right| \\)"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "\\( \\alpha \\) 是一个五次单位根"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "\\( \\alpha \\) 满足方程 \\( \\alpha^5 - 1 = 0 \\)"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "五次单位根可以表示为 \\( \\alpha = e^{2\\pi i/5} \\) 或 \\( \\alpha = e^{4\\pi i/5} \\)"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "\\( e \\) 是自然对数的底数，\\( i \\) 是虚数单位"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "假设 \\( \\alpha = e^{2\\pi i/5} \\)",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "基于五次单位根的性质选择具体值"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "将 \\( \\alpha = e^{2\\pi i/5} \\) 代入表达式，得到 \\( \\log \\left| 1 + e^{2\\pi i/5} + (e^{2\\pi i/5})^2 + (e^{2\\pi i/5})^3 - \\frac{1}{e^{2\\pi i/5}} \\right| \\)",
+          "parents": [
+            "I_1",
+            "C_1"
+          ],
+          "reasoning_logic": "代入计算"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "简化表达式为 \\( \\log \\left| 1 + e^{2\\pi i/5} + e^{4\\pi i/5} + e^{6\\pi i/5} - \\frac{1}{e^{2\\pi i/5}} \\right| \\)",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "计算幂次并简化"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "注意到 \\( e^{2\\pi i/5} = e^{4\\pi i/5} = e^{6\\pi i/5} \\) 等",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "基于复数指数函数的周期性"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "表达式简化为 \\( \\log \\left| 1 + e^{2\\pi i/5} + e^{4\\pi i/5} + e^{6\\pi i/5} - \\frac{1}{e^{2\\pi i/5}} \\right| \\)",
+        "parents": [
+          "I_3"
+        ],
+        "reasoning_logic": "综合代入和简化步骤得出最终表达式"
+      }
+    }
+  }
+}

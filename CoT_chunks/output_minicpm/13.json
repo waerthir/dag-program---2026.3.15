@@ -1,0 +1,61 @@
+{
+  "id": 13,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目中提到蚯蚓被培养在浓度为 1 mg/kg 的 TBBPA 污染土壤中进行 30 天富集实验。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "题目中提到将蚯蚓转至干净土壤进行 30 天排出实验。"
+        },
+        {
+          "id": "C_3",
+          "type": "图像条件",
+          "content": "图中显示了蚯蚓体内 TBBPA 浓度随时间的变化曲线。"
+        },
+        {
+          "id": "C_4",
+          "type": "图像条件",
+          "content": "观察曲线可知，在约第 20 天后，蚯蚓体内 TBBPA 的浓度开始下降。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "对比分析",
+          "content": "根据曲线变化特征，确认在约第 20 天后蚯蚓体内 TBBPA 浓度呈现下降趋势。",
+          "parents": [
+            "C_3",
+            "C_4"
+          ],
+          "reasoning_logic": "对比曲线在不同时间段的变化斜率，识别出第 20 天后的下降特征。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "推断蚯蚓体内 TBBPA 浓度的下降是因为蚯蚓开始排出体内的 TBBPA。",
+          "parents": [
+            "I_1",
+            "C_2"
+          ],
+          "reasoning_logic": "结合排出实验的背景条件与浓度下降的现象进行因果推导。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "蚯蚓对 TBBPA 的富集在约第 20 天后呈现下降特征。",
+        "parents": [
+          "I_1",
+          "I_2"
+        ],
+        "reasoning_logic": "综合曲线变化的观察结果与排出机制的推导，得出最终结论。"
+      }
+    }
+  }
+}

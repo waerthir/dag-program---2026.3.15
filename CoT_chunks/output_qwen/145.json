@@ -1,0 +1,94 @@
+{
+  "id": 145,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目要求求解极限表达式：lim_{t->0}(1/ln(1+t) + 1/ln(1-t))"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "当 t 趋近于 0 时，ln(1+t) 和 ln(1-t) 均趋近于 0"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "引用洛必达法则处理不定式极限"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "导数公式：d/dt(ln(1+t)) = 1/(1+t)"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "导数公式：d/dt(ln(1-t)) = -1/(1-t)"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "确定直接代入 t=0 会导致分母趋向于 0，属于需要处理的不定式形式",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "分析函数特性，确认极限形式"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "应用洛必达法则，将原极限转化为导数比值的极限形式",
+          "parents": [
+            "I_1",
+            "C_3"
+          ],
+          "reasoning_logic": "根据洛必达法则转换表达式结构"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "计算得到变换后的表达式为：lim_{t->0}((1+t) - (1-t))",
+          "parents": [
+            "I_2",
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "代入导数公式并简化分式结构"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "简化代数式得到：lim_{t->0}(2t)",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "执行代数运算 (1+t)-(1-t) = 2t"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "计算得出极限值为 0",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "将 t=0 代入 2t 进行计算"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "当 t 趋近于 0 时，整个表达式趋近于 0，最终答案为 0",
+        "parents": [
+          "I_5"
+        ],
+        "reasoning_logic": "综合上述推导步骤得出最终结论"
+      }
+    }
+  }
+}

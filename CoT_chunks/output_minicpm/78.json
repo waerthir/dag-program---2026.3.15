@@ -1,0 +1,72 @@
+{
+  "id": 78,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "A 是 X 的一个有限子集。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "设 |A| = n，其中 n 是 A 的元素个数。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "x 和 y 是 X 中的两个元素。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "x 不在 A 中。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字条件",
+          "content": "y 不在 A 中。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字条件",
+          "content": "定义集合 B = {x, y} ∪ A。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "x 和 y 是两个互异且不属于 A 的元素。",
+          "parents": [
+            "C_3",
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "根据题目描述，x 和 y 是 X 中两个不在 A 中的元素，隐含它们构成一个基数为 2 的集合且与 A 不相交。"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "计算出 |B| = n + 2。",
+          "parents": [
+            "C_2",
+            "C_6",
+            "I_1"
+          ],
+          "reasoning_logic": "根据集合并集的基数公式，由于 {x, y} 与 A 不相交，故 |B| = |{x, y}| + |A| = 2 + n。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "|B| = |A| + 2。",
+        "parents": [
+          "I_2"
+        ],
+        "reasoning_logic": "综合上述推导，得出 B 的元素个数等于 A 的元素个数加上 2。"
+      }
+    }
+  }
+}

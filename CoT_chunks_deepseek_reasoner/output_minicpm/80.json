@@ -1,0 +1,183 @@
+{
+  "id": 80,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "等比数列是指每一项与前一项的比值相等的数列。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "公比大于1。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "项从集合{100,101,...,1000}中选取。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "集合中的最大值是1000。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "集合中的最小值是100。"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "等比数列的通项公式为 a_n = a_1 * r^(n-1)。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "尝试将100作为首项，1000作为末项。",
+          "parents": [
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "基于最大值和最小值设置首末项。"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "引用等比数列通项公式，并设置目标找到n使得a_n=1000。",
+          "parents": [
+            "C_6",
+            "I_1"
+          ],
+          "reasoning_logic": "应用通项公式并定义目标。"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "代入100和1000得到方程100 * r^(n-1) = 1000。",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "将首项和末项代入通项公式。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "解方程得到r^(n-1) = 10。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "简化方程。"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "进一步得到r = 10^(1/(n-1))。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "解出公比r的表达式。"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "由r = 10^(1/(n-1))和公比大于1，推导出10^(1/(n-1)) > 1。",
+          "parents": [
+            "I_5",
+            "C_2"
+          ],
+          "reasoning_logic": "应用公比大于1的条件。"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "由10^(1/(n-1)) > 1推导出1/(n-1) > 0。",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "数学不等式推导。"
+        },
+        {
+          "id": "I_8",
+          "type": "逻辑推导",
+          "content": "由1/(n-1) > 0推导出n-1 > 0。",
+          "parents": [
+            "I_7"
+          ],
+          "reasoning_logic": "进一步推导。"
+        },
+        {
+          "id": "I_9",
+          "type": "逻辑推导",
+          "content": "由n-1 > 0推导出n > 1。",
+          "parents": [
+            "I_8"
+          ],
+          "reasoning_logic": "得出n的条件。"
+        },
+        {
+          "id": "I_10",
+          "type": "综合归纳",
+          "content": "需要找到n满足10^(1/(n-1)) > 1和100 * r^(n-1) = 1000。",
+          "parents": [
+            "I_5",
+            "I_9"
+          ],
+          "reasoning_logic": "综合公比条件和方程条件。"
+        },
+        {
+          "id": "I_11",
+          "type": "数值计算",
+          "content": "当n=3时，r = 10^(1/2) = √10。",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "代入n=3计算公比。"
+        },
+        {
+          "id": "I_12",
+          "type": "数值计算",
+          "content": "计算100 * (√10)^2 = 100 * 10 = 1000。",
+          "parents": [
+            "I_1",
+            "I_11"
+          ],
+          "reasoning_logic": "验证方程成立。"
+        },
+        {
+          "id": "I_13",
+          "type": "逻辑推导",
+          "content": "由n=3和r=√10，推导出等比数列为{100, 100√10, 1000√10}。",
+          "parents": [
+            "I_11",
+            "I_1"
+          ],
+          "reasoning_logic": "构建等比数列。"
+        },
+        {
+          "id": "I_14",
+          "type": "逻辑推导",
+          "content": "数列长度为3。",
+          "parents": [
+            "I_13"
+          ],
+          "reasoning_logic": "从数列得出项数。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案为3。",
+        "parents": [
+          "I_14"
+        ],
+        "reasoning_logic": "综合得出最终答案。"
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": 15,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目提到科研人员将蚯蚓培养在浓度为 1 mg/kg 的 TBBPA 污染土壤中。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "题目提到进行了 30 天富集实验，随后进行 30 天排出实验。"
+        },
+        {
+          "id": "C_3",
+          "type": "图像条件",
+          "content": "图中显示第 15 天蚯蚓体内的 TBBPA 浓度数据。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "题目要求计算第 15 天蚯蚓体内富集的 TBBPA 浓度约为初始土壤浓度的多少倍。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "对比分析",
+          "content": "从图中读取第 15 天蚯蚓体内的 TBBPA 浓度数值，并与初始土壤浓度 1 mg/kg 进行对比。",
+          "parents": [
+            "C_1",
+            "C_3"
+          ],
+          "reasoning_logic": "根据图示数据提取第 15 天的浓度值，并将其与题干给出的初始浓度进行比较。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "根据图示，第 15 天蚯蚓体内的 TBBPA 浓度约为初始土壤浓度的 10 倍。",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "综合对比分析的结果，得出最终倍数关系。"
+      }
+    }
+  }
+}

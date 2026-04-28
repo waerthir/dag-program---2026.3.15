@@ -1,0 +1,146 @@
+{
+  "id": 167,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目描述粒子处于宽度为 0.3 纳米的一维无限势阱中"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "薛定谔方程的形式为：-\\frac{\\hbar^2}{2m} \\frac{d^2\\psi(x)}{dx^2} + V(x)\\psi(x) = E\\psi(x)"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "对于一维无限势阱，势能 V(x) 在势阱内部为 0，在势阱外部为无穷大"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "微分方程 \\frac{d^2\\psi(x)}{dx^2} = -k^2\\psi(x) 的通解形式为 \\psi(x) = A\\sin(kx) + B\\cos(kx)"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "波函数必须在势阱边界处连续且为零"
+        },
+        {
+          "id": "C_6",
+          "type": "文字条件",
+          "content": "势阱边界位置为 x = 0 和 x = L（其中 L=0.3nm）"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "三角函数性质：若 \\sin(\\theta) = 0，则 \\theta = n\\pi，其中 n 为正整数"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "在势阱内部，薛定谔方程简化为 -\\frac{\\hbar^2}{2m} \\frac{d^2\\psi(x)}{dx^2} = E\\psi(x)",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "将势阱内部 V(x)=0 的条件代入薛定谔方程"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "方程进一步变形为 \\frac{d^2\\psi(x)}{dx^2} = -\\frac{2mE}{\\hbar^2}\\psi(x)",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "对简化后的方程进行代数变形"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "定义 k = \\sqrt{\\frac{2mE}{\\hbar^2}}，得到通解 \\psi(x) = A\\sin(kx) + B\\cos(kx)",
+          "parents": [
+            "I_2",
+            "C_4"
+          ],
+          "reasoning_logic": "识别方程形式并应用通解公式"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "由边界条件 \\psi(0) = 0 推导出 B = 0",
+          "parents": [
+            "I_3",
+            "C_5",
+            "C_6"
+          ],
+          "reasoning_logic": "将 x=0 代入通解并利用 \\sin(0)=0, \\cos(0)=1 计算"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "由边界条件 \\psi(L) = 0 推导出 A\\sin(kL) = 0",
+          "parents": [
+            "I_3",
+            "I_4",
+            "C_5",
+            "C_6"
+          ],
+          "reasoning_logic": "将 x=L 和 B=0 代入通解"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "为了满足非零解，必须满足 \\sin(kL) = 0，进而得出 kL = n\\pi",
+          "parents": [
+            "I_5",
+            "C_7"
+          ],
+          "reasoning_logic": "根据正弦函数零点性质推导 k 与 L 的关系"
+        },
+        {
+          "id": "I_7",
+          "type": "条件转化",
+          "content": "解得 k = \\frac{n\\pi}{L}",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "从 kL=n\\pi 解出 k 的表达式"
+        },
+        {
+          "id": "I_8",
+          "type": "数值计算",
+          "content": "将 k 代入能量公式得到 E_n = \\frac{\\hbar^2(n\\pi/L)^2}{2m}",
+          "parents": [
+            "I_7",
+            "I_3"
+          ],
+          "reasoning_logic": "利用 k 的定义式反推能量 E 的表达式"
+        },
+        {
+          "id": "I_9",
+          "type": "数值计算",
+          "content": "代入 L=0.3nm，得到最终能量级表达式 E_n = \\frac{\\hbar^2(n\\pi/0.3nm)^2}{2m}",
+          "parents": [
+            "I_8",
+            "C_1"
+          ],
+          "reasoning_logic": "将题目给定的宽度数值代入通用公式"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "粒子在宽度为 0.3 纳米的一维无限势阱中的能量级为：E_n = \\frac{\\hbar^2(n\\pi/0.3nm)^2}{2m}",
+        "parents": [
+          "I_9"
+        ],
+        "reasoning_logic": "综合上述推导步骤得出最终结论"
+      }
+    }
+  }
+}

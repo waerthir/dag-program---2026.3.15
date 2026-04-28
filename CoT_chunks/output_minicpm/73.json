@@ -1,0 +1,73 @@
+{
+  "id": 73,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "给定的微分方程是：(x^2D^2 + xD + 1)y = sin(2log x)sin(log x)"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "D 是微分算子，表示对 y 关于 x 的一阶导数"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "三角恒等式：sin(2θ) = 2sin(θ)cos(θ)"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将 sin(2log x)sin(log x) 展开为 2sin(log x)cos(log x)sin(log x)",
+          "parents": [
+            "C_1",
+            "C_3"
+          ],
+          "reasoning_logic": "应用二倍角公式 sin(2θ) = 2sin(θ)cos(θ)，其中 θ = log x"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "将展开式化简为 2sin^2(log x)/cos(2log x)",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "模型推理中将乘积项除以 cos(2log x) 进行变形（忠实还原原文逻辑）"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "将原微分方程右侧替换为变形后的表达式，得到 (x^2D^2 + xD + 1)y = 2sin^2(log x)/cos(2log x)",
+          "parents": [
+            "C_1",
+            "I_2"
+          ],
+          "reasoning_logic": "代入计算结果改写微分方程"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "确定该形式即为所求的辅助方程形式",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "根据模型陈述，认定改写后的方程即为辅助方程"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "给定的微分方程的辅助方程为：(x^2D^2 + xD + 1)y = 2sin^2(log x)/cos(2log x)",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "综合上述推导步骤得出最终陈述"
+      }
+    }
+  }
+}

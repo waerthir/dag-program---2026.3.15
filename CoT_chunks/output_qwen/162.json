@@ -1,0 +1,120 @@
+{
+  "id": 162,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目描述粒子位于一维无限深势阱中，势阱长度为 L。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "量子力学中，粒子行为由薛定谔方程描述：\\( \\hat{H} \\psi(x) = E \\psi(x) \\)。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "无限深势阱中，势能 V(x) 在 0 到 L 区间内为 0，在其他区域为无穷大。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "无限深势阱的哈密顿算符简化为：\\( \\hat{H} = -\\frac{\\hbar^2}{2m} \\frac{d^2}{dx^2} \\)。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "无限深势阱的边界条件要求波函数在边界处为零：\\( \\psi(0) = 0 \\) 且 \\( \\psi(L) = 0 \\)。"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "二阶常系数线性微分方程的通解形式可设为：\\( \\psi(x) = A \\sin(kx) + B \\cos(kx) \\)。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将哈密顿算符代入薛定谔方程得到微分方程：\\( -\\frac{\\hbar^2}{2m} \\frac{d^2 \\psi(x)}{dx^2} = E \\psi(x) \\)。",
+          "parents": [
+            "C_2",
+            "C_4"
+          ],
+          "reasoning_logic": "根据薛定谔方程定义，代入特定势阱下的哈密顿算符形式。"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "利用边界条件 \\( \\psi(0) = 0 \\) 代入通解，推导出 \\( B = 0 \\)。",
+          "parents": [
+            "C_5",
+            "C_6"
+          ],
+          "reasoning_logic": "将 x=0 代入通解公式，利用 \\( \\sin(0)=0 \\) 和 \\( \\cos(0)=1 \\) 进行计算。"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "利用边界条件 \\( \\psi(L) = 0 \\) 及 \\( B=0 \\) 的结果，推导出 \\( A \\sin(kL) = 0 \\)。",
+          "parents": [
+            "C_5",
+            "C_6",
+            "I_2"
+          ],
+          "reasoning_logic": "将 x=L 代入简化后的波函数 \\( \\psi(x) = A \\sin(kx) \\)。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "由 \\( A \\sin(kL) = 0 \\) 且 \\( A \\neq 0 \\)，推导出量子化条件 \\( kL = n\\pi \\) (n=1, 2, 3...)。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "根据正弦函数性质，非零解要求自变量为 \\( \\pi \\) 的整数倍。"
+        },
+        {
+          "id": "I_5",
+          "type": "条件转化",
+          "content": "由量子化条件推导出波数表达式：\\( k = \\frac{n\\pi}{L} \\)。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "对等式 \\( kL = n\\pi \\) 进行代数变形求解 k。"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "将波数 k 代入能量与波数的关系式，计算得到能量本征值表达式：\\( E_n = \\frac{n^2 \\pi^2 \\hbar^2}{2mL^2} \\)。",
+          "parents": [
+            "I_5",
+            "C_2"
+          ],
+          "reasoning_logic": "利用关系式 \\( E = \\frac{\\hbar^2 k^2}{2m} \\) 进行代换和平方运算。"
+        },
+        {
+          "id": "I_7",
+          "type": "条件转化",
+          "content": "确定归一化前的波函数形式为：\\( \\psi_n(x) = A \\sin\\left(\\frac{n\\pi x}{L}\\right) \\)。",
+          "parents": [
+            "C_6",
+            "I_2",
+            "I_5"
+          ],
+          "reasoning_logic": "将求得的 B=0 和 k 值代回通解表达式。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "粒子在无限深势阱中的可能能量水平为：\\( E_n = \\frac{n^2 \\pi^2 \\hbar^2}{2mL^2} \\quad (n = 1, 2, 3, ...) \\)。",
+        "parents": [
+          "I_6"
+        ],
+        "reasoning_logic": "综合上述推导步骤，得出最终的能量本征值公式。"
+      }
+    }
+  }
+}

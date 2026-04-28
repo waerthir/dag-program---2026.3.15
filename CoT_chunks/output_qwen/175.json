@@ -1,0 +1,177 @@
+{
+  "id": 175,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目描述粒子在宽度为 L 的一维无限深势阱中运动。",
+          "reasoning_logic": "提取题目初始设定"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "无限深势阱意味着粒子在势阱内势能为零，在势阱外势能无穷大，粒子只能在势阱内运动。",
+          "reasoning_logic": "引用无限深势阱的物理定义"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "一维无限深势阱的薛定谔方程为：-\\frac{\\hbar^2}{2m} \\frac{d^2 \\psi(x)}{dx^2} = E \\psi(x)。",
+          "reasoning_logic": "引用薛定谔方程公式"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "势阱的边界条件为 \\psi(0) = 0 和 \\psi(L) = 0。",
+          "reasoning_logic": "提取题目隐含或明确的边界约束"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "微分方程 \\frac{d^2 \\psi(x)}{dx^2} = -k^2 \\psi(x) 的通解形式为 \\psi(x) = A \\sin(kx) + B \\cos(kx)。",
+          "reasoning_logic": "引用二阶常系数线性微分方程的通解知识"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "波函数归一化条件为 \\int_0^L |\\psi_n(x)|^2 dx = 1。",
+          "reasoning_logic": "引用量子力学波函数归一化原理"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "积分公式 \\int_0^L \\sin^2\\left(\\frac{n\\pi x}{L}\\right) dx = \\frac{L}{2}。",
+          "reasoning_logic": "引用三角函数定积分结果"
+        },
+        {
+          "id": "C_8",
+          "type": "学科常识",
+          "content": "能量 E 与波数 k 的关系式为 E = \\frac{\\hbar^2 k^2}{2m}。",
+          "reasoning_logic": "引用能量与波数的物理关系"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将薛定谔方程简化为 \\frac{d^2 \\psi(x)}{dx^2} = -\\frac{2mE}{\\hbar^2} \\psi(x)。",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "对薛定谔方程进行代数变形"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "设 k^2 = \\frac{2mE}{\\hbar^2}，方程变为 \\frac{d^2 \\psi(x)}{dx^2} = -k^2 \\psi(x)。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "引入变量 k 简化方程形式"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "根据边界条件 \\psi(0) = 0，推导出 B = 0。",
+          "parents": [
+            "C_5",
+            "C_4"
+          ],
+          "reasoning_logic": "将 x=0 代入通解并利用边界条件求解系数 B"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "根据边界条件 \\psi(L) = 0 且 B=0，推导出 \\sin(kL) = 0。",
+          "parents": [
+            "C_5",
+            "C_4",
+            "I_3"
+          ],
+          "reasoning_logic": "将 x=L 代入简化后的波函数并利用边界条件"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "由 \\sin(kL) = 0 推导出 kL = n\\pi (n 为正整数)，即 k = \\frac{n\\pi}{L}。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "求解三角方程得到 k 的量子化条件"
+        },
+        {
+          "id": "I_6",
+          "type": "综合归纳",
+          "content": "确定未归一化的波函数形式为 \\psi_n(x) = A \\sin\\left(\\frac{n\\pi x}{L}\\right)。",
+          "parents": [
+            "I_3",
+            "I_5"
+          ],
+          "reasoning_logic": "结合系数 B=0 和 k 的值写出波函数表达式"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "利用归一化条件和积分结果，计算出 A = \\sqrt{\\frac{2}{L}}。",
+          "parents": [
+            "C_6",
+            "C_7",
+            "I_6"
+          ],
+          "reasoning_logic": "执行积分运算并求解归一化常数 A"
+        },
+        {
+          "id": "I_8",
+          "type": "综合归纳",
+          "content": "得出归一化的波函数为 \\psi_n(x) = \\sqrt{\\frac{2}{L}} \\sin\\left(\\frac{n\\pi x}{L}\\right)。",
+          "parents": [
+            "I_6",
+            "I_7"
+          ],
+          "reasoning_logic": "将归一化常数 A 代入波函数表达式"
+        },
+        {
+          "id": "I_9",
+          "type": "条件转化",
+          "content": "将 k = \\frac{n\\pi}{L} 代入能量公式，得到 E = \\frac{\\hbar^2 (n\\pi)^2}{2mL^2}。",
+          "parents": [
+            "C_8",
+            "I_5"
+          ],
+          "reasoning_logic": "代入 k 值推导能量的量子化表达式"
+        },
+        {
+          "id": "I_10",
+          "type": "对比分析",
+          "content": "确定当 n=1 时能量最小，即最低能量水平 E_1 = \\frac{\\hbar^2 \\pi^2}{2mL^2}。",
+          "parents": [
+            "I_9"
+          ],
+          "reasoning_logic": "分析 n 的取值对能量的影响，选取最小值 n=1"
+        },
+        {
+          "id": "I_11",
+          "type": "综合归纳",
+          "content": "确定基态 (n=1) 的归一化波函数为 \\psi_1(x) = \\sqrt{\\frac{2}{L}} \\sin\\left(\\frac{\\pi x}{L}\\right)。",
+          "parents": [
+            "I_8",
+            "I_10"
+          ],
+          "reasoning_logic": "将 n=1 代入归一化波函数通式"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "归一化的波函数为 \\psi_1(x) = \\sqrt{\\frac{2}{L}} \\sin\\left(\\frac{\\pi x}{L}\\right)，最低可能的能量水平为 E_1 = \\frac{\\hbar^2 \\pi^2}{2mL^2}。",
+        "parents": [
+          "I_11",
+          "I_10"
+        ],
+        "reasoning_logic": "综合基态波函数和最低能量的计算结果得出最终答案"
+      }
+    }
+  }
+}

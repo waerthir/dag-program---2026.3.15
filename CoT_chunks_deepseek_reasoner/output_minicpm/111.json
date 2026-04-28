@@ -1,0 +1,118 @@
+{
+  "id": 111,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "一维无限深势阱"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "宽度 \\( W = 0.3 \\) nm"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "Schrödinger 方程"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "对于一维无限深势阱，能量本征值公式为 \\( E_n = \\frac{\\hbar^2 \\omega_n^2}{2m} \\)"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "对于一维无限深势阱，角频率 \\( \\omega_n \\) 与波数 \\( k \\) 之间的关系为 \\( \\omega_n = \\frac{\\hbar k^2}{2m} \\)"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "波数 \\( k \\) 与势阱宽度 \\( W \\) 之间的关系为 \\( k = \\frac{2\\pi n}{W} \\)"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "对于一维无限深势阱，波函数 \\( \\psi(x) \\) 的形式为 \\( \\psi(x) = \\sqrt{\\frac{1}{L}} \\sin \\left( \\frac{n\\pi x}{L} \\right) \\)"
+        },
+        {
+          "id": "C_8",
+          "type": "学科常识",
+          "content": "对于波函数， \\( L = \\frac{W}{2} \\)"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将波数关系 \\( k = \\frac{2\\pi n}{W} \\) 代入能量本征值公式 \\( E_n = \\frac{\\hbar^2 \\omega_n^2}{2m} \\)",
+          "parents": [
+            "C_4",
+            "C_6"
+          ],
+          "reasoning_logic": "代入波数到能量公式"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "计算得到 \\( E_n = \\frac{\\hbar^2 \\pi^2 n^2}{2mW^2} \\)",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "执行代数化简"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "计算 \\( L = \\frac{W}{2} = \\frac{0.3}{2} = 0.15 \\) nm",
+          "parents": [
+            "C_2",
+            "C_8"
+          ],
+          "reasoning_logic": "根据L的定义计算数值"
+        },
+        {
+          "id": "I_4",
+          "type": "条件转化",
+          "content": "将 \\( L = 0.15 \\) nm 代入波函数 \\( \\psi(x) = \\sqrt{\\frac{1}{L}} \\sin \\left( \\frac{n\\pi x}{L} \\right) \\)，得到 \\( \\psi(x) = \\sqrt{\\frac{1}{0.15}} \\sin \\left( \\frac{n\\pi x}{0.15} \\right) \\)",
+          "parents": [
+            "C_7",
+            "I_3"
+          ],
+          "reasoning_logic": "代入L值到波函数"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "化简波函数表达式为 \\( \\sqrt{\\frac{2}{0.15}} \\sin \\left( \\frac{n\\pi x}{0.15} \\right) \\)",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "进行代数化简"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "进一步化简为 \\( \\frac{2}{\\sqrt{0.15}} \\sin \\left( \\frac{n\\pi x}{0.15} \\right) \\)",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "继续代数化简"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "能量本征值: \\( E_n = \\frac{\\hbar^2 \\pi^2 n^2}{2mW^2} \\); 波函数: \\( \\psi(x) = \\frac{2}{\\sqrt{0.15}} \\sin \\left( \\frac{n\\pi x}{0.15} \\right) \\)",
+        "parents": [
+          "I_2",
+          "I_6"
+        ],
+        "reasoning_logic": "综合能量和波函数的推导结果"
+      }
+    }
+  }
+}

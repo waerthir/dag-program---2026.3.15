@@ -1,0 +1,39 @@
+{
+  "id": 23,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目描述中使用 EdU 作为细胞 DNA 复制的标记。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "题目要求根据图示信息回答含 EdU 标记细胞比例越大的情况通常表示细胞处于什么状态。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "因为 EdU 是细胞 DNA 复制的标记，所以含 EdU 标记细胞比例越大，表示细胞处于 DNA 复制的状态。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "基于 EdU 作为 DNA 复制标记的定义进行直接推导。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "含 EdU 标记细胞比例越大，通常表示细胞处于 DNA 复制的状态。",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "综合上述推导得出最终结论。"
+      }
+    }
+  }
+}

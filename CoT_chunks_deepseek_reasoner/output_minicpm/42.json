@@ -1,0 +1,112 @@
+{
+  "id": 42,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "青蒿素主要在叶片的腺毛中合成与积累。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "青蒿素受到水杨酸（SA）和茉莉酸甲酯（MeJA）等植物激素的调节。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "miR160的表达量影响黄花蒿腺毛密度。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "miR160的表达量影响青蒿素含量。"
+        },
+        {
+          "id": "C_5",
+          "type": "图像信息",
+          "content": "根据图示，miR160的表达量与青蒿素含量呈现负相关关系。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "miR160的一种靶mRNA编码ARF1蛋白，ARF1蛋白影响青蒿素合成关键基因DBR2的表达。",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "分析miR160的靶mRNA和ARF1蛋白的关系。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "miR160表达量增加，青蒿素含量减少。",
+          "parents": [
+            "C_5"
+          ],
+          "reasoning_logic": "从负相关关系推导出miR160表达量增加时青蒿素含量减少。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "miR160表达量减少，青蒿素含量增加。",
+          "parents": [
+            "C_5"
+          ],
+          "reasoning_logic": "从负相关关系推导出miR160表达量减少时青蒿素含量增加。"
+        },
+        {
+          "id": "I_4",
+          "type": "综合归纳",
+          "content": "miR160的表达量与青蒿素含量呈现负相关性。",
+          "parents": [
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "总结miR160的表达量与青蒿素含量的负相关性。"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "MeJA通过调控miR160的表达量影响青蒿素含量。",
+          "parents": [
+            "C_2",
+            "C_4"
+          ],
+          "reasoning_logic": "结合激素调节和miR160影响，得出MeJA通过调控miR160影响青蒿素含量。"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "推测外源MeJA处理会增加miR160的表达量。",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "基于MeJA调控miR160表达量，推测外源处理会增加表达量。"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "外源MeJA处理会降低青蒿素含量。",
+          "parents": [
+            "I_6",
+            "I_2"
+          ],
+          "reasoning_logic": "从miR160表达量增加和负相关关系，推导出青蒿素含量降低。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "miR160的表达量与青蒿素含量呈现负相关性，外源MeJA处理会降低青蒿素含量。",
+        "parents": [
+          "I_4",
+          "I_7"
+        ],
+        "reasoning_logic": "综合负相关性推理和MeJA处理影响，得出最终结论。"
+      }
+    }
+  }
+}

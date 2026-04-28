@@ -1,0 +1,54 @@
+{
+  "id": 32,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "人类女性体细胞中仅有一条 X 染色体保持活性。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "基因 G 编码 G 蛋白，等位基因 g 编码活性低的 g 蛋白。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "缺失 G 基因的个体会患某遗传病。"
+        },
+        {
+          "id": "C_4",
+          "type": "图像条件",
+          "content": "图示为该家族系谱图。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字条件",
+          "content": "已知 II-1 不含 g 基因。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "对比分析",
+          "content": "观察系谱图发现 I-2 和 III-3 之间没有直接的血缘关系。",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "根据系谱图结构分析个体间的亲缘连接路径。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "III-3 个体的致病基因来源不来自 I-2。",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "基于 I-2 和 III-3 无直接血缘关系的观察结果，得出致病基因无法直接从 I-2 传递给 III-3 的结论。"
+      }
+    }
+  }
+}

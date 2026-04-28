@@ -1,0 +1,88 @@
+{
+  "id": 62,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "芽殖酵母通过出芽形成芽体进行无性繁殖"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "出芽与核DNA复制同时开始"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "一个母体细胞出芽达到最大次数后就会衰老、死亡"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "科学家探究了不同因素对芽殖酵母最大分裂次数的影响"
+        },
+        {
+          "id": "C_5",
+          "type": "图像信息",
+          "content": "实验结果如图2所示"
+        },
+        {
+          "id": "C_6",
+          "type": "图像信息",
+          "content": "图2显示了不同条件下芽殖酵母的最大分裂次数"
+        },
+        {
+          "id": "C_7",
+          "type": "图像信息",
+          "content": "图2的横轴表示不同的实验条件"
+        },
+        {
+          "id": "C_8",
+          "type": "图像信息",
+          "content": "图2的纵轴表示芽殖酵母的最大分裂次数"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "出芽与核DNA复制同时开始",
+          "parents": [
+            "C_2"
+          ],
+          "reasoning_logic": "引用题目信息"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "核DNA复制发生在细胞周期的分裂期",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "根据细胞周期常识推导"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "芽殖酵母开始出芽发生在细胞周期的分裂期",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "综合出芽与核DNA复制同时开始和核DNA复制发生在分裂期推导"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "芽殖酵母开始出芽发生在细胞周期的分裂期",
+        "parents": [
+          "I_3"
+        ],
+        "reasoning_logic": "得出最终陈述"
+      }
+    }
+  }
+}

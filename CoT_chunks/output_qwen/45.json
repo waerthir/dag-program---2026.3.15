@@ -1,0 +1,90 @@
+{
+  "id": 45,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "图像条件",
+          "content": "从图中可以看到，miR160 的相对表达量在不同处理下有所变化：对照组最高，MeJA 处理次之，SA 处理最低。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "miR160 的表达量与青蒿素含量呈负相关关系。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "在 miR160 基因过表达组中，青蒿素含量显著高于野生型和敲除 miR160 基因组。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "miR160 的靶 mRNA 编码 ARF1 蛋白。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字条件",
+          "content": "ARF1 蛋白影响 DBR2 基因的表达。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字条件",
+          "content": "在 ARF1 基因过表达组中，DBR2 基因的相对表达量显著升高，青蒿素含量也显著增加。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "对比分析",
+          "content": "miR160 的表达量降低有利于提高青蒿素含量。",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "基于负相关关系及过表达组与敲除组的青蒿素含量对比得出。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "降低 miR160 的表达量可以提高 DBR2 基因的表达水平，从而促进青蒿素的合成。",
+          "parents": [
+            "C_4",
+            "C_5",
+            "I_1"
+          ],
+          "reasoning_logic": "结合 miR160 靶向 ARF1、ARF1 影响 DBR2 以及 miR160 低表达利于青蒿素合成的逻辑链推导。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "ARF1 蛋白对 DBR2 基因表达有正向影响，进而促进青蒿素合成。",
+          "parents": [
+            "C_6"
+          ],
+          "reasoning_logic": "根据 ARF1 过表达组中 DBR2 表达量和青蒿素含量双升的现象证实。"
+        },
+        {
+          "id": "I_4",
+          "type": "综合归纳",
+          "content": "通过降低 miR160 的表达量，可以提高 DBR2 基因的表达，进而促进青蒿素的合成。",
+          "parents": [
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "综合 miR160-ARF1-DBR2 调控路径及实验数据得出的机制结论。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "降低 miR160 的表达量，提高 DBR2 基因的表达，从而促进青蒿素的合成。",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "基于上述调控机制得出的最终策略结论。"
+      }
+    }
+  }
+}

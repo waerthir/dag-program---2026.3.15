@@ -1,0 +1,33 @@
+2026-03-17 02:24:38,549 - INFO - 任务 [5] Token 统计: Input: 3285 | Output: 546 | 累计 Total: 3831
+2026-03-17 02:24:39,062 - INFO - 任务 [3] Token 统计: Input: 3312 | Output: 598 | 累计 Total: 7741
+2026-03-17 02:24:39,479 - INFO - 任务 [2] Token 统计: Input: 3311 | Output: 751 | 累计 Total: 11803
+2026-03-17 02:24:40,079 - INFO - 任务 [7] Token 统计: Input: 3533 | Output: 645 | 累计 Total: 15981
+2026-03-17 02:24:40,079 - ERROR - 所有解析尝试均失败。最后一次报错: Invalid \X escape sequence '(': line 7 column 59 (char 152)
+2026-03-17 02:24:40,080 - WARNING - 任务 [7] 第 2 次 JSON 清洗失败。
+2026-03-17 02:24:40,080 - ERROR - 任务 [7] 在 2 次重试后仍然失败，已跳过。
+2026-03-17 02:24:41,928 - INFO - 任务 [4] Token 统计: Input: 3594 | Output: 830 | 累计 Total: 20405
+2026-03-17 02:24:42,336 - INFO - 任务 [1] Token 统计: Input: 3376 | Output: 795 | 累计 Total: 24576
+2026-03-17 02:24:43,464 - INFO - 任务 [0] Token 统计: Input: 3280 | Output: 697 | 累计 Total: 28553
+2026-03-17 02:24:45,001 - INFO - 任务 [6] Token 统计: Input: 4312 | Output: 1069 | 累计 Total: 33934
+2026-03-17 02:24:45,001 - INFO - 所有数据已汇总保存至: ./CoT_o_test_no_thinking\output_glm_subset2_all_graph.json
+(base) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> & E:/TrashE/Miniconda3/envs/dag_env/python.exe "e:/TrashE/_Sun_Yat_Sen_University/_大三下/杂项/2026.03实验室学习/dag-program --2026.3.15/dag_v2026.3.17.0.py"
+2026-03-17 02:24:49,530 - INFO - ========== 开始处理文件: output_glm_subset2 ==========
+2026-03-17 02:24:49,541 - INFO - 成功读取已有进度，共 7 条记录。
+2026-03-17 02:24:49,542 - INFO - 任务 [0] 已存在，跳过。
+2026-03-17 02:24:49,542 - INFO - 任务 [1] 已存在，跳过。
+2026-03-17 02:24:49,542 - INFO - 任务 [2] 已存在，跳过。
+2026-03-17 02:24:49,542 - INFO - 任务 [3] 已存在，跳过。
+2026-03-17 02:24:49,542 - INFO - 任务 [4] 已存在，跳过。
+2026-03-17 02:24:49,542 - INFO - 任务 [5] 已存在，跳过。
+2026-03-17 02:24:49,542 - INFO - 任务 [6] 已存在，跳过。
+2026-03-17 02:24:49,543 - INFO - 任务 [7] 尝试第 1/2 次生成...
+2026-03-17 02:25:09,643 - INFO - 任务 [7] Token 统计: Input: 3533 | Output: 618 | 累计 Total: 4151
+2026-03-17 02:25:09,643 - ERROR - 所有解析尝试均失败。最后一次报错: Invalid \X escape sequence '(': line 7 column 59 (char 152)
+2026-03-17 02:25:09,643 - WARNING - 任务 [7] 第 1 次 JSON 清洗失败。
+2026-03-17 02:25:10,646 - INFO - 任务 [7] 尝试第 2/2 次生成...
+2026-03-17 02:25:31,503 - INFO - 任务 [7] Token 统计: Input: 3533 | Output: 645 | 累计 Total: 8329
+2026-03-17 02:25:31,503 - ERROR - 所有解析尝试均失败。最后一次报错: Invalid \X escape sequence '(': line 7 column 59 (char 152)
+2026-03-17 02:25:31,503 - WARNING - 任务 [7] 第 2 次 JSON 清洗失败。
+2026-03-17 02:25:31,503 - ERROR - 任务 [7] 在 2 次重试后仍然失败，已跳过。
+2026-03-17 02:25:31,503 - INFO - 所有数据已汇总保存至: ./CoT_o_test_no_thinking\output_glm_subset2_all_graph.json       
+(base) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> 

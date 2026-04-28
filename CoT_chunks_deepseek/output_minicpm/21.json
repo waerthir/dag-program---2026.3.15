@@ -1,0 +1,69 @@
+{
+  "id": 21,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "题目提到科研人员以 SA-β-Gal 作为细胞衰老的分子标志，以 EdU 作为细胞 DNA 复制的标记，揭示了 AP2A1 蛋白通过调节 p53 蛋白表达量来影响细胞衰老的机制。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "图中显示了不同处理条件下 p53 蛋白水平的变化情况。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "图中分为对照组、EdU 处理组和 AP2A1 过表达组。"
+        },
+        {
+          "id": "C_4",
+          "type": "图像信息",
+          "content": "对照组和 EdU 处理组的 p53 蛋白水平较低。"
+        },
+        {
+          "id": "C_5",
+          "type": "图像信息",
+          "content": "AP2A1 过表达组的 p53 蛋白水平较高。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "题目要求分析 AP2A1 过表达对 p53 蛋白水平的影响。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "对比分析",
+          "content": "根据图示信息，AP2A1 过表达组的 p53 蛋白水平高于对照组和 EdU 处理组。",
+          "parents": [
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "对比图中不同处理组的 p53 蛋白水平差异。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "这表明 AP2A1 过表达会增加 p53 蛋白的表达量。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "由对比结果推导出 AP2A1 过表达对 p53 蛋白水平的影响。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "AP2A1 过表达对 p53 蛋白水平的影响是增加其表达量。",
+        "parents": [
+          "I_2"
+        ],
+        "reasoning_logic": "综合推理得出最终陈述。"
+      }
+    }
+  }
+}

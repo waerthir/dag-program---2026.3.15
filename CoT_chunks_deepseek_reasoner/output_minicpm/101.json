@@ -1,0 +1,61 @@
+{
+  "id": 101,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "给定的无穷级数为 \\[ \\sum_{n=1}^{\\infty} \\frac{2n+1}{(n^{2}+n)^{2}} \\]"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "将无穷级数拆分为两个部分：\\[ \\sum_{n=1}^{\\infty} \\frac{2n}{(n^{2}+n)^{2}} + \\sum_{n=1}^{\\infty} \\frac{1}{(n^{2}+n)^{2}} \\]",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "拆分和简化给定的级数"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "对于第一部分，\\[ \\sum_{n=1}^{\\infty} \\frac{2n}{(n^{2}+n)^{2}} = \\sum_{n=1}^{\\infty} \\frac{2n}{n(n+1)(n+1)^{2}} \\]",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "将第一部分表达式重写"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "进行部分分式分解：\\[ \\frac{2n}{n(n+1)(n+1)^{2}} = \\frac{A}{n} + \\frac{B}{n+1} + \\frac{C}{(n+1)^{2}} \\]",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "应用部分分式分解方法"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "通过求解系数A、B和C，得到表达式",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "求解部分分式分解的系数"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "推理过程进行中，通过求解系数后进一步求和",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "综合前面的步骤，为最终求和做准备"
+      }
+    }
+  }
+}

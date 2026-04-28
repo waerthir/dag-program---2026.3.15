@@ -1,0 +1,103 @@
+{
+  "id": 129,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目给定微分方程为 (x^2D^2 + xD + 1)y = sin(2log x)sin(log x)。",
+          "reasoning_logic": "提取题目初始条件"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "D 表示微分算子，即 D = d/dx。",
+          "reasoning_logic": "引用微分算子定义"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "三角恒等式 sin(a)sin(b) = 1/2[cos(a-b) - cos(a+b)]。",
+          "reasoning_logic": "引用三角恒等式"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "原方程可视为关于 log x 的方程，设 z = log x。",
+          "reasoning_logic": "提取变量代换思路"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "计算",
+          "content": "将右侧函数化简为 1/2[cos(log x) - cos(3log x)]。",
+          "parents": [
+            "C_1",
+            "C_3"
+          ],
+          "reasoning_logic": "利用三角恒等式对 sin(2log x)sin(log x) 进行展开计算"
+        },
+        {
+          "id": "I_2",
+          "type": "推理",
+          "content": "将原方程改写为 (x^2D^2 + xD + 1)y = 1/2[cos(log x) - cos(3log x)]。",
+          "parents": [
+            "C_1",
+            "I_1"
+          ],
+          "reasoning_logic": "将化简后的右侧函数代入原方程"
+        },
+        {
+          "id": "I_3",
+          "type": "推理",
+          "content": "将原方程分解为两个独立方程：(x^2D^2 + xD + 1)y_1 = 1/2cos(log x) 和 (x^2D^2 + xD + 1)y_2 = 1/2cos(3log x)。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "基于线性组合性质将方程拆分为两个子问题"
+        },
+        {
+          "id": "I_4",
+          "type": "推理",
+          "content": "引入变量代换 z = log x，将方程形式转化为关于 z 的表达式。",
+          "parents": [
+            "C_4",
+            "I_3"
+          ],
+          "reasoning_logic": "执行变量代换逻辑，准备构建特征方程"
+        },
+        {
+          "id": "I_5",
+          "type": "条件转化",
+          "content": "确定对应齐次方程的特征方程（辅助方程）形式为 z^2D^2 + zD + 1 = 0。",
+          "parents": [
+            "C_2",
+            "I_4"
+          ],
+          "reasoning_logic": "根据微分算子定义和变量代换结果，提取左侧算子部分作为特征方程"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "将变量 z 还原为 x，得出原方程的辅助方程为 x^2D^2 + xD + 1 = 0。",
+          "parents": [
+            "I_5",
+            "C_4"
+          ],
+          "reasoning_logic": "逆向变量代换，将 z 替换回 log x 对应的算子形式，确认辅助方程在 x 域的表达"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "原方程的辅助方程为 x^2D^2 + xD + 1 = 0。",
+        "parents": [
+          "I_6"
+        ],
+        "reasoning_logic": "综合上述推导步骤，得出最终结论"
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "id": 118,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "波函数 ψ(x) = Ax(L-x)，其中 0 ≤ x ≤ L。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "归一化常数A的定义是使得∫0^L |ψ(x)|^2 dx = 1。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "粒子在盒子中的能量为 E = h^2/(8mL^2)。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "数值计算",
+          "content": "计算波函数的平方 |ψ(x)|^2 = A^2 x^2 (L-x)^2。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "基于波函数定义计算平方。"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "将平方代入归一化条件，得到 ∫0^L A^2 x^2 (L-x)^2 dx = 1。",
+          "parents": [
+            "C_2",
+            "I_1"
+          ],
+          "reasoning_logic": "代入归一化条件。"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "计算积分 ∫0^L x^2 (L-x)^2 dx。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "从方程中提取积分部分进行计算。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "分解积分 ∫0^L x^2 (L-x)^2 dx = ∫0^L x^2 (L^2 - 2Lx + x^2) dx。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "展开平方项。"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "计算 ∫0^L x^2 L^2 dx = L^3 ∫0^L x^2 dx。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "提取常数并积分。"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "计算 ∫0^L Lx^2 dx = L^2 ∫0^L x^2 dx。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "提取常数并积分。"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "计算 ∫0^L x^4 dx = L^5/5。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "直接积分。"
+        },
+        {
+          "id": "I_8",
+          "type": "数值计算",
+          "content": "计算 ∫0^L x^2 dx = L^3/3。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "计算基本积分。"
+        },
+        {
+          "id": "I_9",
+          "type": "数值计算",
+          "content": "所以 ∫0^L x^2 (L-x)^2 dx = L^3 · L^3/3 - 2L^2 · L^3/3 + L^5/5。",
+          "parents": [
+            "I_5",
+            "I_6",
+            "I_7",
+            "I_8"
+          ],
+          "reasoning_logic": "代入积分值得到表达式。"
+        },
+        {
+          "id": "I_10",
+          "type": "数值计算",
+          "content": "简化得到 ∫0^L x^2 (L-x)^2 dx = L^6/3 - 2L^5/3 + L^5/5。",
+          "parents": [
+            "I_9"
+          ],
+          "reasoning_logic": "简化表达式。"
+        },
+        {
+          "id": "I_11",
+          "type": "条件转化",
+          "content": "代入归一化条件：L^6/3 - 2L^5/3 + L^5/5 = 1。",
+          "parents": [
+            "I_10",
+            "I_2"
+          ],
+          "reasoning_logic": "将积分值代入归一化条件方程。"
+        },
+        {
+          "id": "I_12",
+          "type": "数值计算",
+          "content": "求解 A：A = √(3 / (L^6/3 - 2L^5/3 + L^5/5 - 1))。",
+          "parents": [
+            "I_11"
+          ],
+          "reasoning_logic": "从方程求解A。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "归一化常数 A 的表达式为：A = √(3 / (L^6/3 - 2L^5/3 + L^5/5 - 1))。粒子在盒子中的能量为：E = h^2/(8mL^2)。",
+        "parents": [
+          "I_12",
+          "C_3"
+        ],
+        "reasoning_logic": "综合A的计算结果和能量公式得出最终陈述。"
+      }
+    }
+  }
+}

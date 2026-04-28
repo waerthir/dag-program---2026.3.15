@@ -1,0 +1,61 @@
+{
+  "id": 19,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "学生取一粒黄色圆粒 F1 种子，其基因型为 YyRr。",
+          "reasoning_logic": "从题目描述中提取关键信息"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "Y 和 y 代表显性基因，R 和 r 代表隐性基因。",
+          "reasoning_logic": "从题目描述中提取基因符号定义"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "成熟后随机取 4 个豆荚，所得 32 粒豌豆种子表型计数结果如表所示。",
+          "reasoning_logic": "从题目描述中提取实验数据样本量及来源"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "分离定律预期的表型比为 3:1。",
+          "reasoning_logic": "引用孟德尔分离定律的理论知识"
+        },
+        {
+          "id": "C_5",
+          "type": "文字条件",
+          "content": "题目要求判断“圆粒：皱粒”表型比是否支持分离定律的预期。",
+          "reasoning_logic": "从题目要求中提取判断目标"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "对比分析",
+          "content": "根据表中信息，所得 32 粒豌豆种子表型计数结果与预期的 3:1 表型比一致。",
+          "parents": [
+            "C_3",
+            "C_4"
+          ],
+          "reasoning_logic": "将实验统计结果（C_3）与理论预期比例（C_4）进行对比分析"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "该实验的“圆粒：皱粒”表型比支持分离定律的预期。",
+        "parents": [
+          "I_1",
+          "C_5"
+        ],
+        "reasoning_logic": "基于对比结果（I_1）符合题目判断要求（C_5），综合得出最终结论"
+      }
+    }
+  }
+}

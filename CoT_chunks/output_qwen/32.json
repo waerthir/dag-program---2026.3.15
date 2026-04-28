@@ -1,0 +1,90 @@
+{
+  "id": 32,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "人类女性体细胞中仅有一条 X 染色体保持活性。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "基因 G 编码 G 蛋白，等位基因 g 编码活性低的 g 蛋白。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "缺失 G 基因的个体患遗传病。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "II-1 不含 g 基因，即 II-1 为 GG 型。"
+        },
+        {
+          "id": "C_5",
+          "type": "图像条件",
+          "content": "系谱图显示 II-1 和 II-2 生育了 III-3。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字条件",
+          "content": "III-3 患病。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "推导出 III-3 的基因型为 gg 型。",
+          "parents": [
+            "C_3",
+            "C_6"
+          ],
+          "reasoning_logic": "根据缺失 G 基因患病且 III-3 患病，推断其基因型为隐性纯合子 gg。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "推导出 III-3 的两个 g 基因分别来自双亲。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "基于孟德尔遗传规律，隐性纯合子 gg 的两个等位基因必然分别源自父亲和母亲。"
+        },
+        {
+          "id": "I_3",
+          "type": "对比分析",
+          "content": "确认 III-3 的 g 基因只能来自 II-2。",
+          "parents": [
+            "I_2",
+            "C_4"
+          ],
+          "reasoning_logic": "已知 II-1 为 GG 型不含 g 基因，无法提供 g 基因，因此 III-3 的 g 基因必然全部或主要来源指向 II-2（此处逻辑链特指致病来源）。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "推导出 II-2 的 X 染色体上含有 g 基因。",
+          "parents": [
+            "I_3",
+            "C_1"
+          ],
+          "reasoning_logic": "结合女性 X 染色体失活机制及 III-3 获得 g 基因的事实，推断母本 II-2 携带 g 基因。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "III-3 个体的致病基因来源于 II-2。",
+        "parents": [
+          "I_3",
+          "I_4"
+        ],
+        "reasoning_logic": "综合双亲基因型分析及遗传传递路径，得出致病基因的最终来源结论。"
+      }
+    }
+  }
+}

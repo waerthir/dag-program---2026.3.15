@@ -1,0 +1,174 @@
+{
+  "id": 113,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "粒子在简谐振荡器势能井中。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "粒子处于能量本征态。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "能量为E。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "简谐振荡器的势能公式为V(x) = (1/2)kx^2。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字条件",
+          "content": "弹簧常数为k。"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "最大势能为V_max = (1/2)kL^2。"
+        },
+        {
+          "id": "C_7",
+          "type": "文字条件",
+          "content": "L是势能井的长度。"
+        },
+        {
+          "id": "C_8",
+          "type": "学科常识",
+          "content": "能量本征态为E_n = (n+1/2)^2 * (h^2 / (2m))。"
+        },
+        {
+          "id": "C_9",
+          "type": "文字条件",
+          "content": "m是粒子的质量。"
+        },
+        {
+          "id": "C_10",
+          "type": "学科常识",
+          "content": "h是普朗克常数。"
+        },
+        {
+          "id": "C_11",
+          "type": "学科常识",
+          "content": "简谐振荡器的波函数为ψ_n(x) = sqrt(2/L) * sin(n * π * x / L)。"
+        },
+        {
+          "id": "C_12",
+          "type": "学科常识",
+          "content": "能量本征态波函数为ψ_n(x) = sqrt(2/L) * sin((n+1/2) * π * x / L)。"
+        },
+        {
+          "id": "C_13",
+          "type": "学科常识",
+          "content": "概率密度函数为|ψ_n(x)|^2 = (2/L) * sin^2((n+1/2) * π * x / L)。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "数值计算",
+          "content": "当n=0时，能量为E_0 = (1/2)^2 * (h^2 / (2m)) = h^2 / (4m)。",
+          "parents": [
+            "C_8",
+            "C_9",
+            "C_10"
+          ],
+          "reasoning_logic": "根据能量本征态公式计算n=0时的能量。"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "当n=1时，能量为E_1 = (3/2)^2 * (h^2 / (2m)) = 9h^2 / (8m)。",
+          "parents": [
+            "C_8",
+            "C_9",
+            "C_10"
+          ],
+          "reasoning_logic": "根据能量本征态公式计算n=1时的能量。"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "当n=2时，能量为E_2 = (5/2)^2 * (h^2 / (2m)) = 25h^2 / (8m)。",
+          "parents": [
+            "C_8",
+            "C_9",
+            "C_10"
+          ],
+          "reasoning_logic": "根据能量本征态公式计算n=2时的能量。"
+        },
+        {
+          "id": "I_4",
+          "type": "条件转化",
+          "content": "设势能为V(x) = (1/2)V_max = (1/2)(1/2)kL^2 = (1/4)kL^2。",
+          "parents": [
+            "C_6"
+          ],
+          "reasoning_logic": "将条件转化为势能等于最大势能的一半的表达式。"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "代入势能公式V(x) = (1/2)kx^2，得到(1/2)kx^2 = (1/4)kL^2。",
+          "parents": [
+            "C_4",
+            "I_4"
+          ],
+          "reasoning_logic": "将势能表达式代入势能公式得到方程。"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "x^2 = L^2 / 2。",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "从方程(1/2)kx^2 = (1/4)kL^2简化得到。"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "x = sqrt(L^2 / 2)。",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "求解x的值。"
+        },
+        {
+          "id": "I_8",
+          "type": "数值计算",
+          "content": "|ψ_n(sqrt(L^2 / 2))|^2 = (2/L) * sin^2((n+1/2) * π * sqrt(L^2 / 2) / L)。",
+          "parents": [
+            "C_13",
+            "I_7"
+          ],
+          "reasoning_logic": "将x的值代入概率密度函数。"
+        },
+        {
+          "id": "I_9",
+          "type": "数值计算",
+          "content": "|ψ_n(sqrt(L^2 / 2))|^2 = (2/L) * sin^2((n+1/2) * π / sqrt(2))。",
+          "parents": [
+            "I_8"
+          ],
+          "reasoning_logic": "简化概率密度表达式。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "在势能等于最大势能的一半处的概率密度为|ψ_n(sqrt(L^2 / 2))|^2 = (2/L) * sin^2((n+1/2) * π / sqrt(2))。",
+        "parents": [
+          "I_9"
+        ],
+        "reasoning_logic": "综合代入和简化步骤得出最终陈述。"
+      }
+    }
+  }
+}

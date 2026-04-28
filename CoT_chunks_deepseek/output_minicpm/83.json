@@ -1,0 +1,110 @@
+{
+  "id": 83,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "函数 f 定义在区间 [0,1] 上。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "集合 Y 是所有满足 ∫₀¹ f = 0 的函数 f 的集合。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "题目明确指出 Y 是一个闭集。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "f(0) = 0。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "函数 f = x。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "选择 f(x) = 0 对所有 x ∈ [0,1]。",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "由于 f(0) = 0，可以选择 f(x) = 0。"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "∫₀¹ 0 dx = 0。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "计算 f(x) = 0 的积分。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "函数 f(x) = 0 满足 ∫₀¹ f = 0。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "由积分结果推导出满足条件。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "f(x) = 0 ∈ Y。",
+          "parents": [
+            "C_2",
+            "I_3"
+          ],
+          "reasoning_logic": "根据 Y 的定义和 f(x) = 0 满足条件，推导出属于 Y。"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "∫₀¹ x dx = 1/2。",
+          "parents": [
+            "C_5"
+          ],
+          "reasoning_logic": "计算函数 f = x 的积分。"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "|1/2 - 0| = 1/2。",
+          "parents": [
+            "I_5",
+            "I_2"
+          ],
+          "reasoning_logic": "计算函数 f = x 到集合 Y 的距离。"
+        },
+        {
+          "id": "I_7",
+          "type": "对比分析",
+          "content": "1/2 = 0.5。",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "将距离与 0.5 进行对比。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "从函数 f = x 到集合 Y 的距离是 0.5。",
+        "parents": [
+          "I_7"
+        ],
+        "reasoning_logic": "综合对比分析结果得出最终陈述。"
+      }
+    }
+  }
+}

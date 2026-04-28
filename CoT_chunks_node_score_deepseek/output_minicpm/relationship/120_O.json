@@ -1,0 +1,9 @@
+{
+  "id": "120_O",
+  "evaluation": {
+    "Dependency_Completeness": 8.5,
+    "Dependency_Accuracy": 4.3,
+    "Reasoning_Logic_Accuracy": 9,
+    "Reasoning_Type_Accuracy": 10
+  }
+}

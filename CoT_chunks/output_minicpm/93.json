@@ -1,0 +1,84 @@
+{
+  "id": 93,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "单位圆的参数方程为 x = cos(t) 和 y = sin(t)，其中 t 是参数。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "题目给出的初始条件是 x = 1。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "题目给出的初始条件是 y = 0。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将初始条件代入参数方程得到 cos(t) = 1。",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "将 C_2 的 x 值代入 C_1 的 x 表达式。"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "将初始条件代入参数方程得到 sin(t) = 0。",
+          "parents": [
+            "C_1",
+            "C_3"
+          ],
+          "reasoning_logic": "将 C_3 的 y 值代入 C_1 的 y 表达式。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "由 cos(t) = 1 得出 t = 0 或 t = 2π。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "求解三角方程 cos(t) = 1 的通解。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "由 sin(t) = 0 得出 t = 0 或 t = π。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "求解三角方程 sin(t) = 0 的通解。"
+        },
+        {
+          "id": "I_5",
+          "type": "对比分析",
+          "content": "结合两个条件的解集，确定 t = 0。",
+          "parents": [
+            "I_3",
+            "I_4"
+          ],
+          "reasoning_logic": "取 I_3 和 I_4 结果的交集。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "单位圆的参数方程为 x = cos(t) 和 y = sin(t)，其中 t = 0。",
+        "parents": [
+          "C_1",
+          "I_5"
+        ],
+        "reasoning_logic": "综合单位圆定义和确定的参数值得出最终陈述。"
+      }
+    }
+  }
+}

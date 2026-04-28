@@ -1,0 +1,9 @@
+{
+  "id": "120_I_13",
+  "evaluation": {
+    "Dependency_Completeness": 4.0,
+    "Dependency_Accuracy": 6.0,
+    "Reasoning_Logic_Accuracy": 8.0,
+    "Reasoning_Type_Accuracy": 9.0
+  }
+}

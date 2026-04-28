@@ -1,0 +1,106 @@
+{
+  "id": 86,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目给定 $T$ 是一个连续线性算子。",
+          "reasoning_logic": "从题目描述中提取已知条件。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "题目给定序列 $(u_n)$ 弱收敛到 $u$，即 $(u_n) \rightharpoonup u$。",
+          "reasoning_logic": "从题目描述中提取已知条件。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "弱收敛的定义：对于任意的线性函数 $\\φ$，都有 $\\lim_{n \\to \\infty} \\langle u_n, \\phi \\rangle = \\langle u, \\phi \\rangle$。",
+          "reasoning_logic": "引用数学分析中弱收敛的标准定义。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "题目假设 $T(u_n) \\\\rightharpoonup T(u)$。",
+          "reasoning_logic": "从题目推理过程的假设前提中提取。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "弱收敛的定义应用于 $T(u_n)$：对于任意的线性函数 $\\psi$，都有 $\\lim_{n \\to \\infty} \\langle T(u_n), \\psi \\rangle = \\langle T(u), \\psi \\rangle$。",
+          "reasoning_logic": "引用数学分析中弱收敛的标准定义。"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "连续线性算子的性质陈述：如果 $\\lim_{n \\to \\infty} \\langle T(u_n), \\psi \\rangle = \\langle T(u), \\psi \\rangle$，那么 $\\lim_{n \\to \\infty} T(u_n) = T(u)$。",
+          "reasoning_logic": "引用思维链中明确提出的算子性质逻辑（注：此处忠实记录思维链中的命题，尽管数学上弱收敛通常不直接蕴含强收敛，但作为图谱构建需忠实于输入逻辑）。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "根据弱收敛定义，由 $(u_n) \\\\rightharpoonup u$ 得出对于任意线性函数 $\\phi$，极限等式成立。",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "将已知弱收敛条件代入弱收敛定义进行转化。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "根据假设 $T(u_n) \\\\rightharpoonup T(u)$ 及弱收敛定义，得出对于任意线性函数 $\\psi$，有 $\\lim_{n \\to \\infty} \\langle T(u_n), \\psi \\rangle = \\langle T(u), \\psi \\rangle$。",
+          "parents": [
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "将假设条件代入弱收敛定义进行转化。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "基于连续线性算子的性质，由内积极限相等推导出范数收敛：$\\lim_{n \\to \\infty} T(u_n) = T(u)$。",
+          "parents": [
+            "I_2",
+            "C_6"
+          ],
+          "reasoning_logic": "应用思维链中引用的连续线性算子性质，从弱收敛形式推导强收敛结论。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "由序列收敛性质推断存在子序列 $(u_{n_k})$ 满足相同的收敛行为。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "根据思维链逻辑，从整体序列的收敛性推导子序列的存在性及性质。"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "确认子序列 $(u_{n_k})$ 使得对于任意线性函数 $\\psi$，都有 $\\lim_{k \\to \\infty} \\langle T(u_{n_k}), \\psi \\rangle = \\langle T(u), \\psi \\rangle$。",
+          "parents": [
+            "I_4",
+            "C_5"
+          ],
+          "reasoning_logic": "将子序列的存在性与弱收敛定义结合，确立子序列的内积极限性质。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "存在一个子序列 $(u_{n_k})$，使得 $T(u_{n_k}) \\\\rightarrow T(u)$。",
+        "parents": [
+          "I_3",
+          "I_5"
+        ],
+        "reasoning_logic": "综合连续线性算子导出的强收敛结论与子序列的性质，得出最终证明结论。"
+      }
+    }
+  }
+}

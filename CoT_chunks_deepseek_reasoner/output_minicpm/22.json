@@ -1,0 +1,120 @@
+{
+  "id": 22,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目中提到 SA-β-Gal 作为细胞衰老的分子标志"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "题目中提到 EdU 作为细胞 DNA 复制的标记"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "题目中提到揭示了 AP2A1 蛋白通过调节 p53 蛋白表达量来影响细胞衰老的机制"
+        },
+        {
+          "id": "C_4",
+          "type": "图像条件",
+          "content": "图中显示了不同处理条件下 SA-β-Gal 的表达量变化"
+        },
+        {
+          "id": "C_5",
+          "type": "图像条件",
+          "content": "图中显示了不同处理条件下 EdU 的表达量变化"
+        },
+        {
+          "id": "C_6",
+          "type": "文字条件",
+          "content": "题目要求推断“衰老细胞中各种蛋白的表达量都上升”"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "分析图中 SA-β-Gal 和 EdU 的表达量变化特征",
+          "parents": [
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "基于图像信息分析表达量变化特征"
+        },
+        {
+          "id": "I_2",
+          "type": "对比分析",
+          "content": "观察图中不同处理组中 SA-β-Gal 和 EdU 的表达量变化",
+          "parents": [
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "对比不同处理组的表达量差异"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "结合题目要求推断“衰老细胞中各种蛋白的表达量都上升”",
+          "parents": [
+            "C_6"
+          ],
+          "reasoning_logic": "引用题目要求进行推断"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "根据图示信息，SA-β-Gal 和 EdU 在不同处理组中的表达量变化情况",
+          "parents": [
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "基于图像进一步分析变化情况"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "图中只显示了 SA-β-Gal 和 EdU 的表达量变化",
+          "parents": [
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "确认图像中显示的表达量信息范围"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "图中未提供其他蛋白的表达量信息",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "基于图像信息推断其他蛋白数据缺失"
+        },
+        {
+          "id": "I_7",
+          "type": "综合归纳",
+          "content": "基于图像信息，无法推断“衰老细胞中各种蛋白的表达量都上升”",
+          "parents": [
+            "I_3",
+            "I_4",
+            "I_5",
+            "I_6"
+          ],
+          "reasoning_logic": "综合题目要求、图像分析及信息缺失，得出初步结论"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "不能据此推断“衰老细胞中各种蛋白的表达量都上升”",
+        "parents": [
+          "I_7"
+        ],
+        "reasoning_logic": "总结推理过程，得出最终陈述"
+      }
+    }
+  }
+}

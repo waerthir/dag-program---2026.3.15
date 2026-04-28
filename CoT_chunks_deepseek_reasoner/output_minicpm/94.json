@@ -1,0 +1,89 @@
+{
+  "id": 94,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "给定的生成函数 \\(\\sum_{n=0}^{\\infty}P_n(x)r^n=(1-2rx+r^2)^{-\\frac{1}{2}}\\)"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将生成函数中的 \\(r\\) 替换为 1，得到 \\(\\sum_{n=0}^{\\infty}P_n(1) = (1-2x(1)+1^2)^{-\\frac{1}{2}}\\)",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "引用生成函数并执行变量替换"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "计算 \\(1-2x(1)+1^2\\) 得到 \\(1-2x+1\\)",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "执行算术运算简化表达式内部"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "简化 \\(1-2x+1\\) 得到 \\(2-2x\\)",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "合并常数项"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "因此，\\(\\sum_{n=0}^{\\infty}P_n(1) = (2-2x)^{-\\frac{1}{2}}\\)",
+          "parents": [
+            "I_1",
+            "I_3"
+          ],
+          "reasoning_logic": "基于替换后的表达式和简化结果更新等式"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "将 \\((2-2x)^{-\\frac{1}{2}}\\) 重写为 \\((2(1-x))^{\\frac{1}{2}}\\)",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "代数变换重写表达式"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "进一步简化 \\((2(1-x))^{\\frac{1}{2}}\\) 为 \\(\\sqrt{2(1-x)}\\)",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "计算平方根或简化指数"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "从 \\(\\sum_{n=0}^{\\infty}P_n(1) = \\sqrt{2(1-x)}\\) 得出 \\(P_n(1) = \\sqrt{2(1-x)}\\)",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "由级数表达式推导出单个项的值"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "\\(P_n(1) = \\sqrt{2(1-x)}\\)",
+        "parents": [
+          "I_7"
+        ],
+        "reasoning_logic": "综合前面的推导得出最终陈述"
+      }
+    }
+  }
+}

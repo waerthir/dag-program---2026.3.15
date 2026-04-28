@@ -1,0 +1,127 @@
+{
+  "id": 98,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "二次方程 ax^2 - bx + c = 0 在区间 (0, 1) 内有两个不同的实数根"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "设这两个根为 x_1 和 x_2"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "二次方程的根与系数关系：x_1 + x_2 = b/a"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "二次方程的根与系数关系：x_1 * x_2 = c/a"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "x_1 和 x_2 都在区间 (0, 1) 内"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "a、b、c 都是自然数"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "0 < x_1 < 1",
+          "parents": [
+            "C_5"
+          ],
+          "reasoning_logic": "由 x_1 在区间 (0, 1) 内推导出"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "0 < x_2 < 1",
+          "parents": [
+            "C_5"
+          ],
+          "reasoning_logic": "由 x_2 在区间 (0, 1) 内推导出"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "0 < x_1 + x_2 < 1",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "结合两个不等式推导出"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "0 < x_1 * x_2 < 1",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "结合两个不等式推导出"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "x_1 和 x_2 的乘积 x_1 * x_2 应该尽量接近 1，以使得 abc 的值最小",
+          "parents": [
+            "C_6",
+            "I_4"
+          ],
+          "reasoning_logic": "由 a、b、c 是自然数且 x_1 * x_2 在 (0,1) 内推导出"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "选择 a = 1，b = 2，c = 1",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "为了使 x_1 和 x_2 的乘积尽可能接近 1 而选择"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "x_1 和 x_2 的乘积为 1/2",
+          "parents": [
+            "I_6",
+            "C_4"
+          ],
+          "reasoning_logic": "代入 a=1, c=1 到 x_1 * x_2 = c/a 计算得出"
+        },
+        {
+          "id": "I_8",
+          "type": "数值计算",
+          "content": "abc = 1 * 2 * 1 = 2",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "计算 a、b、c 的乘积得出"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "当 a = 1，b = 2，c = 1 时，二次方程 ax^2 - bx + c = 0 在区间 (0, 1) 内有两个不同的实数根，且 abc 的最小值为 2",
+        "parents": [
+          "I_6",
+          "I_8"
+        ],
+        "reasoning_logic": "综合选择的 a、b、c 值和计算出的 abc 值得出最终陈述"
+      }
+    }
+  }
+}

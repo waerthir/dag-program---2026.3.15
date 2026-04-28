@@ -1,0 +1,123 @@
+{
+  "id": 172,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目要求解决一维无限深势阱中粒子的一维薛定谔方程及其能量谱问题。",
+          "reasoning_logic": "提取题目核心任务"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "无限深势阱模型定义：势阱宽度为 a，阱内 (0 < x < a) 势能为零，阱外势能无穷大，粒子不能穿越边界。",
+          "reasoning_logic": "引用物理模型定义"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "一维薛定谔方程公式：-\\frac{\\hbar^2}{2m} \\frac{d^2 \\psi(x)}{dx^2} = E \\psi(x)，其中 \\hbar 为约化普朗克常数，m 为粒子质量，\\psi(x) 为波函数，E 为能量。",
+          "reasoning_logic": "引用基础物理方程"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "边界条件设定：在 x=0 和 x=a 处，波函数 \\psi(0) = 0 且 \\psi(a) = 0。",
+          "reasoning_logic": "根据势阱模型提取边界约束"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将薛定谔方程变形为 \\frac{d^2 \\psi(x)}{dx^2} = -\\frac{2mE}{\\hbar^2} \\psi(x)。",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "对 C_3 中的方程进行代数变形，移项整理"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "引入参数 \\alpha = \\frac{2mE}{\\hbar^2}，方程简化为 \\frac{d^2 \\psi(x)}{dx^2} = -\\alpha \\psi(x)。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "定义新变量 \\alpha 以简化微分方程形式"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "求解微分方程得到通解：\\psi(x) = A \\sin(\\sqrt{\\alpha} x) + B \\cos(\\sqrt{\\alpha} x)。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "根据二阶常系数线性微分方程理论得出通解形式"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "应用边界条件 \\psi(0) = 0 推导出系数 B = 0。",
+          "parents": [
+            "I_3",
+            "C_4"
+          ],
+          "reasoning_logic": "将 x=0 代入通解，利用 \\cos(0)=1, \\sin(0)=0 及 \\psi(0)=0 判定 B 值"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "应用边界条件 \\psi(a) = 0 推导出 \\sin(\\sqrt{\\alpha} a) = 0。",
+          "parents": [
+            "I_3",
+            "I_4",
+            "C_4"
+          ],
+          "reasoning_logic": "将 x=a 及 B=0 代入波函数，利用 \\psi(a)=0 建立三角函数关系"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "由 \\sin(\\sqrt{\\alpha} a) = 0 解得 \\sqrt{\\alpha} a = n\\pi (n 为正整数)。",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "根据正弦函数零点性质确定参数 \\alpha 的离散取值条件"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "计算得到 \\alpha = (\\frac{n\\pi}{a})^2 并代入能量表达式得出 E = \\frac{\\hbar^2 \\pi^2 n^2}{2ma^2}。",
+          "parents": [
+            "I_6",
+            "I_2"
+          ],
+          "reasoning_logic": "反解 \\alpha 并代回 I_2 中的能量定义式进行代数运算"
+        },
+        {
+          "id": "I_8",
+          "type": "综合归纳",
+          "content": "确定最终波函数形式为 \\psi_n(x) = A \\sin(\\frac{n\\pi x}{a})。",
+          "parents": [
+            "I_3",
+            "I_4",
+            "I_6"
+          ],
+          "reasoning_logic": "将确定的系数 B=0 和参数 \\sqrt{\\alpha} 代回通解表达式"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "一维无限深势阱中粒子的能量谱为 E_n = \\frac{\\hbar^2 \\pi^2 n^2}{2ma^2} (n=1,2,3,...)，对应的波函数为 \\psi_n(x) = A \\sin(\\frac{n\\pi x}{a})。",
+        "parents": [
+          "I_7",
+          "I_8"
+        ],
+        "reasoning_logic": "综合能量计算结果 I_7 和波函数推导结果 I_8，得出题目要求的最终答案"
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": 82,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "题目给出的方程是 x^3 - 3x^2 + 6x + k = 0。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "需要确定 k 的值，使得该方程有三个实根。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "一个三次方程 ax^3 + bx^2 + cx + d = 0 有三个实根的条件是判别式 Δ = b^2 - 4ac > 0。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "从方程 x^3 - 3x^2 + 6x + k = 0 提取系数 a=1, b=-3, c=6, d=k。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "将方程转化为系数形式。"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "计算 b^2 = (-3)^2 = 9。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "计算 b 的平方值。"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "计算 4ac = 4 * 1 * 6 = 24。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "计算 4 乘以 a 和 c 的乘积。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "计算判别式 Δ = b^2 - 4ac = 9 - 24 = -15。",
+          "parents": [
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "计算判别式 Δ 的值。"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "根据题目要求，方程有三个实根需要判别式 Δ > 0。",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "引用题目条件和学科常识推导出方程有三个实根的条件。"
+        },
+        {
+          "id": "I_6",
+          "type": "对比分析",
+          "content": "对比 Δ = -15 和条件 Δ > 0，发现 -15 ≤ 0，不满足条件。",
+          "parents": [
+            "I_4",
+            "I_5"
+          ],
+          "reasoning_logic": "比较计算出的 Δ 值与所需条件。"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "由于 Δ = -15 ≤ 0，所以 k 的值必须使得判别式 Δ 大于零。",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "基于对比结果推导 k 需满足的条件。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "k 的取值范围是 k < -15。",
+        "parents": [
+          "I_7"
+        ],
+        "reasoning_logic": "综合推导得出 k 的取值范围。"
+      }
+    }
+  }
+}

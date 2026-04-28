@@ -1,0 +1,90 @@
+{
+  "id": 114,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目中提到粒子在x=0和x=L处有无限高的势垒。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "对于一维箱中的粒子，波函数可以表示为ψ(x) = A sin(nπx/L)，其中A是归一化常数，n是离散的正整数。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "归一化条件：∫0^L |ψ(x)|^2 dx = 1。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "波函数在x=0和x=L处必须为零。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "根据边界条件推导。"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "A^2 ∫0^L sin^2(nπx/L) dx = 1。",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "将波函数代入归一化条件。"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "计算积分∫0^L sin^2(nπx/L) dx。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "执行积分运算。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "A^2 [L/2 (1 - cos(2πn))] = 1。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "计算定积分值。"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "A^2 [L/2 (1 - (-1)^n)] = 1。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "简化cos(2πn)为(-1)^n。"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "A^2 [L/2 (2 - (-1)^n)] = 1。",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "进一步简化方程。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "归一化常数A满足A^2 [L/2 (2 - (-1)^n)] = 1。",
+        "parents": [
+          "I_6"
+        ],
+        "reasoning_logic": "综合积分计算得出最终方程。"
+      }
+    }
+  }
+}

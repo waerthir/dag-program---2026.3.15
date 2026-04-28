@@ -1,0 +1,164 @@
+{
+  "id": 0,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "表格中记录了四种植物在不同光照处理下的开花情况"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "植物甲在短日照条件下开花"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "植物甲在长日照条件下不开花"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "植物乙在短日照条件下不开花"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "植物乙在长日照条件下开花"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "植物丙在短日照条件下不开花"
+        },
+        {
+          "id": "C_7",
+          "type": "文字信息",
+          "content": "植物丙在长日照条件下开花"
+        },
+        {
+          "id": "C_8",
+          "type": "文字信息",
+          "content": "植物丁在短日照条件下不开花"
+        },
+        {
+          "id": "C_9",
+          "type": "文字信息",
+          "content": "植物丁在长日照条件下开花"
+        },
+        {
+          "id": "C_10",
+          "type": "文字信息",
+          "content": "题目要求若对植物丁进行人工补光以延长日照时间，它的开花表现更可能出现什么变化"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "四种植物在不同光照条件下的开花情况",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "分析特征"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "植物甲、乙、丙在短日照条件下不开花",
+          "parents": [
+            "C_4",
+            "C_6"
+          ],
+          "reasoning_logic": "分析特征"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "植物甲、乙、丙在长日照条件下开花",
+          "parents": [
+            "C_5",
+            "C_7"
+          ],
+          "reasoning_logic": "分析特征"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "植物丁在短日照条件下不开花",
+          "parents": [
+            "C_8"
+          ],
+          "reasoning_logic": "分析特征"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "植物丁在长日照条件下开花",
+          "parents": [
+            "C_9"
+          ],
+          "reasoning_logic": "分析特征"
+        },
+        {
+          "id": "I_6",
+          "type": "对比分析",
+          "content": "四种植物在长日照条件下的开花情况",
+          "parents": [
+            "I_3",
+            "I_5"
+          ],
+          "reasoning_logic": "对比差异"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "植物甲、乙、丙在长日照条件下开花",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "对比差异"
+        },
+        {
+          "id": "I_8",
+          "type": "逻辑推导",
+          "content": "植物丁在长日照条件下开花",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "对比差异"
+        },
+        {
+          "id": "I_9",
+          "type": "逻辑推导",
+          "content": "如果对植物丁进行人工补光以延长日照时间，它将处于长日照条件下",
+          "parents": [
+            "C_10"
+          ],
+          "reasoning_logic": "结合题目要求"
+        },
+        {
+          "id": "I_10",
+          "type": "逻辑推导",
+          "content": "根据已知信息，植物丁在长日照条件下开花",
+          "parents": [
+            "C_9"
+          ],
+          "reasoning_logic": "结合题目要求"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "若对植物丁进行人工补光以延长日照时间，它的开花表现更可能出现开花",
+        "parents": [
+          "I_9",
+          "I_10"
+        ],
+        "reasoning_logic": "综合得出最终陈述"
+      }
+    }
+  }
+}

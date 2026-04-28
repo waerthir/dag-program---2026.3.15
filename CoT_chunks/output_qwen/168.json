@@ -1,0 +1,214 @@
+{
+  "id": 168,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目描述这是一个一维无限深势阱问题。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "在无限深势阱中，粒子的能量是量子化的，且波函数必须满足边界条件。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "对于一维无限深势阱，粒子只能在势阱内部运动，势阱外部能量无穷大，因此波函数在势阱边界处必须为零。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "薛定谔方程的一般形式为：-\\frac{\\hbar^2}{2m} \\frac{d^2\\psi(x)}{dx^2} + V(x)\\psi(x) = E\\psi(x)。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字条件",
+          "content": "势阱内部势能 V(x)=0。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字条件",
+          "content": "L 是势阱的宽度。"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "微分方程 \\frac{d^2\\psi(x)}{dx^2} = -k^2\\psi(x) 的通解为 \\psi(x) = A\\sin(kx) + B\\cos(kx)。"
+        },
+        {
+          "id": "C_8",
+          "type": "学科常识",
+          "content": "若 A\\sin(kL) = 0 且 A 不为零，则必须有 \\sin(kL) = 0。"
+        },
+        {
+          "id": "C_9",
+          "type": "学科常识",
+          "content": "若 \\sin(kL) = 0，则 kL = n\\pi (n=1, 2, 3, ...)。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "由于势阱内部势能 V(x)=0，薛定谔方程简化为 -\\frac{\\hbar^2}{2m} \\frac{d^2\\psi(x)}{dx^2} = E\\psi(x)。",
+          "parents": [
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "将 V(x)=0 代入薛定谔方程一般形式。"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "整理方程得到 \\frac{d^2\\psi(x)}{dx^2} = -\\frac{2mE}{\\hbar^2}\\psi(x)。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "对简化后的薛定谔方程进行代数变形。"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "令 k^2 = \\frac{2mE}{\\hbar^2}，方程变为 \\frac{d^2\\psi(x)}{dx^2} = -k^2\\psi(x)。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "引入变量 k 替换常数项以简化方程形式。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "波函数解为 \\psi(x) = A\\sin(kx) + B\\cos(kx)。",
+          "parents": [
+            "I_3",
+            "C_7"
+          ],
+          "reasoning_logic": "求解二阶常系数线性微分方程得到通解。"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "根据边界条件 \\psi(0) = 0，推导出 B = 0。",
+          "parents": [
+            "C_3",
+            "I_4"
+          ],
+          "reasoning_logic": "将 x=0 代入通解并利用 \\cos(0)=1, \\sin(0)=0 的性质。"
+        },
+        {
+          "id": "I_6",
+          "type": "条件转化",
+          "content": "波函数简化为 \\psi(x) = A\\sin(kx)。",
+          "parents": [
+            "I_4",
+            "I_5"
+          ],
+          "reasoning_logic": "将 B=0 代入通解表达式。"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "根据边界条件 \\psi(L) = 0，得到 A\\sin(kL) = 0。",
+          "parents": [
+            "C_3",
+            "C_6",
+            "I_6"
+          ],
+          "reasoning_logic": "将 x=L 代入简化后的波函数表达式。"
+        },
+        {
+          "id": "I_8",
+          "type": "逻辑推导",
+          "content": "由于 A 不能为零，得出 \\sin(kL) = 0。",
+          "parents": [
+            "I_7",
+            "C_8"
+          ],
+          "reasoning_logic": "基于物理意义排除 A=0 的情况，应用零积性质。"
+        },
+        {
+          "id": "I_9",
+          "type": "逻辑推导",
+          "content": "由 \\sin(kL) = 0 得出 kL = n\\pi (n=1, 2, 3, ...)。",
+          "parents": [
+            "I_8",
+            "C_9"
+          ],
+          "reasoning_logic": "求解三角方程得到 k 的离散值条件。"
+        },
+        {
+          "id": "I_10",
+          "type": "条件转化",
+          "content": "解得 k = \\frac{n\\pi}{L}。",
+          "parents": [
+            "I_9",
+            "C_6"
+          ],
+          "reasoning_logic": "代数变换求解 k。"
+        },
+        {
+          "id": "I_11",
+          "type": "数值计算",
+          "content": "将 k = \\frac{n\\pi}{L} 代入 k^2 = \\frac{2mE}{\\hbar^2}，得到 (\\frac{n\\pi}{L})^2 = \\frac{2mE}{\\hbar^2}。",
+          "parents": [
+            "I_10",
+            "I_3"
+          ],
+          "reasoning_logic": "将 k 的表达式代回能量定义式。"
+        },
+        {
+          "id": "I_12",
+          "type": "数值计算",
+          "content": "推导出能量本征值表达式 E_n = \\frac{\\hbar^2\\pi^2}{2mL^2} n^2。",
+          "parents": [
+            "I_11"
+          ],
+          "reasoning_logic": "对方程进行代数变形求解 E。"
+        },
+        {
+          "id": "I_13",
+          "type": "数值计算",
+          "content": "计算 n=1 时的能量 E_1 = \\frac{\\hbar^2\\pi^2}{2mL^2}。",
+          "parents": [
+            "I_12"
+          ],
+          "reasoning_logic": "将 n=1 代入能量本征值通用公式。"
+        },
+        {
+          "id": "I_14",
+          "type": "数值计算",
+          "content": "计算 n=2 时的能量 E_2 = 4E_1。",
+          "parents": [
+            "I_12",
+            "I_13"
+          ],
+          "reasoning_logic": "将 n=2 代入公式并发现其与 E_1 的倍数关系。"
+        },
+        {
+          "id": "I_15",
+          "type": "数值计算",
+          "content": "计算 n=3 时的能量 E_3 = 9E_1。",
+          "parents": [
+            "I_12",
+            "I_13"
+          ],
+          "reasoning_logic": "将 n=3 代入公式并发现其与 E_1 的倍数关系。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "前三个能量本征值分别为：E_1 = \\frac{\\hbar^2\\pi^2}{2mL^2}, E_2 = 4E_1, E_3 = 9E_1。",
+        "parents": [
+          "I_13",
+          "I_14",
+          "I_15"
+        ],
+        "reasoning_logic": "汇总 n=1, 2, 3 时的计算结果得出最终结论。"
+      }
+    }
+  }
+}

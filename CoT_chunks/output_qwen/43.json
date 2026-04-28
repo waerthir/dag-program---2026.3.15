@@ -1,0 +1,91 @@
+{
+  "id": 43,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目描述 miR160 是一种微小 RNA，能与靶 mRNA 结合并引起后者降解。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "题目描述 miR160 的一种靶 mRNA 编码 ARF1 蛋白。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "题目描述 ARF1 蛋白影响青蒿素合成关键基因 DBR2 的表达。"
+        },
+        {
+          "id": "C_4",
+          "type": "图像条件",
+          "content": "图中显示当 miR160 表达量增加时，DBR2 基因的表达量降低；反之亦然。"
+        },
+        {
+          "id": "C_5",
+          "type": "图像条件",
+          "content": "图中显示对照组中 miR160 的表达量最高，DBR2 基因的表达量最低。"
+        },
+        {
+          "id": "C_6",
+          "type": "图像条件",
+          "content": "图中显示敲除 miR160 基因的组别中，miR160 的表达量最低，DBR2 基因的表达量最高。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "对比分析",
+          "content": "miR160 的表达量与 DBR2 基因的表达量呈负相关关系。",
+          "parents": [
+            "C_4",
+            "C_5",
+            "C_6"
+          ],
+          "reasoning_logic": "对比对照组和敲除组中 miR160 与 DBR2 表达量的变化趋势得出负相关结论。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "miR160 通过降解编码 ARF1 蛋白的 mRNA 来直接影响 ARF1 蛋白的表达。",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "根据 miRNA 的作用机制（结合并降解靶 mRNA）及靶标关系推导。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "ARF1 蛋白的表达水平调控 DBR2 基因的表达。",
+          "parents": [
+            "C_3",
+            "I_1"
+          ],
+          "reasoning_logic": "结合题目已知 ARF1 影响 DBR2 以及观察到的负相关性，确认调控链条。"
+        },
+        {
+          "id": "I_4",
+          "type": "综合归纳",
+          "content": "miR160 通过直接影响 ARF1 蛋白的表达来调控 DBR2 基因的表达，进而影响青蒿素的合成。",
+          "parents": [
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "将 miR160 对 ARF1 的影响与 ARF1 对 DBR2 及青蒿素合成的影响串联起来。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "miR160 通过直接影响 ARF1 蛋白的表达来调控青蒿素的合成。",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "综合上述推理链条得出最终关于 miR160 调控机制的陈述。"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": 85,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "复数 \\( \\mathbb{C} \\) 是指形如 \\( a + bi \\) 的数，其中 \\( a \\) 和 \\( b \\) 是实数，\\( i \\) 是虚数单位，满足 \\( i^2 = -1 \\)。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "复数 \\( \\mathbb{C} \\) 是实数 \\( \\mathbb{R} \\) 和虚数 \\( \\mathbb{i} \\) 的乘积空间，即 \\( \\mathbb{C} = \\mathbb{R} \\oplus \\mathbb{R}i \\)。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "复数 \\( a + bi \\) 对应于复平面上的点 \\( (a, b) \\)。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "复数 \\( \\mathbb{C} \\) 是一个域，满足加法和乘法的封闭性、结合律、交换律、分配律和单位元等性质。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "复数 \\( \\mathbb{C} \\) 可以看作是实数 \\( \\mathbb{R} \\) 和虚数 \\( \\mathbb{i} \\) 的线性组合空间。",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "结合复数定义和乘积空间表示推导出线性组合空间。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "复数 \\( \\mathbb{C} \\) 可以看作是实数 \\( \\mathbb{R} \\) 和虚数 \\( \\mathbb{i} \\) 的乘积空间。",
+          "parents": [
+            "C_2"
+          ],
+          "reasoning_logic": "直接引用乘积空间定义。"
+        },
+        {
+          "id": "I_3",
+          "type": "综合归纳",
+          "content": "复数 \\( \\mathbb{C} \\) 可以看作是实数 \\( \\mathbb{R} \\) 和虚数 \\( \\mathbb{i} \\) 的线性组合空间，同时也是实数 \\( \\mathbb{R} \\) 和虚数 \\( \\mathbb{i} \\) 的乘积空间。",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "综合线性组合空间和乘积空间得出最终陈述。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "复数 \\( \\mathbb{C} \\) 可以看作是实数 \\( \\mathbb{R} \\) 和虚数 \\( \\mathbb{i} \\) 的线性组合空间，同时也是实数 \\( \\mathbb{R} \\) 和虚数 \\( \\mathbb{i} \\) 的乘积空间。",
+        "parents": [
+          "I_3"
+        ],
+        "reasoning_logic": "从中间步骤归纳得出最终答案。"
+      }
+    }
+  }
+}

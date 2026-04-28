@@ -1,0 +1,9 @@
+{
+  "id": "35_I_4",
+  "evaluation": {
+    "Dependency_Completeness": 3.3,
+    "Dependency_Accuracy": 10,
+    "Reasoning_Logic_Accuracy": 6.5,
+    "Reasoning_Type_Accuracy": 9.5
+  }
+}

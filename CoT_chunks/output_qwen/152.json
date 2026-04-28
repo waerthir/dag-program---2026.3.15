@@ -1,0 +1,112 @@
+{
+  "id": 152,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目给定 n = 2^k * N，其中 N 是奇数。",
+          "reasoning_logic": "提取题目已知条件"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "待验证公式为：sum_{d|n} (-1)^(n/d) * phi(d) = sum_{d|2^(k-1)N} phi(d) - sum_{d|N} phi(2^k * d)。",
+          "reasoning_logic": "提取题目待验证的等式结构"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "若 N 是奇数且 d 是 N 的因子，则 N/d 也是奇数。",
+          "reasoning_logic": "引用奇数因子的性质"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "对于任意整数 x，若指数为偶数，则 (-1)^x = 1；若指数为奇数，则 (-1)^x = -1。",
+          "reasoning_logic": "引用幂运算性质"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "将 n 的因子 d 分为两类：一类是不含因子 2 的 d（即 d|N），另一类是含因子 2 的 d。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "根据 n 的质因数分解结构对因子进行分类讨论"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "对于 d|N 的情况，n/d = 2^k * (N/d)。由于 N/d 是奇数且 k>=1，指数 2^k*(N/d) 是偶数，故 (-1)^(n/d) = 1。",
+          "parents": [
+            "C_1",
+            "C_3",
+            "C_4"
+          ],
+          "reasoning_logic": "结合奇数性质和幂运算性质推导符号项"
+        },
+        {
+          "id": "I_3",
+          "type": "综合归纳",
+          "content": "第一类因子（d|N）的贡献和为 sum_{d|N} phi(d)。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "汇总不含因子 2 的项的贡献"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "对于含因子 2 的 d，设 d = 2^m * d'。当 m < k-1 时，指数为偶数，符号为 1；当 m = k-1 时，指数为奇数，符号为 -1。",
+          "parents": [
+            "C_1",
+            "C_4"
+          ],
+          "reasoning_logic": "分析含因子 2 的项的指数奇偶性"
+        },
+        {
+          "id": "I_5",
+          "type": "综合归纳",
+          "content": "第二类因子的总贡献被推导为 sum_{d|2^(k-1)N} phi(d) - sum_{d|N} phi(2^k * d)。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "根据符号分布重组求和项，匹配目标公式右侧结构"
+        },
+        {
+          "id": "I_6",
+          "type": "综合归纳",
+          "content": "合并两部分贡献，得出恒等式：sum_{d|n} (-1)^(n/d) * phi(d) = sum_{d|2^(k-1)N} phi(d) - sum_{d|N} phi(2^k * d)。",
+          "parents": [
+            "I_3",
+            "I_5"
+          ],
+          "reasoning_logic": "综合两类因子的计算结果，重构完整等式"
+        },
+        {
+          "id": "I_7",
+          "type": "对比分析",
+          "content": "根据题目要求验证该表达式等于 0，即 sum_{d|2^(k-1)N} phi(d) - sum_{d|N} phi(2^k * d) = 0。",
+          "parents": [
+            "C_2",
+            "I_6"
+          ],
+          "reasoning_logic": "将推导出的结构与题目给定的目标值进行比对"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "经验证，该等式成立，最终结果为 0。",
+        "parents": [
+          "I_7"
+        ],
+        "reasoning_logic": "综合所有推导步骤，确认最终答案为 0"
+      }
+    }
+  }
+}

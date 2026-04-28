@@ -1,0 +1,9 @@
+{
+  "id": "47_I_10",
+  "evaluation": {
+    "Dependency_Completeness": 3,
+    "Dependency_Accuracy": 2,
+    "Reasoning_Logic_Accuracy": 5.5,
+    "Reasoning_Type_Accuracy": 10
+  }
+}

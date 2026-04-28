@@ -1,0 +1,80 @@
+{
+  "id": 104,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目要求使用薛定谔方程确定一维谐振子中粒子的波函数和能量本征值。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "一维谐振子的势能函数为 $V(x) = \\frac{1}{2}kx^2$，其中 $k$ 是谐振子常数。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "薛定谔方程的形式为 $-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi(x)}{dx^2} + V(x)\\psi(x) = E\\psi(x)$。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "对于一维谐振子，能量本征值公式为 $E_n = \\hbar\\omega\\left(n + \\frac{1}{2}\\right)$。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "角频率与常数的关系为 $\\omega = \\sqrt{\\frac{k}{m}}$。"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "量子数 $n$ 为正整数。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将势能函数 $V(x) = \\frac{1}{2}kx^2$ 代入薛定谔方程，得到 $-\\frac{\\hbar^2}{2m}\\frac{d^2\\psi(x)}{dx^2} + \\frac{1}{2}kx^2\\psi(x) = E\\psi(x)$。",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "执行代入操作，将具体的势能表达式替换通用方程中的 V(x)。"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "整理方程得到 $\\frac{d^2\\psi(x)}{dx^2} = -\\frac{2m}{\\hbar^2}(E - \\frac{1}{2}kx^2)\\psi(x)$。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "通过代数变换移项并化简，分离出二阶导数项。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "结合角频率定义，得出能量本征值的具体表达式 $E_n = \\hbar\\sqrt{\\frac{k}{m}}\\left(n + \\frac{1}{2}\\right)$。",
+          "parents": [
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "将 $\\omega$ 的定义式代入能量本征值通式中。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "一维谐振子的波函数为 $\\psi_n(x) = \\sqrt{\\frac{2}{\\sqrt{\\pi}L}}e^{-\\frac{x^2}{2L}}\\sin\\left(\\frac{n\\pi x}{L}\\right)$（其中 $L$ 是谐振子长度），能量本征值为 $E_n = \\hbar\\sqrt{\\frac{k}{m}}\\left(n + \\frac{1}{2}\\right)$。",
+        "parents": [
+          "I_2",
+          "I_3"
+        ],
+        "reasoning_logic": "综合推导出的微分方程形式及已知的能量本征值结论，给出最终的波函数和能量表达式。"
+      }
+    }
+  }
+}

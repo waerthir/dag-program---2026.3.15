@@ -1,0 +1,78 @@
+{
+  "id": 90,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "π(x) 是质数计数函数，表示小于或等于 x 的所有质数的数量。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "π(x)/x 是质数密度函数，表示在区间 [0, x] 内的质数与 x 的比值。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "根据质数定理，π(x) ≈ x/ln(x) 当 x → ∞。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "当 x → ∞ 时，ln(x) → ∞。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将 π(x) ≈ x/ln(x) 代入 π(x)/x，得到 π(x)/x ≈ (x/ln(x))/x。",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "将质数定理的近似代入密度函数表达式。"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "计算 (x/ln(x))/x = 1/ln(x)。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "执行除法运算简化表达式。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "由 ln(x) → ∞ 得出 1/ln(x) → 0。",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "基于极限性质推理倒数趋近于0。"
+        },
+        {
+          "id": "I_4",
+          "type": "综合归纳",
+          "content": "当 x → ∞ 时，π(x)/x → 0。",
+          "parents": [
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "结合近似结果和极限事实得出密度趋近于0。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "lim_{x → ∞} π(x)/x = 0。",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "总结得出最终极限值。"
+      }
+    }
+  }
+}

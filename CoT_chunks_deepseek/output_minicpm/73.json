@@ -1,0 +1,79 @@
+{
+  "id": 73,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "给定的微分方程是(x^2D^2 + xD + 1)y = sin(2log x)sin(log x)"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "D是微分算子，表示对y关于x的一阶导数"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "辅助方程的形式通常为(P(x)D^2 + Q(x)D + R(x)y) = 0，其中P(x)、Q(x)和R(x)是关于x的多项式"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "sin(2log x)sin(log x) = 2sin^2(log x)/cos(2log x)"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将给定的微分方程整理成标准形式(x^2D^2 + xD + 1)y = sin(2log x)sin(log x)",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "根据微分方程的定义和微分算子的含义"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "将sin(2log x)sin(log x)展开为2sin^2(log x)/cos(2log x)",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "应用三角恒等式进行展开"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "给定的微分方程可以改写为(x^2D^2 + xD + 1)y = 2sin^2(log x)/cos(2log x)",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "将展开后的表达式代入原方程"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "辅助方程为(x^2D^2 + xD + 1)y = 2sin^2(log x)/cos(2log x)",
+          "parents": [
+            "I_3",
+            "C_3"
+          ],
+          "reasoning_logic": "根据辅助方程的标准形式，将改写后的方程作为辅助方程"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "给定的微分方程的辅助方程为(x^2D^2 + xD + 1)y = 2sin^2(log x)/cos(2log x)",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "综合所有推导步骤得出最终陈述"
+      }
+    }
+  }
+}

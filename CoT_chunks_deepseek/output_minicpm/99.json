@@ -1,0 +1,58 @@
+{
+  "id": 99,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "方程1为2x^2 + 5xy + 3y^2 - 2 = 0"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "方程2为6x^2 + 8xy + 4y^2 - 3 = 0"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "数值计算",
+          "content": "将方程1和方程2相加得到8x^2 + 13xy + 7y^2 - 5 = 0",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "将两个方程相加"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "需要将x^2 + y^2表示为8x^2 + 13xy + 7y^2 - 5的函数形式",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "为了找到x^2 + y^2的最大值"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "将8x^2 + 13xy + 7y^2 - 5表示为一个完全平方的形式",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "通过配方来实现"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "x^2 + y^2的最大值需要进一步计算得出",
+        "parents": [
+          "I_3"
+        ],
+        "reasoning_logic": "综合配方过程得出最终陈述"
+      }
+    }
+  }
+}

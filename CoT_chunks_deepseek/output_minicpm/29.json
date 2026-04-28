@@ -1,0 +1,71 @@
+{
+  "id": 29,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "图像信息",
+          "content": "图1显示的是隐性突变基因频率随时间的变化趋势"
+        },
+        {
+          "id": "C_2",
+          "type": "图像信息",
+          "content": "图2显示的是显性突变基因频率随时间的变化趋势"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "题目描述，具有突变表型的个体更容易生存和繁衍"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "显性突变基因的个体更容易表现出突变表型",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "根据题目描述"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "显性突变基因的个体更容易生存和繁衍",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "由更容易表现出突变表型推导"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "在自然选择下，显性突变基因的频率上升速度会更快",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "由更容易生存和繁衍推导"
+        },
+        {
+          "id": "I_4",
+          "type": "对比分析",
+          "content": "上升更快的一条曲线更可能对应显性突变基因",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "对比两图"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "上升更快的一条曲线更可能对应显性突变基因",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "综合得出最终陈述"
+      }
+    }
+  }
+}

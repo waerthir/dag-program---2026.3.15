@@ -1,0 +1,134 @@
+{
+  "id": 147,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "定义序列 $(r_n)$ 为无限次硬币投掷的结果，其中 $R_n = 1$ 表示正面，$R_n = -1$ 表示反面。",
+          "reasoning_logic": "题目设定的基本变量定义"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "每次投掷硬币得到正面或反面的概率均为 $\\frac{1}{2}$。",
+          "reasoning_logic": "公平硬币的概率公理"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "随机变量 $R_n$ 的期望值计算公式为 $E[R_n] = 1 \\times P(正面) + (-1) \\times P(反面)$。",
+          "reasoning_logic": "期望值的定义公式"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "随机变量 $R_n$ 的方差计算公式及结果为 $Var(R_n/n) = \\frac{1}{n^2}$。",
+          "reasoning_logic": "方差的性质及计算结果"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "大数定律指出：如果序列的期望值存在且为常数，则随着 $n$ 增加，其和的平均值将趋向于这个常数。",
+          "reasoning_logic": "引用的统计学定理"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "中心极限定理指出：独立随机变量之和的分布趋向于正态分布。",
+          "reasoning_logic": "引用的统计学定理"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "数值计算",
+          "content": "计算出 $E[R_n] = 0$。",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "代入概率值计算期望"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "推导出每一项 $\\frac{R_n}{n}$ 的期望值也是 0。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "利用期望的线性性质 $E[cX] = cE[X]$"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "根据大数定律，推导出和的平均值将趋向于 0。",
+          "parents": [
+            "C_5",
+            "I_2"
+          ],
+          "reasoning_logic": "应用大数定律于期望值为 0 的序列"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "推导出随着 $n$ 增加，方差 $\\frac{1}{n^2}$ 迅速减小，序列在高阶趋于 0。",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "分析方差随 $n$ 变化的趋势"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "推导出 $\\sum_{n=1}^{∞} \\frac{R_n}{n}$ 的和趋向于 0 的概率很高。",
+          "parents": [
+            "I_3",
+            "I_4"
+          ],
+          "reasoning_logic": "综合期望趋向和大数定律结论"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "应用中心极限定理，推导出和的分布趋向于均值为 0 的正态分布。",
+          "parents": [
+            "C_6",
+            "I_2",
+            "C_4"
+          ],
+          "reasoning_logic": "结合期望、方差和中心极限定理分析分布形态"
+        },
+        {
+          "id": "I_7",
+          "type": "对比分析",
+          "content": "得出结论：$\\sum_{n=1}^{∞} \\frac{R_n}{n}$ 的和趋向于 0 的概率接近 1。",
+          "parents": [
+            "I_5",
+            "I_6"
+          ],
+          "reasoning_logic": "综合前述概率分析和高阶趋于 0 的特性"
+        },
+        {
+          "id": "I_8",
+          "type": "逻辑推导",
+          "content": "由和趋向于 0 推导出该级数收敛于有限值的概率为 1。",
+          "parents": [
+            "I_7"
+          ],
+          "reasoning_logic": "若极限存在（为 0），则级数必然收敛"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "$P\\left(\\sum_{n=1}^{∞} \\frac{R_n}{n} < \\infty\\right) = 1$",
+        "parents": [
+          "I_8"
+        ],
+        "reasoning_logic": "基于推理步骤 I_8 得出最终概率结论"
+      }
+    }
+  }
+}

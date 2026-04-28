@@ -1,0 +1,94 @@
+{
+  "id": 86,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "T是一个连续线性算子"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "(u_n)是一个序列"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "(u_n)弱收敛到u，即(u_n)⇀u"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "对于任意的线性函数φ，都有lim_{n→∞}⟨u_n,φ⟩=⟨u,φ⟩"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "假设T(u_n)⇀T(u)"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "对于任意的线性函数ψ，都有lim_{n→∞}⟨T(u_n),ψ⟩=⟨T(u),ψ⟩"
+        },
+        {
+          "id": "C_7",
+          "type": "文字信息",
+          "content": "题目要求证明是否存在一个子序列(u_{n_k})，使得T(u_{n_k})→T(u)"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "由于T(u_n)⇀T(u)，根据弱收敛的定义，对于任意的线性函数ψ，都有lim_{n→∞}⟨T(u_n),ψ⟩=⟨T(u),ψ⟩",
+          "parents": [
+            "C_5",
+            "C_6"
+          ],
+          "reasoning_logic": "引用弱收敛定义"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "由于T是连续线性算子，根据连续线性算子的性质，如果lim_{n→∞}⟨T(u_n),ψ⟩=⟨T(u),ψ⟩，那么lim_{n→∞}T(u_n)=T(u)",
+          "parents": [
+            "C_1",
+            "I_1"
+          ],
+          "reasoning_logic": "引用连续线性算子性质"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "存在一个子序列(u_{n_k})，使得对于任意的线性函数ψ，都有lim_{k→∞}⟨T(u_{n_k}),ψ⟩=⟨T(u),ψ⟩",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "从弱收敛序列中提取子序列"
+        },
+        {
+          "id": "I_4",
+          "type": "综合归纳",
+          "content": "结合上述两点，可以得出结论：存在一个子序列(u_{n_k})，使得T(u_{n_k})→T(u)",
+          "parents": [
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "综合连续线性算子性质和子序列弱收敛"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "基于题目中的已知条件和连续线性算子的性质，可以得出结论：存在一个子序列(u_{n_k})，使得T(u_{n_k})→T(u)",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "总结推理过程得出最终陈述"
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "id": 33,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "人类女性体细胞中仅有一条X染色体保持活性。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "基因G编码G蛋白，等位基因g编码活性低的g蛋白。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "缺失G基因的个体会患某遗传病。"
+        },
+        {
+          "id": "C_4",
+          "type": "图像信息",
+          "content": "图示为该家族系谱图。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "已知II-1不含g基因。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "随机选取III-5体内200个体细胞，发现其中100个细胞只表达G蛋白，另100个细胞只表达g蛋白。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "III-5细胞中失活的X染色体是否一定来自母方。",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3",
+            "C_4",
+            "C_5",
+            "C_6"
+          ],
+          "reasoning_logic": "结合已知条件进行分析。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "III-5细胞中失活的X染色体不一定来自母方。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "由分析得出结论。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "III-5细胞中失活的X染色体不一定来自母方。",
+        "parents": [
+          "I_2"
+        ],
+        "reasoning_logic": "综合推理得出最终陈述。"
+      }
+    }
+  }
+}

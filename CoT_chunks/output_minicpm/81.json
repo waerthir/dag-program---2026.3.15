@@ -1,0 +1,99 @@
+{
+  "id": 81,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "标准布朗运动 B_t 满足初始条件 B_0 = 0。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "标准布朗运动 B_t 服从正态分布，即 B_t ~ N(0, t)。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "若 Z ~ N(0, 1)，则 B_t 可表示为 sqrt(t) * Z。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "标准正态分布变量 Z 的期望 E[Z] = 0。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "正弦函数 sin(x) 是奇函数，且关于原点对称。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字条件",
+          "content": "题目要求计算 E[sin(B_t)]。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "由 B_t ~ N(0, t) 可知 E[B_t] = 0。",
+          "parents": [
+            "C_2"
+          ],
+          "reasoning_logic": "根据正态分布 N(mu, sigma^2) 的期望定义，mu=0。"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "将 E[sin(B_t)] 转化为 E[sin(sqrt(t) * Z)]，其中 Z ~ N(0, 1)。",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "利用布朗运动的缩放性质进行变量代换。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "由于 Z 服从标准正态分布（关于 0 对称）且 sin 是奇函数，sin(sqrt(t) * Z) 的分布关于 0 对称。",
+          "parents": [
+            "C_4",
+            "C_5",
+            "I_2"
+          ],
+          "reasoning_logic": "奇函数作用于对称分布的随机变量，其结果仍为对称分布。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "计算得出 E[sin(sqrt(t) * Z)] = 0。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "对称分布的随机变量其期望值为 0。"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "得出 E[sin(B_t)] = 0。",
+          "parents": [
+            "I_2",
+            "I_4"
+          ],
+          "reasoning_logic": "回代变量，确认原式期望值。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案：E[X_t] = E[sin(B_t)] = 0。",
+        "parents": [
+          "I_5"
+        ],
+        "reasoning_logic": "综合上述推导步骤，得出最终结论。"
+      }
+    }
+  }
+}

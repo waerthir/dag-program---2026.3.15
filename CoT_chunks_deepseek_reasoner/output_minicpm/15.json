@@ -1,0 +1,45 @@
+{
+  "id": 15,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "初始土壤 TBBPA 浓度为 1 mg/kg。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "题目要求根据图示与题干信息回答第15天蚯蚓体内富集的 TBBPA 浓度约为初始土壤浓度的多少倍。"
+        },
+        {
+          "id": "C_3",
+          "type": "图像信息",
+          "content": "图示显示第15天蚯蚓体内的 TBBPA 浓度。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "对比分析",
+          "content": "将图中第15天蚯蚓体内 TBBPA 浓度与初始土壤浓度进行对比，计算倍数。",
+          "parents": [
+            "C_1",
+            "C_3"
+          ],
+          "reasoning_logic": "执行对比分析以计算倍数关系。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "第15天蚯蚓体内的 TBBPA 浓度约为初始土壤浓度的 10 倍。",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "综合对比分析结果得出最终陈述。"
+      }
+    }
+  }
+}

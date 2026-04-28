@@ -1,0 +1,129 @@
+{
+  "id": 6,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "表格列出了在不同氧气供给条件下，水母雪莲细胞的生长、分裂和代谢情况。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "氧气是细胞进行有氧呼吸的必要条件。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "有氧呼吸产生的能量可以支持细胞的生长、分裂和代谢活动。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "有氧条件下，水母雪莲细胞的生长显著高于无氧条件下。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "分析表格数据"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "有氧条件下，水母雪莲细胞的分裂显著高于无氧条件下。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "分析表格数据"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "有氧条件下，水母雪莲细胞的代谢显著高于无氧条件下。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "分析表格数据"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "无氧条件下，水母雪莲细胞的生长受到明显抑制。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "从实验结果分析"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "无氧条件下，水母雪莲细胞的分裂受到明显抑制。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "从实验结果分析"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "无氧条件下，水母雪莲细胞的代谢受到明显抑制。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "从实验结果分析"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "氧气供给对水母雪莲细胞的生长、分裂和代谢是必要的。",
+          "parents": [
+            "I_4",
+            "I_5",
+            "I_6"
+          ],
+          "reasoning_logic": "基于抑制观察推理"
+        },
+        {
+          "id": "I_8",
+          "type": "逻辑推导",
+          "content": "如果氧气供给不足，细胞无法进行充分的有氧呼吸。",
+          "parents": [
+            "C_2"
+          ],
+          "reasoning_logic": "结合生物学知识"
+        },
+        {
+          "id": "I_9",
+          "type": "逻辑推导",
+          "content": "这导致能量供应不足。",
+          "parents": [
+            "I_8"
+          ],
+          "reasoning_logic": "逻辑推导"
+        },
+        {
+          "id": "I_10",
+          "type": "逻辑推导",
+          "content": "从而影响细胞的正常生长、分裂和代谢。",
+          "parents": [
+            "I_9",
+            "C_3"
+          ],
+          "reasoning_logic": "基于能量支持常识"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "氧气供给对水母雪莲细胞的生长、分裂和代谢是必要的。",
+        "parents": [
+          "I_7",
+          "I_10"
+        ],
+        "reasoning_logic": "综合推理过程得出最终陈述"
+      }
+    }
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "id": 105,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "电子被限制在一个长度为L的一维箱子里。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "需要根据薛定谔方程求解可能的能量级和波函数。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "要求确定前三个能量状态下，电子在给定位置出现的概率。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "对于一维箱中的电子，薛定谔方程的形式为：-ħ²/(2m) * d²ψ(x)/dx² + V(x)ψ(x) = Eψ(x)，其中ħ是约化普朗克常数，m是电子质量，V(x)是势函数，E是能量，ψ(x)是波函数。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "在一维箱中，势函数V(x)可以表示为：V(x)=0 if 0≤x≤L/2，V(x)=0 if L/2≤x≤L。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "薛定谔方程简化为：-ħ²/(2m) * d²ψ(x)/dx² = Eψ(x)。",
+          "parents": [
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "结合势函数条件，将薛定谔方程简化。"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "解这个二阶微分方程，得到波函数的形式为：ψ(x) = A sin(kx) + B cos(kx)，其中k = √(2mE/ħ²)。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "求解简化后的薛定谔方程，得到波函数的一般形式。"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "在x=0和x=L处，波函数和其导数为零。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "确定边界条件。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "ψ(0) = A sin(0) + B cos(0) = B = 0。",
+          "parents": [
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "应用边界条件于x=0。"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "ψ(L) = A sin(kL) = 0。",
+          "parents": [
+            "I_2",
+            "I_3",
+            "I_4"
+          ],
+          "reasoning_logic": "应用边界条件于x=L。"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "因为A≠0，所以sin(kL)=0。",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "由ψ(L)=0推导出sin(kL)=0。"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "sin(kL)=0 ⇒ kL = nπ ⇒ k = nπ/L，其中n=1,2,3,...。",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "求解sin(kL)=0得到k的表达式。"
+        },
+        {
+          "id": "I_8",
+          "type": "数值计算",
+          "content": "能量级E_n为：E_n = ħ²k²/(2m) = ħ²(nπ/L)²/(2m) = n²π²ħ²/(8mL²)。",
+          "parents": [
+            "I_2",
+            "I_7"
+          ],
+          "reasoning_logic": "将k代入能量表达式，计算能量级。"
+        },
+        {
+          "id": "I_9",
+          "type": "数值计算",
+          "content": "E₁ = π²ħ²/(4mL²)。",
+          "parents": [
+            "I_8"
+          ],
+          "reasoning_logic": "计算n=1时的能量级。"
+        },
+        {
+          "id": "I_10",
+          "type": "数值计算",
+          "content": "E₂ = 4π²ħ²/(4mL²) = π²ħ²/(mL²)。",
+          "parents": [
+            "I_8"
+          ],
+          "reasoning_logic": "计算n=2时的能量级。"
+        },
+        {
+          "id": "I_11",
+          "type": "数值计算",
+          "content": "E₃ = 9π²ħ²/(4mL²)。",
+          "parents": [
+            "I_8"
+          ],
+          "reasoning_logic": "计算n=3时的能量级。"
+        },
+        {
+          "id": "I_12",
+          "type": "数值计算",
+          "content": "ψ₁(x) = A₁ sin(πx/L)。",
+          "parents": [
+            "I_2",
+            "I_4",
+            "I_7"
+          ],
+          "reasoning_logic": "将n=1代入波函数形式，得到第一能量状态的波函数。"
+        },
+        {
+          "id": "I_13",
+          "type": "数值计算",
+          "content": "ψ₂(x) = A₂ sin(2πx/L)。",
+          "parents": [
+            "I_2",
+            "I_4",
+            "I_7"
+          ],
+          "reasoning_logic": "将n=2代入波函数形式，得到第二能量状态的波函数。"
+        },
+        {
+          "id": "I_14",
+          "type": "数值计算",
+          "content": "ψ₃(x) = A₃ sin(3πx/L)。",
+          "parents": [
+            "I_2",
+            "I_4",
+            "I_7"
+          ],
+          "reasoning_logic": "将n=3代入波函数形式，得到第三能量状态的波函数。"
+        },
+        {
+          "id": "I_15",
+          "type": "数值计算",
+          "content": "P(x) = |ψ(x)|² = A₁² sin²(πx/L)。",
+          "parents": [
+            "I_12"
+          ],
+          "reasoning_logic": "计算第一能量状态的概率分布。"
+        },
+        {
+          "id": "I_16",
+          "type": "数值计算",
+          "content": "P(x) = A₂² sin²(2πx/L)。",
+          "parents": [
+            "I_13"
+          ],
+          "reasoning_logic": "计算第二能量状态的概率分布。"
+        },
+        {
+          "id": "I_17",
+          "type": "数值计算",
+          "content": "P(x) = A₃² sin²(3πx/L)。",
+          "parents": [
+            "I_14"
+          ],
+          "reasoning_logic": "计算第三能量状态的概率分布。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "能量级：E₁ = π²ħ²/(4mL²)，E₂ = π²ħ²/(mL²)，E₃ = 9π²ħ²/(4mL²)。波函数：ψ₁(x) = A₁ sin(πx/L)，ψ₂(x) = A₂ sin(2πx/L)，ψ₃(x) = A₃ sin(3πx/L)。概率分布：P(x) = A₁² sin²(πx/L)，P(x) = A₂² sin²(2πx/L)，P(x) = A₃² sin²(3πx/L)。",
+        "parents": [
+          "I_9",
+          "I_10",
+          "I_11",
+          "I_12",
+          "I_13",
+          "I_14",
+          "I_15",
+          "I_16",
+          "I_17"
+        ],
+        "reasoning_logic": "综合所有能量级、波函数和概率分布结果，得出最终陈述。"
+      }
+    }
+  }
+}

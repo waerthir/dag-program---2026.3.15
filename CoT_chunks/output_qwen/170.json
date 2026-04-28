@@ -1,0 +1,170 @@
+{
+  "id": 170,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目设定粒子处于一维无限深势阱中。",
+          "reasoning_logic": "提取题目背景信息"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "无限深势阱的边界条件是：势阱内能量为零，势阱外能量无穷大。",
+          "reasoning_logic": "引用物理模型定义"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "一维无限深势阱的波函数通式为 \\(\\psi(x) = A \\sin\\left(\\frac{n\\pi x}{L}\\right)\\)，其中 \\(A\\) 为归一化常数，\\(n\\) 为量子数。",
+          "reasoning_logic": "引用量子力学公式"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "当 \\(n=1\\) 时对应基态，当 \\(n=2\\) 时对应第一激发态。",
+          "reasoning_logic": "引用量子数定义"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "波函数的归一化条件为 \\(\\int_{0}^{L} |\\psi(x)|^2 dx = 1\\)。",
+          "reasoning_logic": "引用归一化原理"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "积分公式 \\(\\int \\sin^2(ax) dx = \\frac{x}{2} - \\frac{\\sin(2ax)}{4a}\\)。",
+          "reasoning_logic": "引用数学积分公式"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "概率密度定义为 \\(P(x) = |\\psi(x)|^2\\)。",
+          "reasoning_logic": "引用概率密度定义"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将 \\(n=1\\) 代入通式得到基态波函数形式 \\(\\psi_1(x) = A \\sin\\left(\\frac{\\pi x}{L}\\right)\\)。",
+          "parents": [
+            "C_3",
+            "C_4"
+          ],
+          "reasoning_logic": "根据量子数定义实例化基态波函数"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "将 \\(n=2\\) 代入通式得到第一激发态波函数形式 \\(\\psi_2(x) = A \\sin\\left(\\frac{2\\pi x}{L}\\right)\\)。",
+          "parents": [
+            "C_3",
+            "C_4"
+          ],
+          "reasoning_logic": "根据量子数定义实例化第一激发态波函数"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "建立归一化积分方程 \\(\\int_{0}^{L} A^2 \\sin^2\\left(\\frac{\\pi x}{L}\\right) dx = 1\\)。",
+          "parents": [
+            "C_5",
+            "I_1"
+          ],
+          "reasoning_logic": "将基态波函数代入归一化条件"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "利用积分公式计算得出 \\(A^2 \\left( \\frac{L}{2} \\right) = 1\\)。",
+          "parents": [
+            "I_3",
+            "C_6"
+          ],
+          "reasoning_logic": "执行定积分运算"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "解得归一化常数 \\(A = \\sqrt{\\frac{2}{L}}\\)。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "求解代数方程"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "确定基态波函数为 \\(\\psi_1(x) = \\sqrt{\\frac{2}{L}} \\sin\\left(\\frac{\\pi x}{L}\\right)\\)。",
+          "parents": [
+            "I_1",
+            "I_5"
+          ],
+          "reasoning_logic": "组合系数与函数形式"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "确定第一激发态波函数为 \\(\\psi_2(x) = \\sqrt{\\frac{2}{L}} \\sin\\left(\\frac{2\\pi x}{L}\\right)\\)。",
+          "parents": [
+            "I_2",
+            "I_5"
+          ],
+          "reasoning_logic": "组合系数与函数形式"
+        },
+        {
+          "id": "I_8",
+          "type": "数值计算",
+          "content": "计算基态概率密度 \\(P_1(x) = \\frac{2}{L} \\sin^2\\left(\\frac{\\pi x}{L}\\right)\\)。",
+          "parents": [
+            "C_7",
+            "I_6"
+          ],
+          "reasoning_logic": "对基态波函数求平方模"
+        },
+        {
+          "id": "I_9",
+          "type": "数值计算",
+          "content": "计算第一激发态概率密度 \\(P_2(x) = \\frac{2}{L} \\sin^2\\left(\\frac{2\\pi x}{L}\\right)\\)。",
+          "parents": [
+            "C_7",
+            "I_7"
+          ],
+          "reasoning_logic": "对第一激发态波函数求平方模"
+        },
+        {
+          "id": "I_10",
+          "type": "对比分析",
+          "content": "分析得出基态概率密度 \\(P_1(x)\\) 在 \\(x=0, L\\) 处为零，在 \\(x=\\frac{L}{2}\\) 处达到最大值。",
+          "parents": [
+            "I_8"
+          ],
+          "reasoning_logic": "分析正弦平方函数的极值点"
+        },
+        {
+          "id": "I_11",
+          "type": "对比分析",
+          "content": "分析得出第一激发态概率密度 \\(P_2(x)\\) 在 \\(x=0, L\\) 处为零，在 \\(x=\\frac{L}{4}, \\frac{3L}{4}\\) 处达到最大值。",
+          "parents": [
+            "I_9"
+          ],
+          "reasoning_logic": "分析正弦平方函数的极值点"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "基态和第一激发态的概率密度在位置上的分布有所不同：基态的概率密度在 \\(x=\\frac{L}{2}\\) 处达到最大值，而第一激发态的概率密度在 \\(x=\\frac{L}{4}, \\frac{3L}{4}\\) 处达到最大值。",
+        "parents": [
+          "I_10",
+          "I_11"
+        ],
+        "reasoning_logic": "综合两个状态的极值位置特征得出最终结论"
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": 111,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "一维无限深势阱"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "宽度 W = 0.3 nm"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "Schrödinger 方程"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "对于一维无限深势阱，能量本征值公式为 E_n = (ħ² ω_n²) / (2m)，其中 ω_n 是角频率，n 是离散量子数"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "对于一维无限深势阱，角频率 ω_n 与波数 k 之间的关系为 ω_n = (ħ k²) / (2m)"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "波数 k 与势阱宽度 W 之间的关系为 k = (2π n) / W，其中 n 是离散量子数"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "对于一维无限深势阱，波函数 ψ(x) 的形式为 ψ(x) = √(1/L) sin(nπ x / L)，其中 L = W/2"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将波数 k 代入能量本征值公式",
+          "parents": [
+            "C_4",
+            "C_5",
+            "C_6"
+          ],
+          "reasoning_logic": "结合能量本征值公式、角频率与波数关系、波数与宽度关系"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "得到 E_n = (ħ² (2π n / W)²) / (2m) = (ħ² π² n²) / (2m W²)",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "执行代数变换和简化"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "计算 L = W/2 = 0.3/2 = 0.15 nm",
+          "parents": [
+            "C_2"
+          ],
+          "reasoning_logic": "将宽度代入公式计算"
+        },
+        {
+          "id": "I_4",
+          "type": "条件转化",
+          "content": "将 L 代入波函数公式",
+          "parents": [
+            "C_7",
+            "I_3"
+          ],
+          "reasoning_logic": "结合波函数形式和计算出的 L 值"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "得到 ψ(x) = √(1/0.15) sin(nπ x / 0.15)",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "执行代入计算"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "简化 ψ(x) = √(2/0.15) sin(nπ x / 0.15)",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "执行代数变换"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "进一步简化 ψ(x) = 2/√0.15 sin(nπ x / 0.15)",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "执行代数变换"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "能量本征值：E_n = (ħ² π² n²) / (2m W²)；波函数：ψ(x) = 2/√0.15 sin(nπ x / 0.15)",
+        "parents": [
+          "I_2",
+          "I_7"
+        ],
+        "reasoning_logic": "综合能量本征值和波函数的计算结果得出最终陈述"
+      }
+    }
+  }
+}

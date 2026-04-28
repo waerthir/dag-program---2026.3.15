@@ -1,0 +1,102 @@
+{
+  "id": 117,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "波函数 ψ(x)=3x(x-1)"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "积分区间为 x=0 到 x=1"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "概率密度函数是波函数的绝对值的平方，即 |ψ(x)|^2"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "数值计算",
+          "content": "|ψ(x)|^2 = (3x(x-1))^2 = 9x^2(x-1)^2",
+          "parents": [
+            "C_1",
+            "C_3"
+          ],
+          "reasoning_logic": "根据概率密度函数定义计算波函数的绝对值的平方"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "P = ∫_0^1 9x^2(x-1)^2 dx",
+          "parents": [
+            "I_1",
+            "C_2"
+          ],
+          "reasoning_logic": "设置概率在给定区间内的积分表达式"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "P = 9 ∫_0^1 x^2 (x-1)^2 dx = 9 ∫_0^1 x^2 (x^2 - 2x + 1) dx = 9 ∫_0^1 x^4 - 2x^3 + x^2 dx",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "代数展开和简化积分表达式"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "∫_0^1 x^4 dx = 1/5",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "计算x^4在0到1的积分"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "∫_0^1 -2x^3 dx = -1/2",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "计算-2x^3在0到1的积分"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "∫_0^1 x^2 dx = 1/3",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "计算x^2在0到1的积分"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "P = 9 (1/5 - 1/2 + 1/3) = 9 (1/15) = 9/15 = 3/5",
+          "parents": [
+            "I_4",
+            "I_5",
+            "I_6"
+          ],
+          "reasoning_logic": "将积分结果代入并简化得到最终概率"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "粒子在区间 x=0 到 x=1 内被找到的概率为 3/5",
+        "parents": [
+          "I_7"
+        ],
+        "reasoning_logic": "综合积分计算结果得出最终概率陈述"
+      }
+    }
+  }
+}

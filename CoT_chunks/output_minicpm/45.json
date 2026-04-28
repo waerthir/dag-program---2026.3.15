@@ -1,0 +1,136 @@
+{
+  "id": 45,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "青蒿素主要在黄花蒿的叶片腺毛中合成与积累。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "青蒿素的含量受到水杨酸（SA）和茉莉酸甲酯（MeJA）等植物激素的调节。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "SA 和 MeJA 通过调控 miR160 的表达量，影响黄花蒿腺毛密度和青蒿素含量。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "miR160 的一种靶 mRNA 编码 ARF1 蛋白。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字条件",
+          "content": "ARF1 蛋白影响青蒿素合成关键基因 DBR2 的表达。"
+        },
+        {
+          "id": "C_6",
+          "type": "图像条件",
+          "content": "图示信息显示 SA 和 MeJA 通过调控 miR160 的表达量，进而影响 ARF1 蛋白的表达，最终影响 DBR2 基因的表达，从而影响青蒿素的合成。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "SA 和 MeJA 调控 miR160 的表达量。",
+          "parents": [
+            "C_3",
+            "C_6"
+          ],
+          "reasoning_logic": "根据题目描述和图示信息，确认 SA 和 MeJA 对 miR160 的调控作用。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "miR160 的表达量变化影响 ARF1 蛋白的表达。",
+          "parents": [
+            "C_4",
+            "I_1",
+            "C_6"
+          ],
+          "reasoning_logic": "结合 miR160 靶向编码 ARF1 蛋白的事实及图示路径进行推导。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "ARF1 蛋白的表达变化影响 DBR2 基因的表达。",
+          "parents": [
+            "C_5",
+            "I_2",
+            "C_6"
+          ],
+          "reasoning_logic": "基于 ARF1 蛋白影响 DBR2 基因表达的事实及图示路径进行推导。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "DBR2 基因的表达变化影响青蒿素的合成。",
+          "parents": [
+            "C_5",
+            "I_3",
+            "C_6"
+          ],
+          "reasoning_logic": "基于 DBR2 是青蒿素合成关键基因的事实及图示路径进行推导。"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "增加 SA 和 MeJA 的含量可提高 miR160 的表达量。",
+          "parents": [
+            "C_2",
+            "I_1"
+          ],
+          "reasoning_logic": "根据激素调节关系推导增加激素含量对下游因子的正向影响。"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "提高 miR160 的表达量可提高 ARF1 蛋白的表达。",
+          "parents": [
+            "I_2",
+            "I_5"
+          ],
+          "reasoning_logic": "基于 I_2 建立的因果链，推导上游增加导致的下游增加。"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "提高 ARF1 蛋白的表达可提高 DBR2 基因的表达。",
+          "parents": [
+            "I_3",
+            "I_6"
+          ],
+          "reasoning_logic": "基于 I_3 建立的因果链，推导上游增加导致的下游增加。"
+        },
+        {
+          "id": "I_8",
+          "type": "逻辑推导",
+          "content": "提高 DBR2 基因的表达可增加青蒿素的合成。",
+          "parents": [
+            "I_4",
+            "I_7"
+          ],
+          "reasoning_logic": "基于 I_4 建立的因果链，推导上游增加导致的最终产物增加。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "通过增加 SA 和 MeJA 的含量来提高 miR160 的表达量，进而提高 ARF1 蛋白的表达，最终提高 DBR2 基因的表达，从而增加青蒿素的合成，是一种培育青蒿素含量高的黄花蒿新品种的思路。",
+        "parents": [
+          "I_5",
+          "I_6",
+          "I_7",
+          "I_8"
+        ],
+        "reasoning_logic": "综合上述所有推导步骤，得出培育高青蒿素含量黄花蒿新品种的具体策略。"
+      }
+    }
+  }
+}

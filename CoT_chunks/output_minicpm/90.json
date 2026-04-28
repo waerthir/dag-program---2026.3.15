@@ -1,0 +1,57 @@
+{
+  "id": 90,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目定义 \\( \\pi(x) \\) 为质数计数函数，表示小于或等于 x 的所有质数的数量。",
+          "reasoning_logic": "从题目文本中提取的定义信息"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "题目定义 \\( \\frac{\\pi(x)}{x} \\) 为质数密度函数，表示在区间 [0, x] 内的质数与 x 的比值。",
+          "reasoning_logic": "从题目文本中提取的定义信息"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "根据质数定理，当 \\( x \\to \\infty \\) 时，\\( \\pi(x) \\approx \\frac{x}{ln(x)} \\)。",
+          "reasoning_logic": "引用的数学定理"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将质数定理近似式代入密度函数表达式，得到 \\( \\frac{\\pi(x)}{x} \\approx \\frac{\\frac{x}{ln(x)}}{x} = \\frac{1}{ln(x)} \\)。",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "执行代数 substitution，将 C_3 中的近似关系代入 C_2 定义的函数中"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "当 \\( x \\to \\infty \\) 时，\\( ln(x) \\to \\infty \\)，因此其倒数 \\( \\frac{1}{ln(x)} \\to 0 \\)。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "基于对数函数的极限性质进行定性推导"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "综上所述，当 \\( x \\to \\infty \\) 时，\\( \\lim_{x \\to \\infty} \\frac{\\pi(x)}{x} = 0 \\)。",
+        "parents": [
+          "I_2"
+        ],
+        "reasoning_logic": "综合前述推导步骤得出最终极限结论"
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "id": 101,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "给定的无穷级数为：∑_{n=1}^{∞} (2n+1)/(n^2+n)^2"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "无穷级数可以拆分为多个部分进行求和"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "部分分式分解可用于有理分式的求和"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将无穷级数拆分为两个部分：∑_{n=1}^{∞} (2n+1)/(n^2+n)^2 = ∑_{n=1}^{∞} 2n/(n^2+n)^2 + ∑_{n=1}^{∞} 1/(n^2+n)^2",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "根据级数拆分原理"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "第一部分为：∑_{n=1}^{∞} 2n/(n^2+n)^2",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "提取拆分后的第一部分"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "将第一部分表达式变形为：∑_{n=1}^{∞} 2n/[n(n+1)(n+1)^2]",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "对分母进行因式分解"
+        },
+        {
+          "id": "I_4",
+          "type": "条件转化",
+          "content": "对第一部分进行部分分式分解：2n/[n(n+1)(n+1)^2] = A/n + B/(n+1) + C/(n+1)^2",
+          "parents": [
+            "I_3",
+            "C_3"
+          ],
+          "reasoning_logic": "应用部分分式分解方法"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "求解系数A、B和C",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "通过方程求解确定部分分式系数"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "求解系数A、B和C",
+        "parents": [
+          "I_5"
+        ],
+        "reasoning_logic": "综合部分分式分解过程得出系数求解步骤"
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": 32,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "人类女性体细胞中仅有一条X染色体保持活性。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "基因G编码G蛋白。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "等位基因g编码活性低的g蛋白。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "缺失G基因的个体会患某遗传病。"
+        },
+        {
+          "id": "C_5",
+          "type": "图像信息",
+          "content": "图示为该家族系谱图。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "已知II-1不含g基因。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "结合系谱图，观察I-2和III-3的亲缘关系。",
+          "parents": [
+            "C_5"
+          ],
+          "reasoning_logic": "根据系谱图信息进行观察。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "I-2和III-3之间没有直接的血缘关系。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "从系谱图观察中推导出亲缘关系结论。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "III-3个体的致病基因来源不来自I-2。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "基于亲缘关系推导出致病基因来源结论。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "III-3个体的致病基因来源不来自I-2。",
+        "parents": [
+          "I_3"
+        ],
+        "reasoning_logic": "综合推理得出最终陈述。"
+      }
+    }
+  }
+}

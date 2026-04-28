@@ -1,0 +1,64 @@
+{
+  "id": 36,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "mRNA-X是一款新型肿瘤治疗性疫苗。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "mRNA-X的主要功能是编辑肿瘤抗原。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "mRNA-X刺激机体产生特异性免疫。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "mRNA-X杀死肿瘤细胞。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "该疫苗由脂质材料包裹特定序列的mRNA构成。"
+        },
+        {
+          "id": "C_6",
+          "type": "图像信息",
+          "content": "图中展示了mRNA-X疫苗的制备过程。"
+        },
+        {
+          "id": "C_7",
+          "type": "图像信息",
+          "content": "从图中可以看到，研究人员首先需要获取肿瘤抗原的特定序列信息。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "基于获取到的肿瘤抗原序列信息，研究人员设计并合成能够表达该抗原的mRNA。",
+          "parents": [
+            "C_7"
+          ],
+          "reasoning_logic": "根据图像信息中获取的肿瘤抗原序列信息进行设计合成。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "研究人员通常依据肿瘤抗原的特定序列信息来设计并合成能够表达该抗原的mRNA。",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "从中间推理得出最终答案。"
+      }
+    }
+  }
+}

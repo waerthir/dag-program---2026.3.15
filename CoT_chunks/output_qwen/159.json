@@ -1,0 +1,172 @@
+{
+  "id": 159,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "时间独立的薛定谔方程形式为：\\( \\hat{H} \\psi = E \\psi \\)，其中\\(\\hat{H}\\)是哈密顿算符，\\(E\\)是能量本征值，\\(\\psi\\)是波函数。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "考虑一个无限深的方形势阱，粒子不能穿过势阱边界。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "在无限深方形势阱中，势能\\(V(x)\\)在阱内为零，在阱外为无穷大。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "粒子只能在阱内存在，不在阱外。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "一维薛定谔方程形式为：\\( -\\frac{\\hbar^2}{2m} \\frac{d^2 \\psi}{dx^2} + V(x) \\psi = E \\psi \\)。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字条件",
+          "content": "在\\(x = 0\\)和\\(x = L\\)处，波函数\\(\\psi(x)\\)必须为零。"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "微分方程\\( \\frac{d^2 \\psi}{dx^2} = -k^2 \\psi \\)的通解为\\( \\psi(x) = A e^{ikx} + B e^{-ikx} \\)。"
+        },
+        {
+          "id": "C_8",
+          "type": "学科常识",
+          "content": "欧拉公式推论：\\( e^{i\\theta} - e^{-i\\theta} = 2i\\sin(\\theta) \\)。"
+        },
+        {
+          "id": "C_9",
+          "type": "学科常识",
+          "content": "若\\( \\sin(\\theta) = 0 \\)，则\\( \\theta = n\\pi \\)，其中\\(n\\)为正整数。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将\\(V(x)=0\\)代入一维薛定谔方程，得到阱内方程：\\( -\\frac{\\hbar^2}{2m} \\frac{d^2 \\psi}{dx^2} = E \\psi \\)。",
+          "parents": [
+            "C_3",
+            "C_5"
+          ],
+          "reasoning_logic": "根据阱内势能为零的条件简化方程。"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "整理方程得到：\\( \\frac{d^2 \\psi}{dx^2} = -\\frac{2mE}{\\hbar^2} \\psi \\)。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "代数变形移项。"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "令\\( k^2 = \\frac{2mE}{\\hbar^2} \\)，方程变为\\( \\frac{d^2 \\psi}{dx^2} = -k^2 \\psi \\)。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "引入常数k简化表达。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "写出通解：\\( \\psi(x) = A e^{ikx} + B e^{-ikx} \\)。",
+          "parents": [
+            "I_3",
+            "C_7"
+          ],
+          "reasoning_logic": "应用二阶线性微分方程通解公式。"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "由边界条件\\( \\psi(0) = 0 \\)得出\\( A + B = 0 \\)，即\\( B = -A \\)。",
+          "parents": [
+            "I_4",
+            "C_6"
+          ],
+          "reasoning_logic": "代入x=0计算系数关系。"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "由边界条件\\( \\psi(L) = 0 \\)及\\(B=-A\\)得出\\( A(e^{ikL} - e^{-ikL}) = 0 \\)。",
+          "parents": [
+            "I_4",
+            "I_5",
+            "C_6"
+          ],
+          "reasoning_logic": "代入x=L及系数关系。"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "利用欧拉公式将方程化为\\( A(2i\\sin(kL)) = 0 \\)。",
+          "parents": [
+            "I_6",
+            "C_8"
+          ],
+          "reasoning_logic": "应用三角恒等式变换。"
+        },
+        {
+          "id": "I_8",
+          "type": "逻辑推导",
+          "content": "因\\( A \\neq 0 \\)，推导出\\( \\sin(kL) = 0 \\)。",
+          "parents": [
+            "I_7"
+          ],
+          "reasoning_logic": "非零因子消除逻辑。"
+        },
+        {
+          "id": "I_9",
+          "type": "数值计算",
+          "content": "解得\\( kL = n\\pi \\)，即\\( k = \\frac{n\\pi}{L} \\)（n为正整数）。",
+          "parents": [
+            "I_8",
+            "C_9"
+          ],
+          "reasoning_logic": "求解正弦函数的零点。"
+        },
+        {
+          "id": "I_10",
+          "type": "数值计算",
+          "content": "将\\( k = \\frac{n\\pi}{L} \\)代入\\( k^2 = \\frac{2mE}{\\hbar^2} \\)，得到\\( \\left(\\frac{n\\pi}{L}\\right)^2 = \\frac{2mE}{\\hbar^2} \\)。",
+          "parents": [
+            "I_9",
+            "I_3"
+          ],
+          "reasoning_logic": "回代k值建立能量方程。"
+        },
+        {
+          "id": "I_11",
+          "type": "数值计算",
+          "content": "求解能量E，得到\\( E_n = \\frac{\\hbar^2 \\pi^2 n^2}{2mL^2} \\)。",
+          "parents": [
+            "I_10"
+          ],
+          "reasoning_logic": "代数运算解出E。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "粒子在无限深的方形势阱中的能量本征值为：\\( E_n = \\frac{\\hbar^2 \\pi^2 n^2}{2mL^2} \\)。",
+        "parents": [
+          "I_11"
+        ],
+        "reasoning_logic": "综合上述推导步骤得出最终能量本征值公式。"
+      }
+    }
+  }
+}

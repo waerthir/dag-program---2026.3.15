@@ -1,0 +1,60 @@
+{
+  "id": 34,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "人类女性体细胞中仅有一条X染色体保持活性。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "基因G编码G蛋白，等位基因g编码活性低的g蛋白。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "缺失G基因的个体会患某遗传病。"
+        },
+        {
+          "id": "C_4",
+          "type": "图像信息",
+          "content": "图示为该家族系谱图。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "已知II-1不含g基因。"
+        },
+        {
+          "id": "C_6",
+          "type": "图像信息",
+          "content": "III-2是II-1和III-1的子女。"
+        },
+        {
+          "id": "C_7",
+          "type": "图像信息",
+          "content": "III-1是II-1和II-2的子女。"
+        }
+      ],
+      "intermediate_steps": [],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "根据题目描述和系谱图信息，可以分析该家族的遗传模式。",
+        "parents": [
+          "C_1",
+          "C_2",
+          "C_3",
+          "C_4",
+          "C_5",
+          "C_6",
+          "C_7"
+        ],
+        "reasoning_logic": "综合所有已知条件，得出最终陈述。"
+      }
+    }
+  }
+}

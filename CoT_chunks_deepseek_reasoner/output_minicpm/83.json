@@ -1,0 +1,98 @@
+{
+  "id": 83,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "函数 f 定义在区间 [0,1] 上"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "集合 Y 是所有满足 ∫₀¹ f = 0 的函数 f 的集合"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "题目明确指出 Y 是一个闭集"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "Y 包含所有它的极限点"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "f(0)=0"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "函数 f=x 定义在区间 [0,1] 上"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "选择 f(x)=0 对所有 x∈[0,1]",
+          "parents": [
+            "C_5"
+          ],
+          "reasoning_logic": "基于 f(0)=0 选择常数函数"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "计算 ∫₀¹ f(x)=0 的积分: ∫₀¹ 0 dx = 0",
+          "parents": [
+            "I_1",
+            "C_1"
+          ],
+          "reasoning_logic": "计算常数函数在区间上的积分"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "计算函数 f(x)=x 的积分: ∫₀¹ x dx = 1/2",
+          "parents": [
+            "C_6",
+            "C_1"
+          ],
+          "reasoning_logic": "计算线性函数在区间上的积分"
+        },
+        {
+          "id": "I_4",
+          "type": "对比分析",
+          "content": "计算距离 |1/2 - 0| = 1/2",
+          "parents": [
+            "I_3",
+            "I_2"
+          ],
+          "reasoning_logic": "比较两个积分值的绝对差"
+        },
+        {
+          "id": "I_5",
+          "type": "对比分析",
+          "content": "验证 1/2 = 0.5",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "确认分数值等于小数表示"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "推理",
+        "content": "从函数 f=x 到集合 Y 的距离是 0.5",
+        "parents": [
+          "I_5"
+        ],
+        "reasoning_logic": "综合验证结果得出最终陈述"
+      }
+    }
+  }
+}

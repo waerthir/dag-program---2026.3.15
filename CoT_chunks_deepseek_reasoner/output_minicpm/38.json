@@ -1,0 +1,54 @@
+{
+  "id": 38,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "mRNA-X是一种新型肿瘤治疗性疫苗。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "mRNA-X的作用是通过编辑肿瘤抗原刺激机体产生特异性免疫。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "mRNA-X刺激免疫从而杀死肿瘤细胞。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "该疫苗由脂质材料包裹特定序列的mRNA构成。"
+        },
+        {
+          "id": "C_5",
+          "type": "图像信息",
+          "content": "图中显示了细胞乙增殖分化为细胞丙和细胞丁的过程。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "细胞乙增殖分化为细胞丙和丁依赖关键信号刺激。",
+          "parents": [
+            "C_5"
+          ],
+          "reasoning_logic": "从图中信息分析细胞特征和关系推导出依赖信号刺激。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "细胞乙增殖分化为细胞丙和丁，主要依赖的两类关键信号刺激分别是细胞因子和生长因子。",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "综合推理得出具体信号刺激类型。"
+      }
+    }
+  }
+}

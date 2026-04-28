@@ -1,0 +1,61 @@
+{
+  "id": 20,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "科研人员使用 SA-β-Gal 作为细胞衰老的分子标志"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "科研人员使用 EdU 作为细胞 DNA 复制的标记"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "AP2A1 蛋白通过调节 p53 蛋白表达量来影响细胞衰老的机制"
+        },
+        {
+          "id": "C_4",
+          "type": "图像条件",
+          "content": "图中显示了对照组和实验组在不同时间点的 SA-β-Gal 和 EdU 的表达情况"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "对比分析",
+          "content": "对照组和实验组在不同时间点的 SA-β-Gal 和 EdU 表达情况需要进行对比分析",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_4"
+          ],
+          "reasoning_logic": "根据衰老标志和DNA复制标记的表达情况进行对比，以确定是否存在衰老细胞"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "需要结合 p53 蛋白表达量的变化进行分析",
+          "parents": [
+            "C_3",
+            "I_1"
+          ],
+          "reasoning_logic": "结合p53表达量变化分析，以确定是否存在衰老细胞"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "对照组中存在衰老细胞",
+        "parents": [
+          "I_2"
+        ],
+        "reasoning_logic": "综合对比分析和结合p53分析得出最终陈述"
+      }
+    }
+  }
+}

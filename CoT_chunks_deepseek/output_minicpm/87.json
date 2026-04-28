@@ -1,0 +1,80 @@
+{
+  "id": 87,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "a, b, c, d 是 1, 9, 8, 4 的排列"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "n = (10a + b)^{10c + d}"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "a = 1"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "b = 9"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "c = 8"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "d = 4"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "数值计算",
+          "content": "10a + b = 10 * 1 + 9 = 19",
+          "parents": [
+            "C_3",
+            "C_4"
+          ],
+          "reasoning_logic": "代入 a 和 b 的值计算 10a + b"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "10c + d = 10 * 8 + 4 = 84",
+          "parents": [
+            "C_5",
+            "C_6"
+          ],
+          "reasoning_logic": "代入 c 和 d 的值计算 10c + d"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "n = 19^{84}",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "将 10a + b 和 10c + d 的结果代入 n 的表达式"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "数值计算",
+        "content": "n = 19^{84}",
+        "parents": [
+          "I_3"
+        ],
+        "reasoning_logic": "得出 n 的最终值"
+      }
+    }
+  }
+}

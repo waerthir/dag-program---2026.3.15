@@ -1,0 +1,94 @@
+{
+  "id": 109,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "波函数为 ψ(x, t) = Ae^(ikx - iωt)，其中 A 是振幅，k 是波数，ω 是角频率。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "势能函数为 V(x) = 0，表示没有势能。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "薛定谔方程为 iℏ ∂ψ/∂t = Hψ，其中 H 是哈密顿算符，ℏ 是约化普朗克常数。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "对于给定的波函数，哈密顿算符可以表示为 H = -ħ²/(2m) ∂²/∂x² + V(x)。",
+          "parents": [
+            "C_1",
+            "C_3"
+          ],
+          "reasoning_logic": "根据波函数和薛定谔方程推导哈密顿算符表示。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "因为势能函数 V(x) = 0，所以哈密顿算符简化为 H = -ħ²/(2m) ∂²/∂x²。",
+          "parents": [
+            "C_2",
+            "I_1"
+          ],
+          "reasoning_logic": "将 V(x)=0 代入哈密顿算符简化。"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "将波函数 ψ(x, t) 代入薛定谔方程：iℏ ∂(Ae^(ikx - iωt))/∂t = -ħ²/(2m) ∂²(Ae^(ikx - iωt))/∂x²。",
+          "parents": [
+            "C_1",
+            "I_2",
+            "C_3"
+          ],
+          "reasoning_logic": "将波函数和简化后的哈密顿算符代入薛定谔方程。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "A 和 e^(ikx - iωt) 是常数和指数函数，它们对时间的导数为零。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "基于导数性质分析波函数组成。"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "因此方程变为 0 = -ħ²/(2m) ∂²(Ae^(ikx - iωt))/∂x²。",
+          "parents": [
+            "I_3",
+            "I_4"
+          ],
+          "reasoning_logic": "将导数结果代入方程简化。"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "解方程得到 ∂²(Ae^(ikx - iωt))/∂x² = 0。",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "解方程得出二阶导数为零。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "∂²(Ae^(ikx - iωt))/∂x² = 0。",
+        "parents": [
+          "I_6"
+        ],
+        "reasoning_logic": "综合上述步骤得出最终陈述。"
+      }
+    }
+  }
+}

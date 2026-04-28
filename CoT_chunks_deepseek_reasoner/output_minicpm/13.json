@@ -1,0 +1,83 @@
+{
+  "id": 13,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "蚯蚓被培养在浓度为 1 mg/kg 的 TBBPA 污染土壤中进行 30 天富集实验。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "将蚯蚓转至干净土壤进行 30 天排出实验。"
+        },
+        {
+          "id": "C_3",
+          "type": "图像信息",
+          "content": "实验结果如图所示。"
+        },
+        {
+          "id": "C_4",
+          "type": "图像信息",
+          "content": "图中显示了蚯蚓体内 TBBPA 浓度随时间的变化曲线。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "题目要求分析蚯蚓对 TBBPA 的富集在约第 20 天后呈现什么特征。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "在约第 20 天后，蚯蚓体内 TBBPA 的浓度开始下降。",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "观察曲线变化得出浓度下降"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "在约第 20 天后，蚯蚓体内 TBBPA 的浓度开始下降。",
+          "parents": [
+            "C_5",
+            "I_1"
+          ],
+          "reasoning_logic": "结合题目要求推导相同结论"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "蚯蚓体内 TBBPA 浓度的下降可能是因为蚯蚓开始排出体内的 TBBPA。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "解释浓度下降的可能原因"
+        },
+        {
+          "id": "I_4",
+          "type": "综合归纳",
+          "content": "蚯蚓对 TBBPA 的富集在约第 20 天后呈现下降特征。",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "从曲线变化和题目要求归纳特征"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "蚯蚓对 TBBPA 的富集在约第 20 天后呈现下降特征。",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "最终答案陈述"
+      }
+    }
+  }
+}

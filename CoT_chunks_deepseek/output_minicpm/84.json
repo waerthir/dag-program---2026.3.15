@@ -1,0 +1,123 @@
+{
+  "id": 84,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "题目给出极限表达式：lim_{n→∞} (∑_{k=1}^n k^p) / n^{p+1}"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "当n趋向于无穷大时，分母n^{p+1}会比分子∑_{k=1}^n k^p增长得更快"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "分子∑_{k=1}^n k^p是一个从k=1到k=n的求和公式"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "分母n^{p+1}是一个幂函数"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "k^p可以进行泰勒展开：k^p = ∑_{j=0}^p (p/j) k^{p-j}"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "∑_{k=1}^n k^{p-j}是一个从k=1到k=n的求和公式"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "当n趋向于无穷大时，∑_{k=1}^n k^{p-j}会趋近于n^{p-j+1}/(p-j+1)"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将k^p的泰勒展开代入求和公式",
+          "parents": [
+            "C_3",
+            "C_5"
+          ],
+          "reasoning_logic": "根据泰勒展开公式，将k^p展开为∑_{j=0}^p (p/j) k^{p-j}，然后代入∑_{k=1}^n k^p"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "得到∑_{k=1}^n k^p = ∑_{j=0}^p (p/j) ∑_{k=1}^n k^{p-j}",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "将展开式代入求和公式，交换求和顺序"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "将∑_{k=1}^n k^{p-j}近似为n^{p-j+1}/(p-j+1)",
+          "parents": [
+            "C_6",
+            "C_7"
+          ],
+          "reasoning_logic": "根据求和公式的近似性质，当n→∞时，∑_{k=1}^n k^{p-j} ≈ n^{p-j+1}/(p-j+1)"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "得到∑_{k=1}^n k^p ≈ ∑_{j=0}^p (p/j) · n^{p-j+1}/(p-j+1)",
+          "parents": [
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "将近似表达式代入求和公式"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "当n→∞时，n^{p-j+1}/(p-j+1)会趋近于无穷大",
+          "parents": [
+            "C_7"
+          ],
+          "reasoning_logic": "根据幂函数的增长性质，n^{p-j+1}随着n→∞而→∞"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "∑_{k=1}^n k^p也会趋近于无穷大",
+          "parents": [
+            "I_4",
+            "I_5"
+          ],
+          "reasoning_logic": "由于求和中的每一项都→∞，整个求和也→∞"
+        },
+        {
+          "id": "I_7",
+          "type": "对比分析",
+          "content": "分母n^{p+1}比分子∑_{k=1}^n k^p增长得更快",
+          "parents": [
+            "C_2",
+            "I_6"
+          ],
+          "reasoning_logic": "比较分母n^{p+1}和分子∑_{k=1}^n k^p的增长速度"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "lim_{n→∞} (∑_{k=1}^n k^p) / n^{p+1} = 0",
+        "parents": [
+          "I_7"
+        ],
+        "reasoning_logic": "综合增长速度对比，得出极限值为0"
+      }
+    }
+  }
+}

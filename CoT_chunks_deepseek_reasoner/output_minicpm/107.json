@@ -1,0 +1,181 @@
+{
+  "id": 107,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "Schrödinger 方程可以表示为：\\[ -\\frac{\\hbar^2}{2m} \\frac{d^2\\psi(x)}{dx^2} + V(x) \\psi(x) = E \\psi(x) \\]"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "\\( \\psi(x) \\) 是波函数"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "\\( \\hbar \\) 是约化普朗克常数"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "\\( m \\) 是粒子的质量"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "\\( V(x) \\) 是势能函数"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "\\( E \\) 是能量"
+        },
+        {
+          "id": "C_7",
+          "type": "文字信息",
+          "content": "\\( \\psi(0) = 0 \\)"
+        },
+        {
+          "id": "C_8",
+          "type": "文字信息",
+          "content": "\\( \\psi(L) = 0 \\)"
+        },
+        {
+          "id": "C_9",
+          "type": "文字信息",
+          "content": "\\( L \\) 是箱子的长度"
+        },
+        {
+          "id": "C_10",
+          "type": "文字信息",
+          "content": "\\( A \\) 是振幅"
+        },
+        {
+          "id": "C_11",
+          "type": "文字信息",
+          "content": "\\( k \\) 是波数"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "假设波函数的形式为：\\[ \\psi(x) = A \\sin(kx) \\]",
+          "parents": [
+            "C_7",
+            "C_8",
+            "C_9"
+          ],
+          "reasoning_logic": "根据边界条件假设波函数形式"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "将假设的波函数代入边界条件 \\( \\psi(0) \\)，得到 \\( \\psi(0) = A \\sin(0) = 0 \\)",
+          "parents": [
+            "I_1",
+            "C_7"
+          ],
+          "reasoning_logic": "代入边界条件计算"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "将假设的波函数代入边界条件 \\( \\psi(L) \\)，得到 \\( \\psi(L) = A \\sin(kL) = 0 \\)",
+          "parents": [
+            "I_1",
+            "C_8"
+          ],
+          "reasoning_logic": "代入边界条件计算"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "由于 \\( A \\neq 0 \\)，所以 \\( \\sin(kL) = 0 \\)，即 \\( kL = n\\pi \\)，其中 \\( n \\) 是整数",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "从边界条件推导波数条件"
+        },
+        {
+          "id": "I_5",
+          "type": "条件转化",
+          "content": "将 \\( k = \\frac{n\\pi}{L} \\) 代入 Schrödinger 方程",
+          "parents": [
+            "I_4",
+            "C_1"
+          ],
+          "reasoning_logic": "代入波数到方程"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "代入后得到方程：\\[ -\\frac{\\hbar^2}{2m} \\frac{d^2\\psi(x)}{dx^2} + V(x) A \\sin\\left(\\frac{n\\pi x}{L}\\right) = E A \\sin\\left(\\frac{n\\pi x}{L}\\right) \\]",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "将波数代入方程得到新方程"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "整理方程得到：\\[ \\frac{\\hbar^2}{2m} \\frac{d^2\\psi(x)}{dx^2} = E A - V(x) A \\]",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "整理方程项"
+        },
+        {
+          "id": "I_8",
+          "type": "数值计算",
+          "content": "计算 \\( \\frac{d^2\\psi(x)}{dx^2} = -\\frac{n^2\\pi^2}{L^2} A \\sin\\left(\\frac{n\\pi x}{L}\\right) \\)",
+          "parents": [
+            "I_1",
+            "I_4"
+          ],
+          "reasoning_logic": "计算波函数的二阶导数"
+        },
+        {
+          "id": "I_9",
+          "type": "数值计算",
+          "content": "将I_8代入I_7，得到：\\[ \\frac{\\hbar^2}{2m} \\left(-\\frac{n^2\\pi^2}{L^2}\\right) A \\sin\\left(\\frac{n\\pi x}{L}\\right) = E A \\sin\\left(\\frac{n\\pi x}{L}\\right) - V(x) A \\sin\\left(\\frac{n\\pi x}{L}\\right) \\]",
+          "parents": [
+            "I_7",
+            "I_8"
+          ],
+          "reasoning_logic": "代入二阶导数到方程"
+        },
+        {
+          "id": "I_10",
+          "type": "逻辑推导",
+          "content": "由于 \\( \\sin\\left(\\frac{n\\pi x}{L}\\right) \\neq 0 \\)，所以：\\[ \\frac{\\hbar^2}{2m} \\left(-\\frac{n^2\\pi^2}{L^2}\\right) A = E A - V(x) A \\]",
+          "parents": [
+            "I_9"
+          ],
+          "reasoning_logic": "消去正弦项"
+        },
+        {
+          "id": "I_11",
+          "type": "数值计算",
+          "content": "解得：\\[ E = \\frac{\\hbar^2 k^2}{2m} = \\frac{\\hbar^2 \\left(\\frac{n\\pi}{L}\\right)^2}{2m} = \\frac{\\hbar^2 n^2\\pi^2}{2mL^2} \\]",
+          "parents": [
+            "I_10"
+          ],
+          "reasoning_logic": "求解能量方程"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "粒子的能量 \\( E \\) 与箱子的大小 \\( L \\) 的关系为：\\[ E = \\frac{\\hbar^2 n^2\\pi^2}{2mL^2} \\] 其中，\\( n \\) 是量子数。",
+        "parents": [
+          "I_11"
+        ],
+        "reasoning_logic": "总结最终能量公式"
+      }
+    }
+  }
+}

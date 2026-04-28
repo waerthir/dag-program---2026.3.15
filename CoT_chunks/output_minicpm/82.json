@@ -1,0 +1,74 @@
+{
+  "id": 82,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目给出的方程是 x^3 - 3x^2 + 6x + k = 0"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "目标是确定 k 的值使得该方程有三个实根"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "模型认为三次方程有三个实根的条件是判别式 Δ = b^2 - 4ac > 0"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "提取给定方程的系数：a=1, b=-3, c=6, d=k",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "对比给定方程与标准形式 ax^3+bx^2+cx+d=0"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "计算判别式部分值：Δ_part = (-3)^2 - 4*1*6 = 9 - 24 = -15",
+          "parents": [
+            "I_1",
+            "C_3"
+          ],
+          "reasoning_logic": "将系数代入模型引用的判别式公式 b^2-4ac 进行计算"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "判断当前判别式值 -15 不满足大于 0 的条件",
+          "parents": [
+            "I_2",
+            "C_3"
+          ],
+          "reasoning_logic": "比较计算结果 -15 与条件 Δ > 0"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "推导结论：k 的值必须使得判别式 Δ 大于零，且得出 k 的取值范围是 k < -15",
+          "parents": [
+            "I_3",
+            "C_2"
+          ],
+          "reasoning_logic": "基于判别式不满足条件的现状，结合题目要求推导 k 的修正范围（遵循原思维链逻辑）"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "k 的取值范围是 k < -15",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "综合上述推导得出最终关于 k 的结论"
+      }
+    }
+  }
+}

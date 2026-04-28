@@ -1,0 +1,112 @@
+{
+  "id": 72,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "给定的表达式是：lim_{x -> ∞} sqrt(x) * (cbrt(x+1) - cbrt(x-1))",
+          "reasoning_logic": "题目直接给出的初始数学问题"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "极限的乘法法则允许将乘积的极限拆分为极限的乘积（在满足条件的情况下）",
+          "reasoning_logic": "微积分中的极限运算性质"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "当 x -> ∞ 时，sqrt(x) -> ∞",
+          "reasoning_logic": "基本函数的极限性质"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "泰勒展开式可用于近似计算函数值",
+          "reasoning_logic": "数学分析中的近似计算方法"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "cbrt(x+1) 近似等于 cbrt(x) + (1/3)*x^(-2/3) (注：原文本误写为 sqrt[6]{x}，此处忠实记录原文本的推导逻辑依据)",
+          "reasoning_logic": "原文本中使用的特定泰勒展开近似公式"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "cbrt(x-1) 近似等于 cbrt(x) - (1/3)*x^(-2/3) (注：原文本误写为 sqrt[6]{x})",
+          "reasoning_logic": "原文本中使用的特定泰勒展开近似公式"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "无穷大乘以无穷大等于无穷大",
+          "reasoning_logic": "极限运算规则"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将原表达式拆解为两个部分的乘积：lim sqrt(x) 和 lim (cbrt(x+1) - cbrt(x-1))",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "应用极限乘法法则拆分表达式"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "得出第一个极限的结果为 ∞",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "根据 x 趋向无穷大时 sqrt(x) 的性质直接推导"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "利用泰勒展开近似计算 cbrt(x+1) - cbrt(x-1) ≈ (2/3)*x^(1/6) (忠实于原文本的错误推导结果)",
+          "parents": [
+            "C_4",
+            "C_5",
+            "C_6"
+          ],
+          "reasoning_logic": "代入原文本提供的近似公式进行代数减法运算"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "得出第二个极限的结果为 ∞",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "根据 I_3 得出的近似式，当 x -> ∞ 时，(2/3)*x^(1/6) 趋向于 ∞"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "计算两个极限结果的乘积：∞ * ∞ = ∞",
+          "parents": [
+            "I_2",
+            "I_4",
+            "C_7"
+          ],
+          "reasoning_logic": "将 I_2 和 I_4 的结果代入乘法运算规则"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "lim_{x -> ∞} sqrt(x) * (cbrt(x+1) - cbrt(x-1)) = ∞",
+        "parents": [
+          "I_5"
+        ],
+        "reasoning_logic": "综合所有计算步骤得出最终极限值"
+      }
+    }
+  }
+}

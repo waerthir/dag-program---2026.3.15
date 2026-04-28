@@ -1,0 +1,78 @@
+{
+  "id": 78,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "A是X的一个有限子集"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "|A| = n，其中n是A的元素个数"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "x和y是X中的两个元素，且不在A中"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "定义集合B = {x, y} ∪ A"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "x和y至少有2个元素不在A中",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "由x和y不在A中推导出"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "由于x和y都不在A中，所以B至少有2个元素不在A中",
+          "parents": [
+            "C_3",
+            "C_4"
+          ],
+          "reasoning_logic": "由x和y不在A中且B的定义推导出"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "B至少有n + 2个元素，其中n是A的元素个数，2是x和y的元素个数",
+          "parents": [
+            "C_2",
+            "I_2"
+          ],
+          "reasoning_logic": "结合A的元素个数和B的元素推导出"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "B的元素个数是A的元素个数加上2，即|B| = |A| + 2",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "由B的元素个数推导出"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "|B| = |A| + 2",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "综合推导得出最终陈述"
+      }
+    }
+  }
+}

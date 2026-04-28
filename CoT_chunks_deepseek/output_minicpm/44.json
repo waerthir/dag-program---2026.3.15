@@ -1,0 +1,78 @@
+{
+  "id": 44,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "青蒿素主要在叶片的腺毛中合成与积累"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "SA和MeJA通过调控miR160的表达量，影响黄花蒿腺毛密度和青蒿素含量"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "miR160的一种靶mRNA编码ARF1蛋白"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "ARF1蛋白影响青蒿素合成关键基因DBR2的表达"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "SA和MeJA通过调控miR160的表达量，影响黄花蒿腺毛密度和青蒿素含量",
+          "parents": [
+            "C_2"
+          ],
+          "reasoning_logic": "引用题目信息"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "miR160的靶mRNA编码ARF1蛋白",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "引用题目信息"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "ARF1蛋白影响青蒿素合成关键基因DBR2的表达",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "引用题目信息"
+        },
+        {
+          "id": "I_4",
+          "type": "综合归纳",
+          "content": "SA、miR160、ARF1和DBR2调控青蒿素生物合成的通路是：SA→miR160→ARF1→DBR2",
+          "parents": [
+            "I_1",
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "综合多个逻辑推导得出通路"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "SA→miR160→ARF1→DBR2",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "从通路归纳出最终答案"
+      }
+    }
+  }
+}

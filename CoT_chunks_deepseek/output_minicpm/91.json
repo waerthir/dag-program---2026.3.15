@@ -1,0 +1,118 @@
+{
+  "id": 91,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "题目中描述随机变量序列(r_n)，r_n是第n次抛硬币的结果"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "r_n = 1表示正面朝上"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "r_n = -1表示反面朝上"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "对于随机变量R_n，其期望值E(R_n) = 0"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "中心极限定理：当n足够大时，随机变量和近似服从正态分布"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "方差公式Var(R_n) = E(R_n^2) - [E(R_n)]^2"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "正态分布N(0,0)的所有区域的概率和为1"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "数值计算",
+          "content": "计算∑(R_n/n)的期望值：E(∑(R_n/n)) = ∑E(R_n/n) = ∑(E(R_n)/n) = ∑(0/n) = 0",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3",
+            "C_4"
+          ],
+          "reasoning_logic": "根据期望的线性性质和R_n的期望值计算"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "当n足够大时，∑(R_n/n)近似服从正态分布N(0,σ^2)，其中σ^2是R_n/n的方差",
+          "parents": [
+            "C_5",
+            "I_1"
+          ],
+          "reasoning_logic": "应用中心极限定理到∑(R_n/n)"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "计算R_n的方差：Var(R_n) = E(R_n^2) - [E(R_n)]^2 = 1 - (-1)^2 = 0",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3",
+            "C_6"
+          ],
+          "reasoning_logic": "根据方差公式和R_n的取值计算"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "σ^2 = 0，所以∑(R_n/n)近似服从N(0,0)",
+          "parents": [
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "将方差结果代入正态分布参数"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "N(0,0)是一个标准正态分布",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "根据正态分布定义推导"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "P(∑(R_n/n) < ∞) = 1",
+          "parents": [
+            "I_5",
+            "C_7"
+          ],
+          "reasoning_logic": "根据正态分布概率性质推导"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "P(∑(R_n/n) < ∞) = 1",
+        "parents": [
+          "I_6"
+        ],
+        "reasoning_logic": "综合所有推导步骤得出最终结论"
+      }
+    }
+  }
+}
