@@ -15,7 +15,7 @@ import dirtyjson
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class Config:
-    API_KEY = "sk-53cc4d7d5f9d493b9ecb40f06e9ee4c4"
+    API_KEY = "sk-asdfasdf"
     MODEL_NAME = "qwen3.5-plus"
     JSON_NAME = [
                 'output_glm',
