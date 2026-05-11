@@ -42,7 +42,7 @@ class Config:
     # 而 json name 又已经做好了区分
     # 所以可以直接使用 CoT_chunks
 
-    API_KEY = "sk-KoCiVB8X5Ig9dEiRQgfRPiKxxzqrfFfF49DfCo3tfMN0CaDf"  # 替换为你的新 Key
+    API_KEY = "sk-666"  # 替换为你的新 Key
     MODEL_NAME = "gpt-5.4"        # 更新模型名称
     BASE_URL = "https://synai996.space/v1" # 或者你使用的代理地址
 

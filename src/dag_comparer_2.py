@@ -43,7 +43,7 @@ class Config:
 
     # 两者的 chunks dir 因为文件名字本身已经做好区分所以可以不用管
 
-    API_KEY = "sk-KoCiVB8X5Ig9dEiRQgfRPiKxxzqrfFfF49DfCo3tfMN0CaDf" 
+    API_KEY = "sk-666" 
     MODEL_NAME = "gpt-5.4"        # 更新模型名称
     BASE_URL = "https://synai996.space/v1" # 或者你使用的代理地址
 
