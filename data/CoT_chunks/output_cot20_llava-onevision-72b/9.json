@@ -1,0 +1,46 @@
+{
+  "id": 9,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "结构中包含 1 个三键 (C≡O)。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "结构中包含 2 个双键 (C=C 和 C=O)。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "结构中包含 6 个单键 (C-C 和 C-O)。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "数值计算",
+          "content": "计算总键数为 1 + 2 + 6 = 9。",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "将三键、双键和单键的数量相加得出总键数。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终的键总数是 9。",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "基于计算结果得出最终陈述。"
+      }
+    }
+  }
+}

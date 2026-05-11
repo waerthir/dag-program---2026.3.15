@@ -1,0 +1,52 @@
+{
+  "id": 14,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "结构中包含一个苯环，具有六个碳 - 碳键。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "结构中存在一个氮 - 碳键。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "结构中存在一个氧 - 碳键。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "结构中氧和其中一个碳之间存在一个双键。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "数值计算",
+          "content": "计算总键数：6 (碳 - 碳) + 1 (氮 - 碳) + 1 (氧 - 碳) + 1 (双键) = 9。",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3",
+            "C_4"
+          ],
+          "reasoning_logic": "将各类型键的数量相加得出总数。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "结构中的总键数为 9。",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "根据计算结果得出最终结论。"
+      }
+    }
+  }
+}

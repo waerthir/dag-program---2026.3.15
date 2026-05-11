@@ -1,0 +1,24 @@
+{
+  "id": 0,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目给出的 SMILES 表达式为 Si(C)(C)(C)O[O-]。"
+        }
+      ],
+      "intermediate_steps": [],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "该 SMILES 表达式代表三甲基硅醇负离子（或三甲基硅氧基负离子）。",
+        "parents": [
+          "C_1"
+        ],
+        "reasoning_logic": "直接解析给定的 SMILES 字符串结构得出化学实体名称。"
+      }
+    }
+  }
+}

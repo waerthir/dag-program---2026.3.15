@@ -1,0 +1,24 @@
+{
+  "id": 4,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "图像条件",
+          "content": "图示区域具有稻田、麦田交错分布的农业景观。"
+        }
+      ],
+      "intermediate_steps": [],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "图示区域具有稻田、麦田交错分布的农业景观。",
+        "parents": [
+          "C_1"
+        ],
+        "reasoning_logic": "直接提取图像信息作为最终结论。"
+      }
+    }
+  }
+}

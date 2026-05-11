@@ -1,0 +1,1775 @@
+[
+  {
+    "id": 0,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出图示为一个电子重排过程"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "已知 R-NH-CO-OH 为初始状态分子"
+          },
+          {
+            "id": "C_3",
+            "type": "图像条件",
+            "content": "根据箭头指示，电子从氧的孤对转移到氮上"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "氮获得一对孤对电子形成负离子",
+            "parents": [
+              "C_3"
+            ],
+            "reasoning_logic": "基于电子转移方向，推导氮原子的电荷变化"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "氧失去一对孤对电子形成正离子",
+            "parents": [
+              "C_3"
+            ],
+            "reasoning_logic": "基于电子转移方向，推导氧原子的电荷变化"
+          },
+          {
+            "id": "I_3",
+            "type": "综合归纳",
+            "content": "结合初始分子结构及电荷变化，确定最终产物结构",
+            "parents": [
+              "C_2",
+              "I_1",
+              "I_2"
+            ],
+            "reasoning_logic": "综合初始状态与电子重排后的电荷分布，得出最终分子式"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "[R-N=C(OH)-O+]",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "综合上述推导得出最终答案"
+        }
+      }
+    }
+  },
+  {
+    "id": 1,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出苯环内有 3 个双键"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "题干给出苯环内有 3 个单键"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "题干给出苯环外有 1 个双键"
+          },
+          {
+            "id": "C_4",
+            "type": "文字条件",
+            "content": "题干给出苯环外有 3 个单键"
+          },
+          {
+            "id": "C_5",
+            "type": "学科常识",
+            "content": "加法原理公式：总键数 = 苯环内双键数 + 苯环内单键数 + 苯环外双键数 + 苯环外单键数"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "数值计算",
+            "content": "将苯环内双键数 3 代入公式，得：总键数 = 3 + 苯环内单键数 + 苯环外双键数 + 苯环外单键数",
+            "parents": [
+              "C_1",
+              "C_5"
+            ],
+            "reasoning_logic": "执行第一次代入操作"
+          },
+          {
+            "id": "I_2",
+            "type": "数值计算",
+            "content": "将苯环内单键数 3 代入公式，得：总键数 = 3 + 3 + 苯环外双键数 + 苯环外单键数",
+            "parents": [
+              "C_2",
+              "I_1"
+            ],
+            "reasoning_logic": "执行第二次代入操作"
+          },
+          {
+            "id": "I_3",
+            "type": "数值计算",
+            "content": "将苯环外双键数 1 代入公式，得：总键数 = 3 + 3 + 1 + 苯环外单键数",
+            "parents": [
+              "C_3",
+              "I_2"
+            ],
+            "reasoning_logic": "执行第三次代入操作"
+          },
+          {
+            "id": "I_4",
+            "type": "数值计算",
+            "content": "将苯环外单键数 3 代入公式，得：总键数 = 3 + 3 + 1 + 3",
+            "parents": [
+              "C_4",
+              "I_3"
+            ],
+            "reasoning_logic": "执行第四次代入操作"
+          },
+          {
+            "id": "I_5",
+            "type": "数值计算",
+            "content": "计算得出总键数为 10",
+            "parents": [
+              "I_4"
+            ],
+            "reasoning_logic": "执行最终加法运算"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 10",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "综合所有计算步骤得出最终结论"
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出箭头表示电子流动方向"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "题干给出 R1 代表任意取代基"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "根据箭头方向，羰基氧原子接受电子"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "氢原子从羰基氧原子转移到另一个氧原子",
+            "parents": [
+              "C_3"
+            ],
+            "reasoning_logic": "基于羰基氧原子接受电子且氢原子与氧原子形成新键的条件进行推导"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "羰基氧原子变为羟基",
+            "parents": [
+              "I_1"
+            ],
+            "reasoning_logic": "由氢原子转移的结果推导得出"
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "另一个氧原子失去氢原子",
+            "parents": [
+              "I_1"
+            ],
+            "reasoning_logic": "由氢原子转移的目标对象推导得出"
+          },
+          {
+            "id": "I_4",
+            "type": "逻辑推导",
+            "content": "另一个氧原子变为羰基氧原子",
+            "parents": [
+              "I_2",
+              "I_3"
+            ],
+            "reasoning_logic": "综合羰基氧原子变羟基和另一个氧原子失氢的条件进行推导"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 O=C(O)C(=O)C(=O)NCC(=O)R1",
+          "parents": [
+            "I_2",
+            "I_4",
+            "C_2"
+          ],
+          "reasoning_logic": "综合官能团转化结果及取代基定义得出最终化学结构式"
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出结构中存在一个芳香环 Ar。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "题干给出芳香环 Ar 与氧原子形成一个双键。"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "题干给出氧原子与碳原子形成一个单键。"
+          },
+          {
+            "id": "C_4",
+            "type": "文字条件",
+            "content": "题干给出碳原子与另一个氧原子形成一个双键。"
+          },
+          {
+            "id": "C_5",
+            "type": "文字条件",
+            "content": "题干给出碳原子与氢原子形成一个单键。"
+          },
+          {
+            "id": "C_6",
+            "type": "文字条件",
+            "content": "题干给出碳原子与 Ru(Por) 形成一个单键。"
+          },
+          {
+            "id": "C_7",
+            "type": "文字条件",
+            "content": "题干给出 Ru(Por) 与另一个碳原子形成一个单键。"
+          },
+          {
+            "id": "C_8",
+            "type": "文字条件",
+            "content": "题干给出该碳原子与氧原子形成一个双键。"
+          },
+          {
+            "id": "C_9",
+            "type": "文字条件",
+            "content": "题干给出氧原子与 R'形成一个单键。"
+          },
+          {
+            "id": "C_10",
+            "type": "文字条件",
+            "content": "已知芳香环 Ar 内部有 6 个碳原子，形成 6 个单键和 3 个双键。"
+          },
+          {
+            "id": "C_11",
+            "type": "学科常识",
+            "content": "根据定义，单键计为 1，双键计为 2，三键计为 3。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "数值计算",
+            "content": "将芳香环内部的 6 个单键代入公式计算得 6。",
+            "parents": [
+              "C_10",
+              "C_11"
+            ],
+            "reasoning_logic": "应用单键计数规则计算芳香环内单键总值。"
+          },
+          {
+            "id": "I_2",
+            "type": "数值计算",
+            "content": "将芳香环内部的 3 个双键代入公式计算得 6。",
+            "parents": [
+              "C_10",
+              "C_11"
+            ],
+            "reasoning_logic": "应用双键计数规则计算芳香环内双键总值。"
+          },
+          {
+            "id": "I_3",
+            "type": "数值计算",
+            "content": "将芳香环与氧原子的双键代入公式计算得 2。",
+            "parents": [
+              "C_2",
+              "C_11"
+            ],
+            "reasoning_logic": "应用双键计数规则计算 Ar-O 键值。"
+          },
+          {
+            "id": "I_4",
+            "type": "数值计算",
+            "content": "将氧原子与碳原子的单键代入公式计算得 1。",
+            "parents": [
+              "C_3",
+              "C_11"
+            ],
+            "reasoning_logic": "应用单键计数规则计算 O-C 键值。"
+          },
+          {
+            "id": "I_5",
+            "type": "数值计算",
+            "content": "将碳原子与另一个氧原子的双键代入公式计算得 2。",
+            "parents": [
+              "C_4",
+              "C_11"
+            ],
+            "reasoning_logic": "应用双键计数规则计算 C=O 键值。"
+          },
+          {
+            "id": "I_6",
+            "type": "数值计算",
+            "content": "将碳原子与 Ru(Por) 的单键代入公式计算得 1。",
+            "parents": [
+              "C_6",
+              "C_11"
+            ],
+            "reasoning_logic": "应用单键计数规则计算 C-Ru(Por) 键值。"
+          },
+          {
+            "id": "I_7",
+            "type": "数值计算",
+            "content": "将 Ru(Por) 与另一个碳原子的单键代入公式计算得 1。",
+            "parents": [
+              "C_7",
+              "C_11"
+            ],
+            "reasoning_logic": "应用单键计数规则计算 Ru(Por)-C 键值。"
+          },
+          {
+            "id": "I_8",
+            "type": "数值计算",
+            "content": "将该碳原子与氧原子的双键代入公式计算得 2。",
+            "parents": [
+              "C_8",
+              "C_11"
+            ],
+            "reasoning_logic": "应用双键计数规则计算 C=O 键值。"
+          },
+          {
+            "id": "I_9",
+            "type": "数值计算",
+            "content": "将氧原子与 R'的单键代入公式计算得 1。",
+            "parents": [
+              "C_9",
+              "C_11"
+            ],
+            "reasoning_logic": "应用单键计数规则计算 O-R'键值。"
+          },
+          {
+            "id": "I_10",
+            "type": "数值计算",
+            "content": "将所有计算结果相加可得 22。",
+            "parents": [
+              "I_1",
+              "I_2",
+              "I_3",
+              "I_4",
+              "I_5",
+              "I_6",
+              "I_7",
+              "I_8",
+              "I_9"
+            ],
+            "reasoning_logic": "汇总所有键的计数值得到总和。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 22。",
+          "parents": [
+            "I_10"
+          ],
+          "reasoning_logic": "基于总和计算得出最终结论。"
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出，1 是胸腺嘧啶"
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "根据 DNA 碱基配对规则，胸腺嘧啶与腺嘌呤配对"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "a 是腺嘌呤",
+            "parents": [
+              "C_1",
+              "C_2"
+            ],
+            "reasoning_logic": "基于 C_1 中 1 为胸腺嘧啶的事实，结合 C_2 中的配对规则进行推导"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 腺嘌呤",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "综合 I_1 的推导结果得出最终结论"
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出：甲醇和水是互溶的两种物质"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "题干给出：需要找出另一种与水最可能互溶的物质"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "已知：极性分子与极性分子更易互溶"
+          },
+          {
+            "id": "C_4",
+            "type": "文字条件",
+            "content": "根据分子结构，甲醇具有极性"
+          },
+          {
+            "id": "C_5",
+            "type": "文字条件",
+            "content": "根据分子结构，乙醛也具有极性"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "由于乙醛具有极性，且水是极性溶剂，推断乙醛与水更可能互溶",
+            "parents": [
+              "C_3",
+              "C_5"
+            ],
+            "reasoning_logic": "应用'极性分子与极性分子更易互溶'的原理，结合乙醛和水的极性特征进行定性推导"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 乙醛",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "基于乙醛与水互溶的推导结果，确定其为题目要求的另一种与水最可能互溶的物质"
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出结构图显示两个吡啶环通过硫原子相连"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "题干给出结构中存在一个三苯基膦"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "题干给出忽略箭头和电荷状态"
+          },
+          {
+            "id": "C_4",
+            "type": "图像条件",
+            "content": "根据化学结构，吡啶环的氮原子与硫原子相连"
+          },
+          {
+            "id": "C_5",
+            "type": "图像条件",
+            "content": "根据化学结构，硫原子之间形成双硫键"
+          },
+          {
+            "id": "C_6",
+            "type": "图像条件",
+            "content": "根据化学结构，三苯基膦与硫原子相连"
+          },
+          {
+            "id": "C_7",
+            "type": "学科常识",
+            "content": "根据 SMILES 规则，吡啶环表示为 c1ccncc1"
+          },
+          {
+            "id": "C_8",
+            "type": "学科常识",
+            "content": "根据 SMILES 规则，双硫键表示为 SS"
+          },
+          {
+            "id": "C_9",
+            "type": "学科常识",
+            "content": "根据 SMILES 规则，三苯基膦表示为 P(c1ccccc1)(c1ccccc1)(c1ccccc1)"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "综合归纳",
+            "content": "将吡啶环、双硫键和三苯基膦组合，可得 C1=CC=CN=C1SSC1=CC=CN=C1P(c2ccccc2)(c2ccccc2)(c2ccccc2)",
+            "parents": [
+              "C_4",
+              "C_5",
+              "C_6",
+              "C_7",
+              "C_8",
+              "C_9"
+            ],
+            "reasoning_logic": "依据结构连接关系（C4-C6）和 SMILES 编码规则（C7-C9），将各部分片段拼接成完整分子式"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 C1=CC=CN=C1SSC1=CC=CN=C1P(c2ccccc2)(c2ccccc2)(c2ccccc2)",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "综合上述组合结果得出最终陈述"
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出，结构中存在 Ar^1-N 键"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "题干给出，结构中存在 N=N 键"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "题干给出，结构中存在 N-Ar^2 键"
+          },
+          {
+            "id": "C_4",
+            "type": "文字条件",
+            "content": "题干给出，结构中存在 C=O 键"
+          },
+          {
+            "id": "C_5",
+            "type": "文字条件",
+            "content": "题干给出，结构中存在 C-OR^2 键"
+          },
+          {
+            "id": "C_6",
+            "type": "文字条件",
+            "content": "题干给出，结构中存在 C-N 键"
+          },
+          {
+            "id": "C_7",
+            "type": "文字条件",
+            "content": "题干给出，结构中存在 R^1-C 键"
+          },
+          {
+            "id": "C_8",
+            "type": "文字条件",
+            "content": "题干给出，结构中存在 X-NH 键"
+          },
+          {
+            "id": "C_9",
+            "type": "文字条件",
+            "content": "已知，Ar^1-N 键为单键，计为 1"
+          },
+          {
+            "id": "C_10",
+            "type": "文字条件",
+            "content": "已知，N=N 键为双键，计为 2"
+          },
+          {
+            "id": "C_11",
+            "type": "文字条件",
+            "content": "已知，N-Ar^2 键为单键，计为 1"
+          },
+          {
+            "id": "C_12",
+            "type": "文字条件",
+            "content": "已知，C=O 键为双键，计为 2"
+          },
+          {
+            "id": "C_13",
+            "type": "文字条件",
+            "content": "已知，C-OR^2 键为单键，计为 1"
+          },
+          {
+            "id": "C_14",
+            "type": "文字条件",
+            "content": "已知，C-N 键为单键，计为 1"
+          },
+          {
+            "id": "C_15",
+            "type": "文字条件",
+            "content": "已知，R^1-C 键为单键，计为 1"
+          },
+          {
+            "id": "C_16",
+            "type": "文字条件",
+            "content": "已知，X-NH 键为单键，计为 1"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "数值计算",
+            "content": "将所有键数相加，可得总键数为 9",
+            "parents": [
+              "C_9",
+              "C_10",
+              "C_11",
+              "C_12",
+              "C_13",
+              "C_14",
+              "C_15",
+              "C_16"
+            ],
+            "reasoning_logic": "执行加法运算：1+2+1+2+1+1+1+1"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 9",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "根据计算结果得出最终结论"
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "图中显示了三种不同体积的培养基中水跳蚤的后代数量随时间变化的情况。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "A 曲线代表 1 升培养基中的水跳蚤后代数量变化。"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "B 曲线代表 0.5 升培养基中的水跳蚤后代数量变化。"
+          },
+          {
+            "id": "C_4",
+            "type": "文字条件",
+            "content": "C 曲线代表 0.25 升培养基中的水跳蚤后代数量变化。"
+          },
+          {
+            "id": "C_5",
+            "type": "图像条件",
+            "content": "A 曲线的峰值最高，且持续时间较长。"
+          },
+          {
+            "id": "C_6",
+            "type": "图像条件",
+            "content": "B 曲线的峰值低于 A 曲线，且持续时间较短。"
+          },
+          {
+            "id": "C_7",
+            "type": "图像条件",
+            "content": "C 曲线的峰值最低，且持续时间最短。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "对比分析",
+            "content": "A 曲线代表的培养基体积最大（1 升），且后代数量最多（峰值最高）。",
+            "parents": [
+              "C_2",
+              "C_5"
+            ],
+            "reasoning_logic": "结合 C_2 的体积定义与 C_5 的图像特征进行关联分析。"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "由 A 曲线数据推导：培养基体积越大，水跳蚤产生的后代数量越多。",
+            "parents": [
+              "I_1"
+            ],
+            "reasoning_logic": "基于 A 曲线体积最大且数量最多的事实得出正相关推论。"
+          },
+          {
+            "id": "I_3",
+            "type": "对比分析",
+            "content": "B 曲线代表的培养基体积中等（0.5 升），且后代数量中等（峰值低于 A 高于 C）。",
+            "parents": [
+              "C_3",
+              "C_6",
+              "C_5",
+              "C_7"
+            ],
+            "reasoning_logic": "结合 C_3 的体积定义与 C_5/C_6/C_7 的相对峰值特征进行关联分析。"
+          },
+          {
+            "id": "I_4",
+            "type": "逻辑推导",
+            "content": "由 B 曲线数据推导：培养基体积中等，水跳蚤产生的后代数量也中等。",
+            "parents": [
+              "I_3"
+            ],
+            "reasoning_logic": "基于 B 曲线体积中等且数量中等的事实得出对应推论。"
+          },
+          {
+            "id": "I_5",
+            "type": "对比分析",
+            "content": "C 曲线代表的培养基体积最小（0.25 升），且后代数量最少（峰值最低）。",
+            "parents": [
+              "C_4",
+              "C_7"
+            ],
+            "reasoning_logic": "结合 C_4 的体积定义与 C_7 的图像特征进行关联分析。"
+          },
+          {
+            "id": "I_6",
+            "type": "逻辑推导",
+            "content": "由 C 曲线数据推导：培养基体积越小，水跳蚤产生的后代数量越少。",
+            "parents": [
+              "I_5"
+            ],
+            "reasoning_logic": "基于 C 曲线体积最小且数量最少的事实得出正相关推论。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "培养基体积越大，水跳蚤产生的后代数量越多。",
+          "parents": [
+            "I_2",
+            "I_4",
+            "I_6"
+          ],
+          "reasoning_logic": "综合 A、B、C 三条曲线关于体积与后代数量关系的独立推导，归纳出最终结论。"
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出电路为反相放大器配置"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "已知电源电压为 +12V 和 -12V"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "已知电阻 R1 和 R2 存在"
+          },
+          {
+            "id": "C_4",
+            "type": "文字条件",
+            "content": "已知电容 C1 和 C2 存在"
+          },
+          {
+            "id": "C_5",
+            "type": "文字条件",
+            "content": "已知需确定输入电压 Vi 与输出电压 Vo 的关系"
+          },
+          {
+            "id": "C_6",
+            "type": "学科常识",
+            "content": "反相放大器原理公式为：Vo = - (R2 / R1) * Vi"
+          },
+          {
+            "id": "C_7",
+            "type": "文字条件",
+            "content": "题干给出输出电压 Vo 需达到 -10V"
+          },
+          {
+            "id": "C_8",
+            "type": "文字条件",
+            "content": "题干未给出 R1 和 R2 的具体值"
+          },
+          {
+            "id": "C_9",
+            "type": "文字条件",
+            "content": "题干给出时间 t 需以毫秒为单位"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "建立方程：-10V = - (R2 / R1) * Vi",
+            "parents": [
+              "C_6",
+              "C_7"
+            ],
+            "reasoning_logic": "将 Vo = -10V 代入反相放大器公式"
+          },
+          {
+            "id": "I_2",
+            "type": "数值计算",
+            "content": "推导得出 Vi = 10V * (R1 / R2)",
+            "parents": [
+              "I_1"
+            ],
+            "reasoning_logic": "对方程进行代数变形求解 Vi"
+          },
+          {
+            "id": "I_3",
+            "type": "对比分析",
+            "content": "判定无法直接计算 Vi 的具体数值",
+            "parents": [
+              "I_2",
+              "C_8"
+            ],
+            "reasoning_logic": "由于缺少 R1 和 R2 的具体值，无法完成数值计算"
+          },
+          {
+            "id": "I_4",
+            "type": "对比分析",
+            "content": "判定无法直接计算时间 t",
+            "parents": [
+              "I_3",
+              "C_4",
+              "C_9"
+            ],
+            "reasoning_logic": "由于缺少 R1、R2 和 Vi 的具体值，且时间计算依赖这些参数，故无法计算"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 无法确定",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "综合所有缺失条件和推导结果，得出无法确定的结论"
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出反应为 CH3CO-CoA 与多种物质反应生成 CoA-SH 和多种产物。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "已知反应中有碳链的断裂过程。"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "已知反应中有氧化还原过程。"
+          },
+          {
+            "id": "C_4",
+            "type": "文字条件",
+            "content": "反应涉及乙酰辅酶 A 的氧化。"
+          },
+          {
+            "id": "C_5",
+            "type": "文字条件",
+            "content": "反应涉及乙酰辅酶 A 的脱羧。"
+          },
+          {
+            "id": "C_6",
+            "type": "文字条件",
+            "content": "反应中有 NAD+ 转化为 NADH。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "根据反应物和产物的化学性质，可判断反应类型。",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "基于反应物和产物的化学性质进行初步分析。"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "由于反应涉及乙酰辅酶 A 的氧化和脱羧，且有 NAD+ 转化为 NADH，所以反应属于氧化脱羧反应。",
+            "parents": [
+              "C_4",
+              "C_5",
+              "C_6"
+            ],
+            "reasoning_logic": "综合氧化、脱羧特征及辅酶变化（NAD+ 转 NADH）推导具体反应类型。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 氧化脱羧反应。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "综合上述推导得出最终结论。"
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出：结构中存在一个氧原子连接一个羟基氢和一个碳原子"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "题干给出：结构中存在一个碳原子连接一个羟基氧和两个 R 基团"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "题干给出：结构中存在一个氮原子连接一个碳原子和一个氮氮双键"
+          },
+          {
+            "id": "C_4",
+            "type": "文字条件",
+            "content": "题干给出：结构中存在一个氮氮双键连接一个氮原子和一个磷原子"
+          },
+          {
+            "id": "C_5",
+            "type": "文字条件",
+            "content": "题干给出：结构中存在一个磷原子连接三个苯环"
+          },
+          {
+            "id": "C_6",
+            "type": "文字条件",
+            "content": "已知：羟基氧与碳原子形成一个单键"
+          },
+          {
+            "id": "C_7",
+            "type": "文字条件",
+            "content": "已知：碳原子与两个 R 基团各形成一个单键"
+          },
+          {
+            "id": "C_8",
+            "type": "文字条件",
+            "content": "已知：氮原子与碳原子形成一个单键"
+          },
+          {
+            "id": "C_9",
+            "type": "文字条件",
+            "content": "已知：氮氮双键由两个氮原子通过一个双键连接"
+          },
+          {
+            "id": "C_10",
+            "type": "文字条件",
+            "content": "已知：磷原子与氮氮双键中的一个氮原子形成一个单键"
+          },
+          {
+            "id": "C_11",
+            "type": "文字条件",
+            "content": "已知：磷原子与三个苯环各形成一个单键"
+          },
+          {
+            "id": "C_12",
+            "type": "学科常识",
+            "content": "根据定义：单键计为 1 个键，双键计为 2 个键，三键计为 3 个键"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "数值计算",
+            "content": "将羟基氧与碳原子的单键代入公式，可得 1 个键",
+            "parents": [
+              "C_6",
+              "C_12"
+            ],
+            "reasoning_logic": "应用键数定义计算单键数值"
+          },
+          {
+            "id": "I_2",
+            "type": "数值计算",
+            "content": "将碳原子与两个 R 基团的单键代入公式，可得 2 个键",
+            "parents": [
+              "C_7",
+              "C_12"
+            ],
+            "reasoning_logic": "应用键数定义计算两个单键的总和"
+          },
+          {
+            "id": "I_3",
+            "type": "数值计算",
+            "content": "将氮原子与碳原子的单键代入公式，可得 1 个键",
+            "parents": [
+              "C_8",
+              "C_12"
+            ],
+            "reasoning_logic": "应用键数定义计算单键数值"
+          },
+          {
+            "id": "I_4",
+            "type": "数值计算",
+            "content": "将氮氮双键代入公式，可得 2 个键",
+            "parents": [
+              "C_9",
+              "C_12"
+            ],
+            "reasoning_logic": "应用键数定义计算双键数值"
+          },
+          {
+            "id": "I_5",
+            "type": "数值计算",
+            "content": "将磷原子与氮氮双键中的一个氮原子的单键代入公式，可得 1 个键",
+            "parents": [
+              "C_10",
+              "C_12"
+            ],
+            "reasoning_logic": "应用键数定义计算单键数值"
+          },
+          {
+            "id": "I_6",
+            "type": "数值计算",
+            "content": "将磷原子与三个苯环的单键代入公式，可得 3 个键",
+            "parents": [
+              "C_11",
+              "C_12"
+            ],
+            "reasoning_logic": "应用键数定义计算三个单键的总和"
+          },
+          {
+            "id": "I_7",
+            "type": "数值计算",
+            "content": "由于羟基氧与碳原子的单键为 1 个，且碳原子与两个 R 基团的单键为 2 个，所以总共有 3 个单键",
+            "parents": [
+              "I_1",
+              "I_2"
+            ],
+            "reasoning_logic": "累加第一部分单键数量"
+          },
+          {
+            "id": "I_8",
+            "type": "数值计算",
+            "content": "由于氮原子与碳原子的单键为 1 个，且磷原子与氮氮双键中的一个氮原子的单键为 1 个，所以总共有 2 个单键",
+            "parents": [
+              "I_3",
+              "I_5"
+            ],
+            "reasoning_logic": "累加第二部分单键数量"
+          },
+          {
+            "id": "I_9",
+            "type": "数值计算",
+            "content": "由于磷原子与三个苯环的单键为 3 个，所以总共有 3 个单键",
+            "parents": [
+              "I_6"
+            ],
+            "reasoning_logic": "确认第三部分单键数量"
+          },
+          {
+            "id": "I_10",
+            "type": "数值计算",
+            "content": "由于氮氮双键为 2 个键，所以总共有 2 个键",
+            "parents": [
+              "I_4"
+            ],
+            "reasoning_logic": "确认双键数量"
+          },
+          {
+            "id": "I_11",
+            "type": "数值计算",
+            "content": "将所有部分的键数相加得出总数 10",
+            "parents": [
+              "I_7",
+              "I_8",
+              "I_9",
+              "I_10"
+            ],
+            "reasoning_logic": "综合所有计算结果进行求和 (3+2+3+2)"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 10",
+          "parents": [
+            "I_11"
+          ],
+          "reasoning_logic": "根据最终计算结果得出结论"
+        }
+      }
+    }
+  },
+  {
+    "id": 12,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出细胞周期包括 G1、S、G2 和 M 期。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "题干给出 M 期代表有丝分裂。"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "已知有丝分裂是细胞增殖的一种方式。"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "有丝分裂适用于体细胞。"
+          },
+          {
+            "id": "C_5",
+            "type": "学科常识",
+            "content": "神经元细胞属于高度分化的细胞。"
+          },
+          {
+            "id": "C_6",
+            "type": "学科常识",
+            "content": "神经元细胞不再进行细胞分裂。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "神经元细胞不进行有丝分裂。",
+            "parents": [
+              "C_5",
+              "C_6",
+              "C_4"
+            ],
+            "reasoning_logic": "基于神经元细胞高度分化且不再分裂的特性，结合有丝分裂适用于体细胞的常识，推导出神经元细胞不进行有丝分裂。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是神经元细胞。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "综合上述推理步骤，得出最终结论。"
+        }
+      }
+    }
+  },
+  {
+    "id": 13,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出图像展示了一个化学反应的过渡态结构"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "题干给出需要忽略箭头来确定 SMILES 表达式"
+          },
+          {
+            "id": "C_3",
+            "type": "图像条件",
+            "content": "根据化学结构，分子包含一个环己烯环"
+          },
+          {
+            "id": "C_4",
+            "type": "图像条件",
+            "content": "根据化学结构，环己烯环上有两个溴原子"
+          },
+          {
+            "id": "C_5",
+            "type": "图像条件",
+            "content": "根据化学结构，环己烯环上有一个酮羰基"
+          },
+          {
+            "id": "C_6",
+            "type": "图像条件",
+            "content": "根据化学结构，环己烯环上有一个氰基"
+          },
+          {
+            "id": "C_7",
+            "type": "图像条件",
+            "content": "根据化学结构，环己烯环上有一个叔丁基"
+          },
+          {
+            "id": "C_8",
+            "type": "图像条件",
+            "content": "根据化学结构，环己烯环上有一个甲基"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "综合归纳",
+            "content": "基于环己烯环骨架及取代基（两个溴原子、一个酮羰基、一个氰基、一个叔丁基、一个甲基）的位置关系构建 SMILES 表达式",
+            "parents": [
+              "C_2",
+              "C_3",
+              "C_4",
+              "C_5",
+              "C_6",
+              "C_7",
+              "C_8"
+            ],
+            "reasoning_logic": "综合所有提取的结构特征信息，按照 SMILES 编码规则组装分子表达式"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 C1=C(Br)C(Br)=C(C(C)(C)C)C(=O)C1C#N",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "确认构建的 SMILES 表达式为最终结论"
+        }
+      }
+    }
+  },
+  {
+    "id": 14,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出这是一个电子重排的箭头推动图示。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "已知 R^2O^-中的氧带有负电荷。"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "根据化学反应机理，负电荷会吸引电子。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "将电子从 R^2O^-转移到 R^3O-，形成新的键。",
+            "parents": [
+              "C_1",
+              "C_2",
+              "C_3"
+            ],
+            "reasoning_logic": "基于负电荷吸引电子的原理，执行电子转移操作。"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "由于 R^2O^-失去电子，所以它变为 R^2O。",
+            "parents": [
+              "I_1"
+            ],
+            "reasoning_logic": "根据电子转移结果，推导供体物种的电荷变化。"
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "由于 R^3O-获得电子，所以它变为 R^3O^-。",
+            "parents": [
+              "I_1"
+            ],
+            "reasoning_logic": "根据电子转移结果，推导受体物种的电荷变化。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 [R^3O^-C(OR^1)(OR^2)R]。",
+          "parents": [
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "综合反应前后各物种的变化及新键的形成，得出最终产物结构。"
+        }
+      }
+    }
+  },
+  {
+    "id": 15,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "题干给出，图中断崖由多条等高线重合形成。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "题干给出，图中等高距为 50 米。"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "断崖最小高差计算公式为 (n-1)d，其中 n 为重合等高线条数，d 为等高距。"
+          },
+          {
+            "id": "C_4",
+            "type": "文字信息",
+            "content": "题干给出，断崖处有 3 条等高线重合。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "将 n=3 和 d=50 米代入公式，得到表达式 (3-1)×50 米。",
+            "parents": [
+              "C_3",
+              "C_4",
+              "C_2"
+            ],
+            "reasoning_logic": "根据断崖最小高差计算公式，代入题目给定的重合条数和等高距数值。"
+          },
+          {
+            "id": "I_2",
+            "type": "数值计算",
+            "content": "计算括号内减法，结果为 2×50 米。",
+            "parents": [
+              "I_1"
+            ],
+            "reasoning_logic": "执行算术运算 3-1=2。"
+          },
+          {
+            "id": "I_3",
+            "type": "数值计算",
+            "content": "计算乘法，结果为 100 米。",
+            "parents": [
+              "I_2"
+            ],
+            "reasoning_logic": "执行算术运算 2×50=100。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 100 米。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "综合上述计算步骤得出断崖最小高差的最终数值。"
+        }
+      }
+    }
+  },
+  {
+    "id": 16,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出分子结构包含 Sn、ZnBn、ArB 和 Cl、Br、NH2 基团"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "题干给出分子结构为六元环，包含两个 N 原子"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "根据化学结构规则，Sn 连接在六元环外"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "根据化学结构规则，ZnBn 连接在六元环外"
+          },
+          {
+            "id": "C_5",
+            "type": "学科常识",
+            "content": "根据化学结构规则，ArB 连接在六元环外"
+          },
+          {
+            "id": "C_6",
+            "type": "学科常识",
+            "content": "根据化学结构规则，Cl、Br、NH2 基团连接在六元环上"
+          },
+          {
+            "id": "C_7",
+            "type": "学科常识",
+            "content": "根据 SMILES 规则，六元环表示为 C1=CC=CC=C1"
+          },
+          {
+            "id": "C_8",
+            "type": "学科常识",
+            "content": "根据 SMILES 规则，N 原子在六元环中表示为 N1=CC=CC=C1N"
+          },
+          {
+            "id": "C_9",
+            "type": "学科常识",
+            "content": "根据 SMILES 规则，Cl、Br、NH2 基团分别表示为 Cl、Br、N"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "将 Sn 连接在六元环外，可得 SnC1=CC=CC=C1N",
+            "parents": [
+              "C_3",
+              "C_8"
+            ],
+            "reasoning_logic": "依据化学结构规则和 SMILES 表示法进行结构拼接"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "将 ZnBn 连接在六元环外，可得 ZnBnC1=CC=CC=C1N",
+            "parents": [
+              "C_4",
+              "C_8"
+            ],
+            "reasoning_logic": "依据化学结构规则和 SMILES 表示法进行结构拼接"
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "将 ArB 连接在六元环外，可得 ArBC1=CC=CC=C1N",
+            "parents": [
+              "C_5",
+              "C_8"
+            ],
+            "reasoning_logic": "依据化学结构规则和 SMILES 表示法进行结构拼接"
+          },
+          {
+            "id": "I_4",
+            "type": "逻辑推导",
+            "content": "将 Cl、Br、NH2 基团连接在六元环上，可得 C1=CC(Cl)=C(Br)C=C1N(NH2)N",
+            "parents": [
+              "C_6",
+              "C_7",
+              "C_8",
+              "C_9"
+            ],
+            "reasoning_logic": "依据化学结构规则和 SMILES 表示法进行取代基位置标记和结构拼接"
+          },
+          {
+            "id": "I_5",
+            "type": "综合归纳",
+            "content": "组合所有部分得到完整分子结构表达式",
+            "parents": [
+              "I_1",
+              "I_2",
+              "I_3",
+              "I_4"
+            ],
+            "reasoning_logic": "将环外基团与修饰后的环结构通过点号连接形成最终 SMILES 字符串"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "C1=CC(Cl)=C(Br)C=C1N(NH2)N.Sn.ZnBn.ArB",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "综合所有推导步骤得出最终答案"
+        }
+      }
+    }
+  },
+  {
+    "id": 17,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出：非繁殖季节和繁殖季节的雄性个体分为帮助者和繁殖者两种角色。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "题干给出：非繁殖季节帮助者和繁殖者的平均 T 水平相近。"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "题干给出：繁殖季节繁殖者的平均 T 水平显著高于帮助者。"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "根据行为内分泌学原理，激素水平与行为角色相关联。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "对比分析",
+            "content": "对比发现：繁殖季节繁殖者的 T 水平显著升高，且该状态与繁殖行为相关。",
+            "parents": [
+              "C_3",
+              "C_1"
+            ],
+            "reasoning_logic": "基于 C_3 中繁殖季节的数据差异以及 C_1 中定义的繁殖者角色进行对比分析。"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "推导得出：T 水平可能与繁殖行为的调节有关。",
+            "parents": [
+              "I_1",
+              "C_4"
+            ],
+            "reasoning_logic": "结合 I_1 中观察到的 T 水平变化现象与 C_4 中的行为内分泌学原理进行定性推理。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是：T 水平可能是一个与繁殖行为相关的生理指标。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "综合 I_2 的推导结果得出最终陈述。"
+        }
+      }
+    }
+  },
+  {
+    "id": 18,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出图示为鸟类祖先种群随时间变化的示意图"
+          },
+          {
+            "id": "C_2",
+            "type": "图像条件",
+            "content": "图中显示了鸟类随时间分叉成不同分支"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "根据进化生物学原理，物种分化通常与环境变化相关"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "推断环境可能在不同时间点发生了变化",
+            "parents": [
+              "C_2"
+            ],
+            "reasoning_logic": "基于图中鸟类在不同时间点出现多个分支的事实进行初步解读"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "确认环境随时间发生了变化",
+            "parents": [
+              "C_3",
+              "C_2"
+            ],
+            "reasoning_logic": "结合物种分化与环境变化相关的原理（C_3）以及图中显示多个分支的事实（C_2）进行联合推导"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "环境随时间发生了变化",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "综合上述推理步骤得出最终结论"
+        }
+      }
+    }
+  },
+  {
+    "id": 19,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "图像条件",
+            "content": "拉萨 7 月降水量日平均变化图显示白天降水较少。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "白天太阳辐射强。"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "地面温度升高。"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "热力环流原理：地面温度升高导致空气上升。"
+          },
+          {
+            "id": "C_5",
+            "type": "文字条件",
+            "content": "低压区有利于水汽上升凝结形成降水。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "白天地面温度升高明显。",
+            "parents": [
+              "C_2",
+              "C_4"
+            ],
+            "reasoning_logic": "将白天太阳辐射强代入热力环流原理，推导地面温度变化结果。"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "白天空气上升。",
+            "parents": [
+              "I_1",
+              "C_4"
+            ],
+            "reasoning_logic": "根据地面温度升高明显，结合热力环流原理推导空气运动状态。"
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "白天近地面形成低压。",
+            "parents": [
+              "I_1",
+              "I_2"
+            ],
+            "reasoning_logic": "综合地面温度升高和空气上升两个条件，推导近地面气压状态。"
+          },
+          {
+            "id": "I_4",
+            "type": "逻辑推导",
+            "content": "白天降水不易形成。",
+            "parents": [
+              "I_3",
+              "C_5"
+            ],
+            "reasoning_logic": "基于近地面形成低压的事实，结合水汽上升凝结需要时间的隐含条件，推导降水形成的难易程度。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "白天太阳辐射强，地面温度升高，近地面形成低压，但水汽上升凝结需要时间，导致白天降水不易形成。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "综合上述所有推理步骤，得出关于白天降水不易形成的最终解释。"
+        }
+      }
+    }
+  }
+]

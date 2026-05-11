@@ -1,0 +1,55 @@
+{
+  "id": 5,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "结构中包含一个三键 (N≡N)。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "结构中包含两个双键 (C=O 和 C=C)。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "结构中包含多个单键 (Ar-C, C-C, C-N, 和 C-R)。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "数值计算",
+          "content": "统计不同类型的化学键数量：1 个三键 + 2 个双键 + 多个单键。",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据题目描述，将各类键的数量进行加总统计。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "排除氢原子后，化学键总数大于 3。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "基于统计结果（1+2+多个），推断总数必然大于 3。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是大于 3。",
+        "parents": [
+          "I_2"
+        ],
+        "reasoning_logic": "综合上述推导得出最终结论。"
+      }
+    }
+  }
+}

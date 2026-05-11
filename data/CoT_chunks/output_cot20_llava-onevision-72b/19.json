@@ -1,0 +1,24 @@
+{
+  "id": 19,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目指出电子重排后的分子 SMILES 表达式为 C(=O)N(R1)C(=O)O。"
+        }
+      ],
+      "intermediate_steps": [],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "电子重排后的分子结构由 SMILES 表达式 C(=O)N(R1)C(=O)O 定义。",
+        "parents": [
+          "C_1"
+        ],
+        "reasoning_logic": "直接提取题目给出的最终状态描述作为结论。"
+      }
+    }
+  }
+}

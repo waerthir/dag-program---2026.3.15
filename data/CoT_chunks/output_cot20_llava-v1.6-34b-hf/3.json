@@ -1,0 +1,59 @@
+{
+  "id": 3,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题干给出 SO$_3$分子骨架结构为 O-S-O（竖直排列）。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "已知 SO$_3$分子中 S 原子与 O 原子之间存在双键。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "根据化学键理论，S-O 双键中，每个 O 原子与 S 原子形成两个σ键和一个π键。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "SO$_3$分子中存在三个 S-O 双键。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "S-O 双键的键级为 2 + 1 = 3。",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "依据 C_3 中提到的双键包含两个σ键和一个π键，将两者数量相加得出单根双键的键级。"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "SO$_3$分子中 S-O 键的总键级为 3 × 3 = 9。",
+          "parents": [
+            "I_1",
+            "C_4"
+          ],
+          "reasoning_logic": "将 I_1 得出的单根键键级乘以 C_4 中给出的双键数量 3。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是 9。",
+        "parents": [
+          "I_2"
+        ],
+        "reasoning_logic": "综合 I_2 的计算结果得出最终陈述。"
+      }
+    }
+  }
+}

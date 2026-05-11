@@ -1,0 +1,40 @@
+{
+  "id": 12,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目设定：如果 1 是胸腺嘧啶（thymine）。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "DNA 碱基配对规则：腺嘌呤（adenine）与胸腺嘧啶（thymine）配对。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "根据碱基配对规则，若 1 是胸腺嘧啶，则与其配对的 a 必须是腺嘌呤。",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "将题目设定的条件（1 是胸腺嘧啶）代入 DNA 碱基配对规则进行推导。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "因此，a 是腺嘌呤（adenine）。",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "基于中间推导步骤得出最终结论。"
+      }
+    }
+  }
+}

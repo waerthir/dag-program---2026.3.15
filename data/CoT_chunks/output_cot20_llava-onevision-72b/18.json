@@ -1,0 +1,24 @@
+{
+  "id": 18,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "神经元永久停滞在细胞周期的 G0 期。"
+        }
+      ],
+      "intermediate_steps": [],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "神经元永久停滞在细胞周期的 G0 期。",
+        "parents": [
+          "C_1"
+        ],
+        "reasoning_logic": "直接基于已知生物学事实得出最终陈述。"
+      }
+    }
+  }
+}

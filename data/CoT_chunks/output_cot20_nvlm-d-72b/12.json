@@ -1,0 +1,70 @@
+{
+  "id": 12,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "反应的焓变 ΔH° = -635.0 kJ/mol"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "反应的熵变 ΔS° = 38.1 J/(mol·K)"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "反应的温度 T = 373 K"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "吉布斯自由能的计算公式为 ΔG° = ΔH° - TΔS°"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将熵变单位从 J/(mol·K) 转换为 kJ/(mol·K)，得 0.0381 kJ/(mol·K)",
+          "parents": [
+            "C_2"
+          ],
+          "reasoning_logic": "执行单位换算：38.1 ÷ 1000 = 0.0381"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "计算 TΔS° 项的值：373 K × 0.0381 kJ/(mol·K) = 14.2 kJ/mol",
+          "parents": [
+            "C_3",
+            "I_1"
+          ],
+          "reasoning_logic": "执行乘法运算"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "计算 ΔG° = -635.0 kJ/mol - 14.2 kJ/mol",
+          "parents": [
+            "C_1",
+            "I_2",
+            "C_4"
+          ],
+          "reasoning_logic": "将已知数据代入吉布斯自由能公式并执行减法运算"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是 -649.2",
+        "parents": [
+          "I_3"
+        ],
+        "reasoning_logic": "综合上述计算结果得出最终数值"
+      }
+    }
+  }
+}

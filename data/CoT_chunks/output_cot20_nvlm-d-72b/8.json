@@ -1,0 +1,30 @@
+{
+  "id": 8,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "繁殖季节中，繁殖雄性的睾酮水平高于辅助雄性。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "非繁殖季节中，繁殖雄性和辅助雄性的睾酮水平相似。"
+        }
+      ],
+      "intermediate_steps": [],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "繁殖季节中繁殖雄性的睾酮水平高于辅助雄性，而非繁殖季节中两者水平相似。",
+        "parents": [
+          "C_1",
+          "C_2"
+        ],
+        "reasoning_logic": "综合题目给出的两个独立事实陈述得出最终结论。"
+      }
+    }
+  }
+}

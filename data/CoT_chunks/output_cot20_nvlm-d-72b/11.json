@@ -1,0 +1,24 @@
+{
+  "id": 11,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "图像条件",
+          "content": "图中断崖的最小高差可能是 100 米。"
+        }
+      ],
+      "intermediate_steps": [],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "图中断崖的最小高差可能是 100 米。",
+        "parents": [
+          "C_1"
+        ],
+        "reasoning_logic": "直接提取图像信息作为最终结论。"
+      }
+    }
+  }
+}

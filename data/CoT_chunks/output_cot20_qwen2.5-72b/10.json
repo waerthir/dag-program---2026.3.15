@@ -1,0 +1,70 @@
+{
+  "id": 10,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题干给出反应为 CH3CO-CoA 与多种物质反应生成 CoA-SH 和多种产物。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "已知反应中有碳链的断裂过程。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "已知反应中有氧化还原过程。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "反应涉及乙酰辅酶 A 的氧化。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字条件",
+          "content": "反应涉及乙酰辅酶 A 的脱羧。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字条件",
+          "content": "反应中有 NAD+ 转化为 NADH。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "根据反应物和产物的化学性质，可判断反应类型。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "基于反应物和产物的化学性质进行初步分析。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "由于反应涉及乙酰辅酶 A 的氧化和脱羧，且有 NAD+ 转化为 NADH，所以反应属于氧化脱羧反应。",
+          "parents": [
+            "C_4",
+            "C_5",
+            "C_6"
+          ],
+          "reasoning_logic": "综合氧化、脱羧特征及辅酶变化（NAD+ 转 NADH）推导具体反应类型。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是 氧化脱羧反应。",
+        "parents": [
+          "I_2"
+        ],
+        "reasoning_logic": "综合上述推导得出最终结论。"
+      }
+    }
+  }
+}

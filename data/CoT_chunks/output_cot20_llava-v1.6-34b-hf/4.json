@@ -1,0 +1,103 @@
+{
+  "id": 4,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题干给出输出电压 v_OUT 需要穿过 -10 V。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "已知输入电压 v_IN 是一个三角波形，幅度为 2 V，频率为 1 kHz。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "根据三角波形的定义，可得公式 v_IN = 2 sin(2πt)。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "已知关系式 v_OUT = v_IN - 12 V。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "三角函数的单位圆定义。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将 v_IN 代入公式得到 v_IN = 2 sin(2πt)。",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据三角波形定义及已知幅度和频率进行公式实例化。"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "推导得出 v_OUT = 2 sin(2πt) - 12 V。",
+          "parents": [
+            "I_1",
+            "C_4"
+          ],
+          "reasoning_logic": "将 I_1 的结果代入 C_4 的关系式中。"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "建立方程 -10 V = 2 sin(2πt) - 12 V。",
+          "parents": [
+            "C_1",
+            "I_2"
+          ],
+          "reasoning_logic": "利用 C_1 中 v_OUT 的目标值 -10 V 代入 I_2 的表达式。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "解方程得到 2 sin(2πt) = 2 V。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "对方程 I_3 进行移项运算，将 -12 V 移至等号左侧。"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "计算得出 sin(2πt) = 1。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "将 I_4 中的等式两边同时除以 2 V（原文表述为代入单位圆定义计算比值）。"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "推导得出 t = π/2。",
+          "parents": [
+            "I_5",
+            "C_5"
+          ],
+          "reasoning_logic": "基于 I_5 的正弦值和 C_5 的单位圆定义求解时间 t。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是 t = π/2。",
+        "parents": [
+          "I_6"
+        ],
+        "reasoning_logic": "综合上述推理步骤得出最终结论。"
+      }
+    }
+  }
+}

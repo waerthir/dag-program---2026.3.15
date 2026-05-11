@@ -1,0 +1,116 @@
+{
+  "id": 6,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题干给出过渡态结构图像中忽略箭头。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "SMILES 表达式是一种化学分子结构的表示方法。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "SMILES 规则：每个原子用一个字母表示（如 C 表示碳，O 表示氧）。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "SMILES 规则：原子之间用短线表示化学键。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字条件",
+          "content": "SMILES 规则：氢原子通常省略，除非它们是反应物或产物的一部分。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字条件",
+          "content": "SMILES 规则：环状结构用大写字母表示。"
+        },
+        {
+          "id": "C_7",
+          "type": "文字条件",
+          "content": "SMILES 规则：反应物和产物用箭头表示。"
+        },
+        {
+          "id": "C_8",
+          "type": "文字条件",
+          "content": "过渡态结构中没有氢原子。"
+        },
+        {
+          "id": "C_9",
+          "type": "文字条件",
+          "content": "过渡态结构中碳原子和氧原子之间存在化学键。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "应用 SMILES 规则于过渡态结构：氢原子被省略，只保留碳原子和氧原子。",
+          "parents": [
+            "C_5",
+            "C_8"
+          ],
+          "reasoning_logic": "根据氢原子省略规则及过渡态无氢的事实进行推导。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "应用 SMILES 规则于过渡态结构：碳原子之间用短线表示化学键。",
+          "parents": [
+            "C_4",
+            "C_9"
+          ],
+          "reasoning_logic": "根据化学键表示规则及碳原子成键事实进行推导。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "应用 SMILES 规则于过渡态结构：氧原子之间用短线表示化学键。",
+          "parents": [
+            "C_4",
+            "C_9"
+          ],
+          "reasoning_logic": "根据化学键表示规则及氧原子成键事实进行推导。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "应用 SMILES 规则于过渡态结构：环状结构用大写字母表示。",
+          "parents": [
+            "C_6"
+          ],
+          "reasoning_logic": "直接引用环状结构表示规则。"
+        },
+        {
+          "id": "I_5",
+          "type": "综合归纳",
+          "content": "综合得出过渡态结构的 SMILES 表达特征：无氢、碳氧原子保留、键用短线表示、环用大写字母表示。",
+          "parents": [
+            "I_1",
+            "I_2",
+            "I_3",
+            "I_4"
+          ],
+          "reasoning_logic": "汇聚所有中间推导结果形成完整结构描述。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是 [答案]。",
+        "parents": [
+          "I_5"
+        ],
+        "reasoning_logic": "基于过渡态结构的 SMILES 特征分析得出最终结论。"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": 15,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "成熟红细胞不进行有丝分裂。"
+        }
+      ],
+      "intermediate_steps": [],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "不进行有丝分裂的细胞类型是成熟红细胞。",
+        "parents": [
+          "C_1"
+        ],
+        "reasoning_logic": "直接基于已知生物学事实得出结论。"
+      }
+    }
+  }
+}

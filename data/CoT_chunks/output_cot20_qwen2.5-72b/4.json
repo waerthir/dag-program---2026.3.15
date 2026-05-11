@@ -1,0 +1,40 @@
+{
+  "id": 4,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题干给出，1 是胸腺嘧啶"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "根据 DNA 碱基配对规则，胸腺嘧啶与腺嘌呤配对"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "a 是腺嘌呤",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "基于 C_1 中 1 为胸腺嘧啶的事实，结合 C_2 中的配对规则进行推导"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是 腺嘌呤",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "综合 I_1 的推导结果得出最终结论"
+      }
+    }
+  }
+}

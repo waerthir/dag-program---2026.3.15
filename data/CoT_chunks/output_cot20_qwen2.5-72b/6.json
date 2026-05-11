@@ -1,0 +1,79 @@
+{
+  "id": 6,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题干给出结构图显示两个吡啶环通过硫原子相连"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "题干给出结构中存在一个三苯基膦"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "题干给出忽略箭头和电荷状态"
+        },
+        {
+          "id": "C_4",
+          "type": "图像条件",
+          "content": "根据化学结构，吡啶环的氮原子与硫原子相连"
+        },
+        {
+          "id": "C_5",
+          "type": "图像条件",
+          "content": "根据化学结构，硫原子之间形成双硫键"
+        },
+        {
+          "id": "C_6",
+          "type": "图像条件",
+          "content": "根据化学结构，三苯基膦与硫原子相连"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "根据 SMILES 规则，吡啶环表示为 c1ccncc1"
+        },
+        {
+          "id": "C_8",
+          "type": "学科常识",
+          "content": "根据 SMILES 规则，双硫键表示为 SS"
+        },
+        {
+          "id": "C_9",
+          "type": "学科常识",
+          "content": "根据 SMILES 规则，三苯基膦表示为 P(c1ccccc1)(c1ccccc1)(c1ccccc1)"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "综合归纳",
+          "content": "将吡啶环、双硫键和三苯基膦组合，可得 C1=CC=CN=C1SSC1=CC=CN=C1P(c2ccccc2)(c2ccccc2)(c2ccccc2)",
+          "parents": [
+            "C_4",
+            "C_5",
+            "C_6",
+            "C_7",
+            "C_8",
+            "C_9"
+          ],
+          "reasoning_logic": "依据结构连接关系（C4-C6）和 SMILES 编码规则（C7-C9），将各部分片段拼接成完整分子式"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是 C1=CC=CN=C1SSC1=CC=CN=C1P(c2ccccc2)(c2ccccc2)(c2ccccc2)",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "综合上述组合结果得出最终陈述"
+      }
+    }
+  }
+}

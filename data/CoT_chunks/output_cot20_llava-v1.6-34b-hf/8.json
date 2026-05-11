@@ -1,0 +1,175 @@
+{
+  "id": 8,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题干给出过渡态结构图像中忽略箭头。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "SMILES 表达式是一种化学分子结构的表示方法。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "SMILES 规则：每个原子用一个字母表示（如 C、O、N 等）。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "SMILES 规则：原子之间用短线表示化学键。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字条件",
+          "content": "SMILES 规则：双键用=表示。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字条件",
+          "content": "SMILES 规则：三键用#表示。"
+        },
+        {
+          "id": "C_7",
+          "type": "文字条件",
+          "content": "SMILES 规则：氢原子用 H 表示。"
+        },
+        {
+          "id": "C_8",
+          "type": "图像条件",
+          "content": "过渡态结构中存在氢原子。"
+        },
+        {
+          "id": "C_9",
+          "type": "图像条件",
+          "content": "过渡态结构中存在碳原子。"
+        },
+        {
+          "id": "C_10",
+          "type": "图像条件",
+          "content": "过渡态结构中存在氧原子。"
+        },
+        {
+          "id": "C_11",
+          "type": "图像条件",
+          "content": "过渡态结构中存在氮原子。"
+        },
+        {
+          "id": "C_12",
+          "type": "图像条件",
+          "content": "过渡态结构中氢原子与碳原子之间有化学键。"
+        },
+        {
+          "id": "C_13",
+          "type": "图像条件",
+          "content": "过渡态结构中碳原子与氧原子之间有化学键。"
+        },
+        {
+          "id": "C_14",
+          "type": "图像条件",
+          "content": "过渡态结构中氧原子与氮原子之间有化学键。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "将氢原子表示为 H。",
+          "parents": [
+            "C_8",
+            "C_7"
+          ],
+          "reasoning_logic": "根据图像中存在氢原子及 SMILES 规则中氢原子的表示法进行转化。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "将碳原子表示为 C。",
+          "parents": [
+            "C_9",
+            "C_3"
+          ],
+          "reasoning_logic": "根据图像中存在碳原子及 SMILES 规则中原子的表示法进行转化。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "将氧原子表示为 O。",
+          "parents": [
+            "C_10",
+            "C_3"
+          ],
+          "reasoning_logic": "根据图像中存在氧原子及 SMILES 规则中原子的表示法进行转化。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "将氮原子表示为 N。",
+          "parents": [
+            "C_11",
+            "C_3"
+          ],
+          "reasoning_logic": "根据图像中存在氮原子及 SMILES 规则中原子的表示法进行转化。"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "氢原子与碳原子之间的化学键表示为'-'。",
+          "parents": [
+            "C_12",
+            "C_4"
+          ],
+          "reasoning_logic": "根据图像中的键合关系及 SMILES 规则中单键的表示法进行转化。"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "碳原子与氧原子之间的化学键表示为'-'。",
+          "parents": [
+            "C_13",
+            "C_4"
+          ],
+          "reasoning_logic": "根据图像中的键合关系及 SMILES 规则中单键的表示法进行转化。"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "氧原子与氮原子之间的化学键表示为'-'。",
+          "parents": [
+            "C_14",
+            "C_4"
+          ],
+          "reasoning_logic": "根据图像中的键合关系及 SMILES 规则中单键的表示法进行转化。"
+        },
+        {
+          "id": "I_8",
+          "type": "综合归纳",
+          "content": "组合原子符号与键符号形成序列 C-C-C-O-N-H。",
+          "parents": [
+            "I_1",
+            "I_2",
+            "I_3",
+            "I_4",
+            "I_5",
+            "I_6",
+            "I_7"
+          ],
+          "reasoning_logic": "综合所有原子表示和键连接关系，构建完整的分子结构字符串。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是 C-C-C-O-N-H。",
+        "parents": [
+          "I_8"
+        ],
+        "reasoning_logic": "基于构建的分子结构序列得出最终结论。"
+      }
+    }
+  }
+}

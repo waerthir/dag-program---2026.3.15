@@ -1,0 +1,54 @@
+{
+  "id": 11,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目询问图中断崖的最小高差可能是多少米。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "已知等高线图中相邻等高线的高差为 50 米。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "根据等高线图原理，断崖的最小高差等于相邻等高线的高差。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "建立关系式：断崖的最小高差 = 相邻等高线的高差。",
+          "parents": [
+            "C_3"
+          ],
+          "reasoning_logic": "引用等高线图原理将文字描述转化为数学关系。"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "计算得出断崖的最小高差 = 50 米。",
+          "parents": [
+            "I_1",
+            "C_2"
+          ],
+          "reasoning_logic": "将 C_2 中的数值 50 米代入 I_1 的关系式中进行计算。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是 50 米。",
+        "parents": [
+          "I_2"
+        ],
+        "reasoning_logic": "综合上述计算结果得出最终结论。"
+      }
+    }
+  }
+}

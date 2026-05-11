@@ -1,0 +1,108 @@
+{
+  "id": 9,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题干给出反应物为一个带有负电荷氧原子的中间体。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "第一个电子转移箭头从负电荷氧原子 O-指向相邻的碳原子。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "第二个电子转移箭头从 C-OR^3 键指向氧原子 O。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "电子转移箭头从负电荷氧指向相邻碳表示形成 C=O 双键，单键变为双键。"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "电子转移箭头从 C-OR^3 键指向氧原子表示 C-O 键断裂且电子转移至氧原子，OR^3 基团以 OR^3-形式离去。"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "中心碳原子由 sp^3 杂化变为 sp^2 杂化对应形成双键的过程。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "氧原子与相邻碳原子之间由单键变为双键。",
+          "parents": [
+            "C_2",
+            "C_4"
+          ],
+          "reasoning_logic": "根据第一个电子转移箭头的指向及化学常识推导键的变化。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "OR^3 基团以 OR^3-的形式离去。",
+          "parents": [
+            "C_3",
+            "C_5"
+          ],
+          "reasoning_logic": "根据第二个电子转移箭头的指向及化学常识推导基团离去形式。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "中心碳原子由 sp^3 杂化变为 sp^2 杂化。",
+          "parents": [
+            "I_1",
+            "C_6"
+          ],
+          "reasoning_logic": "基于成键变化结果推导杂化方式的改变。"
+        },
+        {
+          "id": "I_4",
+          "type": "综合归纳",
+          "content": "产物包含一个酮（或酯）类结构和一个烷氧基阴离子。",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "综合键的形成和基团的离去得出产物结构特征。"
+        },
+        {
+          "id": "I_5",
+          "type": "条件转化",
+          "content": "主分子 SMILES 表达式为 R^2C(=O)CH(R)COOR^1，离去基团 SMILES 表达式为 [O^-]R^3。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "将推导出的化学结构转化为通用的 SMILES 表达式。"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "具体示例下主分子为 CC(=O)CC(C)C(=O)OC，离去基团为 CO-。",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "将通用 SMILES 表达式中的 R 基团替换为甲基进行具体化计算。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是 CC(=O)CC(C)C(=O)OC.CO-。",
+        "parents": [
+          "I_6"
+        ],
+        "reasoning_logic": "综合具体化后的 SMILES 表达式得出最终答案字符串。"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": 7,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "过渡态结构的 SMILES 表达式为 [O-]C([O+])([O-])OP(=O)(O)O。"
+        }
+      ],
+      "intermediate_steps": [],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "[O-]C([O+])([O-])OP(=O)(O)O",
+        "parents": [
+          "C_1"
+        ],
+        "reasoning_logic": "根据已知条件直接得出最终答案。"
+      }
+    }
+  }
+}

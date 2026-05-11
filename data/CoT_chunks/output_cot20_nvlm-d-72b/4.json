@@ -1,0 +1,55 @@
+{
+  "id": 4,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "神经元永久停滞在细胞周期的 G1 期。"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "G1 期之后是 S 期及细胞周期的后续阶段。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "细胞分裂需要经过 S 期及后续阶段。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "神经元不经过 S 期及细胞周期的后续阶段。",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "根据神经元停滞在 G1 期的事实，推断其无法进入后续阶段。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "神经元不进行分裂。",
+          "parents": [
+            "I_1",
+            "C_3"
+          ],
+          "reasoning_logic": "由于未经历 S 期及后续阶段，根据细胞分裂的必要条件推导出神经元不分裂。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "答案是 G1。",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "综合神经元停滞的阶段特征，得出最终答案为 G1 期。"
+      }
+    }
+  }
+}

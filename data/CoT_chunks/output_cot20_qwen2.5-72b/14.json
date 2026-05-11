@@ -1,0 +1,65 @@
+{
+  "id": 14,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题干给出这是一个电子重排的箭头推动图示。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "已知 R^2O^-中的氧带有负电荷。"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "根据化学反应机理，负电荷会吸引电子。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "将电子从 R^2O^-转移到 R^3O-，形成新的键。",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "基于负电荷吸引电子的原理，执行电子转移操作。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "由于 R^2O^-失去电子，所以它变为 R^2O。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "根据电子转移结果，推导供体物种的电荷变化。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "由于 R^3O-获得电子，所以它变为 R^3O^-。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "根据电子转移结果，推导受体物种的电荷变化。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是 [R^3O^-C(OR^1)(OR^2)R]。",
+        "parents": [
+          "I_2",
+          "I_3"
+        ],
+        "reasoning_logic": "综合反应前后各物种的变化及新键的形成，得出最终产物结构。"
+      }
+    }
+  }
+}

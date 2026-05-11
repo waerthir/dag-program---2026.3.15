@@ -1,0 +1,24 @@
+{
+  "id": 13,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题目陈述：电子重排后的分子 SMILES 表达式为 C(=O)C(=O)C。"
+        }
+      ],
+      "intermediate_steps": [],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "电子重排后的分子 SMILES 表达式是 C(=O)C(=O)C。",
+        "parents": [
+          "C_1"
+        ],
+        "reasoning_logic": "直接提取题目给出的最终状态描述作为结论。"
+      }
+    }
+  }
+}
