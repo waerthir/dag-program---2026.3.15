@@ -14,6 +14,7 @@ import codecs
 import threading
 from openai import OpenAI
 from pathlib import Path
+from dotenv import load_dotenv
 
 # ================= 配置与日志设置 =================
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -24,11 +25,11 @@ class Config:
 
     JSON_NAME = [
 
-                'output_cot20_gemma-4-31B-it_compare_relationship',
-                'output_cot20_llava-v1.6-34b-hf_compare_relationship',
+                # 'output_cot20_gemma-4-31B-it_compare_relationship',
+                # 'output_cot20_llava-v1.6-34b-hf_compare_relationship',
                 'output_cot20_Qwen3-VL-32B_compare_relationship',
-                'output_cot20_llava-onevision-72b_compare_relationship',
-                'output_cot20_nvlm-d-72b_compare_relationship',
+                # 'output_cot20_llava-onevision-72b_compare_relationship',
+                # 'output_cot20_nvlm-d-72b_compare_relationship',
                 'output_cot20_qwen2.5-72b_compare_relationship',
                  ]
 
@@ -42,10 +43,10 @@ class Config:
     # 所以可以直接使用 CoT_chunks
 
     # 两者的 chunks dir 因为文件名字本身已经做好区分所以可以不用管
-
-    API_KEY = "sk-666" 
+    load_dotenv()
+    API_KEY = os.getenv('GPT-KEY')
     MODEL_NAME = "gpt-5.4"        # 更新模型名称
-    BASE_URL = "https://synai996.space/v1" # 或者你使用的代理地址
+    BASE_URL = "https://www.msutools.cn/v1" # 或者你使用的代理地址
 
     MAX_WORKERS = 6
 

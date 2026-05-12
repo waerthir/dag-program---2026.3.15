@@ -17,6 +17,7 @@ class Config:
     GRAPH_DATA_PATH = project_root / 'data' / 'CoT_o' / f'output_cot20_{model_keyword}_all_graph.json'
     MODEL_DATA_PATH = project_root / 'data' / 'CoT' / f'output_cot20_{model_keyword}.json'
     OUTPUT_PATH = project_root / 'data' / 'CoT_DAG_compare' / f'output_cot20_{model_keyword}_compare_node.json'
+    # 可配置性非常强，我希望后面的输入输出常规一点，不要乱动
     
     # 字段名配置
     ID_SEP = "_"  # 分隔符

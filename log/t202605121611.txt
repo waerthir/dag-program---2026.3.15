@@ -1,0 +1,50 @@
+(base) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> & E:/TrashE/Miniconda3/envs/dag_env/python.exe "e:/TrashE/_Sun_Yat_Sen_University/_大三下/杂项/2026.03实验室学习/dag-program --2026.3.15/src/dag_comparer_1.py"
+2026-05-12 16:10:56,363 - INFO - ========== 开始处理文件: output_cot20_Qwen3-VL-32B_compare_node ==========
+2026-05-12 16:10:56,451 - INFO - 已发现碎片记录 0 条。
+2026-05-12 16:10:56,457 - INFO - 全量任务: 332，已完成: 0，剩余: 332
+2026-05-12 16:10:56,459 - INFO - 尝试进行任务0_C_1
+2026-05-12 16:10:56,463 - INFO - 发送信息？
+2026-05-12 16:10:57,324 - INFO - HTTP Request: POST https://www.msutools.cn/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 16:10:57,617 - ERROR - 请求发生网络或底层异常: 'str' object has no attribute 'choices'
+2026-05-12 16:10:57,617 - INFO - 结果是None
+2026-05-12 16:10:57,618 - INFO - 尝试进行任务0_C_2
+2026-05-12 16:10:57,618 - INFO - 发送信息？
+2026-05-12 16:10:57,849 - INFO - HTTP Request: POST https://www.msutools.cn/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 16:10:57,924 - ERROR - 请求发生网络或底层异常: 'str' object has no attribute 'choices'
+2026-05-12 16:10:57,925 - INFO - 结果是None
+2026-05-12 16:10:57,925 - INFO - 尝试进行任务0_C_3
+2026-05-12 16:10:57,925 - INFO - 发送信息？
+2026-05-12 16:10:58,343 - INFO - HTTP Request: POST https://www.msutools.cn/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 16:10:59,363 - ERROR - 请求发生网络或底层异常: 'str' object has no attribute 'choices'
+2026-05-12 16:10:59,363 - INFO - 结果是None
+2026-05-12 16:10:59,363 - INFO - 尝试进行任务0_C_4
+2026-05-12 16:10:59,363 - INFO - 发送信息？
+2026-05-12 16:10:59,561 - INFO - HTTP Request: POST https://www.msutools.cn/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 16:10:59,588 - ERROR - 请求发生网络或底层异常: 'str' object has no attribute 'choices'
+2026-05-12 16:10:59,589 - INFO - 结果是None
+2026-05-12 16:10:59,589 - INFO - 尝试进行任务0_C_5
+2026-05-12 16:10:59,591 - INFO - 发送信息？
+2026-05-12 16:10:59,771 - INFO - HTTP Request: POST https://www.msutools.cn/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 16:11:00,755 - ERROR - 请求发生网络或底层异常: 'str' object has no attribute 'choices'
+2026-05-12 16:11:00,755 - INFO - 结果是None
+2026-05-12 16:11:00,755 - INFO - 尝试进行任务0_C_6
+2026-05-12 16:11:00,755 - INFO - 发送信息？
+2026-05-12 16:11:00,897 - INFO - HTTP Request: POST https://www.msutools.cn/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 16:11:00,945 - ERROR - 请求发生网络或底层异常: 'str' object has no attribute 'choices'
+2026-05-12 16:11:00,945 - INFO - 结果是None
+2026-05-12 16:11:00,946 - INFO - 尝试进行任务0_C_7
+2026-05-12 16:11:00,946 - INFO - 发送信息？
+2026-05-12 16:11:01,088 - INFO - HTTP Request: POST htt
+
+
+
+2026-05-12 16:46:57,737 - INFO - 任务 [3_I_9] Token 统计: Input: 1931 | Output: 881 | 累计: 输入：122039 | 输出：53462
+2026-05-12 16:46:57,737 - INFO - 成功写入3_I_9
+2026-05-12 16:46:57,739 - INFO - 尝试进行任务3_I_10
+2026-05-12 16:46:57,739 - INFO - 发送信息？
+2026-05-12 16:48:01,826 - INFO - HTTP Request: POST https://www.msutools.cn/v1/chat/completions "HTTP/1.1 502 Bad Gateway"
+2026-05-12 16:48:01,827 - INFO - Retrying request to /chat/completions in 60.000000 seconds
+2026-05-12 16:48:01,838 - INFO - HTTP Request: POST https://www.msutools.cn/v1/chat/completions "HTTP/1.1 502 Bad Gateway"
+2026-05-12 16:48:01,839 - INFO - Retrying request to /chat/completions in 60.000000 seconds
+2026-05-12 16:48:01,888 - INFO - HTTP Request: POST https://www.msutools.cn/v1/chat/completions "HTTP/1.1 502 Bad Gateway"
+2026-05-12 16:48:01,889 - INFO - Retrying request to /chat/completions in 60.000000 seconds
