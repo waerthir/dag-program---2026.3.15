@@ -26,12 +26,12 @@ class Config:
 
     JSON_NAME = [
 
-                # 'output_cot20_gemma-4-31B-it_compare_node',
+                'output_cot20_gemma-4-31B-it_compare_node',
                 # 'output_cot20_llava-v1.6-34b-hf_compare_node',
-                'output_cot20_Qwen3-VL-32B_compare_node',
+                # 'output_cot20_Qwen3-VL-32B_compare_node',
                 # 'output_cot20_llava-onevision-72b_compare_node',
-                # 'output_cot20_nvlm-d-72b_compare_node',
-                'output_cot20_qwen2.5-72b_compare_node',
+                'output_cot20_nvlm-d-72b_compare_node',
+                # 'output_cot20_qwen2.5-72b_compare_node',
                  ]
 
     INPUT_DIR = project_root / 'data' / 'CoT_DAG_compare' 
