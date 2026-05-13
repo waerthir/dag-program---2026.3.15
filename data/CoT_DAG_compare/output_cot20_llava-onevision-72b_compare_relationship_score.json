@@ -1,0 +1,425 @@
+[
+  {
+    "id": "0_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 0,
+      "Reasoning_Type_Accuracy": 0
+    }
+  },
+  {
+    "id": "10_I_1",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 4
+    }
+  },
+  {
+    "id": "10_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 6
+    }
+  },
+  {
+    "id": "11_I_1",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "11_I_2",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "11_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 8,
+      "Reasoning_Type_Accuracy": 2
+    }
+  },
+  {
+    "id": "12_I_1",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "12_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 8.5,
+      "Reasoning_Type_Accuracy": 0
+    }
+  },
+  {
+    "id": "13_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 0
+    }
+  },
+  {
+    "id": "14_I_1",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 9,
+      "Reasoning_Type_Accuracy": 8
+    }
+  },
+  {
+    "id": "14_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 6,
+      "Reasoning_Logic_Accuracy": 7.5,
+      "Reasoning_Type_Accuracy": 6.5
+    }
+  },
+  {
+    "id": "15_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 9,
+      "Reasoning_Type_Accuracy": 0
+    }
+  },
+  {
+    "id": "16_I_1",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 0
+    }
+  },
+  {
+    "id": "16_I_2",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "16_I_3",
+    "evaluation": {
+      "Dependency_Completeness": 6.7,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 7.5,
+      "Reasoning_Type_Accuracy": 2
+    }
+  },
+  {
+    "id": "16_I_4",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "16_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 9,
+      "Reasoning_Type_Accuracy": 0
+    }
+  },
+  {
+    "id": "17_I_1",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "17_I_2",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "17_I_3",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "17_I_4",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "17_I_5",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "17_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 8.5,
+      "Reasoning_Type_Accuracy": 7
+    }
+  },
+  {
+    "id": "18_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 0,
+      "Reasoning_Logic_Accuracy": 4,
+      "Reasoning_Type_Accuracy": 0
+    }
+  },
+  {
+    "id": "19_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 0
+    }
+  },
+  {
+    "id": "1_I_1",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "1_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 0
+    }
+  },
+  {
+    "id": "2_I_1",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "2_I_2",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "2_I_3",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 0
+    }
+  },
+  {
+    "id": "2_O",
+    "evaluation": {
+      "Dependency_Completeness": 0,
+      "Dependency_Accuracy": 0,
+      "Reasoning_Logic_Accuracy": 4,
+      "Reasoning_Type_Accuracy": 0
+    }
+  },
+  {
+    "id": "3_I_1",
+    "evaluation": {
+      "Dependency_Completeness": 6.7,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 8,
+      "Reasoning_Type_Accuracy": 4
+    }
+  },
+  {
+    "id": "3_I_2",
+    "evaluation": {
+      "Dependency_Completeness": 6.7,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 9.5,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "4_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 0,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 0
+    }
+  },
+  {
+    "id": "5_I_1",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 9,
+      "Reasoning_Type_Accuracy": 8
+    }
+  },
+  {
+    "id": "5_I_2",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "5_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "6_I_1",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "6_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 8,
+      "Reasoning_Type_Accuracy": 0
+    }
+  },
+  {
+    "id": "7_I_1",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 9,
+      "Reasoning_Type_Accuracy": 3
+    }
+  },
+  {
+    "id": "7_O",
+    "evaluation": {
+      "Dependency_Completeness": 7,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 7,
+      "Reasoning_Type_Accuracy": 0
+    }
+  },
+  {
+    "id": "8_I_1",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "8_I_2",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "8_I_3",
+    "evaluation": {
+      "Dependency_Completeness": 5,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 6,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "8_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 8,
+      "Reasoning_Type_Accuracy": 9
+    }
+  },
+  {
+    "id": "9_I_1",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "9_O",
+    "evaluation": {
+      "Dependency_Completeness": 10,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 6
+    }
+  }
+]

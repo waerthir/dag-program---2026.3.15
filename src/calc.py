@@ -10,8 +10,24 @@ class Config:
 
     current_file = Path(__file__).resolve()
     project_root = current_file.parent.parent
+
+    # JSON_NAME = [
+    # 'gemma-4-31B-it',
+    # 'llava-onevision-72b',
+    # 'llava-v1.6-34b-hf',
+    # 'nvlm-d-72b',
+    # 'qwen2.5-72b',
+    # 'Qwen3-VL-32B',
+    # # 'test'
+    #              ]
+
+    model_keyword = 'gemma-4-31B-it'
+    model_keyword = 'llava-onevision-72b'
+    model_keyword = 'llava-v1.6-34b-hf'
+    model_keyword = 'nvlm-d-72b'
     model_keyword = 'qwen2.5-72b'
-    mode = 'relationship'
+    model_keyword = 'Qwen3-VL-32B'
+    mode = 'node'
 
     INPUT_FILE = project_root / 'data' / 'CoT_DAG_compare' / f'output_cot20_{model_keyword}_compare_{mode}_score.json'
 
@@ -19,7 +35,7 @@ class Config:
 
     # 如果未来增加了新的评价维度，只需在列表中添加即可
     TARGET_METRICS = ["Fidelity", "Atomicity"]
-    TARGET_METRICS = ["Dependency_Accuracy", "Reasoning_Logic_Accuracy", "Reasoning_Type_Accuracy"]
+    # TARGET_METRICS = ["Dependency_Accuracy", "Reasoning_Logic_Accuracy", "Reasoning_Type_Accuracy"]
     ROUND_DECIMALS = 4
 
     metric_dict = {'Fidelity': '信息忠实度',
