@@ -1,0 +1,1520 @@
+﻿case_type,id,problem_index,problem_id,node_id,low_metrics,all_scores,node_type,node_content,node_reasoning_logic,parent_ids,parent_contents,cot,review_status,error_type,note,fix_suggestion
+node,0_I_1,0,prob_dc4459f18d9a0bfc524c910b,I_1,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",逻辑推导,位置 1 位于一条 DNA 链上，其对应的互补链位置 A 必须与其配对。,基于 DNA 双链结构及位置关系进行推导。,,,"题干给出，图示为原核生物DNA同时进行复制和转录的过程。
+题干给出，位置1的碱基是胸腺嘧啶（T）。
+已知，DNA双链之间遵循碱基互补配对原则。
+由于位置1位于一条DNA链上，其对应的互补链位置A必须与其配对。
+根据碱基互补配对原则，胸腺嘧啶（T）与腺嘌呤（A）配对。
+所以，位置A的碱基是腺嘌呤（A）。
+已知，转录过程是以DNA的一条链为模板合成RNA。
+观察图示，位置a所在的RNA片段是由包含位置A的DNA链作为模板转录而来的。
+根据RNA转录的碱基互补配对原则，DNA中的腺嘌呤（A）对应转录为RNA中的尿嘧啶（U）。
+由于位置A是腺嘌呤（A），所以其对应的转录产物位置a是尿嘧啶（U）。
+因此，最终答案是 尿嘧啶 (Uracil)。",,,,
+node,10_C_4,10,prob_5e2a6686f4a6767eed2b9ec9,C_4,"{""Atomicity"": 7}","{""Fidelity"": 10, ""Atomicity"": 7}",文字条件,已知 CH3CO-CoA 及相关底物在反应过程中失去了电子并转移给了 NAD+,,,,"题干给出，反应方程式为 $\ce{CH3CO-CoA + 3NAD+ + GDP + PO4^{3-} + 2H2O -> CoA-SH + 3NADH + 3H+ + GTP + 2CO2}$。
+已知，$\ce{NAD+}$ 被还原为 $\ce{NADH}$。
+由于 $\ce{NAD+}$ 获得了电子和氢离子，所以发生了还原反应。
+已知，$\ce{CH3CO-CoA}$ 及相关底物在反应过程中失去了电子并转移给了 $\ce{NAD+}$。
+由于底物失去了电子，所以发生了氧化反应。
+由于该反应同时包含氧化过程（底物 $\to \ce{NADH}$) 和还原过程 ($\ce{NAD+} \to \ce{NADH}$)。
+根据化学定义，同时发生氧化和还原的反应称为氧化还原反应。
+因此，最终答案是 氧化还原反应。",,,,
+node,11_C_2,11,prob_e1a9cea877593f2f7b9aed01,C_2,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",文字条件,已知六元环内有 4 个单键和 2 个双键。,,,,"题干给出，结构包含一个六元环。
+已知，六元环内有4个单键和2个双键。
+题干给出，环上连接有一个羰基（C=O）。
+已知，该羰基包含1个碳氧双键和1个碳碳单键（连接至环）。
+题干给出，环上连接有另一个羰基（C=O），其碳原子连接至基团R。
+已知，该羰基包含1个碳氧双键、1个碳碳单键（连接至环）和1个碳碳单键（连接至R）。
+已知，基团R被视为一个整体单元，其与羰基碳之间的键已计算。
+由于需要排除所有涉及氢（H）的键，因此不计算C-H键和H+相关的相互作用。
+根据上述分析，环内键数为 $4 + 2 = 6$。
+根据上述分析，第一个羰基贡献键数为 $2 + 1 = 3$。
+根据上述分析，第二个羰基贡献键数为 $2 + 1 + 1 = 4$。
+但注意到第一个羰基的碳原子与环的连接键已在环内键数中计算，故该羰基额外贡献 $2$ 个键（C=O）。
+同理，第二个羰基的碳原子与环的连接键已在环内键数中计算，故该羰基额外贡献 $2 + 1 = 3$ 个键（C=O 和 C-R）。
+将各项相加，总键数为 $6 + 2 + 3 = 11$。
+因此，最终答案是 11。",,,,
+node,11_C_6,11,prob_e1a9cea877593f2f7b9aed01,C_6,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",文字条件,已知第二个羰基包含 1 个碳氧双键、1 个碳碳单键（连接至环）和 1 个碳碳单键（连接至 R）。,,,,"题干给出，结构包含一个六元环。
+已知，六元环内有4个单键和2个双键。
+题干给出，环上连接有一个羰基（C=O）。
+已知，该羰基包含1个碳氧双键和1个碳碳单键（连接至环）。
+题干给出，环上连接有另一个羰基（C=O），其碳原子连接至基团R。
+已知，该羰基包含1个碳氧双键、1个碳碳单键（连接至环）和1个碳碳单键（连接至R）。
+已知，基团R被视为一个整体单元，其与羰基碳之间的键已计算。
+由于需要排除所有涉及氢（H）的键，因此不计算C-H键和H+相关的相互作用。
+根据上述分析，环内键数为 $4 + 2 = 6$。
+根据上述分析，第一个羰基贡献键数为 $2 + 1 = 3$。
+根据上述分析，第二个羰基贡献键数为 $2 + 1 + 1 = 4$。
+但注意到第一个羰基的碳原子与环的连接键已在环内键数中计算，故该羰基额外贡献 $2$ 个键（C=O）。
+同理，第二个羰基的碳原子与环的连接键已在环内键数中计算，故该羰基额外贡献 $2 + 1 = 3$ 个键（C=O 和 C-R）。
+将各项相加，总键数为 $6 + 2 + 3 = 11$。
+因此，最终答案是 11。",,,,
+node,11_C_7,11,prob_e1a9cea877593f2f7b9aed01,C_7,"{""Atomicity"": 4}","{""Fidelity"": 10, ""Atomicity"": 4}",文字条件,已知基团 R 被视为一个整体单元，其与羰基碳之间的键已计算。,,,,"题干给出，结构包含一个六元环。
+已知，六元环内有4个单键和2个双键。
+题干给出，环上连接有一个羰基（C=O）。
+已知，该羰基包含1个碳氧双键和1个碳碳单键（连接至环）。
+题干给出，环上连接有另一个羰基（C=O），其碳原子连接至基团R。
+已知，该羰基包含1个碳氧双键、1个碳碳单键（连接至环）和1个碳碳单键（连接至R）。
+已知，基团R被视为一个整体单元，其与羰基碳之间的键已计算。
+由于需要排除所有涉及氢（H）的键，因此不计算C-H键和H+相关的相互作用。
+根据上述分析，环内键数为 $4 + 2 = 6$。
+根据上述分析，第一个羰基贡献键数为 $2 + 1 = 3$。
+根据上述分析，第二个羰基贡献键数为 $2 + 1 + 1 = 4$。
+但注意到第一个羰基的碳原子与环的连接键已在环内键数中计算，故该羰基额外贡献 $2$ 个键（C=O）。
+同理，第二个羰基的碳原子与环的连接键已在环内键数中计算，故该羰基额外贡献 $2 + 1 = 3$ 个键（C=O 和 C-R）。
+将各项相加，总键数为 $6 + 2 + 3 = 11$。
+因此，最终答案是 11。",,,,
+node,13_C_2,13,prob_946a53111122806c19998851,C_2,"{""Atomicity"": 4}","{""Fidelity"": 10, ""Atomicity"": 4}",学科常识,已知苯环由 6 个碳原子组成，包含 6 条碳 - 碳键。,,,,"题干给出，结构中包含一个苯环。
+已知，苯环由6个碳原子组成，包含6条碳-碳键。
+题干给出，苯环与一个氮原子相连。
+已知，该连接处存在1条碳-氮键。
+题干给出，氮原子与一个碳原子相连（带有$R^1$基团）。
+已知，该连接处存在1条氮-碳键。
+题干给出，该碳原子与另一个碳原子相连（双键形式）。
+已知，该连接处存在1条碳-碳双键。
+题干给出，该碳原子与带有$R^2$基团的碳原子相连。
+已知，该连接处存在1条碳-碳单键。
+题干给出，带有$R^2$基团的碳原子与氧原子相连。
+已知，该连接处存在1条碳-氧键。
+题干给出，氧原子与苯环上的一个碳原子相连。
+已知，该连接处存在1条氧-碳键。
+题干给出，结构中包含取代基$R^1$。
+已知，$R^1$与碳原子之间存在1条化学键。
+题干给出，结构中包含取代基$R^2$。
+已知，$R^2$与碳原子之间存在1条化学键。
+由于苯环有6条键，且外部连接有碳-氮键1条，氮-碳键1条，碳-碳双键1条，碳-碳单键1条，碳-氧键1条，氧-碳键1条，以及两个取代基键2条。
+根据加法运算，总键数 = $6 + 1 + 1 + 1 + 1 + 1 + 1 + 2$。
+将数值代入上述公式，可得总键数 = $14$。
+因此，最终答案是 14。",,,,
+node,13_C_9,13,prob_946a53111122806c19998851,C_9,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",文字条件,题干给出该碳原子与带有$R^2$基团的碳原子相连。,,,,"题干给出，结构中包含一个苯环。
+已知，苯环由6个碳原子组成，包含6条碳-碳键。
+题干给出，苯环与一个氮原子相连。
+已知，该连接处存在1条碳-氮键。
+题干给出，氮原子与一个碳原子相连（带有$R^1$基团）。
+已知，该连接处存在1条氮-碳键。
+题干给出，该碳原子与另一个碳原子相连（双键形式）。
+已知，该连接处存在1条碳-碳双键。
+题干给出，该碳原子与带有$R^2$基团的碳原子相连。
+已知，该连接处存在1条碳-碳单键。
+题干给出，带有$R^2$基团的碳原子与氧原子相连。
+已知，该连接处存在1条碳-氧键。
+题干给出，氧原子与苯环上的一个碳原子相连。
+已知，该连接处存在1条氧-碳键。
+题干给出，结构中包含取代基$R^1$。
+已知，$R^1$与碳原子之间存在1条化学键。
+题干给出，结构中包含取代基$R^2$。
+已知，$R^2$与碳原子之间存在1条化学键。
+由于苯环有6条键，且外部连接有碳-氮键1条，氮-碳键1条，碳-碳双键1条，碳-碳单键1条，碳-氧键1条，氧-碳键1条，以及两个取代基键2条。
+根据加法运算，总键数 = $6 + 1 + 1 + 1 + 1 + 1 + 1 + 2$。
+将数值代入上述公式，可得总键数 = $14$。
+因此，最终答案是 14。",,,,
+node,14_C_1,14,open_cdfa4abd00751289e53a9cf1,C_1,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",文字信息,题干给出图中等高线数值包含 50、150、350、450。,,,,"题干给出，图中等高线数值包含50、150、350、450。
+已知，相邻两条等高线之间的数值差为 $150 - 50 = 100$。
+已知，相邻两条等高线之间的数值差为 $350 - 150 = 200$。
+由于等高线间距均匀，可推断该图的基本等高线间距为 $50\text{m}$。
+题干给出，图中 A、B、C、D、E、F 为断崖的标注点。
+观察图中 A、B 点所在的区域，等高线在此处发生重合或极度密集。
+根据地形图判读规则，等高线重合表示此处为断崖。
+观察 A、B 点两侧的等高线数值。
+断崖一侧的等高线数值为 $50\text{m}$。
+断崖另一侧最近的等高线数值为 $100\text{m}$（由 $50\text{m}$ 等高线向内推算的一条辅助线）。
+根据断崖高差计算公式，高差 $\Delta h = h_{\text{upper}} - h_{\text{lower}}$。
+将 $h_{\text{upper}} = 100\text{m}$ 代入上述公式。
+将 $h_{\text{lower}} = 50\text{m}$ 代入上述公式。
+可得 $\Delta h = 100\text{m} - 50\text{m} = 50\text{m}$。
+因此，最终答案是 50米。",,,,
+node,14_C_4,14,open_cdfa4abd00751289e53a9cf1,C_4,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",学科常识,由于等高线间距均匀，可推断该图的基本等高线间距为 50m。,,,,"题干给出，图中等高线数值包含50、150、350、450。
+已知，相邻两条等高线之间的数值差为 $150 - 50 = 100$。
+已知，相邻两条等高线之间的数值差为 $350 - 150 = 200$。
+由于等高线间距均匀，可推断该图的基本等高线间距为 $50\text{m}$。
+题干给出，图中 A、B、C、D、E、F 为断崖的标注点。
+观察图中 A、B 点所在的区域，等高线在此处发生重合或极度密集。
+根据地形图判读规则，等高线重合表示此处为断崖。
+观察 A、B 点两侧的等高线数值。
+断崖一侧的等高线数值为 $50\text{m}$。
+断崖另一侧最近的等高线数值为 $100\text{m}$（由 $50\text{m}$ 等高线向内推算的一条辅助线）。
+根据断崖高差计算公式，高差 $\Delta h = h_{\text{upper}} - h_{\text{lower}}$。
+将 $h_{\text{upper}} = 100\text{m}$ 代入上述公式。
+将 $h_{\text{lower}} = 50\text{m}$ 代入上述公式。
+可得 $\Delta h = 100\text{m} - 50\text{m} = 50\text{m}$。
+因此，最终答案是 50米。",,,,
+node,14_C_5,14,open_cdfa4abd00751289e53a9cf1,C_5,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",文字信息,题干给出图中 A、B、C、D、E、F 为断崖的标注点。,,,,"题干给出，图中等高线数值包含50、150、350、450。
+已知，相邻两条等高线之间的数值差为 $150 - 50 = 100$。
+已知，相邻两条等高线之间的数值差为 $350 - 150 = 200$。
+由于等高线间距均匀，可推断该图的基本等高线间距为 $50\text{m}$。
+题干给出，图中 A、B、C、D、E、F 为断崖的标注点。
+观察图中 A、B 点所在的区域，等高线在此处发生重合或极度密集。
+根据地形图判读规则，等高线重合表示此处为断崖。
+观察 A、B 点两侧的等高线数值。
+断崖一侧的等高线数值为 $50\text{m}$。
+断崖另一侧最近的等高线数值为 $100\text{m}$（由 $50\text{m}$ 等高线向内推算的一条辅助线）。
+根据断崖高差计算公式，高差 $\Delta h = h_{\text{upper}} - h_{\text{lower}}$。
+将 $h_{\text{upper}} = 100\text{m}$ 代入上述公式。
+将 $h_{\text{lower}} = 50\text{m}$ 代入上述公式。
+可得 $\Delta h = 100\text{m} - 50\text{m} = 50\text{m}$。
+因此，最终答案是 50米。",,,,
+node,14_C_6,14,open_cdfa4abd00751289e53a9cf1,C_6,"{""Atomicity"": 7}","{""Fidelity"": 10, ""Atomicity"": 7}",图像信息,观察图中 A、B 点所在的区域，等高线在此处发生重合或极度密集。,,,,"题干给出，图中等高线数值包含50、150、350、450。
+已知，相邻两条等高线之间的数值差为 $150 - 50 = 100$。
+已知，相邻两条等高线之间的数值差为 $350 - 150 = 200$。
+由于等高线间距均匀，可推断该图的基本等高线间距为 $50\text{m}$。
+题干给出，图中 A、B、C、D、E、F 为断崖的标注点。
+观察图中 A、B 点所在的区域，等高线在此处发生重合或极度密集。
+根据地形图判读规则，等高线重合表示此处为断崖。
+观察 A、B 点两侧的等高线数值。
+断崖一侧的等高线数值为 $50\text{m}$。
+断崖另一侧最近的等高线数值为 $100\text{m}$（由 $50\text{m}$ 等高线向内推算的一条辅助线）。
+根据断崖高差计算公式，高差 $\Delta h = h_{\text{upper}} - h_{\text{lower}}$。
+将 $h_{\text{upper}} = 100\text{m}$ 代入上述公式。
+将 $h_{\text{lower}} = 50\text{m}$ 代入上述公式。
+可得 $\Delta h = 100\text{m} - 50\text{m} = 50\text{m}$。
+因此，最终答案是 50米。",,,,
+node,15_C_8,15,prob_294da38c0a1592a77854e1ee,C_8,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",图像条件,根据图像，分子由苯环、NH 基团、C=C 双键以及两个 -CO₂Et 基团组成。,,,,"题干给出，目标分子包含一个苯环。
+题干给出，苯环的邻位连接有一个氮原子。
+已知，氮原子连接一个氢原子。
+已知，氮原子连接一个碳原子。
+已知，该碳原子与另一个碳原子形成双键。
+已知，该双键的第二个碳原子连接一个酯基 $\text{-CO}_2\text{Et}$。
+已知，该碳原子同时连接一个酯基 $\text{-CO}_2\text{Et}$。
+由于结构为 $\text{Ethyl 2-(2-ethoxy-2-oxoethyl)-1H-indole-3-carboxylate}$ 的前体或类似衍生物，其骨架为 $\text{Ethyl 2-(ethoxycarbonyl)-1H-indole-3-carboxylate}$ 的开环形式。
+根据图像，结构为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole}$ 的类似物，但实际为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole}$ 的开环中间体。
+分析图像结构，分子式为 $\text{C}_{15}\text{H}_{17}\text{NO}_4$。
+结构描述为：$\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole}$ 的变体，具体为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole}$ 的前体。
+观察图像，分子由苯环、$\text{NH}$ 基团、$\text{C=C}$ 双键以及两个 $\text{-CO}_2\text{Et}$ 基团组成。
+苯环部分 SMILES 为 $\text{c1ccc(cc1)}$。
+$\text{NH}$ 连接在苯环上，SMILES 为 $\text{c1ccc(cc1)N}$。
+$\text{N}$ 连接 $\text{CH=C}$，SMILES 为 $\text{c1ccc(cc1)NC=C}$。
+该 $\text{C}$ 原子连接两个 $\text{CO}_2\text{Et}$ 基团，SMILES 为 $\text{c1ccc(cc1)NC=C(C(=O)OCC)C(=O)OCC}$。
+因此，最终答案是 CCOC(=O)C=C(C(=O)OCC)NC1=CC=CC=C1。",,,,
+node,15_I_1,15,prob_294da38c0a1592a77854e1ee,I_1,"{""Atomicity"": 7}","{""Fidelity"": 9, ""Atomicity"": 7}",逻辑推导,构建包含苯环和邻位氮原子的基础骨架。,结合题干关于苯环和邻位氮的描述及苯环 SMILES 常识。,,,"题干给出，目标分子包含一个苯环。
+题干给出，苯环的邻位连接有一个氮原子。
+已知，氮原子连接一个氢原子。
+已知，氮原子连接一个碳原子。
+已知，该碳原子与另一个碳原子形成双键。
+已知，该双键的第二个碳原子连接一个酯基 $\text{-CO}_2\text{Et}$。
+已知，该碳原子同时连接一个酯基 $\text{-CO}_2\text{Et}$。
+由于结构为 $\text{Ethyl 2-(2-ethoxy-2-oxoethyl)-1H-indole-3-carboxylate}$ 的前体或类似衍生物，其骨架为 $\text{Ethyl 2-(ethoxycarbonyl)-1H-indole-3-carboxylate}$ 的开环形式。
+根据图像，结构为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole}$ 的类似物，但实际为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole}$ 的开环中间体。
+分析图像结构，分子式为 $\text{C}_{15}\text{H}_{17}\text{NO}_4$。
+结构描述为：$\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole}$ 的变体，具体为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole}$ 的前体。
+观察图像，分子由苯环、$\text{NH}$ 基团、$\text{C=C}$ 双键以及两个 $\text{-CO}_2\text{Et}$ 基团组成。
+苯环部分 SMILES 为 $\text{c1ccc(cc1)}$。
+$\text{NH}$ 连接在苯环上，SMILES 为 $\text{c1ccc(cc1)N}$。
+$\text{N}$ 连接 $\text{CH=C}$，SMILES 为 $\text{c1ccc(cc1)NC=C}$。
+该 $\text{C}$ 原子连接两个 $\text{CO}_2\text{Et}$ 基团，SMILES 为 $\text{c1ccc(cc1)NC=C(C(=O)OCC)C(=O)OCC}$。
+因此，最终答案是 CCOC(=O)C=C(C(=O)OCC)NC1=CC=CC=C1。",,,,
+node,15_I_2,15,prob_294da38c0a1592a77854e1ee,I_2,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",逻辑推导,确定氮原子上连接有氢原子和碳链。,根据已知条件将 H 和 C 连接到 N 上。,,,"题干给出，目标分子包含一个苯环。
+题干给出，苯环的邻位连接有一个氮原子。
+已知，氮原子连接一个氢原子。
+已知，氮原子连接一个碳原子。
+已知，该碳原子与另一个碳原子形成双键。
+已知，该双键的第二个碳原子连接一个酯基 $\text{-CO}_2\text{Et}$。
+已知，该碳原子同时连接一个酯基 $\text{-CO}_2\text{Et}$。
+由于结构为 $\text{Ethyl 2-(2-ethoxy-2-oxoethyl)-1H-indole-3-carboxylate}$ 的前体或类似衍生物，其骨架为 $\text{Ethyl 2-(ethoxycarbonyl)-1H-indole-3-carboxylate}$ 的开环形式。
+根据图像，结构为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole}$ 的类似物，但实际为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole}$ 的开环中间体。
+分析图像结构，分子式为 $\text{C}_{15}\text{H}_{17}\text{NO}_4$。
+结构描述为：$\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole}$ 的变体，具体为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole}$ 的前体。
+观察图像，分子由苯环、$\text{NH}$ 基团、$\text{C=C}$ 双键以及两个 $\text{-CO}_2\text{Et}$ 基团组成。
+苯环部分 SMILES 为 $\text{c1ccc(cc1)}$。
+$\text{NH}$ 连接在苯环上，SMILES 为 $\text{c1ccc(cc1)N}$。
+$\text{N}$ 连接 $\text{CH=C}$，SMILES 为 $\text{c1ccc(cc1)NC=C}$。
+该 $\text{C}$ 原子连接两个 $\text{CO}_2\text{Et}$ 基团，SMILES 为 $\text{c1ccc(cc1)NC=C(C(=O)OCC)C(=O)OCC}$。
+因此，最终答案是 CCOC(=O)C=C(C(=O)OCC)NC1=CC=CC=C1。",,,,
+node,16_C_5,16,prob_25ebe2cc82bb181a57c99b5d,C_5,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",文字条件,环中位置 3 为碳原子，带有负电荷，连接有磷基团。,,,,"题干给出，结构包含一个五元环。
+已知，五元环由两个氧原子和三个碳原子组成。
+已知，环中位置1为碳原子，连接有取代基R。
+已知，环中位置2为氧原子。
+已知，环中位置3为碳原子，带有负电荷，连接有磷基团。
+已知，环中位置4为氧原子。
+已知，环中位置5为碳原子，连接有取代基R1。
+已知，磷原子带正电荷，连接有三个甲氧基（-OMe）。
+根据SMILES语法，五元环结构可表示为O1C(R)C(R1)O1。
+由于位置3的碳原子连接磷原子，结构更新为O1C(R)C(R1)OC1[P+](OMe)(OMe)OMe。
+由于位置3的碳原子带负电荷，该碳原子需标记为[C-]。
+将所有原子及电荷代入，可得结构：O1C(R)C(R1)O[C-](1)[P+](OC)(OC)OC)。
+考虑到R和R1为通用基团，通常用R表示。
+因此，最终答案是 O1C(R)C(R1)O[C-](1)[P+](OC)(OC)OC)。",,,,
+node,16_I_1,16,prob_25ebe2cc82bb181a57c99b5d,I_1,"{""Atomicity"": 2}","{""Fidelity"": 10, ""Atomicity"": 2}",逻辑推导,由于位置 3 的碳原子连接磷原子，结构更新为 O1C(R)C(R1)OC1[P+](OMe)(OMe)OMe。,将磷基团连接到环上位置 3 的碳原子，并应用磷原子的电荷及取代基信息。,,,"题干给出，结构包含一个五元环。
+已知，五元环由两个氧原子和三个碳原子组成。
+已知，环中位置1为碳原子，连接有取代基R。
+已知，环中位置2为氧原子。
+已知，环中位置3为碳原子，带有负电荷，连接有磷基团。
+已知，环中位置4为氧原子。
+已知，环中位置5为碳原子，连接有取代基R1。
+已知，磷原子带正电荷，连接有三个甲氧基（-OMe）。
+根据SMILES语法，五元环结构可表示为O1C(R)C(R1)O1。
+由于位置3的碳原子连接磷原子，结构更新为O1C(R)C(R1)OC1[P+](OMe)(OMe)OMe。
+由于位置3的碳原子带负电荷，该碳原子需标记为[C-]。
+将所有原子及电荷代入，可得结构：O1C(R)C(R1)O[C-](1)[P+](OC)(OC)OC)。
+考虑到R和R1为通用基团，通常用R表示。
+因此，最终答案是 O1C(R)C(R1)O[C-](1)[P+](OC)(OC)OC)。",,,,
+node,16_I_2,16,prob_25ebe2cc82bb181a57c99b5d,I_2,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",逻辑推导,由于位置 3 的碳原子带负电荷，该碳原子需标记为 [C-]。,根据位置 3 碳原子的负电荷属性，在 SMILES 表示中添加电荷标记。,,,"题干给出，结构包含一个五元环。
+已知，五元环由两个氧原子和三个碳原子组成。
+已知，环中位置1为碳原子，连接有取代基R。
+已知，环中位置2为氧原子。
+已知，环中位置3为碳原子，带有负电荷，连接有磷基团。
+已知，环中位置4为氧原子。
+已知，环中位置5为碳原子，连接有取代基R1。
+已知，磷原子带正电荷，连接有三个甲氧基（-OMe）。
+根据SMILES语法，五元环结构可表示为O1C(R)C(R1)O1。
+由于位置3的碳原子连接磷原子，结构更新为O1C(R)C(R1)OC1[P+](OMe)(OMe)OMe。
+由于位置3的碳原子带负电荷，该碳原子需标记为[C-]。
+将所有原子及电荷代入，可得结构：O1C(R)C(R1)O[C-](1)[P+](OC)(OC)OC)。
+考虑到R和R1为通用基团，通常用R表示。
+因此，最终答案是 O1C(R)C(R1)O[C-](1)[P+](OC)(OC)OC)。",,,,
+node,16_I_4,16,prob_25ebe2cc82bb181a57c99b5d,I_4,"{""Atomicity"": 6}","{""Fidelity"": 8, ""Atomicity"": 6}",逻辑推导,考虑到 R 和 R1 为通用基团，通常用 R 表示（注：此处保留原文本逻辑，尽管原文本结论中仍保留了 R1）。,处理通用基团的表示法。,,,"题干给出，结构包含一个五元环。
+已知，五元环由两个氧原子和三个碳原子组成。
+已知，环中位置1为碳原子，连接有取代基R。
+已知，环中位置2为氧原子。
+已知，环中位置3为碳原子，带有负电荷，连接有磷基团。
+已知，环中位置4为氧原子。
+已知，环中位置5为碳原子，连接有取代基R1。
+已知，磷原子带正电荷，连接有三个甲氧基（-OMe）。
+根据SMILES语法，五元环结构可表示为O1C(R)C(R1)O1。
+由于位置3的碳原子连接磷原子，结构更新为O1C(R)C(R1)OC1[P+](OMe)(OMe)OMe。
+由于位置3的碳原子带负电荷，该碳原子需标记为[C-]。
+将所有原子及电荷代入，可得结构：O1C(R)C(R1)O[C-](1)[P+](OC)(OC)OC)。
+考虑到R和R1为通用基团，通常用R表示。
+因此，最终答案是 O1C(R)C(R1)O[C-](1)[P+](OC)(OC)OC)。",,,,
+node,17_C_1,17,prob_5cc14ed23f5fd80fb92a131a,C_1,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",文字条件,题干给出反应物为酰胺分子 R-CONH2 及其碱 B。,,,,"题干给出，反应物为酰胺分子 $\text{R-CONH}_2$ 及其碱 $\text{B}$。
+已知，碱 $\text{B}$ 的孤对电子攻击酰胺的 $\text{O-H}$ 质子。
+根据电子转移方向，$\text{B}$ 与 $\text{H}$ 之间形成新共价键。
+根据电子转移方向，$\text{O-H}$ 键断裂，电子转移至氧原子 $\text{O}$。
+由于 $\text{O-H}$ 键断裂且电子留在 $\text{O}$ 上，氧原子带负电荷。
+由于 $\text{C=O}$ 双键电子向 $\text{C-N}$ 方向转移（图中显示 $\text{C-N}$ 键电子向 $\text{N}$ 转移），但观察原图箭头，$\text{C=O}$ 电子并未移动，而是 $\text{O-H}$ 电子移向 $\text{O}$。
+重新观察图像，第一个箭头从 $\text{B}$ 指向 $\text{H}$。
+第二个箭头从 $\text{O-H}$ 键指向 $\text{O}$ 原子。
+第三个箭头从 $\text{N-C}$ 键指向 $\text{N}$ 原子（或 $\text{C=O}$ 电子转移）。
+修正观察：图像中存在三个箭头。
+箭头1：$\text{B:} \rightarrow \text{H}$。
+箭头2：$\text{O-H} \rightarrow \text{O}$。
+箭头3：$\text{N-C} \rightarrow \text{N}$（此处为 $\text{C-N}$ 键断裂）。
+由于 $\text{C-N}$ 键断裂，$\text{N}$ 原子带负电荷。
+由于 $\text{O-H}$ 键断裂，$\text{O}$ 原子带负电荷。
+由于 $\text{B}$ 结合 $\text{H}$，形成 $\text{BH}^+$。
+此时产物状态为：$\text{R-C(=O)O}^-$ 阴离子、$\text{NH}_2^-$ 阴离子（或 $\text{R-NH}^-$）以及 $\text{BH}^+$ 阳离子。
+重新审视图像箭头：箭头3是从 $\text{N-C}$ 键指向 $\text{N}$。
+这意味着 $\text{C-N}$ 键断裂，$\text{N}$ 获得电子对。
+因此，分子分解为 $\text{R-NH}^-$、$\text{HCOO}^-$（若 $\text{R}$ 在 $\text{N}$ 上则为 $\text{R-NH}^-$ 和 $\text{HCOO}^-$，若 $\text{R}$ 在 $\text{C}$ 上则为 $\text{R-COO}^-$ 和 $\text{NH}_2^-$）。
+图中 $\text{R}$ 连接在 $\text{N}$ 上。
+因此，产物为 $\text{R-NH}^-$、$\text{HCOO}^-$ 和 $\text{BH}^+$。
+对应的 SMILES 表达式应包含这些碎片。
+考虑到常见的酰胺水解/碱解机理，该步骤描述的是 $\text{O-H}$ 脱质子伴随 $\text{C-N}$ 键断裂。
+因此，最终答案是 [R-NH-.[O-]C=O.[BH+]]。",,,,
+node,18_C_10,18,prob_2a516c6bb9d44e626dbc6120,C_10,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",文字条件,忽略箭头后，该结构由 Ph3P 和 Py-S-S(H)-Py 组成。,,,,"题干给出，图像显示一个化学反应的过渡态结构。
+已知，该结构包含一个三苯基膦分子 $\text{Ph}_3\text{P}$。
+已知，该结构包含一个二(吡啶-2-基)二硫化物衍生物，其中一个硫原子带有正电荷并与氢原子结合。
+已知，结构中包含两个吡啶环。
+已知，两个吡啶环分别连接在两个硫原子上。
+已知，两个硫原子之间存在单键连接。
+已知，其中一个硫原子连接着一个氢原子 $\text{H}$。
+已知，三苯基膦的磷原子 $\text{P}$ 位于分子的左侧。
+已知，磷原子 $\text{P}$ 与三个苯基 $\text{Ph}$ 相连。
+已知，忽略箭头后，该结构由 $\text{Ph}_3\text{P}$ 和 $\text{Py-S-S(H)-Py}$ 组成。
+由于 $\text{Ph}$ 代表苯基 $\text{c1ccccc1}$。
+由于 $\text{Py}$ 代表 2-吡啶基 $\text{n1ccccc1C}$。
+根据 SMILES 语法，三苯基膦表示为 $\text{P(c1ccccc1)(c2ccccc2)c3ccccc3}$。
+根据 SMILES 语法，二(吡啶-2-基)硫代亚磺酸结构表示为 $\text{n1ccccc1S S(H)c2ccccn2}$。
+由于题目要求忽略箭头，仅描述静态结构。
+由于图中 $\text{Ph}_3\text{P}$ 与 $\text{S}$ 之间尚未形成共价键，且 $\text{S-H}$ 键尚未完全断裂。
+由于 SMILES 无法直接表示非共价相互作用的过渡态，通常将其表示为反应物和产物的组合或离散分子。
+根据图像中的原子连接关系，该结构由 $\text{P(c1ccccc1)(c2ccccc2)c3ccccc3}$ 和 $\text{n1ccccc1S S([H])c2ccccn2}$ 组成。
+将各部分组合，可得 SMILES 表达式 $\text{P(c1ccccc1)(c2ccccc2)c3ccccc3.n1ccccc1SS([H])c2ccccn2}$。
+因此，最终答案是 P(c1ccccc1)(c2ccccc2)c3ccccc3.n1ccccc1SS([H])c2ccccn2。",,,,
+node,18_C_18,18,prob_2a516c6bb9d44e626dbc6120,C_18,"{""Atomicity"": 6}","{""Fidelity"": 10, ""Atomicity"": 6}",学科常识,SMILES 无法直接表示非共价相互作用的过渡态，通常将其表示为反应物和产物的组合或离散分子。,,,,"题干给出，图像显示一个化学反应的过渡态结构。
+已知，该结构包含一个三苯基膦分子 $\text{Ph}_3\text{P}$。
+已知，该结构包含一个二(吡啶-2-基)二硫化物衍生物，其中一个硫原子带有正电荷并与氢原子结合。
+已知，结构中包含两个吡啶环。
+已知，两个吡啶环分别连接在两个硫原子上。
+已知，两个硫原子之间存在单键连接。
+已知，其中一个硫原子连接着一个氢原子 $\text{H}$。
+已知，三苯基膦的磷原子 $\text{P}$ 位于分子的左侧。
+已知，磷原子 $\text{P}$ 与三个苯基 $\text{Ph}$ 相连。
+已知，忽略箭头后，该结构由 $\text{Ph}_3\text{P}$ 和 $\text{Py-S-S(H)-Py}$ 组成。
+由于 $\text{Ph}$ 代表苯基 $\text{c1ccccc1}$。
+由于 $\text{Py}$ 代表 2-吡啶基 $\text{n1ccccc1C}$。
+根据 SMILES 语法，三苯基膦表示为 $\text{P(c1ccccc1)(c2ccccc2)c3ccccc3}$。
+根据 SMILES 语法，二(吡啶-2-基)硫代亚磺酸结构表示为 $\text{n1ccccc1S S(H)c2ccccn2}$。
+由于题目要求忽略箭头，仅描述静态结构。
+由于图中 $\text{Ph}_3\text{P}$ 与 $\text{S}$ 之间尚未形成共价键，且 $\text{S-H}$ 键尚未完全断裂。
+由于 SMILES 无法直接表示非共价相互作用的过渡态，通常将其表示为反应物和产物的组合或离散分子。
+根据图像中的原子连接关系，该结构由 $\text{P(c1ccccc1)(c2ccccc2)c3ccccc3}$ 和 $\text{n1ccccc1S S([H])c2ccccn2}$ 组成。
+将各部分组合，可得 SMILES 表达式 $\text{P(c1ccccc1)(c2ccccc2)c3ccccc3.n1ccccc1SS([H])c2ccccn2}$。
+因此，最终答案是 P(c1ccccc1)(c2ccccc2)c3ccccc3.n1ccccc1SS([H])c2ccccn2。",,,,
+node,18_C_3,18,prob_2a516c6bb9d44e626dbc6120,C_3,"{""Atomicity"": 3}","{""Fidelity"": 10, ""Atomicity"": 3}",文字条件,该结构包含一个二 (吡啶 -2-基) 二硫化物衍生物，其中一个硫原子带有正电荷并与氢原子结合。,,,,"题干给出，图像显示一个化学反应的过渡态结构。
+已知，该结构包含一个三苯基膦分子 $\text{Ph}_3\text{P}$。
+已知，该结构包含一个二(吡啶-2-基)二硫化物衍生物，其中一个硫原子带有正电荷并与氢原子结合。
+已知，结构中包含两个吡啶环。
+已知，两个吡啶环分别连接在两个硫原子上。
+已知，两个硫原子之间存在单键连接。
+已知，其中一个硫原子连接着一个氢原子 $\text{H}$。
+已知，三苯基膦的磷原子 $\text{P}$ 位于分子的左侧。
+已知，磷原子 $\text{P}$ 与三个苯基 $\text{Ph}$ 相连。
+已知，忽略箭头后，该结构由 $\text{Ph}_3\text{P}$ 和 $\text{Py-S-S(H)-Py}$ 组成。
+由于 $\text{Ph}$ 代表苯基 $\text{c1ccccc1}$。
+由于 $\text{Py}$ 代表 2-吡啶基 $\text{n1ccccc1C}$。
+根据 SMILES 语法，三苯基膦表示为 $\text{P(c1ccccc1)(c2ccccc2)c3ccccc3}$。
+根据 SMILES 语法，二(吡啶-2-基)硫代亚磺酸结构表示为 $\text{n1ccccc1S S(H)c2ccccn2}$。
+由于题目要求忽略箭头，仅描述静态结构。
+由于图中 $\text{Ph}_3\text{P}$ 与 $\text{S}$ 之间尚未形成共价键，且 $\text{S-H}$ 键尚未完全断裂。
+由于 SMILES 无法直接表示非共价相互作用的过渡态，通常将其表示为反应物和产物的组合或离散分子。
+根据图像中的原子连接关系，该结构由 $\text{P(c1ccccc1)(c2ccccc2)c3ccccc3}$ 和 $\text{n1ccccc1S S([H])c2ccccn2}$ 组成。
+将各部分组合，可得 SMILES 表达式 $\text{P(c1ccccc1)(c2ccccc2)c3ccccc3.n1ccccc1SS([H])c2ccccn2}$。
+因此，最终答案是 P(c1ccccc1)(c2ccccc2)c3ccccc3.n1ccccc1SS([H])c2ccccn2。",,,,
+node,1_I_1,1,prob_d97cad4aa260094748e1ccc7,I_1,"{""Atomicity"": 1}","{""Fidelity"": 10, ""Atomicity"": 1}",逻辑推导,由于神经元永久停止分裂，其细胞周期被阻断。,基于神经元不分裂的事实和细胞周期的组成进行推导。,,,"题干给出，神经元（neurons）注定不再分裂。
+已知，细胞周期由 $G_1$ 期、$S$ 期、$G_2$ 期和 $M$ 期组成。
+由于神经元永久停止分裂，其细胞周期被阻断。
+根据细胞生物学定义，永久退出细胞周期的细胞进入 $G_0$ 期。
+由于 $G_0$ 期是从 $G_1$ 期分出的静止期，且神经元在此状态下永久停留。
+因此，最终答案是 $G_0$ phase。",,,,
+node,1_I_2,1,prob_d97cad4aa260094748e1ccc7,I_2,"{""Atomicity"": 7}","{""Fidelity"": 10, ""Atomicity"": 7}",逻辑推导,神经元作为永久退出细胞周期的细胞，进入 G0 期。,将神经元周期被阻断的状态映射到 G0 期的定义。,,,"题干给出，神经元（neurons）注定不再分裂。
+已知，细胞周期由 $G_1$ 期、$S$ 期、$G_2$ 期和 $M$ 期组成。
+由于神经元永久停止分裂，其细胞周期被阻断。
+根据细胞生物学定义，永久退出细胞周期的细胞进入 $G_0$ 期。
+由于 $G_0$ 期是从 $G_1$ 期分出的静止期，且神经元在此状态下永久停留。
+因此，最终答案是 $G_0$ phase。",,,,
+node,2_C_12,2,prob_bdea25f4bac0bdc659e5ac98,C_12,"{""Atomicity"": 4}","{""Fidelity"": 9, ""Atomicity"": 4}",文字条件,题干给出 R' 为烷基，按最简结构 R'=Me 计算，含 1 个 C-C 键。,,,,"题干给出，结构中包含一个芳环基团 Ar。
+已知，Ar 通常代表一个苯环，包含 6 个 C-C 键。
+题干给出，结构中有一个 $\text{C}=\text{O}^+$ 双键。
+题干给出，该 $\text{C}=\text{O}^+$ 与 Ar 基团相连，包含 1 个 C-C 单键。
+题干给出，该 $\text{C}=\text{O}^+$ 与相邻 $\text{CH}_2$ 基团相连，包含 1 个 C-C 单键。
+题干给出，$\text{CH}_2$ 基团与酮羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酮羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酮羰基与 $\alpha$-碳原子相连，包含 1 个 C-C 单键。
+题干给出，$\alpha$-碳原子与酯基羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酯基羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酯基羰基与 $\text{OR}'$ 基团相连，包含 1 个 C-O 单键。
+题干给出，$\text{R}'$ 为烷基，至少包含 1 个 C-C 或 C-O 单键（此处按最简结构 $\text{R}'=\text{Me}$ 计算，含 1 个 C-C 键）。
+题干给出，$\alpha$-碳原子与 $\text{Ru}(\text{Por})$ 相连，包含 1 个 C-Ru 单键。
+已知，$\text{Por}$ 代表卟啉环，其结构包含 20 个 C-C 或 C-N 键。
+已知，$\text{Ru}$ 原子与卟啉环的 4 个氮原子相连，包含 4 个 Ru-N 单键。
+由于 Ar 贡献 6 个键，$\text{C}=\text{O}^+$ 部分贡献 2 个键（1双+1单），连接 $\text{CH}_2$ 贡献 1 个键，$\text{CH}_2$ 到酮基贡献 1 个键，酮基贡献 2 个键（1双+1单），$\alpha$-碳到酯基贡献 1 个键，酯基贡献 3 个键（1双+1单+1单），$\text{R}'$ 贡献 1 个键，$\alpha$-碳到 $\text{Ru}$ 贡献 1 个键，$\text{Ru}$ 到 $\text{Por}$ 贡献 4 个键，$\text{Por}$ 内部贡献 20 个键。
+根据加法原则，总键数 = $6 + 2 + 1 + 1 + 2 + 1 + 3 + 1 + 1 + 4 + 20 = 42$。
+由于题目要求计算图中所示结构的化学键总数，且排除氢键。
+因此，最终答案是 42。",,,,
+node,3_I_1,3,prob_0e03f26985564f040af30a22,I_1,"{""Atomicity"": 7}","{""Fidelity"": 10, ""Atomicity"": 7}",数值计算,将 f(AA)=36% 和 f(Aa)=45% 代入公式，计算得出 f(aa) = 19%。,执行代数运算求解未知基因型频率。,,,"题干给出，基因型 AA 的频率为 $36\%$。
+题干给出，基因型 Aa 的频率为 $45\%$。
+已知，所有基因型频率之和为 $100\%$。
+根据频率加和原理，可得公式：$f(AA) + f(Aa) + f(aa) = 100\%$。
+将 $f(AA) = 36\%$ 和 $f(Aa) = 45\%$ 代入上述公式，可得 $36\% + 45\% + f(aa) = 100\%$。
+计算可得，$f(aa) = 19\%$。
+已知，等位基因 A 的频率 $p = f(AA) + \frac{1}{2}f(Aa)$。
+将 $f(AA) = 36\%$ 和 $f(Aa) = 45\%$ 代入上述公式，可得 $p = 36\% + 22.5\% = 58.5\%$。
+已知，等位基因 a 的频率 $q = f(aa) + \frac{1}{2}f(Aa)$。
+将 $f(aa) = 19\%$ 和 $f(Aa) = 45\%$ 代入上述公式，可得 $q = 19\% + 22.5\% = 41.5\%$。
+根据哈代-温伯格定律，平衡状态下杂合子频率应为 $2pq$。
+将 $p = 58.5\%$ 和 $q = 41.5\%$ 代入公式 $2pq$，可得 $2 \times 0.585 \times 0.415 \approx 48.56\%$。
+由于实际杂合子频率 $45\%$ 小于理论平衡频率 $48.56\%$。
+由于杂合子频率降低且纯合子频率升高，说明该人群不处于哈代-温伯格平衡状态。
+由于这种偏离方向通常与非随机交配（如近亲繁殖）相关。
+因此，最终答案是 近亲繁殖。",,,,
+node,3_I_6,3,prob_0e03f26985564f040af30a22,I_6,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",逻辑推导,由杂合子频率降低且纯合子频率升高，推导出该人群不处于哈代 - 温伯格平衡状态。,基于频率偏离方向判断种群遗传状态。,,,"题干给出，基因型 AA 的频率为 $36\%$。
+题干给出，基因型 Aa 的频率为 $45\%$。
+已知，所有基因型频率之和为 $100\%$。
+根据频率加和原理，可得公式：$f(AA) + f(Aa) + f(aa) = 100\%$。
+将 $f(AA) = 36\%$ 和 $f(Aa) = 45\%$ 代入上述公式，可得 $36\% + 45\% + f(aa) = 100\%$。
+计算可得，$f(aa) = 19\%$。
+已知，等位基因 A 的频率 $p = f(AA) + \frac{1}{2}f(Aa)$。
+将 $f(AA) = 36\%$ 和 $f(Aa) = 45\%$ 代入上述公式，可得 $p = 36\% + 22.5\% = 58.5\%$。
+已知，等位基因 a 的频率 $q = f(aa) + \frac{1}{2}f(Aa)$。
+将 $f(aa) = 19\%$ 和 $f(Aa) = 45\%$ 代入上述公式，可得 $q = 19\% + 22.5\% = 41.5\%$。
+根据哈代-温伯格定律，平衡状态下杂合子频率应为 $2pq$。
+将 $p = 58.5\%$ 和 $q = 41.5\%$ 代入公式 $2pq$，可得 $2 \times 0.585 \times 0.415 \approx 48.56\%$。
+由于实际杂合子频率 $45\%$ 小于理论平衡频率 $48.56\%$。
+由于杂合子频率降低且纯合子频率升高，说明该人群不处于哈代-温伯格平衡状态。
+由于这种偏离方向通常与非随机交配（如近亲繁殖）相关。
+因此，最终答案是 近亲繁殖。",,,,
+node,3_I_7,3,prob_0e03f26985564f040af30a22,I_7,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",逻辑推导,由这种偏离方向（杂合子减少）通常与非随机交配（如近亲繁殖）相关，推导出原因为近亲繁殖。,根据遗传学原理将观察到的现象归因于特定机制。,,,"题干给出，基因型 AA 的频率为 $36\%$。
+题干给出，基因型 Aa 的频率为 $45\%$。
+已知，所有基因型频率之和为 $100\%$。
+根据频率加和原理，可得公式：$f(AA) + f(Aa) + f(aa) = 100\%$。
+将 $f(AA) = 36\%$ 和 $f(Aa) = 45\%$ 代入上述公式，可得 $36\% + 45\% + f(aa) = 100\%$。
+计算可得，$f(aa) = 19\%$。
+已知，等位基因 A 的频率 $p = f(AA) + \frac{1}{2}f(Aa)$。
+将 $f(AA) = 36\%$ 和 $f(Aa) = 45\%$ 代入上述公式，可得 $p = 36\% + 22.5\% = 58.5\%$。
+已知，等位基因 a 的频率 $q = f(aa) + \frac{1}{2}f(Aa)$。
+将 $f(aa) = 19\%$ 和 $f(Aa) = 45\%$ 代入上述公式，可得 $q = 19\% + 22.5\% = 41.5\%$。
+根据哈代-温伯格定律，平衡状态下杂合子频率应为 $2pq$。
+将 $p = 58.5\%$ 和 $q = 41.5\%$ 代入公式 $2pq$，可得 $2 \times 0.585 \times 0.415 \approx 48.56\%$。
+由于实际杂合子频率 $45\%$ 小于理论平衡频率 $48.56\%$。
+由于杂合子频率降低且纯合子频率升高，说明该人群不处于哈代-温伯格平衡状态。
+由于这种偏离方向通常与非随机交配（如近亲繁殖）相关。
+因此，最终答案是 近亲繁殖。",,,,
+node,6_C_5,6,prob_997ad9b277a83060a1af605d,C_5,"{""Fidelity"": 6}","{""Fidelity"": 6, ""Atomicity"": 10}",学科常识,表型可塑性的定义：生物体的表型在不同环境或条件下表现出差异，且这种差异与特定行为或功能相关。,,,,"题干给出，非繁殖季节（Non-breeding season）中，助手雄鸟（Helper male）的平均T水平约为10。
+题干给出，非繁殖季节（Non-breeding season）中，繁殖雄鸟（Breeding male）的平均T水平约为10。
+由于非繁殖季节两组个体的T水平相等，所以此时T水平与社会角色无关。
+题干给出，繁殖季节（Breeding season）中，助手雄鸟（Helper male）的平均T水平约为10。
+题干给出，繁殖季节（Breeding season）中，繁殖雄鸟（Breeding male）的平均T水平约为50。
+由于繁殖季节中，繁殖雄鸟的T水平显著高于助手雄鸟，所以T水平随社会角色而变化。
+由于T水平在不同季节和不同社会角色之间表现出差异，且与繁殖行为相关，这符合表型可塑性的定义。
+因此，最终答案是 表型可塑性（Phenotypic plasticity）。",,,,
+node,6_I_3,6,prob_997ad9b277a83060a1af605d,I_3,"{""Atomicity"": 3}","{""Fidelity"": 10, ""Atomicity"": 3}",对比分析,在繁殖季节，繁殖雄鸟的 T 水平（约 50）显著高于助手雄鸟（约 10）。,对比 C_3 和 C_4 中的数值，发现繁殖雄鸟数值显著更高。,,,"题干给出，非繁殖季节（Non-breeding season）中，助手雄鸟（Helper male）的平均T水平约为10。
+题干给出，非繁殖季节（Non-breeding season）中，繁殖雄鸟（Breeding male）的平均T水平约为10。
+由于非繁殖季节两组个体的T水平相等，所以此时T水平与社会角色无关。
+题干给出，繁殖季节（Breeding season）中，助手雄鸟（Helper male）的平均T水平约为10。
+题干给出，繁殖季节（Breeding season）中，繁殖雄鸟（Breeding male）的平均T水平约为50。
+由于繁殖季节中，繁殖雄鸟的T水平显著高于助手雄鸟，所以T水平随社会角色而变化。
+由于T水平在不同季节和不同社会角色之间表现出差异，且与繁殖行为相关，这符合表型可塑性的定义。
+因此，最终答案是 表型可塑性（Phenotypic plasticity）。",,,,
+node,7_C_1,7,prob_0c4135c7b3145d9593ca05d0,C_1,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",文字条件,目标分子为含有氯、溴和氨基的吡嗪衍生物。,,,,"题干给出，目标分子为含有氯、溴和氨基的吡嗪衍生物。
+已知，该分子的核心结构为吡嗪环（pyrazine）。
+已知，吡嗪环的1位和4位为氮原子。
+已知，吡嗪环的2位连接有一个氨基（-NH2）。
+已知，吡嗪环的3位连接有一个溴原子（-Br）。
+已知，吡嗪环的5位连接有一个溴原子（-Br）。
+已知，吡嗪环的6位连接有一个氯原子（-Cl）。
+根据化学结构命名规则，该分子为 3,5-dibromo-6-chloropyrazin-2-amine。
+将该结构转换为SMILES表达式。
+吡嗪环基础结构为 n1ccnc1。
+在2位添加氨基，得 Nc1nccn1。
+在3位添加溴，得 Nc1nccn1Br（此处编号需调整）。
+在5位添加溴，得 Nc1nccn1(Br)Br。
+在6位添加氯，得 Nc1nccn1(Br)Cl。
+重新排列原子顺序以符合标准SMILES规范。
+吡嗪环原子顺序为 N1-C2-N3-C4-C5-C6。
+2位（C）连 NH2 $\rightarrow$ Nc1。
+3位（N） $\rightarrow$ n1。
+4位（C）连 Br $\rightarrow$ c(Br)。
+5位（N） $\rightarrow$ n。
+6位（C）连 Br $\rightarrow$ c(Br)。
+1位（C）连 Cl $\rightarrow$ c1Cl。
+组合得 Nc1nccn1(Br)Cl 形式的变体。
+标准SMILES表示为 Nc1nccn(Br)c1Cl 或 Nc1nccn(Br)c1Cl 的异构体。
+根据图像中的取代位置：2-NH2, 3-Br, 5-Br, 6-Cl。
+对应SMILES为 Nc1nccn(Br)c1Cl 是错误的，应为 Nc1nccn(Br)c1Cl 的正确拓扑。
+正确拓扑为：Nc1nccn(Br)c1Cl $\rightarrow$ 氨基在2，溴在3，溴在5，氯在6。
+验证：Nc1nccn(Br)c1Cl $\rightarrow$ N(1)-C(2)(NH2)-N(3)-C(4)(Br)-N(5)-C(6)(Br)-C(1)(Cl) 不符。
+重新构建：Nc1nccn(Br)c1Cl $\rightarrow$ 吡嗪环 n1ccnc1。
+2位-NH2: Nc1nccn1。
+3位-Br: Nc1nccn1Br (错误)。
+正确路径：Nc1nccn(Br)c1Cl $\rightarrow$ 氨基在1，氮在2，碳在3(Br)，氮在4，碳在5(Br)，碳在6(Cl)。
+对应结构为 3,5-dibromo-6-chloropyrazin-2-amine。
+其SMILES表达式为 Nc1nccn(Br)c1Cl (不正确)。
+正确SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ 应该是 Nc1nccn(Br)c1Cl 的修正版。
+正确表达为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+再次核对：Nc1nccn(Br)c1Cl $\rightarrow$ N(1)C(2)(NH2)N(3)C(4)(Br)N(5)C(6)(Br)C(1)(Cl) 也不对。
+正确SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+正确写法：Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+实际上，该结构的SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+修正为：Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+正确SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+最终确定为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+正确SMILES为 Nc1",,,,
+node,7_I_2,7,prob_0c4135c7b3145d9593ca05d0,I_2,"{""Atomicity"": 3}","{""Fidelity"": 8, ""Atomicity"": 3}",逻辑推导,尝试在 3 位和 5 位添加溴原子，在 6 位添加氯原子，生成初步 SMILES 变体 Nc1nccn(Br)c1Cl。,根据取代位置将 Br 和 Cl 原子添加到 SMILES 字符串的对应位置。,,,"题干给出，目标分子为含有氯、溴和氨基的吡嗪衍生物。
+已知，该分子的核心结构为吡嗪环（pyrazine）。
+已知，吡嗪环的1位和4位为氮原子。
+已知，吡嗪环的2位连接有一个氨基（-NH2）。
+已知，吡嗪环的3位连接有一个溴原子（-Br）。
+已知，吡嗪环的5位连接有一个溴原子（-Br）。
+已知，吡嗪环的6位连接有一个氯原子（-Cl）。
+根据化学结构命名规则，该分子为 3,5-dibromo-6-chloropyrazin-2-amine。
+将该结构转换为SMILES表达式。
+吡嗪环基础结构为 n1ccnc1。
+在2位添加氨基，得 Nc1nccn1。
+在3位添加溴，得 Nc1nccn1Br（此处编号需调整）。
+在5位添加溴，得 Nc1nccn1(Br)Br。
+在6位添加氯，得 Nc1nccn1(Br)Cl。
+重新排列原子顺序以符合标准SMILES规范。
+吡嗪环原子顺序为 N1-C2-N3-C4-C5-C6。
+2位（C）连 NH2 $\rightarrow$ Nc1。
+3位（N） $\rightarrow$ n1。
+4位（C）连 Br $\rightarrow$ c(Br)。
+5位（N） $\rightarrow$ n。
+6位（C）连 Br $\rightarrow$ c(Br)。
+1位（C）连 Cl $\rightarrow$ c1Cl。
+组合得 Nc1nccn1(Br)Cl 形式的变体。
+标准SMILES表示为 Nc1nccn(Br)c1Cl 或 Nc1nccn(Br)c1Cl 的异构体。
+根据图像中的取代位置：2-NH2, 3-Br, 5-Br, 6-Cl。
+对应SMILES为 Nc1nccn(Br)c1Cl 是错误的，应为 Nc1nccn(Br)c1Cl 的正确拓扑。
+正确拓扑为：Nc1nccn(Br)c1Cl $\rightarrow$ 氨基在2，溴在3，溴在5，氯在6。
+验证：Nc1nccn(Br)c1Cl $\rightarrow$ N(1)-C(2)(NH2)-N(3)-C(4)(Br)-N(5)-C(6)(Br)-C(1)(Cl) 不符。
+重新构建：Nc1nccn(Br)c1Cl $\rightarrow$ 吡嗪环 n1ccnc1。
+2位-NH2: Nc1nccn1。
+3位-Br: Nc1nccn1Br (错误)。
+正确路径：Nc1nccn(Br)c1Cl $\rightarrow$ 氨基在1，氮在2，碳在3(Br)，氮在4，碳在5(Br)，碳在6(Cl)。
+对应结构为 3,5-dibromo-6-chloropyrazin-2-amine。
+其SMILES表达式为 Nc1nccn(Br)c1Cl (不正确)。
+正确SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ 应该是 Nc1nccn(Br)c1Cl 的修正版。
+正确表达为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+再次核对：Nc1nccn(Br)c1Cl $\rightarrow$ N(1)C(2)(NH2)N(3)C(4)(Br)N(5)C(6)(Br)C(1)(Cl) 也不对。
+正确SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+正确写法：Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+实际上，该结构的SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+修正为：Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+正确SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+最终确定为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+正确SMILES为 Nc1",,,,
+node,7_I_4,7,prob_0c4135c7b3145d9593ca05d0,I_4,"{""Atomicity"": 6}","{""Fidelity"": 10, ""Atomicity"": 6}",逻辑推导,重新构建 SMILES 路径，调整原子书写顺序以匹配正确的拓扑结构：氨基在 2 位，溴在 3 和 5 位，氯在 6 位。,基于验证失败的反馈，重新排列 SMILES 字符串中的原子和环闭合数字以符合正确的化学连接性。,,,"题干给出，目标分子为含有氯、溴和氨基的吡嗪衍生物。
+已知，该分子的核心结构为吡嗪环（pyrazine）。
+已知，吡嗪环的1位和4位为氮原子。
+已知，吡嗪环的2位连接有一个氨基（-NH2）。
+已知，吡嗪环的3位连接有一个溴原子（-Br）。
+已知，吡嗪环的5位连接有一个溴原子（-Br）。
+已知，吡嗪环的6位连接有一个氯原子（-Cl）。
+根据化学结构命名规则，该分子为 3,5-dibromo-6-chloropyrazin-2-amine。
+将该结构转换为SMILES表达式。
+吡嗪环基础结构为 n1ccnc1。
+在2位添加氨基，得 Nc1nccn1。
+在3位添加溴，得 Nc1nccn1Br（此处编号需调整）。
+在5位添加溴，得 Nc1nccn1(Br)Br。
+在6位添加氯，得 Nc1nccn1(Br)Cl。
+重新排列原子顺序以符合标准SMILES规范。
+吡嗪环原子顺序为 N1-C2-N3-C4-C5-C6。
+2位（C）连 NH2 $\rightarrow$ Nc1。
+3位（N） $\rightarrow$ n1。
+4位（C）连 Br $\rightarrow$ c(Br)。
+5位（N） $\rightarrow$ n。
+6位（C）连 Br $\rightarrow$ c(Br)。
+1位（C）连 Cl $\rightarrow$ c1Cl。
+组合得 Nc1nccn1(Br)Cl 形式的变体。
+标准SMILES表示为 Nc1nccn(Br)c1Cl 或 Nc1nccn(Br)c1Cl 的异构体。
+根据图像中的取代位置：2-NH2, 3-Br, 5-Br, 6-Cl。
+对应SMILES为 Nc1nccn(Br)c1Cl 是错误的，应为 Nc1nccn(Br)c1Cl 的正确拓扑。
+正确拓扑为：Nc1nccn(Br)c1Cl $\rightarrow$ 氨基在2，溴在3，溴在5，氯在6。
+验证：Nc1nccn(Br)c1Cl $\rightarrow$ N(1)-C(2)(NH2)-N(3)-C(4)(Br)-N(5)-C(6)(Br)-C(1)(Cl) 不符。
+重新构建：Nc1nccn(Br)c1Cl $\rightarrow$ 吡嗪环 n1ccnc1。
+2位-NH2: Nc1nccn1。
+3位-Br: Nc1nccn1Br (错误)。
+正确路径：Nc1nccn(Br)c1Cl $\rightarrow$ 氨基在1，氮在2，碳在3(Br)，氮在4，碳在5(Br)，碳在6(Cl)。
+对应结构为 3,5-dibromo-6-chloropyrazin-2-amine。
+其SMILES表达式为 Nc1nccn(Br)c1Cl (不正确)。
+正确SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ 应该是 Nc1nccn(Br)c1Cl 的修正版。
+正确表达为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+再次核对：Nc1nccn(Br)c1Cl $\rightarrow$ N(1)C(2)(NH2)N(3)C(4)(Br)N(5)C(6)(Br)C(1)(Cl) 也不对。
+正确SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+正确写法：Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+实际上，该结构的SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+修正为：Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+正确SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+最终确定为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+正确SMILES为 Nc1",,,,
+node,7_I_5,7,prob_0c4135c7b3145d9593ca05d0,I_5,"{""Atomicity"": 7}","{""Fidelity"": 9, ""Atomicity"": 7}",综合归纳,确定最终正确的 SMILES 表达式形式为 Nc1nccn(Br)c1Cl 的修正版本（注：原文本在此处反复确认并指向该形式作为最终结论）。,综合所有修正步骤，得出思维链中认定的最终正确表达。,,,"题干给出，目标分子为含有氯、溴和氨基的吡嗪衍生物。
+已知，该分子的核心结构为吡嗪环（pyrazine）。
+已知，吡嗪环的1位和4位为氮原子。
+已知，吡嗪环的2位连接有一个氨基（-NH2）。
+已知，吡嗪环的3位连接有一个溴原子（-Br）。
+已知，吡嗪环的5位连接有一个溴原子（-Br）。
+已知，吡嗪环的6位连接有一个氯原子（-Cl）。
+根据化学结构命名规则，该分子为 3,5-dibromo-6-chloropyrazin-2-amine。
+将该结构转换为SMILES表达式。
+吡嗪环基础结构为 n1ccnc1。
+在2位添加氨基，得 Nc1nccn1。
+在3位添加溴，得 Nc1nccn1Br（此处编号需调整）。
+在5位添加溴，得 Nc1nccn1(Br)Br。
+在6位添加氯，得 Nc1nccn1(Br)Cl。
+重新排列原子顺序以符合标准SMILES规范。
+吡嗪环原子顺序为 N1-C2-N3-C4-C5-C6。
+2位（C）连 NH2 $\rightarrow$ Nc1。
+3位（N） $\rightarrow$ n1。
+4位（C）连 Br $\rightarrow$ c(Br)。
+5位（N） $\rightarrow$ n。
+6位（C）连 Br $\rightarrow$ c(Br)。
+1位（C）连 Cl $\rightarrow$ c1Cl。
+组合得 Nc1nccn1(Br)Cl 形式的变体。
+标准SMILES表示为 Nc1nccn(Br)c1Cl 或 Nc1nccn(Br)c1Cl 的异构体。
+根据图像中的取代位置：2-NH2, 3-Br, 5-Br, 6-Cl。
+对应SMILES为 Nc1nccn(Br)c1Cl 是错误的，应为 Nc1nccn(Br)c1Cl 的正确拓扑。
+正确拓扑为：Nc1nccn(Br)c1Cl $\rightarrow$ 氨基在2，溴在3，溴在5，氯在6。
+验证：Nc1nccn(Br)c1Cl $\rightarrow$ N(1)-C(2)(NH2)-N(3)-C(4)(Br)-N(5)-C(6)(Br)-C(1)(Cl) 不符。
+重新构建：Nc1nccn(Br)c1Cl $\rightarrow$ 吡嗪环 n1ccnc1。
+2位-NH2: Nc1nccn1。
+3位-Br: Nc1nccn1Br (错误)。
+正确路径：Nc1nccn(Br)c1Cl $\rightarrow$ 氨基在1，氮在2，碳在3(Br)，氮在4，碳在5(Br)，碳在6(Cl)。
+对应结构为 3,5-dibromo-6-chloropyrazin-2-amine。
+其SMILES表达式为 Nc1nccn(Br)c1Cl (不正确)。
+正确SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ 应该是 Nc1nccn(Br)c1Cl 的修正版。
+正确表达为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+再次核对：Nc1nccn(Br)c1Cl $\rightarrow$ N(1)C(2)(NH2)N(3)C(4)(Br)N(5)C(6)(Br)C(1)(Cl) 也不对。
+正确SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+正确写法：Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+实际上，该结构的SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+修正为：Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+正确SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+最终确定为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+正确SMILES为 Nc1",,,,
+node,8_I_8,8,open_dcd221a3f513ed86f798af49,I_8,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",对比分析,第一组顺序 C6H5CO2H < C6H5CH2CH3 < C6H5OH 符合电子效应规律，判定 (1) 正确。,将推导出的第一组顺序与命题 (1) 进行核对。,,,"题干给出，第一组化合物为苯甲酸、乙苯、苯酚。
+题干给出，第二组化合物为苯甲酸、N-乙基苯胺、苯胺、硝基苯。
+已知，硝化反应是亲电取代反应。
+已知，电子给体（推电子基团）能增加苯环电子密度，提高反应速率。
+已知，电子受体（吸电子基团）能降低苯环电子密度，降低反应速率。
+已知，$-\text{OH}$ 为强推电子基团。
+已知，$-\text{NH}_2$ 为强推电子基团。
+已知，$-\text{NHC}_2\text{H}_5$ 为中强推电子基团。
+已知，$-\text{CH}_2\text{CH}_3$ 为弱推电子基团。
+已知，$-\text{CO}_2\text{H}$ 为吸电子基团。
+已知，$-\text{NO}_2$ 为强吸电子基团。
+由于 $-\text{OH}$ 的推电子能力强于 $-\text{CH}_2\text{CH}_3$，且 $-\text{CH}_2\text{CH}_3$ 的推电子能力强于 $-\text{CO}_2\text{H}$ 的吸电子效应，所以反应速率顺序为：苯甲酸 < 乙苯 < 苯酚。
+由于 $-\text{NH}_2$ 的推电子能力强于 $-\text{NHC}_2\text{H}_5$，且 $-\text{NHC}_2\text{H}_5$ 的推电子能力强于 $-\text{CO}_2\text{H}$ 的吸电子效应，且 $-\text{NO}_2$ 的吸电子能力最强，所以反应速率顺序为：硝基苯 < 苯甲酸 < N-乙基苯胺 < 苯胺。
+由于第一组顺序 $\text{C}_6\text{H}_5\text{CO}_2\text{H} < \text{C}_6\text{H}_5\text{CH}_2\text{CH}_3 < \text{C}_6\text{H}_5\text{OH}$ 符合电子效应规律，所以 (1) 正确。
+由于第二组顺序 $\text{C}_6\text{H}_5\text{CO}_2\text{H} < \text{C}_6\text{H}_5\text{NHC}_2\text{H}_5 < \text{C}_6\text{H}_5\text{NH}_2 < \text{C}_6\text{H}_5\text{NO}_2$ 中，硝基苯应处于最慢端，所以 (2) 错误。
+因此，最终答案是 (1) 正确，(2) 错误。",,,,
+node,8_I_9,8,open_dcd221a3f513ed86f798af49,I_9,"{""Atomicity"": 2}","{""Fidelity"": 10, ""Atomicity"": 2}",对比分析,第二组顺序中硝基苯应处于最慢端，而命题 (2) 将其置于最快端，判定 (2) 错误。,将推导出的第二组顺序与命题 (2) 进行核对，发现矛盾。,,,"题干给出，第一组化合物为苯甲酸、乙苯、苯酚。
+题干给出，第二组化合物为苯甲酸、N-乙基苯胺、苯胺、硝基苯。
+已知，硝化反应是亲电取代反应。
+已知，电子给体（推电子基团）能增加苯环电子密度，提高反应速率。
+已知，电子受体（吸电子基团）能降低苯环电子密度，降低反应速率。
+已知，$-\text{OH}$ 为强推电子基团。
+已知，$-\text{NH}_2$ 为强推电子基团。
+已知，$-\text{NHC}_2\text{H}_5$ 为中强推电子基团。
+已知，$-\text{CH}_2\text{CH}_3$ 为弱推电子基团。
+已知，$-\text{CO}_2\text{H}$ 为吸电子基团。
+已知，$-\text{NO}_2$ 为强吸电子基团。
+由于 $-\text{OH}$ 的推电子能力强于 $-\text{CH}_2\text{CH}_3$，且 $-\text{CH}_2\text{CH}_3$ 的推电子能力强于 $-\text{CO}_2\text{H}$ 的吸电子效应，所以反应速率顺序为：苯甲酸 < 乙苯 < 苯酚。
+由于 $-\text{NH}_2$ 的推电子能力强于 $-\text{NHC}_2\text{H}_5$，且 $-\text{NHC}_2\text{H}_5$ 的推电子能力强于 $-\text{CO}_2\text{H}$ 的吸电子效应，且 $-\text{NO}_2$ 的吸电子能力最强，所以反应速率顺序为：硝基苯 < 苯甲酸 < N-乙基苯胺 < 苯胺。
+由于第一组顺序 $\text{C}_6\text{H}_5\text{CO}_2\text{H} < \text{C}_6\text{H}_5\text{CH}_2\text{CH}_3 < \text{C}_6\text{H}_5\text{OH}$ 符合电子效应规律，所以 (1) 正确。
+由于第二组顺序 $\text{C}_6\text{H}_5\text{CO}_2\text{H} < \text{C}_6\text{H}_5\text{NHC}_2\text{H}_5 < \text{C}_6\text{H}_5\text{NH}_2 < \text{C}_6\text{H}_5\text{NO}_2$ 中，硝基苯应处于最慢端，所以 (2) 错误。
+因此，最终答案是 (1) 正确，(2) 错误。",,,,
+node,8_O,8,open_dcd221a3f513ed86f798af49,O,"{""Atomicity"": 2}","{""Fidelity"": 10, ""Atomicity"": 2}",综合归纳,(1) 正确，(2) 错误。,综合两组化合物的分析结果得出最终结论。,,,"题干给出，第一组化合物为苯甲酸、乙苯、苯酚。
+题干给出，第二组化合物为苯甲酸、N-乙基苯胺、苯胺、硝基苯。
+已知，硝化反应是亲电取代反应。
+已知，电子给体（推电子基团）能增加苯环电子密度，提高反应速率。
+已知，电子受体（吸电子基团）能降低苯环电子密度，降低反应速率。
+已知，$-\text{OH}$ 为强推电子基团。
+已知，$-\text{NH}_2$ 为强推电子基团。
+已知，$-\text{NHC}_2\text{H}_5$ 为中强推电子基团。
+已知，$-\text{CH}_2\text{CH}_3$ 为弱推电子基团。
+已知，$-\text{CO}_2\text{H}$ 为吸电子基团。
+已知，$-\text{NO}_2$ 为强吸电子基团。
+由于 $-\text{OH}$ 的推电子能力强于 $-\text{CH}_2\text{CH}_3$，且 $-\text{CH}_2\text{CH}_3$ 的推电子能力强于 $-\text{CO}_2\text{H}$ 的吸电子效应，所以反应速率顺序为：苯甲酸 < 乙苯 < 苯酚。
+由于 $-\text{NH}_2$ 的推电子能力强于 $-\text{NHC}_2\text{H}_5$，且 $-\text{NHC}_2\text{H}_5$ 的推电子能力强于 $-\text{CO}_2\text{H}$ 的吸电子效应，且 $-\text{NO}_2$ 的吸电子能力最强，所以反应速率顺序为：硝基苯 < 苯甲酸 < N-乙基苯胺 < 苯胺。
+由于第一组顺序 $\text{C}_6\text{H}_5\text{CO}_2\text{H} < \text{C}_6\text{H}_5\text{CH}_2\text{CH}_3 < \text{C}_6\text{H}_5\text{OH}$ 符合电子效应规律，所以 (1) 正确。
+由于第二组顺序 $\text{C}_6\text{H}_5\text{CO}_2\text{H} < \text{C}_6\text{H}_5\text{NHC}_2\text{H}_5 < \text{C}_6\text{H}_5\text{NH}_2 < \text{C}_6\text{H}_5\text{NO}_2$ 中，硝基苯应处于最慢端，所以 (2) 错误。
+因此，最终答案是 (1) 正确，(2) 错误。",,,,
+node,9_C_5,9,prob_ab641c8582b980cce0e97c0b,C_5,"{""Atomicity"": 2}","{""Fidelity"": 10, ""Atomicity"": 2}",学科常识,电子转移箭头从 C-OR^3 键指向氧原子表示 C-O 键断裂且电子转移至氧原子，OR^3 基团以 OR^3-形式离去。,,,,"题干给出，反应物为一个带有负电荷氧原子的中间体。
+已知，第一个电子转移箭头从负电荷氧原子 $\text{O}^-$ 指向相邻的碳原子。
+由于该箭头表示形成 $\text{C=O}$ 双键，所以该氧原子与碳原子之间由单键变为双键。
+已知，第二个电子转移箭头从 $\text{C-OR}^3$ 键指向氧原子 $\text{O}$。
+由于该箭头表示 $\text{C-O}$ 键断裂且电子转移至氧原子，所以 $\text{OR}^3$ 基团以 $\text{OR}^3-$ 的形式离去。
+根据电子转移结果，中心碳原子由 $\text{sp}^3$ 杂化变为 $\text{sp}^2$ 杂化。
+由此可得，产物包含一个酮（或酯）类结构和一个烷氧基阴离子。
+将上述结构转化为 SMILES 表达式，主分子为 $\text{R}^2\text{C(=O)CH(R)COOR}^1$，离去基团为 $[\text{O}^-]\text{R}^3$。
+因此，最终答案是 CC(=O)CC(C)C(=O)OC.CO- (以具体 R 基团为甲基示例，通用形式为 $\text{R}^2\text{C(=O)CH(R)COOR}^1 \cdot \text{R}^3\text{O}^-$)。",,,,
+node,9_I_4,9,prob_ab641c8582b980cce0e97c0b,I_4,"{""Atomicity"": 0}","{""Fidelity"": 10, ""Atomicity"": 0}",综合归纳,产物包含一个酮（或酯）类结构和一个烷氧基阴离子。,综合键的形成和基团的离去得出产物结构特征。,,,"题干给出，反应物为一个带有负电荷氧原子的中间体。
+已知，第一个电子转移箭头从负电荷氧原子 $\text{O}^-$ 指向相邻的碳原子。
+由于该箭头表示形成 $\text{C=O}$ 双键，所以该氧原子与碳原子之间由单键变为双键。
+已知，第二个电子转移箭头从 $\text{C-OR}^3$ 键指向氧原子 $\text{O}$。
+由于该箭头表示 $\text{C-O}$ 键断裂且电子转移至氧原子，所以 $\text{OR}^3$ 基团以 $\text{OR}^3-$ 的形式离去。
+根据电子转移结果，中心碳原子由 $\text{sp}^3$ 杂化变为 $\text{sp}^2$ 杂化。
+由此可得，产物包含一个酮（或酯）类结构和一个烷氧基阴离子。
+将上述结构转化为 SMILES 表达式，主分子为 $\text{R}^2\text{C(=O)CH(R)COOR}^1$，离去基团为 $[\text{O}^-]\text{R}^3$。
+因此，最终答案是 CC(=O)CC(C)C(=O)OC.CO- (以具体 R 基团为甲基示例，通用形式为 $\text{R}^2\text{C(=O)CH(R)COOR}^1 \cdot \text{R}^3\text{O}^-$)。",,,,
+relationship,0_I_1,0,prob_dc4459f18d9a0bfc524c910b,I_1,"{""Dependency_Completeness"": 0, ""Dependency_Accuracy"": 0}","{""Dependency_Completeness"": 0, ""Dependency_Accuracy"": 0, ""Reasoning_Logic_Accuracy"": 9, ""Reasoning_Type_Accuracy"": 10}",逻辑推导,位置 1 位于一条 DNA 链上，其对应的互补链位置 A 必须与其配对。,基于 DNA 双链结构及位置关系进行推导。,C_2,题干给出位置 1 的碱基是胸腺嘧啶（T）。,"题干给出，图示为原核生物DNA同时进行复制和转录的过程。
+题干给出，位置1的碱基是胸腺嘧啶（T）。
+已知，DNA双链之间遵循碱基互补配对原则。
+由于位置1位于一条DNA链上，其对应的互补链位置A必须与其配对。
+根据碱基互补配对原则，胸腺嘧啶（T）与腺嘌呤（A）配对。
+所以，位置A的碱基是腺嘌呤（A）。
+已知，转录过程是以DNA的一条链为模板合成RNA。
+观察图示，位置a所在的RNA片段是由包含位置A的DNA链作为模板转录而来的。
+根据RNA转录的碱基互补配对原则，DNA中的腺嘌呤（A）对应转录为RNA中的尿嘧啶（U）。
+由于位置A是腺嘌呤（A），所以其对应的转录产物位置a是尿嘧啶（U）。
+因此，最终答案是 尿嘧啶 (Uracil)。",,,,
+relationship,0_I_2,0,prob_dc4459f18d9a0bfc524c910b,I_2,"{""Dependency_Completeness"": 7.5}","{""Dependency_Completeness"": 7.5, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 10}",逻辑推导,位置 A 的碱基是腺嘌呤（A）。,根据碱基互补配对原则，由位置 1 为 T 推导出互补位置 A 为 A。,I_1|C_3|C_4,"位置 1 位于一条 DNA 链上，其对应的互补链位置 A 必须与其配对。
+DNA 双链之间遵循碱基互补配对原则。
+在 DNA 碱基互补配对中，胸腺嘧啶（T）与腺嘌呤（A）配对。","题干给出，图示为原核生物DNA同时进行复制和转录的过程。
+题干给出，位置1的碱基是胸腺嘧啶（T）。
+已知，DNA双链之间遵循碱基互补配对原则。
+由于位置1位于一条DNA链上，其对应的互补链位置A必须与其配对。
+根据碱基互补配对原则，胸腺嘧啶（T）与腺嘌呤（A）配对。
+所以，位置A的碱基是腺嘌呤（A）。
+已知，转录过程是以DNA的一条链为模板合成RNA。
+观察图示，位置a所在的RNA片段是由包含位置A的DNA链作为模板转录而来的。
+根据RNA转录的碱基互补配对原则，DNA中的腺嘌呤（A）对应转录为RNA中的尿嘧啶（U）。
+由于位置A是腺嘌呤（A），所以其对应的转录产物位置a是尿嘧啶（U）。
+因此，最终答案是 尿嘧啶 (Uracil)。",,,,
+relationship,0_O,0,prob_dc4459f18d9a0bfc524c910b,O,"{""Reasoning_Type_Accuracy"": 2}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 8, ""Reasoning_Type_Accuracy"": 2}",综合归纳,最终答案是 尿嘧啶 (Uracil)。,综合上述推理步骤得出最终结论。,I_4,位置 a 的碱基是尿嘧啶（U）。,"题干给出，图示为原核生物DNA同时进行复制和转录的过程。
+题干给出，位置1的碱基是胸腺嘧啶（T）。
+已知，DNA双链之间遵循碱基互补配对原则。
+由于位置1位于一条DNA链上，其对应的互补链位置A必须与其配对。
+根据碱基互补配对原则，胸腺嘧啶（T）与腺嘌呤（A）配对。
+所以，位置A的碱基是腺嘌呤（A）。
+已知，转录过程是以DNA的一条链为模板合成RNA。
+观察图示，位置a所在的RNA片段是由包含位置A的DNA链作为模板转录而来的。
+根据RNA转录的碱基互补配对原则，DNA中的腺嘌呤（A）对应转录为RNA中的尿嘧啶（U）。
+由于位置A是腺嘌呤（A），所以其对应的转录产物位置a是尿嘧啶（U）。
+因此，最终答案是 尿嘧啶 (Uracil)。",,,,
+relationship,10_I_1,10,prob_5e2a6686f4a6767eed2b9ec9,I_1,"{""Dependency_Completeness"": 5, ""Dependency_Accuracy"": 5, ""Reasoning_Logic_Accuracy"": 6}","{""Dependency_Completeness"": 5, ""Dependency_Accuracy"": 5, ""Reasoning_Logic_Accuracy"": 6, ""Reasoning_Type_Accuracy"": 10}",逻辑推导,NAD+ 发生了还原反应,根据 C_2 中 NAD+ 被还原的事实，结合 C_3 中还原反应的定义（获得电子和氢离子），推导出 NAD+ 发生了还原反应,C_2|C_3,"已知 NAD+ 被还原为 NADH
+获得电子和氢离子的过程称为还原反应","题干给出，反应方程式为 $\ce{CH3CO-CoA + 3NAD+ + GDP + PO4^{3-} + 2H2O -> CoA-SH + 3NADH + 3H+ + GTP + 2CO2}$。
+已知，$\ce{NAD+}$ 被还原为 $\ce{NADH}$。
+由于 $\ce{NAD+}$ 获得了电子和氢离子，所以发生了还原反应。
+已知，$\ce{CH3CO-CoA}$ 及相关底物在反应过程中失去了电子并转移给了 $\ce{NAD+}$。
+由于底物失去了电子，所以发生了氧化反应。
+由于该反应同时包含氧化过程（底物 $\to \ce{NADH}$) 和还原过程 ($\ce{NAD+} \to \ce{NADH}$)。
+根据化学定义，同时发生氧化和还原的反应称为氧化还原反应。
+因此，最终答案是 氧化还原反应。",,,,
+relationship,10_I_2,10,prob_5e2a6686f4a6767eed2b9ec9,I_2,"{""Dependency_Accuracy"": 5}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 5, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 10}",逻辑推导,底物发生了氧化反应,根据 C_4 中底物失去电子的事实，结合 C_5 中氧化反应的定义（失去电子），推导出底物发生了氧化反应,C_4|C_5,"已知 CH3CO-CoA 及相关底物在反应过程中失去了电子并转移给了 NAD+
+失去电子的过程称为氧化反应","题干给出，反应方程式为 $\ce{CH3CO-CoA + 3NAD+ + GDP + PO4^{3-} + 2H2O -> CoA-SH + 3NADH + 3H+ + GTP + 2CO2}$。
+已知，$\ce{NAD+}$ 被还原为 $\ce{NADH}$。
+由于 $\ce{NAD+}$ 获得了电子和氢离子，所以发生了还原反应。
+已知，$\ce{CH3CO-CoA}$ 及相关底物在反应过程中失去了电子并转移给了 $\ce{NAD+}$。
+由于底物失去了电子，所以发生了氧化反应。
+由于该反应同时包含氧化过程（底物 $\to \ce{NADH}$) 和还原过程 ($\ce{NAD+} \to \ce{NADH}$)。
+根据化学定义，同时发生氧化和还原的反应称为氧化还原反应。
+因此，最终答案是 氧化还原反应。",,,,
+relationship,10_O,10,prob_5e2a6686f4a6767eed2b9ec9,O,"{""Reasoning_Type_Accuracy"": 3}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 3}",综合归纳,最终答案是 氧化还原反应,根据 I_4 的推导结果得出最终结论,I_4,该反应是氧化还原反应,"题干给出，反应方程式为 $\ce{CH3CO-CoA + 3NAD+ + GDP + PO4^{3-} + 2H2O -> CoA-SH + 3NADH + 3H+ + GTP + 2CO2}$。
+已知，$\ce{NAD+}$ 被还原为 $\ce{NADH}$。
+由于 $\ce{NAD+}$ 获得了电子和氢离子，所以发生了还原反应。
+已知，$\ce{CH3CO-CoA}$ 及相关底物在反应过程中失去了电子并转移给了 $\ce{NAD+}$。
+由于底物失去了电子，所以发生了氧化反应。
+由于该反应同时包含氧化过程（底物 $\to \ce{NADH}$) 和还原过程 ($\ce{NAD+} \to \ce{NADH}$)。
+根据化学定义，同时发生氧化和还原的反应称为氧化还原反应。
+因此，最终答案是 氧化还原反应。",,,,
+relationship,11_I_2,11,prob_e1a9cea877593f2f7b9aed01,I_2,"{""Dependency_Completeness"": 5, ""Dependency_Accuracy"": 5}","{""Dependency_Completeness"": 5, ""Dependency_Accuracy"": 5, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 10}",逻辑推导,推导出第一个羰基额外贡献 2 个键。,识别到第一个羰基与环的连接键已在环内键数中计算，故仅计算其碳氧双键，额外贡献 2 个键。,C_4|I_1,"已知第一个羰基包含 1 个碳氧双键和 1 个碳碳单键（连接至环）。
+计算出环内键数为 6。","题干给出，结构包含一个六元环。
+已知，六元环内有4个单键和2个双键。
+题干给出，环上连接有一个羰基（C=O）。
+已知，该羰基包含1个碳氧双键和1个碳碳单键（连接至环）。
+题干给出，环上连接有另一个羰基（C=O），其碳原子连接至基团R。
+已知，该羰基包含1个碳氧双键、1个碳碳单键（连接至环）和1个碳碳单键（连接至R）。
+已知，基团R被视为一个整体单元，其与羰基碳之间的键已计算。
+由于需要排除所有涉及氢（H）的键，因此不计算C-H键和H+相关的相互作用。
+根据上述分析，环内键数为 $4 + 2 = 6$。
+根据上述分析，第一个羰基贡献键数为 $2 + 1 = 3$。
+根据上述分析，第二个羰基贡献键数为 $2 + 1 + 1 = 4$。
+但注意到第一个羰基的碳原子与环的连接键已在环内键数中计算，故该羰基额外贡献 $2$ 个键（C=O）。
+同理，第二个羰基的碳原子与环的连接键已在环内键数中计算，故该羰基额外贡献 $2 + 1 = 3$ 个键（C=O 和 C-R）。
+将各项相加，总键数为 $6 + 2 + 3 = 11$。
+因此，最终答案是 11。",,,,
+relationship,11_O,11,prob_e1a9cea877593f2f7b9aed01,O,"{""Reasoning_Type_Accuracy"": 3}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 9, ""Reasoning_Type_Accuracy"": 3}",综合归纳,最终答案是 11。,综合上述计算结果得出最终陈述。,I_4,计算出总键数为 11。,"题干给出，结构包含一个六元环。
+已知，六元环内有4个单键和2个双键。
+题干给出，环上连接有一个羰基（C=O）。
+已知，该羰基包含1个碳氧双键和1个碳碳单键（连接至环）。
+题干给出，环上连接有另一个羰基（C=O），其碳原子连接至基团R。
+已知，该羰基包含1个碳氧双键、1个碳碳单键（连接至环）和1个碳碳单键（连接至R）。
+已知，基团R被视为一个整体单元，其与羰基碳之间的键已计算。
+由于需要排除所有涉及氢（H）的键，因此不计算C-H键和H+相关的相互作用。
+根据上述分析，环内键数为 $4 + 2 = 6$。
+根据上述分析，第一个羰基贡献键数为 $2 + 1 = 3$。
+根据上述分析，第二个羰基贡献键数为 $2 + 1 + 1 = 4$。
+但注意到第一个羰基的碳原子与环的连接键已在环内键数中计算，故该羰基额外贡献 $2$ 个键（C=O）。
+同理，第二个羰基的碳原子与环的连接键已在环内键数中计算，故该羰基额外贡献 $2 + 1 = 3$ 个键（C=O 和 C-R）。
+将各项相加，总键数为 $6 + 2 + 3 = 11$。
+因此，最终答案是 11。",,,,
+relationship,12_O,12,prob_6ee43a7e1a2de105fa825a26,O,"{""Reasoning_Type_Accuracy"": 3}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 3}",综合归纳,最终答案是 13。,基于计算结果得出最终结论。,I_2,执行加法运算：1+1+1+1+1+1+1+1+1+1+1+1+1 = 13。,"题干给出，结构中包含 $\text{Ar}^1$ 基团。
+已知，$\text{Ar}^1$ 与 $\text{N}$ 之间存在 1 个单键。
+题干给出，结构中包含 $\text{N}=\text{N}$ 双键。
+已知，$\text{N}=\text{N}$ 之间存在 1 个双键。
+题干给出，结构中包含 $\text{N}-\text{C}$ 单键（连接 $\text{N}$ 与 $\text{Ar}^2$ 所在的碳原子）。
+已知，该 $\text{N}-\text{C}$ 之间存在 1 个单键。
+题干给出，结构中包含 $\text{C}-\text{C}$ 单键（连接 $\text{Ar}^2$ 所在的碳与 $\text{R}^1$ 所在的碳）。
+已知，该 $\text{C}-\text{C}$ 之间存在 1 个单键。
+题干给出，结构中包含 $\text{C}-\text{Ar}^2$ 单键。
+已知，该 $\text{C}-\text{Ar}^2$ 之间存在 1 个单键。
+题干给出，结构中包含 $\text{C}=\text{N}$ 双键（连接 $\text{R}^1$ 所在的碳与 $\text{N}^+$）。
+已知，该 $\text{C}=\text{N}$ 之间存在 1 个双键。
+题干给出，结构中包含 $\text{C}-\text{R}^1$ 单键。
+已知，该 $\text{C}-\text{R}^1$ 之间存在 1 个单键。
+题干给出，结构中包含 $\text{N}-\text{N}$ 单键（连接 $\text{N}^+$ 与 $\text{X}-\text{NH}$ 中的 $\text{N}$）。
+已知，该 $\text{N}-\text{N}$ 之间存在 1 个单键。
+题干给出，结构中包含 $\text{N}-\text{X}$ 单键。
+已知，该 $\text{N}-\text{X}$ 之间存在 1 个单键。
+题干给出，结构中包含 $\text{C}-\text{C}$ 单键（连接 $\text{R}^1$ 所在的碳与酯基碳所在的碳）。
+已知，该 $\text{C}-\text{C}$ 之间存在 1 个单键。
+题干给出，结构中包含 $\text{C}=\text{O}$ 双键。
+已知，该 $\text{C}=\text{O}$ 之间存在 1 个双键。
+题干给出，结构中包含 $\text{C}-\text{OR}^2$ 单键。
+已知，该 $\text{C}-\text{O}$ 之间存在 1 个单键。
+题干给出，结构中包含 $\text{O}-\text{R}^2$ 单键。
+已知，该 $\text{O}-\text{R}^2$ 之间存在 1 个单键。
+由于上述所有非氢键数量分别为：$1(\text{Ar}^1\text{-N}) + 1(\text{N=N}) + 1(\text{N-C}) + 1(\text{C-C}) + 1(\text{C-Ar}^2) + 1(\text{C=N}) + 1(\text{C-R}^1) + 1(\text{N-N}) + 1(\text{N-X}) + 1(\text{C-C}) + 1(\text{C=O}) + 1(\text{C-O}) + 1(\text{O-R}^2)$。
+根据加法运算，总键数为 $1+1+1+1+1+1+1+1+1+1+1+1+1 = 13$。
+因此，最终答案是 13。",,,,
+relationship,13_O,13,prob_946a53111122806c19998851,O,"{""Reasoning_Type_Accuracy"": 2}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 9, ""Reasoning_Type_Accuracy"": 2}",综合归纳,最终答案是 14。,综合上述计算结果得出最终陈述。,I_3,计算得出总键数 = 14。,"题干给出，结构中包含一个苯环。
+已知，苯环由6个碳原子组成，包含6条碳-碳键。
+题干给出，苯环与一个氮原子相连。
+已知，该连接处存在1条碳-氮键。
+题干给出，氮原子与一个碳原子相连（带有$R^1$基团）。
+已知，该连接处存在1条氮-碳键。
+题干给出，该碳原子与另一个碳原子相连（双键形式）。
+已知，该连接处存在1条碳-碳双键。
+题干给出，该碳原子与带有$R^2$基团的碳原子相连。
+已知，该连接处存在1条碳-碳单键。
+题干给出，带有$R^2$基团的碳原子与氧原子相连。
+已知，该连接处存在1条碳-氧键。
+题干给出，氧原子与苯环上的一个碳原子相连。
+已知，该连接处存在1条氧-碳键。
+题干给出，结构中包含取代基$R^1$。
+已知，$R^1$与碳原子之间存在1条化学键。
+题干给出，结构中包含取代基$R^2$。
+已知，$R^2$与碳原子之间存在1条化学键。
+由于苯环有6条键，且外部连接有碳-氮键1条，氮-碳键1条，碳-碳双键1条，碳-碳单键1条，碳-氧键1条，氧-碳键1条，以及两个取代基键2条。
+根据加法运算，总键数 = $6 + 1 + 1 + 1 + 1 + 1 + 1 + 2$。
+将数值代入上述公式，可得总键数 = $14$。
+因此，最终答案是 14。",,,,
+relationship,14_O,14,open_cdfa4abd00751289e53a9cf1,O,"{""Reasoning_Type_Accuracy"": 0}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 8.5, ""Reasoning_Type_Accuracy"": 0}",综合归纳,最终答案是 50 米。,综合上述计算结果得出最终结论。,I_4,计算得出 Δh = 100m - 50m = 50m。,"题干给出，图中等高线数值包含50、150、350、450。
+已知，相邻两条等高线之间的数值差为 $150 - 50 = 100$。
+已知，相邻两条等高线之间的数值差为 $350 - 150 = 200$。
+由于等高线间距均匀，可推断该图的基本等高线间距为 $50\text{m}$。
+题干给出，图中 A、B、C、D、E、F 为断崖的标注点。
+观察图中 A、B 点所在的区域，等高线在此处发生重合或极度密集。
+根据地形图判读规则，等高线重合表示此处为断崖。
+观察 A、B 点两侧的等高线数值。
+断崖一侧的等高线数值为 $50\text{m}$。
+断崖另一侧最近的等高线数值为 $100\text{m}$（由 $50\text{m}$ 等高线向内推算的一条辅助线）。
+根据断崖高差计算公式，高差 $\Delta h = h_{\text{upper}} - h_{\text{lower}}$。
+将 $h_{\text{upper}} = 100\text{m}$ 代入上述公式。
+将 $h_{\text{lower}} = 50\text{m}$ 代入上述公式。
+可得 $\Delta h = 100\text{m} - 50\text{m} = 50\text{m}$。
+因此，最终答案是 50米。",,,,
+relationship,15_I_2,15,prob_294da38c0a1592a77854e1ee,I_2,"{""Dependency_Accuracy"": 6.7}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 6.7, ""Reasoning_Logic_Accuracy"": 8.5, ""Reasoning_Type_Accuracy"": 9}",逻辑推导,确定氮原子上连接有氢原子和碳链。,根据已知条件将 H 和 C 连接到 N 上。,C_3|C_4|I_1,"已知氮原子连接一个氢原子。
+已知氮原子连接一个碳原子。
+构建包含苯环和邻位氮原子的基础骨架。","题干给出，目标分子包含一个苯环。
+题干给出，苯环的邻位连接有一个氮原子。
+已知，氮原子连接一个氢原子。
+已知，氮原子连接一个碳原子。
+已知，该碳原子与另一个碳原子形成双键。
+已知，该双键的第二个碳原子连接一个酯基 $\text{-CO}_2\text{Et}$。
+已知，该碳原子同时连接一个酯基 $\text{-CO}_2\text{Et}$。
+由于结构为 $\text{Ethyl 2-(2-ethoxy-2-oxoethyl)-1H-indole-3-carboxylate}$ 的前体或类似衍生物，其骨架为 $\text{Ethyl 2-(ethoxycarbonyl)-1H-indole-3-carboxylate}$ 的开环形式。
+根据图像，结构为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole}$ 的类似物，但实际为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole}$ 的开环中间体。
+分析图像结构，分子式为 $\text{C}_{15}\text{H}_{17}\text{NO}_4$。
+结构描述为：$\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole}$ 的变体，具体为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole}$ 的前体。
+观察图像，分子由苯环、$\text{NH}$ 基团、$\text{C=C}$ 双键以及两个 $\text{-CO}_2\text{Et}$ 基团组成。
+苯环部分 SMILES 为 $\text{c1ccc(cc1)}$。
+$\text{NH}$ 连接在苯环上，SMILES 为 $\text{c1ccc(cc1)N}$。
+$\text{N}$ 连接 $\text{CH=C}$，SMILES 为 $\text{c1ccc(cc1)NC=C}$。
+该 $\text{C}$ 原子连接两个 $\text{CO}_2\text{Et}$ 基团，SMILES 为 $\text{c1ccc(cc1)NC=C(C(=O)OCC)C(=O)OCC}$。
+因此，最终答案是 CCOC(=O)C=C(C(=O)OCC)NC1=CC=CC=C1。",,,,
+relationship,15_I_3,15,prob_294da38c0a1592a77854e1ee,I_3,"{""Dependency_Accuracy"": 6.7, ""Reasoning_Logic_Accuracy"": 7, ""Reasoning_Type_Accuracy"": 7}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 6.7, ""Reasoning_Logic_Accuracy"": 7, ""Reasoning_Type_Accuracy"": 7}",逻辑推导,构建氮原子连接的 C=C 双键结构。,根据双键条件和 SMILES 片段常识扩展结构。,C_5|I_2|C_11,"已知该碳原子与另一个碳原子形成双键。
+确定氮原子上连接有氢原子和碳链。
+N 连接 CH=C 的 SMILES 片段表示为 c1ccc(cc1)NC=C。","题干给出，目标分子包含一个苯环。
+题干给出，苯环的邻位连接有一个氮原子。
+已知，氮原子连接一个氢原子。
+已知，氮原子连接一个碳原子。
+已知，该碳原子与另一个碳原子形成双键。
+已知，该双键的第二个碳原子连接一个酯基 $\text{-CO}_2\text{Et}$。
+已知，该碳原子同时连接一个酯基 $\text{-CO}_2\text{Et}$。
+由于结构为 $\text{Ethyl 2-(2-ethoxy-2-oxoethyl)-1H-indole-3-carboxylate}$ 的前体或类似衍生物，其骨架为 $\text{Ethyl 2-(ethoxycarbonyl)-1H-indole-3-carboxylate}$ 的开环形式。
+根据图像，结构为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole}$ 的类似物，但实际为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole}$ 的开环中间体。
+分析图像结构，分子式为 $\text{C}_{15}\text{H}_{17}\text{NO}_4$。
+结构描述为：$\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole}$ 的变体，具体为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole}$ 的前体。
+观察图像，分子由苯环、$\text{NH}$ 基团、$\text{C=C}$ 双键以及两个 $\text{-CO}_2\text{Et}$ 基团组成。
+苯环部分 SMILES 为 $\text{c1ccc(cc1)}$。
+$\text{NH}$ 连接在苯环上，SMILES 为 $\text{c1ccc(cc1)N}$。
+$\text{N}$ 连接 $\text{CH=C}$，SMILES 为 $\text{c1ccc(cc1)NC=C}$。
+该 $\text{C}$ 原子连接两个 $\text{CO}_2\text{Et}$ 基团，SMILES 为 $\text{c1ccc(cc1)NC=C(C(=O)OCC)C(=O)OCC}$。
+因此，最终答案是 CCOC(=O)C=C(C(=O)OCC)NC1=CC=CC=C1。",,,,
+relationship,15_I_6,15,prob_294da38c0a1592a77854e1ee,I_6,"{""Dependency_Completeness"": 6}","{""Dependency_Completeness"": 6, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 9}",综合归纳,组装完整分子 SMILES 字符串：c1ccc(cc1)NC=C(C(=O)OCC)C(=O)OCC。,综合所有结构片段和图像观察结果生成完整 SMILES。,I_5|C_8,"确定同一碳原子上连接第二个酯基。
+根据图像，分子由苯环、NH 基团、C=C 双键以及两个 -CO₂Et 基团组成。","题干给出，目标分子包含一个苯环。
+题干给出，苯环的邻位连接有一个氮原子。
+已知，氮原子连接一个氢原子。
+已知，氮原子连接一个碳原子。
+已知，该碳原子与另一个碳原子形成双键。
+已知，该双键的第二个碳原子连接一个酯基 $\text{-CO}_2\text{Et}$。
+已知，该碳原子同时连接一个酯基 $\text{-CO}_2\text{Et}$。
+由于结构为 $\text{Ethyl 2-(2-ethoxy-2-oxoethyl)-1H-indole-3-carboxylate}$ 的前体或类似衍生物，其骨架为 $\text{Ethyl 2-(ethoxycarbonyl)-1H-indole-3-carboxylate}$ 的开环形式。
+根据图像，结构为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole}$ 的类似物，但实际为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole}$ 的开环中间体。
+分析图像结构，分子式为 $\text{C}_{15}\text{H}_{17}\text{NO}_4$。
+结构描述为：$\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole}$ 的变体，具体为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole}$ 的前体。
+观察图像，分子由苯环、$\text{NH}$ 基团、$\text{C=C}$ 双键以及两个 $\text{-CO}_2\text{Et}$ 基团组成。
+苯环部分 SMILES 为 $\text{c1ccc(cc1)}$。
+$\text{NH}$ 连接在苯环上，SMILES 为 $\text{c1ccc(cc1)N}$。
+$\text{N}$ 连接 $\text{CH=C}$，SMILES 为 $\text{c1ccc(cc1)NC=C}$。
+该 $\text{C}$ 原子连接两个 $\text{CO}_2\text{Et}$ 基团，SMILES 为 $\text{c1ccc(cc1)NC=C(C(=O)OCC)C(=O)OCC}$。
+因此，最终答案是 CCOC(=O)C=C(C(=O)OCC)NC1=CC=CC=C1。",,,,
+relationship,15_O,15,prob_294da38c0a1592a77854e1ee,O,"{""Dependency_Completeness"": 6, ""Dependency_Accuracy"": 7, ""Reasoning_Logic_Accuracy"": 5, ""Reasoning_Type_Accuracy"": 2}","{""Dependency_Completeness"": 6, ""Dependency_Accuracy"": 7, ""Reasoning_Logic_Accuracy"": 5, ""Reasoning_Type_Accuracy"": 2}",综合归纳,最终答案是 CCOC(=O)C=C(C(=O)OCC)NC1=CC=CC=C1。,基于完整的结构推导得出最终化学式表达。,I_7,将 SMILES 字符串转换为最终答案格式 CCOC(=O)C=C(C(=O)OCC)NC1=CC=CC=C1。,"题干给出，目标分子包含一个苯环。
+题干给出，苯环的邻位连接有一个氮原子。
+已知，氮原子连接一个氢原子。
+已知，氮原子连接一个碳原子。
+已知，该碳原子与另一个碳原子形成双键。
+已知，该双键的第二个碳原子连接一个酯基 $\text{-CO}_2\text{Et}$。
+已知，该碳原子同时连接一个酯基 $\text{-CO}_2\text{Et}$。
+由于结构为 $\text{Ethyl 2-(2-ethoxy-2-oxoethyl)-1H-indole-3-carboxylate}$ 的前体或类似衍生物，其骨架为 $\text{Ethyl 2-(ethoxycarbonyl)-1H-indole-3-carboxylate}$ 的开环形式。
+根据图像，结构为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole}$ 的类似物，但实际为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole}$ 的开环中间体。
+分析图像结构，分子式为 $\text{C}_{15}\text{H}_{17}\text{NO}_4$。
+结构描述为：$\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole}$ 的变体，具体为 $\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole}$ 的前体。
+观察图像，分子由苯环、$\text{NH}$ 基团、$\text{C=C}$ 双键以及两个 $\text{-CO}_2\text{Et}$ 基团组成。
+苯环部分 SMILES 为 $\text{c1ccc(cc1)}$。
+$\text{NH}$ 连接在苯环上，SMILES 为 $\text{c1ccc(cc1)N}$。
+$\text{N}$ 连接 $\text{CH=C}$，SMILES 为 $\text{c1ccc(cc1)NC=C}$。
+该 $\text{C}$ 原子连接两个 $\text{CO}_2\text{Et}$ 基团，SMILES 为 $\text{c1ccc(cc1)NC=C(C(=O)OCC)C(=O)OCC}$。
+因此，最终答案是 CCOC(=O)C=C(C(=O)OCC)NC1=CC=CC=C1。",,,,
+relationship,16_I_1,16,prob_25ebe2cc82bb181a57c99b5d,I_1,"{""Reasoning_Type_Accuracy"": 7.5}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 8.5, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 7.5}",逻辑推导,由于位置 3 的碳原子连接磷原子，结构更新为 O1C(R)C(R1)OC1[P+](OMe)(OMe)OMe。,将磷基团连接到环上位置 3 的碳原子，并应用磷原子的电荷及取代基信息。,C_9|C_5|C_8,"根据 SMILES 语法，基础五元环结构可表示为 O1C(R)C(R1)O1。
+环中位置 3 为碳原子，带有负电荷，连接有磷基团。
+磷原子带正电荷，连接有三个甲氧基（-OMe）。","题干给出，结构包含一个五元环。
+已知，五元环由两个氧原子和三个碳原子组成。
+已知，环中位置1为碳原子，连接有取代基R。
+已知，环中位置2为氧原子。
+已知，环中位置3为碳原子，带有负电荷，连接有磷基团。
+已知，环中位置4为氧原子。
+已知，环中位置5为碳原子，连接有取代基R1。
+已知，磷原子带正电荷，连接有三个甲氧基（-OMe）。
+根据SMILES语法，五元环结构可表示为O1C(R)C(R1)O1。
+由于位置3的碳原子连接磷原子，结构更新为O1C(R)C(R1)OC1[P+](OMe)(OMe)OMe。
+由于位置3的碳原子带负电荷，该碳原子需标记为[C-]。
+将所有原子及电荷代入，可得结构：O1C(R)C(R1)O[C-](1)[P+](OC)(OC)OC)。
+考虑到R和R1为通用基团，通常用R表示。
+因此，最终答案是 O1C(R)C(R1)O[C-](1)[P+](OC)(OC)OC)。",,,,
+relationship,16_I_2,16,prob_25ebe2cc82bb181a57c99b5d,I_2,"{""Reasoning_Type_Accuracy"": 7.5}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 7.5}",逻辑推导,由于位置 3 的碳原子带负电荷，该碳原子需标记为 [C-]。,根据位置 3 碳原子的负电荷属性，在 SMILES 表示中添加电荷标记。,C_5,环中位置 3 为碳原子，带有负电荷，连接有磷基团。,"题干给出，结构包含一个五元环。
+已知，五元环由两个氧原子和三个碳原子组成。
+已知，环中位置1为碳原子，连接有取代基R。
+已知，环中位置2为氧原子。
+已知，环中位置3为碳原子，带有负电荷，连接有磷基团。
+已知，环中位置4为氧原子。
+已知，环中位置5为碳原子，连接有取代基R1。
+已知，磷原子带正电荷，连接有三个甲氧基（-OMe）。
+根据SMILES语法，五元环结构可表示为O1C(R)C(R1)O1。
+由于位置3的碳原子连接磷原子，结构更新为O1C(R)C(R1)OC1[P+](OMe)(OMe)OMe。
+由于位置3的碳原子带负电荷，该碳原子需标记为[C-]。
+将所有原子及电荷代入，可得结构：O1C(R)C(R1)O[C-](1)[P+](OC)(OC)OC)。
+考虑到R和R1为通用基团，通常用R表示。
+因此，最终答案是 O1C(R)C(R1)O[C-](1)[P+](OC)(OC)OC)。",,,,
+relationship,17_I_7,17,prob_5cc14ed23f5fd80fb92a131a,I_7,"{""Dependency_Completeness"": 7}","{""Dependency_Completeness"": 7, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 8, ""Reasoning_Type_Accuracy"": 10}",逻辑推导,确定含氮产物碎片为 R-NH-。,结合 R 连接在 N 上且 N 带负电的事实，推导产物为 R-NH-。,C_6|I_5,"图中 R 基团连接在 N 原子上。
+N 原子带负电荷。","题干给出，反应物为酰胺分子 $\text{R-CONH}_2$ 及其碱 $\text{B}$。
+已知，碱 $\text{B}$ 的孤对电子攻击酰胺的 $\text{O-H}$ 质子。
+根据电子转移方向，$\text{B}$ 与 $\text{H}$ 之间形成新共价键。
+根据电子转移方向，$\text{O-H}$ 键断裂，电子转移至氧原子 $\text{O}$。
+由于 $\text{O-H}$ 键断裂且电子留在 $\text{O}$ 上，氧原子带负电荷。
+由于 $\text{C=O}$ 双键电子向 $\text{C-N}$ 方向转移（图中显示 $\text{C-N}$ 键电子向 $\text{N}$ 转移），但观察原图箭头，$\text{C=O}$ 电子并未移动，而是 $\text{O-H}$ 电子移向 $\text{O}$。
+重新观察图像，第一个箭头从 $\text{B}$ 指向 $\text{H}$。
+第二个箭头从 $\text{O-H}$ 键指向 $\text{O}$ 原子。
+第三个箭头从 $\text{N-C}$ 键指向 $\text{N}$ 原子（或 $\text{C=O}$ 电子转移）。
+修正观察：图像中存在三个箭头。
+箭头1：$\text{B:} \rightarrow \text{H}$。
+箭头2：$\text{O-H} \rightarrow \text{O}$。
+箭头3：$\text{N-C} \rightarrow \text{N}$（此处为 $\text{C-N}$ 键断裂）。
+由于 $\text{C-N}$ 键断裂，$\text{N}$ 原子带负电荷。
+由于 $\text{O-H}$ 键断裂，$\text{O}$ 原子带负电荷。
+由于 $\text{B}$ 结合 $\text{H}$，形成 $\text{BH}^+$。
+此时产物状态为：$\text{R-C(=O)O}^-$ 阴离子、$\text{NH}_2^-$ 阴离子（或 $\text{R-NH}^-$）以及 $\text{BH}^+$ 阳离子。
+重新审视图像箭头：箭头3是从 $\text{N-C}$ 键指向 $\text{N}$。
+这意味着 $\text{C-N}$ 键断裂，$\text{N}$ 获得电子对。
+因此，分子分解为 $\text{R-NH}^-$、$\text{HCOO}^-$（若 $\text{R}$ 在 $\text{N}$ 上则为 $\text{R-NH}^-$ 和 $\text{HCOO}^-$，若 $\text{R}$ 在 $\text{C}$ 上则为 $\text{R-COO}^-$ 和 $\text{NH}_2^-$）。
+图中 $\text{R}$ 连接在 $\text{N}$ 上。
+因此，产物为 $\text{R-NH}^-$、$\text{HCOO}^-$ 和 $\text{BH}^+$。
+对应的 SMILES 表达式应包含这些碎片。
+考虑到常见的酰胺水解/碱解机理，该步骤描述的是 $\text{O-H}$ 脱质子伴随 $\text{C-N}$ 键断裂。
+因此，最终答案是 [R-NH-.[O-]C=O.[BH+]]。",,,,
+relationship,17_I_8,17,prob_5cc14ed23f5fd80fb92a131a,I_8,"{""Dependency_Completeness"": 6.7, ""Reasoning_Logic_Accuracy"": 7}","{""Dependency_Completeness"": 6.7, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 7, ""Reasoning_Type_Accuracy"": 10}",逻辑推导,确定含碳产物碎片为 HCOO-（或 [O-]C=O）。,C-N 键断裂后，剩余部分为带有负电荷氧的羰基结构，即甲酸根离子。,I_3|I_4,"氧原子 O 带负电荷。
+C-N 键断裂，N 原子获得电子对。","题干给出，反应物为酰胺分子 $\text{R-CONH}_2$ 及其碱 $\text{B}$。
+已知，碱 $\text{B}$ 的孤对电子攻击酰胺的 $\text{O-H}$ 质子。
+根据电子转移方向，$\text{B}$ 与 $\text{H}$ 之间形成新共价键。
+根据电子转移方向，$\text{O-H}$ 键断裂，电子转移至氧原子 $\text{O}$。
+由于 $\text{O-H}$ 键断裂且电子留在 $\text{O}$ 上，氧原子带负电荷。
+由于 $\text{C=O}$ 双键电子向 $\text{C-N}$ 方向转移（图中显示 $\text{C-N}$ 键电子向 $\text{N}$ 转移），但观察原图箭头，$\text{C=O}$ 电子并未移动，而是 $\text{O-H}$ 电子移向 $\text{O}$。
+重新观察图像，第一个箭头从 $\text{B}$ 指向 $\text{H}$。
+第二个箭头从 $\text{O-H}$ 键指向 $\text{O}$ 原子。
+第三个箭头从 $\text{N-C}$ 键指向 $\text{N}$ 原子（或 $\text{C=O}$ 电子转移）。
+修正观察：图像中存在三个箭头。
+箭头1：$\text{B:} \rightarrow \text{H}$。
+箭头2：$\text{O-H} \rightarrow \text{O}$。
+箭头3：$\text{N-C} \rightarrow \text{N}$（此处为 $\text{C-N}$ 键断裂）。
+由于 $\text{C-N}$ 键断裂，$\text{N}$ 原子带负电荷。
+由于 $\text{O-H}$ 键断裂，$\text{O}$ 原子带负电荷。
+由于 $\text{B}$ 结合 $\text{H}$，形成 $\text{BH}^+$。
+此时产物状态为：$\text{R-C(=O)O}^-$ 阴离子、$\text{NH}_2^-$ 阴离子（或 $\text{R-NH}^-$）以及 $\text{BH}^+$ 阳离子。
+重新审视图像箭头：箭头3是从 $\text{N-C}$ 键指向 $\text{N}$。
+这意味着 $\text{C-N}$ 键断裂，$\text{N}$ 获得电子对。
+因此，分子分解为 $\text{R-NH}^-$、$\text{HCOO}^-$（若 $\text{R}$ 在 $\text{N}$ 上则为 $\text{R-NH}^-$ 和 $\text{HCOO}^-$，若 $\text{R}$ 在 $\text{C}$ 上则为 $\text{R-COO}^-$ 和 $\text{NH}_2^-$）。
+图中 $\text{R}$ 连接在 $\text{N}$ 上。
+因此，产物为 $\text{R-NH}^-$、$\text{HCOO}^-$ 和 $\text{BH}^+$。
+对应的 SMILES 表达式应包含这些碎片。
+考虑到常见的酰胺水解/碱解机理，该步骤描述的是 $\text{O-H}$ 脱质子伴随 $\text{C-N}$ 键断裂。
+因此，最终答案是 [R-NH-.[O-]C=O.[BH+]]。",,,,
+relationship,18_I_2,18,prob_2a516c6bb9d44e626dbc6120,I_2,"{""Dependency_Accuracy"": 6}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 6, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 10}",条件转化,将三苯基膦部分转化为 SMILES 字符串 P(c1ccccc1)(c2ccccc2)c3ccccc3。,利用已知的分子组成、原子连接关系及苯基定义，应用 SMILES 语法规则生成对应字符串。,C_2|C_8|C_9|C_11|C_13,"该结构包含一个三苯基膦分子 Ph3P。
+三苯基膦的磷原子 P 位于分子的左侧。
+磷原子 P 与三个苯基 Ph 相连。
+Ph 代表苯基 c1ccccc1。
+根据 SMILES 语法，三苯基膦表示为 P(c1ccccc1)(c2ccccc2)c3ccccc3。","题干给出，图像显示一个化学反应的过渡态结构。
+已知，该结构包含一个三苯基膦分子 $\text{Ph}_3\text{P}$。
+已知，该结构包含一个二(吡啶-2-基)二硫化物衍生物，其中一个硫原子带有正电荷并与氢原子结合。
+已知，结构中包含两个吡啶环。
+已知，两个吡啶环分别连接在两个硫原子上。
+已知，两个硫原子之间存在单键连接。
+已知，其中一个硫原子连接着一个氢原子 $\text{H}$。
+已知，三苯基膦的磷原子 $\text{P}$ 位于分子的左侧。
+已知，磷原子 $\text{P}$ 与三个苯基 $\text{Ph}$ 相连。
+已知，忽略箭头后，该结构由 $\text{Ph}_3\text{P}$ 和 $\text{Py-S-S(H)-Py}$ 组成。
+由于 $\text{Ph}$ 代表苯基 $\text{c1ccccc1}$。
+由于 $\text{Py}$ 代表 2-吡啶基 $\text{n1ccccc1C}$。
+根据 SMILES 语法，三苯基膦表示为 $\text{P(c1ccccc1)(c2ccccc2)c3ccccc3}$。
+根据 SMILES 语法，二(吡啶-2-基)硫代亚磺酸结构表示为 $\text{n1ccccc1S S(H)c2ccccn2}$。
+由于题目要求忽略箭头，仅描述静态结构。
+由于图中 $\text{Ph}_3\text{P}$ 与 $\text{S}$ 之间尚未形成共价键，且 $\text{S-H}$ 键尚未完全断裂。
+由于 SMILES 无法直接表示非共价相互作用的过渡态，通常将其表示为反应物和产物的组合或离散分子。
+根据图像中的原子连接关系，该结构由 $\text{P(c1ccccc1)(c2ccccc2)c3ccccc3}$ 和 $\text{n1ccccc1S S([H])c2ccccn2}$ 组成。
+将各部分组合，可得 SMILES 表达式 $\text{P(c1ccccc1)(c2ccccc2)c3ccccc3.n1ccccc1SS([H])c2ccccn2}$。
+因此，最终答案是 P(c1ccccc1)(c2ccccc2)c3ccccc3.n1ccccc1SS([H])c2ccccn2。",,,,
+relationship,19_I_1,19,open_293e18e2857b947b84259d4a,I_1,"{""Dependency_Completeness"": 6.7}","{""Dependency_Completeness"": 6.7, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 10}",数值计算,计算 SO3 的总价电子数为 24。,执行加法与乘法运算：6 + 3 × 6 = 24。,C_3|C_4,"S 原子的价电子数为 6。
+O 原子的价电子数为 6。","题干给出，分子为 $\text{SO}_3$。
+题干给出，骨架结构为中心 $\text{S}$ 原子周围分布三个 $\text{O}$ 原子。
+已知，$\text{S}$ 原子的价电子数为 $6$。
+已知，$\text{O}$ 原子的价电子数为 $6$。
+计算 $\text{SO}_3$ 的总价电子数：$6 + 3 \times 6 = 24$。
+根据路易斯结构理论，$\text{S}$ 与三个 $\text{O}$ 各形成一个单键，消耗 $3 \times 2 = 6$ 个电子。
+剩余电子数为 $24 - 6 = 18$ 个。
+将 $18$ 个电子分配给三个 $\text{O}$ 原子，每个 $\text{O}$ 原子获得 $6$ 个电子以满足八隅律。
+此时 $\text{S}$ 原子的形式电荷为 $+3$，每个 $\text{O}$ 原子的形式电荷为 $-1$。
+为了降低形式电荷，$\text{S}$ 原子利用 $d$ 轨道扩展八隅律，与 $\text{O}$ 原子形成双键。
+在最稳定的结构中，$\text{S}$ 与三个 $\text{O}$ 原子分别形成三个双键。
+此时 $\text{S}$ 原子的形式电荷为 $0$，每个 $\text{O}$ 原子的形式电荷为 $0$。
+根据共振理论，$\text{SO}_3$ 的三个 $\text{S-O}$ 键是等价的。
+根据键级公式，$\text{键级} = \frac{\text{总键数}}{\text{共振结构数}}$。
+将总键数 $6$ 和共振结构数 $3$ 代入上述公式，可得 $\text{键级} = \frac{6}{3} = 2$。
+若陈述声称 $\text{S-O}$ 键级为 $1$ 或 $3$ 或其他非 $2$ 的数值，则该陈述错误。
+通常此类题目考察的是对共振平均键级的理解，错误陈述常将其简单视为单键（键级 $1$）。
+因此，最终答案是 1。",,,,
+relationship,19_I_10,19,open_293e18e2857b947b84259d4a,I_10,"{""Reasoning_Logic_Accuracy"": 7.5}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 7.5, ""Reasoning_Type_Accuracy"": 10}",对比分析,判定声称 S-O 键级为 1 或其他非 2 数值的陈述是错误的。,将计算结果 2 与假设值 1 进行对比排除。,I_9,计算键级为 2。,"题干给出，分子为 $\text{SO}_3$。
+题干给出，骨架结构为中心 $\text{S}$ 原子周围分布三个 $\text{O}$ 原子。
+已知，$\text{S}$ 原子的价电子数为 $6$。
+已知，$\text{O}$ 原子的价电子数为 $6$。
+计算 $\text{SO}_3$ 的总价电子数：$6 + 3 \times 6 = 24$。
+根据路易斯结构理论，$\text{S}$ 与三个 $\text{O}$ 各形成一个单键，消耗 $3 \times 2 = 6$ 个电子。
+剩余电子数为 $24 - 6 = 18$ 个。
+将 $18$ 个电子分配给三个 $\text{O}$ 原子，每个 $\text{O}$ 原子获得 $6$ 个电子以满足八隅律。
+此时 $\text{S}$ 原子的形式电荷为 $+3$，每个 $\text{O}$ 原子的形式电荷为 $-1$。
+为了降低形式电荷，$\text{S}$ 原子利用 $d$ 轨道扩展八隅律，与 $\text{O}$ 原子形成双键。
+在最稳定的结构中，$\text{S}$ 与三个 $\text{O}$ 原子分别形成三个双键。
+此时 $\text{S}$ 原子的形式电荷为 $0$，每个 $\text{O}$ 原子的形式电荷为 $0$。
+根据共振理论，$\text{SO}_3$ 的三个 $\text{S-O}$ 键是等价的。
+根据键级公式，$\text{键级} = \frac{\text{总键数}}{\text{共振结构数}}$。
+将总键数 $6$ 和共振结构数 $3$ 代入上述公式，可得 $\text{键级} = \frac{6}{3} = 2$。
+若陈述声称 $\text{S-O}$ 键级为 $1$ 或 $3$ 或其他非 $2$ 的数值，则该陈述错误。
+通常此类题目考察的是对共振平均键级的理解，错误陈述常将其简单视为单键（键级 $1$）。
+因此，最终答案是 1。",,,,
+relationship,19_I_11,19,open_293e18e2857b947b84259d4a,I_11,"{""Dependency_Completeness"": 5, ""Reasoning_Type_Accuracy"": 7.5}","{""Dependency_Completeness"": 5, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 8.5, ""Reasoning_Type_Accuracy"": 7.5}",逻辑推导,识别此类题目常考察对共振平均键级的理解，错误陈述常将其简单视为单键（键级 1）。,基于对比结果分析常见错误模式。,I_10,判定声称 S-O 键级为 1 或其他非 2 数值的陈述是错误的。,"题干给出，分子为 $\text{SO}_3$。
+题干给出，骨架结构为中心 $\text{S}$ 原子周围分布三个 $\text{O}$ 原子。
+已知，$\text{S}$ 原子的价电子数为 $6$。
+已知，$\text{O}$ 原子的价电子数为 $6$。
+计算 $\text{SO}_3$ 的总价电子数：$6 + 3 \times 6 = 24$。
+根据路易斯结构理论，$\text{S}$ 与三个 $\text{O}$ 各形成一个单键，消耗 $3 \times 2 = 6$ 个电子。
+剩余电子数为 $24 - 6 = 18$ 个。
+将 $18$ 个电子分配给三个 $\text{O}$ 原子，每个 $\text{O}$ 原子获得 $6$ 个电子以满足八隅律。
+此时 $\text{S}$ 原子的形式电荷为 $+3$，每个 $\text{O}$ 原子的形式电荷为 $-1$。
+为了降低形式电荷，$\text{S}$ 原子利用 $d$ 轨道扩展八隅律，与 $\text{O}$ 原子形成双键。
+在最稳定的结构中，$\text{S}$ 与三个 $\text{O}$ 原子分别形成三个双键。
+此时 $\text{S}$ 原子的形式电荷为 $0$，每个 $\text{O}$ 原子的形式电荷为 $0$。
+根据共振理论，$\text{SO}_3$ 的三个 $\text{S-O}$ 键是等价的。
+根据键级公式，$\text{键级} = \frac{\text{总键数}}{\text{共振结构数}}$。
+将总键数 $6$ 和共振结构数 $3$ 代入上述公式，可得 $\text{键级} = \frac{6}{3} = 2$。
+若陈述声称 $\text{S-O}$ 键级为 $1$ 或 $3$ 或其他非 $2$ 的数值，则该陈述错误。
+通常此类题目考察的是对共振平均键级的理解，错误陈述常将其简单视为单键（键级 $1$）。
+因此，最终答案是 1。",,,,
+relationship,19_I_2,19,open_293e18e2857b947b84259d4a,I_2,"{""Dependency_Completeness"": 6.7}","{""Dependency_Completeness"": 6.7, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 9, ""Reasoning_Type_Accuracy"": 10}",数值计算,计算形成三个单键消耗的电子数为 6。,执行乘法运算：3 × 2 = 6。,C_2|C_5,"题干给出骨架结构为中心 S 原子周围分布三个 O 原子。
+根据路易斯结构理论，单键消耗 2 个电子。","题干给出，分子为 $\text{SO}_3$。
+题干给出，骨架结构为中心 $\text{S}$ 原子周围分布三个 $\text{O}$ 原子。
+已知，$\text{S}$ 原子的价电子数为 $6$。
+已知，$\text{O}$ 原子的价电子数为 $6$。
+计算 $\text{SO}_3$ 的总价电子数：$6 + 3 \times 6 = 24$。
+根据路易斯结构理论，$\text{S}$ 与三个 $\text{O}$ 各形成一个单键，消耗 $3 \times 2 = 6$ 个电子。
+剩余电子数为 $24 - 6 = 18$ 个。
+将 $18$ 个电子分配给三个 $\text{O}$ 原子，每个 $\text{O}$ 原子获得 $6$ 个电子以满足八隅律。
+此时 $\text{S}$ 原子的形式电荷为 $+3$，每个 $\text{O}$ 原子的形式电荷为 $-1$。
+为了降低形式电荷，$\text{S}$ 原子利用 $d$ 轨道扩展八隅律，与 $\text{O}$ 原子形成双键。
+在最稳定的结构中，$\text{S}$ 与三个 $\text{O}$ 原子分别形成三个双键。
+此时 $\text{S}$ 原子的形式电荷为 $0$，每个 $\text{O}$ 原子的形式电荷为 $0$。
+根据共振理论，$\text{SO}_3$ 的三个 $\text{S-O}$ 键是等价的。
+根据键级公式，$\text{键级} = \frac{\text{总键数}}{\text{共振结构数}}$。
+将总键数 $6$ 和共振结构数 $3$ 代入上述公式，可得 $\text{键级} = \frac{6}{3} = 2$。
+若陈述声称 $\text{S-O}$ 键级为 $1$ 或 $3$ 或其他非 $2$ 的数值，则该陈述错误。
+通常此类题目考察的是对共振平均键级的理解，错误陈述常将其简单视为单键（键级 $1$）。
+因此，最终答案是 1。",,,,
+relationship,19_I_4,19,open_293e18e2857b947b84259d4a,I_4,"{""Dependency_Completeness"": 7.5}","{""Dependency_Completeness"": 7.5, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 9, ""Reasoning_Type_Accuracy"": 8.5}",逻辑推导,将 18 个剩余电子分配给三个 O 原子，每个 O 原子获得 6 个电子以满足八隅律。,基于八隅律进行电子分配逻辑推导。,I_3|C_2|C_6,"计算剩余电子数为 18。
+题干给出骨架结构为中心 S 原子周围分布三个 O 原子。
+根据八隅律，O 原子通常需要 8 个价电子。","题干给出，分子为 $\text{SO}_3$。
+题干给出，骨架结构为中心 $\text{S}$ 原子周围分布三个 $\text{O}$ 原子。
+已知，$\text{S}$ 原子的价电子数为 $6$。
+已知，$\text{O}$ 原子的价电子数为 $6$。
+计算 $\text{SO}_3$ 的总价电子数：$6 + 3 \times 6 = 24$。
+根据路易斯结构理论，$\text{S}$ 与三个 $\text{O}$ 各形成一个单键，消耗 $3 \times 2 = 6$ 个电子。
+剩余电子数为 $24 - 6 = 18$ 个。
+将 $18$ 个电子分配给三个 $\text{O}$ 原子，每个 $\text{O}$ 原子获得 $6$ 个电子以满足八隅律。
+此时 $\text{S}$ 原子的形式电荷为 $+3$，每个 $\text{O}$ 原子的形式电荷为 $-1$。
+为了降低形式电荷，$\text{S}$ 原子利用 $d$ 轨道扩展八隅律，与 $\text{O}$ 原子形成双键。
+在最稳定的结构中，$\text{S}$ 与三个 $\text{O}$ 原子分别形成三个双键。
+此时 $\text{S}$ 原子的形式电荷为 $0$，每个 $\text{O}$ 原子的形式电荷为 $0$。
+根据共振理论，$\text{SO}_3$ 的三个 $\text{S-O}$ 键是等价的。
+根据键级公式，$\text{键级} = \frac{\text{总键数}}{\text{共振结构数}}$。
+将总键数 $6$ 和共振结构数 $3$ 代入上述公式，可得 $\text{键级} = \frac{6}{3} = 2$。
+若陈述声称 $\text{S-O}$ 键级为 $1$ 或 $3$ 或其他非 $2$ 的数值，则该陈述错误。
+通常此类题目考察的是对共振平均键级的理解，错误陈述常将其简单视为单键（键级 $1$）。
+因此，最终答案是 1。",,,,
+relationship,19_I_7,19,open_293e18e2857b947b84259d4a,I_7,"{""Reasoning_Logic_Accuracy"": 6}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 6, ""Reasoning_Type_Accuracy"": 10}",逻辑推导,确定在最稳定的结构中，S 与三个 O 原子分别形成三个双键。,综合结构优化结果得出最稳定构型。,I_6|C_2,"为了降低形式电荷，S 原子利用 d 轨道扩展八隅律，与 O 原子形成双键。
+题干给出骨架结构为中心 S 原子周围分布三个 O 原子。","题干给出，分子为 $\text{SO}_3$。
+题干给出，骨架结构为中心 $\text{S}$ 原子周围分布三个 $\text{O}$ 原子。
+已知，$\text{S}$ 原子的价电子数为 $6$。
+已知，$\text{O}$ 原子的价电子数为 $6$。
+计算 $\text{SO}_3$ 的总价电子数：$6 + 3 \times 6 = 24$。
+根据路易斯结构理论，$\text{S}$ 与三个 $\text{O}$ 各形成一个单键，消耗 $3 \times 2 = 6$ 个电子。
+剩余电子数为 $24 - 6 = 18$ 个。
+将 $18$ 个电子分配给三个 $\text{O}$ 原子，每个 $\text{O}$ 原子获得 $6$ 个电子以满足八隅律。
+此时 $\text{S}$ 原子的形式电荷为 $+3$，每个 $\text{O}$ 原子的形式电荷为 $-1$。
+为了降低形式电荷，$\text{S}$ 原子利用 $d$ 轨道扩展八隅律，与 $\text{O}$ 原子形成双键。
+在最稳定的结构中，$\text{S}$ 与三个 $\text{O}$ 原子分别形成三个双键。
+此时 $\text{S}$ 原子的形式电荷为 $0$，每个 $\text{O}$ 原子的形式电荷为 $0$。
+根据共振理论，$\text{SO}_3$ 的三个 $\text{S-O}$ 键是等价的。
+根据键级公式，$\text{键级} = \frac{\text{总键数}}{\text{共振结构数}}$。
+将总键数 $6$ 和共振结构数 $3$ 代入上述公式，可得 $\text{键级} = \frac{6}{3} = 2$。
+若陈述声称 $\text{S-O}$ 键级为 $1$ 或 $3$ 或其他非 $2$ 的数值，则该陈述错误。
+通常此类题目考察的是对共振平均键级的理解，错误陈述常将其简单视为单键（键级 $1$）。
+因此，最终答案是 1。",,,,
+relationship,19_I_8,19,open_293e18e2857b947b84259d4a,I_8,"{""Reasoning_Type_Accuracy"": 6}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 6}",逻辑推导,推导此时 S 原子的形式电荷为 0，每个 O 原子的形式电荷为 0。,基于双键结构重新计算形式电荷。,I_7,确定在最稳定的结构中，S 与三个 O 原子分别形成三个双键。,"题干给出，分子为 $\text{SO}_3$。
+题干给出，骨架结构为中心 $\text{S}$ 原子周围分布三个 $\text{O}$ 原子。
+已知，$\text{S}$ 原子的价电子数为 $6$。
+已知，$\text{O}$ 原子的价电子数为 $6$。
+计算 $\text{SO}_3$ 的总价电子数：$6 + 3 \times 6 = 24$。
+根据路易斯结构理论，$\text{S}$ 与三个 $\text{O}$ 各形成一个单键，消耗 $3 \times 2 = 6$ 个电子。
+剩余电子数为 $24 - 6 = 18$ 个。
+将 $18$ 个电子分配给三个 $\text{O}$ 原子，每个 $\text{O}$ 原子获得 $6$ 个电子以满足八隅律。
+此时 $\text{S}$ 原子的形式电荷为 $+3$，每个 $\text{O}$ 原子的形式电荷为 $-1$。
+为了降低形式电荷，$\text{S}$ 原子利用 $d$ 轨道扩展八隅律，与 $\text{O}$ 原子形成双键。
+在最稳定的结构中，$\text{S}$ 与三个 $\text{O}$ 原子分别形成三个双键。
+此时 $\text{S}$ 原子的形式电荷为 $0$，每个 $\text{O}$ 原子的形式电荷为 $0$。
+根据共振理论，$\text{SO}_3$ 的三个 $\text{S-O}$ 键是等价的。
+根据键级公式，$\text{键级} = \frac{\text{总键数}}{\text{共振结构数}}$。
+将总键数 $6$ 和共振结构数 $3$ 代入上述公式，可得 $\text{键级} = \frac{6}{3} = 2$。
+若陈述声称 $\text{S-O}$ 键级为 $1$ 或 $3$ 或其他非 $2$ 的数值，则该陈述错误。
+通常此类题目考察的是对共振平均键级的理解，错误陈述常将其简单视为单键（键级 $1$）。
+因此，最终答案是 1。",,,,
+relationship,19_O,19,open_293e18e2857b947b84259d4a,O,"{""Dependency_Completeness"": 5, ""Reasoning_Type_Accuracy"": 7}","{""Dependency_Completeness"": 5, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 8, ""Reasoning_Type_Accuracy"": 7}",综合归纳,最终答案是 1。,综合题目考察意图和错误选项特征，得出针对“错误陈述”对应的数值答案 1。,I_11,识别此类题目常考察对共振平均键级的理解，错误陈述常将其简单视为单键（键级 1）。,"题干给出，分子为 $\text{SO}_3$。
+题干给出，骨架结构为中心 $\text{S}$ 原子周围分布三个 $\text{O}$ 原子。
+已知，$\text{S}$ 原子的价电子数为 $6$。
+已知，$\text{O}$ 原子的价电子数为 $6$。
+计算 $\text{SO}_3$ 的总价电子数：$6 + 3 \times 6 = 24$。
+根据路易斯结构理论，$\text{S}$ 与三个 $\text{O}$ 各形成一个单键，消耗 $3 \times 2 = 6$ 个电子。
+剩余电子数为 $24 - 6 = 18$ 个。
+将 $18$ 个电子分配给三个 $\text{O}$ 原子，每个 $\text{O}$ 原子获得 $6$ 个电子以满足八隅律。
+此时 $\text{S}$ 原子的形式电荷为 $+3$，每个 $\text{O}$ 原子的形式电荷为 $-1$。
+为了降低形式电荷，$\text{S}$ 原子利用 $d$ 轨道扩展八隅律，与 $\text{O}$ 原子形成双键。
+在最稳定的结构中，$\text{S}$ 与三个 $\text{O}$ 原子分别形成三个双键。
+此时 $\text{S}$ 原子的形式电荷为 $0$，每个 $\text{O}$ 原子的形式电荷为 $0$。
+根据共振理论，$\text{SO}_3$ 的三个 $\text{S-O}$ 键是等价的。
+根据键级公式，$\text{键级} = \frac{\text{总键数}}{\text{共振结构数}}$。
+将总键数 $6$ 和共振结构数 $3$ 代入上述公式，可得 $\text{键级} = \frac{6}{3} = 2$。
+若陈述声称 $\text{S-O}$ 键级为 $1$ 或 $3$ 或其他非 $2$ 的数值，则该陈述错误。
+通常此类题目考察的是对共振平均键级的理解，错误陈述常将其简单视为单键（键级 $1$）。
+因此，最终答案是 1。",,,,
+relationship,1_I_1,1,prob_d97cad4aa260094748e1ccc7,I_1,"{""Dependency_Accuracy"": 5, ""Reasoning_Logic_Accuracy"": 7}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 5, ""Reasoning_Logic_Accuracy"": 7, ""Reasoning_Type_Accuracy"": 10}",逻辑推导,由于神经元永久停止分裂，其细胞周期被阻断。,基于神经元不分裂的事实和细胞周期的组成进行推导。,C_1|C_2,"题干给出神经元注定不再分裂。
+细胞周期由 G1 期、S 期、G2 期和 M 期组成。","题干给出，神经元（neurons）注定不再分裂。
+已知，细胞周期由 $G_1$ 期、$S$ 期、$G_2$ 期和 $M$ 期组成。
+由于神经元永久停止分裂，其细胞周期被阻断。
+根据细胞生物学定义，永久退出细胞周期的细胞进入 $G_0$ 期。
+由于 $G_0$ 期是从 $G_1$ 期分出的静止期，且神经元在此状态下永久停留。
+因此，最终答案是 $G_0$ phase。",,,,
+relationship,1_O,1,prob_d97cad4aa260094748e1ccc7,O,"{""Reasoning_Type_Accuracy"": 3.5}","{""Dependency_Completeness"": 9, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 8.5, ""Reasoning_Type_Accuracy"": 3.5}",综合归纳,最终答案是 G0 phase。,综合上述推理步骤得出最终结论。,I_3,神经元在 G0 期状态下永久停留。,"题干给出，神经元（neurons）注定不再分裂。
+已知，细胞周期由 $G_1$ 期、$S$ 期、$G_2$ 期和 $M$ 期组成。
+由于神经元永久停止分裂，其细胞周期被阻断。
+根据细胞生物学定义，永久退出细胞周期的细胞进入 $G_0$ 期。
+由于 $G_0$ 期是从 $G_1$ 期分出的静止期，且神经元在此状态下永久停留。
+因此，最终答案是 $G_0$ phase。",,,,
+relationship,2_I_1,2,prob_bdea25f4bac0bdc659e5ac98,I_1,"{""Dependency_Completeness"": 5, ""Reasoning_Type_Accuracy"": 0}","{""Dependency_Completeness"": 5, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 9, ""Reasoning_Type_Accuracy"": 0}",数值计算,Ar 部分贡献 6 个键。,提取苯环键数数据。,C_2,已知 Ar 通常代表一个苯环，包含 6 个 C-C 键。,"题干给出，结构中包含一个芳环基团 Ar。
+已知，Ar 通常代表一个苯环，包含 6 个 C-C 键。
+题干给出，结构中有一个 $\text{C}=\text{O}^+$ 双键。
+题干给出，该 $\text{C}=\text{O}^+$ 与 Ar 基团相连，包含 1 个 C-C 单键。
+题干给出，该 $\text{C}=\text{O}^+$ 与相邻 $\text{CH}_2$ 基团相连，包含 1 个 C-C 单键。
+题干给出，$\text{CH}_2$ 基团与酮羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酮羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酮羰基与 $\alpha$-碳原子相连，包含 1 个 C-C 单键。
+题干给出，$\alpha$-碳原子与酯基羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酯基羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酯基羰基与 $\text{OR}'$ 基团相连，包含 1 个 C-O 单键。
+题干给出，$\text{R}'$ 为烷基，至少包含 1 个 C-C 或 C-O 单键（此处按最简结构 $\text{R}'=\text{Me}$ 计算，含 1 个 C-C 键）。
+题干给出，$\alpha$-碳原子与 $\text{Ru}(\text{Por})$ 相连，包含 1 个 C-Ru 单键。
+已知，$\text{Por}$ 代表卟啉环，其结构包含 20 个 C-C 或 C-N 键。
+已知，$\text{Ru}$ 原子与卟啉环的 4 个氮原子相连，包含 4 个 Ru-N 单键。
+由于 Ar 贡献 6 个键，$\text{C}=\text{O}^+$ 部分贡献 2 个键（1双+1单），连接 $\text{CH}_2$ 贡献 1 个键，$\text{CH}_2$ 到酮基贡献 1 个键，酮基贡献 2 个键（1双+1单），$\alpha$-碳到酯基贡献 1 个键，酯基贡献 3 个键（1双+1单+1单），$\text{R}'$ 贡献 1 个键，$\alpha$-碳到 $\text{Ru}$ 贡献 1 个键，$\text{Ru}$ 到 $\text{Por}$ 贡献 4 个键，$\text{Por}$ 内部贡献 20 个键。
+根据加法原则，总键数 = $6 + 2 + 1 + 1 + 2 + 1 + 3 + 1 + 1 + 4 + 20 = 42$。
+由于题目要求计算图中所示结构的化学键总数，且排除氢键。
+因此，最终答案是 42。",,,,
+relationship,2_I_10,2,prob_bdea25f4bac0bdc659e5ac98,I_10,"{""Reasoning_Type_Accuracy"": 2}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 9, ""Reasoning_Type_Accuracy"": 2}",数值计算,Ru 到 Por 连接贡献 4 个键。,提取 Ru-N 键数数据。,C_15,已知 Ru 原子与卟啉环的 4 个氮原子相连，包含 4 个 Ru-N 单键。,"题干给出，结构中包含一个芳环基团 Ar。
+已知，Ar 通常代表一个苯环，包含 6 个 C-C 键。
+题干给出，结构中有一个 $\text{C}=\text{O}^+$ 双键。
+题干给出，该 $\text{C}=\text{O}^+$ 与 Ar 基团相连，包含 1 个 C-C 单键。
+题干给出，该 $\text{C}=\text{O}^+$ 与相邻 $\text{CH}_2$ 基团相连，包含 1 个 C-C 单键。
+题干给出，$\text{CH}_2$ 基团与酮羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酮羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酮羰基与 $\alpha$-碳原子相连，包含 1 个 C-C 单键。
+题干给出，$\alpha$-碳原子与酯基羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酯基羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酯基羰基与 $\text{OR}'$ 基团相连，包含 1 个 C-O 单键。
+题干给出，$\text{R}'$ 为烷基，至少包含 1 个 C-C 或 C-O 单键（此处按最简结构 $\text{R}'=\text{Me}$ 计算，含 1 个 C-C 键）。
+题干给出，$\alpha$-碳原子与 $\text{Ru}(\text{Por})$ 相连，包含 1 个 C-Ru 单键。
+已知，$\text{Por}$ 代表卟啉环，其结构包含 20 个 C-C 或 C-N 键。
+已知，$\text{Ru}$ 原子与卟啉环的 4 个氮原子相连，包含 4 个 Ru-N 单键。
+由于 Ar 贡献 6 个键，$\text{C}=\text{O}^+$ 部分贡献 2 个键（1双+1单），连接 $\text{CH}_2$ 贡献 1 个键，$\text{CH}_2$ 到酮基贡献 1 个键，酮基贡献 2 个键（1双+1单），$\alpha$-碳到酯基贡献 1 个键，酯基贡献 3 个键（1双+1单+1单），$\text{R}'$ 贡献 1 个键，$\alpha$-碳到 $\text{Ru}$ 贡献 1 个键，$\text{Ru}$ 到 $\text{Por}$ 贡献 4 个键，$\text{Por}$ 内部贡献 20 个键。
+根据加法原则，总键数 = $6 + 2 + 1 + 1 + 2 + 1 + 3 + 1 + 1 + 4 + 20 = 42$。
+由于题目要求计算图中所示结构的化学键总数，且排除氢键。
+因此，最终答案是 42。",,,,
+relationship,2_I_11,2,prob_bdea25f4bac0bdc659e5ac98,I_11,"{""Reasoning_Type_Accuracy"": 0}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 0}",数值计算,Por 内部贡献 20 个键。,提取卟啉环内部键数数据。,C_14,已知 Por 代表卟啉环，其结构包含 20 个 C-C 或 C-N 键。,"题干给出，结构中包含一个芳环基团 Ar。
+已知，Ar 通常代表一个苯环，包含 6 个 C-C 键。
+题干给出，结构中有一个 $\text{C}=\text{O}^+$ 双键。
+题干给出，该 $\text{C}=\text{O}^+$ 与 Ar 基团相连，包含 1 个 C-C 单键。
+题干给出，该 $\text{C}=\text{O}^+$ 与相邻 $\text{CH}_2$ 基团相连，包含 1 个 C-C 单键。
+题干给出，$\text{CH}_2$ 基团与酮羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酮羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酮羰基与 $\alpha$-碳原子相连，包含 1 个 C-C 单键。
+题干给出，$\alpha$-碳原子与酯基羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酯基羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酯基羰基与 $\text{OR}'$ 基团相连，包含 1 个 C-O 单键。
+题干给出，$\text{R}'$ 为烷基，至少包含 1 个 C-C 或 C-O 单键（此处按最简结构 $\text{R}'=\text{Me}$ 计算，含 1 个 C-C 键）。
+题干给出，$\alpha$-碳原子与 $\text{Ru}(\text{Por})$ 相连，包含 1 个 C-Ru 单键。
+已知，$\text{Por}$ 代表卟啉环，其结构包含 20 个 C-C 或 C-N 键。
+已知，$\text{Ru}$ 原子与卟啉环的 4 个氮原子相连，包含 4 个 Ru-N 单键。
+由于 Ar 贡献 6 个键，$\text{C}=\text{O}^+$ 部分贡献 2 个键（1双+1单），连接 $\text{CH}_2$ 贡献 1 个键，$\text{CH}_2$ 到酮基贡献 1 个键，酮基贡献 2 个键（1双+1单），$\alpha$-碳到酯基贡献 1 个键，酯基贡献 3 个键（1双+1单+1单），$\text{R}'$ 贡献 1 个键，$\alpha$-碳到 $\text{Ru}$ 贡献 1 个键，$\text{Ru}$ 到 $\text{Por}$ 贡献 4 个键，$\text{Por}$ 内部贡献 20 个键。
+根据加法原则，总键数 = $6 + 2 + 1 + 1 + 2 + 1 + 3 + 1 + 1 + 4 + 20 = 42$。
+由于题目要求计算图中所示结构的化学键总数，且排除氢键。
+因此，最终答案是 42。",,,,
+relationship,2_I_3,2,prob_bdea25f4bac0bdc659e5ac98,I_3,"{""Reasoning_Type_Accuracy"": 2}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 2}",数值计算,C=O+ 与 CH2 连接贡献 1 个键。,提取连接键数数据。,C_5,题干给出该 C=O+ 与相邻 CH2 基团相连，包含 1 个 C-C 单键。,"题干给出，结构中包含一个芳环基团 Ar。
+已知，Ar 通常代表一个苯环，包含 6 个 C-C 键。
+题干给出，结构中有一个 $\text{C}=\text{O}^+$ 双键。
+题干给出，该 $\text{C}=\text{O}^+$ 与 Ar 基团相连，包含 1 个 C-C 单键。
+题干给出，该 $\text{C}=\text{O}^+$ 与相邻 $\text{CH}_2$ 基团相连，包含 1 个 C-C 单键。
+题干给出，$\text{CH}_2$ 基团与酮羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酮羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酮羰基与 $\alpha$-碳原子相连，包含 1 个 C-C 单键。
+题干给出，$\alpha$-碳原子与酯基羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酯基羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酯基羰基与 $\text{OR}'$ 基团相连，包含 1 个 C-O 单键。
+题干给出，$\text{R}'$ 为烷基，至少包含 1 个 C-C 或 C-O 单键（此处按最简结构 $\text{R}'=\text{Me}$ 计算，含 1 个 C-C 键）。
+题干给出，$\alpha$-碳原子与 $\text{Ru}(\text{Por})$ 相连，包含 1 个 C-Ru 单键。
+已知，$\text{Por}$ 代表卟啉环，其结构包含 20 个 C-C 或 C-N 键。
+已知，$\text{Ru}$ 原子与卟啉环的 4 个氮原子相连，包含 4 个 Ru-N 单键。
+由于 Ar 贡献 6 个键，$\text{C}=\text{O}^+$ 部分贡献 2 个键（1双+1单），连接 $\text{CH}_2$ 贡献 1 个键，$\text{CH}_2$ 到酮基贡献 1 个键，酮基贡献 2 个键（1双+1单），$\alpha$-碳到酯基贡献 1 个键，酯基贡献 3 个键（1双+1单+1单），$\text{R}'$ 贡献 1 个键，$\alpha$-碳到 $\text{Ru}$ 贡献 1 个键，$\text{Ru}$ 到 $\text{Por}$ 贡献 4 个键，$\text{Por}$ 内部贡献 20 个键。
+根据加法原则，总键数 = $6 + 2 + 1 + 1 + 2 + 1 + 3 + 1 + 1 + 4 + 20 = 42$。
+由于题目要求计算图中所示结构的化学键总数，且排除氢键。
+因此，最终答案是 42。",,,,
+relationship,2_I_4,2,prob_bdea25f4bac0bdc659e5ac98,I_4,"{""Reasoning_Type_Accuracy"": 0}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 0}",数值计算,CH2 到酮基连接贡献 1 个键。,提取连接键数数据。,C_6,题干给出 CH2 基团与酮羰基 C=O 相连，包含 1 个 C-C 单键。,"题干给出，结构中包含一个芳环基团 Ar。
+已知，Ar 通常代表一个苯环，包含 6 个 C-C 键。
+题干给出，结构中有一个 $\text{C}=\text{O}^+$ 双键。
+题干给出，该 $\text{C}=\text{O}^+$ 与 Ar 基团相连，包含 1 个 C-C 单键。
+题干给出，该 $\text{C}=\text{O}^+$ 与相邻 $\text{CH}_2$ 基团相连，包含 1 个 C-C 单键。
+题干给出，$\text{CH}_2$ 基团与酮羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酮羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酮羰基与 $\alpha$-碳原子相连，包含 1 个 C-C 单键。
+题干给出，$\alpha$-碳原子与酯基羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酯基羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酯基羰基与 $\text{OR}'$ 基团相连，包含 1 个 C-O 单键。
+题干给出，$\text{R}'$ 为烷基，至少包含 1 个 C-C 或 C-O 单键（此处按最简结构 $\text{R}'=\text{Me}$ 计算，含 1 个 C-C 键）。
+题干给出，$\alpha$-碳原子与 $\text{Ru}(\text{Por})$ 相连，包含 1 个 C-Ru 单键。
+已知，$\text{Por}$ 代表卟啉环，其结构包含 20 个 C-C 或 C-N 键。
+已知，$\text{Ru}$ 原子与卟啉环的 4 个氮原子相连，包含 4 个 Ru-N 单键。
+由于 Ar 贡献 6 个键，$\text{C}=\text{O}^+$ 部分贡献 2 个键（1双+1单），连接 $\text{CH}_2$ 贡献 1 个键，$\text{CH}_2$ 到酮基贡献 1 个键，酮基贡献 2 个键（1双+1单），$\alpha$-碳到酯基贡献 1 个键，酯基贡献 3 个键（1双+1单+1单），$\text{R}'$ 贡献 1 个键，$\alpha$-碳到 $\text{Ru}$ 贡献 1 个键，$\text{Ru}$ 到 $\text{Por}$ 贡献 4 个键，$\text{Por}$ 内部贡献 20 个键。
+根据加法原则，总键数 = $6 + 2 + 1 + 1 + 2 + 1 + 3 + 1 + 1 + 4 + 20 = 42$。
+由于题目要求计算图中所示结构的化学键总数，且排除氢键。
+因此，最终答案是 42。",,,,
+relationship,2_I_6,2,prob_bdea25f4bac0bdc659e5ac98,I_6,"{""Reasoning_Type_Accuracy"": 2}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 2}",数值计算,α-碳到酯基连接贡献 1 个键。,提取连接键数数据。,C_9,题干给出 α-碳原子与酯基羰基 C=O 相连，包含 1 个 C-C 单键。,"题干给出，结构中包含一个芳环基团 Ar。
+已知，Ar 通常代表一个苯环，包含 6 个 C-C 键。
+题干给出，结构中有一个 $\text{C}=\text{O}^+$ 双键。
+题干给出，该 $\text{C}=\text{O}^+$ 与 Ar 基团相连，包含 1 个 C-C 单键。
+题干给出，该 $\text{C}=\text{O}^+$ 与相邻 $\text{CH}_2$ 基团相连，包含 1 个 C-C 单键。
+题干给出，$\text{CH}_2$ 基团与酮羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酮羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酮羰基与 $\alpha$-碳原子相连，包含 1 个 C-C 单键。
+题干给出，$\alpha$-碳原子与酯基羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酯基羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酯基羰基与 $\text{OR}'$ 基团相连，包含 1 个 C-O 单键。
+题干给出，$\text{R}'$ 为烷基，至少包含 1 个 C-C 或 C-O 单键（此处按最简结构 $\text{R}'=\text{Me}$ 计算，含 1 个 C-C 键）。
+题干给出，$\alpha$-碳原子与 $\text{Ru}(\text{Por})$ 相连，包含 1 个 C-Ru 单键。
+已知，$\text{Por}$ 代表卟啉环，其结构包含 20 个 C-C 或 C-N 键。
+已知，$\text{Ru}$ 原子与卟啉环的 4 个氮原子相连，包含 4 个 Ru-N 单键。
+由于 Ar 贡献 6 个键，$\text{C}=\text{O}^+$ 部分贡献 2 个键（1双+1单），连接 $\text{CH}_2$ 贡献 1 个键，$\text{CH}_2$ 到酮基贡献 1 个键，酮基贡献 2 个键（1双+1单），$\alpha$-碳到酯基贡献 1 个键，酯基贡献 3 个键（1双+1单+1单），$\text{R}'$ 贡献 1 个键，$\alpha$-碳到 $\text{Ru}$ 贡献 1 个键，$\text{Ru}$ 到 $\text{Por}$ 贡献 4 个键，$\text{Por}$ 内部贡献 20 个键。
+根据加法原则，总键数 = $6 + 2 + 1 + 1 + 2 + 1 + 3 + 1 + 1 + 4 + 20 = 42$。
+由于题目要求计算图中所示结构的化学键总数，且排除氢键。
+因此，最终答案是 42。",,,,
+relationship,2_I_8,2,prob_bdea25f4bac0bdc659e5ac98,I_8,"{""Reasoning_Type_Accuracy"": 1}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 1}",数值计算,R' 部分贡献 1 个键。,提取 R' 键数数据。,C_12,题干给出 R' 为烷基，按最简结构 R'=Me 计算，含 1 个 C-C 键。,"题干给出，结构中包含一个芳环基团 Ar。
+已知，Ar 通常代表一个苯环，包含 6 个 C-C 键。
+题干给出，结构中有一个 $\text{C}=\text{O}^+$ 双键。
+题干给出，该 $\text{C}=\text{O}^+$ 与 Ar 基团相连，包含 1 个 C-C 单键。
+题干给出，该 $\text{C}=\text{O}^+$ 与相邻 $\text{CH}_2$ 基团相连，包含 1 个 C-C 单键。
+题干给出，$\text{CH}_2$ 基团与酮羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酮羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酮羰基与 $\alpha$-碳原子相连，包含 1 个 C-C 单键。
+题干给出，$\alpha$-碳原子与酯基羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酯基羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酯基羰基与 $\text{OR}'$ 基团相连，包含 1 个 C-O 单键。
+题干给出，$\text{R}'$ 为烷基，至少包含 1 个 C-C 或 C-O 单键（此处按最简结构 $\text{R}'=\text{Me}$ 计算，含 1 个 C-C 键）。
+题干给出，$\alpha$-碳原子与 $\text{Ru}(\text{Por})$ 相连，包含 1 个 C-Ru 单键。
+已知，$\text{Por}$ 代表卟啉环，其结构包含 20 个 C-C 或 C-N 键。
+已知，$\text{Ru}$ 原子与卟啉环的 4 个氮原子相连，包含 4 个 Ru-N 单键。
+由于 Ar 贡献 6 个键，$\text{C}=\text{O}^+$ 部分贡献 2 个键（1双+1单），连接 $\text{CH}_2$ 贡献 1 个键，$\text{CH}_2$ 到酮基贡献 1 个键，酮基贡献 2 个键（1双+1单），$\alpha$-碳到酯基贡献 1 个键，酯基贡献 3 个键（1双+1单+1单），$\text{R}'$ 贡献 1 个键，$\alpha$-碳到 $\text{Ru}$ 贡献 1 个键，$\text{Ru}$ 到 $\text{Por}$ 贡献 4 个键，$\text{Por}$ 内部贡献 20 个键。
+根据加法原则，总键数 = $6 + 2 + 1 + 1 + 2 + 1 + 3 + 1 + 1 + 4 + 20 = 42$。
+由于题目要求计算图中所示结构的化学键总数，且排除氢键。
+因此，最终答案是 42。",,,,
+relationship,2_I_9,2,prob_bdea25f4bac0bdc659e5ac98,I_9,"{""Reasoning_Type_Accuracy"": 0}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 0}",数值计算,α-碳到 Ru 连接贡献 1 个键。,提取连接键数数据。,C_13,题干给出 α-碳原子与 Ru(Por) 相连，包含 1 个 C-Ru 单键。,"题干给出，结构中包含一个芳环基团 Ar。
+已知，Ar 通常代表一个苯环，包含 6 个 C-C 键。
+题干给出，结构中有一个 $\text{C}=\text{O}^+$ 双键。
+题干给出，该 $\text{C}=\text{O}^+$ 与 Ar 基团相连，包含 1 个 C-C 单键。
+题干给出，该 $\text{C}=\text{O}^+$ 与相邻 $\text{CH}_2$ 基团相连，包含 1 个 C-C 单键。
+题干给出，$\text{CH}_2$ 基团与酮羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酮羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酮羰基与 $\alpha$-碳原子相连，包含 1 个 C-C 单键。
+题干给出，$\alpha$-碳原子与酯基羰基 $\text{C}=\text{O}$ 相连，包含 1 个 C-C 单键。
+题干给出，酯基羰基包含 1 个 $\text{C}=\text{O}$ 双键。
+题干给出，酯基羰基与 $\text{OR}'$ 基团相连，包含 1 个 C-O 单键。
+题干给出，$\text{R}'$ 为烷基，至少包含 1 个 C-C 或 C-O 单键（此处按最简结构 $\text{R}'=\text{Me}$ 计算，含 1 个 C-C 键）。
+题干给出，$\alpha$-碳原子与 $\text{Ru}(\text{Por})$ 相连，包含 1 个 C-Ru 单键。
+已知，$\text{Por}$ 代表卟啉环，其结构包含 20 个 C-C 或 C-N 键。
+已知，$\text{Ru}$ 原子与卟啉环的 4 个氮原子相连，包含 4 个 Ru-N 单键。
+由于 Ar 贡献 6 个键，$\text{C}=\text{O}^+$ 部分贡献 2 个键（1双+1单），连接 $\text{CH}_2$ 贡献 1 个键，$\text{CH}_2$ 到酮基贡献 1 个键，酮基贡献 2 个键（1双+1单），$\alpha$-碳到酯基贡献 1 个键，酯基贡献 3 个键（1双+1单+1单），$\text{R}'$ 贡献 1 个键，$\alpha$-碳到 $\text{Ru}$ 贡献 1 个键，$\text{Ru}$ 到 $\text{Por}$ 贡献 4 个键，$\text{Por}$ 内部贡献 20 个键。
+根据加法原则，总键数 = $6 + 2 + 1 + 1 + 2 + 1 + 3 + 1 + 1 + 4 + 20 = 42$。
+由于题目要求计算图中所示结构的化学键总数，且排除氢键。
+因此，最终答案是 42。",,,,
+relationship,3_I_6,3,prob_0e03f26985564f040af30a22,I_6,"{""Dependency_Completeness"": 5}","{""Dependency_Completeness"": 5, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 9, ""Reasoning_Type_Accuracy"": 10}",逻辑推导,由杂合子频率降低且纯合子频率升高，推导出该人群不处于哈代 - 温伯格平衡状态。,基于频率偏离方向判断种群遗传状态。,I_5,对比发现实际杂合子频率 45% 小于理论平衡频率 48.56%。,"题干给出，基因型 AA 的频率为 $36\%$。
+题干给出，基因型 Aa 的频率为 $45\%$。
+已知，所有基因型频率之和为 $100\%$。
+根据频率加和原理，可得公式：$f(AA) + f(Aa) + f(aa) = 100\%$。
+将 $f(AA) = 36\%$ 和 $f(Aa) = 45\%$ 代入上述公式，可得 $36\% + 45\% + f(aa) = 100\%$。
+计算可得，$f(aa) = 19\%$。
+已知，等位基因 A 的频率 $p = f(AA) + \frac{1}{2}f(Aa)$。
+将 $f(AA) = 36\%$ 和 $f(Aa) = 45\%$ 代入上述公式，可得 $p = 36\% + 22.5\% = 58.5\%$。
+已知，等位基因 a 的频率 $q = f(aa) + \frac{1}{2}f(Aa)$。
+将 $f(aa) = 19\%$ 和 $f(Aa) = 45\%$ 代入上述公式，可得 $q = 19\% + 22.5\% = 41.5\%$。
+根据哈代-温伯格定律，平衡状态下杂合子频率应为 $2pq$。
+将 $p = 58.5\%$ 和 $q = 41.5\%$ 代入公式 $2pq$，可得 $2 \times 0.585 \times 0.415 \approx 48.56\%$。
+由于实际杂合子频率 $45\%$ 小于理论平衡频率 $48.56\%$。
+由于杂合子频率降低且纯合子频率升高，说明该人群不处于哈代-温伯格平衡状态。
+由于这种偏离方向通常与非随机交配（如近亲繁殖）相关。
+因此，最终答案是 近亲繁殖。",,,,
+relationship,3_I_7,3,prob_0e03f26985564f040af30a22,I_7,"{""Dependency_Completeness"": 5}","{""Dependency_Completeness"": 5, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 9, ""Reasoning_Type_Accuracy"": 10}",逻辑推导,由这种偏离方向（杂合子减少）通常与非随机交配（如近亲繁殖）相关，推导出原因为近亲繁殖。,根据遗传学原理将观察到的现象归因于特定机制。,I_6,由杂合子频率降低且纯合子频率升高，推导出该人群不处于哈代 - 温伯格平衡状态。,"题干给出，基因型 AA 的频率为 $36\%$。
+题干给出，基因型 Aa 的频率为 $45\%$。
+已知，所有基因型频率之和为 $100\%$。
+根据频率加和原理，可得公式：$f(AA) + f(Aa) + f(aa) = 100\%$。
+将 $f(AA) = 36\%$ 和 $f(Aa) = 45\%$ 代入上述公式，可得 $36\% + 45\% + f(aa) = 100\%$。
+计算可得，$f(aa) = 19\%$。
+已知，等位基因 A 的频率 $p = f(AA) + \frac{1}{2}f(Aa)$。
+将 $f(AA) = 36\%$ 和 $f(Aa) = 45\%$ 代入上述公式，可得 $p = 36\% + 22.5\% = 58.5\%$。
+已知，等位基因 a 的频率 $q = f(aa) + \frac{1}{2}f(Aa)$。
+将 $f(aa) = 19\%$ 和 $f(Aa) = 45\%$ 代入上述公式，可得 $q = 19\% + 22.5\% = 41.5\%$。
+根据哈代-温伯格定律，平衡状态下杂合子频率应为 $2pq$。
+将 $p = 58.5\%$ 和 $q = 41.5\%$ 代入公式 $2pq$，可得 $2 \times 0.585 \times 0.415 \approx 48.56\%$。
+由于实际杂合子频率 $45\%$ 小于理论平衡频率 $48.56\%$。
+由于杂合子频率降低且纯合子频率升高，说明该人群不处于哈代-温伯格平衡状态。
+由于这种偏离方向通常与非随机交配（如近亲繁殖）相关。
+因此，最终答案是 近亲繁殖。",,,,
+relationship,4_O,4,prob_3545170186e315c8b4d28db4,O,"{""Reasoning_Type_Accuracy"": 7}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 9, ""Reasoning_Type_Accuracy"": 7}",综合归纳,环境随时间变得更加多样化（Environment became more diverse over time）。,综合上述推理步骤，得出最终关于环境变化的结论。,I_3,环境变得更加多样化。,"题干给出，图像显示一个鸟类祖先种群随时间的变化。
+已知，时间轴方向由下而上。
+观察图像左侧，鸟类形态在时间轴上保持稳定。
+观察图像中间，鸟类形态在时间轴上保持稳定。
+观察图像右侧，在某一时间点出现了一个新的分支。
+由于出现了新的分支，且新分支的鸟类体型和喙形与原种群不同，所以发生了物种分化。
+根据生物进化理论，物种分化通常是由环境改变或生态位多样化引起的。
+由于图像显示从单一谱系演变为多个不同形态的谱系，所以环境变得更加多样化。
+因此，最终答案是 环境随时间变得更加多样化（Environment became more diverse over time）。",,,,
+relationship,5_I_2,5,prob_dd2baaf5f941225d72a96b49,I_2,"{""Dependency_Completeness"": 5, ""Dependency_Accuracy"": 5, ""Reasoning_Logic_Accuracy"": 6.5}","{""Dependency_Completeness"": 5, ""Dependency_Accuracy"": 5, ""Reasoning_Logic_Accuracy"": 6.5, ""Reasoning_Type_Accuracy"": 10}",逻辑推导,成熟的神经元不进行有丝分裂。,根据 I_1 得出的神经元不进入 M 期，结合 C_2 中有丝分裂即 M 过程的定义进行推导。,I_1|C_2,"成熟的神经元不再进入 M 期。
+有丝分裂是体细胞进行分裂产生两个遗传相同子细胞的过程。","题干给出，图片展示了细胞周期（Cell Cycle）包括 $G_1$、$S$、$G_2$ 和 $M$（有丝分裂）阶段。
+已知，有丝分裂（Mitosis）是体细胞进行分裂产生两个遗传相同子细胞的过程。
+已知，神经元（Neurons）在成熟后进入 $G_0$ 期。
+由于 $G_0$ 期是细胞周期的静止期，且该状态下的细胞不再进入 $M$ 期。
+所以，成熟的神经元不进行有丝分裂。
+因此，最终答案是 neurons。",,,,
+relationship,5_O,5,prob_dd2baaf5f941225d72a96b49,O,"{""Reasoning_Type_Accuracy"": 0}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 0}",综合归纳,neurons,综合 I_2 的结论，确定最终答案为 neurons。,I_2,成熟的神经元不进行有丝分裂。,"题干给出，图片展示了细胞周期（Cell Cycle）包括 $G_1$、$S$、$G_2$ 和 $M$（有丝分裂）阶段。
+已知，有丝分裂（Mitosis）是体细胞进行分裂产生两个遗传相同子细胞的过程。
+已知，神经元（Neurons）在成熟后进入 $G_0$ 期。
+由于 $G_0$ 期是细胞周期的静止期，且该状态下的细胞不再进入 $M$ 期。
+所以，成熟的神经元不进行有丝分裂。
+因此，最终答案是 neurons。",,,,
+relationship,6_O,6,prob_997ad9b277a83060a1af605d,O,"{""Reasoning_Type_Accuracy"": 0}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 0}",综合归纳,最终答案是表型可塑性（Phenotypic plasticity）。,基于 I_6 的判定，得出最终结论。,I_6,观察到的 T 水平变化模式符合表型可塑性的定义。,"题干给出，非繁殖季节（Non-breeding season）中，助手雄鸟（Helper male）的平均T水平约为10。
+题干给出，非繁殖季节（Non-breeding season）中，繁殖雄鸟（Breeding male）的平均T水平约为10。
+由于非繁殖季节两组个体的T水平相等，所以此时T水平与社会角色无关。
+题干给出，繁殖季节（Breeding season）中，助手雄鸟（Helper male）的平均T水平约为10。
+题干给出，繁殖季节（Breeding season）中，繁殖雄鸟（Breeding male）的平均T水平约为50。
+由于繁殖季节中，繁殖雄鸟的T水平显著高于助手雄鸟，所以T水平随社会角色而变化。
+由于T水平在不同季节和不同社会角色之间表现出差异，且与繁殖行为相关，这符合表型可塑性的定义。
+因此，最终答案是 表型可塑性（Phenotypic plasticity）。",,,,
+relationship,7_I_1,7,prob_0c4135c7b3145d9593ca05d0,I_1,"{""Reasoning_Type_Accuracy"": 4}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 4}",逻辑推导,在吡嗪环 2 位添加氨基，初步构建片段 Nc1nccn1。,将氨基取代基连接到吡嗪环基础结构的 2 位碳原子上。,C_4|C_9,"吡嗪环的 2 位连接有一个氨基（-NH2）。
+吡嗪环的基础 SMILES 结构为 n1ccnc1。","题干给出，目标分子为含有氯、溴和氨基的吡嗪衍生物。
+已知，该分子的核心结构为吡嗪环（pyrazine）。
+已知，吡嗪环的1位和4位为氮原子。
+已知，吡嗪环的2位连接有一个氨基（-NH2）。
+已知，吡嗪环的3位连接有一个溴原子（-Br）。
+已知，吡嗪环的5位连接有一个溴原子（-Br）。
+已知，吡嗪环的6位连接有一个氯原子（-Cl）。
+根据化学结构命名规则，该分子为 3,5-dibromo-6-chloropyrazin-2-amine。
+将该结构转换为SMILES表达式。
+吡嗪环基础结构为 n1ccnc1。
+在2位添加氨基，得 Nc1nccn1。
+在3位添加溴，得 Nc1nccn1Br（此处编号需调整）。
+在5位添加溴，得 Nc1nccn1(Br)Br。
+在6位添加氯，得 Nc1nccn1(Br)Cl。
+重新排列原子顺序以符合标准SMILES规范。
+吡嗪环原子顺序为 N1-C2-N3-C4-C5-C6。
+2位（C）连 NH2 $\rightarrow$ Nc1。
+3位（N） $\rightarrow$ n1。
+4位（C）连 Br $\rightarrow$ c(Br)。
+5位（N） $\rightarrow$ n。
+6位（C）连 Br $\rightarrow$ c(Br)。
+1位（C）连 Cl $\rightarrow$ c1Cl。
+组合得 Nc1nccn1(Br)Cl 形式的变体。
+标准SMILES表示为 Nc1nccn(Br)c1Cl 或 Nc1nccn(Br)c1Cl 的异构体。
+根据图像中的取代位置：2-NH2, 3-Br, 5-Br, 6-Cl。
+对应SMILES为 Nc1nccn(Br)c1Cl 是错误的，应为 Nc1nccn(Br)c1Cl 的正确拓扑。
+正确拓扑为：Nc1nccn(Br)c1Cl $\rightarrow$ 氨基在2，溴在3，溴在5，氯在6。
+验证：Nc1nccn(Br)c1Cl $\rightarrow$ N(1)-C(2)(NH2)-N(3)-C(4)(Br)-N(5)-C(6)(Br)-C(1)(Cl) 不符。
+重新构建：Nc1nccn(Br)c1Cl $\rightarrow$ 吡嗪环 n1ccnc1。
+2位-NH2: Nc1nccn1。
+3位-Br: Nc1nccn1Br (错误)。
+正确路径：Nc1nccn(Br)c1Cl $\rightarrow$ 氨基在1，氮在2，碳在3(Br)，氮在4，碳在5(Br)，碳在6(Cl)。
+对应结构为 3,5-dibromo-6-chloropyrazin-2-amine。
+其SMILES表达式为 Nc1nccn(Br)c1Cl (不正确)。
+正确SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ 应该是 Nc1nccn(Br)c1Cl 的修正版。
+正确表达为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+再次核对：Nc1nccn(Br)c1Cl $\rightarrow$ N(1)C(2)(NH2)N(3)C(4)(Br)N(5)C(6)(Br)C(1)(Cl) 也不对。
+正确SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+正确写法：Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+实际上，该结构的SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+修正为：Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+正确SMILES为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+最终确定为 Nc1nccn(Br)c1Cl $\rightarrow$ Nc1nccn(Br)c1Cl。
+正确SMILES为 Nc1",,,,
+relationship,8_I_9,8,open_dcd221a3f513ed86f798af49,I_9,"{""Dependency_Completeness"": 5}","{""Dependency_Completeness"": 5, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 10}",对比分析,第二组顺序中硝基苯应处于最慢端，而命题 (2) 将其置于最快端，判定 (2) 错误。,将推导出的第二组顺序与命题 (2) 进行核对，发现矛盾。,I_7,第二组反应速率顺序为：硝基苯 < 苯甲酸 < N-乙基苯胺 < 苯胺。,"题干给出，第一组化合物为苯甲酸、乙苯、苯酚。
+题干给出，第二组化合物为苯甲酸、N-乙基苯胺、苯胺、硝基苯。
+已知，硝化反应是亲电取代反应。
+已知，电子给体（推电子基团）能增加苯环电子密度，提高反应速率。
+已知，电子受体（吸电子基团）能降低苯环电子密度，降低反应速率。
+已知，$-\text{OH}$ 为强推电子基团。
+已知，$-\text{NH}_2$ 为强推电子基团。
+已知，$-\text{NHC}_2\text{H}_5$ 为中强推电子基团。
+已知，$-\text{CH}_2\text{CH}_3$ 为弱推电子基团。
+已知，$-\text{CO}_2\text{H}$ 为吸电子基团。
+已知，$-\text{NO}_2$ 为强吸电子基团。
+由于 $-\text{OH}$ 的推电子能力强于 $-\text{CH}_2\text{CH}_3$，且 $-\text{CH}_2\text{CH}_3$ 的推电子能力强于 $-\text{CO}_2\text{H}$ 的吸电子效应，所以反应速率顺序为：苯甲酸 < 乙苯 < 苯酚。
+由于 $-\text{NH}_2$ 的推电子能力强于 $-\text{NHC}_2\text{H}_5$，且 $-\text{NHC}_2\text{H}_5$ 的推电子能力强于 $-\text{CO}_2\text{H}$ 的吸电子效应，且 $-\text{NO}_2$ 的吸电子能力最强，所以反应速率顺序为：硝基苯 < 苯甲酸 < N-乙基苯胺 < 苯胺。
+由于第一组顺序 $\text{C}_6\text{H}_5\text{CO}_2\text{H} < \text{C}_6\text{H}_5\text{CH}_2\text{CH}_3 < \text{C}_6\text{H}_5\text{OH}$ 符合电子效应规律，所以 (1) 正确。
+由于第二组顺序 $\text{C}_6\text{H}_5\text{CO}_2\text{H} < \text{C}_6\text{H}_5\text{NHC}_2\text{H}_5 < \text{C}_6\text{H}_5\text{NH}_2 < \text{C}_6\text{H}_5\text{NO}_2$ 中，硝基苯应处于最慢端，所以 (2) 错误。
+因此，最终答案是 (1) 正确，(2) 错误。",,,,
+relationship,9_I_2,9,prob_ab641c8582b980cce0e97c0b,I_2,"{""Dependency_Accuracy"": 7.5}","{""Dependency_Completeness"": 10, ""Dependency_Accuracy"": 7.5, ""Reasoning_Logic_Accuracy"": 8.5, ""Reasoning_Type_Accuracy"": 10}",逻辑推导,OR^3 基团以 OR^3-的形式离去。,根据第二个电子转移箭头的指向及化学常识推导基团离去形式。,C_3|C_5,"第二个电子转移箭头从 C-OR^3 键指向氧原子 O。
+电子转移箭头从 C-OR^3 键指向氧原子表示 C-O 键断裂且电子转移至氧原子，OR^3 基团以 OR^3-形式离去。","题干给出，反应物为一个带有负电荷氧原子的中间体。
+已知，第一个电子转移箭头从负电荷氧原子 $\text{O}^-$ 指向相邻的碳原子。
+由于该箭头表示形成 $\text{C=O}$ 双键，所以该氧原子与碳原子之间由单键变为双键。
+已知，第二个电子转移箭头从 $\text{C-OR}^3$ 键指向氧原子 $\text{O}$。
+由于该箭头表示 $\text{C-O}$ 键断裂且电子转移至氧原子，所以 $\text{OR}^3$ 基团以 $\text{OR}^3-$ 的形式离去。
+根据电子转移结果，中心碳原子由 $\text{sp}^3$ 杂化变为 $\text{sp}^2$ 杂化。
+由此可得，产物包含一个酮（或酯）类结构和一个烷氧基阴离子。
+将上述结构转化为 SMILES 表达式，主分子为 $\text{R}^2\text{C(=O)CH(R)COOR}^1$，离去基团为 $[\text{O}^-]\text{R}^3$。
+因此，最终答案是 CC(=O)CC(C)C(=O)OC.CO- (以具体 R 基团为甲基示例，通用形式为 $\text{R}^2\text{C(=O)CH(R)COOR}^1 \cdot \text{R}^3\text{O}^-$)。",,,,
+relationship,9_I_3,9,prob_ab641c8582b980cce0e97c0b,I_3,"{""Dependency_Completeness"": 5, ""Dependency_Accuracy"": 5}","{""Dependency_Completeness"": 5, ""Dependency_Accuracy"": 5, ""Reasoning_Logic_Accuracy"": 9, ""Reasoning_Type_Accuracy"": 10}",逻辑推导,中心碳原子由 sp^3 杂化变为 sp^2 杂化。,基于成键变化结果推导杂化方式的改变。,I_1|C_6,"氧原子与相邻碳原子之间由单键变为双键。
+中心碳原子由 sp^3 杂化变为 sp^2 杂化对应形成双键的过程。","题干给出，反应物为一个带有负电荷氧原子的中间体。
+已知，第一个电子转移箭头从负电荷氧原子 $\text{O}^-$ 指向相邻的碳原子。
+由于该箭头表示形成 $\text{C=O}$ 双键，所以该氧原子与碳原子之间由单键变为双键。
+已知，第二个电子转移箭头从 $\text{C-OR}^3$ 键指向氧原子 $\text{O}$。
+由于该箭头表示 $\text{C-O}$ 键断裂且电子转移至氧原子，所以 $\text{OR}^3$ 基团以 $\text{OR}^3-$ 的形式离去。
+根据电子转移结果，中心碳原子由 $\text{sp}^3$ 杂化变为 $\text{sp}^2$ 杂化。
+由此可得，产物包含一个酮（或酯）类结构和一个烷氧基阴离子。
+将上述结构转化为 SMILES 表达式，主分子为 $\text{R}^2\text{C(=O)CH(R)COOR}^1$，离去基团为 $[\text{O}^-]\text{R}^3$。
+因此，最终答案是 CC(=O)CC(C)C(=O)OC.CO- (以具体 R 基团为甲基示例，通用形式为 $\text{R}^2\text{C(=O)CH(R)COOR}^1 \cdot \text{R}^3\text{O}^-$)。",,,,
+relationship,9_I_4,9,prob_ab641c8582b980cce0e97c0b,I_4,"{""Dependency_Completeness"": 7}","{""Dependency_Completeness"": 7, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 9, ""Reasoning_Type_Accuracy"": 10}",综合归纳,产物包含一个酮（或酯）类结构和一个烷氧基阴离子。,综合键的形成和基团的离去得出产物结构特征。,I_1|I_2,"氧原子与相邻碳原子之间由单键变为双键。
+OR^3 基团以 OR^3-的形式离去。","题干给出，反应物为一个带有负电荷氧原子的中间体。
+已知，第一个电子转移箭头从负电荷氧原子 $\text{O}^-$ 指向相邻的碳原子。
+由于该箭头表示形成 $\text{C=O}$ 双键，所以该氧原子与碳原子之间由单键变为双键。
+已知，第二个电子转移箭头从 $\text{C-OR}^3$ 键指向氧原子 $\text{O}$。
+由于该箭头表示 $\text{C-O}$ 键断裂且电子转移至氧原子，所以 $\text{OR}^3$ 基团以 $\text{OR}^3-$ 的形式离去。
+根据电子转移结果，中心碳原子由 $\text{sp}^3$ 杂化变为 $\text{sp}^2$ 杂化。
+由此可得，产物包含一个酮（或酯）类结构和一个烷氧基阴离子。
+将上述结构转化为 SMILES 表达式，主分子为 $\text{R}^2\text{C(=O)CH(R)COOR}^1$，离去基团为 $[\text{O}^-]\text{R}^3$。
+因此，最终答案是 CC(=O)CC(C)C(=O)OC.CO- (以具体 R 基团为甲基示例，通用形式为 $\text{R}^2\text{C(=O)CH(R)COOR}^1 \cdot \text{R}^3\text{O}^-$)。",,,,
+relationship,9_I_5,9,prob_ab641c8582b980cce0e97c0b,I_5,"{""Dependency_Completeness"": 6}","{""Dependency_Completeness"": 6, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 10, ""Reasoning_Type_Accuracy"": 10}",条件转化,主分子 SMILES 表达式为 R^2C(=O)CH(R)COOR^1，离去基团 SMILES 表达式为 [O^-]R^3。,将推导出的化学结构转化为通用的 SMILES 表达式。,I_4,产物包含一个酮（或酯）类结构和一个烷氧基阴离子。,"题干给出，反应物为一个带有负电荷氧原子的中间体。
+已知，第一个电子转移箭头从负电荷氧原子 $\text{O}^-$ 指向相邻的碳原子。
+由于该箭头表示形成 $\text{C=O}$ 双键，所以该氧原子与碳原子之间由单键变为双键。
+已知，第二个电子转移箭头从 $\text{C-OR}^3$ 键指向氧原子 $\text{O}$。
+由于该箭头表示 $\text{C-O}$ 键断裂且电子转移至氧原子，所以 $\text{OR}^3$ 基团以 $\text{OR}^3-$ 的形式离去。
+根据电子转移结果，中心碳原子由 $\text{sp}^3$ 杂化变为 $\text{sp}^2$ 杂化。
+由此可得，产物包含一个酮（或酯）类结构和一个烷氧基阴离子。
+将上述结构转化为 SMILES 表达式，主分子为 $\text{R}^2\text{C(=O)CH(R)COOR}^1$，离去基团为 $[\text{O}^-]\text{R}^3$。
+因此，最终答案是 CC(=O)CC(C)C(=O)OC.CO- (以具体 R 基团为甲基示例，通用形式为 $\text{R}^2\text{C(=O)CH(R)COOR}^1 \cdot \text{R}^3\text{O}^-$)。",,,,
+relationship,9_I_6,9,prob_ab641c8582b980cce0e97c0b,I_6,"{""Dependency_Completeness"": 5, ""Reasoning_Type_Accuracy"": 2}","{""Dependency_Completeness"": 5, ""Dependency_Accuracy"": 10, ""Reasoning_Logic_Accuracy"": 9, ""Reasoning_Type_Accuracy"": 2}",数值计算,具体示例下主分子为 CC(=O)CC(C)C(=O)OC，离去基团为 CO-。,将通用 SMILES 表达式中的 R 基团替换为甲基进行具体化计算。,I_5,主分子 SMILES 表达式为 R^2C(=O)CH(R)COOR^1，离去基团 SMILES 表达式为 [O^-]R^3。,"题干给出，反应物为一个带有负电荷氧原子的中间体。
+已知，第一个电子转移箭头从负电荷氧原子 $\text{O}^-$ 指向相邻的碳原子。
+由于该箭头表示形成 $\text{C=O}$ 双键，所以该氧原子与碳原子之间由单键变为双键。
+已知，第二个电子转移箭头从 $\text{C-OR}^3$ 键指向氧原子 $\text{O}$。
+由于该箭头表示 $\text{C-O}$ 键断裂且电子转移至氧原子，所以 $\text{OR}^3$ 基团以 $\text{OR}^3-$ 的形式离去。
+根据电子转移结果，中心碳原子由 $\text{sp}^3$ 杂化变为 $\text{sp}^2$ 杂化。
+由此可得，产物包含一个酮（或酯）类结构和一个烷氧基阴离子。
+将上述结构转化为 SMILES 表达式，主分子为 $\text{R}^2\text{C(=O)CH(R)COOR}^1$，离去基团为 $[\text{O}^-]\text{R}^3$。
+因此，最终答案是 CC(=O)CC(C)C(=O)OC.CO- (以具体 R 基团为甲基示例，通用形式为 $\text{R}^2\text{C(=O)CH(R)COOR}^1 \cdot \text{R}^3\text{O}^-$)。",,,,

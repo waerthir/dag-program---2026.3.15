@@ -1,0 +1,176 @@
+我有一份cot文件，在 data / CoT 下，内容如下：
+[
+  {
+    "problem_id": "prob_dc4459f18d9a0bfc524c910b",
+    "reasoning_chain_model": "题干给出，图示为原核生物DNA同时进行复制和转录的过程。\n题干给出，位置1的碱基是胸腺嘧啶（T）。\n已知，DNA双链之间遵循碱基互补配对原则。\n由于位置1位于一条DNA链上，其对应的互补链位置A必须与其配对。\n根据碱基互补配对原则，胸腺嘧啶（T）与腺嘌呤（A）配对。\n所以，位置A的碱基是腺嘌呤（A）。\n已知，转录过程是以DNA的一条链为模板合成RNA。\n观察图示，位置a所在的RNA片段是由包含位置A的DNA链作为模板转录而来的。\n根据RNA转录的碱基互补配对原则，DNA中的腺嘌呤（A）对应转录为RNA中的尿嘧啶（U）。\n由于位置A是腺嘌呤（A），所以其对应的转录产物位置a是尿嘧啶（U）。\n因此，最终答案是 尿嘧啶 (Uracil)。"
+  },
+  {...},
+  ...
+]
+
+我有一份cot graph文件，在 data / CoT_o 下，内容如下：
+[
+  {
+    "id": 0,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出图示为原核生物 DNA 同时进行复制和转录的过程。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "题干给出位置 1 的碱基是胸腺嘧啶（T）。"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "DNA 双链之间遵循碱基互补配对原则。"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "在 DNA 碱基互补配对中，胸腺嘧啶（T）与腺嘌呤（A）配对。"
+          },
+          {
+            "id": "C_5",
+            "type": "文字条件",
+            "content": "已知转录过程是以 DNA 的一条链为模板合成 RNA。"
+          },
+          {
+            "id": "C_6",
+            "type": "图像条件",
+            "content": "观察图示，位置 a 所在的 RNA 片段是由包含位置 A 的 DNA 链作为模板转录而来的。"
+          },
+          {
+            "id": "C_7",
+            "type": "学科常识",
+            "content": "在 RNA 转录的碱基互补配对中，DNA 中的腺嘌呤（A）对应转录为 RNA 中的尿嘧啶（U）。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "位置 1 位于一条 DNA 链上，其对应的互补链位置 A 必须与其配对。",
+            "parents": [
+              "C_2"
+            ],
+            "reasoning_logic": "基于 DNA 双链结构及位置关系进行推导。"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "位置 A 的碱基是腺嘌呤（A）。",
+            "parents": [
+              "I_1",
+              "C_3",
+              "C_4"
+            ],
+            "reasoning_logic": "根据碱基互补配对原则，由位置 1 为 T 推导出互补位置 A 为 A。"
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "位置 a 是位置 A 对应的转录产物。",
+            "parents": [
+              "C_5",
+              "C_6"
+            ],
+            "reasoning_logic": "结合转录定义与图示信息，确认模板链与产物链的对应关系。"
+          },
+          {
+            "id": "I_4",
+            "type": "逻辑推导",
+            "content": "位置 a 的碱基是尿嘧啶（U）。",
+            "parents": [
+              "I_2",
+              "I_3",
+              "C_7"
+            ],
+            "reasoning_logic": "根据 RNA 转录碱基互补配对原则，由模板链位置 A 为 A 推导出产物位置 a 为 U。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 尿嘧啶 (Uracil)。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "综合上述推理步骤得出最终结论。"
+        }
+      }
+    }
+  },
+  {...},
+  ...
+]
+
+你可以看到，graph文件时对cot文件的图表化规划。
+规划要求在src / dag.py下面
+
+我使用了评分制度，来评价图表是否忠实地，按照我的要求地反映了CoT的内容。
+
+最后的评价表有两个部分，第一个部分只关心节点，第二个部分关心关系
+
+节点部分的id为节点自身，关系部分的id为节点自身及其父节点组织起来的关系
+
+id第一个部分表示题号（题号时CoT文件的顺序，从0开始数），后面为节点自身的id
+
+它们都放置在 data / CoT_DAG_compare 下，后缀为_score：
+
+..._node_score是这样子
+[
+  {
+    "id": "0_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "0_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {...},
+  ...
+]
+
+..._relationship_score是这样子
+[
+  {
+    "id": "0_I_1",
+    "evaluation": {
+      "Dependency_Completeness": 0,
+      "Dependency_Accuracy": 0,
+      "Reasoning_Logic_Accuracy": 9,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {
+    "id": "0_I_2",
+    "evaluation": {
+      "Dependency_Completeness": 7.5,
+      "Dependency_Accuracy": 10,
+      "Reasoning_Logic_Accuracy": 10,
+      "Reasoning_Type_Accuracy": 10
+    }
+  },
+  {...},
+  ...
+]
+
+
+
+我现在需要针对评分低的地方人工审核，整理badcase。我应该写一份怎么样的脚本，给我意见。
+
+
+
+
