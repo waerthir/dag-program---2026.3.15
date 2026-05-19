@@ -148,11 +148,10 @@ def collect_relationship_badcases(cot_data, graph_index, relationship_scores, th
     return badcases
 
 
-def write_jsonl(items, path):
+def write_json(items, path):
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, "w", encoding=Config.encoding) as f:
-        for item in items:
-            f.write(json.dumps(item, ensure_ascii=False) + "\n")
+        json.dump(items, f, ensure_ascii=False, indent=2)
 
 
 def write_csv(items, path):
@@ -210,7 +209,7 @@ def build_default_paths(model_keyword):
         "graph_path": Config.graph_dir / f"output_cot20_{model_keyword}_all_graph.json",
         "node_score_path": Config.score_dir / f"output_cot20_{model_keyword}_compare_node_score.json",
         "relationship_score_path": Config.score_dir / f"output_cot20_{model_keyword}_compare_relationship_score.json",
-        "jsonl_path": Config.output_dir / f"output_cot20_{model_keyword}_badcase.jsonl",
+        "json_path": Config.output_dir / f"output_cot20_{model_keyword}_badcase.json",
         "csv_path": Config.output_dir / f"output_cot20_{model_keyword}_badcase.csv",
     }
 
@@ -223,6 +222,7 @@ def parse_args():
     parser.add_argument("--graph_path", type=Path)
     parser.add_argument("--node_score_path", type=Path)
     parser.add_argument("--relationship_score_path", type=Path)
+    parser.add_argument("--json_path", type=Path)
     parser.add_argument("--jsonl_path", type=Path)
     parser.add_argument("--csv_path", type=Path)
     parser.add_argument("--no_csv", action="store_true")
@@ -237,7 +237,7 @@ def main():
     graph_path = args.graph_path or paths["graph_path"]
     node_score_path = args.node_score_path or paths["node_score_path"]
     relationship_score_path = args.relationship_score_path or paths["relationship_score_path"]
-    jsonl_path = args.jsonl_path or paths["jsonl_path"]
+    json_path = args.json_path or args.jsonl_path or paths["json_path"]
     csv_path = args.csv_path or paths["csv_path"]
 
     cot_data = load_json(cot_path)
@@ -255,14 +255,14 @@ def main():
     )
     badcases = node_badcases + relationship_badcases
 
-    write_jsonl(badcases, jsonl_path)
+    write_json(badcases, json_path)
     if not args.no_csv:
         write_csv(badcases, csv_path)
 
     print(f"node badcase: {len(node_badcases)}")
     print(f"relationship badcase: {len(relationship_badcases)}")
     print(f"total badcase: {len(badcases)}")
-    print(f"jsonl saved to: {jsonl_path}")
+    print(f"json saved to: {json_path}")
     if not args.no_csv:
         print(f"csv saved to: {csv_path}")
 

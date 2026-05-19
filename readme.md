@@ -42,6 +42,7 @@ src/dag_badcase.py 现在可用参数如下。
 - --node_score_path：节点评分文件路径。对应 xxx_node_score.json。
 - --relationship_score_path：关系评分文件路径。对应 xxx_relationship_score.json。
 - --jsonl_path：输出 jsonl 路径。jsonl 保留信息最完整，包含 cot、node、parents、graph_context、review 字段。
+- --json_path：json路径，应该和上面的有一个写了就行。但是我不知道ai都改了啥，我一点代码都没看
 - --csv_path：输出 csv 路径。适合表格人工审核，内容比 jsonl 扁平一些。
 - --no_csv：只输出 jsonl，不输出 csv。
 
@@ -55,7 +56,7 @@ E:\TrashE\Miniconda3\envs\dag_env\python.exe src\dag_badcase.py `
 --relationship_score_path   data\CoT_DAG_compare\output_cot20_llava-onevision-72b_compare_relationship_score.json `
 --jsonl_path                data\CoT_DAG_badcase\output_cot20_llava-onevision-72b_badcase_threshold5.jsonl `
 --csv_path                  data\CoT_DAG_badcase\output_cot20_llava-onevision-72b_badcase_threshold5.csv `
---threshold 5
+--threshold                 5
 ```
 
 ## calc.py

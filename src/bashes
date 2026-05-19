@@ -15,3 +15,12 @@ E:\TrashE\Miniconda3\envs\dag_env\python.exe src\dag_badcase.py `
 --jsonl_path                data\CoT_DAG_badcase\output_cot20_nvlm-d-72b_badcase_threshold5.jsonl `
 --csv_path                  data\CoT_DAG_badcase\output_cot20_nvlm-d-72b_badcase_threshold5.csv `
 --threshold 5
+
+E:\TrashE\Miniconda3\envs\dag_env\python.exe src\dag_badcase.py `
+--cot_path                  data\CoT\output_cot20_llava-onevision-72b.json `
+--graph_path                data\CoT_o\output_cot20_llava-onevision-72b_all_graph.json `
+--node_score_path           data\CoT_DAG_compare\output_cot20_llava-onevision-72b_compare_node_score.json `
+--relationship_score_path   data\CoT_DAG_compare\output_cot20_llava-onevision-72b_compare_relationship_score.json `
+--json_path                 data\CoT_DAG_badcase\output_cot20_llava-onevision-72b_badcase_threshold5.json `
+--csv_path                  data\CoT_DAG_badcase\output_cot20_llava-onevision-72b_badcase_threshold5.csv `
+--threshold                 5
