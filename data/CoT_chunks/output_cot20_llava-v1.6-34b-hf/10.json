@@ -5,132 +5,175 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
-          "content": "题干给出过渡态结构图像中忽略箭头。",
-          "reasoning_logic": "从题目文本中提取的初始约束条件。"
+          "type": "文字信息",
+          "content": "题干给出过渡态结构图像中忽略箭头"
         },
         {
           "id": "C_2",
           "type": "学科常识",
-          "content": "SMILES 表达式是一种化学分子结构的表示方法。",
-          "reasoning_logic": "题目中明确陈述的化学背景知识。"
+          "content": "SMILES表达式是一种化学分子结构的表示方法"
         },
         {
           "id": "C_3",
-          "type": "文字条件",
-          "content": "SMILES 规则：每个原子用一个字母表示（如 C 表示碳，O 表示氧）。",
-          "reasoning_logic": "从题目给出的规则列表中提取的原子表示规则。"
+          "type": "学科常识",
+          "content": "SMILES表达式中每个原子用一个字母表示"
         },
         {
           "id": "C_4",
-          "type": "文字条件",
-          "content": "SMILES 规则：原子之间用短线表示化学键（如 C-C 表示单键）。",
-          "reasoning_logic": "从题目给出的规则列表中提取的化学键表示规则。"
+          "type": "学科常识",
+          "content": "SMILES表达式中C表示碳原子"
         },
         {
           "id": "C_5",
-          "type": "文字条件",
-          "content": "SMILES 规则：氢原子通常省略，除非它们是反应物或产物的一部分。",
-          "reasoning_logic": "从题目给出的规则列表中提取的氢原子处理规则。"
+          "type": "学科常识",
+          "content": "SMILES表达式中O表示氧原子"
         },
         {
           "id": "C_6",
-          "type": "文字条件",
-          "content": "SMILES 规则：环状结构用大写字母表示。",
-          "reasoning_logic": "从题目给出的规则列表中提取的环状结构表示规则。"
+          "type": "学科常识",
+          "content": "SMILES表达式中原子之间用短线表示化学键"
         },
         {
           "id": "C_7",
-          "type": "文字条件",
-          "content": "SMILES 规则：反应物和产物用箭头表示。",
-          "reasoning_logic": "从题目给出的规则列表中提取的反应表示规则。"
+          "type": "学科常识",
+          "content": "SMILES表达式中C-C表示碳原子之间有单键"
         },
         {
           "id": "C_8",
-          "type": "文字条件",
-          "content": "应用规则得出的中间结果：碳原子用 C 表示。",
-          "reasoning_logic": "题目中列出的具体元素映射结果。"
+          "type": "学科常识",
+          "content": "SMILES表达式中氢原子通常省略"
         },
         {
           "id": "C_9",
-          "type": "文字条件",
-          "content": "应用规则得出的中间结果：氢原子省略。",
-          "reasoning_logic": "题目中列出的具体元素映射结果。"
+          "type": "学科常识",
+          "content": "SMILES表达式中反应物或产物的一部分的氢原子不省略"
         },
         {
           "id": "C_10",
-          "type": "文字条件",
-          "content": "应用规则得出的中间结果：氧原子用 O 表示。",
-          "reasoning_logic": "题目中列出的具体元素映射结果。"
+          "type": "学科常识",
+          "content": "SMILES表达式中环状结构用大写字母表示"
         },
         {
           "id": "C_11",
-          "type": "文字条件",
-          "content": "应用规则得出的中间结果：氮原子用 N 表示。",
-          "reasoning_logic": "题目中列出的具体元素映射结果。"
+          "type": "学科常识",
+          "content": "SMILES表达式中C1=CC=C2表示一个六元环"
         },
         {
           "id": "C_12",
-          "type": "文字条件",
-          "content": "应用规则得出的中间结果：硫原子用 S 表示。",
-          "reasoning_logic": "题目中列出的具体元素映射结果。"
+          "type": "学科常识",
+          "content": "SMILES表达式中反应物和产物用箭头表示"
         },
         {
           "id": "C_13",
-          "type": "文字条件",
-          "content": "过渡态结构中包含以下原子标识序列：C1, C2, C3, N1, N2, S1, S2, Zn1, Zn2, Br1 至 Br275。",
-          "reasoning_logic": "从题目罗列的长串原子标识中提取的结构组成信息。"
+          "type": "学科常识",
+          "content": "SMILES表达式中C1=CC=C2 -> C1=CC=C2表示一个反应"
+        },
+        {
+          "id": "C_14",
+          "type": "图像信息",
+          "content": "过渡态结构中包含碳原子"
+        },
+        {
+          "id": "C_15",
+          "type": "图像信息",
+          "content": "过渡态结构中包含氧原子"
+        },
+        {
+          "id": "C_16",
+          "type": "图像信息",
+          "content": "过渡态结构中包含氮原子"
+        },
+        {
+          "id": "C_17",
+          "type": "图像信息",
+          "content": "过渡态结构中包含硫原子"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
-          "type": "逻辑推导",
-          "content": "根据 SMILES 规则及忽略箭头的约束，确定过渡态结构的原子表示基础。",
+          "type": "条件转化",
+          "content": "过渡态结构中的碳原子用C表示",
           "parents": [
-            "C_1",
-            "C_2",
             "C_3",
             "C_4",
-            "C_5",
-            "C_6",
-            "C_7"
+            "C_14"
           ],
-          "reasoning_logic": "综合题目给出的所有 SMILES 定义规则和图像约束，建立解析框架。"
+          "reasoning_logic": "将SMILES原子表示规则应用于过渡态结构中的碳原子"
         },
         {
           "id": "I_2",
-          "type": "逻辑推导",
-          "content": "确认特定元素（C, H, O, N, S）在过渡态中的具体表示形式。",
+          "type": "条件转化",
+          "content": "过渡态结构中的氢原子省略",
           "parents": [
-            "C_8",
-            "C_9",
-            "C_10",
-            "C_11",
-            "C_12"
+            "C_8"
           ],
-          "reasoning_logic": "将通用规则实例化为题目中提到的具体元素的处理方式。"
+          "reasoning_logic": "将SMILES氢原子省略规则应用于过渡态结构"
         },
         {
           "id": "I_3",
+          "type": "条件转化",
+          "content": "过渡态结构中的氧原子用O表示",
+          "parents": [
+            "C_3",
+            "C_5",
+            "C_15"
+          ],
+          "reasoning_logic": "将SMILES原子表示规则应用于过渡态结构中的氧原子"
+        },
+        {
+          "id": "I_4",
+          "type": "条件转化",
+          "content": "过渡态结构中的氮原子用N表示",
+          "parents": [
+            "C_3",
+            "C_16"
+          ],
+          "reasoning_logic": "将SMILES原子表示规则应用于过渡态结构中的氮原子"
+        },
+        {
+          "id": "I_5",
+          "type": "条件转化",
+          "content": "过渡态结构中的硫原子用S表示",
+          "parents": [
+            "C_3",
+            "C_17"
+          ],
+          "reasoning_logic": "将SMILES原子表示规则应用于过渡态结构中的硫原子"
+        },
+        {
+          "id": "I_6",
+          "type": "条件转化",
+          "content": "过渡态结构的SMILES表示中忽略箭头",
+          "parents": [
+            "C_1",
+            "C_12"
+          ],
+          "reasoning_logic": "结合题干要求与SMILES中箭头表示反应的规则处理过渡态结构"
+        },
+        {
+          "id": "I_7",
           "type": "综合归纳",
-          "content": "结合原子标识序列与元素表示规则，构建过渡态结构的完整原子清单。",
+          "content": "应用SMILES规则后得到过渡态结构的原子表示规则",
           "parents": [
             "I_1",
             "I_2",
-            "C_13"
+            "I_3",
+            "I_4",
+            "I_5",
+            "I_6"
           ],
-          "reasoning_logic": "将识别出的原子序列（C1-Br275 等）与已确定的元素符号规则进行匹配和整合。"
+          "reasoning_logic": "综合碳原子表示、氢原子省略、氧原子表示、氮原子表示、硫原子表示和忽略箭头的处理结果"
         }
       ],
       "final_conclusion": {
         "id": "O",
         "type": "综合归纳",
-        "content": "过渡态结构的 SMILES 表达基础由 C, N, S, O, Zn, Br 等原子按特定编号（C1-C3, N1-N2, S1-S2, Zn1-Zn2, Br1-Br275）组成，且氢原子被省略，无箭头指示。",
+        "content": "将SMILES规则应用于过渡态结构后，碳原子用C表示，氢原子省略，氧原子用O表示，氮原子用N表示，硫原子用S表示，并忽略过渡态结构图像中的箭头",
         "parents": [
-          "I_3"
+          "I_7"
         ],
-        "reasoning_logic": "综合所有原子识别结果和规则应用情况，得出关于该过渡态结构组成的最终描述。"
+        "reasoning_logic": "由各项SMILES表示规则在过渡态结构中的应用结果汇总得到最终结论"
       }
     }
   }

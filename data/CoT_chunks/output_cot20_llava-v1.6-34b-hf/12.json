@@ -5,61 +5,110 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
-          "content": "题干给出，过渡态结构中不包括氢的化学键。"
+          "type": "文字信息",
+          "content": "题干给出过渡态结构中不包括氢的化学键"
         },
         {
           "id": "C_2",
-          "type": "文字条件",
-          "content": "已知，化学键包括单键、双键和三键。"
+          "type": "学科常识",
+          "content": "化学键包括单键"
         },
         {
           "id": "C_3",
           "type": "学科常识",
-          "content": "根据化学键定义，单键的键级为 1。"
+          "content": "化学键包括双键"
         },
         {
           "id": "C_4",
           "type": "学科常识",
-          "content": "根据化学键定义，双键的键级为 2。"
-        },
-        {
-          "id": "C_5",
-          "type": "学科常识",
-          "content": "根据化学键定义，三键的键级为 3。"
+          "content": "化学键包括三键"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
-          "type": "逻辑推导",
-          "content": "由于化学键不包括氢，所以氢键不计算在内。",
+          "type": "条件转化",
+          "content": "单键对应数值为1",
           "parents": [
-            "C_1"
+            "C_2"
           ],
-          "reasoning_logic": "根据题干条件排除氢键。"
+          "reasoning_logic": "根据化学键定义将单键转化为对应数值"
         },
         {
           "id": "I_2",
-          "type": "数值计算",
-          "content": "计算有效化学键的总键级：1 (单键) + 2 (双键) + 3 (三键) = 6。",
+          "type": "条件转化",
+          "content": "双键对应数值为2",
           "parents": [
-            "C_3",
-            "C_4",
-            "C_5",
+            "C_3"
+          ],
+          "reasoning_logic": "根据化学键定义将双键转化为对应数值"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "三键对应数值为3",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "根据化学键定义将三键转化为对应数值"
+        },
+        {
+          "id": "I_4",
+          "type": "条件转化",
+          "content": "代入公式后单键对应数值为1",
+          "parents": [
             "I_1"
           ],
-          "reasoning_logic": "将各类型化学键的键级数值代入求和。"
+          "reasoning_logic": "将单键对应的化学键数值代入上述公式"
+        },
+        {
+          "id": "I_5",
+          "type": "条件转化",
+          "content": "代入公式后双键对应数值为2",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "将双键对应的化学键数值代入上述公式"
+        },
+        {
+          "id": "I_6",
+          "type": "条件转化",
+          "content": "代入公式后三键对应数值为3",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "将三键对应的化学键数值代入上述公式"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "氢键不计算在内",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "由于化学键不包括氢，推出氢键不计算在内"
+        },
+        {
+          "id": "I_8",
+          "type": "数值计算",
+          "content": "1加2加3等于6",
+          "parents": [
+            "I_4",
+            "I_5",
+            "I_6",
+            "I_7"
+          ],
+          "reasoning_logic": "汇总不包含氢键的单键、双键和三键数值并进行加和"
         }
       ],
       "final_conclusion": {
         "id": "O",
         "type": "综合归纳",
-        "content": "最终答案是 6。",
+        "content": "最终答案是6",
         "parents": [
-          "I_2"
+          "I_8"
         ],
-        "reasoning_logic": "综合上述计算结果得出最终陈述。"
+        "reasoning_logic": "根据数值计算结果得出最终答案"
       }
     }
   }

@@ -5,155 +5,500 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "图像条件",
-          "content": "图像显示一个有机分子的过渡态结构，包含一个羰基、两个溴原子、一个氰离子（NC⁻）和多个碳骨架连接。"
+          "type": "图像信息",
+          "content": "图像显示一个有机分子的过渡态结构"
         },
         {
           "id": "C_2",
-          "type": "文字条件",
-          "content": "SMILES 表达式需忽略箭头，仅保留原子连接和键类型。"
+          "type": "图像信息",
+          "content": "图像中的有机分子包含一个羰基"
         },
         {
           "id": "C_3",
-          "type": "图像条件",
-          "content": "中心为六元环，其中一碳连有羰基（C=O），该碳同时连接一个叔丁基（C(CH₃)₃）和一个溴原子。"
+          "type": "图像信息",
+          "content": "图像中的有机分子包含两个溴原子"
         },
         {
           "id": "C_4",
-          "type": "图像条件",
-          "content": "环上另一碳连接一个溴原子，且该碳与相邻碳形成双键。"
+          "type": "图像信息",
+          "content": "图像中的有机分子包含一个氰离子"
         },
         {
           "id": "C_5",
-          "type": "图像条件",
-          "content": "环上存在一个双键，位于环内，连接两个碳原子。"
+          "type": "图像信息",
+          "content": "图像中的有机分子包含多个碳骨架连接"
         },
         {
           "id": "C_6",
-          "type": "图像条件",
-          "content": "环外有一个支链，从环上某碳延伸出一个亚甲基（CH₂），再连接一个甲基（CH₃）。"
+          "type": "学科常识",
+          "content": "SMILES表达式用于线性表示分子结构"
         },
         {
           "id": "C_7",
-          "type": "文字条件",
-          "content": "氰离子（NC⁻）在 SMILES 中视为与羰基碳形成单键，即氰基（-C≡N）连接到羰基碳上。"
+          "type": "文字信息",
+          "content": "需忽略箭头"
         },
         {
           "id": "C_8",
-          "type": "学科常识",
-          "content": "过渡态结构中键未完全形成，但 SMILES 无法精确表示部分键，应按共价键连接处理。"
+          "type": "文字信息",
+          "content": "仅保留原子连接"
         },
         {
           "id": "C_9",
-          "type": "图像条件",
-          "content": "羰基碳连接四个基团：氧（双键）、氰基（单键）、叔丁基碳、环上带溴的碳。"
+          "type": "文字信息",
+          "content": "仅保留键类型"
         },
         {
           "id": "C_10",
-          "type": "文字条件",
-          "content": "设定环上碳编号：C1 为羰基碳，C2 为其邻位带 Br 碳，C3-C4 为双键，C5 为带 Br 碳，C6 为连接支链碳。"
+          "type": "图像信息",
+          "content": "中心为六元环"
         },
         {
           "id": "C_11",
-          "type": "文字条件",
-          "content": "支链结构确认为 -CH₂-CH₃。"
+          "type": "图像信息",
+          "content": "六元环中的一碳连有羰基"
         },
         {
           "id": "C_12",
-          "type": "文字条件",
-          "content": "叔丁基结构确认为 -C(CH₃)₃。"
+          "type": "图像信息",
+          "content": "连有羰基的碳同时连接一个叔丁基"
         },
         {
           "id": "C_13",
-          "type": "文字条件",
-          "content": "氰基结构确认为 -C≡N。"
+          "type": "图像信息",
+          "content": "叔丁基结构为C(CH3)3"
+        },
+        {
+          "id": "C_14",
+          "type": "图像信息",
+          "content": "连有羰基的碳同时连接一个溴原子"
+        },
+        {
+          "id": "C_15",
+          "type": "图像信息",
+          "content": "另一碳上连接一个溴原子"
+        },
+        {
+          "id": "C_16",
+          "type": "图像信息",
+          "content": "另一碳与相邻碳形成双键"
+        },
+        {
+          "id": "C_17",
+          "type": "图像信息",
+          "content": "环上存在一个双键"
+        },
+        {
+          "id": "C_18",
+          "type": "图像信息",
+          "content": "环上双键位于环内"
+        },
+        {
+          "id": "C_19",
+          "type": "图像信息",
+          "content": "环上双键连接两个碳原子"
+        },
+        {
+          "id": "C_20",
+          "type": "图像信息",
+          "content": "环外有一个支链"
+        },
+        {
+          "id": "C_21",
+          "type": "图像信息",
+          "content": "环外支链从环上某碳延伸出一个亚甲基"
+        },
+        {
+          "id": "C_22",
+          "type": "图像信息",
+          "content": "亚甲基再连接一个甲基"
+        },
+        {
+          "id": "C_23",
+          "type": "图像信息",
+          "content": "氰离子作为亲核试剂攻击羰基碳"
+        },
+        {
+          "id": "C_24",
+          "type": "学科常识",
+          "content": "SMILES无法精确表示部分键"
+        },
+        {
+          "id": "C_25",
+          "type": "文字信息",
+          "content": "题目要求的是过渡态结构"
+        },
+        {
+          "id": "C_26",
+          "type": "文字信息",
+          "content": "题目明确要求忽略箭头"
+        },
+        {
+          "id": "C_27",
+          "type": "图像信息",
+          "content": "羰基碳连接氧"
+        },
+        {
+          "id": "C_28",
+          "type": "图像信息",
+          "content": "羰基碳与氧为双键连接"
+        },
+        {
+          "id": "C_29",
+          "type": "图像信息",
+          "content": "羰基碳连接氰基"
+        },
+        {
+          "id": "C_30",
+          "type": "图像信息",
+          "content": "羰基碳与氰基为单键连接"
+        },
+        {
+          "id": "C_31",
+          "type": "图像信息",
+          "content": "羰基碳连接叔丁基碳"
+        },
+        {
+          "id": "C_32",
+          "type": "图像信息",
+          "content": "羰基碳连接环上带溴的碳"
+        },
+        {
+          "id": "C_33",
+          "type": "文字信息",
+          "content": "设羰基碳为C1"
+        },
+        {
+          "id": "C_34",
+          "type": "文字信息",
+          "content": "C1的邻位碳为C2"
+        },
+        {
+          "id": "C_35",
+          "type": "文字信息",
+          "content": "C2带Br"
+        },
+        {
+          "id": "C_36",
+          "type": "文字信息",
+          "content": "C2邻位为C3"
+        },
+        {
+          "id": "C_37",
+          "type": "文字信息",
+          "content": "C3为双键起始碳"
+        },
+        {
+          "id": "C_38",
+          "type": "文字信息",
+          "content": "C4为双键终止碳"
+        },
+        {
+          "id": "C_39",
+          "type": "文字信息",
+          "content": "C5带Br"
+        },
+        {
+          "id": "C_40",
+          "type": "文字信息",
+          "content": "C6连接支链CH2CH3"
+        },
+        {
+          "id": "C_41",
+          "type": "文字信息",
+          "content": "支链为-CH2-CH3"
+        },
+        {
+          "id": "C_42",
+          "type": "文字信息",
+          "content": "叔丁基为-C(CH3)3"
+        },
+        {
+          "id": "C_43",
+          "type": "文字信息",
+          "content": "氰基为-C≡N"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
-          "type": "逻辑推导",
-          "content": "确定 C1 的连接关系：连接 O(双键)、C#N(单键)、C(CH3)3、C2。",
+          "type": "条件转化",
+          "content": "氰离子在SMILES中应视为与羰基碳形成单键",
           "parents": [
+            "C_7",
+            "C_8",
             "C_9",
-            "C_10",
-            "C_12",
-            "C_13"
+            "C_23"
           ],
-          "reasoning_logic": "根据图像观察和编号设定，整合 C1 的四个取代基。"
+          "reasoning_logic": "忽略箭头后，只保留氰离子与羰基碳之间的原子连接和键类型"
         },
         {
           "id": "I_2",
-          "type": "逻辑推导",
-          "content": "确定 C2 的连接关系：连接 C1、Br、C3。",
+          "type": "条件转化",
+          "content": "氰基连接到羰基碳上",
           "parents": [
-            "C_10",
-            "C_3"
+            "I_1",
+            "C_43"
           ],
-          "reasoning_logic": "根据编号设定和图像中 C2 的位置及取代基。"
+          "reasoning_logic": "将氰离子攻击羰基碳的连接关系转化为SMILES中的氰基连接"
         },
         {
           "id": "I_3",
           "type": "逻辑推导",
-          "content": "确定 C3 与 C4 的连接关系：C3=C4 双键。",
+          "content": "过渡态结构在SMILES中按共价键连接处理",
           "parents": [
-            "C_10",
-            "C_5"
+            "C_24",
+            "C_25"
           ],
-          "reasoning_logic": "根据编号设定和环内双键位置。"
+          "reasoning_logic": "由于SMILES无法精确表示部分键，所以将过渡态中的连接按共价键处理"
         },
         {
           "id": "I_4",
-          "type": "逻辑推导",
-          "content": "确定 C5 的连接关系：连接 C4、Br、C6。",
+          "type": "条件转化",
+          "content": "图示结构应按图示原子连接写SMILES",
           "parents": [
-            "C_10",
-            "C_4"
+            "C_6",
+            "C_26",
+            "I_3"
           ],
-          "reasoning_logic": "根据编号设定和 C5 上的溴原子及连接关系。"
+          "reasoning_logic": "题目要求忽略箭头，因此按图示原子连接转换为SMILES"
         },
         {
           "id": "I_5",
-          "type": "逻辑推导",
-          "content": "确定 C6 的连接关系：连接 C5、C1、-CH₂CH₃。",
+          "type": "综合归纳",
+          "content": "羰基碳连接氧",
           "parents": [
-            "C_10",
-            "C_6",
-            "C_11"
+            "C_27",
+            "C_28"
           ],
-          "reasoning_logic": "根据编号设定和支链位置。"
+          "reasoning_logic": "根据羰基信息归纳羰基碳与氧的连接关系"
         },
         {
           "id": "I_6",
           "type": "综合归纳",
-          "content": "构建 SMILES 字符串片段：C1(=O)(C#N)C(C(CH3)3)C(Br)C=C...",
+          "content": "羰基碳连接氰基",
           "parents": [
-            "I_1",
-            "I_2",
-            "I_3"
+            "C_29",
+            "C_30",
+            "I_2"
           ],
-          "reasoning_logic": "将 C1 到 C4 的结构转化为 SMILES 线性表示。"
+          "reasoning_logic": "根据氰离子进攻羰基碳并按单键处理，确定氰基连接到羰基碳"
         },
         {
           "id": "I_7",
           "type": "综合归纳",
-          "content": "构建 SMILES 字符串剩余片段并闭合环：...C(Br)C(CC)C1。",
+          "content": "羰基碳连接叔丁基碳",
           "parents": [
-            "I_4",
+            "C_12",
+            "C_31"
+          ],
+          "reasoning_logic": "根据图示结构确定羰基碳与叔丁基碳连接"
+        },
+        {
+          "id": "I_8",
+          "type": "综合归纳",
+          "content": "羰基碳连接环上带溴的碳",
+          "parents": [
+            "C_14",
+            "C_32"
+          ],
+          "reasoning_logic": "根据图示结构确定羰基碳与环上带溴碳连接"
+        },
+        {
+          "id": "I_9",
+          "type": "综合归纳",
+          "content": "羰基碳连接O、CN、叔丁基碳和环上带溴的碳",
+          "parents": [
+            "I_5",
+            "I_6",
+            "I_7",
+            "I_8"
+          ],
+          "reasoning_logic": "汇总羰基碳周围的四个连接对象"
+        },
+        {
+          "id": "I_10",
+          "type": "条件转化",
+          "content": "环上碳顺序为C1-C2-C3=C4-C5-C6-C1",
+          "parents": [
+            "C_10",
+            "C_17",
+            "C_33",
+            "C_34",
+            "C_36",
+            "C_37",
+            "C_38"
+          ],
+          "reasoning_logic": "根据六元环和双键位置设定环上碳编号顺序"
+        },
+        {
+          "id": "I_11",
+          "type": "条件转化",
+          "content": "C1连接羰基和氰基",
+          "parents": [
+            "C_33",
             "I_5",
             "I_6"
           ],
-          "reasoning_logic": "将 C5、C6 及支链加入字符串，并使用环标记闭合六元环。"
+          "reasoning_logic": "将羰基碳编号为C1并记录其与羰基和氰基的连接"
+        },
+        {
+          "id": "I_12",
+          "type": "条件转化",
+          "content": "C1连接C2和C6",
+          "parents": [
+            "C_33",
+            "C_34",
+            "I_10"
+          ],
+          "reasoning_logic": "根据六元环闭合顺序确定C1的两个环内相邻碳"
+        },
+        {
+          "id": "I_13",
+          "type": "条件转化",
+          "content": "C2连接C1和C3",
+          "parents": [
+            "C_34",
+            "C_36",
+            "I_10"
+          ],
+          "reasoning_logic": "根据环上碳顺序确定C2的相邻连接"
+        },
+        {
+          "id": "I_14",
+          "type": "条件转化",
+          "content": "C2带Br",
+          "parents": [
+            "C_35"
+          ],
+          "reasoning_logic": "根据编号设定保留C2上的溴原子"
+        },
+        {
+          "id": "I_15",
+          "type": "条件转化",
+          "content": "C3与C4形成双键",
+          "parents": [
+            "C_37",
+            "C_38",
+            "I_10"
+          ],
+          "reasoning_logic": "根据双键起始碳和终止碳确定C3=C4"
+        },
+        {
+          "id": "I_16",
+          "type": "条件转化",
+          "content": "C4连接C5",
+          "parents": [
+            "C_38",
+            "C_39",
+            "I_10"
+          ],
+          "reasoning_logic": "根据环上碳顺序确定C4与C5连接"
+        },
+        {
+          "id": "I_17",
+          "type": "条件转化",
+          "content": "C5连接C4和C6",
+          "parents": [
+            "C_39",
+            "C_40",
+            "I_10"
+          ],
+          "reasoning_logic": "根据环上碳顺序确定C5的相邻连接"
+        },
+        {
+          "id": "I_18",
+          "type": "条件转化",
+          "content": "C5带Br",
+          "parents": [
+            "C_39"
+          ],
+          "reasoning_logic": "根据编号设定保留C5上的溴原子"
+        },
+        {
+          "id": "I_19",
+          "type": "条件转化",
+          "content": "C6连接C5和C1",
+          "parents": [
+            "C_40",
+            "I_10"
+          ],
+          "reasoning_logic": "根据六元环闭合顺序确定C6的环内连接"
+        },
+        {
+          "id": "I_20",
+          "type": "条件转化",
+          "content": "C6连接CH2CH3支链",
+          "parents": [
+            "C_40",
+            "C_41"
+          ],
+          "reasoning_logic": "根据支链信息确定C6的环外连接"
+        },
+        {
+          "id": "I_21",
+          "type": "条件转化",
+          "content": "C1连接叔丁基",
+          "parents": [
+            "C_13",
+            "C_42",
+            "I_7"
+          ],
+          "reasoning_logic": "根据叔丁基结构确定C1上的叔丁基支链"
+        },
+        {
+          "id": "I_22",
+          "type": "综合归纳",
+          "content": "C1连接O、C#N、C(CH3)3和C2",
+          "parents": [
+            "I_5",
+            "I_6",
+            "I_12",
+            "I_21"
+          ],
+          "reasoning_logic": "汇总从C1开始书写SMILES时的主要连接对象"
+        },
+        {
+          "id": "I_23",
+          "type": "综合归纳",
+          "content": "生成的候选SMILES为C1(=O)(C#N)C(C(CH3)3)C(Br)C=C1C(Br)C(C)C",
+          "parents": [
+            "I_10",
+            "I_14",
+            "I_15",
+            "I_18",
+            "I_20",
+            "I_22"
+          ],
+          "reasoning_logic": "按照环结构、取代基、溴原子、双键和支链信息构建候选SMILES"
+        },
+        {
+          "id": "I_24",
+          "type": "对比分析",
+          "content": "候选SMILES写法中环不闭合",
+          "parents": [
+            "I_23"
+          ],
+          "reasoning_logic": "检查候选SMILES后发现其环闭合关系不正确"
+        },
+        {
+          "id": "I_25",
+          "type": "逻辑推导",
+          "content": "正确写法应使用环标记",
+          "parents": [
+            "I_24"
+          ],
+          "reasoning_logic": "由于候选SMILES环不闭合，因此需要采用环标记进行正确书写"
         }
       ],
       "final_conclusion": {
         "id": "O",
-        "type": "综合归纳",
-        "content": "最终生成的 SMILES 字符串为：C1(=O)(C#N)C(C(CH3)3)C(Br)C=C1C(Br)C(CC)（注：基于推理过程的尝试性构建，原文本在此处截断）。",
+        "type": "逻辑推导",
+        "content": "正确SMILES写法应使用环标记，并从C1开始书写为C1(=O)(C#...",
         "parents": [
-          "I_7"
+          "I_25"
         ],
-        "reasoning_logic": "综合所有原子连接和环结构信息，得出最终的 SMILES 表达形式。"
+        "reasoning_logic": "依据最后一步修正方向，确定最终结论为使用环标记从C1开始书写，但原始文本中的SMILES结果未完整给出"
       }
     }
   }

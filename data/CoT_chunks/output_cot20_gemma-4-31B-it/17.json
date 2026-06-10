@@ -5,110 +5,169 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
-          "content": "题干给出反应物为酰胺分子 R-CONH2 及其碱 B。"
+          "type": "文字信息",
+          "content": "题干给出反应物包括酰胺分子 R-CONH2。"
         },
         {
           "id": "C_2",
-          "type": "文字条件",
-          "content": "已知碱 B 的孤对电子攻击酰胺的 O-H 质子。"
+          "type": "文字信息",
+          "content": "题干给出反应物包括碱 B。"
         },
         {
           "id": "C_3",
-          "type": "图像条件",
-          "content": "图中第一个箭头从 B 指向 H。"
+          "type": "文字信息",
+          "content": "已知碱 B 的孤对电子攻击酰胺的 O-H 质子。"
         },
         {
           "id": "C_4",
-          "type": "图像条件",
-          "content": "图中第二个箭头从 O-H 键指向 O 原子。"
+          "type": "图像信息",
+          "content": "图像中第一个箭头从 B 指向 H。"
         },
         {
           "id": "C_5",
-          "type": "图像条件",
-          "content": "图中第三个箭头从 N-C 键指向 N 原子。"
+          "type": "图像信息",
+          "content": "图像中第二个箭头从 O-H 键指向 O 原子。"
         },
         {
           "id": "C_6",
-          "type": "图像条件",
-          "content": "图中 R 基团连接在 N 原子上。"
+          "type": "图像信息",
+          "content": "图像中第三个箭头从 N-C 键指向 N 原子。"
+        },
+        {
+          "id": "C_7",
+          "type": "图像信息",
+          "content": "图像中存在三个箭头。"
+        },
+        {
+          "id": "C_8",
+          "type": "图像信息",
+          "content": "图中 R 连接在 N 上。"
+        },
+        {
+          "id": "C_9",
+          "type": "文字信息",
+          "content": "常见的酰胺水解或碱解机理中，该步骤描述 O-H 脱质子伴随 C-N 键断裂。"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
-          "type": "逻辑推导",
+          "type": "条件转化",
           "content": "B 与 H 之间形成新共价键。",
           "parents": [
-            "C_2",
-            "C_3"
+            "C_3",
+            "C_4"
           ],
-          "reasoning_logic": "根据电子转移方向，碱 B 攻击质子 H 形成新键。"
+          "reasoning_logic": "根据 B 的孤对电子攻击 H 以及箭头 B 指向 H，判断 B-H 键形成。"
         },
         {
           "id": "I_2",
-          "type": "逻辑推导",
-          "content": "O-H 键断裂，电子转移至氧原子 O。",
+          "type": "条件转化",
+          "content": "O-H 键断裂。",
           "parents": [
-            "C_4"
+            "C_5"
           ],
-          "reasoning_logic": "根据箭头指示，O-H 键电子移向 O 原子导致键断裂。"
+          "reasoning_logic": "根据箭头从 O-H 键指向 O 原子，判断 O-H 键断裂。"
         },
         {
           "id": "I_3",
-          "type": "逻辑推导",
-          "content": "氧原子 O 带负电荷。",
+          "type": "条件转化",
+          "content": "O-H 键电子转移至氧原子 O。",
           "parents": [
-            "I_2"
+            "C_5"
           ],
-          "reasoning_logic": "由于 O-H 键断裂且电子留在 O 上，推导 O 带负电。"
+          "reasoning_logic": "根据箭头从 O-H 键指向 O 原子，判断电子转移至 O。"
         },
         {
           "id": "I_4",
           "type": "逻辑推导",
-          "content": "C-N 键断裂，N 原子获得电子对。",
+          "content": "氧原子带负电荷。",
           "parents": [
-            "C_5"
+            "I_2",
+            "I_3"
           ],
-          "reasoning_logic": "根据箭头指示，N-C 键电子移向 N 原子导致键断裂。"
+          "reasoning_logic": "由 O-H 键断裂且电子留在 O 上，推导氧原子带负电荷。"
         },
         {
           "id": "I_5",
-          "type": "逻辑推导",
-          "content": "N 原子带负电荷。",
+          "type": "条件转化",
+          "content": "C-N 键断裂。",
           "parents": [
-            "I_4"
+            "C_6"
           ],
-          "reasoning_logic": "由于 C-N 键断裂且电子留在 N 上，推导 N 带负电。"
+          "reasoning_logic": "根据箭头从 N-C 键指向 N 原子，判断 C-N 键断裂。"
         },
         {
           "id": "I_6",
-          "type": "逻辑推导",
-          "content": "形成 BH+ 阳离子。",
+          "type": "条件转化",
+          "content": "N 原子获得电子对。",
           "parents": [
-            "I_1"
+            "C_6"
           ],
-          "reasoning_logic": "由于 B 结合 H，推导形成 BH+。"
+          "reasoning_logic": "根据箭头从 N-C 键指向 N 原子，判断 N 获得电子对。"
         },
         {
           "id": "I_7",
           "type": "逻辑推导",
-          "content": "确定含氮产物碎片为 R-NH-。",
+          "content": "N 原子带负电荷。",
           "parents": [
-            "C_6",
-            "I_5"
+            "I_5",
+            "I_6"
           ],
-          "reasoning_logic": "结合 R 连接在 N 上且 N 带负电的事实，推导产物为 R-NH-。"
+          "reasoning_logic": "由 C-N 键断裂且 N 获得电子对，推导 N 原子带负电荷。"
         },
         {
           "id": "I_8",
           "type": "逻辑推导",
-          "content": "确定含碳产物碎片为 HCOO-（或 [O-]C=O）。",
+          "content": "形成 BH+。",
           "parents": [
-            "I_3",
-            "I_4"
+            "I_1",
+            "C_2"
           ],
-          "reasoning_logic": "C-N 键断裂后，剩余部分为带有负电荷氧的羰基结构，即甲酸根离子。"
+          "reasoning_logic": "由 B 结合 H，推导形成 BH+。"
+        },
+        {
+          "id": "I_9",
+          "type": "综合归纳",
+          "content": "分子分解为 R-NH- 和 HCOO-。",
+          "parents": [
+            "I_5",
+            "I_6",
+            "C_8"
+          ],
+          "reasoning_logic": "由 C-N 键断裂、N 获得电子对以及 R 连接在 N 上，归纳分解碎片。"
+        },
+        {
+          "id": "I_10",
+          "type": "综合归纳",
+          "content": "产物为 R-NH-、HCOO- 和 BH+。",
+          "parents": [
+            "I_8",
+            "I_9",
+            "I_4",
+            "I_7"
+          ],
+          "reasoning_logic": "综合负电荷形成、键断裂碎片和 BH+ 的形成，得到产物组成。"
+        },
+        {
+          "id": "I_11",
+          "type": "条件转化",
+          "content": "产物对应的 SMILES 表达式应包含 R-NH-、[O-]C=O 和 [BH+] 这些碎片。",
+          "parents": [
+            "I_10"
+          ],
+          "reasoning_logic": "将产物碎片转化为对应的 SMILES 片段。"
+        },
+        {
+          "id": "I_12",
+          "type": "综合归纳",
+          "content": "该步骤描述的是 O-H 脱质子伴随 C-N 键断裂。",
+          "parents": [
+            "C_9",
+            "I_2",
+            "I_5"
+          ],
+          "reasoning_logic": "结合常见机理表述、O-H 键断裂和 C-N 键断裂，归纳该步骤特征。"
         }
       ],
       "final_conclusion": {
@@ -116,11 +175,10 @@
         "type": "综合归纳",
         "content": "最终答案是 [R-NH-.[O-]C=O.[BH+]]。",
         "parents": [
-          "I_6",
-          "I_7",
-          "I_8"
+          "I_11",
+          "I_12"
         ],
-        "reasoning_logic": "综合推导出的三个碎片（R-NH-、HCOO-、BH+）组合成最终的 SMILES 表达式。"
+        "reasoning_logic": "综合产物 SMILES 片段和步骤机理描述，得出最终答案。"
       }
     }
   }

@@ -5,143 +5,167 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
-          "content": "题干给出目标分子包含一个苯环。"
+          "type": "文字信息",
+          "content": "题干给出目标分子包含一个苯环"
         },
         {
           "id": "C_2",
-          "type": "文字条件",
-          "content": "题干给出苯环的邻位连接有一个氮原子。"
+          "type": "文字信息",
+          "content": "题干给出苯环的邻位连接有一个氮原子"
         },
         {
           "id": "C_3",
-          "type": "文字条件",
-          "content": "已知氮原子连接一个氢原子。"
+          "type": "文字信息",
+          "content": "氮原子连接一个氢原子"
         },
         {
           "id": "C_4",
-          "type": "文字条件",
-          "content": "已知氮原子连接一个碳原子。"
+          "type": "文字信息",
+          "content": "氮原子连接一个碳原子"
         },
         {
           "id": "C_5",
-          "type": "文字条件",
-          "content": "已知该碳原子与另一个碳原子形成双键。"
+          "type": "文字信息",
+          "content": "该碳原子与另一个碳原子形成双键"
         },
         {
           "id": "C_6",
-          "type": "文字条件",
-          "content": "已知该双键的第二个碳原子连接一个酯基 -CO₂Et。"
+          "type": "文字信息",
+          "content": "该双键的第二个碳原子连接一个酯基 \\text{-CO}_2\\text{Et}"
         },
         {
           "id": "C_7",
-          "type": "文字条件",
-          "content": "已知该碳原子同时连接一个酯基 -CO₂Et。"
+          "type": "文字信息",
+          "content": "该碳原子同时连接一个酯基 \\text{-CO}_2\\text{Et}"
         },
         {
           "id": "C_8",
-          "type": "图像条件",
-          "content": "根据图像，分子由苯环、NH 基团、C=C 双键以及两个 -CO₂Et 基团组成。"
+          "type": "文字信息",
+          "content": "结构为 \\text{Ethyl 2-(2-ethoxy-2-oxoethyl)-1H-indole-3-carboxylate} 的前体或类似衍生物"
         },
         {
           "id": "C_9",
-          "type": "学科常识",
-          "content": "苯环部分的 SMILES 表示为 c1ccc(cc1)。"
+          "type": "文字信息",
+          "content": "其骨架为 \\text{Ethyl 2-(ethoxycarbonyl)-1H-indole-3-carboxylate} 的开环形式"
         },
         {
           "id": "C_10",
-          "type": "学科常识",
-          "content": "NH 连接在苯环上的 SMILES 片段表示为 c1ccc(cc1)N。"
+          "type": "图像信息",
+          "content": "根据图像，结构为 \\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole} 的类似物"
         },
         {
           "id": "C_11",
-          "type": "学科常识",
-          "content": "N 连接 CH=C 的 SMILES 片段表示为 c1ccc(cc1)NC=C。"
+          "type": "图像信息",
+          "content": "根据图像，实际为 \\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole} 的开环中间体"
+        },
+        {
+          "id": "C_12",
+          "type": "图像信息",
+          "content": "图像结构显示分子式为 \\text{C}_{15}\\text{H}_{17}\\text{NO}_4"
+        },
+        {
+          "id": "C_13",
+          "type": "文字信息",
+          "content": "结构描述为 \\text{Ethyl 2-(ethoxycarbonyl)-3-(2-ethoxy-2-oxoethyl)-1H-pyrrole} 的变体"
+        },
+        {
+          "id": "C_14",
+          "type": "文字信息",
+          "content": "结构具体为 \\text{Ethyl 2-(ethoxycarbonyl)-3-(ethoxycarbonyl)-1H-indole} 的前体"
+        },
+        {
+          "id": "C_15",
+          "type": "图像信息",
+          "content": "观察图像，分子包含苯环"
+        },
+        {
+          "id": "C_16",
+          "type": "图像信息",
+          "content": "观察图像，分子包含 \\text{NH} 基团"
+        },
+        {
+          "id": "C_17",
+          "type": "图像信息",
+          "content": "观察图像，分子包含 \\text{C=C} 双键"
+        },
+        {
+          "id": "C_18",
+          "type": "图像信息",
+          "content": "观察图像，分子包含两个 \\text{-CO}_2\\text{Et} 基团"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
-          "type": "逻辑推导",
-          "content": "构建包含苯环和邻位氮原子的基础骨架。",
+          "type": "条件转化",
+          "content": "将苯环部分转化为 SMILES 片段 \\text{c1ccc(cc1)}",
           "parents": [
             "C_1",
-            "C_2",
-            "C_9",
-            "C_10"
+            "C_15"
           ],
-          "reasoning_logic": "结合题干关于苯环和邻位氮的描述及苯环 SMILES 常识。"
+          "reasoning_logic": "根据苯环部分确定对应的 SMILES 片段"
         },
         {
           "id": "I_2",
-          "type": "逻辑推导",
-          "content": "确定氮原子上连接有氢原子和碳链。",
+          "type": "条件转化",
+          "content": "将 \\text{NH} 连接在苯环上的结构转化为 SMILES 片段 \\text{c1ccc(cc1)N}",
           "parents": [
+            "I_1",
+            "C_2",
             "C_3",
-            "C_4",
-            "I_1"
+            "C_16"
           ],
-          "reasoning_logic": "根据已知条件将 H 和 C 连接到 N 上。"
+          "reasoning_logic": "在苯环 SMILES 片段上加入连接的氮原子"
         },
         {
           "id": "I_3",
-          "type": "逻辑推导",
-          "content": "构建氮原子连接的 C=C 双键结构。",
+          "type": "条件转化",
+          "content": "将 \\text{N} 连接 \\text{CH=C} 的结构转化为 SMILES 片段 \\text{c1ccc(cc1)NC=C}",
           "parents": [
-            "C_5",
             "I_2",
-            "C_11"
+            "C_4",
+            "C_5",
+            "C_17"
           ],
-          "reasoning_logic": "根据双键条件和 SMILES 片段常识扩展结构。"
+          "reasoning_logic": "在含氮苯环片段上加入 \\text{CH=C} 连接关系"
         },
         {
           "id": "I_4",
-          "type": "逻辑推导",
-          "content": "确定双键第二个碳原子上连接第一个酯基。",
+          "type": "条件转化",
+          "content": "将该 \\text{C} 原子连接两个 \\text{CO}_2\\text{Et} 基团的结构转化为 SMILES \\text{c1ccc(cc1)NC=C(C(=O)OCC)C(=O)OCC}",
           "parents": [
+            "I_3",
             "C_6",
-            "I_3"
+            "C_7",
+            "C_18"
           ],
-          "reasoning_logic": "根据题干关于双键碳连接酯基的条件。"
+          "reasoning_logic": "在双键碳原子上加入两个乙氧羰基片段"
         },
         {
           "id": "I_5",
-          "type": "逻辑推导",
-          "content": "确定同一碳原子上连接第二个酯基。",
+          "type": "综合归纳",
+          "content": "综合结构前体、开环形式、图像结构描述和 SMILES 片段，确定目标分子的连接骨架",
           "parents": [
-            "C_7",
+            "C_8",
+            "C_9",
+            "C_10",
+            "C_11",
+            "C_12",
+            "C_13",
+            "C_14",
             "I_4"
           ],
-          "reasoning_logic": "根据题干关于该碳原子同时连接另一个酯基的条件。"
-        },
-        {
-          "id": "I_6",
-          "type": "综合归纳",
-          "content": "组装完整分子 SMILES 字符串：c1ccc(cc1)NC=C(C(=O)OCC)C(=O)OCC。",
-          "parents": [
-            "I_5",
-            "C_8"
-          ],
-          "reasoning_logic": "综合所有结构片段和图像观察结果生成完整 SMILES。"
-        },
-        {
-          "id": "I_7",
-          "type": "条件转化",
-          "content": "将 SMILES 字符串转换为最终答案格式 CCOC(=O)C=C(C(=O)OCC)NC1=CC=CC=C1。",
-          "parents": [
-            "I_6"
-          ],
-          "reasoning_logic": "对生成的 SMILES 进行标准化重排以匹配最终答案格式。"
+          "reasoning_logic": "汇聚结构名称、图像判断、分子式和逐步构建的 SMILES 片段"
         }
       ],
       "final_conclusion": {
         "id": "O",
         "type": "综合归纳",
-        "content": "最终答案是 CCOC(=O)C=C(C(=O)OCC)NC1=CC=CC=C1。",
+        "content": "最终答案是 CCOC(=O)C=C(C(=O)OCC)NC1=CC=CC=C1",
         "parents": [
-          "I_7"
+          "I_5"
         ],
-        "reasoning_logic": "基于完整的结构推导得出最终化学式表达。"
+        "reasoning_logic": "根据综合确定的连接骨架得出最终 SMILES"
       }
     }
   }

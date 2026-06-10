@@ -1,0 +1,124 @@
+{
+  "id": 7,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "目标分子为含有氯、溴和氨基的吡嗪衍生物。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "该分子的核心结构为吡嗪环（pyrazine）。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "吡嗪环的 1 位和 4 位为氮原子。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "吡嗪环的 2 位连接有一个氨基（-NH2）。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字条件",
+          "content": "吡嗪环的 3 位连接有一个溴原子（-Br）。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字条件",
+          "content": "吡嗪环的 5 位连接有一个溴原子（-Br）。"
+        },
+        {
+          "id": "C_7",
+          "type": "文字条件",
+          "content": "吡嗪环的 6 位连接有一个氯原子（-Cl）。"
+        },
+        {
+          "id": "C_8",
+          "type": "学科常识",
+          "content": "根据化学结构命名规则，该分子命名为 3,5-dibromo-6-chloropyrazin-2-amine。"
+        },
+        {
+          "id": "C_9",
+          "type": "学科常识",
+          "content": "吡嗪环的基础 SMILES 结构为 n1ccnc1。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "在吡嗪环 2 位添加氨基，初步构建片段 Nc1nccn1。",
+          "parents": [
+            "C_4",
+            "C_9"
+          ],
+          "reasoning_logic": "将氨基取代基连接到吡嗪环基础结构的 2 位碳原子上。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "尝试在 3 位和 5 位添加溴原子，在 6 位添加氯原子，生成初步 SMILES 变体 Nc1nccn(Br)c1Cl。",
+          "parents": [
+            "I_1",
+            "C_5",
+            "C_6",
+            "C_7"
+          ],
+          "reasoning_logic": "根据取代位置将 Br 和 Cl 原子添加到 SMILES 字符串的对应位置。"
+        },
+        {
+          "id": "I_3",
+          "type": "对比分析",
+          "content": "验证初步 SMILES Nc1nccn(Br)c1Cl 的原子连接顺序，发现其拓扑结构与题目给定的 2-NH2, 3-Br, 5-Br, 6-Cl 位置不符。",
+          "parents": [
+            "I_2",
+            "C_4",
+            "C_5",
+            "C_6",
+            "C_7"
+          ],
+          "reasoning_logic": "将生成的 SMILES 解析回结构，对比各取代基的实际位置与题目要求的位置。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "重新构建 SMILES 路径，调整原子书写顺序以匹配正确的拓扑结构：氨基在 2 位，溴在 3 和 5 位，氯在 6 位。",
+          "parents": [
+            "I_3",
+            "C_2",
+            "C_3",
+            "C_4",
+            "C_5",
+            "C_6",
+            "C_7"
+          ],
+          "reasoning_logic": "基于验证失败的反馈，重新排列 SMILES 字符串中的原子和环闭合数字以符合正确的化学连接性。"
+        },
+        {
+          "id": "I_5",
+          "type": "综合归纳",
+          "content": "确定最终正确的 SMILES 表达式形式为 Nc1nccn(Br)c1Cl 的修正版本（注：原文本在此处反复确认并指向该形式作为最终结论）。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "综合所有修正步骤，得出思维链中认定的最终正确表达。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "推理",
+        "content": "正确 SMILES 为 Nc1",
+        "parents": [
+          "I_5"
+        ],
+        "reasoning_logic": "提取 resolution 文本最后截断处的结论性陈述。"
+      }
+    }
+  }
+}

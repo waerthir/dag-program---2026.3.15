@@ -1,0 +1,2363 @@
+[
+  {
+    "id": 0,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "题干给出，该图显示了一个鸟类祖先种群随着时间的推移而发生的变化。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "已知，该图显示了鸟类种群数量的变化。"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "根据达尔文进化论，可得公式：种群数量变化 = 出生率 - 死亡率。"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "出生率和死亡率是环境因素的影响。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "将出生率和死亡率代入公式，确立关系：种群数量变化 = 出生率 - 死亡率。",
+            "parents": [
+              "C_3"
+            ],
+            "reasoning_logic": "引用 C_3 中的公式并代入变量。"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "推导出种群数量变化反映了环境的变化。",
+            "parents": [
+              "I_1",
+              "C_4"
+            ],
+            "reasoning_logic": "基于 I_1 的数量关系和 C_4 的环境因素属性进行因果推导。"
+          },
+          {
+            "id": "I_3",
+            "type": "对比分析",
+            "content": "分析得出该图显示了鸟类种群数量随着时间的推移而增加。",
+            "parents": [
+              "C_1",
+              "C_2"
+            ],
+            "reasoning_logic": "结合 C_1 的时间维度和 C_2 的数量变化信息进行趋势判定。"
+          },
+          {
+            "id": "I_4",
+            "type": "逻辑推导",
+            "content": "推断环境条件可能有利于鸟类的生存和繁殖。",
+            "parents": [
+              "I_2",
+              "I_3"
+            ],
+            "reasoning_logic": "将 I_3 观察到的数量增加现象代入 I_2 建立的‘数量反映环境’逻辑中得出结论。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "该图显示了鸟类种群数量随着时间的推移而增加，这表明环境条件可能有利于鸟类的生存和繁殖。",
+          "parents": [
+            "I_3",
+            "I_4"
+          ],
+          "reasoning_logic": "综合 I_3 的事实观察和 I_4 的原因推断，得出最终陈述。"
+        }
+      }
+    }
+  },
+  {
+    "id": 1,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出硝化反应顺序 (1)：CO2H → CH2OH → OH"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "题干给出硝化反应顺序 (2)：CO2H → NH2CH2OH → NH2"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "首先，CO2H 转化为 CH2OH",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "根据反应顺序 (1) 的第一步进行解析"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "然后，CH2OH 转化为 OH",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "根据反应顺序 (1) 的第二步进行解析"
+          },
+          {
+            "id": "I_3",
+            "type": "综合归纳",
+            "content": "硝化反应的正确顺序是：CO2H → CH2OH → OH",
+            "parents": [
+              "I_1",
+              "I_2"
+            ],
+            "reasoning_logic": "综合步骤 I_1 和 I_2 的转化过程得出完整反应链"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "硝化反应的正确顺序是：CO2H → CH2OH → OH",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "基于前述推导得出最终结论陈述"
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干询问图中断崖的最小高差可能是多少米"
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "等高线地形图中的高差可以通过相邻等高线之间的距离来计算"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "根据等高线地形图的原理，相邻等高线之间的距离表示高差"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "将相邻等高线之间的距离代入高差计算公式",
+            "parents": [
+              "C_2",
+              "C_3"
+            ],
+            "reasoning_logic": "依据等高线原理建立计算关系"
+          },
+          {
+            "id": "I_2",
+            "type": "数值计算",
+            "content": "计算得出高差为 50 米",
+            "parents": [
+              "I_1"
+            ],
+            "reasoning_logic": "执行具体数值的代入与运算"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "图中断崖的最小高差可能是 50 米",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "综合计算结果得出最终答案陈述"
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出 SO$_3$分子骨架结构为 O-S-O（竖直排列）。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "已知 SO$_3$分子中 S 原子与 O 原子之间存在双键。"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "根据化学键理论，S-O 双键中，每个 O 原子与 S 原子形成两个σ键和一个π键。"
+          },
+          {
+            "id": "C_4",
+            "type": "文字条件",
+            "content": "SO$_3$分子中存在三个 S-O 双键。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "S-O 双键的键级为 2 + 1 = 3。",
+            "parents": [
+              "C_3"
+            ],
+            "reasoning_logic": "依据 C_3 中提到的双键包含两个σ键和一个π键，将两者数量相加得出单根双键的键级。"
+          },
+          {
+            "id": "I_2",
+            "type": "数值计算",
+            "content": "SO$_3$分子中 S-O 键的总键级为 3 × 3 = 9。",
+            "parents": [
+              "I_1",
+              "C_4"
+            ],
+            "reasoning_logic": "将 I_1 得出的单根键键级乘以 C_4 中给出的双键数量 3。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 9。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "综合 I_2 的计算结果得出最终陈述。"
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出输出电压 v_OUT 需要穿过 -10 V。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "已知输入电压 v_IN 是一个三角波形，幅度为 2 V，频率为 1 kHz。"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "根据三角波形的定义，可得公式 v_IN = 2 sin(2πt)。"
+          },
+          {
+            "id": "C_4",
+            "type": "文字条件",
+            "content": "已知关系式 v_OUT = v_IN - 12 V。"
+          },
+          {
+            "id": "C_5",
+            "type": "学科常识",
+            "content": "三角函数的单位圆定义。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "将 v_IN 代入公式得到 v_IN = 2 sin(2πt)。",
+            "parents": [
+              "C_2",
+              "C_3"
+            ],
+            "reasoning_logic": "根据三角波形定义及已知幅度和频率进行公式实例化。"
+          },
+          {
+            "id": "I_2",
+            "type": "条件转化",
+            "content": "推导得出 v_OUT = 2 sin(2πt) - 12 V。",
+            "parents": [
+              "I_1",
+              "C_4"
+            ],
+            "reasoning_logic": "将 I_1 的结果代入 C_4 的关系式中。"
+          },
+          {
+            "id": "I_3",
+            "type": "条件转化",
+            "content": "建立方程 -10 V = 2 sin(2πt) - 12 V。",
+            "parents": [
+              "C_1",
+              "I_2"
+            ],
+            "reasoning_logic": "利用 C_1 中 v_OUT 的目标值 -10 V 代入 I_2 的表达式。"
+          },
+          {
+            "id": "I_4",
+            "type": "数值计算",
+            "content": "解方程得到 2 sin(2πt) = 2 V。",
+            "parents": [
+              "I_3"
+            ],
+            "reasoning_logic": "对方程 I_3 进行移项运算，将 -12 V 移至等号左侧。"
+          },
+          {
+            "id": "I_5",
+            "type": "数值计算",
+            "content": "计算得出 sin(2πt) = 1。",
+            "parents": [
+              "I_4"
+            ],
+            "reasoning_logic": "将 I_4 中的等式两边同时除以 2 V（原文表述为代入单位圆定义计算比值）。"
+          },
+          {
+            "id": "I_6",
+            "type": "逻辑推导",
+            "content": "推导得出 t = π/2。",
+            "parents": [
+              "I_5",
+              "C_5"
+            ],
+            "reasoning_logic": "基于 I_5 的正弦值和 C_5 的单位圆定义求解时间 t。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 t = π/2。",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "综合上述推理步骤得出最终结论。"
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出，过渡态结构中不包括氢的化学键。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "已知，化学键包括单键、双键和三键。"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "根据化学键定义，单键计为 1。"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "根据化学键定义，双键计为 2。"
+          },
+          {
+            "id": "C_5",
+            "type": "学科常识",
+            "content": "根据化学键定义，三键计为 3。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "由于化学键不包括氢，所以氢键不计算在内。",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "根据题干条件排除氢键。"
+          },
+          {
+            "id": "I_2",
+            "type": "数值计算",
+            "content": "将单键、双键、三键的数值代入求和：1 + 2 + 3 = 6。",
+            "parents": [
+              "C_3",
+              "C_4",
+              "C_5",
+              "I_1"
+            ],
+            "reasoning_logic": "执行加法运算得出总和。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 6。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "综合计算结果得出最终陈述。"
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出过渡态结构图像中忽略箭头。"
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "SMILES 表达式是一种化学分子结构的表示方法。"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "SMILES 规则：每个原子用一个字母表示（如 C 表示碳，O 表示氧）。"
+          },
+          {
+            "id": "C_4",
+            "type": "文字条件",
+            "content": "SMILES 规则：原子之间用短线表示化学键。"
+          },
+          {
+            "id": "C_5",
+            "type": "文字条件",
+            "content": "SMILES 规则：氢原子通常省略，除非它们是反应物或产物的一部分。"
+          },
+          {
+            "id": "C_6",
+            "type": "文字条件",
+            "content": "SMILES 规则：环状结构用大写字母表示。"
+          },
+          {
+            "id": "C_7",
+            "type": "文字条件",
+            "content": "SMILES 规则：反应物和产物用箭头表示。"
+          },
+          {
+            "id": "C_8",
+            "type": "文字条件",
+            "content": "过渡态结构中没有氢原子。"
+          },
+          {
+            "id": "C_9",
+            "type": "文字条件",
+            "content": "过渡态结构中碳原子和氧原子之间存在化学键。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "应用 SMILES 规则于过渡态结构：氢原子被省略，只保留碳原子和氧原子。",
+            "parents": [
+              "C_5",
+              "C_8"
+            ],
+            "reasoning_logic": "根据氢原子省略规则及过渡态无氢的事实进行推导。"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "应用 SMILES 规则于过渡态结构：碳原子之间用短线表示化学键。",
+            "parents": [
+              "C_4",
+              "C_9"
+            ],
+            "reasoning_logic": "根据化学键表示规则及碳原子成键事实进行推导。"
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "应用 SMILES 规则于过渡态结构：氧原子之间用短线表示化学键。",
+            "parents": [
+              "C_4",
+              "C_9"
+            ],
+            "reasoning_logic": "根据化学键表示规则及氧原子成键事实进行推导。"
+          },
+          {
+            "id": "I_4",
+            "type": "逻辑推导",
+            "content": "应用 SMILES 规则于过渡态结构：环状结构用大写字母表示。",
+            "parents": [
+              "C_6"
+            ],
+            "reasoning_logic": "直接引用环状结构表示规则。"
+          },
+          {
+            "id": "I_5",
+            "type": "综合归纳",
+            "content": "综合得出过渡态结构的 SMILES 表达特征：无氢、碳氧原子保留、键用短线表示、环用大写字母表示。",
+            "parents": [
+              "I_1",
+              "I_2",
+              "I_3",
+              "I_4"
+            ],
+            "reasoning_logic": "汇聚所有中间推导结果形成完整结构描述。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 [答案]。",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "基于过渡态结构的 SMILES 特征分析得出最终结论。"
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "该行为内分泌学家在一年内捕获了该领土鸟类雄性个体，以测量睾酮（T）水平。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "在这个群体中，雄性可能留在他们的原生群体中，帮助抚养他们的弟弟妹妹。"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "在这个群体中，雄性可能离开原生群体建立新的领土。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "综合归纳",
+            "content": "确认雄性扮演两种角色之一：留在原生群体帮助抚养弟妹，或离开建立新领土。",
+            "parents": [
+              "C_2",
+              "C_3"
+            ],
+            "reasoning_logic": "综合题目给出的两种可能性陈述。"
+          },
+          {
+            "id": "I_2",
+            "type": "综合归纳",
+            "content": "汇总研究行为与群体角色特征。",
+            "parents": [
+              "C_1",
+              "I_1"
+            ],
+            "reasoning_logic": "将捕获测量行为与雄性角色分布进行综合陈述。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "该行为内分泌学家在一年内捕获了该领土鸟类雄性个体，以测量睾酮（T）水平。在这个群体中，雄性可能扮演两种角色之一：（1）他们可能留在他们的原生群体中，帮助抚养他们的弟弟妹妹，或者（2）他们可能离开原生群体建立新的领土。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "基于前述所有条件和中间推导，得出最终完整陈述。"
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出过渡态结构图像中忽略箭头。"
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "SMILES 表达式是一种化学分子结构的表示方法。"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "SMILES 规则：每个原子用一个字母表示（如 C、O、N 等）。"
+          },
+          {
+            "id": "C_4",
+            "type": "文字条件",
+            "content": "SMILES 规则：原子之间用短线表示化学键。"
+          },
+          {
+            "id": "C_5",
+            "type": "文字条件",
+            "content": "SMILES 规则：双键用=表示。"
+          },
+          {
+            "id": "C_6",
+            "type": "文字条件",
+            "content": "SMILES 规则：三键用#表示。"
+          },
+          {
+            "id": "C_7",
+            "type": "文字条件",
+            "content": "SMILES 规则：氢原子用 H 表示。"
+          },
+          {
+            "id": "C_8",
+            "type": "图像条件",
+            "content": "过渡态结构中存在氢原子。"
+          },
+          {
+            "id": "C_9",
+            "type": "图像条件",
+            "content": "过渡态结构中存在碳原子。"
+          },
+          {
+            "id": "C_10",
+            "type": "图像条件",
+            "content": "过渡态结构中存在氧原子。"
+          },
+          {
+            "id": "C_11",
+            "type": "图像条件",
+            "content": "过渡态结构中存在氮原子。"
+          },
+          {
+            "id": "C_12",
+            "type": "图像条件",
+            "content": "过渡态结构中氢原子与碳原子之间有化学键。"
+          },
+          {
+            "id": "C_13",
+            "type": "图像条件",
+            "content": "过渡态结构中碳原子与氧原子之间有化学键。"
+          },
+          {
+            "id": "C_14",
+            "type": "图像条件",
+            "content": "过渡态结构中氧原子与氮原子之间有化学键。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "将氢原子表示为 H。",
+            "parents": [
+              "C_8",
+              "C_7"
+            ],
+            "reasoning_logic": "根据图像中存在氢原子及 SMILES 规则中氢原子的表示法进行转化。"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "将碳原子表示为 C。",
+            "parents": [
+              "C_9",
+              "C_3"
+            ],
+            "reasoning_logic": "根据图像中存在碳原子及 SMILES 规则中原子的表示法进行转化。"
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "将氧原子表示为 O。",
+            "parents": [
+              "C_10",
+              "C_3"
+            ],
+            "reasoning_logic": "根据图像中存在氧原子及 SMILES 规则中原子的表示法进行转化。"
+          },
+          {
+            "id": "I_4",
+            "type": "逻辑推导",
+            "content": "将氮原子表示为 N。",
+            "parents": [
+              "C_11",
+              "C_3"
+            ],
+            "reasoning_logic": "根据图像中存在氮原子及 SMILES 规则中原子的表示法进行转化。"
+          },
+          {
+            "id": "I_5",
+            "type": "逻辑推导",
+            "content": "氢原子与碳原子之间的化学键表示为'-'。",
+            "parents": [
+              "C_12",
+              "C_4"
+            ],
+            "reasoning_logic": "根据图像中的键合关系及 SMILES 规则中单键的表示法进行转化。"
+          },
+          {
+            "id": "I_6",
+            "type": "逻辑推导",
+            "content": "碳原子与氧原子之间的化学键表示为'-'。",
+            "parents": [
+              "C_13",
+              "C_4"
+            ],
+            "reasoning_logic": "根据图像中的键合关系及 SMILES 规则中单键的表示法进行转化。"
+          },
+          {
+            "id": "I_7",
+            "type": "逻辑推导",
+            "content": "氧原子与氮原子之间的化学键表示为'-'。",
+            "parents": [
+              "C_14",
+              "C_4"
+            ],
+            "reasoning_logic": "根据图像中的键合关系及 SMILES 规则中单键的表示法进行转化。"
+          },
+          {
+            "id": "I_8",
+            "type": "综合归纳",
+            "content": "组合原子符号与键符号形成序列 C-C-C-O-N-H。",
+            "parents": [
+              "I_1",
+              "I_2",
+              "I_3",
+              "I_4",
+              "I_5",
+              "I_6",
+              "I_7"
+            ],
+            "reasoning_logic": "综合所有原子表示和键连接关系，构建完整的分子结构字符串。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 C-C-C-O-N-H。",
+          "parents": [
+            "I_8"
+          ],
+          "reasoning_logic": "基于构建的分子结构序列得出最终结论。"
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出过渡态结构中不包括氢的化学键。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "已知化学键包括单键、双键和三键。"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "根据化学键定义，单键对应数值 1。"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "根据化学键定义，双键对应数值 2。"
+          },
+          {
+            "id": "C_5",
+            "type": "学科常识",
+            "content": "根据化学键定义，三键对应数值 3。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "由于化学键不包括氢，推导出氢键不计算在内。",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "基于题干关于过渡态结构不含氢化学键的陈述进行逻辑排除。"
+          },
+          {
+            "id": "I_2",
+            "type": "数值计算",
+            "content": "将单键、双键、三键的数值代入求和。",
+            "parents": [
+              "C_3",
+              "C_4",
+              "C_5",
+              "I_1"
+            ],
+            "reasoning_logic": "执行加法运算：1 + 2 + 3。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 6。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "综合计算结果得出最终陈述。"
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出过渡态结构图像中忽略箭头。",
+            "reasoning_logic": "从题目文本中提取的初始约束条件。"
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "SMILES 表达式是一种化学分子结构的表示方法。",
+            "reasoning_logic": "题目中明确陈述的化学背景知识。"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "SMILES 规则：每个原子用一个字母表示（如 C 表示碳，O 表示氧）。",
+            "reasoning_logic": "从题目给出的规则列表中提取的原子表示规则。"
+          },
+          {
+            "id": "C_4",
+            "type": "文字条件",
+            "content": "SMILES 规则：原子之间用短线表示化学键（如 C-C 表示单键）。",
+            "reasoning_logic": "从题目给出的规则列表中提取的化学键表示规则。"
+          },
+          {
+            "id": "C_5",
+            "type": "文字条件",
+            "content": "SMILES 规则：氢原子通常省略，除非它们是反应物或产物的一部分。",
+            "reasoning_logic": "从题目给出的规则列表中提取的氢原子处理规则。"
+          },
+          {
+            "id": "C_6",
+            "type": "文字条件",
+            "content": "SMILES 规则：环状结构用大写字母表示。",
+            "reasoning_logic": "从题目给出的规则列表中提取的环状结构表示规则。"
+          },
+          {
+            "id": "C_7",
+            "type": "文字条件",
+            "content": "SMILES 规则：反应物和产物用箭头表示。",
+            "reasoning_logic": "从题目给出的规则列表中提取的反应表示规则。"
+          },
+          {
+            "id": "C_8",
+            "type": "文字条件",
+            "content": "应用规则得出的中间结果：碳原子用 C 表示。",
+            "reasoning_logic": "题目中列出的具体元素映射结果。"
+          },
+          {
+            "id": "C_9",
+            "type": "文字条件",
+            "content": "应用规则得出的中间结果：氢原子省略。",
+            "reasoning_logic": "题目中列出的具体元素映射结果。"
+          },
+          {
+            "id": "C_10",
+            "type": "文字条件",
+            "content": "应用规则得出的中间结果：氧原子用 O 表示。",
+            "reasoning_logic": "题目中列出的具体元素映射结果。"
+          },
+          {
+            "id": "C_11",
+            "type": "文字条件",
+            "content": "应用规则得出的中间结果：氮原子用 N 表示。",
+            "reasoning_logic": "题目中列出的具体元素映射结果。"
+          },
+          {
+            "id": "C_12",
+            "type": "文字条件",
+            "content": "应用规则得出的中间结果：硫原子用 S 表示。",
+            "reasoning_logic": "题目中列出的具体元素映射结果。"
+          },
+          {
+            "id": "C_13",
+            "type": "文字条件",
+            "content": "过渡态结构中包含以下原子标识序列：C1, C2, C3, N1, N2, S1, S2, Zn1, Zn2, Br1 至 Br275。",
+            "reasoning_logic": "从题目罗列的长串原子标识中提取的结构组成信息。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "根据 SMILES 规则及忽略箭头的约束，确定过渡态结构的原子表示基础。",
+            "parents": [
+              "C_1",
+              "C_2",
+              "C_3",
+              "C_4",
+              "C_5",
+              "C_6",
+              "C_7"
+            ],
+            "reasoning_logic": "综合题目给出的所有 SMILES 定义规则和图像约束，建立解析框架。"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "确认特定元素（C, H, O, N, S）在过渡态中的具体表示形式。",
+            "parents": [
+              "C_8",
+              "C_9",
+              "C_10",
+              "C_11",
+              "C_12"
+            ],
+            "reasoning_logic": "将通用规则实例化为题目中提到的具体元素的处理方式。"
+          },
+          {
+            "id": "I_3",
+            "type": "综合归纳",
+            "content": "结合原子标识序列与元素表示规则，构建过渡态结构的完整原子清单。",
+            "parents": [
+              "I_1",
+              "I_2",
+              "C_13"
+            ],
+            "reasoning_logic": "将识别出的原子序列（C1-Br275 等）与已确定的元素符号规则进行匹配和整合。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "过渡态结构的 SMILES 表达基础由 C, N, S, O, Zn, Br 等原子按特定编号（C1-C3, N1-N2, S1-S2, Zn1-Zn2, Br1-Br275）组成，且氢原子被省略，无箭头指示。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "综合所有原子识别结果和规则应用情况，得出关于该过渡态结构组成的最终描述。"
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出这是一个化学反应的机理图，用于表示电子在反应步骤中的流动。"
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "化学反应的机理图通常表示反应物的电子转移。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "根据化学反应机理图推断出反应物的电子转移方向。",
+            "parents": [
+              "C_1",
+              "C_2"
+            ],
+            "reasoning_logic": "基于机理图的定义和常识进行定性推理。"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "将反应物的电子转移方向代入化学反应机理图，再次确认推断出反应物的电子转移方向。",
+            "parents": [
+              "I_1",
+              "C_1"
+            ],
+            "reasoning_logic": "将初步推断结果代回原图进行验证或重申。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 [答案]。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "综合上述推导步骤得出最终陈述。"
+        }
+      }
+    }
+  },
+  {
+    "id": 12,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出，过渡态结构中不包括氢的化学键。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "已知，化学键包括单键、双键和三键。"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "根据化学键定义，单键的键级为 1。"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "根据化学键定义，双键的键级为 2。"
+          },
+          {
+            "id": "C_5",
+            "type": "学科常识",
+            "content": "根据化学键定义，三键的键级为 3。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "由于化学键不包括氢，所以氢键不计算在内。",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "根据题干条件排除氢键。"
+          },
+          {
+            "id": "I_2",
+            "type": "数值计算",
+            "content": "计算有效化学键的总键级：1 (单键) + 2 (双键) + 3 (三键) = 6。",
+            "parents": [
+              "C_3",
+              "C_4",
+              "C_5",
+              "I_1"
+            ],
+            "reasoning_logic": "将各类型化学键的键级数值代入求和。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 6。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "综合上述计算结果得出最终陈述。"
+        }
+      }
+    }
+  },
+  {
+    "id": 13,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出我国某区域 1 月和 7 月等温线分布示意图。"
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "等温线表示温度相等的点连成的线。"
+          },
+          {
+            "id": "C_3",
+            "type": "图像条件",
+            "content": "图中显示该区域 1 月等温线密集。"
+          },
+          {
+            "id": "C_4",
+            "type": "图像条件",
+            "content": "图中显示该区域 7 月等温线稀疏。"
+          },
+          {
+            "id": "C_5",
+            "type": "文字条件",
+            "content": "该区域位于我国。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "推断该区域 1 月气温变化较大。",
+            "parents": [
+              "C_3"
+            ],
+            "reasoning_logic": "根据等温线密集程度与气温变化幅度的关系，由 1 月等温线密集推导出气温变化大。"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "推断该区域 7 月气温变化较小。",
+            "parents": [
+              "C_4"
+            ],
+            "reasoning_logic": "根据等温线稀疏程度与气温变化幅度的关系，由 7 月等温线稀疏推导出气温变化小。"
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "推断该区域 1 月气温较低。",
+            "parents": [
+              "I_1",
+              "C_5"
+            ],
+            "reasoning_logic": "结合 1 月气温变化大且区域位于我国（北半球冬季）的特征进行推断。"
+          },
+          {
+            "id": "I_4",
+            "type": "逻辑推导",
+            "content": "推断可能出现冬季作物休眠或生长缓慢的情况。",
+            "parents": [
+              "I_3"
+            ],
+            "reasoning_logic": "基于 1 月气温较低的结论，推导其对农作物生长的影响。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "该区域可能具有冬季作物休眠或生长缓慢的农业景观。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "综合上述关于气温及其对作物影响的推理，得出最终农业景观特征。"
+        }
+      }
+    }
+  },
+  {
+    "id": 14,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出，过渡态结构图像中忽略箭头。"
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "SMILES 表达式是一种化学分子结构的表示方法。"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R1 = C(=O)"
+          },
+          {
+            "id": "C_4",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R2 = C(=O)"
+          },
+          {
+            "id": "C_5",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R3 = C(=O)"
+          },
+          {
+            "id": "C_6",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R4 = C(=O)"
+          },
+          {
+            "id": "C_7",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R5 = C(=O)"
+          },
+          {
+            "id": "C_8",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R6 = C(=O)"
+          },
+          {
+            "id": "C_9",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R7 = C(=O)"
+          },
+          {
+            "id": "C_10",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R8 = C(=O)"
+          },
+          {
+            "id": "C_11",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R9 = C(=O)"
+          },
+          {
+            "id": "C_12",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R10 = C(=O)"
+          },
+          {
+            "id": "C_13",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R11 = C(=O)"
+          },
+          {
+            "id": "C_14",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R12 = C(=O)"
+          },
+          {
+            "id": "C_15",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R13 = C(=O)"
+          },
+          {
+            "id": "C_16",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R14 = C(=O)"
+          },
+          {
+            "id": "C_17",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R15 = C(=O)"
+          },
+          {
+            "id": "C_18",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R16 = C(=O)"
+          },
+          {
+            "id": "C_19",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R17 = C(=O)"
+          },
+          {
+            "id": "C_20",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R18 = C(=O)"
+          },
+          {
+            "id": "C_21",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R19 = C(=O)"
+          },
+          {
+            "id": "C_22",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R20 = C(=O)"
+          },
+          {
+            "id": "C_23",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R21 = C(=O)"
+          },
+          {
+            "id": "C_24",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R22 = C(=O)"
+          },
+          {
+            "id": "C_25",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R23 = C(=O)"
+          },
+          {
+            "id": "C_26",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R24 = C(=O)"
+          },
+          {
+            "id": "C_27",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R25 = C(=O)"
+          },
+          {
+            "id": "C_28",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R26 = C(=O)"
+          },
+          {
+            "id": "C_29",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R27 = C(=O)"
+          },
+          {
+            "id": "C_30",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R28 = C(=O)"
+          },
+          {
+            "id": "C_31",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R29 = C(=O)"
+          },
+          {
+            "id": "C_32",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R30 = C(=O)"
+          },
+          {
+            "id": "C_33",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R31 = C(=O)"
+          },
+          {
+            "id": "C_34",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R32 = C(=O)"
+          },
+          {
+            "id": "C_35",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R33 = C(=O)"
+          },
+          {
+            "id": "C_36",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R34 = C(=O)"
+          },
+          {
+            "id": "C_37",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R35 = C(=O)"
+          },
+          {
+            "id": "C_38",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R36 = C(=O)"
+          },
+          {
+            "id": "C_39",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R37 = C(=O)"
+          },
+          {
+            "id": "C_40",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R38 = C(=O)"
+          },
+          {
+            "id": "C_41",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R39 = C(=O)"
+          },
+          {
+            "id": "C_42",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R40 = C(=O)"
+          },
+          {
+            "id": "C_43",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R41 = C(=O)"
+          },
+          {
+            "id": "C_44",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R42 = C(=O)"
+          },
+          {
+            "id": "C_45",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R43 = C(=O)"
+          },
+          {
+            "id": "C_46",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R44 = C(=O)"
+          },
+          {
+            "id": "C_47",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R45 = C(=O)"
+          },
+          {
+            "id": "C_48",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R46 = C(=O)"
+          },
+          {
+            "id": "C_49",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R47 = C(=O)"
+          },
+          {
+            "id": "C_50",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R48 = C(=O)"
+          },
+          {
+            "id": "C_51",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R49 = C(=O)"
+          },
+          {
+            "id": "C_52",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R50 = C(=O)"
+          },
+          {
+            "id": "C_53",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R51 = C(=O)"
+          },
+          {
+            "id": "C_54",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R52 = C(=O)"
+          },
+          {
+            "id": "C_55",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R53 = C(=O)"
+          },
+          {
+            "id": "C_56",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R54 = C(=O)"
+          },
+          {
+            "id": "C_57",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R55 = C(=O)"
+          },
+          {
+            "id": "C_58",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R56 = C(=O)"
+          },
+          {
+            "id": "C_59",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R57 = C(=O)"
+          },
+          {
+            "id": "C_60",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R58 = C(=O)"
+          },
+          {
+            "id": "C_61",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R59 = C(=O)"
+          },
+          {
+            "id": "C_62",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R60 = C(=O)"
+          },
+          {
+            "id": "C_63",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R61 = C(=O)"
+          },
+          {
+            "id": "C_64",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R62 = C(=O)"
+          },
+          {
+            "id": "C_65",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R63 = C(=O)"
+          },
+          {
+            "id": "C_66",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R64 = C(=O)"
+          },
+          {
+            "id": "C_67",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R65 = C(=O)"
+          },
+          {
+            "id": "C_68",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R66 = C(=O)"
+          },
+          {
+            "id": "C_69",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R67 = C(=O)"
+          },
+          {
+            "id": "C_70",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R68 = C(=O)"
+          },
+          {
+            "id": "C_71",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R69 = C(=O)"
+          },
+          {
+            "id": "C_72",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R70 = C(=O)"
+          },
+          {
+            "id": "C_73",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R71 = C(=O)"
+          },
+          {
+            "id": "C_74",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R72 = C(=O)"
+          },
+          {
+            "id": "C_75",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R73 = C(=O)"
+          },
+          {
+            "id": "C_76",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R74 = C(=O)"
+          },
+          {
+            "id": "C_77",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R75 = C(=O)"
+          },
+          {
+            "id": "C_78",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R76 = C(=O)"
+          },
+          {
+            "id": "C_79",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R77 = C(=O)"
+          },
+          {
+            "id": "C_80",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R78 = C(=O)"
+          },
+          {
+            "id": "C_81",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R79 = C(=O)"
+          },
+          {
+            "id": "C_82",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R80 = C(=O)"
+          },
+          {
+            "id": "C_83",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R81 = C(=O)"
+          },
+          {
+            "id": "C_84",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R82 = C(=O)"
+          },
+          {
+            "id": "C_85",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R83 = C(=O)"
+          },
+          {
+            "id": "C_86",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R84 = C(=O)"
+          },
+          {
+            "id": "C_87",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R85 = C(=O)"
+          },
+          {
+            "id": "C_88",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R86 = C(=O)"
+          },
+          {
+            "id": "C_89",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R87 = C(=O)"
+          },
+          {
+            "id": "C_90",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R88 = C(=O)"
+          },
+          {
+            "id": "C_91",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R89 = C(=O)"
+          },
+          {
+            "id": "C_92",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R90 = C(=O)"
+          },
+          {
+            "id": "C_93",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R91 = C(=O)"
+          },
+          {
+            "id": "C_94",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R92 = C(=O)"
+          },
+          {
+            "id": "C_95",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R93 = C(=O)"
+          },
+          {
+            "id": "C_96",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R94 = C(=O)"
+          },
+          {
+            "id": "C_97",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R95 = C(=O)"
+          },
+          {
+            "id": "C_98",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R96 = C(=O)"
+          },
+          {
+            "id": "C_99",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R97 = C(=O)"
+          },
+          {
+            "id": "C_100",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R98 = C(=O)"
+          },
+          {
+            "id": "C_101",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R99 = C(=O)"
+          },
+          {
+            "id": "C_102",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R100 = C(=O)"
+          },
+          {
+            "id": "C_103",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R101 = C(=O)"
+          },
+          {
+            "id": "C_104",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R102 = C(=O)"
+          },
+          {
+            "id": "C_105",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R103 = C(=O)"
+          },
+          {
+            "id": "C_106",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R104 = C(=O)"
+          },
+          {
+            "id": "C_107",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R105 = C(=O)"
+          },
+          {
+            "id": "C_108",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R106 = C(=O)"
+          },
+          {
+            "id": "C_109",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R107 = C(=O)"
+          },
+          {
+            "id": "C_110",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R108 = C(=O)"
+          },
+          {
+            "id": "C_111",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R109 = C(=O)"
+          },
+          {
+            "id": "C_112",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R110 = C(=O)"
+          },
+          {
+            "id": "C_113",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R111 = C(=O)"
+          },
+          {
+            "id": "C_114",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R112 = C(=O)"
+          },
+          {
+            "id": "C_115",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R113 = C(=O)"
+          },
+          {
+            "id": "C_116",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R114 = C(=O)"
+          },
+          {
+            "id": "C_117",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R115 = C(=O)"
+          },
+          {
+            "id": "C_118",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R116 = C(=O)"
+          },
+          {
+            "id": "C_119",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R117 = C(=O)"
+          },
+          {
+            "id": "C_120",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R118 = C(=O)"
+          },
+          {
+            "id": "C_121",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R119 = C(=O)"
+          },
+          {
+            "id": "C_122",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R120 = C(=O)"
+          },
+          {
+            "id": "C_123",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R121 = C(=O)"
+          },
+          {
+            "id": "C_124",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R122 = C(=O)"
+          },
+          {
+            "id": "C_125",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R123 = C(=O)"
+          },
+          {
+            "id": "C_126",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R124 = C(=O)"
+          },
+          {
+            "id": "C_127",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R125 = C(=O)"
+          },
+          {
+            "id": "C_128",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R126 = C(=O)"
+          },
+          {
+            "id": "C_129",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R127 = C(=O)"
+          },
+          {
+            "id": "C_130",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R128 = C(=O)"
+          },
+          {
+            "id": "C_131",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R129 = C(=O)"
+          },
+          {
+            "id": "C_132",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R130 = C(=O)"
+          },
+          {
+            "id": "C_133",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R131 = C(=O)"
+          },
+          {
+            "id": "C_134",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R132 = C(=O)"
+          },
+          {
+            "id": "C_135",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R133 = C(=O)"
+          },
+          {
+            "id": "C_136",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R134 = C(=O)"
+          },
+          {
+            "id": "C_137",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R135 = C(=O)"
+          },
+          {
+            "id": "C_138",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R136 = C(=O)"
+          },
+          {
+            "id": "C_139",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R137 = C(=O)"
+          },
+          {
+            "id": "C_140",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R138 = C(=O)"
+          },
+          {
+            "id": "C_141",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R139 = C(=O)"
+          },
+          {
+            "id": "C_142",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R140 = C(=O)"
+          },
+          {
+            "id": "C_143",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R141 = C(=O)"
+          },
+          {
+            "id": "C_144",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R142 = C(=O)"
+          },
+          {
+            "id": "C_145",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R143 = C(=O)"
+          },
+          {
+            "id": "C_146",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R144 = C(=O)"
+          },
+          {
+            "id": "C_147",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R145 = C(=O)"
+          },
+          {
+            "id": "C_148",
+            "type": "文字条件",
+            "content": "根据 SMILES 表达式的规则，R146 = C(=O)"
+          }
+        ],
+        "intermediate_steps": [],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "根据 SMILES 规则推导出 R1 至 R146 均为 C(=O) 结构（列表在 R146 处截断）。",
+          "parents": [
+            "C_3",
+            "C_4",
+            "C_5",
+            "C_6",
+            "C_7",
+            "C_8",
+            "C_9",
+            "C_10",
+            "C_11",
+            "C_12",
+            "C_13",
+            "C_14",
+            "C_15",
+            "C_16",
+            "C_17",
+            "C_18",
+            "C_19",
+            "C_20",
+            "C_21",
+            "C_22",
+            "C_23",
+            "C_24",
+            "C_25",
+            "C_26",
+            "C_27",
+            "C_28",
+            "C_29",
+            "C_30",
+            "C_31",
+            "C_32",
+            "C_33",
+            "C_34",
+            "C_35",
+            "C_36",
+            "C_37",
+            "C_38",
+            "C_39",
+            "C_40",
+            "C_41",
+            "C_42",
+            "C_43",
+            "C_44",
+            "C_45",
+            "C_46",
+            "C_47",
+            "C_48",
+            "C_49",
+            "C_50",
+            "C_51",
+            "C_52",
+            "C_53",
+            "C_54",
+            "C_55",
+            "C_56",
+            "C_57",
+            "C_58",
+            "C_59",
+            "C_60",
+            "C_61",
+            "C_62",
+            "C_63",
+            "C_64",
+            "C_65",
+            "C_66",
+            "C_67",
+            "C_68",
+            "C_69",
+            "C_70",
+            "C_71",
+            "C_72",
+            "C_73",
+            "C_74",
+            "C_75",
+            "C_76",
+            "C_77",
+            "C_78",
+            "C_79",
+            "C_80",
+            "C_81",
+            "C_82",
+            "C_83",
+            "C_84",
+            "C_85",
+            "C_86",
+            "C_87",
+            "C_88",
+            "C_89",
+            "C_90",
+            "C_91",
+            "C_92",
+            "C_93",
+            "C_94",
+            "C_95",
+            "C_96",
+            "C_97",
+            "C_98",
+            "C_99",
+            "C_100",
+            "C_101",
+            "C_102",
+            "C_103",
+            "C_104",
+            "C_105",
+            "C_106",
+            "C_107",
+            "C_108",
+            "C_109",
+            "C_110",
+            "C_111",
+            "C_112",
+            "C_113",
+            "C_114",
+            "C_115",
+            "C_116",
+            "C_117",
+            "C_118",
+            "C_119",
+            "C_120",
+            "C_121",
+            "C_122",
+            "C_123",
+            "C_124",
+            "C_125",
+            "C_126",
+            "C_127",
+            "C_128",
+            "C_129",
+            "C_130",
+            "C_131",
+            "C_132",
+            "C_133",
+            "C_134",
+            "C_135",
+            "C_136",
+            "C_137",
+            "C_138",
+            "C_139",
+            "C_140",
+            "C_141",
+            "C_142",
+            "C_143",
+            "C_144",
+            "C_145",
+            "C_146",
+            "C_147",
+            "C_148"
+          ],
+          "reasoning_logic": "汇总所有从 R1 到 R146 的独立推导结果，得出整体结构特征。"
+        }
+      }
+    }
+  },
+  {
+    "id": 15,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出这是一个化学反应的机理图，用于表示电子在反应步骤中的流动。"
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "化学反应的机理图通常表示反应物的电子转移。"
+          },
+          {
+            "id": "C_3",
+            "type": "图像条件",
+            "content": "根据化学反应机理图，电子从反应物转移到产物。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "将反应物的电子转移代入上述机理图，可得产物。",
+            "parents": [
+              "C_1",
+              "C_2",
+              "C_3"
+            ],
+            "reasoning_logic": "结合机理图定义与电子转移方向，推导产物生成过程。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 [答案]。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "综合前述推导步骤得出最终结论。"
+        }
+      }
+    }
+  },
+  {
+    "id": 16,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题目要求计算过渡态结构中包括单键、双键和三键在内的总键数。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "题目规定计算总键数时不包括涉及氢原子的键。"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "已知过渡态结构中存在多个碳氢键（C-H）。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "根据排除规则，所有列出的碳氢键（C-H）均涉及氢原子，因此都不计入总键数。",
+            "parents": [
+              "C_2",
+              "C_3"
+            ],
+            "reasoning_logic": "应用题目给出的排除条件（不涉及氢原子的键）对已知化学键进行筛选。"
+          },
+          {
+            "id": "I_2",
+            "type": "综合归纳",
+            "content": "由于所有已知的化学键均为碳氢键且被排除，且题目未提供其他非氢化学键的信息，故符合条件的总键数为 0。",
+            "parents": [
+              "C_1",
+              "I_1"
+            ],
+            "reasoning_logic": "综合计数要求和筛选结果，得出最终数值。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "过渡态结构中不包括涉及氢原子的键的总键数为 0。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "基于前述逻辑推导得出最终结论。"
+        }
+      }
+    }
+  },
+  {
+    "id": 17,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出，1 是胸腺嘧啶。"
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "DNA 双链中，嘌呤与嘧啶配对。"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "碱基配对规律公式：A 与 T 配对，C 与 G 配对。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "将 1（胸腺嘧啶）代入碱基配对规律，推导出与 1 配对的 a 是腺嘌呤。",
+            "parents": [
+              "C_1",
+              "C_3"
+            ],
+            "reasoning_logic": "根据碱基配对规律（A 与 T 配对），已知 1 为 T，故与之配对的 a 为 A。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 a = A。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "综合上述推导结果得出最终陈述。"
+        }
+      }
+    }
+  },
+  {
+    "id": 18,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题目给出反应式：CaO(s) + SO_3(g) = CaSO_4(s)"
+          },
+          {
+            "id": "C_2",
+            "type": "文字条件",
+            "content": "表格数据显示，在温度 373 K 时，ΔHθ = -1434.5 kJ·mol⁻¹"
+          },
+          {
+            "id": "C_3",
+            "type": "文字条件",
+            "content": "表格数据显示，在温度 373 K 时，ΔSθ = 106.5 J·mol⁻¹·K⁻¹"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "热力学公式：ΔrGθ = ΔrHθ - TΔrSθ"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "数值计算",
+            "content": "计算 TΔrSθ 项的值：373 × 106.5 = 39562.5",
+            "parents": [
+              "C_3"
+            ],
+            "reasoning_logic": "将温度 T=373 和熵变数据代入乘法运算"
+          },
+          {
+            "id": "I_2",
+            "type": "数值计算",
+            "content": "计算 ΔrGθ 的值：-1434.5 - 39562.5 = -40997.0",
+            "parents": [
+              "C_2",
+              "I_1"
+            ],
+            "reasoning_logic": "根据公式 ΔrGθ = ΔrHθ - TΔrSθ，将焓变数据和步骤 I_1 的计算结果代入减法运算"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 ΔrGθ = -40997.0 kJ·mol⁻¹",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "综合上述计算步骤得出最终结论"
+        }
+      }
+    }
+  },
+  {
+    "id": 19,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字条件",
+            "content": "题干给出过渡态结构图像中忽略箭头。"
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "SMILES 表达式是一种化学分子结构的表示方法。"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "SMILES 规则：每个原子用一个字母表示，如 C、O、N 等。"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "SMILES 规则：原子之间用短线表示化学键，如-C-C-C-表示一个丙烷分子。"
+          },
+          {
+            "id": "C_5",
+            "type": "学科常识",
+            "content": "SMILES 规则：双键用=表示，如 C=C 表示一个乙烯分子。"
+          },
+          {
+            "id": "C_6",
+            "type": "学科常识",
+            "content": "SMILES 规则：三键用#表示，如 C#C 表示一个乙炔分子。"
+          },
+          {
+            "id": "C_7",
+            "type": "学科常识",
+            "content": "SMILES 规则：氢原子用 H 表示，如 C-C-C-H 表示一个丙烷分子。"
+          },
+          {
+            "id": "C_8",
+            "type": "学科常识",
+            "content": "SMILES 规则：环状结构用大括号表示，如 C1=CC=CC1 表示一个环己烷分子。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "将 SMILES 表达式的规则应用于过渡态结构图像。",
+            "parents": [
+              "C_1",
+              "C_2",
+              "C_3",
+              "C_4",
+              "C_5",
+              "C_6",
+              "C_7",
+              "C_8"
+            ],
+            "reasoning_logic": "根据题目指示，结合已知的 SMILES 规则集对图像进行解析。"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "推导出该过渡态结构的 SMILES 表达式为 C1=CC=CC1。",
+            "parents": [
+              "I_1"
+            ],
+            "reasoning_logic": "基于规则应用的结果，确定具体的字符串表达。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 C1=CC=CC1。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "综合上述推导步骤得出最终结论。"
+        }
+      }
+    }
+  }
+]

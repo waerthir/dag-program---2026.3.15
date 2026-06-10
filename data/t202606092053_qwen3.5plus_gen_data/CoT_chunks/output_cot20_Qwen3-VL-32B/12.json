@@ -1,0 +1,90 @@
+{
+  "id": 12,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题干给出研究者测量了某领土鸟类雄性个体在一年中的睾酮（T）水平。",
+          "parents": []
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "雄性个体在种群中有两种角色：留在原生群体帮助抚养幼弟（helper male）。",
+          "parents": []
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "雄性个体在种群中有两种角色：离开原生群体建立新领地（breeding male）。",
+          "parents": []
+        },
+        {
+          "id": "C_4",
+          "type": "图像条件",
+          "content": "在非繁殖季节，helper male 的平均 T 水平约为 10。",
+          "parents": []
+        },
+        {
+          "id": "C_5",
+          "type": "图像条件",
+          "content": "在非繁殖季节，breeding male 的平均 T 水平约为 10。",
+          "parents": []
+        },
+        {
+          "id": "C_6",
+          "type": "图像条件",
+          "content": "在繁殖季节，helper male 的平均 T 水平约为 10。",
+          "parents": []
+        },
+        {
+          "id": "C_7",
+          "type": "图像条件",
+          "content": "在繁殖季节，breeding male 的平均 T 水平上升至约 50。",
+          "parents": []
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "对比分析",
+          "content": "繁殖季节 breeding male 的 T 水平显著升高，而 helper male 保持稳定。",
+          "parents": [
+            "C_6",
+            "C_7"
+          ],
+          "reasoning_logic": "对比繁殖季节两种角色的 T 水平数据得出差异。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "T 水平与繁殖行为相关。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "基于 T 水平随繁殖角色变化的现象推导其与繁殖行为的关联性。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "T 水平在繁殖季节随繁殖角色变化而变化，符合激素调节繁殖行为的典型模式。",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "将观察到的变化模式与激素调节繁殖行为的典型模式进行匹配。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "激素水平随繁殖状态变化的生理调节机制。",
+        "parents": [
+          "I_3"
+        ],
+        "reasoning_logic": "综合上述推导，得出睾酮水平是与繁殖状态相关的生理调节因子的最终结论。"
+      }
+    }
+  }
+}

@@ -5,46 +5,92 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
-          "content": "题干给出图示为原核生物 DNA 同时进行复制和转录的过程。"
+          "type": "文字信息",
+          "content": "题干给出图示为原核生物DNA同时进行复制的过程"
         },
         {
           "id": "C_2",
-          "type": "文字条件",
-          "content": "题干给出编号 1 是胸腺嘧啶（thymine）。"
+          "type": "文字信息",
+          "content": "题干给出图示为原核生物DNA同时进行转录的过程"
         },
         {
           "id": "C_3",
-          "type": "文字条件",
-          "content": "编号 1 位于左链上，其对应右链上的碱基为 a。"
+          "type": "文字信息",
+          "content": "题干给出1是胸腺嘧啶"
         },
         {
           "id": "C_4",
           "type": "学科常识",
-          "content": "在 DNA 双链中，碱基配对遵循互补原则：A 与 T 配对，G 与 C 配对。"
+          "content": "在DNA双链中碱基配对遵循互补原则"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "A与T配对"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "G与C配对"
+        },
+        {
+          "id": "C_7",
+          "type": "图像信息",
+          "content": "1位于左链上"
+        },
+        {
+          "id": "C_8",
+          "type": "图像信息",
+          "content": "1编号为1"
+        },
+        {
+          "id": "C_9",
+          "type": "图像信息",
+          "content": "1对应右链上的碱基为a"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
-          "type": "逻辑推导",
-          "content": "由于 1 是 T，根据碱基互补配对规则，推导出 a 应为 A。",
+          "type": "条件转化",
+          "content": "1处碱基为T",
           "parents": [
-            "C_2",
-            "C_3",
-            "C_4"
+            "C_3"
           ],
-          "reasoning_logic": "将已知碱基 1 的类型（T）与位置关系（1 对应 a）代入碱基互补配对原则进行推导。"
+          "reasoning_logic": "将胸腺嘧啶转化为碱基符号T"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "a与T互补配对",
+          "parents": [
+            "I_1",
+            "C_4",
+            "C_5",
+            "C_7",
+            "C_9"
+          ],
+          "reasoning_logic": "根据1对应右链上的碱基为a以及DNA双链碱基互补配对规则进行推导"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "a应为A",
+          "parents": [
+            "I_2",
+            "C_5"
+          ],
+          "reasoning_logic": "根据A与T配对推出与T对应的碱基为A"
         }
       ],
       "final_conclusion": {
         "id": "O",
-        "type": "综合归纳",
-        "content": "最终答案是 A。",
+        "type": "逻辑推导",
+        "content": "最终答案是A",
         "parents": [
-          "I_1"
+          "I_3"
         ],
-        "reasoning_logic": "综合上述推导结果得出最终结论。"
+        "reasoning_logic": "由a应为A得出最终答案"
       }
     }
   }

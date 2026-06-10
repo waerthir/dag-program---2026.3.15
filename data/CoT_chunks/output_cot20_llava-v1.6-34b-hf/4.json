@@ -5,98 +5,118 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
+          "type": "文字信息",
           "content": "题干给出输出电压 v_OUT 需要穿过 -10 V。"
         },
         {
           "id": "C_2",
-          "type": "文字条件",
-          "content": "已知输入电压 v_IN 是一个三角波形，幅度为 2 V，频率为 1 kHz。"
+          "type": "文字信息",
+          "content": "已知输入电压 v_IN 是一个三角波形。"
         },
         {
           "id": "C_3",
-          "type": "文字条件",
-          "content": "根据三角波形的定义，可得公式 v_IN = 2 sin(2πt)。"
+          "type": "文字信息",
+          "content": "已知输入电压 v_IN 的幅度为 2 V。"
         },
         {
           "id": "C_4",
-          "type": "文字条件",
-          "content": "已知关系式 v_OUT = v_IN - 12 V。"
+          "type": "文字信息",
+          "content": "已知输入电压 v_IN 的频率为 1 kHz。"
         },
         {
           "id": "C_5",
           "type": "学科常识",
-          "content": "三角函数的单位圆定义。"
+          "content": "引用三角波形的定义。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "已知 v_OUT = v_IN - 12 V。"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "引用三角函数的单位圆定义。"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
           "type": "条件转化",
-          "content": "将 v_IN 代入公式得到 v_IN = 2 sin(2πt)。",
+          "content": "得到公式 v_IN = 2 sin(2πt)。",
           "parents": [
             "C_2",
-            "C_3"
+            "C_3",
+            "C_5"
           ],
-          "reasoning_logic": "根据三角波形定义及已知幅度和频率进行公式实例化。"
+          "reasoning_logic": "根据三角波形的定义，将输入电压的波形和幅度转化为公式。"
         },
         {
           "id": "I_2",
           "type": "条件转化",
-          "content": "推导得出 v_OUT = 2 sin(2πt) - 12 V。",
+          "content": "将 v_IN 代入上述公式后得到 v_IN = 2 sin(2πt)。",
           "parents": [
-            "I_1",
-            "C_4"
+            "I_1"
           ],
-          "reasoning_logic": "将 I_1 的结果代入 C_4 的关系式中。"
+          "reasoning_logic": "将输入电压表达式代入同一公式。"
         },
         {
           "id": "I_3",
-          "type": "条件转化",
-          "content": "建立方程 -10 V = 2 sin(2πt) - 12 V。",
+          "type": "数值计算",
+          "content": "得到 v_OUT = 2 sin(2πt) - 12 V。",
           "parents": [
-            "C_1",
-            "I_2"
+            "I_2",
+            "C_6"
           ],
-          "reasoning_logic": "利用 C_1 中 v_OUT 的目标值 -10 V 代入 I_2 的表达式。"
+          "reasoning_logic": "将 v_IN = 2 sin(2πt) 代入 v_OUT = v_IN - 12 V。"
         },
         {
           "id": "I_4",
-          "type": "数值计算",
-          "content": "解方程得到 2 sin(2πt) = 2 V。",
+          "type": "条件转化",
+          "content": "当 v_OUT = -10 V 时，得到 -10 V = 2 sin(2πt) - 12 V。",
           "parents": [
+            "C_1",
             "I_3"
           ],
-          "reasoning_logic": "对方程 I_3 进行移项运算，将 -12 V 移至等号左侧。"
+          "reasoning_logic": "将输出电压需要穿过 -10 V 的条件代入输出电压表达式。"
         },
         {
           "id": "I_5",
           "type": "数值计算",
-          "content": "计算得出 sin(2πt) = 1。",
+          "content": "解方程得到 2 sin(2πt) = 2 V。",
           "parents": [
             "I_4"
           ],
-          "reasoning_logic": "将 I_4 中的等式两边同时除以 2 V（原文表述为代入单位圆定义计算比值）。"
+          "reasoning_logic": "对方程 -10 V = 2 sin(2πt) - 12 V 进行移项。"
         },
         {
           "id": "I_6",
-          "type": "逻辑推导",
-          "content": "推导得出 t = π/2。",
+          "type": "数值计算",
+          "content": "得到 sin(2πt) = 2 V / 2。",
           "parents": [
             "I_5",
-            "C_5"
+            "C_7"
           ],
-          "reasoning_logic": "基于 I_5 的正弦值和 C_5 的单位圆定义求解时间 t。"
+          "reasoning_logic": "将 sin(2πt) 代入三角函数的单位圆定义。"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "得到 t = π / 2。",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "根据 sin(2πt) = 2 V / 2 得出时间结果。"
         }
       ],
       "final_conclusion": {
         "id": "O",
         "type": "综合归纳",
-        "content": "最终答案是 t = π/2。",
+        "content": "最终答案是 t = π / 2。",
         "parents": [
-          "I_6"
+          "I_7"
         ],
-        "reasoning_logic": "综合上述推理步骤得出最终结论。"
+        "reasoning_logic": "由方程求解结果得出最终答案。"
       }
     }
   }

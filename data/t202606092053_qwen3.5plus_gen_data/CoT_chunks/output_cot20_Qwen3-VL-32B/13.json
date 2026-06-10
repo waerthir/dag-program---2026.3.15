@@ -1,0 +1,106 @@
+{
+  "id": 13,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题干给出反应方程式：CH3CO-CoA + 3NAD+ + GDP + PO4^{3-} + 2H2O -> CoA-SH + 3NADH + 3H+ + GTP + 2CO2"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "反应中乙酰辅酶 A（CH3CO-CoA）被氧化"
+        },
+        {
+          "id": "C_3",
+          "type": "文字条件",
+          "content": "反应生成了 2 分子 CO2"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "反应生成了 3 分子 NADH"
+        },
+        {
+          "id": "C_5",
+          "type": "文字条件",
+          "content": "氧化过程中碳骨架被脱羧，失去两个碳原子以 CO2 形式释放"
+        },
+        {
+          "id": "C_6",
+          "type": "文字条件",
+          "content": "反应中 NAD+ 被还原为 NADH"
+        },
+        {
+          "id": "C_7",
+          "type": "文字条件",
+          "content": "NAD+ 还原为 NADH 表明发生了脱氢反应"
+        },
+        {
+          "id": "C_8",
+          "type": "文字条件",
+          "content": "反应中 GDP 与 PO4^{3-} 结合生成 GTP"
+        },
+        {
+          "id": "C_9",
+          "type": "文字条件",
+          "content": "GDP 与 PO4^{3-} 结合生成 GTP 表明伴随底物水平磷酸化"
+        },
+        {
+          "id": "C_10",
+          "type": "学科常识",
+          "content": "该反应描述的是乙酰辅酶 A 在柠檬酸循环中被完全氧化为 CO2 的过程"
+        },
+        {
+          "id": "C_11",
+          "type": "文字条件",
+          "content": "该过程包含脱羧、脱氢和底物水平磷酸化"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "由生成 CO2 且碳骨架失去碳原子，确认反应包含脱羧特征",
+          "parents": [
+            "C_3",
+            "C_5"
+          ],
+          "reasoning_logic": "根据 C_3 和 C_5 中关于 CO2 生成和碳原子丢失的描述，推导脱羧特征"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "由 NAD+ 还原为 NADH，确认反应包含脱氢特征",
+          "parents": [
+            "C_6",
+            "C_7"
+          ],
+          "reasoning_logic": "根据 C_6 和 C_7 中关于 NAD+ 还原的描述，推导脱氢特征"
+        },
+        {
+          "id": "I_3",
+          "type": "综合归纳",
+          "content": "该反应同时具备氧化（脱氢）和脱羧的特征",
+          "parents": [
+            "I_1",
+            "I_2",
+            "C_2"
+          ],
+          "reasoning_logic": "综合 I_1 的脱羧结论、I_2 的脱氢结论以及 C_2 的氧化事实，归纳反应类型特征"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "该反应属于氧化脱羧反应",
+        "parents": [
+          "I_3"
+        ],
+        "reasoning_logic": "基于 I_3 总结的氧化和脱羧双重特征，得出最终反应类型为氧化脱羧反应"
+      }
+    }
+  }
+}

@@ -5,156 +5,227 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
-          "content": "题干给出图像显示一个化学反应的过渡态结构。"
+          "type": "图像信息",
+          "content": "图像显示一个化学反应的过渡态结构"
         },
         {
           "id": "C_2",
-          "type": "文字条件",
-          "content": "该结构包含一个三苯基膦分子 Ph3P。"
+          "type": "文字信息",
+          "content": "该结构包含一个三苯基膦分子 Ph3P"
         },
         {
           "id": "C_3",
-          "type": "文字条件",
-          "content": "该结构包含一个二 (吡啶 -2-基) 二硫化物衍生物，其中一个硫原子带有正电荷并与氢原子结合。"
+          "type": "文字信息",
+          "content": "该结构包含一个二(吡啶-2-基)二硫化物衍生物"
         },
         {
           "id": "C_4",
-          "type": "文字条件",
-          "content": "结构中包含两个吡啶环。"
+          "type": "文字信息",
+          "content": "一个硫原子带有正电荷"
         },
         {
           "id": "C_5",
-          "type": "文字条件",
-          "content": "两个吡啶环分别连接在两个硫原子上。"
+          "type": "文字信息",
+          "content": "一个硫原子与氢原子结合"
         },
         {
           "id": "C_6",
-          "type": "文字条件",
-          "content": "两个硫原子之间存在单键连接。"
+          "type": "文字信息",
+          "content": "结构中包含两个吡啶环"
         },
         {
           "id": "C_7",
-          "type": "文字条件",
-          "content": "其中一个硫原子连接着一个氢原子 H。"
+          "type": "文字信息",
+          "content": "第一个吡啶环连接在一个硫原子上"
         },
         {
           "id": "C_8",
-          "type": "文字条件",
-          "content": "三苯基膦的磷原子 P 位于分子的左侧。"
+          "type": "文字信息",
+          "content": "第二个吡啶环连接在另一个硫原子上"
         },
         {
           "id": "C_9",
-          "type": "文字条件",
-          "content": "磷原子 P 与三个苯基 Ph 相连。"
+          "type": "文字信息",
+          "content": "两个硫原子之间存在单键连接"
         },
         {
           "id": "C_10",
-          "type": "文字条件",
-          "content": "忽略箭头后，该结构由 Ph3P 和 Py-S-S(H)-Py 组成。"
+          "type": "文字信息",
+          "content": "其中一个硫原子连接着一个氢原子 H"
         },
         {
           "id": "C_11",
-          "type": "学科常识",
-          "content": "Ph 代表苯基 c1ccccc1。"
+          "type": "图像信息",
+          "content": "三苯基膦的磷原子 P 位于分子的左侧"
         },
         {
           "id": "C_12",
-          "type": "学科常识",
-          "content": "Py 代表 2-吡啶基 n1ccccc1C。"
+          "type": "文字信息",
+          "content": "磷原子 P 与第一个苯基 Ph 相连"
         },
         {
           "id": "C_13",
-          "type": "学科常识",
-          "content": "根据 SMILES 语法，三苯基膦表示为 P(c1ccccc1)(c2ccccc2)c3ccccc3。"
+          "type": "文字信息",
+          "content": "磷原子 P 与第二个苯基 Ph 相连"
         },
         {
           "id": "C_14",
-          "type": "学科常识",
-          "content": "根据 SMILES 语法，二 (吡啶 -2-基) 硫代亚磺酸结构表示为 n1ccccc1S S(H)c2ccccn2。"
+          "type": "文字信息",
+          "content": "磷原子 P 与第三个苯基 Ph 相连"
         },
         {
           "id": "C_15",
-          "type": "文字条件",
-          "content": "题目要求忽略箭头，仅描述静态结构。"
+          "type": "文字信息",
+          "content": "忽略箭头后，该结构包含 Ph3P"
         },
         {
           "id": "C_16",
-          "type": "图像条件",
-          "content": "图中 Ph3P 与 S 之间尚未形成共价键。"
+          "type": "文字信息",
+          "content": "忽略箭头后，该结构包含 Py-S-S(H)-Py"
         },
         {
           "id": "C_17",
-          "type": "图像条件",
-          "content": "图中 S-H 键尚未完全断裂。"
+          "type": "学科常识",
+          "content": "Ph 代表苯基 c1ccccc1"
         },
         {
           "id": "C_18",
           "type": "学科常识",
-          "content": "SMILES 无法直接表示非共价相互作用的过渡态，通常将其表示为反应物和产物的组合或离散分子。"
+          "content": "Py 代表 2-吡啶基 n1ccccc1C"
+        },
+        {
+          "id": "C_19",
+          "type": "学科常识",
+          "content": "SMILES 语法可用于表示分子连接关系"
+        },
+        {
+          "id": "C_20",
+          "type": "文字信息",
+          "content": "题目要求忽略箭头"
+        },
+        {
+          "id": "C_21",
+          "type": "文字信息",
+          "content": "题目要求仅描述静态结构"
+        },
+        {
+          "id": "C_22",
+          "type": "图像信息",
+          "content": "图中 Ph3P 与 S 之间尚未形成共价键"
+        },
+        {
+          "id": "C_23",
+          "type": "图像信息",
+          "content": "图中 S-H 键尚未完全断裂"
+        },
+        {
+          "id": "C_24",
+          "type": "学科常识",
+          "content": "SMILES 无法直接表示非共价相互作用的过渡态"
+        },
+        {
+          "id": "C_25",
+          "type": "学科常识",
+          "content": "非共价相互作用的过渡态通常在 SMILES 中表示为反应物和产物的组合或离散分子"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
-          "type": "逻辑推导",
-          "content": "确定该过渡态结构在 SMILES 中应表示为两个离散部分的组合。",
+          "type": "条件转化",
+          "content": "将三苯基膦转化为 SMILES 表达式 P(c1ccccc1)(c2ccccc2)c3ccccc3",
           "parents": [
-            "C_15",
-            "C_16",
+            "C_2",
+            "C_12",
+            "C_13",
+            "C_14",
             "C_17",
-            "C_18"
+            "C_19"
           ],
-          "reasoning_logic": "基于题目忽略箭头的要求及图中未形成/未断裂的键，结合 SMILES 对过渡态的处理规则进行推导。"
+          "reasoning_logic": "根据 Ph 的含义和 SMILES 语法表示三苯基膦"
         },
         {
           "id": "I_2",
           "type": "条件转化",
-          "content": "将三苯基膦部分转化为 SMILES 字符串 P(c1ccccc1)(c2ccccc2)c3ccccc3。",
+          "content": "将二(吡啶-2-基)硫代亚磺酸结构转化为 SMILES 表达式 n1ccccc1S S(H)c2ccccn2",
           "parents": [
-            "C_2",
+            "C_3",
+            "C_6",
+            "C_7",
             "C_8",
             "C_9",
-            "C_11",
-            "C_13"
+            "C_10",
+            "C_18",
+            "C_19"
           ],
-          "reasoning_logic": "利用已知的分子组成、原子连接关系及苯基定义，应用 SMILES 语法规则生成对应字符串。"
+          "reasoning_logic": "根据 Py 的含义和 SMILES 语法表示二(吡啶-2-基)硫代亚磺酸结构"
         },
         {
           "id": "I_3",
-          "type": "条件转化",
-          "content": "将二 (吡啶 -2-基) 二硫化物衍生物部分转化为 SMILES 字符串 n1ccccc1SS([H])c2ccccn2。",
+          "type": "逻辑推导",
+          "content": "忽略箭头后需要描述 Ph3P 和 Py-S-S(H)-Py 的静态结构",
           "parents": [
-            "C_3",
-            "C_4",
-            "C_5",
-            "C_6",
-            "C_7",
-            "C_12",
-            "C_14"
+            "C_15",
+            "C_16",
+            "C_20",
+            "C_21"
           ],
-          "reasoning_logic": "利用已知的环数量、连接方式、电荷状态及吡啶基定义，应用 SMILES 语法规则生成对应字符串。"
+          "reasoning_logic": "依据题目要求忽略箭头并仅保留静态结构组成"
         },
         {
           "id": "I_4",
-          "type": "综合归纳",
-          "content": "组合两部分 SMILES 字符串，得到最终表达式 P(c1ccccc1)(c2ccccc2)c3ccccc3.n1ccccc1SS([H])c2ccccn2。",
+          "type": "逻辑推导",
+          "content": "该过渡态结构应表示为离散分子组合",
+          "parents": [
+            "C_1",
+            "C_22",
+            "C_23",
+            "C_24",
+            "C_25"
+          ],
+          "reasoning_logic": "由于 Ph3P 与 S 未形成共价键且 S-H 键未完全断裂，结合 SMILES 对非共价过渡态的表示限制进行判断"
+        },
+        {
+          "id": "I_5",
+          "type": "条件转化",
+          "content": "根据图像中的原子连接关系得到 Ph3P 部分为 P(c1ccccc1)(c2ccccc2)c3ccccc3",
           "parents": [
             "I_1",
-            "I_2",
-            "I_3"
+            "I_3",
+            "I_4"
           ],
-          "reasoning_logic": "根据离散分子组合的规则，将生成的两个独立 SMILES 片段用点号连接。"
+          "reasoning_logic": "保留三苯基膦作为离散分子的 SMILES 组成部分"
+        },
+        {
+          "id": "I_6",
+          "type": "条件转化",
+          "content": "根据图像中的原子连接关系得到含硫吡啶部分为 n1ccccc1SS([H])c2ccccn2",
+          "parents": [
+            "I_2",
+            "I_3",
+            "I_4"
+          ],
+          "reasoning_logic": "将含两个吡啶环、S-S 单键和 S-H 连接的部分转化为离散分子的 SMILES 组成部分"
+        },
+        {
+          "id": "I_7",
+          "type": "综合归纳",
+          "content": "将各部分组合得到 SMILES 表达式 P(c1ccccc1)(c2ccccc2)c3ccccc3.n1ccccc1SS([H])c2ccccn2",
+          "parents": [
+            "I_5",
+            "I_6"
+          ],
+          "reasoning_logic": "使用点号连接离散分子的 SMILES 表达式"
         }
       ],
       "final_conclusion": {
         "id": "O",
         "type": "综合归纳",
-        "content": "最终答案是 P(c1ccccc1)(c2ccccc2)c3ccccc3.n1ccccc1SS([H])c2ccccn2。",
+        "content": "最终答案是 P(c1ccccc1)(c2ccccc2)c3ccccc3.n1ccccc1SS([H])c2ccccn2",
         "parents": [
-          "I_4"
+          "I_7"
         ],
-        "reasoning_logic": "综合所有推导步骤得出最终陈述。"
+        "reasoning_logic": "由组合后的 SMILES 表达式得出最终答案"
       }
     }
   }

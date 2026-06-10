@@ -5,899 +5,1769 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
-          "content": "题干给出，过渡态结构图像中忽略箭头。"
+          "type": "文字信息",
+          "content": "题干给出过渡态结构图像中忽略箭头"
         },
         {
           "id": "C_2",
           "type": "学科常识",
-          "content": "SMILES 表达式是一种化学分子结构的表示方法。"
+          "content": "SMILES表达式是一种化学分子结构的表示方法"
         },
         {
           "id": "C_3",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R1 = C(=O)"
-        },
-        {
-          "id": "C_4",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R2 = C(=O)"
-        },
-        {
-          "id": "C_5",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R3 = C(=O)"
-        },
-        {
-          "id": "C_6",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R4 = C(=O)"
-        },
-        {
-          "id": "C_7",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R5 = C(=O)"
-        },
-        {
-          "id": "C_8",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R6 = C(=O)"
-        },
-        {
-          "id": "C_9",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R7 = C(=O)"
-        },
-        {
-          "id": "C_10",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R8 = C(=O)"
-        },
-        {
-          "id": "C_11",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R9 = C(=O)"
-        },
-        {
-          "id": "C_12",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R10 = C(=O)"
-        },
-        {
-          "id": "C_13",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R11 = C(=O)"
-        },
-        {
-          "id": "C_14",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R12 = C(=O)"
-        },
-        {
-          "id": "C_15",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R13 = C(=O)"
-        },
-        {
-          "id": "C_16",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R14 = C(=O)"
-        },
-        {
-          "id": "C_17",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R15 = C(=O)"
-        },
-        {
-          "id": "C_18",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R16 = C(=O)"
-        },
-        {
-          "id": "C_19",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R17 = C(=O)"
-        },
-        {
-          "id": "C_20",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R18 = C(=O)"
-        },
-        {
-          "id": "C_21",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R19 = C(=O)"
-        },
-        {
-          "id": "C_22",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R20 = C(=O)"
-        },
-        {
-          "id": "C_23",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R21 = C(=O)"
-        },
-        {
-          "id": "C_24",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R22 = C(=O)"
-        },
-        {
-          "id": "C_25",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R23 = C(=O)"
-        },
-        {
-          "id": "C_26",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R24 = C(=O)"
-        },
-        {
-          "id": "C_27",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R25 = C(=O)"
-        },
-        {
-          "id": "C_28",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R26 = C(=O)"
-        },
-        {
-          "id": "C_29",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R27 = C(=O)"
-        },
-        {
-          "id": "C_30",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R28 = C(=O)"
-        },
-        {
-          "id": "C_31",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R29 = C(=O)"
-        },
-        {
-          "id": "C_32",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R30 = C(=O)"
-        },
-        {
-          "id": "C_33",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R31 = C(=O)"
-        },
-        {
-          "id": "C_34",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R32 = C(=O)"
-        },
-        {
-          "id": "C_35",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R33 = C(=O)"
-        },
-        {
-          "id": "C_36",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R34 = C(=O)"
-        },
-        {
-          "id": "C_37",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R35 = C(=O)"
-        },
-        {
-          "id": "C_38",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R36 = C(=O)"
-        },
-        {
-          "id": "C_39",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R37 = C(=O)"
-        },
-        {
-          "id": "C_40",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R38 = C(=O)"
-        },
-        {
-          "id": "C_41",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R39 = C(=O)"
-        },
-        {
-          "id": "C_42",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R40 = C(=O)"
-        },
-        {
-          "id": "C_43",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R41 = C(=O)"
-        },
-        {
-          "id": "C_44",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R42 = C(=O)"
-        },
-        {
-          "id": "C_45",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R43 = C(=O)"
-        },
-        {
-          "id": "C_46",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R44 = C(=O)"
-        },
-        {
-          "id": "C_47",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R45 = C(=O)"
-        },
-        {
-          "id": "C_48",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R46 = C(=O)"
-        },
-        {
-          "id": "C_49",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R47 = C(=O)"
-        },
-        {
-          "id": "C_50",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R48 = C(=O)"
-        },
-        {
-          "id": "C_51",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R49 = C(=O)"
-        },
-        {
-          "id": "C_52",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R50 = C(=O)"
-        },
-        {
-          "id": "C_53",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R51 = C(=O)"
-        },
-        {
-          "id": "C_54",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R52 = C(=O)"
-        },
-        {
-          "id": "C_55",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R53 = C(=O)"
-        },
-        {
-          "id": "C_56",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R54 = C(=O)"
-        },
-        {
-          "id": "C_57",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R55 = C(=O)"
-        },
-        {
-          "id": "C_58",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R56 = C(=O)"
-        },
-        {
-          "id": "C_59",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R57 = C(=O)"
-        },
-        {
-          "id": "C_60",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R58 = C(=O)"
-        },
-        {
-          "id": "C_61",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R59 = C(=O)"
-        },
-        {
-          "id": "C_62",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R60 = C(=O)"
-        },
-        {
-          "id": "C_63",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R61 = C(=O)"
-        },
-        {
-          "id": "C_64",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R62 = C(=O)"
-        },
-        {
-          "id": "C_65",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R63 = C(=O)"
-        },
-        {
-          "id": "C_66",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R64 = C(=O)"
-        },
-        {
-          "id": "C_67",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R65 = C(=O)"
-        },
-        {
-          "id": "C_68",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R66 = C(=O)"
-        },
-        {
-          "id": "C_69",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R67 = C(=O)"
-        },
-        {
-          "id": "C_70",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R68 = C(=O)"
-        },
-        {
-          "id": "C_71",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R69 = C(=O)"
-        },
-        {
-          "id": "C_72",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R70 = C(=O)"
-        },
-        {
-          "id": "C_73",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R71 = C(=O)"
-        },
-        {
-          "id": "C_74",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R72 = C(=O)"
-        },
-        {
-          "id": "C_75",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R73 = C(=O)"
-        },
-        {
-          "id": "C_76",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R74 = C(=O)"
-        },
-        {
-          "id": "C_77",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R75 = C(=O)"
-        },
-        {
-          "id": "C_78",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R76 = C(=O)"
-        },
-        {
-          "id": "C_79",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R77 = C(=O)"
-        },
-        {
-          "id": "C_80",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R78 = C(=O)"
-        },
-        {
-          "id": "C_81",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R79 = C(=O)"
-        },
-        {
-          "id": "C_82",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R80 = C(=O)"
-        },
-        {
-          "id": "C_83",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R81 = C(=O)"
-        },
-        {
-          "id": "C_84",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R82 = C(=O)"
-        },
-        {
-          "id": "C_85",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R83 = C(=O)"
-        },
-        {
-          "id": "C_86",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R84 = C(=O)"
-        },
-        {
-          "id": "C_87",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R85 = C(=O)"
-        },
-        {
-          "id": "C_88",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R86 = C(=O)"
-        },
-        {
-          "id": "C_89",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R87 = C(=O)"
-        },
-        {
-          "id": "C_90",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R88 = C(=O)"
-        },
-        {
-          "id": "C_91",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R89 = C(=O)"
-        },
-        {
-          "id": "C_92",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R90 = C(=O)"
-        },
-        {
-          "id": "C_93",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R91 = C(=O)"
-        },
-        {
-          "id": "C_94",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R92 = C(=O)"
-        },
-        {
-          "id": "C_95",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R93 = C(=O)"
-        },
-        {
-          "id": "C_96",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R94 = C(=O)"
-        },
-        {
-          "id": "C_97",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R95 = C(=O)"
-        },
-        {
-          "id": "C_98",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R96 = C(=O)"
-        },
-        {
-          "id": "C_99",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R97 = C(=O)"
-        },
-        {
-          "id": "C_100",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R98 = C(=O)"
-        },
-        {
-          "id": "C_101",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R99 = C(=O)"
-        },
-        {
-          "id": "C_102",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R100 = C(=O)"
-        },
-        {
-          "id": "C_103",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R101 = C(=O)"
-        },
-        {
-          "id": "C_104",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R102 = C(=O)"
-        },
-        {
-          "id": "C_105",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R103 = C(=O)"
-        },
-        {
-          "id": "C_106",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R104 = C(=O)"
-        },
-        {
-          "id": "C_107",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R105 = C(=O)"
-        },
-        {
-          "id": "C_108",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R106 = C(=O)"
-        },
-        {
-          "id": "C_109",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R107 = C(=O)"
-        },
-        {
-          "id": "C_110",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R108 = C(=O)"
-        },
-        {
-          "id": "C_111",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R109 = C(=O)"
-        },
-        {
-          "id": "C_112",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R110 = C(=O)"
-        },
-        {
-          "id": "C_113",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R111 = C(=O)"
-        },
-        {
-          "id": "C_114",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R112 = C(=O)"
-        },
-        {
-          "id": "C_115",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R113 = C(=O)"
-        },
-        {
-          "id": "C_116",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R114 = C(=O)"
-        },
-        {
-          "id": "C_117",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R115 = C(=O)"
-        },
-        {
-          "id": "C_118",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R116 = C(=O)"
-        },
-        {
-          "id": "C_119",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R117 = C(=O)"
-        },
-        {
-          "id": "C_120",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R118 = C(=O)"
-        },
-        {
-          "id": "C_121",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R119 = C(=O)"
-        },
-        {
-          "id": "C_122",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R120 = C(=O)"
-        },
-        {
-          "id": "C_123",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R121 = C(=O)"
-        },
-        {
-          "id": "C_124",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R122 = C(=O)"
-        },
-        {
-          "id": "C_125",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R123 = C(=O)"
-        },
-        {
-          "id": "C_126",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R124 = C(=O)"
-        },
-        {
-          "id": "C_127",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R125 = C(=O)"
-        },
-        {
-          "id": "C_128",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R126 = C(=O)"
-        },
-        {
-          "id": "C_129",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R127 = C(=O)"
-        },
-        {
-          "id": "C_130",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R128 = C(=O)"
-        },
-        {
-          "id": "C_131",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R129 = C(=O)"
-        },
-        {
-          "id": "C_132",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R130 = C(=O)"
-        },
-        {
-          "id": "C_133",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R131 = C(=O)"
-        },
-        {
-          "id": "C_134",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R132 = C(=O)"
-        },
-        {
-          "id": "C_135",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R133 = C(=O)"
-        },
-        {
-          "id": "C_136",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R134 = C(=O)"
-        },
-        {
-          "id": "C_137",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R135 = C(=O)"
-        },
-        {
-          "id": "C_138",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R136 = C(=O)"
-        },
-        {
-          "id": "C_139",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R137 = C(=O)"
-        },
-        {
-          "id": "C_140",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R138 = C(=O)"
-        },
-        {
-          "id": "C_141",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R139 = C(=O)"
-        },
-        {
-          "id": "C_142",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R140 = C(=O)"
-        },
-        {
-          "id": "C_143",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R141 = C(=O)"
-        },
-        {
-          "id": "C_144",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R142 = C(=O)"
-        },
-        {
-          "id": "C_145",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R143 = C(=O)"
-        },
-        {
-          "id": "C_146",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R144 = C(=O)"
-        },
-        {
-          "id": "C_147",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R145 = C(=O)"
-        },
-        {
-          "id": "C_148",
-          "type": "文字条件",
-          "content": "根据 SMILES 表达式的规则，R146 = C(=O)"
+          "type": "学科常识",
+          "content": "根据SMILES表达式的规则可以从结构表示中得到对应公式"
         }
       ],
-      "intermediate_steps": [],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "R1 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R1对应公式"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "R2 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R2对应公式"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "R3 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R3对应公式"
+        },
+        {
+          "id": "I_4",
+          "type": "条件转化",
+          "content": "R4 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R4对应公式"
+        },
+        {
+          "id": "I_5",
+          "type": "条件转化",
+          "content": "R5 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R5对应公式"
+        },
+        {
+          "id": "I_6",
+          "type": "条件转化",
+          "content": "R6 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R6对应公式"
+        },
+        {
+          "id": "I_7",
+          "type": "条件转化",
+          "content": "R7 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R7对应公式"
+        },
+        {
+          "id": "I_8",
+          "type": "条件转化",
+          "content": "R8 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R8对应公式"
+        },
+        {
+          "id": "I_9",
+          "type": "条件转化",
+          "content": "R9 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R9对应公式"
+        },
+        {
+          "id": "I_10",
+          "type": "条件转化",
+          "content": "R10 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R10对应公式"
+        },
+        {
+          "id": "I_11",
+          "type": "条件转化",
+          "content": "R11 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R11对应公式"
+        },
+        {
+          "id": "I_12",
+          "type": "条件转化",
+          "content": "R12 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R12对应公式"
+        },
+        {
+          "id": "I_13",
+          "type": "条件转化",
+          "content": "R13 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R13对应公式"
+        },
+        {
+          "id": "I_14",
+          "type": "条件转化",
+          "content": "R14 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R14对应公式"
+        },
+        {
+          "id": "I_15",
+          "type": "条件转化",
+          "content": "R15 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R15对应公式"
+        },
+        {
+          "id": "I_16",
+          "type": "条件转化",
+          "content": "R16 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R16对应公式"
+        },
+        {
+          "id": "I_17",
+          "type": "条件转化",
+          "content": "R17 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R17对应公式"
+        },
+        {
+          "id": "I_18",
+          "type": "条件转化",
+          "content": "R18 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R18对应公式"
+        },
+        {
+          "id": "I_19",
+          "type": "条件转化",
+          "content": "R19 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R19对应公式"
+        },
+        {
+          "id": "I_20",
+          "type": "条件转化",
+          "content": "R20 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R20对应公式"
+        },
+        {
+          "id": "I_21",
+          "type": "条件转化",
+          "content": "R21 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R21对应公式"
+        },
+        {
+          "id": "I_22",
+          "type": "条件转化",
+          "content": "R22 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R22对应公式"
+        },
+        {
+          "id": "I_23",
+          "type": "条件转化",
+          "content": "R23 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R23对应公式"
+        },
+        {
+          "id": "I_24",
+          "type": "条件转化",
+          "content": "R24 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R24对应公式"
+        },
+        {
+          "id": "I_25",
+          "type": "条件转化",
+          "content": "R25 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R25对应公式"
+        },
+        {
+          "id": "I_26",
+          "type": "条件转化",
+          "content": "R26 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R26对应公式"
+        },
+        {
+          "id": "I_27",
+          "type": "条件转化",
+          "content": "R27 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R27对应公式"
+        },
+        {
+          "id": "I_28",
+          "type": "条件转化",
+          "content": "R28 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R28对应公式"
+        },
+        {
+          "id": "I_29",
+          "type": "条件转化",
+          "content": "R29 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R29对应公式"
+        },
+        {
+          "id": "I_30",
+          "type": "条件转化",
+          "content": "R30 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R30对应公式"
+        },
+        {
+          "id": "I_31",
+          "type": "条件转化",
+          "content": "R31 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R31对应公式"
+        },
+        {
+          "id": "I_32",
+          "type": "条件转化",
+          "content": "R32 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R32对应公式"
+        },
+        {
+          "id": "I_33",
+          "type": "条件转化",
+          "content": "R33 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R33对应公式"
+        },
+        {
+          "id": "I_34",
+          "type": "条件转化",
+          "content": "R34 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R34对应公式"
+        },
+        {
+          "id": "I_35",
+          "type": "条件转化",
+          "content": "R35 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R35对应公式"
+        },
+        {
+          "id": "I_36",
+          "type": "条件转化",
+          "content": "R36 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R36对应公式"
+        },
+        {
+          "id": "I_37",
+          "type": "条件转化",
+          "content": "R37 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R37对应公式"
+        },
+        {
+          "id": "I_38",
+          "type": "条件转化",
+          "content": "R38 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R38对应公式"
+        },
+        {
+          "id": "I_39",
+          "type": "条件转化",
+          "content": "R39 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R39对应公式"
+        },
+        {
+          "id": "I_40",
+          "type": "条件转化",
+          "content": "R40 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R40对应公式"
+        },
+        {
+          "id": "I_41",
+          "type": "条件转化",
+          "content": "R41 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R41对应公式"
+        },
+        {
+          "id": "I_42",
+          "type": "条件转化",
+          "content": "R42 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R42对应公式"
+        },
+        {
+          "id": "I_43",
+          "type": "条件转化",
+          "content": "R43 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R43对应公式"
+        },
+        {
+          "id": "I_44",
+          "type": "条件转化",
+          "content": "R44 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R44对应公式"
+        },
+        {
+          "id": "I_45",
+          "type": "条件转化",
+          "content": "R45 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R45对应公式"
+        },
+        {
+          "id": "I_46",
+          "type": "条件转化",
+          "content": "R46 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R46对应公式"
+        },
+        {
+          "id": "I_47",
+          "type": "条件转化",
+          "content": "R47 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R47对应公式"
+        },
+        {
+          "id": "I_48",
+          "type": "条件转化",
+          "content": "R48 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R48对应公式"
+        },
+        {
+          "id": "I_49",
+          "type": "条件转化",
+          "content": "R49 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R49对应公式"
+        },
+        {
+          "id": "I_50",
+          "type": "条件转化",
+          "content": "R50 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R50对应公式"
+        },
+        {
+          "id": "I_51",
+          "type": "条件转化",
+          "content": "R51 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R51对应公式"
+        },
+        {
+          "id": "I_52",
+          "type": "条件转化",
+          "content": "R52 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R52对应公式"
+        },
+        {
+          "id": "I_53",
+          "type": "条件转化",
+          "content": "R53 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R53对应公式"
+        },
+        {
+          "id": "I_54",
+          "type": "条件转化",
+          "content": "R54 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R54对应公式"
+        },
+        {
+          "id": "I_55",
+          "type": "条件转化",
+          "content": "R55 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R55对应公式"
+        },
+        {
+          "id": "I_56",
+          "type": "条件转化",
+          "content": "R56 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R56对应公式"
+        },
+        {
+          "id": "I_57",
+          "type": "条件转化",
+          "content": "R57 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R57对应公式"
+        },
+        {
+          "id": "I_58",
+          "type": "条件转化",
+          "content": "R58 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R58对应公式"
+        },
+        {
+          "id": "I_59",
+          "type": "条件转化",
+          "content": "R59 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R59对应公式"
+        },
+        {
+          "id": "I_60",
+          "type": "条件转化",
+          "content": "R60 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R60对应公式"
+        },
+        {
+          "id": "I_61",
+          "type": "条件转化",
+          "content": "R61 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R61对应公式"
+        },
+        {
+          "id": "I_62",
+          "type": "条件转化",
+          "content": "R62 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R62对应公式"
+        },
+        {
+          "id": "I_63",
+          "type": "条件转化",
+          "content": "R63 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R63对应公式"
+        },
+        {
+          "id": "I_64",
+          "type": "条件转化",
+          "content": "R64 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R64对应公式"
+        },
+        {
+          "id": "I_65",
+          "type": "条件转化",
+          "content": "R65 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R65对应公式"
+        },
+        {
+          "id": "I_66",
+          "type": "条件转化",
+          "content": "R66 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R66对应公式"
+        },
+        {
+          "id": "I_67",
+          "type": "条件转化",
+          "content": "R67 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R67对应公式"
+        },
+        {
+          "id": "I_68",
+          "type": "条件转化",
+          "content": "R68 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R68对应公式"
+        },
+        {
+          "id": "I_69",
+          "type": "条件转化",
+          "content": "R69 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R69对应公式"
+        },
+        {
+          "id": "I_70",
+          "type": "条件转化",
+          "content": "R70 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R70对应公式"
+        },
+        {
+          "id": "I_71",
+          "type": "条件转化",
+          "content": "R71 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R71对应公式"
+        },
+        {
+          "id": "I_72",
+          "type": "条件转化",
+          "content": "R72 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R72对应公式"
+        },
+        {
+          "id": "I_73",
+          "type": "条件转化",
+          "content": "R73 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R73对应公式"
+        },
+        {
+          "id": "I_74",
+          "type": "条件转化",
+          "content": "R74 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R74对应公式"
+        },
+        {
+          "id": "I_75",
+          "type": "条件转化",
+          "content": "R75 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R75对应公式"
+        },
+        {
+          "id": "I_76",
+          "type": "条件转化",
+          "content": "R76 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R76对应公式"
+        },
+        {
+          "id": "I_77",
+          "type": "条件转化",
+          "content": "R77 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R77对应公式"
+        },
+        {
+          "id": "I_78",
+          "type": "条件转化",
+          "content": "R78 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R78对应公式"
+        },
+        {
+          "id": "I_79",
+          "type": "条件转化",
+          "content": "R79 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R79对应公式"
+        },
+        {
+          "id": "I_80",
+          "type": "条件转化",
+          "content": "R80 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R80对应公式"
+        },
+        {
+          "id": "I_81",
+          "type": "条件转化",
+          "content": "R81 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R81对应公式"
+        },
+        {
+          "id": "I_82",
+          "type": "条件转化",
+          "content": "R82 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R82对应公式"
+        },
+        {
+          "id": "I_83",
+          "type": "条件转化",
+          "content": "R83 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R83对应公式"
+        },
+        {
+          "id": "I_84",
+          "type": "条件转化",
+          "content": "R84 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R84对应公式"
+        },
+        {
+          "id": "I_85",
+          "type": "条件转化",
+          "content": "R85 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R85对应公式"
+        },
+        {
+          "id": "I_86",
+          "type": "条件转化",
+          "content": "R86 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R86对应公式"
+        },
+        {
+          "id": "I_87",
+          "type": "条件转化",
+          "content": "R87 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R87对应公式"
+        },
+        {
+          "id": "I_88",
+          "type": "条件转化",
+          "content": "R88 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R88对应公式"
+        },
+        {
+          "id": "I_89",
+          "type": "条件转化",
+          "content": "R89 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R89对应公式"
+        },
+        {
+          "id": "I_90",
+          "type": "条件转化",
+          "content": "R90 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R90对应公式"
+        },
+        {
+          "id": "I_91",
+          "type": "条件转化",
+          "content": "R91 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R91对应公式"
+        },
+        {
+          "id": "I_92",
+          "type": "条件转化",
+          "content": "R92 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R92对应公式"
+        },
+        {
+          "id": "I_93",
+          "type": "条件转化",
+          "content": "R93 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R93对应公式"
+        },
+        {
+          "id": "I_94",
+          "type": "条件转化",
+          "content": "R94 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R94对应公式"
+        },
+        {
+          "id": "I_95",
+          "type": "条件转化",
+          "content": "R95 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R95对应公式"
+        },
+        {
+          "id": "I_96",
+          "type": "条件转化",
+          "content": "R96 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R96对应公式"
+        },
+        {
+          "id": "I_97",
+          "type": "条件转化",
+          "content": "R97 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R97对应公式"
+        },
+        {
+          "id": "I_98",
+          "type": "条件转化",
+          "content": "R98 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R98对应公式"
+        },
+        {
+          "id": "I_99",
+          "type": "条件转化",
+          "content": "R99 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R99对应公式"
+        },
+        {
+          "id": "I_100",
+          "type": "条件转化",
+          "content": "R100 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R100对应公式"
+        },
+        {
+          "id": "I_101",
+          "type": "条件转化",
+          "content": "R101 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R101对应公式"
+        },
+        {
+          "id": "I_102",
+          "type": "条件转化",
+          "content": "R102 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R102对应公式"
+        },
+        {
+          "id": "I_103",
+          "type": "条件转化",
+          "content": "R103 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R103对应公式"
+        },
+        {
+          "id": "I_104",
+          "type": "条件转化",
+          "content": "R104 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R104对应公式"
+        },
+        {
+          "id": "I_105",
+          "type": "条件转化",
+          "content": "R105 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R105对应公式"
+        },
+        {
+          "id": "I_106",
+          "type": "条件转化",
+          "content": "R106 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R106对应公式"
+        },
+        {
+          "id": "I_107",
+          "type": "条件转化",
+          "content": "R107 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R107对应公式"
+        },
+        {
+          "id": "I_108",
+          "type": "条件转化",
+          "content": "R108 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R108对应公式"
+        },
+        {
+          "id": "I_109",
+          "type": "条件转化",
+          "content": "R109 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R109对应公式"
+        },
+        {
+          "id": "I_110",
+          "type": "条件转化",
+          "content": "R110 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R110对应公式"
+        },
+        {
+          "id": "I_111",
+          "type": "条件转化",
+          "content": "R111 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R111对应公式"
+        },
+        {
+          "id": "I_112",
+          "type": "条件转化",
+          "content": "R112 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R112对应公式"
+        },
+        {
+          "id": "I_113",
+          "type": "条件转化",
+          "content": "R113 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R113对应公式"
+        },
+        {
+          "id": "I_114",
+          "type": "条件转化",
+          "content": "R114 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R114对应公式"
+        },
+        {
+          "id": "I_115",
+          "type": "条件转化",
+          "content": "R115 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R115对应公式"
+        },
+        {
+          "id": "I_116",
+          "type": "条件转化",
+          "content": "R116 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R116对应公式"
+        },
+        {
+          "id": "I_117",
+          "type": "条件转化",
+          "content": "R117 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R117对应公式"
+        },
+        {
+          "id": "I_118",
+          "type": "条件转化",
+          "content": "R118 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R118对应公式"
+        },
+        {
+          "id": "I_119",
+          "type": "条件转化",
+          "content": "R119 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R119对应公式"
+        },
+        {
+          "id": "I_120",
+          "type": "条件转化",
+          "content": "R120 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R120对应公式"
+        },
+        {
+          "id": "I_121",
+          "type": "条件转化",
+          "content": "R121 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R121对应公式"
+        },
+        {
+          "id": "I_122",
+          "type": "条件转化",
+          "content": "R122 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R122对应公式"
+        },
+        {
+          "id": "I_123",
+          "type": "条件转化",
+          "content": "R123 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R123对应公式"
+        },
+        {
+          "id": "I_124",
+          "type": "条件转化",
+          "content": "R124 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R124对应公式"
+        },
+        {
+          "id": "I_125",
+          "type": "条件转化",
+          "content": "R125 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R125对应公式"
+        },
+        {
+          "id": "I_126",
+          "type": "条件转化",
+          "content": "R126 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R126对应公式"
+        },
+        {
+          "id": "I_127",
+          "type": "条件转化",
+          "content": "R127 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R127对应公式"
+        },
+        {
+          "id": "I_128",
+          "type": "条件转化",
+          "content": "R128 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R128对应公式"
+        },
+        {
+          "id": "I_129",
+          "type": "条件转化",
+          "content": "R129 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R129对应公式"
+        },
+        {
+          "id": "I_130",
+          "type": "条件转化",
+          "content": "R130 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R130对应公式"
+        },
+        {
+          "id": "I_131",
+          "type": "条件转化",
+          "content": "R131 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R131对应公式"
+        },
+        {
+          "id": "I_132",
+          "type": "条件转化",
+          "content": "R132 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R132对应公式"
+        },
+        {
+          "id": "I_133",
+          "type": "条件转化",
+          "content": "R133 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R133对应公式"
+        },
+        {
+          "id": "I_134",
+          "type": "条件转化",
+          "content": "R134 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R134对应公式"
+        },
+        {
+          "id": "I_135",
+          "type": "条件转化",
+          "content": "R135 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R135对应公式"
+        },
+        {
+          "id": "I_136",
+          "type": "条件转化",
+          "content": "R136 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R136对应公式"
+        },
+        {
+          "id": "I_137",
+          "type": "条件转化",
+          "content": "R137 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R137对应公式"
+        },
+        {
+          "id": "I_138",
+          "type": "条件转化",
+          "content": "R138 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R138对应公式"
+        },
+        {
+          "id": "I_139",
+          "type": "条件转化",
+          "content": "R139 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R139对应公式"
+        },
+        {
+          "id": "I_140",
+          "type": "条件转化",
+          "content": "R140 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R140对应公式"
+        },
+        {
+          "id": "I_141",
+          "type": "条件转化",
+          "content": "R141 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R141对应公式"
+        },
+        {
+          "id": "I_142",
+          "type": "条件转化",
+          "content": "R142 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R142对应公式"
+        },
+        {
+          "id": "I_143",
+          "type": "条件转化",
+          "content": "R143 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R143对应公式"
+        },
+        {
+          "id": "I_144",
+          "type": "条件转化",
+          "content": "R144 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R144对应公式"
+        },
+        {
+          "id": "I_145",
+          "type": "条件转化",
+          "content": "R145 = C(=O)",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据SMILES表达式的规则转化得到R145对应公式"
+        }
+      ],
       "final_conclusion": {
         "id": "O",
         "type": "综合归纳",
-        "content": "根据 SMILES 规则推导出 R1 至 R146 均为 C(=O) 结构（列表在 R146 处截断）。",
+        "content": "R1至R145均为C(=O)",
         "parents": [
-          "C_3",
-          "C_4",
-          "C_5",
-          "C_6",
-          "C_7",
-          "C_8",
-          "C_9",
-          "C_10",
-          "C_11",
-          "C_12",
-          "C_13",
-          "C_14",
-          "C_15",
-          "C_16",
-          "C_17",
-          "C_18",
-          "C_19",
-          "C_20",
-          "C_21",
-          "C_22",
-          "C_23",
-          "C_24",
-          "C_25",
-          "C_26",
-          "C_27",
-          "C_28",
-          "C_29",
-          "C_30",
-          "C_31",
-          "C_32",
-          "C_33",
-          "C_34",
-          "C_35",
-          "C_36",
-          "C_37",
-          "C_38",
-          "C_39",
-          "C_40",
-          "C_41",
-          "C_42",
-          "C_43",
-          "C_44",
-          "C_45",
-          "C_46",
-          "C_47",
-          "C_48",
-          "C_49",
-          "C_50",
-          "C_51",
-          "C_52",
-          "C_53",
-          "C_54",
-          "C_55",
-          "C_56",
-          "C_57",
-          "C_58",
-          "C_59",
-          "C_60",
-          "C_61",
-          "C_62",
-          "C_63",
-          "C_64",
-          "C_65",
-          "C_66",
-          "C_67",
-          "C_68",
-          "C_69",
-          "C_70",
-          "C_71",
-          "C_72",
-          "C_73",
-          "C_74",
-          "C_75",
-          "C_76",
-          "C_77",
-          "C_78",
-          "C_79",
-          "C_80",
-          "C_81",
-          "C_82",
-          "C_83",
-          "C_84",
-          "C_85",
-          "C_86",
-          "C_87",
-          "C_88",
-          "C_89",
-          "C_90",
-          "C_91",
-          "C_92",
-          "C_93",
-          "C_94",
-          "C_95",
-          "C_96",
-          "C_97",
-          "C_98",
-          "C_99",
-          "C_100",
-          "C_101",
-          "C_102",
-          "C_103",
-          "C_104",
-          "C_105",
-          "C_106",
-          "C_107",
-          "C_108",
-          "C_109",
-          "C_110",
-          "C_111",
-          "C_112",
-          "C_113",
-          "C_114",
-          "C_115",
-          "C_116",
-          "C_117",
-          "C_118",
-          "C_119",
-          "C_120",
-          "C_121",
-          "C_122",
-          "C_123",
-          "C_124",
-          "C_125",
-          "C_126",
-          "C_127",
-          "C_128",
-          "C_129",
-          "C_130",
-          "C_131",
-          "C_132",
-          "C_133",
-          "C_134",
-          "C_135",
-          "C_136",
-          "C_137",
-          "C_138",
-          "C_139",
-          "C_140",
-          "C_141",
-          "C_142",
-          "C_143",
-          "C_144",
-          "C_145",
-          "C_146",
-          "C_147",
-          "C_148"
+          "I_1",
+          "I_2",
+          "I_3",
+          "I_4",
+          "I_5",
+          "I_6",
+          "I_7",
+          "I_8",
+          "I_9",
+          "I_10",
+          "I_11",
+          "I_12",
+          "I_13",
+          "I_14",
+          "I_15",
+          "I_16",
+          "I_17",
+          "I_18",
+          "I_19",
+          "I_20",
+          "I_21",
+          "I_22",
+          "I_23",
+          "I_24",
+          "I_25",
+          "I_26",
+          "I_27",
+          "I_28",
+          "I_29",
+          "I_30",
+          "I_31",
+          "I_32",
+          "I_33",
+          "I_34",
+          "I_35",
+          "I_36",
+          "I_37",
+          "I_38",
+          "I_39",
+          "I_40",
+          "I_41",
+          "I_42",
+          "I_43",
+          "I_44",
+          "I_45",
+          "I_46",
+          "I_47",
+          "I_48",
+          "I_49",
+          "I_50",
+          "I_51",
+          "I_52",
+          "I_53",
+          "I_54",
+          "I_55",
+          "I_56",
+          "I_57",
+          "I_58",
+          "I_59",
+          "I_60",
+          "I_61",
+          "I_62",
+          "I_63",
+          "I_64",
+          "I_65",
+          "I_66",
+          "I_67",
+          "I_68",
+          "I_69",
+          "I_70",
+          "I_71",
+          "I_72",
+          "I_73",
+          "I_74",
+          "I_75",
+          "I_76",
+          "I_77",
+          "I_78",
+          "I_79",
+          "I_80",
+          "I_81",
+          "I_82",
+          "I_83",
+          "I_84",
+          "I_85",
+          "I_86",
+          "I_87",
+          "I_88",
+          "I_89",
+          "I_90",
+          "I_91",
+          "I_92",
+          "I_93",
+          "I_94",
+          "I_95",
+          "I_96",
+          "I_97",
+          "I_98",
+          "I_99",
+          "I_100",
+          "I_101",
+          "I_102",
+          "I_103",
+          "I_104",
+          "I_105",
+          "I_106",
+          "I_107",
+          "I_108",
+          "I_109",
+          "I_110",
+          "I_111",
+          "I_112",
+          "I_113",
+          "I_114",
+          "I_115",
+          "I_116",
+          "I_117",
+          "I_118",
+          "I_119",
+          "I_120",
+          "I_121",
+          "I_122",
+          "I_123",
+          "I_124",
+          "I_125",
+          "I_126",
+          "I_127",
+          "I_128",
+          "I_129",
+          "I_130",
+          "I_131",
+          "I_132",
+          "I_133",
+          "I_134",
+          "I_135",
+          "I_136",
+          "I_137",
+          "I_138",
+          "I_139",
+          "I_140",
+          "I_141",
+          "I_142",
+          "I_143",
+          "I_144",
+          "I_145"
         ],
-        "reasoning_logic": "汇总所有从 R1 到 R146 的独立推导结果，得出整体结构特征。"
+        "reasoning_logic": "综合各个R基团的转化结果得出最终陈述"
       }
     }
   }

@@ -5,40 +5,55 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
-          "content": "题干给出，1 是胸腺嘧啶。"
+          "type": "文字信息",
+          "content": "题干给出1是胸腺嘧啶。"
         },
         {
           "id": "C_2",
           "type": "学科常识",
-          "content": "DNA 双链中，嘌呤与嘧啶配对。"
+          "content": "DNA双链中嘌呤与嘧啶配对。"
         },
         {
           "id": "C_3",
           "type": "学科常识",
-          "content": "碱基配对规律公式：A 与 T 配对，C 与 G 配对。"
+          "content": "碱基配对规律中A与T配对。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "碱基配对规律中C与G配对。"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
-          "type": "逻辑推导",
-          "content": "将 1（胸腺嘧啶）代入碱基配对规律，推导出与 1 配对的 a 是腺嘌呤。",
+          "type": "条件转化",
+          "content": "将1是胸腺嘧啶转化为1是T。",
           "parents": [
-            "C_1",
+            "C_1"
+          ],
+          "reasoning_logic": "根据胸腺嘧啶对应T进行条件转化。"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "由1是T且A与T配对，推出a是腺嘌呤。",
+          "parents": [
+            "I_1",
+            "C_2",
             "C_3"
           ],
-          "reasoning_logic": "根据碱基配对规律（A 与 T 配对），已知 1 为 T，故与之配对的 a 为 A。"
+          "reasoning_logic": "将1代入A与T配对规律，推出与1配对的a是腺嘌呤。"
         }
       ],
       "final_conclusion": {
         "id": "O",
         "type": "综合归纳",
-        "content": "最终答案是 a = A。",
+        "content": "最终答案是a = A。",
         "parents": [
-          "I_1"
+          "I_2"
         ],
-        "reasoning_logic": "综合上述推导结果得出最终陈述。"
+        "reasoning_logic": "根据a是腺嘌呤归纳得到最终答案a = A。"
       }
     }
   }

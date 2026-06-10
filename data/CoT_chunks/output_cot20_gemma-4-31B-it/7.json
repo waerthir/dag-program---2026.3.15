@@ -5,119 +5,575 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
-          "content": "目标分子为含有氯、溴和氨基的吡嗪衍生物。"
+          "type": "文字信息",
+          "content": "题干给出目标分子含有氯原子。"
         },
         {
           "id": "C_2",
-          "type": "文字条件",
-          "content": "该分子的核心结构为吡嗪环（pyrazine）。"
+          "type": "文字信息",
+          "content": "题干给出目标分子含有溴原子。"
         },
         {
           "id": "C_3",
-          "type": "文字条件",
-          "content": "吡嗪环的 1 位和 4 位为氮原子。"
+          "type": "文字信息",
+          "content": "题干给出目标分子含有氨基。"
         },
         {
           "id": "C_4",
-          "type": "文字条件",
-          "content": "吡嗪环的 2 位连接有一个氨基（-NH2）。"
+          "type": "文字信息",
+          "content": "题干给出目标分子为吡嗪衍生物。"
         },
         {
           "id": "C_5",
-          "type": "文字条件",
-          "content": "吡嗪环的 3 位连接有一个溴原子（-Br）。"
+          "type": "文字信息",
+          "content": "该分子的核心结构为吡嗪环。"
         },
         {
           "id": "C_6",
-          "type": "文字条件",
-          "content": "吡嗪环的 5 位连接有一个溴原子（-Br）。"
+          "type": "文字信息",
+          "content": "吡嗪环的1位为氮原子。"
         },
         {
           "id": "C_7",
-          "type": "文字条件",
-          "content": "吡嗪环的 6 位连接有一个氯原子（-Cl）。"
+          "type": "文字信息",
+          "content": "吡嗪环的4位为氮原子。"
         },
         {
           "id": "C_8",
-          "type": "学科常识",
-          "content": "根据化学结构命名规则，该分子命名为 3,5-dibromo-6-chloropyrazin-2-amine。"
+          "type": "文字信息",
+          "content": "吡嗪环的2位连接有一个氨基。"
         },
         {
           "id": "C_9",
+          "type": "文字信息",
+          "content": "吡嗪环的3位连接有一个溴原子。"
+        },
+        {
+          "id": "C_10",
+          "type": "文字信息",
+          "content": "吡嗪环的5位连接有一个溴原子。"
+        },
+        {
+          "id": "C_11",
+          "type": "文字信息",
+          "content": "吡嗪环的6位连接有一个氯原子。"
+        },
+        {
+          "id": "C_12",
           "type": "学科常识",
-          "content": "吡嗪环的基础 SMILES 结构为 n1ccnc1。"
+          "content": "根据化学结构命名规则，该分子为3,5-dibromo-6-chloropyrazin-2-amine。"
+        },
+        {
+          "id": "C_13",
+          "type": "学科常识",
+          "content": "吡嗪环基础结构为n1ccnc1。"
+        },
+        {
+          "id": "C_14",
+          "type": "文字信息",
+          "content": "吡嗪环原子顺序为N1-C2-N3-C4-C5-C6。"
+        },
+        {
+          "id": "C_15",
+          "type": "文字信息",
+          "content": "2位碳原子连接NH2。"
+        },
+        {
+          "id": "C_16",
+          "type": "文字信息",
+          "content": "3位为氮原子。"
+        },
+        {
+          "id": "C_17",
+          "type": "文字信息",
+          "content": "4位碳原子连接Br。"
+        },
+        {
+          "id": "C_18",
+          "type": "文字信息",
+          "content": "5位为氮原子。"
+        },
+        {
+          "id": "C_19",
+          "type": "文字信息",
+          "content": "6位碳原子连接Br。"
+        },
+        {
+          "id": "C_20",
+          "type": "文字信息",
+          "content": "1位碳原子连接Cl。"
+        },
+        {
+          "id": "C_21",
+          "type": "图像信息",
+          "content": "图像中的取代位置为2-NH2。"
+        },
+        {
+          "id": "C_22",
+          "type": "图像信息",
+          "content": "图像中的取代位置为3-Br。"
+        },
+        {
+          "id": "C_23",
+          "type": "图像信息",
+          "content": "图像中的取代位置为5-Br。"
+        },
+        {
+          "id": "C_24",
+          "type": "图像信息",
+          "content": "图像中的取代位置为6-Cl。"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
-          "type": "逻辑推导",
-          "content": "在吡嗪环 2 位添加氨基，初步构建片段 Nc1nccn1。",
+          "type": "条件转化",
+          "content": "将2位添加氨基转化为Nc1nccn1。",
           "parents": [
-            "C_4",
-            "C_9"
+            "C_8",
+            "C_13"
           ],
-          "reasoning_logic": "将氨基取代基连接到吡嗪环基础结构的 2 位碳原子上。"
+          "reasoning_logic": "在吡嗪环基础SMILES上加入2位氨基。"
         },
         {
           "id": "I_2",
-          "type": "逻辑推导",
-          "content": "尝试在 3 位和 5 位添加溴原子，在 6 位添加氯原子，生成初步 SMILES 变体 Nc1nccn(Br)c1Cl。",
+          "type": "条件转化",
+          "content": "将3位添加溴转化为Nc1nccn1Br。",
           "parents": [
-            "I_1",
-            "C_5",
-            "C_6",
-            "C_7"
+            "C_9",
+            "I_1"
           ],
-          "reasoning_logic": "根据取代位置将 Br 和 Cl 原子添加到 SMILES 字符串的对应位置。"
+          "reasoning_logic": "在已添加氨基的SMILES上加入3位溴。"
         },
         {
           "id": "I_3",
-          "type": "对比分析",
-          "content": "验证初步 SMILES Nc1nccn(Br)c1Cl 的原子连接顺序，发现其拓扑结构与题目给定的 2-NH2, 3-Br, 5-Br, 6-Cl 位置不符。",
+          "type": "逻辑推导",
+          "content": "Nc1nccn1Br的编号需要调整。",
           "parents": [
-            "I_2",
-            "C_4",
-            "C_5",
-            "C_6",
-            "C_7"
+            "I_2"
           ],
-          "reasoning_logic": "将生成的 SMILES 解析回结构，对比各取代基的实际位置与题目要求的位置。"
+          "reasoning_logic": "识别3位添加溴所得写法存在编号调整问题。"
         },
         {
           "id": "I_4",
-          "type": "逻辑推导",
-          "content": "重新构建 SMILES 路径，调整原子书写顺序以匹配正确的拓扑结构：氨基在 2 位，溴在 3 和 5 位，氯在 6 位。",
+          "type": "条件转化",
+          "content": "将5位添加溴转化为Nc1nccn1(Br)Br。",
           "parents": [
-            "I_3",
-            "C_2",
-            "C_3",
-            "C_4",
-            "C_5",
-            "C_6",
-            "C_7"
+            "C_10",
+            "I_3"
           ],
-          "reasoning_logic": "基于验证失败的反馈，重新排列 SMILES 字符串中的原子和环闭合数字以符合正确的化学连接性。"
+          "reasoning_logic": "在编号调整语境下继续加入5位溴。"
         },
         {
           "id": "I_5",
-          "type": "综合归纳",
-          "content": "确定最终正确的 SMILES 表达式形式为 Nc1nccn(Br)c1Cl 的修正版本（注：原文本在此处反复确认并指向该形式作为最终结论）。",
+          "type": "条件转化",
+          "content": "将6位添加氯转化为Nc1nccn1(Br)Cl。",
           "parents": [
+            "C_11",
             "I_4"
           ],
-          "reasoning_logic": "综合所有修正步骤，得出思维链中认定的最终正确表达。"
+          "reasoning_logic": "在已加入溴取代基的结构上加入6位氯。"
+        },
+        {
+          "id": "I_6",
+          "type": "条件转化",
+          "content": "2位碳原子连NH2对应Nc1。",
+          "parents": [
+            "C_14",
+            "C_15"
+          ],
+          "reasoning_logic": "按重新排列的吡嗪环原子顺序映射2位取代。"
+        },
+        {
+          "id": "I_7",
+          "type": "条件转化",
+          "content": "3位氮原子对应n1。",
+          "parents": [
+            "C_14",
+            "C_16"
+          ],
+          "reasoning_logic": "按重新排列的吡嗪环原子顺序映射3位原子。"
+        },
+        {
+          "id": "I_8",
+          "type": "条件转化",
+          "content": "4位碳原子连Br对应c(Br)。",
+          "parents": [
+            "C_14",
+            "C_17"
+          ],
+          "reasoning_logic": "按重新排列的吡嗪环原子顺序映射4位取代。"
+        },
+        {
+          "id": "I_9",
+          "type": "条件转化",
+          "content": "5位氮原子对应n。",
+          "parents": [
+            "C_14",
+            "C_18"
+          ],
+          "reasoning_logic": "按重新排列的吡嗪环原子顺序映射5位原子。"
+        },
+        {
+          "id": "I_10",
+          "type": "条件转化",
+          "content": "6位碳原子连Br对应c(Br)。",
+          "parents": [
+            "C_14",
+            "C_19"
+          ],
+          "reasoning_logic": "按重新排列的吡嗪环原子顺序映射6位取代。"
+        },
+        {
+          "id": "I_11",
+          "type": "条件转化",
+          "content": "1位碳原子连Cl对应c1Cl。",
+          "parents": [
+            "C_14",
+            "C_20"
+          ],
+          "reasoning_logic": "按重新排列的吡嗪环原子顺序映射1位取代。"
+        },
+        {
+          "id": "I_12",
+          "type": "综合归纳",
+          "content": "组合得Nc1nccn1(Br)Cl形式的变体。",
+          "parents": [
+            "I_6",
+            "I_7",
+            "I_8",
+            "I_9",
+            "I_10",
+            "I_11"
+          ],
+          "reasoning_logic": "汇总各位点的SMILES片段形成变体。"
+        },
+        {
+          "id": "I_13",
+          "type": "条件转化",
+          "content": "标准SMILES表示为Nc1nccn(Br)c1Cl。",
+          "parents": [
+            "I_12"
+          ],
+          "reasoning_logic": "重新排列原子顺序以符合标准SMILES规范。"
+        },
+        {
+          "id": "I_14",
+          "type": "逻辑推导",
+          "content": "Nc1nccn(Br)c1Cl存在异构体。",
+          "parents": [
+            "I_13"
+          ],
+          "reasoning_logic": "指出标准SMILES表达可能对应异构体。"
+        },
+        {
+          "id": "I_15",
+          "type": "条件转化",
+          "content": "根据图像取代位置，对应SMILES为Nc1nccn(Br)c1Cl。",
+          "parents": [
+            "C_21",
+            "C_22",
+            "C_23",
+            "C_24"
+          ],
+          "reasoning_logic": "将图像中的取代位置映射到SMILES。"
+        },
+        {
+          "id": "I_16",
+          "type": "对比分析",
+          "content": "Nc1nccn(Br)c1Cl被判断为错误。",
+          "parents": [
+            "I_15"
+          ],
+          "reasoning_logic": "将对应SMILES与图像取代位置进行核对后作出判断。"
+        },
+        {
+          "id": "I_17",
+          "type": "逻辑推导",
+          "content": "Nc1nccn(Br)c1Cl被判断为正确拓扑。",
+          "parents": [
+            "I_16"
+          ],
+          "reasoning_logic": "在否定该写法后又将其作为正确拓扑提出。"
+        },
+        {
+          "id": "I_18",
+          "type": "条件转化",
+          "content": "Nc1nccn(Br)c1Cl对应氨基在2位。",
+          "parents": [
+            "I_17",
+            "C_8"
+          ],
+          "reasoning_logic": "将Nc1nccn(Br)c1Cl的拓扑映射到取代位置。"
+        },
+        {
+          "id": "I_19",
+          "type": "条件转化",
+          "content": "Nc1nccn(Br)c1Cl对应溴在3位。",
+          "parents": [
+            "I_17",
+            "C_9"
+          ],
+          "reasoning_logic": "将Nc1nccn(Br)c1Cl的拓扑映射到取代位置。"
+        },
+        {
+          "id": "I_20",
+          "type": "条件转化",
+          "content": "Nc1nccn(Br)c1Cl对应溴在5位。",
+          "parents": [
+            "I_17",
+            "C_10"
+          ],
+          "reasoning_logic": "将Nc1nccn(Br)c1Cl的拓扑映射到取代位置。"
+        },
+        {
+          "id": "I_21",
+          "type": "条件转化",
+          "content": "Nc1nccn(Br)c1Cl对应氯在6位。",
+          "parents": [
+            "I_17",
+            "C_11"
+          ],
+          "reasoning_logic": "将Nc1nccn(Br)c1Cl的拓扑映射到取代位置。"
+        },
+        {
+          "id": "I_22",
+          "type": "条件转化",
+          "content": "Nc1nccn(Br)c1Cl被验证为N(1)-C(2)(NH2)-N(3)-C(4)(Br)-N(5)-C(6)(Br)-C(1)(Cl)。",
+          "parents": [
+            "I_17"
+          ],
+          "reasoning_logic": "对Nc1nccn(Br)c1Cl进行原子编号验证。"
+        },
+        {
+          "id": "I_23",
+          "type": "对比分析",
+          "content": "Nc1nccn(Br)c1Cl的验证结果被判断为不符。",
+          "parents": [
+            "I_18",
+            "I_19",
+            "I_20",
+            "I_21",
+            "I_22"
+          ],
+          "reasoning_logic": "将验证得到的编号关系与目标取代位置进行核对。"
+        },
+        {
+          "id": "I_24",
+          "type": "条件转化",
+          "content": "重新构建时吡嗪环为n1ccnc1。",
+          "parents": [
+            "C_13",
+            "I_23"
+          ],
+          "reasoning_logic": "在不符后重新采用吡嗪环基础结构。"
+        },
+        {
+          "id": "I_25",
+          "type": "条件转化",
+          "content": "重新构建时2位-NH2得到Nc1nccn1。",
+          "parents": [
+            "C_8",
+            "I_24"
+          ],
+          "reasoning_logic": "在重新构建路径中加入2位氨基。"
+        },
+        {
+          "id": "I_26",
+          "type": "条件转化",
+          "content": "重新构建时3位-Br得到Nc1nccn1Br。",
+          "parents": [
+            "C_9",
+            "I_25"
+          ],
+          "reasoning_logic": "在重新构建路径中加入3位溴。"
+        },
+        {
+          "id": "I_27",
+          "type": "对比分析",
+          "content": "重新构建时Nc1nccn1Br被判断为错误。",
+          "parents": [
+            "I_26"
+          ],
+          "reasoning_logic": "对3位溴添加后的写法进行核对。"
+        },
+        {
+          "id": "I_28",
+          "type": "条件转化",
+          "content": "正确路径中Nc1nccn(Br)c1Cl对应氨基在1位。",
+          "parents": [
+            "I_27"
+          ],
+          "reasoning_logic": "将正确路径中的SMILES映射到取代位置。"
+        },
+        {
+          "id": "I_29",
+          "type": "条件转化",
+          "content": "正确路径中Nc1nccn(Br)c1Cl对应氮在2位。",
+          "parents": [
+            "I_27"
+          ],
+          "reasoning_logic": "将正确路径中的SMILES映射到环上原子。"
+        },
+        {
+          "id": "I_30",
+          "type": "条件转化",
+          "content": "正确路径中Nc1nccn(Br)c1Cl对应碳在3位连接Br。",
+          "parents": [
+            "I_27"
+          ],
+          "reasoning_logic": "将正确路径中的SMILES映射到环上原子和取代基。"
+        },
+        {
+          "id": "I_31",
+          "type": "条件转化",
+          "content": "正确路径中Nc1nccn(Br)c1Cl对应氮在4位。",
+          "parents": [
+            "I_27"
+          ],
+          "reasoning_logic": "将正确路径中的SMILES映射到环上原子。"
+        },
+        {
+          "id": "I_32",
+          "type": "条件转化",
+          "content": "正确路径中Nc1nccn(Br)c1Cl对应碳在5位连接Br。",
+          "parents": [
+            "I_27"
+          ],
+          "reasoning_logic": "将正确路径中的SMILES映射到环上原子和取代基。"
+        },
+        {
+          "id": "I_33",
+          "type": "条件转化",
+          "content": "正确路径中Nc1nccn(Br)c1Cl对应碳在6位连接Cl。",
+          "parents": [
+            "I_27"
+          ],
+          "reasoning_logic": "将正确路径中的SMILES映射到环上原子和取代基。"
+        },
+        {
+          "id": "I_34",
+          "type": "综合归纳",
+          "content": "该路径对应结构为3,5-dibromo-6-chloropyrazin-2-amine。",
+          "parents": [
+            "I_28",
+            "I_29",
+            "I_30",
+            "I_31",
+            "I_32",
+            "I_33",
+            "C_12"
+          ],
+          "reasoning_logic": "汇总正确路径中的原子和取代基映射并对应到命名结构。"
+        },
+        {
+          "id": "I_35",
+          "type": "条件转化",
+          "content": "其SMILES表达式为Nc1nccn(Br)c1Cl。",
+          "parents": [
+            "I_34"
+          ],
+          "reasoning_logic": "由对应结构给出SMILES表达式。"
+        },
+        {
+          "id": "I_36",
+          "type": "对比分析",
+          "content": "Nc1nccn(Br)c1Cl被判断为不正确。",
+          "parents": [
+            "I_35"
+          ],
+          "reasoning_logic": "对给出的SMILES表达式作出否定判断。"
+        },
+        {
+          "id": "I_37",
+          "type": "逻辑推导",
+          "content": "正确SMILES应为Nc1nccn(Br)c1Cl的修正版。",
+          "parents": [
+            "I_36"
+          ],
+          "reasoning_logic": "在否定原表达式后提出需要修正版。"
+        },
+        {
+          "id": "I_38",
+          "type": "逻辑推导",
+          "content": "正确表达为Nc1nccn(Br)c1Cl。",
+          "parents": [
+            "I_37"
+          ],
+          "reasoning_logic": "将修正版表达为同一SMILES文本。"
+        },
+        {
+          "id": "I_39",
+          "type": "条件转化",
+          "content": "再次核对时Nc1nccn(Br)c1Cl对应N(1)C(2)(NH2)N(3)C(4)(Br)N(5)C(6)(Br)C(1)(Cl)。",
+          "parents": [
+            "I_38"
+          ],
+          "reasoning_logic": "再次对Nc1nccn(Br)c1Cl进行编号核对。"
+        },
+        {
+          "id": "I_40",
+          "type": "对比分析",
+          "content": "再次核对结果被判断为不对。",
+          "parents": [
+            "I_39"
+          ],
+          "reasoning_logic": "对再次核对得到的编号关系作出否定判断。"
+        },
+        {
+          "id": "I_41",
+          "type": "逻辑推导",
+          "content": "正确SMILES为Nc1nccn(Br)c1Cl。",
+          "parents": [
+            "I_40"
+          ],
+          "reasoning_logic": "在再次核对不对后仍给出正确SMILES。"
+        },
+        {
+          "id": "I_42",
+          "type": "逻辑推导",
+          "content": "正确写法为Nc1nccn(Br)c1Cl。",
+          "parents": [
+            "I_41"
+          ],
+          "reasoning_logic": "将正确SMILES表述为正确写法。"
+        },
+        {
+          "id": "I_43",
+          "type": "逻辑推导",
+          "content": "该结构的SMILES为Nc1nccn(Br)c1Cl。",
+          "parents": [
+            "I_42"
+          ],
+          "reasoning_logic": "进一步确认该结构对应的SMILES。"
+        },
+        {
+          "id": "I_44",
+          "type": "逻辑推导",
+          "content": "修正结果为Nc1nccn(Br)c1Cl。",
+          "parents": [
+            "I_43"
+          ],
+          "reasoning_logic": "将该SMILES作为修正结果。"
+        },
+        {
+          "id": "I_45",
+          "type": "逻辑推导",
+          "content": "最终确定为Nc1nccn(Br)c1Cl。",
+          "parents": [
+            "I_44"
+          ],
+          "reasoning_logic": "连续修正后确定最终SMILES文本。"
         }
       ],
       "final_conclusion": {
         "id": "O",
-        "type": "推理",
-        "content": "正确 SMILES 为 Nc1",
+        "type": "综合归纳",
+        "content": "正确SMILES为Nc1nccn(Br)c1Cl。",
         "parents": [
-          "I_5"
+          "I_45"
         ],
-        "reasoning_logic": "提取 resolution 文本最后截断处的结论性陈述。"
+        "reasoning_logic": "由最终确定的SMILES得出最终结论。"
       }
     }
   }

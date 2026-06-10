@@ -1,0 +1,58 @@
+{
+  "id": 1,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题干给出硝化反应顺序 (1)：CO2H → CH2OH → OH"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "题干给出硝化反应顺序 (2)：CO2H → NH2CH2OH → NH2"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "首先，CO2H 转化为 CH2OH",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "根据反应顺序 (1) 的第一步进行解析"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "然后，CH2OH 转化为 OH",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "根据反应顺序 (1) 的第二步进行解析"
+        },
+        {
+          "id": "I_3",
+          "type": "综合归纳",
+          "content": "硝化反应的正确顺序是：CO2H → CH2OH → OH",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "综合步骤 I_1 和 I_2 的转化过程得出完整反应链"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "硝化反应的正确顺序是：CO2H → CH2OH → OH",
+        "parents": [
+          "I_3"
+        ],
+        "reasoning_logic": "基于前述推导得出最终结论陈述"
+      }
+    }
+  }
+}

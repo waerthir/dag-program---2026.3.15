@@ -5,128 +5,454 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
-          "content": "题干给出图像展示了一个六元杂环化合物，包含两个氮原子和四个碳原子。"
+          "type": "图像信息",
+          "content": "图像展示了一个六元杂环化合物"
         },
         {
           "id": "C_2",
-          "type": "文字条件",
-          "content": "环上连接有 Cl、Br、NH₂、Br、ArB、ZnBn、Sn、乙烯基等取代基。"
+          "type": "图像信息",
+          "content": "图像中的六元杂环化合物包含两个氮原子"
         },
         {
           "id": "C_3",
-          "type": "文字条件",
-          "content": "已知该结构为一个嘧啶衍生物，环上原子顺序为：C1=N2-C3=N4-C5=C6。"
+          "type": "图像信息",
+          "content": "图像中的六元杂环化合物包含四个碳原子"
         },
         {
           "id": "C_4",
-          "type": "文字条件",
-          "content": "C1 连接 Cl。"
+          "type": "图像信息",
+          "content": "图像中的环上连接有Cl取代基"
         },
         {
           "id": "C_5",
-          "type": "文字条件",
-          "content": "C3 连接 Br。"
+          "type": "图像信息",
+          "content": "图像中的环上连接有Br取代基"
         },
         {
           "id": "C_6",
-          "type": "文字条件",
-          "content": "C4（即 N4 后的 C5 位置，原文表述有歧义但逻辑指向氨基位置）连接 NH₂。"
+          "type": "图像信息",
+          "content": "图像中的环上连接有NH₂取代基"
         },
         {
           "id": "C_7",
-          "type": "文字条件",
-          "content": "C6 连接 Br。"
+          "type": "图像信息",
+          "content": "图像中的环上连接有另一个Br取代基"
         },
         {
           "id": "C_8",
-          "type": "文字条件",
-          "content": "从左上角开始，乙烯基连接 Sn，Sn 连接环上的 C1。"
+          "type": "图像信息",
+          "content": "图像中的环上连接有ArB取代基"
         },
         {
           "id": "C_9",
-          "type": "文字条件",
-          "content": "题干要求忽略箭头，仅考虑原子连接方式。"
+          "type": "图像信息",
+          "content": "图像中的环上连接有ZnBn取代基"
         },
         {
           "id": "C_10",
-          "type": "学科常识",
-          "content": "SMILES 书写规则中，环结构需用括号和数字编号表示，若无明确编号则按默认顺序连接。"
+          "type": "图像信息",
+          "content": "图像中的环上连接有Sn取代基"
         },
         {
           "id": "C_11",
-          "type": "学科常识",
-          "content": "在 SMILES 中，NH₂通常表示为 N。"
+          "type": "图像信息",
+          "content": "图像中的环上连接有乙烯基取代基"
         },
         {
           "id": "C_12",
+          "type": "文字信息",
+          "content": "该结构为一个嘧啶衍生物"
+        },
+        {
+          "id": "C_13",
+          "type": "文字信息",
+          "content": "环上原子顺序为C1=N2-C3=N4-C5=C6"
+        },
+        {
+          "id": "C_14",
+          "type": "文字信息",
+          "content": "C1连接Cl"
+        },
+        {
+          "id": "C_15",
+          "type": "文字信息",
+          "content": "C3连接Br"
+        },
+        {
+          "id": "C_16",
+          "type": "文字信息",
+          "content": "C4连接NH₂"
+        },
+        {
+          "id": "C_17",
+          "type": "文字信息",
+          "content": "C6连接Br"
+        },
+        {
+          "id": "C_18",
           "type": "学科常识",
-          "content": "SMILES 中 c1...c1 表示芳香环闭合，双键位置需明确或隐含在芳香性中。"
+          "content": "根据SMILES书写规则，环结构需用数字编号表示"
+        },
+        {
+          "id": "C_19",
+          "type": "学科常识",
+          "content": "根据SMILES书写规则，若无明确编号，则按默认顺序连接"
+        },
+        {
+          "id": "C_20",
+          "type": "图像信息",
+          "content": "从左上角开始，乙烯基连接Sn"
+        },
+        {
+          "id": "C_21",
+          "type": "图像信息",
+          "content": "Sn连接环上的C1"
+        },
+        {
+          "id": "C_22",
+          "type": "图像信息",
+          "content": "C1带Cl"
+        },
+        {
+          "id": "C_23",
+          "type": "图像信息",
+          "content": "C1双键连接N2"
+        },
+        {
+          "id": "C_24",
+          "type": "图像信息",
+          "content": "N2单键连接C3"
+        },
+        {
+          "id": "C_25",
+          "type": "图像信息",
+          "content": "C3带Br"
+        },
+        {
+          "id": "C_26",
+          "type": "图像信息",
+          "content": "C3双键连接N4"
+        },
+        {
+          "id": "C_27",
+          "type": "图像信息",
+          "content": "N4单键连接C5"
+        },
+        {
+          "id": "C_28",
+          "type": "图像信息",
+          "content": "C5带NH₂"
+        },
+        {
+          "id": "C_29",
+          "type": "图像信息",
+          "content": "C5双键连接C6"
+        },
+        {
+          "id": "C_30",
+          "type": "图像信息",
+          "content": "C6带Br"
+        },
+        {
+          "id": "C_31",
+          "type": "图像信息",
+          "content": "C6单键连接C1"
+        },
+        {
+          "id": "C_32",
+          "type": "文字信息",
+          "content": "题干要求忽略箭头"
+        },
+        {
+          "id": "C_33",
+          "type": "文字信息",
+          "content": "题干要求仅考虑原子连接方式"
+        },
+        {
+          "id": "C_34",
+          "type": "学科常识",
+          "content": "NH₂在SMILES中通常写作N"
+        },
+        {
+          "id": "C_35",
+          "type": "学科常识",
+          "content": "c1...c1表示芳香环闭合"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
           "type": "逻辑推导",
-          "content": "确定环上原子连接顺序及取代基分布：C1(Cl)=N2-C3(Br)=N4-C5(NH₂)=C6(Br)-C1。",
+          "content": "C1、N2、C3、N4、C5、C6形成六元环",
           "parents": [
-            "C_3",
-            "C_4",
-            "C_5",
-            "C_6",
-            "C_7",
-            "C_8"
+            "C_23",
+            "C_24",
+            "C_26",
+            "C_27",
+            "C_29",
+            "C_31"
           ],
-          "reasoning_logic": "综合题目给出的原子顺序和各位置取代基信息，构建完整的环结构连接图。"
+          "reasoning_logic": "依据相邻原子连接关系和C6回连C1判断形成六元环"
         },
         {
           "id": "I_2",
-          "type": "对比分析",
-          "content": "初步尝试的 SMILES 写法 c1nc(nc(c1)Br)Br 无法体现 Cl 和 NH₂的存在，被判定为不准确。",
+          "type": "条件转化",
+          "content": "环结构可初步表示为c1nc(nc(c1)Br)Br",
           "parents": [
             "I_1",
-            "C_10"
+            "C_18",
+            "C_19",
+            "C_25",
+            "C_30"
           ],
-          "reasoning_logic": "将初步生成的 SMILES 结构与已知的取代基分布进行对比，发现缺失关键取代基信息。"
+          "reasoning_logic": "根据SMILES环闭合书写规则和两个Br取代基生成初步SMILES表达"
         },
         {
           "id": "I_3",
-          "type": "条件转化",
-          "content": "重新编号环上原子：位置 1 为 C(Cl)，位置 2 为 N，位置 3 为 C(Br)，位置 4 为 N，位置 5 为 C(NH₂)，位置 6 为 C(Br)。",
+          "type": "对比分析",
+          "content": "c1nc(nc(c1)Br)Br未体现Cl",
           "parents": [
-            "I_1"
+            "I_2",
+            "C_14"
           ],
-          "reasoning_logic": "为了准确书写 SMILES，将结构映射为具体的线性编号序列。"
+          "reasoning_logic": "将初步SMILES表达与C1连接Cl的信息进行核对"
         },
         {
           "id": "I_4",
-          "type": "条件转化",
-          "content": "根据 SMILES 规则将各位置原子及取代基转化为字符串片段：c1(Cl), n, c(Br), n, c(N), c, c(Br), c1。",
+          "type": "对比分析",
+          "content": "c1nc(nc(c1)Br)Br未体现NH₂",
           "parents": [
-            "I_3",
-            "C_10",
-            "C_11"
+            "I_2",
+            "C_16"
           ],
-          "reasoning_logic": "依据 SMILES 语法规范，将编号后的原子序列转换为对应的字符表示，并将 NH₂简化为 N。"
+          "reasoning_logic": "将初步SMILES表达与C4连接NH₂的信息进行核对"
         },
         {
           "id": "I_5",
-          "type": "综合归纳",
-          "content": "组合得到最终 SMILES 表达式：c1(Cl)nc(Br)nc(N)cc(Br)c1。",
+          "type": "条件转化",
+          "content": "从C1开始的环连接关系为C1(Cl)=N2-C3(Br)=N4-C5(NH₂)=C6(Br)-C1",
           "parents": [
-            "I_4"
+            "C_14",
+            "C_15",
+            "C_17",
+            "C_23",
+            "C_24",
+            "C_26",
+            "C_27",
+            "C_28",
+            "C_29",
+            "C_31"
           ],
-          "reasoning_logic": "将所有片段按顺序拼接，形成完整的 SMILES 字符串。"
+          "reasoning_logic": "把环上原子顺序、键型和取代基位置转化为显式连接式"
+        },
+        {
+          "id": "I_6",
+          "type": "条件转化",
+          "content": "环上原子序列可表示为C(Cl)=N-C(Br)=N-C(NH₂)=C(Br)",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "将编号化连接式简化为按顺序排列的原子与取代基序列"
+        },
+        {
+          "id": "I_7",
+          "type": "条件转化",
+          "content": "位置1为C(Cl)",
+          "parents": [
+            "C_14"
+          ],
+          "reasoning_logic": "根据C1连接Cl确定位置1取代基"
+        },
+        {
+          "id": "I_8",
+          "type": "条件转化",
+          "content": "位置2为N",
+          "parents": [
+            "C_13"
+          ],
+          "reasoning_logic": "根据环上原子顺序确定位置2原子"
+        },
+        {
+          "id": "I_9",
+          "type": "条件转化",
+          "content": "位置3为C(Br)",
+          "parents": [
+            "C_15"
+          ],
+          "reasoning_logic": "根据C3连接Br确定位置3取代基"
+        },
+        {
+          "id": "I_10",
+          "type": "条件转化",
+          "content": "位置4为N",
+          "parents": [
+            "C_13"
+          ],
+          "reasoning_logic": "根据环上原子顺序确定位置4原子"
+        },
+        {
+          "id": "I_11",
+          "type": "条件转化",
+          "content": "位置5为C(NH₂)",
+          "parents": [
+            "C_28"
+          ],
+          "reasoning_logic": "根据C5带NH₂确定位置5取代基"
+        },
+        {
+          "id": "I_12",
+          "type": "条件转化",
+          "content": "位置6为C(Br)",
+          "parents": [
+            "C_17"
+          ],
+          "reasoning_logic": "根据C6连接Br确定位置6取代基"
+        },
+        {
+          "id": "I_13",
+          "type": "条件转化",
+          "content": "NH₂在SMILES中写作N",
+          "parents": [
+            "C_34"
+          ],
+          "reasoning_logic": "将氨基取代基转换为SMILES中的N表示"
+        },
+        {
+          "id": "I_14",
+          "type": "条件转化",
+          "content": "c1(Cl)表示第一个碳带Cl",
+          "parents": [
+            "I_7",
+            "C_18"
+          ],
+          "reasoning_logic": "按照SMILES支链标注方式表达位置1的Cl取代基"
+        },
+        {
+          "id": "I_15",
+          "type": "条件转化",
+          "content": "n表示氮",
+          "parents": [
+            "I_8"
+          ],
+          "reasoning_logic": "按照芳香SMILES符号表达位置2的氮原子"
+        },
+        {
+          "id": "I_16",
+          "type": "条件转化",
+          "content": "c(Br)表示第二个碳带Br",
+          "parents": [
+            "I_9"
+          ],
+          "reasoning_logic": "按照SMILES支链标注方式表达位置3的Br取代基"
+        },
+        {
+          "id": "I_17",
+          "type": "条件转化",
+          "content": "第二个n表示氮",
+          "parents": [
+            "I_10"
+          ],
+          "reasoning_logic": "按照芳香SMILES符号表达位置4的氮原子"
+        },
+        {
+          "id": "I_18",
+          "type": "条件转化",
+          "content": "c(N)表示第三个碳带N",
+          "parents": [
+            "I_11",
+            "I_13"
+          ],
+          "reasoning_logic": "将位置5的NH₂取代基按SMILES规则写为N"
+        },
+        {
+          "id": "I_19",
+          "type": "条件转化",
+          "content": "c表示第四个碳",
+          "parents": [
+            "I_12"
+          ],
+          "reasoning_logic": "按照SMILES主链顺序表达下一环碳原子"
+        },
+        {
+          "id": "I_20",
+          "type": "条件转化",
+          "content": "c(Br)表示第五个碳带Br",
+          "parents": [
+            "I_12"
+          ],
+          "reasoning_logic": "按照SMILES支链标注方式表达Br取代基"
+        },
+        {
+          "id": "I_21",
+          "type": "条件转化",
+          "content": "c1表示回到第一个碳",
+          "parents": [
+            "C_18",
+            "C_35",
+            "I_1"
+          ],
+          "reasoning_logic": "使用数字1标记环闭合"
+        },
+        {
+          "id": "I_22",
+          "type": "综合归纳",
+          "content": "SMILES应写为c1(Cl)nc(Br)nc(N)cc(Br)c1",
+          "parents": [
+            "I_14",
+            "I_15",
+            "I_16",
+            "I_17",
+            "I_18",
+            "I_19",
+            "I_20",
+            "I_21"
+          ],
+          "reasoning_logic": "综合各环原子和取代基的SMILES片段，得到完整表达"
+        },
+        {
+          "id": "I_23",
+          "type": "对比分析",
+          "content": "c1(Cl)nc(Br)nc(N)cc(Br)c1体现了Cl",
+          "parents": [
+            "I_22",
+            "C_14"
+          ],
+          "reasoning_logic": "核对最终SMILES是否包含C1的Cl取代基"
+        },
+        {
+          "id": "I_24",
+          "type": "对比分析",
+          "content": "c1(Cl)nc(Br)nc(N)cc(Br)c1体现了两个Br",
+          "parents": [
+            "I_22",
+            "C_15",
+            "C_17"
+          ],
+          "reasoning_logic": "核对最终SMILES是否包含两个Br取代基"
+        },
+        {
+          "id": "I_25",
+          "type": "对比分析",
+          "content": "c1(Cl)nc(Br)nc(N)cc(Br)c1体现了NH₂",
+          "parents": [
+            "I_22",
+            "C_16",
+            "I_13"
+          ],
+          "reasoning_logic": "核对最终SMILES是否以N表示NH₂取代基"
         }
       ],
       "final_conclusion": {
         "id": "O",
-        "type": "推理",
-        "content": "该化合物的正确 SMILES 表示为 c1(Cl)nc(Br)nc(N)cc(Br)c1。",
+        "type": "综合归纳",
+        "content": "正确SMILES为c1(Cl)nc(Br)nc(N)cc(Br)c1",
         "parents": [
-          "I_5"
+          "I_22",
+          "I_23",
+          "I_24",
+          "I_25"
         ],
-        "reasoning_logic": "基于对环结构的详细拆解和 SMILES 规则的严格应用，得出最终结论。"
+        "reasoning_logic": "综合环原子顺序、取代基位置、SMILES环闭合规则和取代基核对结果得出最终SMILES"
       }
     }
   }

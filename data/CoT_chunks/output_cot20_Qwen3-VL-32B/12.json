@@ -5,85 +5,139 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
-          "content": "题干给出研究者测量了某领土鸟类雄性个体在一年中的睾酮（T）水平。",
-          "parents": []
+          "type": "文字信息",
+          "content": "题干给出研究者测量了某领土鸟类雄性个体在一年中的睾酮水平"
         },
         {
           "id": "C_2",
-          "type": "文字条件",
-          "content": "雄性个体在种群中有两种角色：留在原生群体帮助抚养幼弟（helper male）。",
-          "parents": []
+          "type": "文字信息",
+          "content": "题干给出helper male留在原生群体"
         },
         {
           "id": "C_3",
-          "type": "文字条件",
-          "content": "雄性个体在种群中有两种角色：离开原生群体建立新领地（breeding male）。",
-          "parents": []
+          "type": "文字信息",
+          "content": "题干给出helper male帮助抚养幼弟"
         },
         {
           "id": "C_4",
-          "type": "图像条件",
-          "content": "在非繁殖季节，helper male 的平均 T 水平约为 10。",
-          "parents": []
+          "type": "文字信息",
+          "content": "题干给出breeding male离开原生群体"
         },
         {
           "id": "C_5",
-          "type": "图像条件",
-          "content": "在非繁殖季节，breeding male 的平均 T 水平约为 10。",
-          "parents": []
+          "type": "文字信息",
+          "content": "题干给出breeding male建立新领地"
         },
         {
           "id": "C_6",
-          "type": "图像条件",
-          "content": "在繁殖季节，helper male 的平均 T 水平约为 10。",
-          "parents": []
+          "type": "图像信息",
+          "content": "图表显示在非繁殖季节helper male的平均睾酮水平均约为10"
         },
         {
           "id": "C_7",
-          "type": "图像条件",
-          "content": "在繁殖季节，breeding male 的平均 T 水平上升至约 50。",
-          "parents": []
+          "type": "图像信息",
+          "content": "图表显示在非繁殖季节breeding male的平均睾酮水平均约为10"
+        },
+        {
+          "id": "C_8",
+          "type": "图像信息",
+          "content": "图表显示在繁殖季节helper male的平均睾酮水平仍约为10"
+        },
+        {
+          "id": "C_9",
+          "type": "图像信息",
+          "content": "图表显示在繁殖季节breeding male的平均睾酮水平上升至约50"
+        },
+        {
+          "id": "C_10",
+          "type": "学科常识",
+          "content": "激素调节繁殖行为的典型模式包括激素水平在繁殖季节随繁殖角色变化而变化"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
           "type": "对比分析",
-          "content": "繁殖季节 breeding male 的 T 水平显著升高，而 helper male 保持稳定。",
+          "content": "非繁殖季节helper male和breeding male的平均睾酮水平相近",
           "parents": [
             "C_6",
             "C_7"
           ],
-          "reasoning_logic": "对比繁殖季节两种角色的 T 水平数据得出差异。"
+          "reasoning_logic": "比较非繁殖季节两类雄性个体的平均睾酮水平"
         },
         {
           "id": "I_2",
-          "type": "逻辑推导",
-          "content": "T 水平与繁殖行为相关。",
+          "type": "对比分析",
+          "content": "繁殖季节breeding male的睾酮水平显著升高",
           "parents": [
-            "I_1"
+            "C_7",
+            "C_9"
           ],
-          "reasoning_logic": "基于 T 水平随繁殖角色变化的现象推导其与繁殖行为的关联性。"
+          "reasoning_logic": "比较breeding male在非繁殖季节和繁殖季节的平均睾酮水平"
         },
         {
           "id": "I_3",
-          "type": "逻辑推导",
-          "content": "T 水平在繁殖季节随繁殖角色变化而变化，符合激素调节繁殖行为的典型模式。",
+          "type": "对比分析",
+          "content": "繁殖季节helper male的睾酮水平保持稳定",
           "parents": [
-            "I_2"
+            "C_6",
+            "C_8"
           ],
-          "reasoning_logic": "将观察到的变化模式与激素调节繁殖行为的典型模式进行匹配。"
+          "reasoning_logic": "比较helper male在非繁殖季节和繁殖季节的平均睾酮水平"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "睾酮水平与繁殖行为相关",
+          "parents": [
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "由繁殖季节breeding male睾酮水平显著升高且helper male睾酮水平保持稳定推导"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "睾酮水平在繁殖季节随繁殖角色变化而变化",
+          "parents": [
+            "C_2",
+            "C_3",
+            "C_4",
+            "C_5",
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "结合两类雄性个体的繁殖角色差异与繁殖季节睾酮变化差异进行推导"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "睾酮水平变化符合激素调节繁殖行为的典型模式",
+          "parents": [
+            "I_5",
+            "C_10"
+          ],
+          "reasoning_logic": "将睾酮水平随繁殖角色变化的结果与激素调节繁殖行为的典型模式对应"
+        },
+        {
+          "id": "I_7",
+          "type": "综合归纳",
+          "content": "睾酮水平在此种群中可能是一个与繁殖状态相关的生理调节因子",
+          "parents": [
+            "I_4",
+            "I_6"
+          ],
+          "reasoning_logic": "综合睾酮水平与繁殖行为相关以及其符合激素调节繁殖行为典型模式的判断"
         }
       ],
       "final_conclusion": {
         "id": "O",
         "type": "综合归纳",
-        "content": "激素水平随繁殖状态变化的生理调节机制。",
+        "content": "激素水平随繁殖状态变化的生理调节机制",
         "parents": [
-          "I_3"
+          "I_7"
         ],
-        "reasoning_logic": "综合上述推导，得出睾酮水平是与繁殖状态相关的生理调节因子的最终结论。"
+        "reasoning_logic": "由睾酮水平在此种群中可能是与繁殖状态相关的生理调节因子归纳最终答案"
       }
     }
   }

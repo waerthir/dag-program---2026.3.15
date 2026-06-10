@@ -5,107 +5,220 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "图像条件",
-          "content": "图像显示一个过渡态结构，包含硅原子与三个氧原子相连。"
+          "type": "图像信息",
+          "content": "图像显示一个过渡态结构。"
         },
         {
           "id": "C_2",
-          "type": "图像条件",
-          "content": "其中一个氧原子连接甲氧基（OCH3）。"
+          "type": "图像信息",
+          "content": "图像中硅原子与三个氧原子相连。"
         },
         {
           "id": "C_3",
-          "type": "图像条件",
-          "content": "另一个氧原子连接一个醇基（R-C(OH)R¹）。"
+          "type": "图像信息",
+          "content": "图像中一个氧原子连接甲氧基。"
         },
         {
           "id": "C_4",
-          "type": "图像条件",
-          "content": "第三个氧原子连接一个偕二醇结构（HO-C(O⁻)-Ar）。"
+          "type": "图像信息",
+          "content": "图像中另一个氧原子连接一个醇基。"
         },
         {
           "id": "C_5",
-          "type": "文字条件",
-          "content": "SMILES 表达式需忽略箭头，仅表示原子连接和键合方式。"
+          "type": "图像信息",
+          "content": "图像中第三个氧原子连接一个偕二醇结构。"
         },
         {
           "id": "C_6",
-          "type": "学科常识",
-          "content": "根据 SMILES 书写规则，硅原子用 [Si] 表示。"
+          "type": "文字信息",
+          "content": "甲氧基表示为OCH3。"
         },
         {
           "id": "C_7",
-          "type": "学科常识",
-          "content": "在 SMILES 中，带负电荷的氧需标注为 [O-]。"
+          "type": "文字信息",
+          "content": "醇基表示为R-C(OH)R¹。"
         },
         {
           "id": "C_8",
+          "type": "文字信息",
+          "content": "偕二醇结构表示为HO-C(O⁻)-Ar。"
+        },
+        {
+          "id": "C_9",
+          "type": "文字信息",
+          "content": "SMILES表达式需忽略箭头。"
+        },
+        {
+          "id": "C_10",
+          "type": "文字信息",
+          "content": "SMILES表达式仅表示原子连接。"
+        },
+        {
+          "id": "C_11",
+          "type": "文字信息",
+          "content": "SMILES表达式仅表示键合方式。"
+        },
+        {
+          "id": "C_12",
           "type": "学科常识",
-          "content": "在 SMILES 中，碳默认四价，若未指定氢，则隐含存在氢原子以满足四价。"
+          "content": "SMILES书写规则中硅原子用[Si]表示。"
+        },
+        {
+          "id": "C_13",
+          "type": "学科常识",
+          "content": "SMILES中带负电荷的氧需标注为[O-]。"
+        },
+        {
+          "id": "C_14",
+          "type": "学科常识",
+          "content": "SMILES中碳默认四价。"
+        },
+        {
+          "id": "C_15",
+          "type": "学科常识",
+          "content": "SMILES中未指定氢时可由价态隐含。"
+        },
+        {
+          "id": "C_16",
+          "type": "文字信息",
+          "content": "R和R¹是取代基。"
+        },
+        {
+          "id": "C_17",
+          "type": "文字信息",
+          "content": "R和R¹需用通配符表示。"
+        },
+        {
+          "id": "C_18",
+          "type": "文字信息",
+          "content": "SMILES中连接顺序可任意。"
+        },
+        {
+          "id": "C_19",
+          "type": "文字信息",
+          "content": "SMILES中连接关系需正确表示。"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
           "type": "条件转化",
-          "content": "确定中心原子为 [Si]，并确立其连接三个氧原子的基本骨架。",
+          "content": "将中心硅原子表示为[Si]。",
           "parents": [
-            "C_1",
-            "C_6"
+            "C_2",
+            "C_12"
           ],
-          "reasoning_logic": "根据图像结构和 SMILES 规则，将硅原子定义为起点 [Si] 并识别其三个连接点。"
+          "reasoning_logic": "根据SMILES书写规则将硅原子转化为符号表示。"
         },
         {
           "id": "I_2",
           "type": "条件转化",
-          "content": "将第一个氧原子连接的甲氧基转化为 SMILES 片段 OCH3。",
+          "content": "确定[Si]连接三个氧原子。",
           "parents": [
             "C_2",
-            "C_8"
+            "I_1"
           ],
-          "reasoning_logic": "解析甲氧基结构（-OCH3），确认氧连硅、碳连三个氢，转化为标准 SMILES 写法。"
+          "reasoning_logic": "将图像中的硅氧连接关系转化为SMILES中心连接关系。"
         },
         {
           "id": "I_3",
           "type": "条件转化",
-          "content": "将第二个氧原子连接的醇基转化为 SMILES 片段 OC(R)(R¹)。",
+          "content": "第一个氧原子连接甲基形成OCH3片段。",
           "parents": [
             "C_3",
-            "C_8"
+            "C_6"
           ],
-          "reasoning_logic": "解析醇基结构，氧连接碳，碳连接 R、R¹ 及隐含氢，简化写作 OC(R)(R¹)。"
+          "reasoning_logic": "将甲氧基连接关系转化为SMILES片段。"
         },
         {
           "id": "I_4",
           "type": "条件转化",
-          "content": "将第三个氧原子连接的偕二醇结构转化为 SMILES 片段 OC(OH)[O-]Ar。",
+          "content": "第二个氧原子连接碳形成OC(R)(R¹)片段。",
           "parents": [
             "C_4",
-            "C_7"
+            "C_7",
+            "C_16",
+            "C_17"
           ],
-          "reasoning_logic": "解析偕二醇结构，氧连接碳，碳连接 OH、带负电的氧 [O-] 和 Ar 基团。"
+          "reasoning_logic": "将醇基中氧连接碳且碳连接R和R¹的关系转化为SMILES片段。"
         },
         {
           "id": "I_5",
-          "type": "综合归纳",
-          "content": "组合所有片段生成完整 SMILES 表达式：[Si](OCH3)(OC(R)(R¹))OC(OH)[O-]Ar。",
+          "type": "逻辑推导",
+          "content": "OC(R)(R¹)中的碳隐含一个氢。",
           "parents": [
-            "I_1",
+            "I_4",
+            "C_14",
+            "C_15"
+          ],
+          "reasoning_logic": "根据碳默认四价和未指定氢的规则判断该碳的氢可隐含。"
+        },
+        {
+          "id": "I_6",
+          "type": "条件转化",
+          "content": "第三个氧原子连接碳形成OC(OH)([O-])Ar片段。",
+          "parents": [
+            "C_5",
+            "C_8",
+            "C_13"
+          ],
+          "reasoning_logic": "将偕二醇结构中碳连接OH、带负电氧和Ar的关系转化为SMILES片段。"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "OC(OH)[O-]Ar中的碳连接四个基团。",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "根据片段连接关系判断该碳连接来自硅的氧、OH、O⁻和Ar。"
+        },
+        {
+          "id": "I_8",
+          "type": "逻辑推导",
+          "content": "OC(OH)[O-]Ar中的碳不隐含氢。",
+          "parents": [
+            "I_7",
+            "C_14"
+          ],
+          "reasoning_logic": "根据该碳已连接四个基团判断其不需要隐含氢。"
+        },
+        {
+          "id": "I_9",
+          "type": "综合归纳",
+          "content": "硅原子连接OCH3、OC(R)(R¹)、OC(OH)([O-])Ar三个基团。",
+          "parents": [
             "I_2",
             "I_3",
-            "I_4"
+            "I_5",
+            "I_6",
+            "I_8"
           ],
-          "reasoning_logic": "将中心硅原子与三个推导出的官能团 SMILES 片段按照连接关系进行拼接。"
+          "reasoning_logic": "汇总中心硅原子及三个氧连接的官能团片段。"
+        },
+        {
+          "id": "I_10",
+          "type": "综合归纳",
+          "content": "得到SMILES表达式[Si](OCH3)(OC(R)(R¹))OC(OH)[O-]Ar。",
+          "parents": [
+            "I_9",
+            "C_9",
+            "C_10",
+            "C_11",
+            "C_18",
+            "C_19"
+          ],
+          "reasoning_logic": "忽略箭头并按正确连接关系组合三个基团片段。"
         }
       ],
       "final_conclusion": {
         "id": "O",
         "type": "综合归纳",
-        "content": "该过渡态结构的 SMILES 表达式为 [Si](OCH3)(OC(R)(R¹))OC(OH)[O-]Ar。",
+        "content": "完整SMILES为[Si](OCH3)(OC(R)(R¹))OC(OH)[O-]Ar。",
         "parents": [
-          "I_5"
+          "I_10"
         ],
-        "reasoning_logic": "综合所有结构分析和 SMILES 规则应用，得出最终的标准表达式。"
+        "reasoning_logic": "由组合后的中心硅连接关系得出最终SMILES表达式。"
       }
     }
   }

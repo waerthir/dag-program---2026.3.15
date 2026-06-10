@@ -5,101 +5,235 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
-          "content": "题干给出反应方程式：CH3CO-CoA + 3NAD+ + GDP + PO4^{3-} + 2H2O -> CoA-SH + 3NADH + 3H+ + GTP + 2CO2"
+          "type": "文字信息",
+          "content": "题干给出反应物为CH3CO-CoA。"
         },
         {
           "id": "C_2",
-          "type": "文字条件",
-          "content": "反应中乙酰辅酶 A（CH3CO-CoA）被氧化"
+          "type": "文字信息",
+          "content": "题干给出反应物为3NAD+。"
         },
         {
           "id": "C_3",
-          "type": "文字条件",
-          "content": "反应生成了 2 分子 CO2"
+          "type": "文字信息",
+          "content": "题干给出反应物为GDP。"
         },
         {
           "id": "C_4",
-          "type": "文字条件",
-          "content": "反应生成了 3 分子 NADH"
+          "type": "文字信息",
+          "content": "题干给出反应物为PO4^{3-}。"
         },
         {
           "id": "C_5",
-          "type": "文字条件",
-          "content": "氧化过程中碳骨架被脱羧，失去两个碳原子以 CO2 形式释放"
+          "type": "文字信息",
+          "content": "题干给出反应物为2H2O。"
         },
         {
           "id": "C_6",
-          "type": "文字条件",
-          "content": "反应中 NAD+ 被还原为 NADH"
+          "type": "文字信息",
+          "content": "题干给出生成物为CoA-SH。"
         },
         {
           "id": "C_7",
-          "type": "文字条件",
-          "content": "NAD+ 还原为 NADH 表明发生了脱氢反应"
+          "type": "文字信息",
+          "content": "题干给出生成物为3NADH。"
         },
         {
           "id": "C_8",
-          "type": "文字条件",
-          "content": "反应中 GDP 与 PO4^{3-} 结合生成 GTP"
+          "type": "文字信息",
+          "content": "题干给出生成物为3H+。"
         },
         {
           "id": "C_9",
-          "type": "文字条件",
-          "content": "GDP 与 PO4^{3-} 结合生成 GTP 表明伴随底物水平磷酸化"
+          "type": "文字信息",
+          "content": "题干给出生成物为GTP。"
         },
         {
           "id": "C_10",
-          "type": "学科常识",
-          "content": "该反应描述的是乙酰辅酶 A 在柠檬酸循环中被完全氧化为 CO2 的过程"
+          "type": "文字信息",
+          "content": "题干给出生成物为2CO2。"
         },
         {
           "id": "C_11",
-          "type": "文字条件",
-          "content": "该过程包含脱羧、脱氢和底物水平磷酸化"
+          "type": "学科常识",
+          "content": "NAD+被还原为NADH表明发生脱氢反应。"
+        },
+        {
+          "id": "C_12",
+          "type": "学科常识",
+          "content": "GDP与PO4^{3-}结合生成GTP表明伴随底物水平磷酸化。"
+        },
+        {
+          "id": "C_13",
+          "type": "学科常识",
+          "content": "碳骨架失去碳原子并以CO2形式释放属于脱羧。"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
           "type": "逻辑推导",
-          "content": "由生成 CO2 且碳骨架失去碳原子，确认反应包含脱羧特征",
+          "content": "乙酰辅酶A被氧化。",
           "parents": [
-            "C_3",
-            "C_5"
+            "C_1",
+            "C_10"
           ],
-          "reasoning_logic": "根据 C_3 和 C_5 中关于 CO2 生成和碳原子丢失的描述，推导脱羧特征"
+          "reasoning_logic": "根据乙酰辅酶A参与反应并生成CO2，判断乙酰辅酶A发生氧化。"
         },
         {
           "id": "I_2",
           "type": "逻辑推导",
-          "content": "由 NAD+ 还原为 NADH，确认反应包含脱氢特征",
+          "content": "反应生成了2分子CO2。",
           "parents": [
-            "C_6",
-            "C_7"
+            "C_10"
           ],
-          "reasoning_logic": "根据 C_6 和 C_7 中关于 NAD+ 还原的描述，推导脱氢特征"
+          "reasoning_logic": "根据题干生成物2CO2提取生成CO2的数量。"
         },
         {
           "id": "I_3",
-          "type": "综合归纳",
-          "content": "该反应同时具备氧化（脱氢）和脱羧的特征",
+          "type": "逻辑推导",
+          "content": "反应生成了3分子NADH。",
+          "parents": [
+            "C_7"
+          ],
+          "reasoning_logic": "根据题干生成物3NADH提取生成NADH的数量。"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "氧化过程中碳骨架被脱羧。",
           "parents": [
             "I_1",
             "I_2",
-            "C_2"
+            "C_13"
           ],
-          "reasoning_logic": "综合 I_1 的脱羧结论、I_2 的脱氢结论以及 C_2 的氧化事实，归纳反应类型特征"
+          "reasoning_logic": "将乙酰辅酶A氧化与生成2分子CO2结合，判断碳骨架发生脱羧。"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "两个碳原子以CO2形式释放。",
+          "parents": [
+            "I_2",
+            "C_13"
+          ],
+          "reasoning_logic": "根据生成2分子CO2，将其解释为失去两个碳原子并以CO2形式释放。"
+        },
+        {
+          "id": "I_6",
+          "type": "逻辑推导",
+          "content": "NAD+被还原为NADH。",
+          "parents": [
+            "C_2",
+            "C_7"
+          ],
+          "reasoning_logic": "根据反应中NAD+作为反应物且NADH作为生成物，判断NAD+被还原为NADH。"
+        },
+        {
+          "id": "I_7",
+          "type": "逻辑推导",
+          "content": "反应发生了脱氢反应。",
+          "parents": [
+            "I_6",
+            "C_11"
+          ],
+          "reasoning_logic": "根据NAD+被还原为NADH的判据，判断反应发生脱氢。"
+        },
+        {
+          "id": "I_8",
+          "type": "逻辑推导",
+          "content": "GDP与PO4^{3-}结合生成GTP。",
+          "parents": [
+            "C_3",
+            "C_4",
+            "C_9"
+          ],
+          "reasoning_logic": "根据GDP和PO4^{3-}作为反应物且GTP作为生成物，判断二者结合生成GTP。"
+        },
+        {
+          "id": "I_9",
+          "type": "逻辑推导",
+          "content": "反应伴随底物水平磷酸化。",
+          "parents": [
+            "I_8",
+            "C_12"
+          ],
+          "reasoning_logic": "根据GDP与PO4^{3-}结合生成GTP的判据，判断反应伴随底物水平磷酸化。"
+        },
+        {
+          "id": "I_10",
+          "type": "逻辑推导",
+          "content": "题干反应实际对应乙酰辅酶A进入循环后经过一系列反应最终生成CO2和还原当量的过程。",
+          "parents": [
+            "I_1",
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "将乙酰辅酶A被氧化、生成CO2和生成NADH综合为乙酰辅酶A进入循环后生成CO2和还原当量的过程。"
+        },
+        {
+          "id": "I_11",
+          "type": "综合归纳",
+          "content": "该反应描述乙酰辅酶A在柠檬酸循环中被完全氧化为CO2的过程。",
+          "parents": [
+            "I_1",
+            "I_2",
+            "I_10"
+          ],
+          "reasoning_logic": "更准确地概括该反应所描述的整体过程。"
+        },
+        {
+          "id": "I_12",
+          "type": "综合归纳",
+          "content": "该过程包含脱羧。",
+          "parents": [
+            "I_4",
+            "I_5",
+            "I_11"
+          ],
+          "reasoning_logic": "根据碳骨架脱羧和CO2释放，归纳该过程包含脱羧。"
+        },
+        {
+          "id": "I_13",
+          "type": "综合归纳",
+          "content": "该过程包含脱氢。",
+          "parents": [
+            "I_7",
+            "I_11"
+          ],
+          "reasoning_logic": "根据NAD+被还原为NADH，归纳该过程包含脱氢。"
+        },
+        {
+          "id": "I_14",
+          "type": "综合归纳",
+          "content": "该过程包含底物水平磷酸化。",
+          "parents": [
+            "I_9",
+            "I_11"
+          ],
+          "reasoning_logic": "根据GDP与PO4^{3-}结合生成GTP，归纳该过程包含底物水平磷酸化。"
+        },
+        {
+          "id": "I_15",
+          "type": "综合归纳",
+          "content": "该反应属于氧化脱羧反应。",
+          "parents": [
+            "I_1",
+            "I_12",
+            "I_13",
+            "I_14"
+          ],
+          "reasoning_logic": "综合乙酰辅酶A被氧化、脱羧、脱氢和底物水平磷酸化，归纳反应类型。"
         }
       ],
       "final_conclusion": {
         "id": "O",
         "type": "综合归纳",
-        "content": "该反应属于氧化脱羧反应",
+        "content": "最终答案是氧化脱羧反应。",
         "parents": [
-          "I_3"
+          "I_15"
         ],
-        "reasoning_logic": "基于 I_3 总结的氧化和脱羧双重特征，得出最终反应类型为氧化脱羧反应"
+        "reasoning_logic": "由该反应属于氧化脱羧反应得出最终答案。"
       }
     }
   }

@@ -5,53 +5,63 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
-          "content": "题干给出硝化反应顺序 (1)：CO2H → CH2OH → OH"
+          "type": "文字信息",
+          "content": "题干给出的反应顺序(1)中CO2H转化为CH2OH。"
         },
         {
           "id": "C_2",
-          "type": "文字条件",
-          "content": "题干给出硝化反应顺序 (2)：CO2H → NH2CH2OH → NH2"
+          "type": "文字信息",
+          "content": "题干给出的反应顺序(1)中CH2OH转化为OH。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "题干给出的反应顺序(2)中CO2H转化为NH2CH2OH。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "题干给出的反应顺序(2)中NH2CH2OH转化为NH2。"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
           "type": "逻辑推导",
-          "content": "首先，CO2H 转化为 CH2OH",
+          "content": "CO2H首先转化为CH2OH。",
           "parents": [
             "C_1"
           ],
-          "reasoning_logic": "根据反应顺序 (1) 的第一步进行解析"
+          "reasoning_logic": "根据题干给出的反应顺序(1)确定第一步转化关系。"
         },
         {
           "id": "I_2",
           "type": "逻辑推导",
-          "content": "然后，CH2OH 转化为 OH",
+          "content": "CH2OH然后转化为OH。",
           "parents": [
-            "C_1"
+            "C_2"
           ],
-          "reasoning_logic": "根据反应顺序 (1) 的第二步进行解析"
+          "reasoning_logic": "根据题干给出的反应顺序(1)确定第二步转化关系。"
         },
         {
           "id": "I_3",
           "type": "综合归纳",
-          "content": "硝化反应的正确顺序是：CO2H → CH2OH → OH",
+          "content": "硝化反应顺序为CO2H → CH2OH → OH。",
           "parents": [
             "I_1",
             "I_2"
           ],
-          "reasoning_logic": "综合步骤 I_1 和 I_2 的转化过程得出完整反应链"
+          "reasoning_logic": "综合第一步转化关系和第二步转化关系，形成完整反应顺序。"
         }
       ],
       "final_conclusion": {
         "id": "O",
         "type": "综合归纳",
-        "content": "硝化反应的正确顺序是：CO2H → CH2OH → OH",
+        "content": "硝化反应的正确顺序是：CO2H → CH2OH → OH。",
         "parents": [
           "I_3"
         ],
-        "reasoning_logic": "基于前述推导得出最终结论陈述"
+        "reasoning_logic": "由完整反应顺序得出最终结论。"
       }
     }
   }

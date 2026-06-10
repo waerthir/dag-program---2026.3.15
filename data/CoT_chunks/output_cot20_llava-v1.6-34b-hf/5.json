@@ -5,61 +5,101 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
-          "content": "题干给出，过渡态结构中不包括氢的化学键。"
+          "type": "文字信息",
+          "content": "题干给出过渡态结构中不包括氢的化学键"
         },
         {
           "id": "C_2",
-          "type": "文字条件",
-          "content": "已知，化学键包括单键、双键和三键。"
+          "type": "学科常识",
+          "content": "化学键包括单键"
         },
         {
           "id": "C_3",
           "type": "学科常识",
-          "content": "根据化学键定义，单键计为 1。"
+          "content": "化学键包括双键"
         },
         {
           "id": "C_4",
           "type": "学科常识",
-          "content": "根据化学键定义，双键计为 2。"
+          "content": "化学键包括三键"
         },
         {
           "id": "C_5",
           "type": "学科常识",
-          "content": "根据化学键定义，三键计为 3。"
+          "content": "化学键定义中单键对应1"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "化学键定义中双键对应2"
+        },
+        {
+          "id": "C_7",
+          "type": "学科常识",
+          "content": "化学键定义中三键对应3"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
-          "type": "逻辑推导",
-          "content": "由于化学键不包括氢，所以氢键不计算在内。",
+          "type": "条件转化",
+          "content": "得到单键的计数值为1",
           "parents": [
-            "C_1"
+            "C_2",
+            "C_5"
           ],
-          "reasoning_logic": "根据题干条件排除氢键。"
+          "reasoning_logic": "根据化学键定义将单键转化为计数值"
         },
         {
           "id": "I_2",
-          "type": "数值计算",
-          "content": "将单键、双键、三键的数值代入求和：1 + 2 + 3 = 6。",
+          "type": "条件转化",
+          "content": "得到双键的计数值为2",
           "parents": [
             "C_3",
-            "C_4",
-            "C_5",
-            "I_1"
+            "C_6"
           ],
-          "reasoning_logic": "执行加法运算得出总和。"
+          "reasoning_logic": "根据化学键定义将双键转化为计数值"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "得到三键的计数值为3",
+          "parents": [
+            "C_4",
+            "C_7"
+          ],
+          "reasoning_logic": "根据化学键定义将三键转化为计数值"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "氢键不计算在内",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "由化学键不包括氢推出氢键不计算在内"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "单键、双键和三键的计数值之和为6",
+          "parents": [
+            "I_1",
+            "I_2",
+            "I_3",
+            "I_4"
+          ],
+          "reasoning_logic": "将单键、双键和三键对应数值相加，并排除氢键"
         }
       ],
       "final_conclusion": {
         "id": "O",
         "type": "综合归纳",
-        "content": "最终答案是 6。",
+        "content": "最终答案是6",
         "parents": [
-          "I_2"
+          "I_5"
         ],
-        "reasoning_logic": "综合计算结果得出最终陈述。"
+        "reasoning_logic": "根据计数值之和得出最终答案"
       }
     }
   }

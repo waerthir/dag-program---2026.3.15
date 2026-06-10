@@ -5,193 +5,281 @@
       "conditions": [
         {
           "id": "C_1",
-          "type": "文字条件",
-          "content": "题干给出结构中包含一个芳环基团 Ar。"
+          "type": "文字信息",
+          "content": "题干给出结构中包含一个芳环基团 Ar"
         },
         {
           "id": "C_2",
           "type": "学科常识",
-          "content": "已知 Ar 通常代表一个苯环，包含 6 个 C-C 键。"
+          "content": "Ar 通常代表一个苯环"
         },
         {
           "id": "C_3",
-          "type": "文字条件",
-          "content": "题干给出结构中有一个 C=O+ 双键。"
+          "type": "学科常识",
+          "content": "苯环包含 6 个 C-C 键"
         },
         {
           "id": "C_4",
-          "type": "文字条件",
-          "content": "题干给出该 C=O+ 与 Ar 基团相连，包含 1 个 C-C 单键。"
+          "type": "文字信息",
+          "content": "题干给出结构中有一个 C=O+ 双键"
         },
         {
           "id": "C_5",
-          "type": "文字条件",
-          "content": "题干给出该 C=O+ 与相邻 CH2 基团相连，包含 1 个 C-C 单键。"
+          "type": "文字信息",
+          "content": "题干给出 C=O+ 与 Ar 基团相连"
         },
         {
           "id": "C_6",
-          "type": "文字条件",
-          "content": "题干给出 CH2 基团与酮羰基 C=O 相连，包含 1 个 C-C 单键。"
+          "type": "文字信息",
+          "content": "C=O+ 与 Ar 基团的连接包含 1 个 C-C 单键"
         },
         {
           "id": "C_7",
-          "type": "文字条件",
-          "content": "题干给出酮羰基包含 1 个 C=O 双键。"
+          "type": "文字信息",
+          "content": "题干给出 C=O+ 与相邻 CH2 基团相连"
         },
         {
           "id": "C_8",
-          "type": "文字条件",
-          "content": "题干给出酮羰基与 α-碳原子相连，包含 1 个 C-C 单键。"
+          "type": "文字信息",
+          "content": "C=O+ 与相邻 CH2 基团的连接包含 1 个 C-C 单键"
         },
         {
           "id": "C_9",
-          "type": "文字条件",
-          "content": "题干给出 α-碳原子与酯基羰基 C=O 相连，包含 1 个 C-C 单键。"
+          "type": "文字信息",
+          "content": "题干给出 CH2 基团与酮羰基 C=O 相连"
         },
         {
           "id": "C_10",
-          "type": "文字条件",
-          "content": "题干给出酯基羰基包含 1 个 C=O 双键。"
+          "type": "文字信息",
+          "content": "CH2 基团与酮羰基 C=O 的连接包含 1 个 C-C 单键"
         },
         {
           "id": "C_11",
-          "type": "文字条件",
-          "content": "题干给出酯基羰基与 OR' 基团相连，包含 1 个 C-O 单键。"
+          "type": "文字信息",
+          "content": "题干给出酮羰基包含 1 个 C=O 双键"
         },
         {
           "id": "C_12",
-          "type": "文字条件",
-          "content": "题干给出 R' 为烷基，按最简结构 R'=Me 计算，含 1 个 C-C 键。"
+          "type": "文字信息",
+          "content": "题干给出酮羰基与 α-碳原子相连"
         },
         {
           "id": "C_13",
-          "type": "文字条件",
-          "content": "题干给出 α-碳原子与 Ru(Por) 相连，包含 1 个 C-Ru 单键。"
+          "type": "文字信息",
+          "content": "酮羰基与 α-碳原子的连接包含 1 个 C-C 单键"
         },
         {
           "id": "C_14",
-          "type": "学科常识",
-          "content": "已知 Por 代表卟啉环，其结构包含 20 个 C-C 或 C-N 键。"
+          "type": "文字信息",
+          "content": "题干给出 α-碳原子与酯基羰基 C=O 相连"
         },
         {
           "id": "C_15",
-          "type": "学科常识",
-          "content": "已知 Ru 原子与卟啉环的 4 个氮原子相连，包含 4 个 Ru-N 单键。"
+          "type": "文字信息",
+          "content": "α-碳原子与酯基羰基 C=O 的连接包含 1 个 C-C 单键"
         },
         {
           "id": "C_16",
-          "type": "文字条件",
-          "content": "题目要求计算图中所示结构的化学键总数，且排除氢键。"
+          "type": "文字信息",
+          "content": "题干给出酯基羰基包含 1 个 C=O 双键"
+        },
+        {
+          "id": "C_17",
+          "type": "文字信息",
+          "content": "题干给出酯基羰基与 OR' 基团相连"
+        },
+        {
+          "id": "C_18",
+          "type": "文字信息",
+          "content": "酯基羰基与 OR' 基团的连接包含 1 个 C-O 单键"
+        },
+        {
+          "id": "C_19",
+          "type": "文字信息",
+          "content": "题干给出 R' 为烷基"
+        },
+        {
+          "id": "C_20",
+          "type": "文字信息",
+          "content": "R' 至少包含 1 个 C-C 或 C-O 单键"
+        },
+        {
+          "id": "C_21",
+          "type": "文字信息",
+          "content": "此处按最简结构 R'=Me 计算"
+        },
+        {
+          "id": "C_22",
+          "type": "文字信息",
+          "content": "R'=Me 含 1 个 C-C 键"
+        },
+        {
+          "id": "C_23",
+          "type": "文字信息",
+          "content": "题干给出 α-碳原子与 Ru(Por) 相连"
+        },
+        {
+          "id": "C_24",
+          "type": "文字信息",
+          "content": "α-碳原子与 Ru(Por) 的连接包含 1 个 C-Ru 单键"
+        },
+        {
+          "id": "C_25",
+          "type": "学科常识",
+          "content": "Por 代表卟啉环"
+        },
+        {
+          "id": "C_26",
+          "type": "学科常识",
+          "content": "卟啉环结构包含 20 个 C-C 或 C-N 键"
+        },
+        {
+          "id": "C_27",
+          "type": "学科常识",
+          "content": "Ru 原子与卟啉环的 4 个氮原子相连"
+        },
+        {
+          "id": "C_28",
+          "type": "学科常识",
+          "content": "Ru 原子与卟啉环的 4 个氮原子连接包含 4 个 Ru-N 单键"
+        },
+        {
+          "id": "C_29",
+          "type": "文字信息",
+          "content": "题目要求计算图中所示结构的化学键总数"
+        },
+        {
+          "id": "C_30",
+          "type": "文字信息",
+          "content": "题目要求排除氢键"
+        },
+        {
+          "id": "C_31",
+          "type": "学科常识",
+          "content": "根据加法原则可以将各部分键数相加得到总键数"
         }
       ],
       "intermediate_steps": [
         {
           "id": "I_1",
-          "type": "数值计算",
-          "content": "Ar 部分贡献 6 个键。",
+          "type": "条件转化",
+          "content": "Ar 贡献 6 个键",
           "parents": [
-            "C_2"
+            "C_1",
+            "C_2",
+            "C_3"
           ],
-          "reasoning_logic": "提取苯环键数数据。"
+          "reasoning_logic": "将 Ar 代表苯环以及苯环包含 6 个 C-C 键转化为 Ar 的键数贡献"
         },
         {
           "id": "I_2",
           "type": "数值计算",
-          "content": "C=O+ 部分贡献 2 个键（1 个双键 +1 个与 Ar 连接的单键）。",
+          "content": "C=O+ 部分贡献 2 个键",
           "parents": [
-            "C_3",
-            "C_4"
+            "C_4",
+            "C_5",
+            "C_6"
           ],
-          "reasoning_logic": "统计 C=O+ 及其连接键数。"
+          "reasoning_logic": "将 1 个 C=O+ 双键与 1 个 C-C 单键相加"
         },
         {
           "id": "I_3",
-          "type": "数值计算",
-          "content": "C=O+ 与 CH2 连接贡献 1 个键。",
-          "parents": [
-            "C_5"
-          ],
-          "reasoning_logic": "提取连接键数数据。"
-        },
-        {
-          "id": "I_4",
-          "type": "数值计算",
-          "content": "CH2 到酮基连接贡献 1 个键。",
-          "parents": [
-            "C_6"
-          ],
-          "reasoning_logic": "提取连接键数数据。"
-        },
-        {
-          "id": "I_5",
-          "type": "数值计算",
-          "content": "酮基部分贡献 2 个键（1 个双键 +1 个与α-碳连接的单键）。",
+          "type": "条件转化",
+          "content": "连接 CH2 贡献 1 个键",
           "parents": [
             "C_7",
             "C_8"
           ],
-          "reasoning_logic": "统计酮基及其连接键数。"
+          "reasoning_logic": "将 C=O+ 与相邻 CH2 基团的连接转化为 1 个键的贡献"
+        },
+        {
+          "id": "I_4",
+          "type": "条件转化",
+          "content": "CH2 到酮基贡献 1 个键",
+          "parents": [
+            "C_9",
+            "C_10"
+          ],
+          "reasoning_logic": "将 CH2 基团与酮羰基的连接转化为 1 个键的贡献"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "酮基贡献 2 个键",
+          "parents": [
+            "C_11",
+            "C_12",
+            "C_13"
+          ],
+          "reasoning_logic": "将酮羰基的 1 个双键与酮羰基到 α-碳原子的 1 个单键相加"
         },
         {
           "id": "I_6",
-          "type": "数值计算",
-          "content": "α-碳到酯基连接贡献 1 个键。",
+          "type": "条件转化",
+          "content": "α-碳到酯基贡献 1 个键",
           "parents": [
-            "C_9"
+            "C_14",
+            "C_15"
           ],
-          "reasoning_logic": "提取连接键数数据。"
+          "reasoning_logic": "将 α-碳原子与酯基羰基的连接转化为 1 个键的贡献"
         },
         {
           "id": "I_7",
           "type": "数值计算",
-          "content": "酯基部分贡献 3 个键（1 个双键 +1 个与 OR' 连接的单键 +1 个与α-碳连接的单键）。",
+          "content": "酯基贡献 3 个键",
           "parents": [
-            "C_10",
-            "C_11",
-            "C_9"
+            "C_16",
+            "C_17",
+            "C_18"
           ],
-          "reasoning_logic": "统计酯基及其连接键数（注：C_9 已用于 I_6，此处逻辑复述原文计数方式）。"
+          "reasoning_logic": "将酯基羰基的 1 个双键与酯基羰基到 OR' 基团的 1 个单键以及另 1 个单键相加"
         },
         {
           "id": "I_8",
-          "type": "数值计算",
-          "content": "R' 部分贡献 1 个键。",
+          "type": "条件转化",
+          "content": "R' 贡献 1 个键",
           "parents": [
-            "C_12"
+            "C_19",
+            "C_20",
+            "C_21",
+            "C_22"
           ],
-          "reasoning_logic": "提取 R' 键数数据。"
+          "reasoning_logic": "按最简结构 R'=Me 计算 R' 的键数贡献"
         },
         {
           "id": "I_9",
-          "type": "数值计算",
-          "content": "α-碳到 Ru 连接贡献 1 个键。",
+          "type": "条件转化",
+          "content": "α-碳到 Ru 贡献 1 个键",
           "parents": [
-            "C_13"
+            "C_23",
+            "C_24"
           ],
-          "reasoning_logic": "提取连接键数数据。"
+          "reasoning_logic": "将 α-碳原子与 Ru(Por) 的连接转化为 1 个键的贡献"
         },
         {
           "id": "I_10",
-          "type": "数值计算",
-          "content": "Ru 到 Por 连接贡献 4 个键。",
+          "type": "条件转化",
+          "content": "Ru 到 Por 贡献 4 个键",
           "parents": [
-            "C_15"
+            "C_27",
+            "C_28"
           ],
-          "reasoning_logic": "提取 Ru-N 键数数据。"
+          "reasoning_logic": "将 Ru 原子与卟啉环 4 个氮原子的连接转化为 4 个键的贡献"
         },
         {
           "id": "I_11",
-          "type": "数值计算",
-          "content": "Por 内部贡献 20 个键。",
+          "type": "条件转化",
+          "content": "Por 内部贡献 20 个键",
           "parents": [
-            "C_14"
+            "C_25",
+            "C_26"
           ],
-          "reasoning_logic": "提取卟啉环内部键数数据。"
+          "reasoning_logic": "将 Por 代表卟啉环以及卟啉环包含 20 个 C-C 或 C-N 键转化为 Por 内部键数贡献"
         },
         {
           "id": "I_12",
           "type": "数值计算",
-          "content": "根据加法原则计算总键数：6 + 2 + 1 + 1 + 2 + 1 + 3 + 1 + 1 + 4 + 20 = 42。",
+          "content": "总键数 = 6 + 2 + 1 + 1 + 2 + 1 + 3 + 1 + 1 + 4 + 20 = 42",
           "parents": [
             "I_1",
             "I_2",
@@ -203,20 +291,31 @@
             "I_8",
             "I_9",
             "I_10",
-            "I_11"
+            "I_11",
+            "C_31"
           ],
-          "reasoning_logic": "将所有部分的键数相加得出总和。"
+          "reasoning_logic": "根据加法原则将各部分贡献的键数相加"
+        },
+        {
+          "id": "I_13",
+          "type": "逻辑推导",
+          "content": "计算结果 42 符合题目要求的化学键总数且排除氢键",
+          "parents": [
+            "I_12",
+            "C_29",
+            "C_30"
+          ],
+          "reasoning_logic": "将总键数计算结果与题目计算对象和排除条件对应"
         }
       ],
       "final_conclusion": {
         "id": "O",
         "type": "综合归纳",
-        "content": "图中所示结构的化学键总数为 42。",
+        "content": "最终答案是 42",
         "parents": [
-          "I_12",
-          "C_16"
+          "I_13"
         ],
-        "reasoning_logic": "综合计算结果并确认符合题目排除氢键的要求，得出最终答案。"
+        "reasoning_logic": "综合总键数计算结果与题目要求得出最终答案"
       }
     }
   }

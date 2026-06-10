@@ -1,0 +1,90 @@
+{
+  "id": 10,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字条件",
+          "content": "题干给出反应方程式为 CH3CO-CoA + 3NAD+ + GDP + PO4^{3-} + 2H2O -> CoA-SH + 3NADH + 3H+ + GTP + 2CO2"
+        },
+        {
+          "id": "C_2",
+          "type": "文字条件",
+          "content": "已知 NAD+ 被还原为 NADH"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "获得电子和氢离子的过程称为还原反应"
+        },
+        {
+          "id": "C_4",
+          "type": "文字条件",
+          "content": "已知 CH3CO-CoA 及相关底物在反应过程中失去了电子并转移给了 NAD+"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "失去电子的过程称为氧化反应"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "同时发生氧化和还原的反应称为氧化还原反应"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "NAD+ 发生了还原反应",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据 C_2 中 NAD+ 被还原的事实，结合 C_3 中还原反应的定义（获得电子和氢离子），推导出 NAD+ 发生了还原反应"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "底物发生了氧化反应",
+          "parents": [
+            "C_4",
+            "C_5"
+          ],
+          "reasoning_logic": "根据 C_4 中底物失去电子的事实，结合 C_5 中氧化反应的定义（失去电子），推导出底物发生了氧化反应"
+        },
+        {
+          "id": "I_3",
+          "type": "综合归纳",
+          "content": "该反应同时包含氧化过程和还原过程",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "综合 I_1 得出的还原过程和 I_2 得出的氧化过程，确认该反应同时包含这两个过程"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "该反应是氧化还原反应",
+          "parents": [
+            "I_3",
+            "C_6"
+          ],
+          "reasoning_logic": "基于 I_3 确认反应同时包含氧化和还原过程，引用 C_6 中氧化还原反应的定义进行判定"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是 氧化还原反应",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "根据 I_4 的推导结果得出最终结论"
+      }
+    }
+  }
+}
