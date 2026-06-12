@@ -1,0 +1,49 @@
+{
+  "id": 11,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "等高线图中相邻等高线的高差为50米"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "引用等高线图原理"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "断崖的最小高差 = 相邻等高线的高差",
+          "parents": [
+            "C_2"
+          ],
+          "reasoning_logic": "根据等高线图原理转化出断崖最小高差公式"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "断崖的最小高差 = 50米",
+          "parents": [
+            "C_1",
+            "I_1"
+          ],
+          "reasoning_logic": "将相邻等高线的高差50米代入断崖最小高差公式"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是50米",
+        "parents": [
+          "I_2"
+        ],
+        "reasoning_logic": "根据计算出的断崖最小高差得出最终答案"
+      }
+    }
+  }
+}

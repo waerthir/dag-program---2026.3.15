@@ -1,0 +1,34 @@
+{
+  "id": 18,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "神经元永久停滞在细胞周期的G0期"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "神经元不再继续进行细胞周期进程",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "由神经元永久停滞在G0期推出其不再继续进行细胞周期进程"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "神经元永久停滞在细胞周期的G0期",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "依据神经元不再继续进行细胞周期进程得出最终陈述"
+      }
+    }
+  }
+}

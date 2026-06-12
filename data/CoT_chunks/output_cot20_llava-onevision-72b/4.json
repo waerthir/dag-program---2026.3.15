@@ -1,0 +1,46 @@
+{
+  "id": 4,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "图像信息",
+          "content": "图示区域具有稻田"
+        },
+        {
+          "id": "C_2",
+          "type": "图像信息",
+          "content": "图示区域具有麦田"
+        },
+        {
+          "id": "C_3",
+          "type": "图像信息",
+          "content": "图示区域中的稻田与麦田交错分布"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "综合归纳",
+          "content": "图示区域呈现稻田与麦田交错分布的农业景观",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "综合图示区域的地物类型与空间分布特征，归纳其农业景观特征"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "图示区域具有稻田、麦田交错分布的农业景观",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "由图示区域的稻田、麦田及其交错分布特征得出最终陈述"
+      }
+    }
+  }
+}

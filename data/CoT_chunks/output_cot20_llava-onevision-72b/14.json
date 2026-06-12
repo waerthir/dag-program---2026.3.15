@@ -1,0 +1,39 @@
+{
+  "id": 14,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "液态时，methanol最可能与水互溶"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "液态时，ethanol最可能与水互溶"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "综合归纳",
+          "content": "ethanol属于液态时最可能与水互溶的物质",
+          "parents": [
+            "C_2"
+          ],
+          "reasoning_logic": "从液态时最可能与水互溶的物质中提取ethanol"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "最终答案是ethanol",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "根据ethanol属于液态时最可能与水互溶的物质，得出最终答案"
+      }
+    }
+  }
+}

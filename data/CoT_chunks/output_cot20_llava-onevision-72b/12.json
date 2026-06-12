@@ -1,0 +1,40 @@
+{
+  "id": 12,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "1 is thymine."
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "According to the base pairing rules in DNA, adenine pairs with thymine."
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "If 1 is thymine, then a must be adenine.",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "Apply the DNA base pairing rule to the fact that 1 is thymine."
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "a is adenine.",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "Use the derived conditional result to state the final conclusion."
+      }
+    }
+  }
+}

@@ -1,0 +1,2214 @@
+[
+  {
+    "id": "0_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "0_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "0_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "0_C_4",
+    "evaluation": {
+      "Fidelity": 8,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "0_C_5",
+    "evaluation": {
+      "Fidelity": 8,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "0_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "0_I_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "0_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "0_I_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "0_I_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "0_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "10_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "10_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "10_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "10_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "10_C_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "10_C_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "10_C_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "10_C_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "10_I_1",
+    "evaluation": {
+      "Fidelity": 9,
+      "Atomicity": 6
+    }
+  },
+  {
+    "id": "10_I_2",
+    "evaluation": {
+      "Fidelity": 9,
+      "Atomicity": 3
+    }
+  },
+  {
+    "id": "10_I_3",
+    "evaluation": {
+      "Fidelity": 9,
+      "Atomicity": 8
+    }
+  },
+  {
+    "id": "10_I_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "10_I_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "10_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_10",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_11",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_12",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_13",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_14",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_15",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_16",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_17",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_18",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_6",
+    "evaluation": {
+      "Fidelity": 9,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_C_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 9
+    }
+  },
+  {
+    "id": "11_C_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 7
+    }
+  },
+  {
+    "id": "11_C_9",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_I_10",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_I_11",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_I_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_I_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_I_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_I_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 9
+    }
+  },
+  {
+    "id": "11_I_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_I_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_I_9",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "11_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "12_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "12_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "12_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "12_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "12_C_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "12_C_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "12_C_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "12_C_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "12_C_9",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "12_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "12_I_2",
+    "evaluation": {
+      "Fidelity": 8,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "12_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "12_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "13_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "13_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "13_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "13_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "13_C_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "13_C_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "13_C_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "13_C_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "13_I_1",
+    "evaluation": {
+      "Fidelity": 9,
+      "Atomicity": 4
+    }
+  },
+  {
+    "id": "13_I_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "13_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "14_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "14_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "14_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "14_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "14_I_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 0
+    }
+  },
+  {
+    "id": "14_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "14_I_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "14_I_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "14_I_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "14_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "15_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "15_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "15_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "15_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "15_C_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "15_C_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "15_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "15_I_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "15_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "15_I_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "15_I_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "15_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_C_10",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_C_11",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_C_12",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_C_13",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_C_14",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_C_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_C_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_C_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_C_8",
+    "evaluation": {
+      "Fidelity": 9,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_C_9",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_I_10",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_I_11",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_I_12",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 4
+    }
+  },
+  {
+    "id": "16_I_13",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 6
+    }
+  },
+  {
+    "id": "16_I_14",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_I_15",
+    "evaluation": {
+      "Fidelity": 9,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_I_16",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 9
+    }
+  },
+  {
+    "id": "16_I_17",
+    "evaluation": {
+      "Fidelity": 9,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_I_18",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_I_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_I_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_I_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_I_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_I_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_I_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 8
+    }
+  },
+  {
+    "id": "16_I_9",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "16_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "17_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "17_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "17_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "17_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "17_C_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "17_C_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "17_C_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "17_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "17_I_2",
+    "evaluation": {
+      "Fidelity": 7,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "17_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "17_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "18_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "18_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "18_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "18_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "18_I_1",
+    "evaluation": {
+      "Fidelity": 8,
+      "Atomicity": 5
+    }
+  },
+  {
+    "id": "18_I_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "18_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "18_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "19_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "19_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "19_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "19_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "19_C_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "19_C_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "19_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "19_I_2",
+    "evaluation": {
+      "Fidelity": 9,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "19_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "19_I_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "19_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 0
+    }
+  },
+  {
+    "id": "1_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_C_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_C_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_C_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_C_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_C_9",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_I_10",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_I_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_I_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_I_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_I_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_I_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_I_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_I_9",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "1_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "2_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "2_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "2_C_3",
+    "evaluation": {
+      "Fidelity": 9,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "2_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "2_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "2_I_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "2_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "2_I_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "2_I_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "2_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_C_10",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_C_11",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_C_12",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_C_13",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_C_14",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_C_15",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_C_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_C_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_C_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_C_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_C_9",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_I_10",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_I_2",
+    "evaluation": {
+      "Fidelity": 9,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_I_4",
+    "evaluation": {
+      "Fidelity": 9,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_I_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_I_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_I_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_I_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_I_9",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "3_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "4_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "4_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "4_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "4_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "5_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "5_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "5_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "5_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "5_C_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "5_C_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "5_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "5_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_C_10",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_C_11",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_C_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_C_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_C_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_C_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_C_9",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_I_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_I_4",
+    "evaluation": {
+      "Fidelity": 9,
+      "Atomicity": 6
+    }
+  },
+  {
+    "id": "6_I_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "6_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_10",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_11",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_12",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_13",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_14",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_15",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_16",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_17",
+    "evaluation": {
+      "Fidelity": 8,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_18",
+    "evaluation": {
+      "Fidelity": 8,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_C_9",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_I_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_I_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_I_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_I_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_I_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_I_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_I_9",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "7_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_C_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_C_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_C_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_C_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_C_9",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_I_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_I_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_I_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_I_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_I_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_I_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_I_9",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "8_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_C_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_C_10",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_C_11",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_C_12",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_C_13",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_C_14",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_C_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_C_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_C_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_C_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_C_6",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_C_7",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_C_8",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_C_9",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_I_1",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_I_2",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_I_3",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_I_4",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_I_5",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  },
+  {
+    "id": "9_O",
+    "evaluation": {
+      "Fidelity": 10,
+      "Atomicity": 10
+    }
+  }
+]

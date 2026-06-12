@@ -1,0 +1,34 @@
+{
+  "id": 11,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "图像信息",
+          "content": "图中存在断崖。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "断崖的最小高差可能是100米。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "由图中断崖信息推导断崖的最小高差。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "图中断崖的最小高差可能是100米。",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "根据断崖最小高差的推导结果得出最终结论。"
+      }
+    }
+  }
+}

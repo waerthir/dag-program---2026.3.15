@@ -1,0 +1,147 @@
+{
+  "id": 16,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "题目给出初始电压 v_IN = -2 V"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "题目给出最终电压 v_OUT = -10 V"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "题目给出时间常数 τ = 10 ms"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "RC电路的时间常数公式为 τ = RC"
+        },
+        {
+          "id": "C_5",
+          "type": "学科常识",
+          "content": "RC电路中电容电压公式为 v(t) = v_IN(1 - e^{-t/τ})"
+        },
+        {
+          "id": "C_6",
+          "type": "学科常识",
+          "content": "实数范围内负数的自然对数无定义"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将最终电压 v_OUT = -10 V 转化为求解条件 v(t) = -10 V",
+          "parents": [
+            "C_2"
+          ],
+          "reasoning_logic": "把给定的最终电压作为电容电压公式中的目标电压"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "确认计算中使用的时间常数为 τ = 10 ms",
+          "parents": [
+            "C_3",
+            "C_4"
+          ],
+          "reasoning_logic": "根据RC电路时间常数公式和题目给定时间常数确定τ的取值"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "由 v(t) = v_IN(1 - e^{-t/τ}) 变形得到 t = -τ ln(1 - v(t)/v_IN)",
+          "parents": [
+            "C_5"
+          ],
+          "reasoning_logic": "将电容电压公式整理为关于时间t的表达式"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "代入数值得到 t = -10 ln(1 - (-10)/(-2))",
+          "parents": [
+            "C_1",
+            "I_1",
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "将 v_IN = -2、v(t) = -10、τ = 10 ms 代入时间表达式"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "计算得到 (-10)/(-2) = 5",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "计算对数表达式中的电压比值"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "代入比值得到 t = -10 ln(1 - 5)",
+          "parents": [
+            "I_4",
+            "I_5"
+          ],
+          "reasoning_logic": "用计算出的比值替换原表达式中的分式"
+        },
+        {
+          "id": "I_7",
+          "type": "数值计算",
+          "content": "计算得到 1 - 5 = -4",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "化简自然对数内部的表达式"
+        },
+        {
+          "id": "I_8",
+          "type": "数值计算",
+          "content": "化简得到 t = -10 ln(-4)",
+          "parents": [
+            "I_6",
+            "I_7"
+          ],
+          "reasoning_logic": "将对数内部的化简结果代入时间表达式"
+        },
+        {
+          "id": "I_9",
+          "type": "逻辑推导",
+          "content": "t = -10 ln(-4) 在实数范围内无定义",
+          "parents": [
+            "I_8",
+            "C_6"
+          ],
+          "reasoning_logic": "根据负数的自然对数无定义判断该时间表达式无实数解"
+        },
+        {
+          "id": "I_10",
+          "type": "逻辑推导",
+          "content": "输出电压不会达到 -10 V",
+          "parents": [
+            "I_9"
+          ],
+          "reasoning_logic": "由求解时间无实数解推出输出电压不会达到目标电压"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "输出电压不会在任何时刻跨过 -10 V",
+        "parents": [
+          "I_10"
+        ],
+        "reasoning_logic": "由输出电压不会达到 -10 V 推出最终答案"
+      }
+    }
+  }
+}

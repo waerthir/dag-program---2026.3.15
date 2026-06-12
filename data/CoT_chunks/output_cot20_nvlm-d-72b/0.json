@@ -1,0 +1,76 @@
+{
+  "id": 0,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "图像信息",
+          "content": "图中显示鸟类的喙形状随时间发生了变化"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "更适应环境的鸟类更可能存活"
+        },
+        {
+          "id": "C_3",
+          "type": "学科常识",
+          "content": "更适应环境的鸟类更可能繁殖"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "环境也发生了变化",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "由鸟类喙形状随时间发生变化推断环境发生变化"
+        },
+        {
+          "id": "I_2",
+          "type": "逻辑推导",
+          "content": "具有不同喙形状的鸟类更适应新的环境",
+          "parents": [
+            "C_1",
+            "I_1"
+          ],
+          "reasoning_logic": "将喙形状变化与新环境联系起来，推断不同喙形状的鸟类适应新环境"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "具有不同喙形状的鸟类更可能存活",
+          "parents": [
+            "I_2",
+            "C_2"
+          ],
+          "reasoning_logic": "根据更适应环境的鸟类更可能存活进行推导"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "具有不同喙形状的鸟类更可能繁殖",
+          "parents": [
+            "I_2",
+            "C_3"
+          ],
+          "reasoning_logic": "根据更适应环境的鸟类更可能繁殖进行推导"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "The environment has changed.",
+        "parents": [
+          "I_1",
+          "I_3",
+          "I_4"
+        ],
+        "reasoning_logic": "综合环境变化推断以及适应性带来的存活和繁殖优势，得出最终答案"
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": 9,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "结构中有1个C≡O三键。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "结构中有1个C=C双键。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "结构中有1个C=O双键。"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "结构中有6个单键。"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "结构中的单键包括C-C单键。"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "结构中的单键包括C-O单键。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "确定三键数量为1。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "根据结构中存在的1个C≡O三键确定三键数量。"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "确定双键数量为2。",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "将1个C=C双键和1个C=O双键相加，得到双键总数为2。"
+        },
+        {
+          "id": "I_3",
+          "type": "逻辑推导",
+          "content": "确定单键数量为6。",
+          "parents": [
+            "C_4",
+            "C_5",
+            "C_6"
+          ],
+          "reasoning_logic": "根据结构中C-C单键和C-O单键的计数结果确定单键数量。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "总键数为9。",
+          "parents": [
+            "I_1",
+            "I_2",
+            "I_3"
+          ],
+          "reasoning_logic": "将三键数量、双键数量和单键数量相加，计算为1 + 2 + 6 = 9。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是9 bonds。",
+        "parents": [
+          "I_4"
+        ],
+        "reasoning_logic": "根据总键数计算结果得出最终答案。"
+      }
+    }
+  }
+}

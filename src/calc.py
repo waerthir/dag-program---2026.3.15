@@ -28,14 +28,15 @@ class Config:
     model_keyword = 'qwen2.5-72b'
     model_keyword = 'Qwen3-VL-32B'
     mode = 'node'
+    mode = 'relationship'
 
     INPUT_FILE = project_root / 'data' / 'CoT_DAG_compare' / f'output_cot20_{model_keyword}_compare_{mode}_score.json'
 
 
 
     # 如果未来增加了新的评价维度，只需在列表中添加即可
-    TARGET_METRICS = ["Fidelity", "Atomicity"]
-    # TARGET_METRICS = ["Dependency_Accuracy", "Reasoning_Logic_Accuracy", "Reasoning_Type_Accuracy"]
+    # TARGET_METRICS = ["Fidelity", "Atomicity"]
+    TARGET_METRICS = ["Dependency_Accuracy", "Reasoning_Logic_Accuracy", "Reasoning_Type_Accuracy"]
     ROUND_DECIMALS = 4
 
     metric_dict = {'Fidelity': '信息忠实度',

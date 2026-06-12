@@ -1,0 +1,24 @@
+{
+  "id": 17,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "transition-state structure 的 SMILES 表达式是 O=[Si](O)(O)Oc1ccccc1"
+        }
+      ],
+      "intermediate_steps": [],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "transition-state structure 的 SMILES 表达式是 O=[Si](O)(O)Oc1ccccc1",
+        "parents": [
+          "C_1"
+        ],
+        "reasoning_logic": "直接依据给定文本得出最终陈述"
+      }
+    }
+  }
+}

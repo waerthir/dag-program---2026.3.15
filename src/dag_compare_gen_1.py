@@ -8,11 +8,11 @@ class Config:
 
 
     model_keyword = "gemma-4-31B-it"
-    model_keyword = "llava-v1.6-34b-hf"
-    model_keyword = "Qwen3-VL-32B"
-    model_keyword = "llava-onevision-72b"
-    model_keyword = "nvlm-d-72b"
-    model_keyword = "qwen2.5-72b"
+    # model_keyword = "llava-v1.6-34b-hf"
+    # model_keyword = "Qwen3-VL-32B"
+    # model_keyword = "llava-onevision-72b"
+    # model_keyword = "nvlm-d-72b"
+    # model_keyword = "qwen2.5-72b"
 
     GRAPH_DATA_PATH = project_root / 'data' / 'CoT_o' / f'output_cot20_{model_keyword}_all_graph.json'
     MODEL_DATA_PATH = project_root / 'data' / 'CoT' / f'output_cot20_{model_keyword}.json'

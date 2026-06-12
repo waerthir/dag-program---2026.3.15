@@ -1,0 +1,102 @@
+{
+  "id": 12,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "已知反应的焓变 ΔH° = -635.0 kJ/mol。"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "已知反应的熵变 ΔS° = 38.1 J/(mol·K)。"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "已知反应的温度 T = 373 K。"
+        },
+        {
+          "id": "C_4",
+          "type": "学科常识",
+          "content": "吉布斯自由能的计算公式为 ΔG° = ΔH° - TΔS°。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "将已知数据代入吉布斯自由能公式，得到 ΔG° = -635.0 kJ/mol - 373 K × 38.1 J/(mol·K)。",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3",
+            "C_4"
+          ],
+          "reasoning_logic": "根据吉布斯自由能公式代入焓变、温度和熵变。"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "将熵变单位转换为 38.1 J/(mol·K) = 0.0381 kJ/(mol·K)。",
+          "parents": [
+            "C_2"
+          ],
+          "reasoning_logic": "将熵变的单位从 J/(mol·K) 转换为 kJ/(mol·K)。"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "将转换后的熵变代入吉布斯自由能公式，得到 ΔG° = -635.0 kJ/mol - 373 K × 0.0381 kJ/(mol·K)。",
+          "parents": [
+            "C_1",
+            "C_3",
+            "C_4",
+            "I_2"
+          ],
+          "reasoning_logic": "使用单位转换后的熵变重新代入吉布斯自由能公式。"
+        },
+        {
+          "id": "I_4",
+          "type": "数值计算",
+          "content": "计算 373 × 0.0381，得到 14.2 kJ/mol。",
+          "parents": [
+            "C_3",
+            "I_2"
+          ],
+          "reasoning_logic": "进行温度与转换后熵变的乘法运算。"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "将乘法结果代入，得到 ΔG° = -635.0 kJ/mol - 14.2 kJ/mol。",
+          "parents": [
+            "C_1",
+            "I_4"
+          ],
+          "reasoning_logic": "用乘法运算结果替换 TΔS° 项。"
+        },
+        {
+          "id": "I_6",
+          "type": "数值计算",
+          "content": "进行减法运算，得到 ΔG° = -649.2 kJ/mol。",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "计算 -635.0 kJ/mol - 14.2 kJ/mol。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是 -649.2。",
+        "parents": [
+          "I_6"
+        ],
+        "reasoning_logic": "根据吉布斯自由能计算结果得出最终答案。"
+      }
+    }
+  }
+}

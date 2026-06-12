@@ -1,0 +1,88 @@
+{
+  "id": 6,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "第1个键为R1-N"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "第2个键为R2-N"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "第3个键为N-N"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "第4个键为N-N"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "第5个键为N-P"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "第6个键为P-P"
+        },
+        {
+          "id": "C_7",
+          "type": "文字信息",
+          "content": "第7个键为P-P"
+        },
+        {
+          "id": "C_8",
+          "type": "文字信息",
+          "content": "第8个键为P-P"
+        },
+        {
+          "id": "C_9",
+          "type": "文字信息",
+          "content": "第9个键为P-P"
+        },
+        {
+          "id": "C_10",
+          "type": "文字信息",
+          "content": "第10个键为P-P"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "数值计算",
+          "content": "列出的键数量为10",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3",
+            "C_4",
+            "C_5",
+            "C_6",
+            "C_7",
+            "C_8",
+            "C_9",
+            "C_10"
+          ],
+          "reasoning_logic": "对列出的10个键进行计数"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "最终答案是10",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "由列出的键数量为10得出最终答案"
+      }
+    }
+  }
+}

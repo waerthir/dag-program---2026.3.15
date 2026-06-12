@@ -1,0 +1,40 @@
+{
+  "id": 4,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "题干给出1是胸腺嘧啶"
+        },
+        {
+          "id": "C_2",
+          "type": "学科常识",
+          "content": "DNA碱基配对规则中胸腺嘧啶与腺嘌呤配对"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "逻辑推导",
+          "content": "a是腺嘌呤",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "根据1是胸腺嘧啶和胸腺嘧啶与腺嘌呤配对，推导出a是腺嘌呤"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "最终答案是腺嘌呤",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "由a是腺嘌呤归纳出最终答案是腺嘌呤"
+      }
+    }
+  }
+}

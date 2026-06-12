@@ -1,0 +1,146 @@
+{
+  "id": 9,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "题干给出电路为反相放大器配置"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "题干给出正电源电压为+12V"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "题干给出负电源电压为-12V"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "题干给出电阻R1存在"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "题干给出电阻R2存在"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "题干给出电容C1存在"
+        },
+        {
+          "id": "C_7",
+          "type": "文字信息",
+          "content": "题干给出电容C2存在"
+        },
+        {
+          "id": "C_8",
+          "type": "文字信息",
+          "content": "题干给出输入电压Vi与输出电压Vo的关系需确定"
+        },
+        {
+          "id": "C_9",
+          "type": "学科常识",
+          "content": "反相放大器原理对应公式Vo = - (R2 / R1) * Vi"
+        },
+        {
+          "id": "C_10",
+          "type": "文字信息",
+          "content": "题干给出输出电压Vo需达到-10V"
+        },
+        {
+          "id": "C_11",
+          "type": "文字信息",
+          "content": "题干未给出R1的具体值"
+        },
+        {
+          "id": "C_12",
+          "type": "文字信息",
+          "content": "题干未给出R2的具体值"
+        },
+        {
+          "id": "C_13",
+          "type": "文字信息",
+          "content": "题干给出时间t需以毫秒为单位"
+        },
+        {
+          "id": "C_14",
+          "type": "文字信息",
+          "content": "题干缺少Vi的具体值"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "得到输出电压与输入电压的关系式Vo = - (R2 / R1) * Vi",
+          "parents": [
+            "C_1",
+            "C_4",
+            "C_5",
+            "C_8",
+            "C_9"
+          ],
+          "reasoning_logic": "根据反相放大器原理确定Vo与Vi的公式关系"
+        },
+        {
+          "id": "I_2",
+          "type": "数值计算",
+          "content": "代入Vo = -10V得到-10V = - (R2 / R1) * Vi",
+          "parents": [
+            "I_1",
+            "C_10"
+          ],
+          "reasoning_logic": "将输出电压目标值代入反相放大器公式"
+        },
+        {
+          "id": "I_3",
+          "type": "数值计算",
+          "content": "得到Vi = 10V * (R1 / R2)",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "根据线性关系对代入后的公式进行等式变形"
+        },
+        {
+          "id": "I_4",
+          "type": "逻辑推导",
+          "content": "无法直接计算Vi",
+          "parents": [
+            "I_3",
+            "C_11",
+            "C_12"
+          ],
+          "reasoning_logic": "由于R1和R2的具体值缺失，无法由表达式直接得到Vi的数值"
+        },
+        {
+          "id": "I_5",
+          "type": "逻辑推导",
+          "content": "无法直接计算时间t",
+          "parents": [
+            "I_4",
+            "C_11",
+            "C_12",
+            "C_13",
+            "C_14"
+          ],
+          "reasoning_logic": "由于缺少R1、R2和Vi的具体值，无法计算以毫秒为单位的时间t"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "无法确定",
+        "parents": [
+          "I_5"
+        ],
+        "reasoning_logic": "根据无法直接计算时间t得出最终答案无法确定"
+      }
+    }
+  }
+}

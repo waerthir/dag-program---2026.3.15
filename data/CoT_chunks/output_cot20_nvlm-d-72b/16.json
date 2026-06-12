@@ -1,0 +1,73 @@
+{
+  "id": 16,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "羧酸<醇"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "醇<酚"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "酚<芳烃"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "羧酸<胺"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "胺<伯胺"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "伯胺<硝基化合物"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "综合归纳",
+          "content": "羧酸<醇<酚<芳烃",
+          "parents": [
+            "C_1",
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "综合三个相邻比较关系形成第一个排序链"
+        },
+        {
+          "id": "I_2",
+          "type": "综合归纳",
+          "content": "羧酸<胺<伯胺<硝基化合物",
+          "parents": [
+            "C_4",
+            "C_5",
+            "C_6"
+          ],
+          "reasoning_logic": "综合三个相邻比较关系形成第二个排序链"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "(1)羧酸<醇<酚<芳烃；(2)羧酸<胺<伯胺<硝基化合物",
+        "parents": [
+          "I_1",
+          "I_2"
+        ],
+        "reasoning_logic": "汇总两个排序链得到最终结论"
+      }
+    }
+  }
+}

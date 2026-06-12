@@ -1,0 +1,34 @@
+{
+  "id": 1,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "文字信息",
+          "content": "文本中提到过渡态结构的SMILES表达式是BrC(Br)NBr。"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "得到过渡态结构对应的SMILES表达式为BrC(Br)NBr。",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "将文本陈述转化为最终答案所需的SMILES表达式。"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "过渡态结构的SMILES表达式是BrC(Br)NBr。",
+        "parents": [
+          "I_1"
+        ],
+        "reasoning_logic": "根据已得到的SMILES表达式形成最终结论。"
+      }
+    }
+  }
+}

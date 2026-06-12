@@ -1,0 +1,1379 @@
+[
+  {
+    "id": 0,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "文本中给出的SMILES表达式是Si(C)(C)(C)O[O-]。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "确认SMILES表达式为Si(C)(C)(C)O[O-]。",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "将文本中给出的SMILES表达式转化为最终可用结论。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "SMILES表达式是Si(C)(C)(C)O[O-]。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "根据已确认的SMILES表达式得出最终结论。"
+        }
+      }
+    }
+  },
+  {
+    "id": 1,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "结构中包含1个三键"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "三键表示为N=N=N"
+          },
+          {
+            "id": "C_3",
+            "type": "文字信息",
+            "content": "结构中包含1个双键"
+          },
+          {
+            "id": "C_4",
+            "type": "文字信息",
+            "content": "双键表示为N=N"
+          },
+          {
+            "id": "C_5",
+            "type": "文字信息",
+            "content": "结构中包含3个单键"
+          },
+          {
+            "id": "C_6",
+            "type": "文字信息",
+            "content": "一个单键表示为N-C"
+          },
+          {
+            "id": "C_7",
+            "type": "文字信息",
+            "content": "一个单键表示为C-C"
+          },
+          {
+            "id": "C_8",
+            "type": "文字信息",
+            "content": "一个单键表示为C-N"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "数值计算",
+            "content": "总键数为1 + 1 + 3 = 5",
+            "parents": [
+              "C_1",
+              "C_3",
+              "C_5"
+            ],
+            "reasoning_logic": "将三键数量、双键数量和单键数量相加，计算结构中的总键数"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "最终答案是5",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "根据总键数的计算结果得出最终答案"
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "SO3分子的骨架结构被提及"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "SO3分子中硫位于中心"
+          },
+          {
+            "id": "C_3",
+            "type": "文字信息",
+            "content": "SO3分子中有三个氧原子围绕硫"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "每个氧原子有六个价电子"
+          },
+          {
+            "id": "C_5",
+            "type": "学科常识",
+            "content": "硫原子有六个价电子"
+          },
+          {
+            "id": "C_6",
+            "type": "学科常识",
+            "content": "原子可以通过形成化学键实现八隅体满足"
+          },
+          {
+            "id": "C_7",
+            "type": "文字信息",
+            "content": "关于该分子中S-O键级的错误说法是S-O键为单键"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "SO3分子的骨架结构对应三角平面几何构型",
+            "parents": [
+              "C_1",
+              "C_2",
+              "C_3"
+            ],
+            "reasoning_logic": "由骨架结构判断SO3分子的几何构型"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "硫与每个氧原子之间形成双键",
+            "parents": [
+              "C_4",
+              "C_5",
+              "C_6"
+            ],
+            "reasoning_logic": "根据各原子的价电子情况和八隅体满足需求判断成键方式"
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "每个S-O键都是双键",
+            "parents": [
+              "I_2"
+            ],
+            "reasoning_logic": "由硫与每个氧原子之间形成双键得到每个S-O键的键型"
+          },
+          {
+            "id": "I_4",
+            "type": "对比分析",
+            "content": "S-O键为单键这一说法与每个S-O键都是双键不一致",
+            "parents": [
+              "I_3",
+              "C_7"
+            ],
+            "reasoning_logic": "将Lewis结构中的S-O双键结论与题述错误说法进行核对"
+          },
+          {
+            "id": "I_5",
+            "type": "条件转化",
+            "content": "单键对应的键级为一",
+            "parents": [
+              "C_7"
+            ],
+            "reasoning_logic": "将S-O键为单键这一说法转化为键级数值"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "错误声称的S-O键级为一",
+          "parents": [
+            "I_4",
+            "I_5"
+          ],
+          "reasoning_logic": "综合错误说法与单键对应键级得出最终结论"
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "题干给出拉萨7月降水量日平均变化图"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "拉萨位于宽阔的拉萨河谷地北侧"
+          },
+          {
+            "id": "C_3",
+            "type": "图像信息",
+            "content": "图示提供拉萨7月降水量日平均变化信息"
+          },
+          {
+            "id": "C_4",
+            "type": "文字信息",
+            "content": "白天温度较高"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "拉萨7月白天降水不易形成的原因与地形有关",
+            "parents": [
+              "C_3"
+            ],
+            "reasoning_logic": "根据图示转化出白天降水不易形成原因中的地形因素"
+          },
+          {
+            "id": "I_2",
+            "type": "条件转化",
+            "content": "拉萨7月白天降水不易形成的原因与温度有关",
+            "parents": [
+              "C_3"
+            ],
+            "reasoning_logic": "根据图示转化出白天降水不易形成原因中的温度因素"
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "地形因素对应拉萨位于宽阔的拉萨河谷地北侧",
+            "parents": [
+              "I_1",
+              "C_2"
+            ],
+            "reasoning_logic": "将地形信息代入白天降水不易形成原因与地形有关的条件"
+          },
+          {
+            "id": "I_4",
+            "type": "逻辑推导",
+            "content": "温度因素对应白天温度较高",
+            "parents": [
+              "I_2",
+              "C_4"
+            ],
+            "reasoning_logic": "将温度信息代入白天降水不易形成原因与温度有关的条件"
+          },
+          {
+            "id": "I_5",
+            "type": "综合归纳",
+            "content": "拉萨7月白天降水不易形成的原因是拉萨位于宽阔的拉萨河谷地北侧",
+            "parents": [
+              "I_3"
+            ],
+            "reasoning_logic": "归纳地形因素对拉萨7月白天降水不易形成的影响"
+          },
+          {
+            "id": "I_6",
+            "type": "综合归纳",
+            "content": "拉萨7月白天降水不易形成的原因是白天温度较高",
+            "parents": [
+              "I_4"
+            ],
+            "reasoning_logic": "归纳温度因素对拉萨7月白天降水不易形成的影响"
+          },
+          {
+            "id": "I_7",
+            "type": "综合归纳",
+            "content": "拉萨7月白天不易形成降水",
+            "parents": [
+              "I_5",
+              "I_6"
+            ],
+            "reasoning_logic": "综合地形因素和温度因素得出拉萨7月白天不易形成降水"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "拉萨位于宽阔的拉萨河谷地北侧，且白天温度较高，不易形成降水",
+          "parents": [
+            "I_5",
+            "I_6",
+            "I_7"
+          ],
+          "reasoning_logic": "综合拉萨地形位置、白天温度较高和不易形成降水得出最终答案"
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "图像信息",
+            "content": "图示区域具有稻田"
+          },
+          {
+            "id": "C_2",
+            "type": "图像信息",
+            "content": "图示区域具有麦田"
+          },
+          {
+            "id": "C_3",
+            "type": "图像信息",
+            "content": "图示区域中的稻田与麦田交错分布"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "综合归纳",
+            "content": "图示区域呈现稻田与麦田交错分布的农业景观",
+            "parents": [
+              "C_1",
+              "C_2",
+              "C_3"
+            ],
+            "reasoning_logic": "综合图示区域的地物类型与空间分布特征，归纳其农业景观特征"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "图示区域具有稻田、麦田交错分布的农业景观",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "由图示区域的稻田、麦田及其交错分布特征得出最终陈述"
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "结构中包含1个N≡N三键"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "结构中包含C=O双键"
+          },
+          {
+            "id": "C_3",
+            "type": "文字信息",
+            "content": "结构中包含C=C双键"
+          },
+          {
+            "id": "C_4",
+            "type": "文字信息",
+            "content": "结构中包含Ar-C单键"
+          },
+          {
+            "id": "C_5",
+            "type": "文字信息",
+            "content": "结构中包含C-C单键"
+          },
+          {
+            "id": "C_6",
+            "type": "文字信息",
+            "content": "结构中包含C-N单键"
+          },
+          {
+            "id": "C_7",
+            "type": "文字信息",
+            "content": "结构中包含C-R单键"
+          },
+          {
+            "id": "C_8",
+            "type": "文字信息",
+            "content": "计数时每种键只计算一次"
+          },
+          {
+            "id": "C_9",
+            "type": "文字信息",
+            "content": "计数时不考虑涉及氢的键"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "三键类型数量为1",
+            "parents": [
+              "C_1",
+              "C_8"
+            ],
+            "reasoning_logic": "根据结构中N≡N三键的信息，并按每种键只计算一次的规则，确定三键类型数量"
+          },
+          {
+            "id": "I_2",
+            "type": "条件转化",
+            "content": "双键类型数量为2",
+            "parents": [
+              "C_2",
+              "C_3",
+              "C_8"
+            ],
+            "reasoning_logic": "根据结构中C=O双键和C=C双键的信息，并按每种键只计算一次的规则，确定双键类型数量"
+          },
+          {
+            "id": "I_3",
+            "type": "条件转化",
+            "content": "结构中存在多个单键类型",
+            "parents": [
+              "C_4",
+              "C_5",
+              "C_6",
+              "C_7",
+              "C_8"
+            ],
+            "reasoning_logic": "根据结构中Ar-C、C-C、C-N和C-R单键的信息，并按每种键只计算一次的规则，确定存在多个单键类型"
+          },
+          {
+            "id": "I_4",
+            "type": "数值计算",
+            "content": "键类型总数为1个三键类型、2个双键类型和多个单键类型之和",
+            "parents": [
+              "I_1",
+              "I_2",
+              "I_3",
+              "C_9"
+            ],
+            "reasoning_logic": "将三键类型数量、双键类型数量和单键类型数量相加，并排除涉及氢的键"
+          },
+          {
+            "id": "I_5",
+            "type": "对比分析",
+            "content": "排除氢后的键类型总数大于3",
+            "parents": [
+              "I_4"
+            ],
+            "reasoning_logic": "将1个三键类型、2个双键类型和多个单键类型的总和与3进行比较"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "最终答案是大于3",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "由排除氢后的键类型总数大于3得出最终答案"
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "图像信息",
+            "content": "图中显示鸟类种群随时间发生变化。"
+          },
+          {
+            "id": "C_2",
+            "type": "图像信息",
+            "content": "图中显示不同喙形变得更常见。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "环境可能已经发生变化。",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "由鸟类种群随时间发生变化推断环境可能发生变化。"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "环境可能有利于具有某些喙形的鸟类。",
+            "parents": [
+              "C_2"
+            ],
+            "reasoning_logic": "由不同喙形变得更常见推断环境可能有利于具有某些喙形的鸟类。"
+          },
+          {
+            "id": "I_3",
+            "type": "综合归纳",
+            "content": "环境变化可能以有利于某些喙形鸟类的方式发生。",
+            "parents": [
+              "I_1",
+              "I_2"
+            ],
+            "reasoning_logic": "综合环境可能发生变化与环境可能有利于某些喙形鸟类，得到环境变化的方向。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "环境可能已经变得对鸟类种群中的特定喙形更具选择性。",
+          "parents": [
+            "I_3"
+          ],
+          "reasoning_logic": "由环境变化可能有利于某些喙形鸟类，得出环境可能对特定喙形更具选择性。"
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "图像信息",
+            "content": "图像中显示一个过渡态结构"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "需要忽略图像中的箭头"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "将忽略箭头后的过渡态结构转化为SMILES表达式",
+            "parents": [
+              "C_1",
+              "C_2"
+            ],
+            "reasoning_logic": "根据图像中的过渡态结构并忽略箭头，进行结构表达形式转换"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "忽略箭头后，图像中过渡态结构的SMILES表达式是C1CC(C(=O)N)CC1Br",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "由结构表达形式转换结果得出最终SMILES表达式"
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "已知AA基因型频率为36%。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "已知Aa基因型频率为45%。"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "哈迪-温伯格平衡公式为p^2 + 2pq + q^2 = 1。"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "p为A等位基因频率。"
+          },
+          {
+            "id": "C_5",
+            "type": "学科常识",
+            "content": "q为a等位基因频率。"
+          },
+          {
+            "id": "C_6",
+            "type": "学科常识",
+            "content": "AA基因型频率对应p^2。"
+          },
+          {
+            "id": "C_7",
+            "type": "学科常识",
+            "content": "Aa基因型频率对应2pq。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "将AA基因型频率转化为p^2 = 0.36。",
+            "parents": [
+              "C_1",
+              "C_6"
+            ],
+            "reasoning_logic": "根据AA基因型频率对应p^2，将36%转化为0.36。"
+          },
+          {
+            "id": "I_2",
+            "type": "条件转化",
+            "content": "将Aa基因型频率转化为2pq = 0.45。",
+            "parents": [
+              "C_2",
+              "C_7"
+            ],
+            "reasoning_logic": "根据Aa基因型频率对应2pq，将45%转化为0.45。"
+          },
+          {
+            "id": "I_3",
+            "type": "条件转化",
+            "content": "代入AA基因型频率和Aa基因型频率后得到0.36 + 2pq = 1 - 0.36。",
+            "parents": [
+              "I_1",
+              "C_3",
+              "C_7"
+            ],
+            "reasoning_logic": "将AA基因型频率p^2和Aa基因型频率2pq代入哈迪-温伯格平衡公式。"
+          },
+          {
+            "id": "I_4",
+            "type": "数值计算",
+            "content": "由p^2 = 0.36得到p = 0.6。",
+            "parents": [
+              "I_1",
+              "C_4"
+            ],
+            "reasoning_logic": "根据p^2的数值求出p的数值。"
+          },
+          {
+            "id": "I_5",
+            "type": "数值计算",
+            "content": "由2pq = 0.45得到q = 0.4。",
+            "parents": [
+              "I_2",
+              "I_4",
+              "C_5"
+            ],
+            "reasoning_logic": "根据Aa基因型频率对应的2pq数值和p的数值求出q的数值。"
+          },
+          {
+            "id": "I_6",
+            "type": "综合归纳",
+            "content": "上述推导过程体现哈迪-温伯格平衡过程。",
+            "parents": [
+              "I_3",
+              "I_4",
+              "I_5"
+            ],
+            "reasoning_logic": "综合公式代入过程和等位基因频率计算结果进行归纳。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是哈迪-温伯格平衡过程。",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "由上述哈迪-温伯格平衡推导过程得出最终答案。"
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "结构中有1个C≡O三键。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "结构中有1个C=C双键。"
+          },
+          {
+            "id": "C_3",
+            "type": "文字信息",
+            "content": "结构中有1个C=O双键。"
+          },
+          {
+            "id": "C_4",
+            "type": "文字信息",
+            "content": "结构中有6个单键。"
+          },
+          {
+            "id": "C_5",
+            "type": "文字信息",
+            "content": "结构中的单键包括C-C单键。"
+          },
+          {
+            "id": "C_6",
+            "type": "文字信息",
+            "content": "结构中的单键包括C-O单键。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "确定三键数量为1。",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "根据结构中存在的1个C≡O三键确定三键数量。"
+          },
+          {
+            "id": "I_2",
+            "type": "数值计算",
+            "content": "确定双键数量为2。",
+            "parents": [
+              "C_2",
+              "C_3"
+            ],
+            "reasoning_logic": "将1个C=C双键和1个C=O双键相加，得到双键总数为2。"
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "确定单键数量为6。",
+            "parents": [
+              "C_4",
+              "C_5",
+              "C_6"
+            ],
+            "reasoning_logic": "根据结构中C-C单键和C-O单键的计数结果确定单键数量。"
+          },
+          {
+            "id": "I_4",
+            "type": "数值计算",
+            "content": "总键数为9。",
+            "parents": [
+              "I_1",
+              "I_2",
+              "I_3"
+            ],
+            "reasoning_logic": "将三键数量、双键数量和单键数量相加，计算为1 + 2 + 6 = 9。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是9 bonds。",
+          "parents": [
+            "I_4"
+          ],
+          "reasoning_logic": "根据总键数计算结果得出最终答案。"
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "结构中含有一个C=O双键"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "结构中含有一个N≡N三键"
+          },
+          {
+            "id": "C_3",
+            "type": "文字信息",
+            "content": "结构中含有若干碳原子之间的单键"
+          },
+          {
+            "id": "C_4",
+            "type": "文字信息",
+            "content": "结构中含有若干碳和氮之间的单键"
+          },
+          {
+            "id": "C_5",
+            "type": "文字信息",
+            "content": "每种类型的键只计算一次"
+          },
+          {
+            "id": "C_6",
+            "type": "文字信息",
+            "content": "计数时不考虑键的多重性"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "数值计算",
+            "content": "按每种类型的键只计算一次且不考虑键的多重性的规则计数得到总数为10个键",
+            "parents": [
+              "C_1",
+              "C_2",
+              "C_3",
+              "C_4",
+              "C_5",
+              "C_6"
+            ],
+            "reasoning_logic": "对结构中的双键、三键和单键类型进行计数"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "结构中的键总数为10",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "由计数结果得出最终键数"
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "等高线图中相邻等高线的高差为50米"
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "引用等高线图原理"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "断崖的最小高差 = 相邻等高线的高差",
+            "parents": [
+              "C_2"
+            ],
+            "reasoning_logic": "根据等高线图原理转化出断崖最小高差公式"
+          },
+          {
+            "id": "I_2",
+            "type": "数值计算",
+            "content": "断崖的最小高差 = 50米",
+            "parents": [
+              "C_1",
+              "I_1"
+            ],
+            "reasoning_logic": "将相邻等高线的高差50米代入断崖最小高差公式"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是50米",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "根据计算出的断崖最小高差得出最终答案"
+        }
+      }
+    }
+  },
+  {
+    "id": 12,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "1 is thymine."
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "According to the base pairing rules in DNA, adenine pairs with thymine."
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "If 1 is thymine, then a must be adenine.",
+            "parents": [
+              "C_1",
+              "C_2"
+            ],
+            "reasoning_logic": "Apply the DNA base pairing rule to the fact that 1 is thymine."
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "a is adenine.",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "Use the derived conditional result to state the final conclusion."
+        }
+      }
+    }
+  },
+  {
+    "id": 13,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "文本中提到分子处于电子已重新定位后的状态"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "确定电子重新定位后的分子的SMILES表达式为C(=O)C(=O)C",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "从文本陈述中提取电子重新定位后的分子的SMILES表达式"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "电子重新定位后的分子的SMILES表达式是C(=O)C(=O)C",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "归纳已确定的SMILES表达式作为最终结论"
+        }
+      }
+    }
+  },
+  {
+    "id": 14,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "液态时，methanol最可能与水互溶"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "液态时，ethanol最可能与水互溶"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "综合归纳",
+            "content": "ethanol属于液态时最可能与水互溶的物质",
+            "parents": [
+              "C_2"
+            ],
+            "reasoning_logic": "从液态时最可能与水互溶的物质中提取ethanol"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "最终答案是ethanol",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "根据ethanol属于液态时最可能与水互溶的物质，得出最终答案"
+        }
+      }
+    }
+  },
+  {
+    "id": 15,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "学科常识",
+            "content": "成熟红细胞不进行有丝分裂"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "成熟红细胞符合不进行有丝分裂的细胞类型",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "依据成熟红细胞不进行有丝分裂这一事实进行判断"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "不进行有丝分裂的细胞类型是成熟红细胞",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "由成熟红细胞符合不进行有丝分裂的细胞类型得出最终答案"
+        }
+      }
+    }
+  },
+  {
+    "id": 16,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "题目给出初始电压 v_IN = -2 V"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "题目给出最终电压 v_OUT = -10 V"
+          },
+          {
+            "id": "C_3",
+            "type": "文字信息",
+            "content": "题目给出时间常数 τ = 10 ms"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "RC电路的时间常数公式为 τ = RC"
+          },
+          {
+            "id": "C_5",
+            "type": "学科常识",
+            "content": "RC电路中电容电压公式为 v(t) = v_IN(1 - e^{-t/τ})"
+          },
+          {
+            "id": "C_6",
+            "type": "学科常识",
+            "content": "实数范围内负数的自然对数无定义"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "将最终电压 v_OUT = -10 V 转化为求解条件 v(t) = -10 V",
+            "parents": [
+              "C_2"
+            ],
+            "reasoning_logic": "把给定的最终电压作为电容电压公式中的目标电压"
+          },
+          {
+            "id": "I_2",
+            "type": "条件转化",
+            "content": "确认计算中使用的时间常数为 τ = 10 ms",
+            "parents": [
+              "C_3",
+              "C_4"
+            ],
+            "reasoning_logic": "根据RC电路时间常数公式和题目给定时间常数确定τ的取值"
+          },
+          {
+            "id": "I_3",
+            "type": "条件转化",
+            "content": "由 v(t) = v_IN(1 - e^{-t/τ}) 变形得到 t = -τ ln(1 - v(t)/v_IN)",
+            "parents": [
+              "C_5"
+            ],
+            "reasoning_logic": "将电容电压公式整理为关于时间t的表达式"
+          },
+          {
+            "id": "I_4",
+            "type": "数值计算",
+            "content": "代入数值得到 t = -10 ln(1 - (-10)/(-2))",
+            "parents": [
+              "C_1",
+              "I_1",
+              "I_2",
+              "I_3"
+            ],
+            "reasoning_logic": "将 v_IN = -2、v(t) = -10、τ = 10 ms 代入时间表达式"
+          },
+          {
+            "id": "I_5",
+            "type": "数值计算",
+            "content": "计算得到 (-10)/(-2) = 5",
+            "parents": [
+              "I_4"
+            ],
+            "reasoning_logic": "计算对数表达式中的电压比值"
+          },
+          {
+            "id": "I_6",
+            "type": "数值计算",
+            "content": "代入比值得到 t = -10 ln(1 - 5)",
+            "parents": [
+              "I_4",
+              "I_5"
+            ],
+            "reasoning_logic": "用计算出的比值替换原表达式中的分式"
+          },
+          {
+            "id": "I_7",
+            "type": "数值计算",
+            "content": "计算得到 1 - 5 = -4",
+            "parents": [
+              "I_6"
+            ],
+            "reasoning_logic": "化简自然对数内部的表达式"
+          },
+          {
+            "id": "I_8",
+            "type": "数值计算",
+            "content": "化简得到 t = -10 ln(-4)",
+            "parents": [
+              "I_6",
+              "I_7"
+            ],
+            "reasoning_logic": "将对数内部的化简结果代入时间表达式"
+          },
+          {
+            "id": "I_9",
+            "type": "逻辑推导",
+            "content": "t = -10 ln(-4) 在实数范围内无定义",
+            "parents": [
+              "I_8",
+              "C_6"
+            ],
+            "reasoning_logic": "根据负数的自然对数无定义判断该时间表达式无实数解"
+          },
+          {
+            "id": "I_10",
+            "type": "逻辑推导",
+            "content": "输出电压不会达到 -10 V",
+            "parents": [
+              "I_9"
+            ],
+            "reasoning_logic": "由求解时间无实数解推出输出电压不会达到目标电压"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "输出电压不会在任何时刻跨过 -10 V",
+          "parents": [
+            "I_10"
+          ],
+          "reasoning_logic": "由输出电压不会达到 -10 V 推出最终答案"
+        }
+      }
+    }
+  },
+  {
+    "id": 17,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "题干给出水跳蚤在不同体积的培养基中繁殖"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "题目已知培养基体积为1升"
+          },
+          {
+            "id": "C_3",
+            "type": "文字信息",
+            "content": "题目已知培养基体积为0.5升"
+          },
+          {
+            "id": "C_4",
+            "type": "文字信息",
+            "content": "题目已知培养基体积为0.25升"
+          },
+          {
+            "id": "C_5",
+            "type": "图像信息",
+            "content": "图表提供后代数量与培养基体积关系的信息"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "得到后代数量与培养基体积的关系公式",
+            "parents": [
+              "C_5"
+            ],
+            "reasoning_logic": "根据图表转化出后代数量与培养基体积的关系公式"
+          },
+          {
+            "id": "I_2",
+            "type": "数值计算",
+            "content": "1升培养基对应的后代数量最多",
+            "parents": [
+              "C_2",
+              "I_1"
+            ],
+            "reasoning_logic": "将1升培养基的数据代入后代数量与培养基体积的关系公式"
+          },
+          {
+            "id": "I_3",
+            "type": "数值计算",
+            "content": "0.5升培养基对应的后代数量次之",
+            "parents": [
+              "C_3",
+              "I_1"
+            ],
+            "reasoning_logic": "将0.5升培养基的数据代入后代数量与培养基体积的关系公式"
+          },
+          {
+            "id": "I_4",
+            "type": "数值计算",
+            "content": "0.25升培养基对应的后代数量最少",
+            "parents": [
+              "C_4",
+              "I_1"
+            ],
+            "reasoning_logic": "将0.25升培养基的数据代入后代数量与培养基体积的关系公式"
+          },
+          {
+            "id": "I_5",
+            "type": "对比分析",
+            "content": "培养基体积越大，后代数量越多",
+            "parents": [
+              "I_2",
+              "I_3",
+              "I_4"
+            ],
+            "reasoning_logic": "对比不同培养基体积对应的后代数量大小关系"
+          },
+          {
+            "id": "I_6",
+            "type": "逻辑推导",
+            "content": "培养基体积与后代数量呈正相关",
+            "parents": [
+              "I_5"
+            ],
+            "reasoning_logic": "由培养基体积越大且后代数量越多推导出二者呈正相关"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "培养基体积与后代数量呈正相关",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "将推导出的正相关关系作为最终答案"
+        }
+      }
+    }
+  },
+  {
+    "id": 18,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "学科常识",
+            "content": "神经元永久停滞在细胞周期的G0期"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "神经元不再继续进行细胞周期进程",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "由神经元永久停滞在G0期推出其不再继续进行细胞周期进程"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "神经元永久停滞在细胞周期的G0期",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "依据神经元不再继续进行细胞周期进程得出最终陈述"
+        }
+      }
+    }
+  },
+  {
+    "id": 19,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "文本提到对象是电子已被重定位后的分子"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "文本给出SMILES表达式为C(=O)N(R1)C(=O)O"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "确定电子已被重定位后的分子的SMILES表达式为C(=O)N(R1)C(=O)O",
+            "parents": [
+              "C_1",
+              "C_2"
+            ],
+            "reasoning_logic": "将对象信息与给定SMILES表达式对应起来"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "电子已被重定位后的分子的SMILES表达式是C(=O)N(R1)C(=O)O",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "由对应关系得出最终SMILES表达式"
+        }
+      }
+    }
+  }
+]

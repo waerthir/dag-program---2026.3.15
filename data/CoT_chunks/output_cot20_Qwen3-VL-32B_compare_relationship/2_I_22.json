@@ -1,0 +1,9 @@
+{
+  "id": "2_I_22",
+  "evaluation": {
+    "Dependency_Completeness": 9.5,
+    "Dependency_Accuracy": 8.5,
+    "Reasoning_Logic_Accuracy": 9.5,
+    "Reasoning_Type_Accuracy": 10
+  }
+}

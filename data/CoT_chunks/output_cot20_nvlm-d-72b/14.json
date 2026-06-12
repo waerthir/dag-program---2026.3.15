@@ -1,0 +1,100 @@
+{
+  "id": 14,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "总键数可以通过统计结构中每种键的数量并求和得到"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "结构包含一个苯环"
+        },
+        {
+          "id": "C_3",
+          "type": "文字信息",
+          "content": "苯环中有六个碳-碳键"
+        },
+        {
+          "id": "C_4",
+          "type": "文字信息",
+          "content": "结构中有一个氮-碳键"
+        },
+        {
+          "id": "C_5",
+          "type": "文字信息",
+          "content": "结构中有一个氧-碳键"
+        },
+        {
+          "id": "C_6",
+          "type": "文字信息",
+          "content": "氧与其中一个碳之间有一个双键"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "条件转化",
+          "content": "碳-碳键数量为6",
+          "parents": [
+            "C_2",
+            "C_3"
+          ],
+          "reasoning_logic": "从苯环中的碳-碳键描述转化出碳-碳键数量"
+        },
+        {
+          "id": "I_2",
+          "type": "条件转化",
+          "content": "氮-碳键数量为1",
+          "parents": [
+            "C_4"
+          ],
+          "reasoning_logic": "从氮-碳键描述转化出氮-碳键数量"
+        },
+        {
+          "id": "I_3",
+          "type": "条件转化",
+          "content": "氧-碳键数量为1",
+          "parents": [
+            "C_5"
+          ],
+          "reasoning_logic": "从氧-碳键描述转化出氧-碳键数量"
+        },
+        {
+          "id": "I_4",
+          "type": "条件转化",
+          "content": "氧碳双键数量为1",
+          "parents": [
+            "C_6"
+          ],
+          "reasoning_logic": "从氧与碳之间的双键描述转化出双键数量"
+        },
+        {
+          "id": "I_5",
+          "type": "数值计算",
+          "content": "总键数为9",
+          "parents": [
+            "C_1",
+            "I_1",
+            "I_2",
+            "I_3",
+            "I_4"
+          ],
+          "reasoning_logic": "将各类键数量相加，得到6 + 1 + 1 + 1 = 9"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "综合归纳",
+        "content": "答案是9",
+        "parents": [
+          "I_5"
+        ],
+        "reasoning_logic": "根据总键数计算结果得出最终答案"
+      }
+    }
+  }
+}

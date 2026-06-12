@@ -1,0 +1,41 @@
+{
+  "id": 18,
+  "graph": {
+    "graph_logic": {
+      "conditions": [
+        {
+          "id": "C_1",
+          "type": "学科常识",
+          "content": "SO3的正确Lewis结构中每个S-O键的键级为2"
+        },
+        {
+          "id": "C_2",
+          "type": "文字信息",
+          "content": "错误陈述声称SO3中S-O键的键级为1.5"
+        }
+      ],
+      "intermediate_steps": [
+        {
+          "id": "I_1",
+          "type": "对比分析",
+          "content": "键级1.5与正确键级2不一致",
+          "parents": [
+            "C_1",
+            "C_2"
+          ],
+          "reasoning_logic": "对比正确Lewis结构给出的S-O键键级与错误陈述声称的键级"
+        }
+      ],
+      "final_conclusion": {
+        "id": "O",
+        "type": "逻辑推导",
+        "content": "答案是1.5",
+        "parents": [
+          "I_1",
+          "C_2"
+        ],
+        "reasoning_logic": "根据错误陈述所声称的键级确定最终答案"
+      }
+    }
+  }
+}

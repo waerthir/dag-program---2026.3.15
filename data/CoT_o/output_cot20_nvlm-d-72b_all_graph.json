@@ -1,0 +1,1595 @@
+[
+  {
+    "id": 0,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "图像信息",
+            "content": "图中显示鸟类的喙形状随时间发生了变化"
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "更适应环境的鸟类更可能存活"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "更适应环境的鸟类更可能繁殖"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "环境也发生了变化",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "由鸟类喙形状随时间发生变化推断环境发生变化"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "具有不同喙形状的鸟类更适应新的环境",
+            "parents": [
+              "C_1",
+              "I_1"
+            ],
+            "reasoning_logic": "将喙形状变化与新环境联系起来，推断不同喙形状的鸟类适应新环境"
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "具有不同喙形状的鸟类更可能存活",
+            "parents": [
+              "I_2",
+              "C_2"
+            ],
+            "reasoning_logic": "根据更适应环境的鸟类更可能存活进行推导"
+          },
+          {
+            "id": "I_4",
+            "type": "逻辑推导",
+            "content": "具有不同喙形状的鸟类更可能繁殖",
+            "parents": [
+              "I_2",
+              "C_3"
+            ],
+            "reasoning_logic": "根据更适应环境的鸟类更可能繁殖进行推导"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "The environment has changed.",
+          "parents": [
+            "I_1",
+            "I_3",
+            "I_4"
+          ],
+          "reasoning_logic": "综合环境变化推断以及适应性带来的存活和繁殖优势，得出最终答案"
+        }
+      }
+    }
+  },
+  {
+    "id": 1,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "文本中提到过渡态结构的SMILES表达式是BrC(Br)NBr。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "得到过渡态结构对应的SMILES表达式为BrC(Br)NBr。",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "将文本陈述转化为最终答案所需的SMILES表达式。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "过渡态结构的SMILES表达式是BrC(Br)NBr。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "根据已得到的SMILES表达式形成最终结论。"
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "图像信息",
+            "content": "图中展示拉萨7月降水量日变化"
+          },
+          {
+            "id": "C_2",
+            "type": "图像信息",
+            "content": "图中降水量的峰值出现在20点"
+          },
+          {
+            "id": "C_3",
+            "type": "图像信息",
+            "content": "图中降水量的谷值出现在8点"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "白昼时分地表受热"
+          },
+          {
+            "id": "C_5",
+            "type": "学科常识",
+            "content": "地表受热会使地表的热力作用强"
+          },
+          {
+            "id": "C_6",
+            "type": "学科常识",
+            "content": "地表的热力作用强会使气流上升"
+          },
+          {
+            "id": "C_7",
+            "type": "学科常识",
+            "content": "气流上升不利于降水的形成"
+          },
+          {
+            "id": "C_8",
+            "type": "学科常识",
+            "content": "夜晚地表的热力作用减弱"
+          },
+          {
+            "id": "C_9",
+            "type": "学科常识",
+            "content": "地表的热力作用减弱会使气流下沉"
+          },
+          {
+            "id": "C_10",
+            "type": "学科常识",
+            "content": "气流下沉有利于降水的形成"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "对比分析",
+            "content": "拉萨7月降水量在白昼时分较少",
+            "parents": [
+              "C_1",
+              "C_2",
+              "C_3"
+            ],
+            "reasoning_logic": "根据降水量峰值出现在20点且谷值出现在8点，对比白昼与夜晚的降水量变化"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "白昼时分地表的热力作用强",
+            "parents": [
+              "C_4",
+              "C_5"
+            ],
+            "reasoning_logic": "由白昼时分地表受热推导地表的热力作用强"
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "白昼时分气流上升",
+            "parents": [
+              "I_2",
+              "C_6"
+            ],
+            "reasoning_logic": "由白昼时分地表的热力作用强推导气流上升"
+          },
+          {
+            "id": "I_4",
+            "type": "逻辑推导",
+            "content": "白昼时分不利于降水的形成",
+            "parents": [
+              "I_3",
+              "C_7"
+            ],
+            "reasoning_logic": "由白昼时分气流上升推导不利于降水的形成"
+          },
+          {
+            "id": "I_5",
+            "type": "逻辑推导",
+            "content": "夜晚气流下沉",
+            "parents": [
+              "C_8",
+              "C_9"
+            ],
+            "reasoning_logic": "由夜晚地表的热力作用减弱推导气流下沉"
+          },
+          {
+            "id": "I_6",
+            "type": "逻辑推导",
+            "content": "夜晚有利于降水的形成",
+            "parents": [
+              "I_5",
+              "C_10"
+            ],
+            "reasoning_logic": "由夜晚气流下沉推导有利于降水的形成"
+          },
+          {
+            "id": "I_7",
+            "type": "综合归纳",
+            "content": "拉萨7月白天降水不易形成",
+            "parents": [
+              "I_1",
+              "I_4",
+              "I_6"
+            ],
+            "reasoning_logic": "综合白昼降水较少、白昼不利于降水形成和夜晚有利于降水形成，归纳拉萨7月白天降水不易形成"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "拉萨7月白天降水不易形成的原因是白昼时分，地表受热，地表的热力作用强，气流上升，不利于降水的形成",
+          "parents": [
+            "I_7",
+            "I_2",
+            "I_3",
+            "I_4"
+          ],
+          "reasoning_logic": "根据白昼时分地表受热、热力作用强、气流上升并不利于降水形成，得出最终原因"
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "图像信息",
+            "content": "图像中显示的是过渡态结构。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "箭头需要被忽略。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "将忽略箭头后的图像中过渡态结构转化为SMILES表达式。",
+            "parents": [
+              "C_1",
+              "C_2"
+            ],
+            "reasoning_logic": "根据图像中的过渡态结构，并忽略箭头，得到对应的SMILES表达式。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "该过渡态结构的SMILES表达式为CC(C)OC(=O)C1=CC=CC=C1N。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "由结构转化结果得出最终SMILES表达式。"
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "学科常识",
+            "content": "神经元永久停滞在细胞周期的G1期。"
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "细胞停滞在G1期意味着细胞不进入S期。"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "细胞不进入S期意味着细胞不进入S期之后的细胞周期阶段。"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "细胞不经历后续细胞周期阶段意味着细胞不分裂。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "神经元不进入S期。",
+            "parents": [
+              "C_1",
+              "C_2"
+            ],
+            "reasoning_logic": "由神经元永久停滞在G1期推出神经元不进入S期。"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "神经元不进入S期之后的细胞周期阶段。",
+            "parents": [
+              "I_1",
+              "C_3"
+            ],
+            "reasoning_logic": "由神经元不进入S期推出神经元不进入S期之后的细胞周期阶段。"
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "神经元不分裂。",
+            "parents": [
+              "I_2",
+              "C_4"
+            ],
+            "reasoning_logic": "由神经元不经历后续细胞周期阶段推出神经元不分裂。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "答案是G1。",
+          "parents": [
+            "C_1",
+            "I_3"
+          ],
+          "reasoning_logic": "根据神经元永久停滞在G1期以及其不分裂的推理结果，得出最终答案为G1。"
+        }
+      }
+    }
+  },
+  {
+    "id": 5,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "图像信息",
+            "content": "图示A点1月均温在0°C以上"
+          },
+          {
+            "id": "C_2",
+            "type": "图像信息",
+            "content": "图示A点7月均温在28°C左右"
+          },
+          {
+            "id": "C_3",
+            "type": "图像信息",
+            "content": "图示A点年降水量在1000mm以上"
+          },
+          {
+            "id": "C_4",
+            "type": "文字信息",
+            "content": "图示区域地势低平"
+          },
+          {
+            "id": "C_5",
+            "type": "文字信息",
+            "content": "图示区域河网密布"
+          },
+          {
+            "id": "C_6",
+            "type": "学科常识",
+            "content": "1月均温0°C以上、7月均温28°C左右、年降水量1000mm以上对应亚热带季风区特征"
+          },
+          {
+            "id": "C_7",
+            "type": "学科常识",
+            "content": "亚热带季风区热量充足"
+          },
+          {
+            "id": "C_8",
+            "type": "学科常识",
+            "content": "亚热带季风区降水丰沛"
+          },
+          {
+            "id": "C_9",
+            "type": "学科常识",
+            "content": "热量充足有利于商品粮生产"
+          },
+          {
+            "id": "C_10",
+            "type": "学科常识",
+            "content": "降水丰沛有利于商品粮生产"
+          },
+          {
+            "id": "C_11",
+            "type": "学科常识",
+            "content": "地势低平有利于商品粮生产"
+          },
+          {
+            "id": "C_12",
+            "type": "学科常识",
+            "content": "河网密布有利于商品粮生产"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "图示A点所在区域是亚热带季风区",
+            "parents": [
+              "C_1",
+              "C_2",
+              "C_3",
+              "C_6"
+            ],
+            "reasoning_logic": "依据A点1月均温、7月均温和年降水量特征判断气候区"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "图示区域热量充足",
+            "parents": [
+              "I_1",
+              "C_7"
+            ],
+            "reasoning_logic": "由图示区域属于亚热带季风区推出其热量条件"
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "图示区域降水丰沛",
+            "parents": [
+              "I_1",
+              "C_8"
+            ],
+            "reasoning_logic": "由图示区域属于亚热带季风区推出其降水条件"
+          },
+          {
+            "id": "I_4",
+            "type": "综合归纳",
+            "content": "图示区域具备商品粮生产的有利条件",
+            "parents": [
+              "I_2",
+              "I_3",
+              "C_4",
+              "C_5",
+              "C_9",
+              "C_10",
+              "C_11",
+              "C_12"
+            ],
+            "reasoning_logic": "综合热量、降水、地势和河网条件判断商品粮生产条件"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "图示区域为亚热带季风区，热量充足，降水丰沛，地势低平，河网密布，是重要的商品粮生产基地",
+          "parents": [
+            "I_1",
+            "I_2",
+            "I_3",
+            "C_4",
+            "C_5",
+            "I_4"
+          ],
+          "reasoning_logic": "综合气候区判断和区域自然条件得出最终结论"
+        }
+      }
+    }
+  },
+  {
+    "id": 6,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "第1个键为R1-N"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "第2个键为R2-N"
+          },
+          {
+            "id": "C_3",
+            "type": "文字信息",
+            "content": "第3个键为N-N"
+          },
+          {
+            "id": "C_4",
+            "type": "文字信息",
+            "content": "第4个键为N-N"
+          },
+          {
+            "id": "C_5",
+            "type": "文字信息",
+            "content": "第5个键为N-P"
+          },
+          {
+            "id": "C_6",
+            "type": "文字信息",
+            "content": "第6个键为P-P"
+          },
+          {
+            "id": "C_7",
+            "type": "文字信息",
+            "content": "第7个键为P-P"
+          },
+          {
+            "id": "C_8",
+            "type": "文字信息",
+            "content": "第8个键为P-P"
+          },
+          {
+            "id": "C_9",
+            "type": "文字信息",
+            "content": "第9个键为P-P"
+          },
+          {
+            "id": "C_10",
+            "type": "文字信息",
+            "content": "第10个键为P-P"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "数值计算",
+            "content": "列出的键数量为10",
+            "parents": [
+              "C_1",
+              "C_2",
+              "C_3",
+              "C_4",
+              "C_5",
+              "C_6",
+              "C_7",
+              "C_8",
+              "C_9",
+              "C_10"
+            ],
+            "reasoning_logic": "对列出的10个键进行计数"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "最终答案是10",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "由列出的键数量为10得出最终答案"
+        }
+      }
+    }
+  },
+  {
+    "id": 7,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "transition-state structure的SMILES表达式为[O-]C([O+])([O-])OP(=O)(O)O"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "答案为[O-]C([O+])([O-])OP(=O)(O)O",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "根据已给出的transition-state structure的SMILES表达式确定答案"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "[O-]C([O+])([O-])OP(=O)(O)O",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "由已确定的答案得出最终结论"
+        }
+      }
+    }
+  },
+  {
+    "id": 8,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "文本中提到繁殖季节繁殖雄性的睾酮水平高于帮手雄性"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "文本中提到非繁殖季节繁殖雄性和帮手雄性的睾酮水平相似"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "对比分析",
+            "content": "繁殖季节繁殖雄性与帮手雄性的睾酮水平存在高低差异",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "根据文本中对繁殖季节两类雄性睾酮水平的比较进行归纳"
+          },
+          {
+            "id": "I_2",
+            "type": "对比分析",
+            "content": "非繁殖季节繁殖雄性与帮手雄性的睾酮水平不存在明显差异",
+            "parents": [
+              "C_2"
+            ],
+            "reasoning_logic": "根据文本中对非繁殖季节两类雄性睾酮水平的比较进行归纳"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "睾酮水平的雄性身份差异在繁殖季节明显，在非繁殖季节不明显",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "综合繁殖季节和非繁殖季节的比较结果得出最终陈述"
+        }
+      }
+    }
+  },
+  {
+    "id": 9,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "给定表达式为 v_OUT = -(R2/R1)(v_i + (V_IN/(C1 R1))t)"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "v_OUT = -10 V"
+          },
+          {
+            "id": "C_3",
+            "type": "文字信息",
+            "content": "v_i = -2 V"
+          },
+          {
+            "id": "C_4",
+            "type": "文字信息",
+            "content": "R1 = 10 kΩ"
+          },
+          {
+            "id": "C_5",
+            "type": "文字信息",
+            "content": "R2 = 100 kΩ"
+          },
+          {
+            "id": "C_6",
+            "type": "文字信息",
+            "content": "C1 = 1 µF"
+          },
+          {
+            "id": "C_7",
+            "type": "文字信息",
+            "content": "V_IN = 12 V"
+          },
+          {
+            "id": "C_8",
+            "type": "学科常识",
+            "content": "1 kΩ = 10^3 Ω"
+          },
+          {
+            "id": "C_9",
+            "type": "学科常识",
+            "content": "1 µF = 10^-6 F"
+          },
+          {
+            "id": "C_10",
+            "type": "学科常识",
+            "content": "1 s = 1000 ms"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "R1 = 10 × 10^3 Ω",
+            "parents": [
+              "C_4",
+              "C_8"
+            ],
+            "reasoning_logic": "将R1从kΩ转化为Ω"
+          },
+          {
+            "id": "I_2",
+            "type": "条件转化",
+            "content": "R2 = 100 × 10^3 Ω",
+            "parents": [
+              "C_5",
+              "C_8"
+            ],
+            "reasoning_logic": "将R2从kΩ转化为Ω"
+          },
+          {
+            "id": "I_3",
+            "type": "条件转化",
+            "content": "C1 = 1 × 10^-6 F",
+            "parents": [
+              "C_6",
+              "C_9"
+            ],
+            "reasoning_logic": "将C1从µF转化为F"
+          },
+          {
+            "id": "I_4",
+            "type": "条件转化",
+            "content": "-10 = -(100 × 10^3)/(10 × 10^3)(-2 + 12/(1 × 10^-6 × 10 × 10^3)t)",
+            "parents": [
+              "C_1",
+              "C_2",
+              "C_3",
+              "C_7",
+              "I_1",
+              "I_2",
+              "I_3"
+            ],
+            "reasoning_logic": "将已知数值代入输出电压表达式"
+          },
+          {
+            "id": "I_5",
+            "type": "数值计算",
+            "content": "(100 × 10^3)/(10 × 10^3) = 10",
+            "parents": [
+              "I_1",
+              "I_2"
+            ],
+            "reasoning_logic": "化简电阻比值"
+          },
+          {
+            "id": "I_6",
+            "type": "数值计算",
+            "content": "12/(1 × 10^-6 × 10 × 10^3) = 12000",
+            "parents": [
+              "C_7",
+              "I_1",
+              "I_3"
+            ],
+            "reasoning_logic": "化简括号内t的系数"
+          },
+          {
+            "id": "I_7",
+            "type": "数值计算",
+            "content": "-10 = -10(-2 + 12000t)",
+            "parents": [
+              "I_4",
+              "I_5",
+              "I_6"
+            ],
+            "reasoning_logic": "将化简后的比值和系数代入方程"
+          },
+          {
+            "id": "I_8",
+            "type": "数值计算",
+            "content": "-10 = 20 - 120000t",
+            "parents": [
+              "I_7"
+            ],
+            "reasoning_logic": "分配-10并展开方程"
+          },
+          {
+            "id": "I_9",
+            "type": "数值计算",
+            "content": "120000t = 20 + 10",
+            "parents": [
+              "I_8"
+            ],
+            "reasoning_logic": "移项以求解t"
+          },
+          {
+            "id": "I_10",
+            "type": "数值计算",
+            "content": "120000t = 30",
+            "parents": [
+              "I_9"
+            ],
+            "reasoning_logic": "计算右侧数值"
+          },
+          {
+            "id": "I_11",
+            "type": "数值计算",
+            "content": "t = 30/120000 s",
+            "parents": [
+              "I_10"
+            ],
+            "reasoning_logic": "两边同时除以120000"
+          },
+          {
+            "id": "I_12",
+            "type": "条件转化",
+            "content": "t = (30/120000) × 1000 ms",
+            "parents": [
+              "I_11",
+              "C_10"
+            ],
+            "reasoning_logic": "将时间从秒转化为毫秒"
+          },
+          {
+            "id": "I_13",
+            "type": "数值计算",
+            "content": "t = 0.25 ms",
+            "parents": [
+              "I_12"
+            ],
+            "reasoning_logic": "计算时间结果"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "输出电压 v_OUT 在 t = 0.25 ms 时跨过 -10 V",
+          "parents": [
+            "I_13"
+          ],
+          "reasoning_logic": "根据求得的时间结果得出最终结论"
+        }
+      }
+    }
+  },
+  {
+    "id": 10,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "该反应是柠檬酸循环的一部分"
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "柠檬酸循环是糖类代谢的交汇点"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "柠檬酸循环是脂肪代谢的交汇点"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "柠檬酸循环是蛋白质代谢的交汇点"
+          },
+          {
+            "id": "C_5",
+            "type": "学科常识",
+            "content": "柠檬酸循环存在于需氧生物体内"
+          },
+          {
+            "id": "C_6",
+            "type": "学科常识",
+            "content": "柠檬酸循环是一系列生化反应"
+          },
+          {
+            "id": "C_7",
+            "type": "学科常识",
+            "content": "柠檬酸循环是糖类氧化的共同途径"
+          },
+          {
+            "id": "C_8",
+            "type": "学科常识",
+            "content": "柠檬酸循环是脂肪氧化的共同途径"
+          },
+          {
+            "id": "C_9",
+            "type": "学科常识",
+            "content": "柠檬酸循环是蛋白质氧化的共同途径"
+          },
+          {
+            "id": "C_10",
+            "type": "学科常识",
+            "content": "生化反应是生物体内发生的化学反应"
+          },
+          {
+            "id": "C_11",
+            "type": "学科常识",
+            "content": "生化反应由酶催化"
+          },
+          {
+            "id": "C_12",
+            "type": "学科常识",
+            "content": "生化反应是新陈代谢过程的一部分"
+          },
+          {
+            "id": "C_13",
+            "type": "学科常识",
+            "content": "生化反应可以是合成的反应"
+          },
+          {
+            "id": "C_14",
+            "type": "学科常识",
+            "content": "合成的反应构建分子"
+          },
+          {
+            "id": "C_15",
+            "type": "学科常识",
+            "content": "生化反应可以是分解的反应"
+          },
+          {
+            "id": "C_16",
+            "type": "学科常识",
+            "content": "分解的反应分解分子"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "该反应属于柠檬酸循环中的反应",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "将该反应是柠檬酸循环的一部分转化为该反应属于柠檬酸循环中的反应"
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "该反应是一种生化反应",
+            "parents": [
+              "I_1",
+              "C_6"
+            ],
+            "reasoning_logic": "由该反应属于柠檬酸循环中的反应且柠檬酸循环是一系列生化反应推出该反应是一种生化反应"
+          },
+          {
+            "id": "I_3",
+            "type": "综合归纳",
+            "content": "该反应具有生化反应的属性背景",
+            "parents": [
+              "I_2",
+              "C_10",
+              "C_11",
+              "C_12",
+              "C_13",
+              "C_14",
+              "C_15",
+              "C_16"
+            ],
+            "reasoning_logic": "综合该反应是一种生化反应以及生化反应的定义和分类信息"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "该反应是一种生化反应",
+          "parents": [
+            "I_2"
+          ],
+          "reasoning_logic": "由该反应是柠檬酸循环中的一个反应推出最终结论"
+        }
+      }
+    }
+  },
+  {
+    "id": 11,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "图像信息",
+            "content": "图中存在断崖。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "断崖的最小高差可能是100米。",
+            "parents": [
+              "C_1"
+            ],
+            "reasoning_logic": "由图中断崖信息推导断崖的最小高差。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "图中断崖的最小高差可能是100米。",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "根据断崖最小高差的推导结果得出最终结论。"
+        }
+      }
+    }
+  },
+  {
+    "id": 12,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "已知反应的焓变 ΔH° = -635.0 kJ/mol。"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "已知反应的熵变 ΔS° = 38.1 J/(mol·K)。"
+          },
+          {
+            "id": "C_3",
+            "type": "文字信息",
+            "content": "已知反应的温度 T = 373 K。"
+          },
+          {
+            "id": "C_4",
+            "type": "学科常识",
+            "content": "吉布斯自由能的计算公式为 ΔG° = ΔH° - TΔS°。"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "将已知数据代入吉布斯自由能公式，得到 ΔG° = -635.0 kJ/mol - 373 K × 38.1 J/(mol·K)。",
+            "parents": [
+              "C_1",
+              "C_2",
+              "C_3",
+              "C_4"
+            ],
+            "reasoning_logic": "根据吉布斯自由能公式代入焓变、温度和熵变。"
+          },
+          {
+            "id": "I_2",
+            "type": "数值计算",
+            "content": "将熵变单位转换为 38.1 J/(mol·K) = 0.0381 kJ/(mol·K)。",
+            "parents": [
+              "C_2"
+            ],
+            "reasoning_logic": "将熵变的单位从 J/(mol·K) 转换为 kJ/(mol·K)。"
+          },
+          {
+            "id": "I_3",
+            "type": "条件转化",
+            "content": "将转换后的熵变代入吉布斯自由能公式，得到 ΔG° = -635.0 kJ/mol - 373 K × 0.0381 kJ/(mol·K)。",
+            "parents": [
+              "C_1",
+              "C_3",
+              "C_4",
+              "I_2"
+            ],
+            "reasoning_logic": "使用单位转换后的熵变重新代入吉布斯自由能公式。"
+          },
+          {
+            "id": "I_4",
+            "type": "数值计算",
+            "content": "计算 373 × 0.0381，得到 14.2 kJ/mol。",
+            "parents": [
+              "C_3",
+              "I_2"
+            ],
+            "reasoning_logic": "进行温度与转换后熵变的乘法运算。"
+          },
+          {
+            "id": "I_5",
+            "type": "数值计算",
+            "content": "将乘法结果代入，得到 ΔG° = -635.0 kJ/mol - 14.2 kJ/mol。",
+            "parents": [
+              "C_1",
+              "I_4"
+            ],
+            "reasoning_logic": "用乘法运算结果替换 TΔS° 项。"
+          },
+          {
+            "id": "I_6",
+            "type": "数值计算",
+            "content": "进行减法运算，得到 ΔG° = -649.2 kJ/mol。",
+            "parents": [
+              "I_5"
+            ],
+            "reasoning_logic": "计算 -635.0 kJ/mol - 14.2 kJ/mol。"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "最终答案是 -649.2。",
+          "parents": [
+            "I_6"
+          ],
+          "reasoning_logic": "根据吉布斯自由能计算结果得出最终答案。"
+        }
+      }
+    }
+  },
+  {
+    "id": 13,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "图像信息",
+            "content": "图像中显示一个过渡态结构"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "需要忽略图像中的箭头"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "将忽略箭头后的过渡态结构转化为SMILES表达式",
+            "parents": [
+              "C_1",
+              "C_2"
+            ],
+            "reasoning_logic": "根据图像中的过渡态结构信息，并忽略箭头，将结构表示为SMILES格式"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "SMILES表达式为C1=CC=C(C(=C1)N)S(=O)(=O)N",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "由结构转化结果得出最终SMILES表达式"
+        }
+      }
+    }
+  },
+  {
+    "id": 14,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "学科常识",
+            "content": "总键数可以通过统计结构中每种键的数量并求和得到"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "结构包含一个苯环"
+          },
+          {
+            "id": "C_3",
+            "type": "文字信息",
+            "content": "苯环中有六个碳-碳键"
+          },
+          {
+            "id": "C_4",
+            "type": "文字信息",
+            "content": "结构中有一个氮-碳键"
+          },
+          {
+            "id": "C_5",
+            "type": "文字信息",
+            "content": "结构中有一个氧-碳键"
+          },
+          {
+            "id": "C_6",
+            "type": "文字信息",
+            "content": "氧与其中一个碳之间有一个双键"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "条件转化",
+            "content": "碳-碳键数量为6",
+            "parents": [
+              "C_2",
+              "C_3"
+            ],
+            "reasoning_logic": "从苯环中的碳-碳键描述转化出碳-碳键数量"
+          },
+          {
+            "id": "I_2",
+            "type": "条件转化",
+            "content": "氮-碳键数量为1",
+            "parents": [
+              "C_4"
+            ],
+            "reasoning_logic": "从氮-碳键描述转化出氮-碳键数量"
+          },
+          {
+            "id": "I_3",
+            "type": "条件转化",
+            "content": "氧-碳键数量为1",
+            "parents": [
+              "C_5"
+            ],
+            "reasoning_logic": "从氧-碳键描述转化出氧-碳键数量"
+          },
+          {
+            "id": "I_4",
+            "type": "条件转化",
+            "content": "氧碳双键数量为1",
+            "parents": [
+              "C_6"
+            ],
+            "reasoning_logic": "从氧与碳之间的双键描述转化出双键数量"
+          },
+          {
+            "id": "I_5",
+            "type": "数值计算",
+            "content": "总键数为9",
+            "parents": [
+              "C_1",
+              "I_1",
+              "I_2",
+              "I_3",
+              "I_4"
+            ],
+            "reasoning_logic": "将各类键数量相加，得到6 + 1 + 1 + 1 = 9"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "答案是9",
+          "parents": [
+            "I_5"
+          ],
+          "reasoning_logic": "根据总键数计算结果得出最终答案"
+        }
+      }
+    }
+  },
+  {
+    "id": 15,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "Methanol has an OH group."
+          },
+          {
+            "id": "C_2",
+            "type": "学科常识",
+            "content": "The presence of an OH group makes a molecule polar."
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "Polar molecules are soluble in water."
+          },
+          {
+            "id": "C_4",
+            "type": "文字信息",
+            "content": "Ethanol has an OH group."
+          },
+          {
+            "id": "C_5",
+            "type": "文字信息",
+            "content": "Propane does not have polar groups."
+          },
+          {
+            "id": "C_6",
+            "type": "文字信息",
+            "content": "Ethene does not have polar groups."
+          },
+          {
+            "id": "C_7",
+            "type": "学科常识",
+            "content": "Molecules without polar groups are immiscible with water."
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "Methanol is polar.",
+            "parents": [
+              "C_1",
+              "C_2"
+            ],
+            "reasoning_logic": "Use the presence of an OH group to infer molecular polarity."
+          },
+          {
+            "id": "I_2",
+            "type": "逻辑推导",
+            "content": "Methanol is soluble in water.",
+            "parents": [
+              "I_1",
+              "C_3"
+            ],
+            "reasoning_logic": "Use methanol's polarity to infer water solubility."
+          },
+          {
+            "id": "I_3",
+            "type": "逻辑推导",
+            "content": "Ethanol is polar.",
+            "parents": [
+              "C_4",
+              "C_2"
+            ],
+            "reasoning_logic": "Use the presence of an OH group to infer molecular polarity."
+          },
+          {
+            "id": "I_4",
+            "type": "逻辑推导",
+            "content": "Ethanol is miscible with water.",
+            "parents": [
+              "I_3",
+              "C_3"
+            ],
+            "reasoning_logic": "Use ethanol's polarity to infer miscibility with water."
+          },
+          {
+            "id": "I_5",
+            "type": "逻辑推导",
+            "content": "Propane is immiscible with water.",
+            "parents": [
+              "C_5",
+              "C_7"
+            ],
+            "reasoning_logic": "Use the absence of polar groups to infer immiscibility with water."
+          },
+          {
+            "id": "I_6",
+            "type": "逻辑推导",
+            "content": "Ethene is immiscible with water.",
+            "parents": [
+              "C_6",
+              "C_7"
+            ],
+            "reasoning_logic": "Use the absence of polar groups to infer immiscibility with water."
+          },
+          {
+            "id": "I_7",
+            "type": "对比分析",
+            "content": "Ethanol matches the requirement of being miscible with water.",
+            "parents": [
+              "I_4",
+              "I_5",
+              "I_6"
+            ],
+            "reasoning_logic": "Compare ethanol, propane, and ethene by their miscibility with water."
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "The answer is ethanol.",
+          "parents": [
+            "I_7"
+          ],
+          "reasoning_logic": "Select ethanol as the final answer based on the comparison."
+        }
+      }
+    }
+  },
+  {
+    "id": 16,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "羧酸<醇"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "醇<酚"
+          },
+          {
+            "id": "C_3",
+            "type": "文字信息",
+            "content": "酚<芳烃"
+          },
+          {
+            "id": "C_4",
+            "type": "文字信息",
+            "content": "羧酸<胺"
+          },
+          {
+            "id": "C_5",
+            "type": "文字信息",
+            "content": "胺<伯胺"
+          },
+          {
+            "id": "C_6",
+            "type": "文字信息",
+            "content": "伯胺<硝基化合物"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "综合归纳",
+            "content": "羧酸<醇<酚<芳烃",
+            "parents": [
+              "C_1",
+              "C_2",
+              "C_3"
+            ],
+            "reasoning_logic": "综合三个相邻比较关系形成第一个排序链"
+          },
+          {
+            "id": "I_2",
+            "type": "综合归纳",
+            "content": "羧酸<胺<伯胺<硝基化合物",
+            "parents": [
+              "C_4",
+              "C_5",
+              "C_6"
+            ],
+            "reasoning_logic": "综合三个相邻比较关系形成第二个排序链"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "综合归纳",
+          "content": "(1)羧酸<醇<酚<芳烃；(2)羧酸<胺<伯胺<硝基化合物",
+          "parents": [
+            "I_1",
+            "I_2"
+          ],
+          "reasoning_logic": "汇总两个排序链得到最终结论"
+        }
+      }
+    }
+  },
+  {
+    "id": 17,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "文字信息",
+            "content": "transition-state structure 的 SMILES 表达式是 O=[Si](O)(O)Oc1ccccc1"
+          }
+        ],
+        "intermediate_steps": [],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "transition-state structure 的 SMILES 表达式是 O=[Si](O)(O)Oc1ccccc1",
+          "parents": [
+            "C_1"
+          ],
+          "reasoning_logic": "直接依据给定文本得出最终陈述"
+        }
+      }
+    }
+  },
+  {
+    "id": 18,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "学科常识",
+            "content": "SO3的正确Lewis结构中每个S-O键的键级为2"
+          },
+          {
+            "id": "C_2",
+            "type": "文字信息",
+            "content": "错误陈述声称SO3中S-O键的键级为1.5"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "对比分析",
+            "content": "键级1.5与正确键级2不一致",
+            "parents": [
+              "C_1",
+              "C_2"
+            ],
+            "reasoning_logic": "对比正确Lewis结构给出的S-O键键级与错误陈述声称的键级"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "答案是1.5",
+          "parents": [
+            "I_1",
+            "C_2"
+          ],
+          "reasoning_logic": "根据错误陈述所声称的键级确定最终答案"
+        }
+      }
+    }
+  },
+  {
+    "id": 19,
+    "graph": {
+      "graph_logic": {
+        "conditions": [
+          {
+            "id": "C_1",
+            "type": "图像信息",
+            "content": "图中1是胸腺嘧啶（T）"
+          },
+          {
+            "id": "C_2",
+            "type": "图像信息",
+            "content": "图中1与标记为a的碱基配对"
+          },
+          {
+            "id": "C_3",
+            "type": "学科常识",
+            "content": "DNA复制中胸腺嘧啶（T）与腺嘌呤（A）配对"
+          }
+        ],
+        "intermediate_steps": [
+          {
+            "id": "I_1",
+            "type": "逻辑推导",
+            "content": "a是腺嘌呤（A）",
+            "parents": [
+              "C_1",
+              "C_2",
+              "C_3"
+            ],
+            "reasoning_logic": "由图中1是胸腺嘧啶且1与a配对，结合胸腺嘧啶与腺嘌呤配对的规则，推出a是腺嘌呤"
+          }
+        ],
+        "final_conclusion": {
+          "id": "O",
+          "type": "逻辑推导",
+          "content": "答案是A",
+          "parents": [
+            "I_1"
+          ],
+          "reasoning_logic": "由a是腺嘌呤（A）得出最终答案为A"
+        }
+      }
+    }
+  }
+]
