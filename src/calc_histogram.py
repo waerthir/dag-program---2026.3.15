@@ -10,8 +10,18 @@ class VisConfig:
 
     current_file = Path(__file__).resolve()
     project_root = current_file.parent.parent
+    
+    
+    model_keyword = 'gemma-4-31B-it'
+    model_keyword = 'llava-onevision-72b'
     model_keyword = 'llava-v1.6-34b-hf'
+    model_keyword = 'nvlm-d-72b'
+    model_keyword = 'qwen2.5-72b'
+    model_keyword = 'Qwen3-VL-32B'
+    # mode = 'node'
     mode = 'relationship'
+
+
 
     INPUT_FILE = project_root / 'data' / 'CoT_DAG_compare' / f'output_cot20_{model_keyword}_compare_{mode}_score.json'
 

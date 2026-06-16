@@ -1,10 +1,7 @@
-model_keyword = 'gemma-4-31B-it'
-model_keyword = 'llava-onevision-72b'
-model_keyword = 'llava-v1.6-34b-hf'
-model_keyword = 'nvlm-d-72b'
-model_keyword = 'qwen2.5-72b'
-model_keyword = 'Qwen3-VL-32B'
+
 mode = 'node'
+
+model_keyword = 'gemma-4-31B-it'
 
 (dag_env) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> & E:/TrashE/Miniconda3/envs/dag_env/python.exe "e:/TrashE/_Sun_Yat_Sen_University/_大三下/杂项/2026.03实验室学习/dag-program --2026.3.15/src/calc.py"
 评估数据量是：540
@@ -12,34 +9,128 @@ Metric          | Mean       | Variance
 ----------------------------------------
 信息忠实度           | 9.8778     | 0.3554    
 原子化程度           | 9.7833     | 1.4253    
+
+
+model_keyword = 'llava-onevision-72b'
+
 (dag_env) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> & E:/TrashE/Miniconda3/envs/dag_env/python.exe "e:/TrashE/_Sun_Yat_Sen_University/_大三下/杂项/2026.03实验室学习/dag-program --2026.3.15/src/calc.py"
 评估数据量是：156
 Metric          | Mean       | Variance  
 ----------------------------------------
 信息忠实度           | 9.859      | 0.3263    
 原子化程度           | 9.5769     | 3.2313    
+
+
+model_keyword = 'llava-v1.6-34b-hf'
+
 (dag_env) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> & E:/TrashE/Miniconda3/envs/dag_env/python.exe "e:/TrashE/_Sun_Yat_Sen_University/_大三下/杂项/2026.03实验室学习/dag-program --2026.3.15/src/calc.py"
 评估数据量是：470
 Metric          | Mean       | Variance  
 ----------------------------------------
 信息忠实度           | 9.8574     | 0.4924    
 原子化程度           | 9.7702     | 1.6366    
+
+
+model_keyword = 'nvlm-d-72b'
+
 (dag_env) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> & E:/TrashE/Miniconda3/envs/dag_env/python.exe "e:/TrashE/_Sun_Yat_Sen_University/_大三下/杂项/2026.03实验室学习/dag-program --2026.3.15/src/calc.py"
 评估数据量是：187
 Metric          | Mean       | Variance  
 ----------------------------------------
 信息忠实度           | 9.7326     | 0.5167    
 原子化程度           | 9.4064     | 4.3054    
+
+
+model_keyword = 'qwen2.5-72b'
+
 (dag_env) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> & E:/TrashE/Miniconda3/envs/dag_env/python.exe "e:/TrashE/_Sun_Yat_Sen_University/_大三下/杂项/2026.03实验室学习/dag-program --2026.3.15/src/calc.py"
 评估数据量是：316
 Metric          | Mean       | Variance  
 ----------------------------------------
 信息忠实度           | 9.9114     | 0.1377    
 原子化程度           | 9.7911     | 1.2665    
+
+
+model_keyword = 'Qwen3-VL-32B'
+
 (dag_env) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> & E:/TrashE/Miniconda3/envs/dag_env/python.exe "e:/TrashE/_Sun_Yat_Sen_University/_大三下/杂项/2026.03实验室学习/dag-program --2026.3.15/src/calc.py"
 评估数据量是：743
 Metric          | Mean       | Variance  
 ----------------------------------------
 信息忠实度           | 6.4791     | 21.7004   
 原子化程度           | 9.4522     | 3.6313    
+(dag_env) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> 
+
+
+
+
+
+
+
+mode = 'relationship'
+
+model_keyword = 'gemma-4-31B-it'
+
+(dag_env) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> & E:/TrashE/Miniconda3/envs/dag_env/python.exe "e:/TrashE/_Sun_Yat_Sen_University/_大三下/杂项/2026.03实验室学习/dag-program --2026.3.15/src/calc.py"
+评估数据量是：220
+Metric          | Mean       | Variance  
+----------------------------------------
+依赖关系准确性         | 9.205      | 5.0497    
+推理逻辑准确性         | 9.4568     | 1.0288    
+推理类型准确性         | 8.9682     | 5.8626    
+
+
+model_keyword = 'llava-onevision-72b'
+
+(dag_env) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> & E:/TrashE/Miniconda3/envs/dag_env/python.exe "e:/TrashE/_Sun_Yat_Sen_University/_大三下/杂项/2026.03实验室学习/dag-program --2026.3.15/src/calc.py"
+评估数据量是：79
+Metric          | Mean       | Variance  
+----------------------------------------
+依赖关系准确性         | 8.8557     | 7.5566    
+推理逻辑准确性         | 8.6139     | 5.2908    
+推理类型准确性         | 8.2025     | 10.4083   
+
+
+model_keyword = 'llava-v1.6-34b-hf'
+
+(dag_env) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> & E:/TrashE/Miniconda3/envs/dag_env/python.exe "e:/TrashE/_Sun_Yat_Sen_University/_大三下/杂项/2026.03实验室学习/dag-program --2026.3.15/src/calc.py"
+评估数据量是：257
+Metric          | Mean       | Variance  
+----------------------------------------
+依赖关系准确性         | 9.6066     | 1.492     
+推理逻辑准确性         | 9.677      | 0.8276    
+推理类型准确性         | 9.1673     | 5.3125    
+
+
+model_keyword = 'nvlm-d-72b'
+
+(dag_env) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> & E:/TrashE/Miniconda3/envs/dag_env/python.exe "e:/TrashE/_Sun_Yat_Sen_University/_大三下/杂项/2026.03实验室学习/dag-program --2026.3.15/src/calc.py"
+评估数据量是：84
+Metric          | Mean       | Variance  
+----------------------------------------
+依赖关系准确性         | 9.0262     | 5.5924    
+推理逻辑准确性         | 9.3452     | 2.238     
+推理类型准确性         | 8.7857     | 7.6862    
+
+
+model_keyword = 'qwen2.5-72b'
+
+(dag_env) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> & E:/TrashE/Miniconda3/envs/dag_env/python.exe "e:/TrashE/_Sun_Yat_Sen_University/_大三下/杂项/2026.03实验室学习/dag-program --2026.3.15/src/calc.py"
+评估数据量是：140
+Metric          | Mean       | Variance  
+----------------------------------------
+依赖关系准确性         | 9.5564     | 2.0755    
+推理逻辑准确性         | 9.4679     | 1.7722    
+推理类型准确性         | 8.5179     | 8.605     
+
+
+model_keyword = 'Qwen3-VL-32B'
+
+(dag_env) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> & E:/TrashE/Miniconda3/envs/dag_env/python.exe "e:/TrashE/_Sun_Yat_Sen_University/_大三下/杂项/2026.03实验室学习/dag-program --2026.3.15/src/calc.py"
+评估数据量是：348
+Metric          | Mean       | Variance  
+----------------------------------------
+依赖关系准确性         | 5.8224     | 21.4732   
+推理逻辑准确性         | 5.9187     | 20.0523   
+推理类型准确性         | 7.5445     | 14.3622   
 (dag_env) PS E:\TrashE\_Sun_Yat_Sen_University\_大三下\杂项\2026.03实验室学习\dag-program --2026.3.15> 
